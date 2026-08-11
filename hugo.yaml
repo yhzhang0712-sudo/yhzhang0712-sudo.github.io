@@ -3,6 +3,11 @@ locale: 'zh-CN'
 title: 'SimpleMath'
 theme: 'PaperMod'
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 params:
   env: production
   defaultTheme: auto
@@ -23,28 +28,24 @@ params:
   showtoc: false
   tocopen: false
 
-  homeInfoParams:
-    Title: "Hi there 👋"
-    Content: "记录技术、思考与生活。"
-
-  socialIcons:
-    - name: github
-      url: "https://github.com/yhzhang0712-sudo"
+  profileMode:
+    enabled: true
+    title: "SimpleMath"
+    imageUrl: ""
+    buttons:
+      - name: "AI 与数学"
+        url: /posts/aimath/
+      - name: "数学闲话"
+        url: /posts/数学闲话/
+      - name: "代数表示专题"
+        url: /posts/代数表示专题/
 
 menu:
   main:
-    - identifier: posts
-      name: 文章
-      url: /posts/
-      weight: 10
-    - identifier: archives
-      name: 归档
-      url: /archives/
-      weight: 20
     - identifier: search
       name: 搜索
       url: /search/
-      weight: 30
+      weight: 10
 
 outputs:
   home:

@@ -1,0 +1,65 @@
+/* ─── 首页 SVG 渐变圆盘导航 ─── */
+
+.profile .profile_inner {
+    gap: 0;
+    min-height: calc(100vh - var(--header-height, 60px));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 首页整个页面背景图，30% 透明度 */
+body.home-bg::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url('/images/home-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* 子页面（section）不使用首页背景，使用纯白色背景 */
+body.no-home-bg::before {
+    display: none;
+}
+
+.pie-disc-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-svg {
+    width: min(420px, 82vw);
+    height: min(420px, 82vw);
+    filter: drop-shadow(0 12px 40px rgba(99,102,241,0.3));
+}
+
+/* 扇形悬停 */
+.pie-slice {
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    transform-origin: 200px 200px;
+    cursor: pointer;
+}
+.pie-slice:hover {
+    opacity: 0.85;
+    transform: scale(1.025);
+}
+
+/* 文字样式 */
+.pie-text {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    fill: #ffffff;
+    dominant-baseline: middle;
+    pointer-events: none;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.25);
+}
+
+/* 隐藏原生 buttons 区块 */
+.profile .buttons { display: none; }

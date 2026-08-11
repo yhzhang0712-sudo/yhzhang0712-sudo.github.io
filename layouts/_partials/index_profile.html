@@ -1,0 +1,90 @@
+{{- /* 覆盖 PaperMod 原生 index_profile.html：渐变圆盘 + SVG 扇形导航（精确三分圆盘） */ -}}
+<div class="profile">
+    {{- with site.Params.profileMode }}
+    <div class="profile_inner">
+        {{- if .imageUrl -}}
+        {{- $img := "" }}
+        {{- if not (urls.Parse .imageUrl).IsAbs }}
+            {{- $img = resources.Get .imageUrl }}
+        {{- end }}
+        {{- if $img }}
+            {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
+            {{- if hugo.IsExtended -}}
+                {{- $processableFormats = $processableFormats | append "webp" -}}
+            {{- end }}
+            {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
+            {{- if and (in $processableFormats $img.MediaType.SubType) (eq $prod true)}}
+                {{- if (not (and (not .imageHeight) (not .imageWidth))) }}
+                    {{- $img = $img.Resize (printf "%dx%d" .imageWidth .imageHeight) }}
+                {{- else if .imageHeight }}
+                    {{- $img = $img.Resize (printf "x%d" .imageHeight) }}
+                {{- else if .imageWidth }}
+                    {{- $img = $img.Resize (printf "%dx" .imageWidth) }}
+                {{- else }}
+                    {{- $img = $img.Resize "150x150" }}
+                {{- end }}
+            {{- end }}
+            <img draggable="false" src="{{ $img.Permalink }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+                height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+        {{- else if ne .imageUrl "" }}
+        <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+            height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+        {{- end }}
+        {{- end }}
+
+        {{- /* SVG 三分圆盘扇形导航 */ -}}
+        {{- $btn1 := index .buttons 0 }}
+        {{- $btn2 := index .buttons 1 }}
+        {{- $btn3 := index .buttons 2 }}
+        <div class="pie-disc-wrapper">
+            <svg class="pie-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="pie-shadow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="rgba(0,0,0,0.18)"/>
+                    </filter>
+                    <filter id="text-shadow" x="-50%" y="-50%" width="200%" height="200%">
+                        <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="rgba(0,0,0,0.35)"/>
+                    </filter>
+                    {{- /* 三个扇形各自的渐变色 */ -}}
+                    <linearGradient id="g-aimath" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#6366F1"/>
+                        <stop offset="100%" stop-color="#818CF8"/>
+                    </linearGradient>
+                    <linearGradient id="g-chat" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#8B5CF6"/>
+                        <stop offset="100%" stop-color="#C084FC"/>
+                    </linearGradient>
+                    <linearGradient id="g-algebra" x1="100%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#EC4899"/>
+                        <stop offset="100%" stop-color="#F472B6"/>
+                    </linearGradient>
+                </defs>
+
+                {{- /* 扇形1：AI与数学（12点~4点钟，120°） */ -}}
+                <a href="{{ $btn1.url }}" rel="noopener" title="{{ $btn1.name }}" class="pie-link">
+                    <path d="M 200 200 L 200 0 A 200 200 0 0 1 373.205 300 Z"
+                          fill="url(#g-aimath)" class="pie-slice" />
+                    <text x="295" y="150" class="pie-text" text-anchor="middle">AI 与数学</text>
+                </a>
+
+                {{- /* 扇形2：数学闲话（4点~8点，120°） */ -}}
+                <a href="{{ $btn2.url }}" rel="noopener" title="{{ $btn2.name }}" class="pie-link">
+                    <path d="M 200 200 L 373.205 300 A 200 200 0 0 1 26.795 300 Z"
+                          fill="url(#g-chat)" class="pie-slice" />
+                    <text x="200" y="315" class="pie-text" text-anchor="middle">数学闲话</text>
+                </a>
+
+                {{- /* 扇形3：代数表示专题（8点~12点，120°） */ -}}
+                <a href="{{ $btn3.url }}" rel="noopener" title="{{ $btn3.name }}" class="pie-link">
+                    <path d="M 200 200 L 26.795 300 A 200 200 0 0 1 200 0 Z"
+                          fill="url(#g-algebra)" class="pie-slice" />
+                    <text x="105" y="150" class="pie-text" text-anchor="middle">代数表示专题</text>
+                </a>
+
+                {{- /* 中心白色圆形遮罩 */ -}}
+                <circle cx="200" cy="200" r="68" fill="white" filter="url(#pie-shadow)" />
+            </svg>
+        </div>
+    {{- end}}
+    </div>
+</div>
