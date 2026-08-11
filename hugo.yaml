@@ -1,0 +1,58 @@
+baseURL: 'https://yhzhang0712-sudo.github.io'
+locale: 'zh-CN'
+title: '大智的博客'
+theme: 'PaperMod'
+
+params:
+  env: production
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  homeInfoParams:
+    Title: "Hi there 👋"
+    Content: "这里是大智的个人博客，记录技术、思考与生活。"
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/yhzhang0712-sudo"
+
+menu:
+  main:
+    - identifier: posts
+      name: 文章
+      url: /posts/
+      weight: 10
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 20
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 30
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+languages:
+  zh:
+    label: "中文"
+    weight: 1
