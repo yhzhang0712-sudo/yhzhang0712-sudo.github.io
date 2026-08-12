@@ -18,7 +18,7 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
+  ShowRssButtonInSectionTermList: false
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
@@ -37,8 +37,8 @@ params:
         url: /posts/aimath/
       - name: "数学闲话"
         url: /posts/数学闲话/
-      - name: "代数表示专题"
-        url: /posts/代数表示专题/
+      - name: "代数表示论"
+        url: /posts/代数表示论/
 
 menu:
   main:
