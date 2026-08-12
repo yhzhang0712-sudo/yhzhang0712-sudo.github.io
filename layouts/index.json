@@ -1,0 +1,13 @@
+{{- $.Scratch.Add "index" slice -}}
+{{- range site.RegularPages -}}
+    {{- if and (not .Params.searchHidden) (ne .Layout `archives`) (ne .Layout `search`) }}
+    {{- $.Scratch.Add "index" (dict "title" .Title "content" .Plain "permalink" .Permalink "summary" .Summary) -}}
+    {{- end }}
+{{- end -}}
+{{- /* 同时索引嵌套 section 页面（如 AI与数学、数学闲话、代数表示论） */ -}}
+{{- range site.Pages -}}
+    {{- if and (eq .Kind "section") (not .Parent.IsHome) (not .Params.searchHidden) }}
+    {{- $.Scratch.Add "index" (dict "title" .Title "content" .Plain "permalink" .Permalink "summary" .Summary) -}}
+    {{- end }}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}
