@@ -4,10 +4,41 @@
     {{- $.Scratch.Add "index" (dict "title" .Title "content" .Plain "permalink" .Permalink "summary" .Summary) -}}
     {{- end }}
 {{- end -}}
+
 {{- /* 同时索引嵌套 section 页面（如 AI与数学、数学闲话、代数表示论） */ -}}
 {{- range site.Pages -}}
     {{- if and (eq .Kind "section") (not .Parent.IsHome) (not .Params.searchHidden) }}
     {{- $.Scratch.Add "index" (dict "title" .Title "content" .Plain "permalink" .Permalink "summary" .Summary) -}}
     {{- end }}
 {{- end -}}
+
+{{- /* 解析 AI 与数学大事记中的具体条目，作为独立搜索项 */ -}}
+{{- $aimath := site.GetPage "posts/aimath" -}}
+{{- if $aimath -}}
+    {{- $content := $aimath.Content -}}
+    {{- $anchor := "#ai-panel-timeline" -}}
+    {{- $permalink := print $aimath.Permalink $anchor -}}
+
+    {{- /* findRE 不能返回捕获组，用 replaceRE 提取年份/标题/描述 */ -}}
+    {{- $lis := findRE `<li><span class="ai-year">\d{4}</span>｜.*?</li>` $content -}}
+    {{- range $lis -}}
+        {{- $year := replaceRE `.*?<span class="ai-year">(\d{4})</span>｜.*` "$1" . -}}
+        {{- /* 标题和描述以"｜年份"开头，以"："或</li>分隔；部分条目没有"：" */ -}}
+        {{- $rest := replaceRE `.*?<span class="ai-year">\d{4}</span>｜(.*)` "$1" . -}}
+        {{- $titleHTML := replaceRE `^(.*?)：.*$` "$1" $rest -}}
+        {{- $descHTML := replaceRE `^.*?：(.*?)</li>$` "$1" $rest -}}
+        {{- /* 如果没有冒号，则标题取全部，描述为空 */ -}}
+        {{- if eq $titleHTML $rest -}}
+            {{- $titleHTML = replaceRE `^(.*?)</li>$` "$1" $rest -}}
+            {{- $descHTML = "" -}}
+        {{- end -}}
+        {{- $titleText := $titleHTML | plainify | htmlUnescape | chomp -}}
+        {{- $descText := $descHTML | plainify | htmlUnescape | chomp -}}
+        {{- if $titleText -}}
+            {{- $entryTitle := printf "%s｜%s" $year $titleText -}}
+            {{- $.Scratch.Add "index" (dict "title" $entryTitle "content" $descText "permalink" $permalink "summary" $descText) -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+
 {{- $.Scratch.Get "index" | jsonify -}}
