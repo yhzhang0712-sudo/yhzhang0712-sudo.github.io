@@ -93,26 +93,21 @@
             {{- $page_url:= $currentPage.Permalink | absLangURL }}
             {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
             <li>
-                {{- if eq .Name "搜索" -}}
-                {{- /* 搜索项：图标 + 左侧可展开小搜索框 */ -}}
-                <span class="header-search-wrap" aria-label="搜索">
-                    <input type="search" class="header-search-input" id="header-search-input"
-                        aria-label="search" autocomplete="off" maxlength="64">
-                    <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}" class="header-search-toggle"
-                        onclick="toggleHeaderSearch(event)" role="button" tabindex="0">
+                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
+                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
+                    <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
+                        {{- .Pre }}
+                        {{- if eq .Name "搜索" }}
+                        {{- /* 搜索项用 SVG 图标代替文字 */ -}}
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <circle cx="11" cy="11" r="8"></circle>
                             <path d="m21 21-4.35-4.35"></path>
                         </svg>
-                    </a>
-                </span>
-                {{- else -}}
-                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
-                    <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
-                        {{- .Pre }}
+                        {{- else }}
                         {{- .Name -}}
+                        {{- end }}
                         {{ .Post -}}
                     </span>
                     {{- if (findRE "://" .URL) }}&nbsp;
@@ -124,7 +119,6 @@
                     </svg>
                     {{- end }}
                 </a>
-                {{- end -}}
             </li>
             {{- end }}
         </ul>

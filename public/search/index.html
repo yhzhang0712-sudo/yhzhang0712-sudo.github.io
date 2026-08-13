@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh" dir="auto" data-theme="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -9,17 +9,17 @@
 <meta name="keywords" content="">
 <meta name="description" content="搜索">
 <meta name="author" content="">
-<link rel="canonical" href="https://yhzhang0712-sudo.github.io/search/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.cfc9ed01e90be5bc31d714b68a8682f2af1094cb282b3dcbbb9694c76b30f9b3.css" integrity="sha256-z8ntAekL5bwx1xS2ioaC8q8QlMsoKz3Lu5aUx2sw&#43;bM=" rel="preload stylesheet" as="style"><link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
+<link rel="canonical" href="http://localhost:1313/search/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a1cd25f559814b653102dd6e3104e3f1328197c460ee434706005d5de5cdd0f0.css" integrity="sha256-oc0l9VmBS2UxAt1uMQTj8TKBl8Rg7kNHBgBdXeXN0PA=" rel="preload stylesheet" as="style"><link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
 <script defer crossorigin="anonymous" src="/assets/js/search.e229e8d51c221f102254c8cc8c10b254d8f4faf0a0141b78d4827f9d925d6541.js" integrity="sha256-4ino1RwiHxAiVMjMjBCyVNj0&#43;vCgFBt41IJ/nZJdZUE="></script>
-<link rel="icon" href="https://yhzhang0712-sudo.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://yhzhang0712-sudo.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://yhzhang0712-sudo.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://yhzhang0712-sudo.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://yhzhang0712-sudo.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="zh" href="https://yhzhang0712-sudo.github.io/search/">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/search/">
 <noscript>
     <style>
         #theme-toggle,
@@ -53,7 +53,49 @@
         }
 
     </style>
-</noscript>
+</noscript><script>
+(function () {
+    function initHeaderSearch() {
+        const input = document.getElementById('header-search-input');
+        const toggle = document.querySelector('.header-search-toggle');
+        if (!input || !toggle) return;
+
+        function closeSearch(e) {
+            if (!input.parentElement.contains(e.target)) {
+                input.classList.remove('active');
+            }
+        }
+
+        window.toggleHeaderSearch = function (e) {
+            if (e) e.preventDefault();
+            const isActive = input.classList.toggle('active');
+            if (isActive) {
+                input.focus();
+                document.addEventListener('click', closeSearch);
+            } else {
+                document.removeEventListener('click', closeSearch);
+            }
+            return false;
+        };
+
+        input.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' && input.value.trim()) {
+                const base = toggle.getAttribute('href') || '/search/';
+                window.location.href = base + '?q=' + encodeURIComponent(input.value.trim());
+            }
+            if (e.key === 'Escape') {
+                input.classList.remove('active');
+                input.blur();
+            }
+        });
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initHeaderSearch);
+    } else {
+        initHeaderSearch();
+    }
+})();
+</script>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.querySelector("html").dataset.theme = 'dark';
@@ -65,7 +107,7 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://yhzhang0712-sudo.github.io/search/">
+</script><meta property="og:url" content="http://localhost:1313/search/">
   <meta property="og:site_name" content="SimpleMath">
   <meta property="og:title" content="搜索">
   <meta property="og:description" content="搜索">
@@ -86,7 +128,7 @@
       "@type": "ListItem",
       "position":  1 ,
       "name": "搜索",
-      "item": "https://yhzhang0712-sudo.github.io/search/"
+      "item": "http://localhost:1313/search/"
     }
   ]
 }
@@ -108,14 +150,14 @@
   "dateModified": "0001-01-01T00:00:00Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://yhzhang0712-sudo.github.io/search/"
+    "@id": "http://localhost:1313/search/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "SimpleMath",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://yhzhang0712-sudo.github.io/favicon.ico"
+      "url": "http://localhost:1313/favicon.ico"
     }
   }
 }
@@ -125,7 +167,7 @@
     <header class="header">
     <nav class="header-nav">
         <div class="logo">
-            <a href="https://yhzhang0712-sudo.github.io/" accesskey="h" title="SimpleMath (Alt + H)">SimpleMath</a>
+            <a href="http://localhost:1313/" accesskey="h" title="SimpleMath (Alt + H)">SimpleMath</a>
             <div class="logo-switches">
                 <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
@@ -150,17 +192,19 @@
             </div>
         </div>
         <ul id="menu" class="menu">
-            <li>
-                <a href="https://yhzhang0712-sudo.github.io/search/" title="搜索 (Alt &#43; /)" accesskey=/>
-                    <span class="active"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+            <li><span class="header-search-wrap" aria-label="搜索">
+                    <input type="search" class="header-search-input" id="header-search-input"
+                        aria-label="search" autocomplete="off" maxlength="64">
+                    <a href="http://localhost:1313/search/" title="搜索" class="header-search-toggle"
+                        onclick="toggleHeaderSearch(event)" role="button" tabindex="0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <circle cx="11" cy="11" r="8"></circle>
                             <path d="m21 21-4.35-4.35"></path>
                         </svg>
-                        </span>
-                </a>
-            </li>
+                    </a>
+                </span></li>
         </ul>
     </nav>
 </header>
@@ -177,14 +221,31 @@
 </header>
 
 <div id="searchbox" class="searchbox">
-    <input id="searchInput" disabled placeholder="搜索文章..."
+    <input id="searchInput" disabled
         aria-label="search" type="search" autocomplete="off" maxlength="64">
     <ul id="searchResults" class="searchResults" aria-label="search results"></ul>
 </div>
+
+<script>
+(function () {
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get('q');
+    if (!q) return;
+    const input = document.getElementById('searchInput');
+    if (!input) return;
+    const interval = setInterval(() => {
+        if (!input.disabled) {
+            clearInterval(interval);
+            input.value = q;
+            input.dispatchEvent(new Event('input', { bubbles: true }));
+        }
+    }, 100);
+})();
+</script>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="https://yhzhang0712-sudo.github.io/">SimpleMath</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">SimpleMath</a></span> · 
 
     
     

@@ -32,7 +32,40 @@ title: "AI 与数学"
   </div>
 
   <div id="ai-panel-tools" class="ai-tab-panel">
-    <p class="ai-empty">内容整理中，敬请期待…</p>
+    <ul class="ai-timeline">
+      <li><span class="ai-year">对话</span>｜<a href="https://chatgpt.com">ChatGPT</a>（OpenAI）：全能对话助手，多模态交互，推理与编程领先</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://claude.ai">Claude</a>（Anthropic）：长文本理解与写作，推理与代码质量高</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://www.deepseek.com">DeepSeek</a>：国产开源大模型，数学推理与代码突出，API 成本极低</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://kimi.moonshot.cn">Kimi</a>（月之暗面）：超长上下文对话，适合文档分析与长文阅读</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://www.doubao.com">豆包</a>（字节跳动）：国民级 AI 助手，融合抖音生态，短视频脚本与文案创作</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://yiyan.baidu.com">文心一言</a>（百度）：中文场景优化，金融与教育领域突出</li>
+      <li><span class="ai-year">图像</span>｜<a href="https://www.midjourney.com">Midjourney</a>：顶尖艺术风格图像生成，设计师与插画师首选</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://stability.ai">Stable Diffusion</a>：开源文生图，可本地部署，社区生态丰富</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://openai.com/dall-e-3">DALL·E 3</a>（OpenAI）：集成于 ChatGPT，提示词理解精准</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://dreamina.jianying.com">即梦 AI</a>（字节跳动）：中文友好，智能画布修图，电商与短视频创作利器</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://www.adobe.com/products/firefly.html">Adobe Firefly</a>：与 Photoshop 生态无缝衔接，图像修复与风格转换</li>
+      <li><span class="ai-year">视频</span>｜<a href="https://openai.com/sora">Sora</a>（OpenAI）：高质量长视频生成，模拟物理世界逻辑</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://runwayml.com">Runway</a>：文本/图像转视频+视频编辑全能平台</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://kling.kuaishou.com">可灵</a>（快手）：国产视频生成标杆，2 分钟 1080p 高清，3D 人物驱动</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://pika.art">Pika Labs</a>：快速生成 AI 动画视频，适合短视频与 Vlog</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://www.capcut.cn">剪映 AI</a>（字节跳动）：智能剪辑+一键成片，自动添加音乐/字幕/特效</li>
+      <li><span class="ai-year">编程</span>｜<a href="https://github.com/features/copilot">GitHub Copilot</a>（微软/OpenAI）：生态整合最强，支持 50+ 语言</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://cursor.com">Cursor</a>：基于 VS Code 的 AI IDE，项目级代码理解与重构</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://codeium.com/windsurf">Windsurf</a>（Codeium）：Agent 型 AI IDE，本地化计算，有免费版</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://tongyi.aliyun.com/lingma">通义灵码</a>（阿里云）：国产编程助手，多语言补全，中文友好</li>
+      <li><span class="ai-year">音频</span>｜<a href="https://suno.com">Suno</a>：文字描述生成含人声的完整歌曲，零门槛音乐创作</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://elevenlabs.io">ElevenLabs</a>：顶尖 AI 语音合成，120+ 拟真声线，支持声音克隆</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://www.udio.com">Udio</a>：前 Google DeepMind 团队打造，精细控制音乐风格</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://peiyin.xunfei.cn">讯飞智作</a>（科大讯飞）：一站式音视频生成，支持虚拟主播</li>
+      <li><span class="ai-year">办公</span>｜<a href="https://www.notion.com/product/ai">Notion AI</a>：智能笔记整理/会议纪要，支持多人协作</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://www.microsoft.com/en-us/microsoft-365/copilot">Microsoft 365 Copilot</a>：深度融合 Word/Excel/PowerPoint</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://gamma.app">Gamma</a>：快速生成专业演示幻灯片，AI 排版+配图</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://ai.wps.cn">WPS AI</a>（金山办公）：文档生成/数据分析/PPT 制作，国产办公全覆盖</li>
+      <li><span class="ai-year">Agent</span>｜<a href="https://www.coze.cn">Coze</a>（字节跳动）：零代码智能体平台，一键发布到微信/抖音</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://dify.ai">Dify</a>：开源 LLM 应用开发平台，可视化工作流编排</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://www.langchain.com">LangChain</a>：主流 Agent 开发框架，支持工具调用与多步推理</li>
+      <li><span class="ai-year">　　</span>｜<a href="https://autogpt.net">AutoGPT</a>：自主任务执行 Agent，探索 AI 自主性边界</li>
+    </ul>
   </div>
 
   <div id="ai-panel-math" class="ai-tab-panel">

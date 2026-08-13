@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://yhzhang0712-sudo.github.io/posts/aimath/</loc>
+    <loc>http://localhost:1313/posts/aimath/</loc>
   </url><url>
-    <loc>https://yhzhang0712-sudo.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://yhzhang0712-sudo.github.io/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
   </url><url>
-    <loc>https://yhzhang0712-sudo.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
   </url><url>
-    <loc>https://yhzhang0712-sudo.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url><url>
-    <loc>https://yhzhang0712-sudo.github.io/posts/%E4%BB%A3%E6%95%B0%E8%A1%A8%E7%A4%BA%E8%AE%BA/</loc>
+    <loc>http://localhost:1313/posts/%E4%BB%A3%E6%95%B0%E8%A1%A8%E7%A4%BA%E8%AE%BA/</loc>
   </url><url>
-    <loc>https://yhzhang0712-sudo.github.io/archives/</loc>
+    <loc>http://localhost:1313/archives/</loc>
   </url><url>
-    <loc>https://yhzhang0712-sudo.github.io/posts/%E6%95%B0%E5%AD%A6%E9%97%B2%E8%AF%9D/</loc>
+    <loc>http://localhost:1313/posts/%E6%95%B0%E5%AD%A6%E9%97%B2%E8%AF%9D/</loc>
   </url><url>
-    <loc>https://yhzhang0712-sudo.github.io/search/</loc>
+    <loc>http://localhost:1313/search/</loc>
   </url>
 </urlset>
