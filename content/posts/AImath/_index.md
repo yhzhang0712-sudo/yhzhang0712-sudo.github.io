@@ -9,7 +9,6 @@ hideTitle: true
     <button type="button" class="ai-tab-btn tab-orange" onclick="switchAiTab('agent', this)">Agent</button>
     <button type="button" class="ai-tab-btn tab-green" onclick="switchAiTab('tools', this)">AI工具</button>
     <button type="button" class="ai-tab-btn tab-blue" onclick="switchAiTab('math', this)">AI与数学</button>
-    <button type="button" class="ai-tab-btn tab-purple" onclick="switchAiTab('philosophy', this)">AI哲学</button>
     <button type="button" class="ai-tab-btn tab-teal" onclick="switchAiTab('education', this)">AI与教育</button>
   </div>
 
@@ -178,6 +177,8 @@ hideTitle: true
           <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 十项数学进展⑨ Multicolor Ramsey：解决 Erdős #183</a> — 超指数级下界，R_k(3)=k^{Θ(k)}，解决 Erdős #183</li>
           <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 十项数学进展⑩ Extremal number：证伪两项 Erdős–Simonovits 型猜想</a> — 反例证伪两个极值图论猜想（对应 #146、#180）</li>
           <li><span class="ai-year">08-10</span>｜<a href="https://www.anthropic.com/research/riemann-zeta">Claude 在黎曼ζ函数零点问题上把临界线比例下界推进到约 67.2%</a> — 推进临界线下界到约 67.2%（黎曼猜想仍未解决）</li>
+          <li><span class="ai-year">08-13</span>｜<a href="https://new.qq.com/rain/a/20260813A06C0E00">协和神经外科医师金山木借助 GPT-5.6 自主运行 16 小时证明 Crouzeix 猜想</a> — 困扰数值线性代数界 22 年的 Crouzeix 猜想（自 2004 年提出）由非数学科班背景的北京协和医院神经外科住院医师 Shanmu Jin（金山木）借助 GPT-5.6 自主运行约 16 小时完成，验证者包括猜想提出者 Michel Crouzeix 本人</li>
+          <li><span class="ai-year">08-14</span>｜<a href="https://terrytao.wordpress.com/2026/08/14/">Tao 借助 AI 协作证明 Tang–Zhang（唐–张）猜想（n 充分大）</a> — 据知乎用户贴出的 Tao 2026-08-14 博客截图：借助 AI 协作，证明了该猜想在充分大的 n 时成立</li>
         </ul>
       </div>
     </div>

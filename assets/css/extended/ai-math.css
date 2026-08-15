@@ -1,6 +1,7 @@
 /* ─── AI 与数学页：并列 Tab 按钮 ─── */
 .ai-tabs {
-    margin: 1.2rem 0;
+    margin-top: -0.8rem;
+    margin-bottom: 0.8rem;
 }
 
 .ai-tab-btns {
