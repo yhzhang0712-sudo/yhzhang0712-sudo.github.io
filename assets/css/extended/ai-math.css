@@ -1,0 +1,244 @@
+/* ─── AI 与数学页：并列 Tab 按钮 ─── */
+.ai-tabs {
+    margin: 1.2rem 0;
+}
+
+.ai-tab-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 1.2rem;
+}
+
+/* 通用按钮样式 */
+.ai-tab-btn {
+    padding: 0.55rem 1.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid;
+    border-radius: 999px;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* 红：AI发展史 */
+.tab-red  { border-color: #DC2626; color: #DC2626; }
+.tab-red:hover,  .tab-red.active  { background: #DC2626; color: #fff; }
+
+/* 橙：Agent */
+.tab-orange { border-color: #EA580C; color: #EA580C; }
+.tab-orange:hover, .tab-orange.active { background: #EA580C; color: #fff; }
+
+/* 紫：AI哲学 */
+.tab-purple { border-color: #9333EA; color: #9333EA; }
+.tab-purple:hover, .tab-purple.active { background: #9333EA; color: #fff; }
+
+/* 青：AI与教育 */
+.tab-teal { border-color: #0D9488; color: #0D9488; }
+.tab-teal:hover, .tab-teal.active { background: #0D9488; color: #fff; }
+
+/* 绿：AI工具 */
+.tab-green { border-color: #16A34A; color: #16A34A; }
+.tab-green:hover, .tab-green.active { background: #16A34A; color: #fff; }
+
+/* 蓝：AI与数学 */
+.tab-blue  { border-color: #2563EB; color: #2563EB; }
+.tab-blue:hover,  .tab-blue.active  { background: #2563EB; color: #fff; }
+
+.ai-tab-panel {
+    display: none;
+}
+
+.ai-tab-panel.active {
+    display: block;
+}
+
+.ai-tab-panel ul.ai-timeline {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.ai-tab-panel ul.ai-timeline li {
+    padding: 0.45rem 0;
+    border-bottom: 1px dashed var(--border);
+    line-height: 1.6;
+}
+
+.ai-tab-panel ul.ai-timeline li:last-child {
+    border-bottom: none;
+}
+
+.ai-year {
+    display: inline-block;
+    min-width: 3.4em;
+    font-weight: 700;
+    color: var(--primary);
+    font-variant-numeric: tabular-nums;
+}
+
+.ai-empty {
+    color: var(--secondary);
+    padding: 1rem 0;
+}
+
+/* ─── 年份折叠按钮 ─── */
+.year-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.9rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #fff;
+    background: #2563EB;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    margin: 0.6rem 0 0.4rem;
+}
+
+.year-toggle:hover {
+    background: #1d4ed8;
+}
+
+.year-toggle .arrow {
+    display: inline-block;
+    transition: transform 0.2s ease;
+    font-size: 0.8em;
+}
+
+.year-toggle.collapsed .arrow {
+    transform: rotate(-90deg);
+}
+
+.year-section {
+    margin-bottom: 0.8rem;
+}
+
+.year-content {
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    max-height: 20000px;
+    opacity: 1;
+}
+
+.year-content.collapsed {
+    max-height: 0;
+    opacity: 0;
+}
+
+/* 皇冠标记样式 */
+.crown {
+    font-size: 0.85em;
+    margin-right: 0.2rem;
+}
+
+/* ─── 辅助数学研究的 Agent 列表样式 ─── */
+.agent-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.agent-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed var(--border);
+    line-height: 1.6;
+    padding-left: 1.2em;
+    text-indent: -1.2em;
+}
+
+.agent-list li:last-child {
+    border-bottom: none;
+}
+
+.agent-list li::before {
+    content: "•";
+    margin-right: 0.4em;
+    font-weight: bold;
+}
+
+.agent-list .agent-name {
+    font-weight: 700;
+}
+
+/* ─── Agent 介绍页样式 ─── */
+.agent-intro {
+    max-width: 760px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.agent-intro h2 {
+    color: #EA580C;
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+}
+
+.agent-intro h3 {
+    color: var(--primary);
+    margin-top: 1.6rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.15rem;
+}
+
+.agent-lead {
+    font-size: 1.05rem;
+    color: var(--content);
+    margin-bottom: 1.2rem;
+}
+
+.agent-figure {
+    margin: 1.2rem 0;
+    text-align: center;
+}
+
+.agent-figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.agent-figure figcaption {
+    font-size: 0.85rem;
+    color: var(--secondary);
+    margin-top: 0.5rem;
+}
+
+.agent-compare {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+}
+
+.agent-compare th,
+.agent-compare td {
+    border: 1px solid var(--border);
+    padding: 0.55rem 0.75rem;
+    text-align: left;
+}
+
+.agent-compare th {
+    background: var(--code-bg);
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.agent-compare tbody tr:nth-child(even) {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.agent-summary {
+    margin-top: 1.5rem;
+    padding: 0.9rem 1rem;
+    background: #FFF7ED;
+    border-left: 4px solid #EA580C;
+    border-radius: 0 8px 8px 0;
+    color: #7C2D12;
+}

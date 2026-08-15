@@ -33,7 +33,7 @@ params:
     title: "SimpleMath"
     imageUrl: ""
     buttons:
-      - name: "AI 与数学"
+      - name: "AI"
         url: /posts/aimath/
       - name: "数学闲话"
         url: /posts/数学闲话/

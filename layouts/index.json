@@ -8,7 +8,12 @@
 {{- /* 同时索引嵌套 section 页面（如 AI与数学、数学闲话、代数表示论） */ -}}
 {{- range site.Pages -}}
     {{- if and (eq .Kind "section") (not .Parent.IsHome) (not .Params.searchHidden) }}
-    {{- $.Scratch.Add "index" (dict "title" .Title "content" .Plain "permalink" .Permalink "summary" .Summary) -}}
+    {{- /* AI与数学 专题在首页圆盘显示为 "AI"，搜索结果标题保持一致 */ -}}
+    {{- $sectionTitle := .Title -}}
+    {{- if eq .Title "AI 与数学" }}
+        {{- $sectionTitle = "AI" -}}
+    {{- end -}}
+    {{- $.Scratch.Add "index" (dict "title" $sectionTitle "content" .Plain "permalink" .Permalink "summary" .Summary) -}}
     {{- end }}
 {{- end -}}
 

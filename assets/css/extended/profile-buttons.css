@@ -17,7 +17,7 @@ body.home-bg::before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.3;
+    opacity: 0.1;
     z-index: -1;
     pointer-events: none;
 }
@@ -31,6 +31,16 @@ body.no-home-bg::before {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -3rem;
+}
+
+.pie-tagline {
+    margin-top: 1.2rem;
+    text-align: center;
+    font-size: 0.95rem;
+    font-style: italic;
+    letter-spacing: 0.02em;
+    color: var(--secondary);
 }
 
 .pie-svg {
@@ -64,75 +74,4 @@ body.no-home-bg::before {
 /* 隐藏原生 buttons 区块 */
 .profile .buttons { display: none; }
 
-/* ─── AI 与数学页：三个并列 Tab 按钮（红绿蓝三原色）─── */
-.ai-tabs {
-    margin: 1.2rem 0;
-}
 
-.ai-tab-btns {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    margin-bottom: 1.2rem;
-}
-
-/* 通用按钮样式 */
-.ai-tab-btn {
-    padding: 0.55rem 1.4rem;
-    font-size: 1rem;
-    font-weight: 600;
-    border: 2px solid;
-    border-radius: 999px;
-    background: transparent;
-    cursor: pointer;
-    transition: background 0.2s ease, color 0.2s ease;
-}
-
-/* 红：AI大事记 */
-.tab-red  { border-color: #DC2626; color: #DC2626; }
-.tab-red:hover,  .tab-red.active  { background: #DC2626; color: #fff; }
-
-/* 绿：AI工具 */
-.tab-green { border-color: #16A34A; color: #16A34A; }
-.tab-green:hover, .tab-green.active { background: #16A34A; color: #fff; }
-
-/* 蓝：AI解决数学问题 */
-.tab-blue  { border-color: #2563EB; color: #2563EB; }
-.tab-blue:hover,  .tab-blue.active  { background: #2563EB; color: #fff; }
-
-.ai-tab-panel {
-    display: none;
-}
-
-.ai-tab-panel.active {
-    display: block;
-}
-
-.ai-tab-panel ul.ai-timeline {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-}
-
-.ai-tab-panel ul.ai-timeline li {
-    padding: 0.45rem 0;
-    border-bottom: 1px dashed var(--border);
-    line-height: 1.6;
-}
-
-.ai-tab-panel ul.ai-timeline li:last-child {
-    border-bottom: none;
-}
-
-.ai-year {
-    display: inline-block;
-    min-width: 3.4em;
-    font-weight: 700;
-    color: var(--primary);
-    font-variant-numeric: tabular-nums;
-}
-
-.ai-empty {
-    color: var(--secondary);
-    padding: 1rem 0;
-}

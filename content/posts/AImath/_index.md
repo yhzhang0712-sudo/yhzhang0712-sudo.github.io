@@ -1,17 +1,21 @@
 ---
 title: "AI 与数学"
+hideTitle: true
 ---
 
 <div class="ai-tabs">
   <div class="ai-tab-btns">
-    <button type="button" class="ai-tab-btn tab-red active" onclick="switchAiTab('timeline', this)">AI大事记</button>
+    <button type="button" class="ai-tab-btn tab-red active" onclick="switchAiTab('timeline', this)">AI发展史</button>
+    <button type="button" class="ai-tab-btn tab-orange" onclick="switchAiTab('agent', this)">Agent</button>
     <button type="button" class="ai-tab-btn tab-green" onclick="switchAiTab('tools', this)">AI工具</button>
-    <button type="button" class="ai-tab-btn tab-blue" onclick="switchAiTab('math', this)">AI解决数学问题</button>
+    <button type="button" class="ai-tab-btn tab-blue" onclick="switchAiTab('math', this)">AI与数学</button>
+    <button type="button" class="ai-tab-btn tab-purple" onclick="switchAiTab('philosophy', this)">AI哲学</button>
+    <button type="button" class="ai-tab-btn tab-teal" onclick="switchAiTab('education', this)">AI与教育</button>
   </div>
 
   <div id="ai-panel-timeline" class="ai-tab-panel active">
     <ul class="ai-timeline">
-      <li><span class="ai-year">1943</span>｜<a href="https://zh.wikipedia.org/wiki/%E9%BA%A6%E5%8D%A1%E6%B4%9B%E5%85%8B-%E7%9A%AE%E8%8C%A8%E7%A5%9E%E7%BB%8F%E5%85%83%E6%A8%A1%E5%9E%8B">MP 神经元模型</a>：用数学模拟神经元，神经网络的思想源头（<a href="https://zh.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E7%A5%9E%E7%BB%8F%E5%85%83">人工神经元</a> 相关）</li>
+      <li><span class="ai-year">1943</span>｜<a href="https://zh.wikipedia.org/wiki/%E9%BA%A6%E5%8D%A1%E6%B4%9B-%E7%9A%AE%E8%8C%A8%E7%A5%9E%E7%BB%8F%E5%85%83%E6%A8%A1%E5%9E%8B">MP 神经元模型</a>：用数学模拟神经元，神经网络的思想源头（<a href="https://zh.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E7%A5%9E%E7%BB%8F%E5%85%83">人工神经元</a> 相关）</li>
       <li><span class="ai-year">1950</span>｜<a href="https://zh.wikipedia.org/wiki/%E5%9B%BE%E7%81%B5%E6%B5%8B%E8%AF%95">图灵测试</a>：图灵提出"机器能思考吗"，给出判定智能的标准</li>
       <li><span class="ai-year">1956</span>｜<a href="https://zh.wikipedia.org/wiki/%E8%BE%BE%E7%89%B9%E8%8C%85%E6%96%AF%E4%BC%9A%E8%AE%AE">达特茅斯会议</a>："人工智能"一词正式命名，AI 成为独立学科</li>
       <li><span class="ai-year">1957</span>｜<a href="https://zh.wikipedia.org/wiki/%E6%84%9F%E7%9F%A5%E6%9C%BA">感知机</a>：首个可学习神经网络模型</li>
@@ -69,6 +73,179 @@ title: "AI 与数学"
   </div>
 
   <div id="ai-panel-math" class="ai-tab-panel">
+    <p style="margin:0 0 1rem;font-size:0.95rem;line-height:1.7;">关于 AI 证明数学问题实时跟进参见 <a href="https://vibemathed.com/" style="color:#2563EB;text-decoration:underline;">https://vibemathed.com/</a></p>
+    <div class="year-section">
+      <button class="year-toggle collapsed" onclick="toggleYear(this)"><span class="arrow">▼</span> 2019</button>
+      <div class="year-content collapsed">
+        <ul class="ai-timeline">
+          <li><span class="ai-year">12-02</span>｜<a href="https://arxiv.org/abs/1912.01412">Facebook AI：Transformer 进行符号积分与常微分方程求解</a> — 用 Transformer 直接输出积分与 ODE 解，在论文测试集上超过 Mathematica/Matlab</li>
+        </ul>
+      </div>
+    </div>
+    <div class="year-section">
+      <button class="year-toggle collapsed" onclick="toggleYear(this)"><span class="arrow">▼</span> 2021</button>
+      <div class="year-content collapsed">
+        <ul class="ai-timeline">
+          <li><span class="ai-year">02-03</span>｜<a href="https://www.nature.com/articles/s41586-021-03229-4">Ramanujan Machine 自动生成基本常数的新猜想</a> — 自动搜索出此前未知的连分数猜想，后被人类数学家证明推广</li>
+          <li><span class="ai-year">12-01</span>｜<a href="https://deepmind.google/blog/exploring-the-beauty-of-pure-mathematics-in-novel-ways/">DeepMind：机器学习辅助纯数学发现（纽结理论）</a> — 模型发现代数数据与纽结几何的强关联，引导人类给出严格证明</li>
+          <li><span class="ai-year">12-01</span>｜<a href="https://deepmind.google/blog/exploring-the-beauty-of-pure-mathematics-in-novel-ways/">DeepMind：机器学习辅助表示论研究</a> — 识别重要组合特征，促成新猜想与算法结构</li>
+        </ul>
+      </div>
+    </div>
+    <div class="year-section">
+      <button class="year-toggle collapsed" onclick="toggleYear(this)"><span class="arrow">▼</span> 2022</button>
+      <div class="year-content collapsed">
+        <ul class="ai-timeline">
+          <li><span class="ai-year">10-05</span>｜<a href="https://www.nature.com/articles/s41586-022-05172-4">AlphaTensor 发现新的矩阵乘法算法</a> — 强化学习搜索张量分解，在有限域 Z₂ 上将 4×4 矩阵乘法降到 47 次（复数域 48 次由 2025 AlphaEvolve 得到）</li>
+        </ul>
+      </div>
+    </div>
+    <div class="year-section">
+      <button class="year-toggle collapsed" onclick="toggleYear(this)"><span class="arrow">▼</span> 2023</button>
+      <div class="year-content collapsed">
+        <ul class="ai-timeline">
+          <li><span class="ai-year">12-14</span>｜<a href="https://deepmind.google/blog/funsearch-making-new-discoveries-in-mathematical-sciences-using-large-language-models/">FunSearch 在 cap-set 问题上发现新构造</a> — LLM+演化程序搜索，找到优于已知记录的 cap-set 构造，并用于装箱问题</li>
+        </ul>
+      </div>
+    </div>
+    <div class="year-section">
+      <button class="year-toggle collapsed" onclick="toggleYear(this)"><span class="arrow">▼</span> 2024</button>
+      <div class="year-content collapsed">
+        <ul class="ai-timeline">
+          <li><span class="ai-year">01-17</span>｜<a href="https://deepmind.google/blog/alphageometry-an-olympiad-level-ai-system-for-geometry/">AlphaGeometry 达到接近 IMO 金牌选手的几何解题水平</a> — 30 道奥赛几何题解出 25 题（金牌选手平均 25.9，前最佳 10 题）</li>
+          <li><span class="ai-year">07-25</span>｜<a href="https://deepmind.google/blog/ai-solves-imo-problems-at-silver-medal-level/">AlphaProof + AlphaGeometry 2 在 IMO 2024 达到银牌标准</a> — 解出 6 题中的 4 题，得 28/42 分（AlphaProof 以 Lean 为验证环境）</li>
+        </ul>
+      </div>
+    </div>
+    <div class="year-section">
+      <button class="year-toggle collapsed" onclick="toggleYear(this)"><span class="arrow">▼</span> 2025</button>
+      <div class="year-content collapsed">
+        <ul class="ai-timeline">
+          <li><span class="ai-year">05-14</span>｜<a href="https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/">AlphaEvolve 改进 4×4 复矩阵乘法</a> — 找到复数域 48 次标量乘法构造，改进长期记录</li>
+          <li><span class="ai-year">05-14</span>｜<a href="https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/">AlphaEvolve 系统性搜索数学与算法问题</a> — 在约 50 个开放问题上自动搜索，部分得到改进</li>
+          <li><span class="ai-year">07-19</span>｜<a href="https://openai.com/index/first-proof-submissions/">OpenAI 通用推理模型在 IMO 2025 达到金牌水平</a> — 取得 35/42 分金牌级成绩</li>
+          <li><span class="ai-year">07-21</span>｜<a href="https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/">Gemini Deep Think 在 IMO 2025 达到官方认证金牌水平</a> — 解出 6 题中的 5 题，得 35/42 分，IMO 官方认证</li>
+          <li><span class="ai-year">10-27</span>｜<a href="https://arxiv.org/abs/2510.23513">AI-assisted proof 推进 Nesterov 加速法长期问题</a> — 给出长期悬而未决的迭代点收敛性证明（同期有独立人类工作）</li>
+          <li><span class="ai-year">11-03</span>｜<a href="https://arxiv.org/abs/2511.02864">Tao 等系统测试 AlphaEvolve 于 67 个数学问题</a> — 多数重现已知最佳构造，部分得到新改进，建立较系统案例库</li>
+          <li><span class="ai-year">11-11</span>｜<a href="https://arxiv.org/abs/2511.07721">Tao：有限域 Nikodym 集新构造受 AlphaEvolve/DeepThink 启发</a> — AI 探索给出构造线索，得到改进的新有限域 Nikodym 构造</li>
+          <li><span class="ai-year">11-19</span>｜<a href="https://arxiv.org/abs/2511.15135">Tao：AlphaEvolve 数值探索促成 sum-difference 定理</a> — 自动搜索揭示渐近结构，Tao 转化为严格定理与证明</li>
+          <li><span class="ai-year">12-08</span>｜<a href="https://terrytao.wordpress.com/2025/12/08/the-story-of-erdos-problem-126/">Tao：Erdős #1026 的 48 小时人类+AI+文献协作</a> — 人机与文献协作拼合，快速得到完整结论</li>
+          <li><span class="ai-year">12-16</span>｜<a href="https://arxiv.org/abs/2512.14575">Schmitt：GPT-5/Gemini 发现并组织代数几何证明</a> — 核心证明由 GPT-5 与 Gemini 3 Pro 发现/形成，Claude 辅助写作</li>
+        </ul>
+      </div>
+    </div>
+    <div class="year-section">
+      <button class="year-toggle collapsed" onclick="toggleYear(this)"><span class="arrow">▼</span> 2026</button>
+      <div class="year-content collapsed">
+        <ul class="ai-timeline">
+          <li><span class="ai-year">01-12</span>｜<a href="https://arxiv.org/abs/2601.07421">Erdős #728：自主 AI 给出完整证明</a> — GPT-5.2 Pro + 形式验证，Lean 核验，首批自主 AI 完整解决的 Erdős 问题之一</li>
+          <li><span class="ai-year">01-19</span>｜<a href="https://terrytao.wordpress.com/2026/01/19/rogers-theorem-on-sieving/">Erdős #281：AI 给出漂亮证明，但早有文献蕴含</a> — 后发现有老结果已蕴含该结论</li>
+          <li><span class="ai-year">01-29</span>｜<a href="https://arxiv.org/abs/2601.22401">Aletheia 批量扫描 700 个开放 Erdős 问题</a> — 批量评估并自主解决若干，识别多道已有文献答案的问题</li>
+          <li><span class="ai-year">01-29</span>｜<a href="https://arxiv.org/abs/2601.21442">Aletheia 自主解决 Erdős #1051</a> — 给定开放问题后自主找到解法</li>
+          <li><span class="ai-year">01-30</span>｜<a href="https://arxiv.org/abs/2601.23245">Aletheia：经典群的 eigenweights 结果</a> — 数学内容由 Aletheia 生成，人类改写为论文表述</li>
+          <li><span class="ai-year">02-02</span>｜<a href="https://arxiv.org/abs/2602.02450">Aletheia 参与 independence polynomial 两个定理的关键步骤</a> — 关键技术步骤由 Aletheia 获得</li>
+          <li><span class="ai-year">02-03</span>｜<a href="https://arxiv.org/abs/2602.03716">AxiomProver 从自然语言独立证明 Fel's Conjecture</a> — 自动生成 Lean/Mathlib 定理陈述与机器验证证明</li>
+          <li><span class="ai-year">02-03</span>｜<a href="https://arxiv.org/abs/2602.03722">AxiomProver 解决 Chen–Gendron 的 k-differentials 奇偶性关键猜想</a> — 形式化证明此前阻塞几何结果的猜想</li>
+          <li><span class="ai-year">02-04</span>｜<a href="https://arxiv.org/abs/2602.05090">AxiomProver：Almost all primes are partially regular</a> — 证明密度 1 素数满足 partial regularity，推出 partial Vandiver 定理</li>
+          <li><span class="ai-year">02-04</span>｜<a href="https://arxiv.org/abs/2602.05095">AxiomProver：square-free digit walks 的"新结果"后发现 1947 已有先例</a> — 自动推导公式并完成 Lean 证明，后知 Mirsky 1947 已得</li>
+          <li><span class="ai-year">02-28</span>｜<a href="https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf">Knuth《Claude's Cycles》：Claude 发现 Hamilton 分解构造</a> — 多轮自主探索找到关键构造，Knuth 给出严谨证明</li>
+          <li><span class="ai-year">03-19</span>｜<a href="https://arxiv.org/abs/2603.19052">Aletheia：Hodge bundle 无非平凡子丛</a> — 证明 ≥2 曲线模空间上的 Hodge bundle 无子丛</li>
+          <li><span class="ai-year">03-23</span>｜<a href="https://arxiv.org/abs/2603.21453">Tao：Local Bernstein 问题中 AI 发现核心引理/证明</a> — 关键证明由 AlphaEvolve/ChatGPT 探索发现</li>
+          <li><span class="ai-year">03-31</span>｜<a href="https://arxiv.org/abs/2603.29961">OpenAI：Short proofs of three Erdős problems</a> — 三题核心证明由内部模型产生，人类核验论文化</li>
+          <li><span class="ai-year">04-04</span>｜<a href="https://arxiv.org/abs/2604.03789">Rethlas 自主解决 D. D. Anderson 交换代数问题</a> — 构造反例并形式化证明，否定相关猜想</li>
+          <li><span class="ai-year">04-08</span>｜<a href="https://arxiv.org/abs/2604.06609">OpenAI：Short proofs of five Erdős problems II</a> — 模型给出五题证明，人类主要负责核验与论文化</li>
+          <li><span class="ai-year">04-27</span>｜<a href="https://arxiv.org/abs/2604.24021">QED 多智能体系统攻克 5 个开放应用分析问题中的 3 个</a> — 三个经专家确认正确、原创且非平凡的证明</li>
+          <li><span class="ai-year">05-01</span>｜<a href="https://arxiv.org/abs/2605.00301">Tao 等：AI 引出的 Markov 链技巧解决 Erdős #1196、#1217</a> — 把 von Mangoldt 权重与 Markov 链结合，解决 #1196 和 #1217</li>
+          <li><span class="ai-year">05-20</span>｜<a href="https://arxiv.org/abs/2605.21718">AxiomProver：Partition Polynomials 六个猜想 + 一个反例</a> — 自动证明六个猜想，并发现 binary log-concavity 猜想为假</li>
+          <li><span class="ai-year">05-20</span>｜<a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/">OpenAI 模型证伪平面 Erdős unit-distance 的方格最优猜想</a> — 构造无限族配置证伪长期核心猜想（Golod–Shafarevich + 无穷类域塔）</li>
+          <li><span class="ai-year">05-21</span>｜<a href="https://arxiv.org/abs/2605.22763">DeepMind 形式化代理发现 Anchored GDA 的精确 O(1/t) 收敛结果</a> — 证明精确 O(1/t) 收敛界，发现新参数调度</li>
+          <li><span class="ai-year">05-21</span>｜<a href="https://arxiv.org/abs/2605.22763">DeepMind 形式化代理：353 个 Erdős 形式化开放实例中自主解决 9 个</a> — 自动尝试 353 个实例解决 9 个</li>
+          <li><span class="ai-year">05-24</span>｜<a href="https://arxiv.org/abs/2605.25259">Rethlas：8 个交换代数及相关开放问题的自主解答合集</a> — 汇集 8 个 AI 生成证明/反例，人类专家验证</li>
+          <li><span class="ai-year">06-03</span>｜<a href="https://arxiv.org/abs/2606.05117">Andrews–Dhar 分拆问题：人机协作找到显式双射</a> — AxiomProver 证明并 Lean 验证等分布定理，关键双射人机共同发现</li>
+          <li><span class="ai-year">07-07</span>｜<a href="https://arxiv.org/abs/2607.05739">AxiomProver 推进 arctan 整数值猜想到密度 1</a> — 证明整数值须超快增长，例外至多 O(log N)，原猜想对密度 1 成立</li>
+          <li><span class="ai-year">07-09</span>｜<a href="https://arxiv.org/abs/2607.20525">GPT-5.5 Pro 自主重构多个实数 sum-product 反例证明</a> — 多次独立运行自主生成正确证伪证明，7/8 次成功</li>
+          <li><span class="ai-year">07-19</span>｜<a href="https://x.com/__alpoge__/status/2079028340955197566">Fable 发现三维 Jacobian 猜想反例</a> — 找到三维显式反例，说明经典 Jacobian 猜想在维数 3 为假</li>
+          <li><span class="ai-year">07-31</span>｜<a href="https://arxiv.org/abs/2608.00323">AxiomProver 推进 Han–Xiong fractional Gaussian binomial 猜想</a> — 解决所有 r≥1/2 情形，验证所有正有理 r、k≤200</li>
+          <li><span class="ai-year">07-31</span>｜<a href="https://arxiv.org/abs/2608.00222">Gao 推广 Jacobian 反例机制到所有 n&gt;2</a> — 将三维反例机制推广到所有 n&gt;2，彻底否定 Jacobian 猜想</li>
+          <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 十项数学进展① 高维 sphere packing 新上界</a> — 新上界进一步逼近 Cohn–Elkies 阈值</li>
+          <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 十项数学进展② Binary/Spherical codes 上界</a> — 指数级改进的上界</li>
+          <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 十项数学进展③ 构造 non-sofic groups</a> — 显式构造 non-sofic groups，解决群论核心长期问题</li>
+          <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 十项数学进展④ 证伪 Connes rigidity conjecture</a> — 构造无穷多 property (T) 群同 von Neumann 代数，证伪刚性猜想</li>
+          <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 十项数学进展⑤ Arithmetic circuit complexity 下界</a> — permanent 新下界：Ω(n² log log n) 电路、Ω(n⁴/log n) 公式</li>
+          <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 十项数学进展⑥ Quantum parallel repetition</a> — 一般双人量子博弈的指数型 parallel repetition 定理</li>
+          <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 十项数学进展⑦ Euclidean CVP hardness 改进</a> — 从 3SAT 得新欧氏 CVP 困难性，近似因子 n^(1/400)</li>
+          <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 十项数学进展⑧ Ehrhart volume conjecture</a> — 证明所有维数尖锐最大体积为 (n+1)ⁿ/n!</li>
+          <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 十项数学进展⑨ Multicolor Ramsey：解决 Erdős #183</a> — 超指数级下界，R_k(3)=k^{Θ(k)}，解决 Erdős #183</li>
+          <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 十项数学进展⑩ Extremal number：证伪两项 Erdős–Simonovits 型猜想</a> — 反例证伪两个极值图论猜想（对应 #146、#180）</li>
+          <li><span class="ai-year">08-10</span>｜<a href="https://www.anthropic.com/research/riemann-zeta">Claude 在黎曼ζ函数零点问题上把临界线比例下界推进到约 67.2%</a> — 推进临界线下界到约 67.2%（黎曼猜想仍未解决）</li>
+        </ul>
+      </div>
+    </div>
+    <h3 style="margin-top:1.5rem;color:#2563EB;">辅助数学研究的 Agent</h3>
+    <ul class="agent-list">
+      <li><span class="agent-name">Ramanujan Machine</span>：自动搜索基本常数的连分数表示，生成可证明的数学猜想，已发现数十个新公式并被人类数学家验证</li>
+      <li><span class="agent-name">FunSearch</span>（DeepMind）：LLM + 演化式程序搜索，在 cap-set、装箱等问题上发现超越人类已知记录的新构造</li>
+      <li><span class="agent-name">AlphaEvolve</span>（DeepMind）：Gemini 驱动的进化编码智能体，可自动搜索和优化算法，在矩阵乘法、组合几何、数论等 50+ 问题上取得突破</li>
+      <li><span class="agent-name">AlphaProof / AlphaGeometry</span>（DeepMind）：神经符号双引擎定理证明系统，AlphaProof 以 Lean 为环境进行强化学习证明搜索，AlphaGeometry 专攻欧氏几何，双双达到 IMO 奖牌水平</li>
+      <li><span class="agent-name">AxiomProver</span>：从自然语言数学猜想出发，自动生成 Lean/Mathlib 定理陈述和完整机器验证证明，已独立解决 Fel's Conjecture、Chen–Gendron 猜想等多个开放问题</li>
+      <li><span class="agent-name">Aletheia</span>（DeepMind）：批量扫描和评估开放数学问题，在 700 个 Erdős 问题中自主解决多道，并识别已有文献答案的问题</li>
+      <li><span class="agent-name">Rethlas</span>：专注于交换代数的自主研究系统，可构造反例并给出形式化证明，已在 Anderson 问题、Boij–Söderberg 理论等 8 个开放问题上取得成果</li>
+      <li><span class="agent-name">QED</span>：多智能体数学研究系统，由多个专业 Agent 协作攻克开放问题，已在应用分析领域给出经专家确认的原创证明</li>
+      <li><span class="agent-name">Fable</span>（Anthropic）：基于 Claude 的研究系统，发现三维 Jacobian 猜想反例，展现 AI 在代数几何中的原创构造能力</li>
+      <li><span class="agent-name">OpenAI 推理模型</span>：通用推理能力直接应用于数学研究，从 IMO 金牌到 Erdős 问题、离散几何猜想证伪，展现跨领域知识连接的原创能力</li>
+    </ul>
+  </div>
+
+<div id="ai-panel-agent" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>什么是 Agent？</h2>
+<p class="agent-lead">Agent 可以理解成“<strong>会自己动手干活的 AI</strong>”。你只管告诉它“做什么”，它会自己想办法“怎么做”，中间过程不用你一步一步指挥。</p>
+<figure class="agent-figure">
+<img src="/images/agent-cycle.png" alt="Agent 的工作循环：感知环境 → 思考决策 → 调用工具 → 获得反馈" loading="lazy" />
+<figcaption>Agent 的核心循环：感知 → 思考 → 行动 → 观察</figcaption>
+</figure>
+<h3>看一个具体实例</h3>
+<figure class="agent-figure">
+<img src="/images/agent-example.png" alt="实例：让 Agent 查北京今天天气并给穿衣建议" loading="lazy" />
+<figcaption>实例：让 Agent 查北京今天天气并给穿衣建议 —— 一次完整的「感知 → 行动 → 观察 → 思考」循环</figcaption>
+</figure>
+<h3>和普通 AI 聊天有啥不一样？</h3>
+<table class="agent-compare">
+<thead>
+<tr><th>场景</th><th>普通 AI</th><th>Agent</th></tr>
+</thead>
+<tbody>
+<tr><td>问“北京今天几度？”</td><td>答不出来（不知道现在几点了）</td><td>自己查天气，再告诉你</td></tr>
+<tr><td>“帮我整理这份表格”</td><td>只能给你文字说明</td><td>自己打开文件、改好、保存</td></tr>
+<tr><td>“写个爬虫脚本爬某个网页”</td><td>只给代码示例</td><td>自己写、自己跑、错了自己改</td></tr>
+<tr><td>“帮我订一张明天去上海的票”</td><td>只能给建议</td><td>自己查票、比价、下单</td></tr>
+</tbody>
+</table>
+<p>一句话区分：<strong>普通 AI 只会“说”，Agent 会“做”。</strong></p>
+<h3>Agent 是怎么“做事”的？</h3>
+<p>其实背后只有两件事：</p>
+<ul class="agent-list">
+<li><span class="agent-name">一个聪明的大脑</span>：就是大家常听说的“大模型”（比如 GPT、Claude），负责想问题、做决定。</li>
+<li><span class="agent-name">一双能干活的手脚</span>：让 AI 能上网搜索、读写文件、运行代码、调用其他软件。靠这些“手脚”，AI 才能真的动起来，不只是动嘴。</li>
+</ul>
+<p>举个例子：你让 Agent “帮查一下明天上海会不会下雨”。</p>
+<p>它的大脑先想：“我需要知道明天的天气预报。”<br />然后它的手脚去调用天气 API。<br />拿到结果后，大脑再想：“要不要带伞，要不要提醒用户。”<br />最后用文字告诉你结论。</p>
+<p>这一套“想一步、做一步、看结果、再想”的循环，就是 Agent 能干活的秘密。</p>
+<h3>新手常问的几个问题</h3>
+<ul class="agent-list">
+<li><span class="agent-name">“Agent 和机器人有啥区别？”</span><br />机器人是装在硬件里的实体；Agent 是装在电脑里的软件。一个有物理身体，一个没有。</li>
+<li><span class="agent-name">“它会不会出错？”</span><br />会。Agent 本质是“边想边做”，中间任何一步都可能错。但它有个好处：错了会自己发现、自己重试，不像传统程序一报错就卡死。</li>
+<li><span class="agent-name">“我也能用上吗？”</span><br />能。现在很多聊天 AI 已经在背后悄悄加了 Agent 能力——你让它“上网查一下”“发个邮件”，它就能真的去干。</li>
+</ul>
+<p class="agent-summary">一句话总结：<strong>Agent = 会动嘴 + 会动手的 AI。</strong>你给它一个目标，它会自己想步骤、找工具、做事情，中间不用你盯着。</p>
+</div>
+</div>
+
+  <div id="ai-panel-philosophy" class="ai-tab-panel">
+    <p class="ai-empty">内容整理中，敬请期待…</p>
+  </div>
+
+  <div id="ai-panel-education" class="ai-tab-panel">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 </div>
@@ -79,5 +256,19 @@ function switchAiTab(id, btn) {
   document.querySelectorAll('.ai-tab-panel').forEach(function (p) { p.classList.remove('active'); });
   btn.classList.add('active');
   document.getElementById('ai-panel-' + id).classList.add('active');
+}
+
+function toggleYear(btn) {
+  var content = btn.nextElementSibling;
+  var arrow = btn.querySelector('.arrow');
+  if (content.classList.contains('collapsed')) {
+    content.classList.remove('collapsed');
+    btn.classList.remove('collapsed');
+    arrow.textContent = '▼';
+  } else {
+    content.classList.add('collapsed');
+    btn.classList.add('collapsed');
+    arrow.textContent = '▶';
+  }
 }
 </script>
