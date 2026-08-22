@@ -23,9 +23,17 @@
     transition: background 0.2s ease, color 0.2s ease;
 }
 
-/* 红：AI发展史 */
+/* 红：有限维数猜想 / AI发展史 */
 .tab-red  { border-color: #DC2626; color: #DC2626; }
 .tab-red:hover,  .tab-red.active  { background: #DC2626; color: #fff; }
+
+/* 黄：Auslander-Reiten猜想（彩虹中间色） */
+.tab-yellow { border-color: #CA8A04; color: #CA8A04; }
+.tab-yellow:hover, .tab-yellow.active { background: #CA8A04; color: #fff; }
+
+/* 紫罗兰：Cartan行列式猜想（彩虹末色） */
+.tab-violet { border-color: #7C3AED; color: #7C3AED; }
+.tab-violet:hover, .tab-violet.active { background: #7C3AED; color: #fff; }
 
 /* 橙：Agent */
 .tab-orange { border-color: #EA580C; color: #EA580C; }
