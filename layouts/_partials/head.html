@@ -72,7 +72,7 @@
 {{- /* Search */}}
 {{- if (eq .Layout `search`) -}}
 <link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
-{{- $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" site.Params.fuseOpts)) | resources.Minify }}
+{{- $fastsearch := resources.Get "js/ar-fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" site.Params.fuseOpts)) | resources.Minify }}
 {{- $fusejs := resources.Get "js/fuse.basic.min.js" }}
 {{- $license_js := resources.Get "js/license.js" }}
 {{- if not site.Params.assets.disableFingerprinting }}
@@ -229,6 +229,77 @@
 {{- end }}
 
 {{- partial "extend_head.html" . -}}
+
+{{- /* 搜索关键词高亮：结果链接带 ?q= 跳转到本页时，将正文命中标黄并滚动到首个命中 */}}
+<style>
+mark.search-hit{background:#fff2a8;color:inherit;border-radius:3px;padding:0 1px;box-shadow:0 0 0 1px #f0d878}
+.search-snippet{display:block;font-size:.8em;color:var(--secondary);margin-top:2px;line-height:1.4}
+.search-snippet mark,.search-snippet search-hit{background:#fff2a8;border-radius:2px}
+</style>
+<script>
+(function () {
+  function getQuery() {
+    try { return new URLSearchParams(location.search).get('q') || ''; } catch (e) { return ''; }
+  }
+  function escapeReg(s){ return s.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&'); }
+  function highlightIn(root, q) {
+    if (!q) return 0;
+    var count = 0, skipped = 'script,style,.katex,.katex-display,.search-snippet';
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (n) {
+        if (!n.nodeValue || !n.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+        var p = n.parentNode; if (!p) return NodeFilter.FILTER_REJECT;
+        if (p.closest && p.closest(skipped)) return NodeFilter.FILTER_REJECT;
+        if (p.tagName === 'MARK') return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var nodes = [], re = new RegExp(escapeReg(q), 'gi');
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(function (node) {
+      re.lastIndex = 0;
+      if (re.test(node.nodeValue)) {
+        re.lastIndex = 0;
+        var frag = document.createDocumentFragment(), last = 0, m;
+        while ((m = re.exec(node.nodeValue)) !== null) {
+          if (m.index > last) frag.appendChild(document.createTextNode(node.nodeValue.slice(last, m.index)));
+          var mk = document.createElement('mark');
+          mk.className = 'search-hit';
+          mk.textContent = m[0];
+          frag.appendChild(mk);
+          last = m.index + m[0].length; count++;
+          if (m[0].length === 0) re.lastIndex++;
+        }
+        if (last < node.nodeValue.length) frag.appendChild(document.createTextNode(node.nodeValue.slice(last)));
+        if (count) node.parentNode.replaceChild(frag, node);
+      }
+    });
+    return count;
+  }
+  function run() {
+    var q = getQuery().trim(); if (!q) return;
+    var main = document.querySelector('main.main') || document.body;
+    var n = highlightIn(main, q);
+    if (n > 0) {
+      var first = main.querySelector('mark.search-hit');
+      if (first) {
+        var panel = first.closest('.ai-tab-panel');
+        if (panel && !panel.classList.contains('active')) {
+          var pid = panel.id.replace(/^ar-(theory-)?panel-/, '');
+          var btn = document.querySelector('.ai-tab-btn[onclick*="' + pid + '"]');
+          if (btn) btn.click();
+          else panel.classList.add('active');
+        }
+        first.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        try { history.replaceState(null, '', location.pathname + location.hash); } catch (e) {}
+      }
+    }
+  }
+  if (document.readyState === 'complete') setTimeout(run, 200);
+  else window.addEventListener('load', function () { setTimeout(run, 200); });
+  document.addEventListener('DOMContentLoaded', function () { setTimeout(run, 400); });
+})();
+</script>
 
 {{- /* Misc */}}
 {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
