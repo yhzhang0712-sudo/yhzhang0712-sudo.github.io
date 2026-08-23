@@ -43,7 +43,7 @@ params:
     buttons:
       - name: "AI"
         url: /posts/aimath/
-      - name: "数学闲话"
+      - name: "数学文化"
         url: /posts/数学闲话/
       - name: "代数表示论"
         url: /posts/代数表示论/
