@@ -120,6 +120,20 @@
     box-shadow: 0 4px 14px rgba(30, 64, 175, 0.35);
 }
 
+.ar-sec-btn.sec-green { border-color: #15803D; color: #15803D; }
+.ar-sec-btn.sec-green:hover, .ar-sec-btn.sec-green.active {
+    background: linear-gradient(135deg, #15803D, #22C55E);
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(21, 128, 61, 0.35);
+}
+
+.ar-sec-btn.sec-orange { border-color: #C2410C; color: #C2410C; }
+.ar-sec-btn.sec-orange:hover, .ar-sec-btn.sec-orange.active {
+    background: linear-gradient(135deg, #C2410C, #FB923C);
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(194, 65, 12, 0.35);
+}
+
 .ar-sec-btn:hover { transform: translateY(-1px); }
 
 /* 节容器：默认显示，hidden 时隐藏 */
