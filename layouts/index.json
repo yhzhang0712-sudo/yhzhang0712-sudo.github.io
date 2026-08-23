@@ -5,10 +5,10 @@
     {{- end }}
 {{- end -}}
 
-{{- /* 同时索引嵌套 section 页面（如 AI与数学、数学闲话、代数表示论） */ -}}
+{{- /* 同时索引嵌套 section 页面(如 AI与数学、数学闲话、代数表示论) */ -}}
 {{- range site.Pages -}}
     {{- if and (eq .Kind "section") (not .Parent.IsHome) (not .Params.searchHidden) }}
-    {{- /* AI与数学 专题在首页圆盘显示为 "AI"，搜索结果标题保持一致 */ -}}
+    {{- /* AI与数学 专题在首页圆盘显示为 "AI",搜索结果标题保持一致 */ -}}
     {{- $sectionTitle := .Title -}}
     {{- if eq .Title "AI 与数学" }}
         {{- $sectionTitle = "AI" -}}
@@ -28,7 +28,7 @@
     {{- $lis := findRE `<li><span class="ai-year">\d{4}</span>｜.*?</li>` $content -}}
     {{- range $lis -}}
         {{- $year := replaceRE `.*?<span class="ai-year">(\d{4})</span>｜.*` "$1" . -}}
-        {{- /* 标题和描述以"｜年份"开头，以"："或</li>分隔；部分条目没有"：" */ -}}
+        {{- /* 标题和描述以“｜年份”开头，以“：”或</li>分隔；部分条目没有“：” */ -}}
         {{- $rest := replaceRE `.*?<span class="ai-year">\d{4}</span>｜(.*)` "$1" . -}}
         {{- $titleHTML := replaceRE `^(.*?)：.*$` "$1" $rest -}}
         {{- $descHTML := replaceRE `^.*?：(.*?)</li>$` "$1" $rest -}}
@@ -42,6 +42,19 @@
         {{- if $titleText -}}
             {{- $entryTitle := printf "%s｜%s" $year $titleText -}}
             {{- $.Scratch.Add "index" (dict "title" $entryTitle "content" $descText "permalink" $permalink "summary" $descText) -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+
+{{- /* 解析“代数表示论”各猜想面板为独立搜索项，permalink 带 #ar-panel-xxx 锚点 */ -}}
+{{- $ar := site.GetPage "posts/代数表示论" -}}
+{{- if $ar -}}
+    {{- $panelKeys := slice "finite" "nakayama" "gorenstein" "wakamatsu" "cartan" -}}
+    {{- range $panelKeys -}}
+        {{- $p := site.GetPage (printf "posts/代数表示论/panels/%s" .) -}}
+        {{- if $p -}}
+            {{- $permalink := print $ar.Permalink "#ar-panel-" . -}}
+            {{- $.Scratch.Add "index" (dict "title" $p.Title "content" $p.Plain "permalink" $permalink "summary" $p.Summary) -}}
         {{- end -}}
     {{- end -}}
 {{- end -}}
