@@ -24,7 +24,7 @@ math: true
 
   <div id="ar-panel-finite" class="ai-tab-panel active">
 <h3 class="ar-subhead">猜想陈述</h3>
-<p>有限维数猜想（Finitistic Dimension Conjecture，简称 FDC）断言：任何 Artin 代数 $\Lambda$ 上，有限投射维数的有限生成模，其投射维数一致有界。即</p>
+<p><strong>有限维数猜想（FDC, Bass, 1960）</strong>：任何 Artin 代数 $\Lambda$ 上，有限投射维数的有限生成模，其投射维数一致有界。即</p>
 
 $$ \operatorname{findim}\Lambda \;=\; \sup\{\,\operatorname{pd}_{\Lambda}M : M\in\operatorname{mod}\Lambda,\ \operatorname{pd}_{\Lambda}M<\infty\,\} \;<\; \infty . $$
 
@@ -142,14 +142,14 @@ $$ \operatorname{Ext}_A^n(M,\, A) \;\neq\; 0. $$
 
   <div id="ar-panel-gorenstein" class="ai-tab-panel">
 <h3 class="ar-subhead">猜想陈述</h3>
-<p>Gorenstein 对称猜想（GSC，Auslander-Reiten， 1975）：设 $\Lambda$ 是 Artin 代数，则：</p>
+<p><strong>Gorenstein 对称猜想</strong>（GSC，Auslander-Reiten， 1975）：设 $\Lambda$ 是 Artin 代数，则：</p>
 
 $$ \operatorname{id}_{\Lambda}\Lambda < \infty \;\Longrightarrow\; \operatorname{id}_{\Lambda^{\mathrm{op}}}\Lambda^{\mathrm{op}} < \infty . $$
 
 相关猜想：
-<p><strong>(1) 左右对称</strong>：$\operatorname{Ggldim}A=\operatorname{Ggldim}A^{\mathrm{op}}$；</p>
-<p><strong>(2) 自内射维数对称</strong>：$\operatorname{Gid}_{A}A=\operatorname{Gid}_{A^{\mathrm{op}}}A^{\mathrm{op}}$（或其有限性的“当且仅当”对应）；</p>
-<p><strong>(3) 投射模类对称</strong>：</p>
+<p>(1) 左右对称：$\operatorname{Ggldim}A=\operatorname{Ggldim}A^{\mathrm{op}}$；</p>
+<p>(2) 自内射维数对称：$\operatorname{Gid}_{A}A=\operatorname{Gid}_{A^{\mathrm{op}}}A^{\mathrm{op}}$（或其有限性的“当且仅当”对应）；</p>
+<p>(3) 投射模类对称：</p>
 
 $$ D(\operatorname{GProj}(A))\;\subseteq\;\operatorname{GInj}(A^{\mathrm{op}}),\qquad D=\operatorname{Hom}_{k}(-,\,k). $$
 
