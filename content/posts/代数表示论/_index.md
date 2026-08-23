@@ -81,6 +81,8 @@ math: true
     <button type="button" class="ai-tab-btn tab-yellow" onclick="switchArFrontier('approximable', this)">Approximable Triangulated category</button>
     <button type="button" class="ai-tab-btn tab-green" onclick="switchArFrontier('cluster', this)">Cluster Theory</button>
     <button type="button" class="ai-tab-btn tab-blue" onclick="switchArFrontier('operad', this)">Operad Theory</button>
+    <button type="button" class="ai-tab-btn tab-teal" onclick="switchArFrontier('har', this)">高维AR理论</button>
+    <button type="button" class="ai-tab-btn tab-purple" onclick="switchArFrontier('tautilting', this)">$\tau$-tilting理论</button>
   </div>
 
   <div id="ar-frontier-panel-infinity" class="ai-tab-panel active">
@@ -100,6 +102,14 @@ math: true
   </div>
 
   <div id="ar-frontier-panel-operad" class="ai-tab-panel">
+    <p class="ai-empty">内容整理中，敬请期待…</p>
+  </div>
+
+  <div id="ar-frontier-panel-har" class="ai-tab-panel">
+    <p class="ai-empty">内容整理中，敬请期待…</p>
+  </div>
+
+  <div id="ar-frontier-panel-tautilting" class="ai-tab-panel">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 </div>
