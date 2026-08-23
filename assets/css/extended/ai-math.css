@@ -79,6 +79,145 @@
     border-bottom: none;
 }
 
+/* ─── 全局：加宽正文容器，减小左右留白 ─── */
+:root {
+    --main-width: 1000px;
+    --gap: 16px;
+}
+
+/* ─── 代数表示论页：节切换按钮（暗彩虹逆序） ─── */
+.ar-section-switch {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin: 0.4rem 0 1.5rem;
+}
+
+/* 节按钮：圆角矩形块，与圆胶囊的猜想按钮区分，凸显层次 */
+.ar-sec-btn {
+    padding: 0.7rem 2.2rem;
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    border: 2px solid;
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ar-sec-btn.sec-violet { border-color: #5B21B6; color: #5B21B6; }
+.ar-sec-btn.sec-violet:hover, .ar-sec-btn.sec-violet.active {
+    background: linear-gradient(135deg, #5B21B6, #7C3AED);
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(91, 33, 182, 0.35);
+}
+
+.ar-sec-btn.sec-blue { border-color: #1E40AF; color: #1E40AF; }
+.ar-sec-btn.sec-blue:hover, .ar-sec-btn.sec-blue.active {
+    background: linear-gradient(135deg, #1E40AF, #3B82F6);
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(30, 64, 175, 0.35);
+}
+
+.ar-sec-btn:hover { transform: translateY(-1px); }
+
+/* 节容器：默认显示，hidden 时隐藏 */
+.ar-section[hidden] { display: none; }
+
+/* ─── 代数表示论页：子标题与猜想关系图 ─── */
+.ar-section-title {
+    margin: 1.2rem 0 0.6rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid var(--primary);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+/* ─── 论文式小节标题（猜想陈述 / 研究现状 / 前沿成果 / 参考文献） ─── */
+.ar-subhead {
+    font-size: 1.28rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 1.8rem 0 0.8rem;
+    padding-left: 0.7rem;
+    border-left: 4px solid var(--primary);
+    line-height: 1.4;
+}
+
+/* 公式块：居中、留白、可横向滚动 */
+.katex-display {
+    margin: 1rem 0;
+    padding: 0.2rem 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.katex {
+    font-size: 1.06em;
+}
+
+/* 年份时间线（研究现状） */
+.ar-timeline {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.2rem 0 0.4rem;
+}
+
+.ar-timeline li {
+    position: relative;
+    padding: 0.5rem 0 0.5rem 4.8rem;
+    border-bottom: 1px dashed var(--border);
+    line-height: 1.75;
+}
+
+.ar-timeline li:last-child { border-bottom: none; }
+
+.ar-timeline .ar-year {
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    min-width: 3.9rem;
+    font-weight: 700;
+    color: var(--primary);
+    font-variant-numeric: tabular-nums;
+}
+
+/* 参考文献（数学论文规范格式） */
+.ar-ref {
+    margin: 0.45rem 0;
+    padding-left: 2.7rem;
+    text-indent: -2.7rem;
+    line-height: 1.65;
+    font-size: 0.95rem;
+}
+
+.ar-ref .ar-ref-no {
+    font-weight: 700;
+    color: var(--secondary);
+    margin-right: 0.35rem;
+}
+
+.ar-ref i { font-style: italic; }
+.ar-ref b { font-weight: 700; }
+
+.ar-image-wrap {
+    text-align: center;
+    margin: 0.6rem 0 0.8rem;
+}
+
+.ar-image-wrap img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.ar-theory-tabs {
+    margin-bottom: 1.5rem;
+}
+
 .ai-year {
     display: inline-block;
     min-width: 3.4em;
