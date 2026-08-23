@@ -125,6 +125,7 @@ math: true
     <button type="button" class="ai-tab-btn tab-yellow" onclick="switchArHot('gentle', this)">Gentle Algebra</button>
     <button type="button" class="ai-tab-btn tab-orange" onclick="switchArHot('preprojective', this)">Preprojective Algebra</button>
     <button type="button" class="ai-tab-btn tab-red" onclick="switchArHot('gorensteinhomo', this)">Gorenstein 同调理论</button>
+    <button type="button" class="ai-tab-btn tab-teal" onclick="switchArHot('geometric', this)">Geometric model</button>
   </div>
 
   <div id="ar-hot-panel-dgenhance" class="ai-tab-panel active">
@@ -144,6 +145,10 @@ math: true
   </div>
 
   <div id="ar-hot-panel-gorensteinhomo" class="ai-tab-panel">
+    <p class="ai-empty">内容整理中，敬请期待…</p>
+  </div>
+
+  <div id="ar-hot-panel-geometric" class="ai-tab-panel">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 </div>
