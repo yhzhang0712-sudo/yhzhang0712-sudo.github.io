@@ -31,7 +31,17 @@ body.no-home-bg::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -3rem;
+    margin-top: 0.2rem;
+}
+
+/* 圆盘上方居中英文题句，与圆盘、下方 tagline 构成整体 */
+.pie-lead {
+    margin: 0;
+    text-align: center;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: var(--primary);
 }
 
 .pie-tagline {
