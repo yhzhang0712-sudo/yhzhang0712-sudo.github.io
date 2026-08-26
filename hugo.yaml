@@ -45,7 +45,7 @@ params:
         url: /posts/aimath/
       - name: "数学文化"
         url: /posts/数学闲话/
-      - name: "代数表示论"
+      - name: "代数表示论与同调代数"
         url: /posts/代数表示论/
 
 menu:

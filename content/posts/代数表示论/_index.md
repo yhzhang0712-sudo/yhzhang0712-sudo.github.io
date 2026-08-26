@@ -1,5 +1,5 @@
 ---
-title: "代数表示论"
+title: "代数表示论与同调代数"
 hideTitle: true
 math: true
 ---
