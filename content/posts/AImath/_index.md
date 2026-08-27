@@ -3,7 +3,7 @@ title: "AI 与数学"
 hideTitle: true
 ---
 
-<div class="ai-tabs">
+<div class="ai-tabs ai-panel-tabs">
   <div class="ai-tab-btns">
     <button type="button" class="ai-tab-btn tab-red active" onclick="switchAiTab('timeline', this)">AI发展史</button>
     <button type="button" class="ai-tab-btn tab-orange" onclick="switchAiTab('agent', this)">Agent</button>

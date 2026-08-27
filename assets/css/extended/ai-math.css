@@ -27,7 +27,7 @@
     margin-bottom: 1rem;
 }
 
-/* 通用按钮样式 */
+/* 通用按钮样式（胶囊形，用于子层 Tab；外层 AI 面板 5 按钮见下方覆写） */
 .ai-tab-btn {
     padding: 0.55rem 1.4rem;
     font-size: 1rem;
@@ -37,6 +37,26 @@
     background: transparent;
     cursor: pointer;
     transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* AI 与数学面板外层 5 按钮（只对独有 .ai-panel-tabs 类生效，不污染代数表示论页的二级 ai-tabs） */
+.ai-panel-tabs > .ai-tab-btns > .ai-tab-btn {
+    padding: 0.7rem 1.6rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    border-width: 2.5px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    letter-spacing: 0.02em;
+}
+
+.ai-panel-tabs > .ai-tab-btns > .ai-tab-btn:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transform: translateY(-1px);
+}
+
+.ai-panel-tabs > .ai-tab-btns > .ai-tab-btn.active {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
 }
 
 /* 红：有限维数猜想 / AI发展史 */
