@@ -9,7 +9,7 @@ hideTitle: true
     <button type="button" class="ai-tab-btn tab-orange" onclick="switchAiTab('agent', this)">Agent</button>
     <button type="button" class="ai-tab-btn tab-green" onclick="switchAiTab('tools', this)">AI工具</button>
     <button type="button" class="ai-tab-btn tab-blue" onclick="switchAiTab('math', this)">AI与数学</button>
-    <button type="button" class="ai-tab-btn tab-teal" onclick="switchAiTab('education', this)">AI与教育</button>
+    <button type="button" class="ai-tab-btn tab-purple" onclick="switchAiTab('education', this)">AI与教育</button>
   </div>
 
   <div id="ai-panel-timeline" class="ai-tab-panel active">
@@ -166,20 +166,14 @@ hideTitle: true
           <li><span class="ai-year">07-19</span>｜<a href="https://x.com/__alpoge__/status/2079028340955197566">Fable 发现三维 Jacobian 猜想反例</a> — 找到三维显式反例，说明经典 Jacobian 猜想在维数 3 为假</li>
           <li><span class="ai-year">07-31</span>｜<a href="https://arxiv.org/abs/2608.00323">AxiomProver 推进 Han–Xiong fractional Gaussian binomial 猜想</a> — 解决所有 r≥1/2 情形，验证所有正有理 r、k≤200</li>
           <li><span class="ai-year">07-31</span>｜<a href="https://arxiv.org/abs/2608.00222">Gao 推广 Jacobian 反例机制到所有 n&gt;2</a> — 将三维反例机制推广到所有 n&gt;2，彻底否定 Jacobian 猜想</li>
-          <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 十项数学进展① 高维 sphere packing 新上界</a> — 新上界进一步逼近 Cohn–Elkies 阈值</li>
-          <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 十项数学进展② Binary/Spherical codes 上界</a> — 指数级改进的上界</li>
-          <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 十项数学进展③ 构造 non-sofic groups</a> — 显式构造 non-sofic groups，解决群论核心长期问题</li>
-          <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 十项数学进展④ 证伪 Connes rigidity conjecture</a> — 构造无穷多 property (T) 群同 von Neumann 代数，证伪刚性猜想</li>
-          <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 十项数学进展⑤ Arithmetic circuit complexity 下界</a> — permanent 新下界：Ω(n² log log n) 电路、Ω(n⁴/log n) 公式</li>
-          <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 十项数学进展⑥ Quantum parallel repetition</a> — 一般双人量子博弈的指数型 parallel repetition 定理</li>
-          <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 十项数学进展⑦ Euclidean CVP hardness 改进</a> — 从 3SAT 得新欧氏 CVP 困难性，近似因子 n^(1/400)</li>
-          <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 十项数学进展⑧ Ehrhart volume conjecture</a> — 证明所有维数尖锐最大体积为 (n+1)ⁿ/n!</li>
-          <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 十项数学进展⑨ Multicolor Ramsey：解决 Erdős #183</a> — 超指数级下界，R_k(3)=k^{Θ(k)}，解决 Erdős #183</li>
-          <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 十项数学进展⑩ Extremal number：证伪两项 Erdős–Simonovits 型猜想</a> — 反例证伪两个极值图论猜想（对应 #146、#180）</li>
+          <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 一口气公布十项数学进展</a> — 涵盖高维 sphere packing 新上界、binary/spherical codes 指数级上界、显式构造 non-sofic groups、证伪 Connes rigidity 猜想、permanent 算术电路新下界（Ω(n² log log n) 电路 / Ω(n⁴/log n) 公式）、一般双人量子博弈的指数型 parallel repetition 定理、Euclidean CVP 困难性改进（近似因子 n^(1/400)）、Ehrhart volume 猜想（所有维数尖锐最大体积 (n+1)ⁿ/n!）、多色 Ramsey 解决 Erdős #183（R_k(3)=k^{Θ(k)}），以及证伪两项 Erdős–Simonovits 型极值图论猜想（对应 #146、#180）</li>
           <li><span class="ai-year">08-10</span>｜<a href="https://www.anthropic.com/research/riemann-zeta">Claude 在黎曼ζ函数零点问题上把临界线比例下界推进到约 67.2%</a> — 推进临界线下界到约 67.2%（黎曼猜想仍未解决）</li>
           <li><span class="ai-year">08-13</span>｜<a href="https://new.qq.com/rain/a/20260813A06C0E00">协和神经外科医师金山木借助 GPT-5.6 自主运行 16 小时证明 Crouzeix 猜想</a> — 困扰数值线性代数界 22 年的 Crouzeix 猜想（自 2004 年提出）由非数学科班背景的北京协和医院神经外科住院医师 Shanmu Jin（金山木）借助 GPT-5.6 自主运行约 16 小时完成，验证者包括猜想提出者 Michel Crouzeix 本人</li>
           <li><span class="ai-year">08-14</span>｜<a href="https://terrytao.wordpress.com/2026/08/14/">Tao 借助 AI 协作证明 Tang–Zhang（唐–张）猜想（n 充分大）</a> — 据知乎用户贴出的 Tao 2026-08-14 博客截图：借助 AI 协作，证明了该猜想在充分大的 n 时成立</li>
           <li><span class="ai-year">08-17</span>｜<a href="https://www.proofatlas.ai/papers/sendov-conjecture/SENDOV_CONJECTURE_PROOF_AUGUST_5_2026.pdf">森多夫猜想（Sendov）被 AI 辅助证明</a> — Lech Mazur 借助 GPT-5.6 Pro 完成对所有次数 n≥2 的计算机辅助证明，配约 9 万行 Lean 4 形式化代码；Tao 数日后消化并重形式化（代码缩至约 1.5 万行），并发现该论证实际证出更强的 Phelps–Rodriguez 猜想（<a href="https://terrytao.wordpress.com/2026/08/12/a-digestion-of-the-proof-of-sendovs-conjecture/">Tao 博客</a>）</li>
+          <li><span class="ai-year">08-19</span>｜<a href="https://arxiv.org/abs/2608.19301">刘继豪（Jihao Liu）借助生成式 AI 证伪 Yau–Tian–Donaldson 猜想</a> — 构造一个 K-多稳定（K-polystable）的极化光滑射影五维簇，却不存在常数量曲率 Kähler（cscK）度量，从而证伪 cscK 情形下的 YTD 猜想；论文声明主要结果由生成式 AI（GPT-5.6-sol、Fable 5、Danus 系统）获得</li>
+          <li><span class="ai-year">08-24</span>｜<a href="https://alpo.ge/s6.pdf">Alpöge 借助 Claude 构造 S⁶ 的复结构</a> — 哈佛/Anthropic 的 Levent Alpöge 与 Claude 合作，构造出同胚（乃至微分同胚）于六维球面 S⁶ 的紧致复三维流形 X，证明 S⁶ 上存在复结构，攻克自 1948 年提出的 Hopf 问题（六维球面是否有复结构）</li>
+          <li><span class="ai-year">08-25</span>｜<a href="https://agihunt.info/en/p/19ffbf0323ce31bd004d0fa4862">Bourgain–Brezis–Sobolev 猜想被 AI 快速攻克</a> — 8 月 4 日 arXiv 出现部分进展论文后，用户让 AI 在两天内给出完整证明；8 月 8 日又出现一篇 AI 辅助的完整解决论文，从部分进展到完全破解仅数日</li>
         </ul>
       </div>
     </div>
@@ -199,6 +193,15 @@ hideTitle: true
   </div>
 
 <div id="ai-panel-agent" class="ai-tab-panel">
+
+<div class="ai-tabs ai-agent-tabs">
+  <div class="ai-tab-btns">
+    <button type="button" class="ai-tab-btn tab-purple active" onclick="switchAiAgentTab('intro', this)">什么是 Agent?</button>
+    <button type="button" class="ai-tab-btn tab-blue" onclick="switchAiAgentTab('science', this)">数学科研 Agent</button>
+    <button type="button" class="ai-tab-btn tab-orange" onclick="switchAiAgentTab('ppt', this)">PPT Agent</button>
+  </div>
+
+  <div id="ai-agent-panel-intro" class="ai-tab-panel active">
 <div class="agent-intro">
 <h2>什么是 Agent？</h2>
 <p class="agent-lead">Agent 可以理解成“<strong>会自己动手干活的 AI</strong>”。你只管告诉它“做什么”，它会自己想办法“怎么做”，中间过程不用你一步一步指挥。</p>
@@ -241,6 +244,60 @@ hideTitle: true
 </ul>
 <p class="agent-summary">一句话总结：<strong>Agent = 会动嘴 + 会动手的 AI。</strong>你给它一个目标，它会自己想步骤、找工具、做事情，中间不用你盯着。</p>
 </div>
+  </div>
+
+  <div id="ai-agent-panel-science" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>数学科研 Agent</h2>
+<p class="agent-lead">让 AI 不只是“写数学证明草稿”，而是真正进入数学研究工作流：读文献、形式化猜想、组织多人协作证伪、直到拿到可被 Lean/Coq 验证的完整证明。下面四个系统是目前最值得关注的代表。</p>
+
+<h3><span class="agent-name">Danus</span> · 研究级数学推理编排</h3>
+<p><strong>它是什么</strong>：一个面向研究级数学推理的多 Agent 编排系统，arXiv 2607.06447（CS.AI / CL / MA），已开源在 <code>github.com/frenzymath/Danus</code>。</p>
+<p><strong>核心机制</strong>：以一个共享的 <em>fact graph</em>（事实 DAG）作为全局记忆，主体 Agent 做高层规划，多个 Worker Agent 并行做证明搜索，一个无状态的 Verifier Agent 校验每一步的逻辑合法性；通过「提交 → 验证 → 修复」循环推进整体证明，并支持事实撤回 + 下游依赖自动删除。</p>
+<p><strong>在哪些场景里被验证过</strong>：代数几何、奇点理论、组合数学 6 个研究级案例。</p>
+<p><strong>工程实现</strong>：底层用 Claude Code 当主控，Claude Opus 4.8 做状态合成，GPT-5.5-pro 做数学咨询，Matlas 做文献检索。</p>
+<p><strong>怎么用</strong>：克隆仓库后按 README 配置 API key，给一个 Lean 形式化的命题陈述，系统会调度多 Agent 并行尝试证明，并产出可被 Lean 验证的完整脚本。</p>
+
+<h3><span class="agent-name">ClawsGO Science</span> · 科研云端助理</h3>
+<p><strong>它是什么</strong>：ClawsGO 旗下面向科研场景的云端 AI 助理，定位 <a href="https://clawsgo.ai/">clawsgo.ai</a> 上的「Research-grade intelligence for long and complex tasks」。任务跑在云端专用机器上，不占本地算力，电脑合上也能继续推进。</p>
+<p><strong>核心机制</strong>：用「集群 Agent」模式处理复杂课题——把任务拆给一组并行 Agent，每个 Agent 背后根据步骤挑选最合适的模型（Claude 5 / GPT 5.6 / Claude Opus 5），过程逐步可追溯、跨角度交叉验证，最后合成一份可引用的成品而不是对话日志。</p>
+<p><strong>支持的能力</strong>：长时执行（数小时不中断、中断后自动续跑）、每条结论都标注来源、会自动学习你的偏好（格式/习惯用语），任务需要新能力时还会自己去找技能。</p>
+<p><strong>适合谁</strong>：不想自己搭集群、本地又跑不动长任务的研究者；想随时关电脑、回来就能看到结果的工程/科研团队。</p>
+
+<h3><span class="agent-name">ScienceClaw</span> · MIT LAMM 实验室 · 去中心化科研 Swarm</h3>
+<p><strong>它是什么</strong>：MIT 马克斯·布勒（Markus J. Buehler）LAMM 团队发布的开源科研多 Agent 框架，论文 <a href="https://arxiv.org/abs/2603.14312">arXiv:2603.14312</a>，代码 <a href="https://github.com/lamm-mit/scienceclaw">github.com/lamm-mit/scienceclaw</a>，自托管、开源。</p>
+<p><strong>核心机制</strong>：三件套——① <em>300+ 可组合科研技能</em>（按主题挑选 5-12 个技能组成链路）；② <em>Artifact DAG 谱系</em>（每次技能调用都生成 UUID + SHA-256 内容哈希 + 父节点指针的不可变 artifact，全过程可追溯）；③ <em>ArtifactReactor 无中央协调</em>（Agent 把未满足的研究需求广播到全局索引，其他 Agent 用「压力评分」自动响应，无需任何任务分配）。同时有 Paraxiom Trust Layer 做 PQC 后量子密码学鉴证，Coherence Shield 做幻觉过滤。</p>
+<p><strong>已经产出的真实成果</strong>：4 个独立研究课题——① SSTR2 受体肽设计；② 抗冲击轻量化陶瓷筛选；③ 跨域共振（蟋蟀翅膀 / 声子晶体 / 巴赫众赞歌）的桥接研究；④ 城市形态与晶界演化的形式类比。</p>
+<p><strong>怎么用</strong>：克隆仓库 → <code>python3 -m venv .venv</code> → <code>./install_scienceclaw_command.sh</code> → <code>python3 setup.py</code> 注册 Agent；单次任务用 <code>scienceclaw-post --agent MyAgent --topic "..."</code>，多 Agent 协作用 <code>scienceclaw-investigate "..."</code>，心跳守护进程 6 小时一轮自动巡检。</p>
+
+<h3><span class="agent-name">MechMath Agent Team（MMAT）</span> · 中科院数学院 · 数学研究全周期副驾驶</h3>
+<p><strong>它是什么</strong>：中科院数学与系统科学研究院（数学科学国家重点实验室）高小山团队发布的论文 <a href="https://arxiv.org/abs/2607.04394">arXiv:2607.04394</a>，定位「数学研究全周期的 LLM 副驾驶」。</p>
+<p><strong>核心机制</strong>：<em>三方 Harness 架构</em>——① 控制平面（Control Plane）做调度；② 执行平面（Execution Plane）做隔离工作区与文件式交接，避免上下文污染；③ 增强平面（Augmentation Plane）做人在回路干预。架构上实例化 3 个专门 Agent：<em>KB-Manager</em>（知识库管理员）、<em>NL-Prover</em>（自然语言证明器）、<em>FL-Prover</em>（形式语言证明器，编译 Lean 4 验证脚本），通过「Inform → Formalize → Feedback → Archive」闭环产出可被 Lean 验证的数学证明。</p>
+<p><strong>已攻克的开放问题</strong>：两个月的部署里解决了数论、代数复杂性理论、微分代数、算子代数、不等式 5 个领域共 <strong>11 个开放问题</strong>，并由 Lean 4 完成形式化。例如：OEIS A287616「每个非负整数可写为三角数+五角数+七角数之和」、OEIS A080170 二项式 gcd 判据、$n=9$ Vasc 循环不等式正实数情形。</p>
+<p><strong>与其它数学 Agent 的区别</strong>：从最初的「凑证明」思路升级到「提交 Lean 验证」是质变——证明的正确性不再依赖 LLM 自我评估，而是由 Lean 4 内核做终极判定。这也是当前形式化数学（formalization）赛道的主流方向。</p>
+</div>
+  </div>
+
+  <div id="ai-agent-panel-ppt" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>PPT Agent</h2>
+<p class="agent-lead">让 AI 帮你做演示文稿，不再只是“写大纲+贴文字”，而是直接生成可编辑、可演讲、可二次美化的完整 PPT。下面两个工具是这类 Agent 的代表。</p>
+
+<h3><span class="agent-name">OpenMAIC</span> · 清华 MAIC · 多 Agent 互动课堂</h3>
+<p><strong>它是什么</strong>：清华大学 THU-MAIC 团队开源的「<em>Open Multi-Agent Interactive Classroom</em>」平台，<a href="https://github.com/THU-MAIC/OpenMAIC">github.com/THU-MAIC/OpenMAIC</a>，2026-06-28 v0.3.0 起从 AGPL-3.0 改为 <em>MIT 许可证</em>，可商用。</p>
+<p><strong>核心机制</strong>：多 Agent 编排——AI 老师 + AI 同学实时授课、讨论、互动；两阶段管线（Outline → Scenes）。支持的「场景类型」远超普通 PPT：① 语音讲解幻灯片（含聚光灯 + 激光笔动画）；② 互动测验（单选/多选/简答 + AI 实时判分）；③ HTML 互动模拟（物理仿真/流程图/小游戏）；④ 项目制学习 PBL（角色扮演 + 里程碑 + 交付物）；⑤ 白板实时绘图与公式书写。</p>
+<p><strong>导出与生态</strong>：可导出<em>可编辑 .pptx 幻灯片</em>或<em>交互式 .html 网页</em>；通过 OpenClaw 集成飞书、Slack、Telegram 等 20+ 即时通讯渠道，用 <code>clawhub install openmaic</code> 一行命令即可在聊天应用里直接生成课堂；支持 OpenAI、Anthropic、Gemini、DeepSeek、Qwen、Kimi、MiniMax、GLM 等 20+ 模型与本地 Ollama。</p>
+<p><strong>适合谁</strong>：教师/培训师想批量做教学课件、自学者想要「AI 同学陪练」、公司内训做标准化讲义。</p>
+
+<h3><span class="agent-name">ppt-master（hugohe3）</span> · 原生可编辑 PPTX 生成器</h3>
+<p><strong>它是什么</strong>：开发者 <em>Hugo He</em>（hugohe3）的开源 PPT 生成 Skill，<a href="https://github.com/hugohe3/ppt-master">github.com/hugohe3/ppt-master</a>，Apache-2.0 许可证，ClawHub 上的常驻排名 #493，9.4K 下载量，5 星。</p>
+<p><strong>核心机制</strong>：「SVG → DrawingML 转换器」——先生成页面 SVG，再 <code>svg_to_pptx</code> 转换为<em>真正的 PowerPoint 原生形状</em>（不是把 SVG 当图片贴进 PPT），所以输出是<em>双击即可编辑</em>的 .pptx（Office 2016+ 完美支持）。工作流六阶段：① 项目初始化 → ② 模板选择（需确认）→ ③ 策略师阶段八项确认 → ④ 可选图片生成 → ⑤ 执行器阶段生成 SVG + 演讲稿 → ⑥ 后处理导出 PPTX。</p>
+<p><strong>差异化优势</strong>：① 原生形状导出（不像很多工具是把 SVG 截图当图贴）；② 支持<em>填模板</em>（把你已有的 .pptx 给 AI，让它把新内容填进你的设计里）；③ 8 套预设风格（consultant / tech / general / google_style 等）；④ 可选 native-objects 模式把图表/表格转为真正的 PowerPoint chart 对象。</p>
+<p><strong>怎么用</strong>：方式 A 下载 ZIP 解压 → <code>pip install -r requirements.txt</code>；方式 B <code>git clone</code>（推荐，后续 <code>update_repo.py</code> 一键更新）；方式 C 通过 Claude Code 插件市场 <code>/plugin marketplace add hugohe3/ppt-master</code>；在 IDE 里打开项目目录、把 PDF/Markdown/图片放到 <code>projects/</code>，告诉 AI「请用 projects/q3-report/sources/report.pdf 生成 PPT」即可。</p>
+</div>
+  </div>
+
+</div>
 </div>
 
   <div id="ai-panel-philosophy" class="ai-tab-panel">
@@ -258,6 +315,15 @@ function switchAiTab(id, btn) {
   document.querySelectorAll('.ai-tab-panel').forEach(function (p) { p.classList.remove('active'); });
   btn.classList.add('active');
   document.getElementById('ai-panel-' + id).classList.add('active');
+}
+
+function switchAiAgentTab(id, btn) {
+  var tabs = btn.closest('.ai-agent-tabs');
+  if (!tabs) return;
+  tabs.querySelectorAll('.ai-tab-btn').forEach(function (b) { b.classList.remove('active'); });
+  tabs.querySelectorAll('.ai-tab-panel').forEach(function (p) { p.classList.remove('active'); });
+  btn.classList.add('active');
+  document.getElementById('ai-agent-panel-' + id).classList.add('active');
 }
 
 function toggleYear(btn) {

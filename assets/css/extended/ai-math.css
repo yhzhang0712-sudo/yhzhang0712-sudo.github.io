@@ -11,6 +11,22 @@
     margin-bottom: 1.2rem;
 }
 
+/* Agent 面板的二级 Tab：略小一圈 + 左缩进，与外层大 Tab 区分层次 */
+.ai-agent-tabs {
+    margin-left: 0.4rem;
+    margin-top: 0.2rem;
+}
+
+.ai-agent-tabs .ai-tab-btn {
+    padding: 0.4rem 1.1rem;
+    font-size: 0.92rem;
+    font-weight: 600;
+}
+
+.ai-agent-tabs .ai-tab-btns {
+    margin-bottom: 1rem;
+}
+
 /* 通用按钮样式 */
 .ai-tab-btn {
     padding: 0.55rem 1.4rem;
@@ -39,11 +55,11 @@
 .tab-orange { border-color: #EA580C; color: #EA580C; }
 .tab-orange:hover, .tab-orange.active { background: #EA580C; color: #fff; }
 
-/* 紫：AI哲学 */
+/* 紫：什么是 Agent? （Agent 子 Tab 首项） */
 .tab-purple { border-color: #9333EA; color: #9333EA; }
 .tab-purple:hover, .tab-purple.active { background: #9333EA; color: #fff; }
 
-/* 青：AI与教育 */
+/* 青：AI哲学 */
 .tab-teal { border-color: #0D9488; color: #0D9488; }
 .tab-teal:hover, .tab-teal.active { background: #0D9488; color: #fff; }
 
@@ -51,7 +67,7 @@
 .tab-green { border-color: #16A34A; color: #16A34A; }
 .tab-green:hover, .tab-green.active { background: #16A34A; color: #fff; }
 
-/* 蓝：AI与数学 */
+/* 蓝：AI与数学 / 数学科研 Agent */
 .tab-blue  { border-color: #2563EB; color: #2563EB; }
 .tab-blue:hover,  .tab-blue.active  { background: #2563EB; color: #fff; }
 
