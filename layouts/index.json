@@ -5,7 +5,7 @@
     {{- end }}
 {{- end -}}
 
-{{- /* 同时索引嵌套 section 页面(如 AI与数学、数学闲话、代数表示论) */ -}}
+{{- /* 同时索引嵌套 section 页面(如 AI与数学、数学文化、代数表示论) */ -}}
 {{- range site.Pages -}}
     {{- if and (eq .Kind "section") (not .Parent.IsHome) (not .Params.searchHidden) }}
     {{- /* AI与数学 专题在首页圆盘显示为 "AI",搜索结果标题保持一致 */ -}}
@@ -49,7 +49,7 @@
 {{- /* 解析“代数表示论”各猜想面板为独立搜索项，permalink 带 #ar-panel-xxx 锚点 */ -}}
 {{- $ar := site.GetPage "posts/代数表示论" -}}
 {{- if $ar -}}
-    {{- $panelKeys := slice "finite" "nakayama" "gorenstein" "wakamatsu" "cartan" -}}
+    {{- $panelKeys := slice "finite" "nakayama" "gorenstein" "wakamatsu" "cartan" "broue" "telescope" "brauerthrall" "gpc" "nlc" "igusasmalo" "extension" "hpr" "gpfdc" "fcy" "ncluster" "gentle" "garc" "silting" "derivedsimple" "ttgeom" -}}
     {{- range $panelKeys -}}
         {{- $p := site.GetPage (printf "posts/代数表示论/panels/%s" .) -}}
         {{- if $p -}}

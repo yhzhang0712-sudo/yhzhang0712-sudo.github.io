@@ -44,7 +44,7 @@ params:
       - name: "AI"
         url: /posts/aimath/
       - name: "数学文化"
-        url: /posts/数学闲话/
+        url: /posts/数学文化/
       - name: "代数表示论同调代数"
         url: /posts/代数表示论/
 

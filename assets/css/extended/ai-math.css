@@ -149,6 +149,13 @@
     box-shadow: 0 4px 14px rgba(91, 33, 182, 0.35);
 }
 
+.ar-sec-btn.sec-red { border-color: #B91C1C; color: #B91C1C; }
+.ar-sec-btn.sec-red:hover, .ar-sec-btn.sec-red.active {
+    background: linear-gradient(135deg, #B91C1C, #EF4444);
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(185, 28, 28, 0.35);
+}
+
 .ar-sec-btn.sec-blue { border-color: #1E40AF; color: #1E40AF; }
 .ar-sec-btn.sec-blue:hover, .ar-sec-btn.sec-blue.active {
     background: linear-gradient(135deg, #1E40AF, #3B82F6);
@@ -366,7 +373,7 @@
 /* ─── Agent 介绍页样式 ─── */
 .agent-intro {
     max-width: 760px;
-    margin: 0 auto;
+    margin: 0;
     line-height: 1.7;
 }
 
@@ -378,10 +385,27 @@
 }
 
 .agent-intro h3 {
-    color: var(--primary);
+    color: #1e40af;  /* 浅色模式深蓝 */
     margin-top: 1.6rem;
     margin-bottom: 0.7rem;
     font-size: 1.15rem;
+}
+
+/* 深色模式 h3 用高亮黄色 */
+[data-theme="dark"] .agent-intro h3 {
+    color: #fde047;
+}
+
+/* AI 与数学面板标题 */
+.ai-math-title {
+    color: #1e40af;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 0.6rem;
+}
+
+[data-theme="dark"] .ai-math-title {
+    color: #fde047;
 }
 
 .agent-lead {

@@ -6,6 +6,7 @@ math: true
 
 <div class="ar-section-switch">
   <button type="button" class="ar-sec-btn sec-violet active" onclick="switchArSection('conjectures', this)">核心猜想</button>
+  <button type="button" class="ar-sec-btn sec-red" onclick="switchArSection('important', this)">重要猜想</button>
   <button type="button" class="ar-sec-btn sec-blue" onclick="switchArSection('theory', this)">基础理论</button>
   <button type="button" class="ar-sec-btn sec-green" onclick="switchArSection('frontier', this)">前沿理论</button>
   <button type="button" class="ar-sec-btn sec-orange" onclick="switchArSection('hot', this)">研究热点</button>
@@ -22,6 +23,9 @@ math: true
     <button type="button" class="ai-tab-btn tab-green" onclick="switchArTab('gorenstein', this)">Gorenstein对称猜想</button>
     <button type="button" class="ai-tab-btn tab-blue" onclick="switchArTab('wakamatsu', this)">Wakamatsu tilting猜想</button>
     <button type="button" class="ai-tab-btn tab-violet" onclick="switchArTab('cartan', this)">Cartan行列式猜想</button>
+    <button type="button" class="ai-tab-btn tab-teal" onclick="switchArTab('broue', this)">Broué交换亏群猜想</button>
+    <button type="button" class="ai-tab-btn tab-yellow" onclick="switchArTab('telescope', this)">Telescope Conjecture</button>
+    <button type="button" class="ai-tab-btn tab-purple" onclick="switchArTab('brauerthrall', this)">Brauer-Thrall猜想</button>
   </div>
 
 {{< ar-panel "finite" "active" >}}
@@ -29,6 +33,45 @@ math: true
 {{< ar-panel "gorenstein" >}}
 {{< ar-panel "wakamatsu" >}}
 {{< ar-panel "cartan" >}}
+{{< ar-panel "broue" >}}
+{{< ar-panel "telescope" >}}
+{{< ar-panel "brauerthrall" >}}
+</div>
+
+</section>
+
+<section id="ar-section-important" class="ar-section" hidden>
+
+<div class="ai-tabs ar-important-tabs">
+  <div class="ai-tab-btns">
+    <button type="button" class="ai-tab-btn tab-red active" onclick="switchArTab('gpc', this)">Gorenstein投射猜想</button>
+    <button type="button" class="ai-tab-btn tab-orange" onclick="switchArTab('nlc', this)">无环猜想</button>
+    <button type="button" class="ai-tab-btn tab-yellow" onclick="switchArTab('igusasmalo', this)">Igusa-Smalø猜想</button>
+    <button type="button" class="ai-tab-btn tab-green" onclick="switchArTab('extension', this)">Extension猜想</button>
+    <button type="button" class="ai-tab-btn tab-blue" onclick="switchArTab('hpr', this)">Happel-Preiser-Ringel猜想</button>
+    <button type="button" class="ai-tab-btn tab-purple" onclick="switchArTab('gpfdc', this)">Gorenstein投射维数</button>
+    <button type="button" class="ai-tab-btn tab-violet" onclick="switchArTab('fcy', this)">分数Calabi-Yau猜想</button>
+    <button type="button" class="ai-tab-btn tab-red" onclick="switchArTab('ncluster', this)">n-cluster tilting</button>
+    <button type="button" class="ai-tab-btn tab-yellow" onclick="switchArTab('gentle', this)">gentle导出分类</button>
+    <button type="button" class="ai-tab-btn tab-blue" onclick="switchArTab('garc', this)">GARC（交换环）</button>
+    <button type="button" class="ai-tab-btn tab-violet" onclick="switchArTab('silting', this)">silting公开问题</button>
+    <button type="button" class="ai-tab-btn tab-red" onclick="switchArTab('derivedsimple', this)">导出单性</button>
+    <button type="button" class="ai-tab-btn tab-green" onclick="switchArTab('ttgeom', this)">张量三角几何</button>
+  </div>
+
+{{< ar-panel "gpc" "active" >}}
+{{< ar-panel "nlc" >}}
+{{< ar-panel "igusasmalo" >}}
+{{< ar-panel "extension" >}}
+{{< ar-panel "hpr" >}}
+{{< ar-panel "gpfdc" >}}
+{{< ar-panel "fcy" >}}
+{{< ar-panel "ncluster" >}}
+{{< ar-panel "gentle" >}}
+{{< ar-panel "garc" >}}
+{{< ar-panel "silting" >}}
+{{< ar-panel "derivedsimple" >}}
+{{< ar-panel "ttgeom" >}}
 </div>
 
 </section>
