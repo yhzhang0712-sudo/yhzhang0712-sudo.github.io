@@ -1,15 +1,18 @@
 {{- /* ar-panel.html
        渲染“代数表示论”面板库中的一个面板（headless leaf bundle）。
        用法：{{< ar-panel "finite" "active" >}}  （第二个参数可选，写 "active" 表示默认展开）
+       可选第三参数 idPrefix：自定义面板 div 的 id 前缀（如 "ar-frontier-panel-"），
+       用于“前沿理论”等 section——其切换脚本依赖 #ar-frontier-panel-xxx 形式。
        面板内容放在 content/posts/代数表示论/panels/<key>/index.md，
        经 goldmark 正常渲染（KaTeX 公式照常生效），且 headless 不被发布为独立子页面。 */ -}}
 {{- $key := .Get 0 -}}
 {{- $active := eq (.Get 1 | default "") "active" -}}
+{{- $prefix := .Get 2 | default "ar-panel-" -}}
 {{- $p := site.GetPage (printf "posts/代数表示论/panels/%s" $key) -}}
 {{- if not $p -}}
 <p class="ai-empty">面板内容缺失：{{ $key }}</p>
 {{- else -}}
-<div id="ar-panel-{{ $key }}" class="ai-tab-panel{{ if $active }} active{{ end }}">
+<div id="{{ $prefix }}{{ $key }}" class="ai-tab-panel{{ if $active }} active{{ end }}">
 {{ $p.Content }}
 </div>
 {{- end -}}

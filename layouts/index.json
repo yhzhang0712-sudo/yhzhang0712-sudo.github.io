@@ -57,6 +57,15 @@
             {{- $.Scratch.Add "index" (dict "title" $p.Title "content" $p.Plain "permalink" $permalink "summary" $p.Summary) -}}
         {{- end -}}
     {{- end -}}
+    {{- /* 前沿理论(frontier)面板：锚点前缀为 #ar-frontier-panel- */ -}}
+    {{- $frontierKeys := slice "infinity" "ttg" "approximable" "cluster" "operad" "har" "tautilting" -}}
+    {{- range $frontierKeys -}}
+        {{- $p := site.GetPage (printf "posts/代数表示论/panels/%s" .) -}}
+        {{- if $p -}}
+            {{- $permalink := print $ar.Permalink "#ar-frontier-panel-" . -}}
+            {{- $.Scratch.Add "index" (dict "title" $p.Title "content" $p.Plain "permalink" $permalink "summary" $p.Summary) -}}
+        {{- end -}}
+    {{- end -}}
 {{- end -}}
 
 {{- $.Scratch.Get "index" | jsonify -}}

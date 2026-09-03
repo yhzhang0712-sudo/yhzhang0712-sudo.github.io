@@ -464,3 +464,167 @@
     border-radius: 0 8px 8px 0;
     color: #7C2D12;
 }
+
+/* ─── 面板右侧圆形目录导航按钮（Approximable 面板） ─── */
+.ar-toc-wrap {
+    display: flex;
+    gap: 0.8rem;
+    align-items: flex-start;
+}
+
+.ar-toc {
+    order: 2;
+    position: sticky;
+    top: 14px;
+    z-index: 40;
+    flex: 0 0 auto;
+    width: 46px;
+}
+
+.ar-toc-body {
+    order: 1;
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.ar-toc-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: var(--entry);
+    color: var(--primary);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font: inherit;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.ar-toc-btn:hover {
+    background: var(--primary);
+    color: var(--entry);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
+}
+
+.ar-toc-btn:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+.ar-toc-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.ar-toc-drop {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    width: min(320px, calc(100vw - 24px));
+    max-height: min(560px, 65vh);
+    overflow-y: auto;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16);
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.ar-toc.open .ar-toc-drop {
+    display: block;
+}
+
+.ar-toc-drop a {
+    display: block;
+    padding: 0.34rem 0.6rem;
+    border-radius: 6px;
+    color: var(--content);
+    text-decoration: none;
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+
+.ar-toc-drop a:hover {
+    background: var(--code-bg);
+    color: var(--primary);
+}
+
+.ar-toc-drop .ar-toc-l1 {
+    font-weight: 700;
+    color: var(--primary);
+    margin-top: 0.4rem;
+}
+
+.ar-toc-drop .ar-toc-l1:first-child {
+    margin-top: 0;
+}
+
+.ar-toc-drop .ar-toc-l2 {
+    padding-left: 1.15rem;
+    color: var(--secondary);
+    font-size: 0.88rem;
+}
+
+/* 面板正文内的 h4 小节标题（与 .ar-subhead 的 h3 拉开层级） */
+.ar-toc-body h4 {
+    margin: 1.6rem 0 0.5rem;
+    font-size: 1.06rem;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1.45;
+    padding-left: 0.5rem;
+    border-left: 3px solid var(--tertiary);
+}
+
+.ar-toc-body h3,
+.ar-toc-body h4 {
+    scroll-margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    .ar-toc-wrap {
+        display: block;
+        position: relative;
+    }
+    .ar-toc {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: auto;
+    }
+    .ar-toc-btn {
+        width: 42px;
+        height: 42px;
+    }
+    .ar-toc-drop {
+        max-height: 60vh;
+    }
+}
+
+/* ─── Approximable 面板：目录内标题分层配色（仅作用于 .ar-toc-body，不影响其他面板） ─── */
+.ar-toc-body h3.ar-subhead {
+    color: #1e40af;              /* 一级章节标题：浅色模式深蓝 */
+    border-left-color: #1e40af;
+}
+
+[data-theme="dark"] .ar-toc-body h3.ar-subhead {
+    color: #fde047;              /* 深色模式高亮黄 */
+    border-left-color: #fde047;
+}
+
+.ar-toc-body h4 {
+    color: #EA580C;              /* 二级小节标题：浅色模式橙 */
+    border-left-color: #EA580C;
+}
+
+[data-theme="dark"] .ar-toc-body h4 {
+    color: #fbbf24;              /* 深色模式亮琥珀 */
+    border-left-color: #fbbf24;
+}

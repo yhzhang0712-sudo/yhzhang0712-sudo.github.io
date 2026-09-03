@@ -136,10 +136,7 @@ math: true
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 
-  <div id="ar-frontier-panel-approximable" class="ai-tab-panel">
-    <p class="ai-empty">内容整理中，敬请期待…</p>
-  </div>
-
+  {{< ar-panel "approximable" "" "ar-frontier-panel-" >}}
   <div id="ar-frontier-panel-cluster" class="ai-tab-panel">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
@@ -170,6 +167,7 @@ math: true
     <button type="button" class="ai-tab-btn tab-red" onclick="switchArHot('gorensteinhomo', this)">Gorenstein 同调理论</button>
     <button type="button" class="ai-tab-btn tab-teal" onclick="switchArHot('geometric', this)">Geometric model</button>
     <button type="button" class="ai-tab-btn tab-purple" onclick="switchArHot('clustertilting', this)">Cluster tilting</button>
+    <button type="button" class="ai-tab-btn tab-violet" onclick="switchArHot('approx', this)">Approximable Triangulated Categories</button>
   </div>
 
   <div id="ar-hot-panel-dgenhance" class="ai-tab-panel active">
@@ -199,6 +197,8 @@ math: true
   <div id="ar-hot-panel-clustertilting" class="ai-tab-panel">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
+
+  {{< ar-panel "approx" "" "ar-hot-panel-" >}}
 </div>
 
 </section>
