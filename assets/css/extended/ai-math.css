@@ -628,3 +628,207 @@
     color: #fbbf24;              /* 深色模式亮琥珀 */
     border-left-color: #fbbf24;
 }
+
+/* ═══ 核心猜想面板：研究方法（族色 · 方法卡 · 总览图 · 逻辑链） ═══ */
+
+/* 族色变量：--m 主色 / --mbg 浅底 / --mdk 深色模式亮色 */
+.md-content .c-red   { --m: #B91C1C; --mbg: #FEE2E2; --mdk: #F87171; }
+.md-content .c-blue  { --m: #1D4ED8; --mbg: #DBEAFE; --mdk: #93C5FD; }
+.md-content .c-teal  { --m: #0F766E; --mbg: #CCFBF1; --mdk: #5EEAD4; }
+.md-content .c-violet{ --m: #6D28D9; --mbg: #EDE9FE; --mdk: #C4B5FD; }
+.md-content .c-amber { --m: #B45309; --mbg: #FEF3C7; --mdk: #FCD34D; }
+.md-content .c-green { --m: #15803D; --mbg: #DCFCE7; --mdk: #86EFAC; }
+
+/* 研究方法下的分组小标题（组名不带编号，靠族色与下划线分层） */
+.md-content .ar-mgroup {
+    position: relative;
+    font-size: 1.12rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    line-height: 1.45;
+    color: var(--m, var(--primary));
+    margin: 1.7rem 0 0.7rem;
+    padding-bottom: 0.35rem;
+    border-bottom: none;
+}
+.md-content .ar-mgroup::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 2px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--m, var(--primary)), transparent 78%);
+}
+[data-theme="dark"] .ar-mgroup { color: var(--mdk, var(--primary)); }
+
+/* 总览图（化归型 / 控制型 两翼） */
+.md-content .ar-mmap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 0.9rem;
+    margin: 0.9rem 0 0.5rem;
+}
+.md-content .ar-mmap-col {
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--m);
+    border-radius: 10px;
+    padding: 0.75rem 1rem 0.55rem;
+    background: var(--code-bg);
+}
+.md-content .ar-mmap-title {
+    font-size: 1.06rem;
+    font-weight: 800;
+    color: var(--m);
+    margin-bottom: 0.1rem;
+    line-height: 1.4;
+}
+[data-theme="dark"] .md-content .ar-mmap-title { color: var(--mdk); }
+.md-content .ar-mmap-sub {
+    font-size: 0.85rem;
+    color: var(--secondary);
+    margin-bottom: 0.4rem;
+}
+.md-content .ar-mmap-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-inline-start: 0;
+}
+.md-content .ar-mmap-list li {
+    padding: 0.3rem 0 0.3rem 0.2rem;
+    border-bottom: 1px dashed var(--border);
+    line-height: 1.6;
+    font-size: 0.94rem;
+    margin-top: 0;
+}
+.md-content .ar-mmap-list li:last-child { border-bottom: none; }
+.md-content .ar-mmap-list li::before {
+    content: "→";
+    color: var(--m);
+    margin-right: 0.45rem;
+    font-weight: 700;
+}
+[data-theme="dark"] .md-content .ar-mmap-list li::before { color: var(--mdk); }
+
+/* 方法卡 */
+.md-content .ar-method {
+    margin: 0.7rem 0;
+    padding: 0.6rem 1rem 0.45rem;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--m);
+    border-radius: 8px;
+    background: var(--code-bg);
+}
+.md-content .ar-method-head {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.15rem;
+}
+.md-content .ar-method-name {
+    font-size: 1.02rem;
+    font-weight: 800;
+    color: var(--m);
+    line-height: 1.4;
+}
+[data-theme="dark"] .md-content .ar-method-name { color: var(--mdk); }
+.md-content .ar-m-tag {
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.08rem 0.55rem;
+    border-radius: 999px;
+    background: var(--mbg);
+    color: var(--m);
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+}
+[data-theme="dark"] .md-content .ar-m-tag {
+    background: rgba(255, 255, 255, 0.07);
+    color: var(--mdk);
+}
+.md-content .ar-m-pts {
+    list-style: none;
+    margin: 0.1rem 0 0.2rem;
+    padding: 0;
+    padding-inline-start: 0;
+}
+.md-content .ar-m-pts li {
+    position: relative;
+    padding: 0.26rem 0 0.26rem 1.15rem;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    margin-top: 0;
+}
+.md-content .ar-m-pts li::before {
+    content: "";
+    position: absolute;
+    left: 0.15rem;
+    top: 0.88em;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background: var(--m);
+    opacity: 0.75;
+}
+[data-theme="dark"] .md-content .ar-m-pts li::before { background: var(--mdk); }
+.md-content .ar-m-pts li b { color: var(--m); font-weight: 800; }
+[data-theme="dark"] .md-content .ar-m-pts li b { color: var(--mdk); }
+
+/* NC 面板：猜想族逻辑链（FDC ⇒ SNC ⇒ GNC ⇒ NC） */
+.md-content .ar-chain {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.45rem;
+    margin: 0.8rem 0 0.4rem;
+    padding: 0.75rem 1rem;
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+.md-content .ar-chain-node {
+    text-align: center;
+    padding: 0.3rem 0.85rem;
+    border: 1.5px solid #6D28D9;
+    border-radius: 8px;
+    min-width: 3.4rem;
+    line-height: 1.25;
+}
+.md-content .ar-chain-node b { font-size: 0.98rem; color: #6D28D9; }
+.md-content .ar-chain-node small { display: block; font-size: 0.68rem; color: var(--secondary); }
+[data-theme="dark"] .md-content .ar-chain-node { border-color: #A78BFA; }
+[data-theme="dark"] .md-content .ar-chain-node b { color: #C4B5FD; }
+.md-content .ar-chain-arrow { font-weight: 800; color: var(--secondary); font-size: 1.05rem; }
+.md-content .ar-chain-note {
+    font-size: 0.9rem;
+    color: var(--secondary);
+    margin: 0.15rem 0 0.8rem;
+    line-height: 1.7;
+}
+
+/* 方法论的收束框（启示 / 突破口） */
+.md-content .ar-mtake {
+    margin: 1.1rem 0 0.4rem;
+    padding: 0.8rem 1rem 0.6rem;
+    border-left: 4px solid #B45309;
+    border-radius: 0 8px 8px 0;
+    background: #FFFBEB;
+    color: #7C2D12;
+}
+[data-theme="dark"] .md-content .ar-mtake {
+    background: rgba(251, 191, 36, 0.08);
+    color: #FDE68A;
+    border-left-color: #F59E0B;
+}
+.md-content .ar-mtake p { margin: 0.35rem 0; line-height: 1.75; font-size: 0.95rem; }
+.md-content .ar-mtake b { color: #B45309; }
+[data-theme="dark"] .md-content .ar-mtake b { color: #FBBF24; }
+
+/* 方法区内的浅色说明文字 */
+.md-content .ar-mnote {
+    font-size: 0.88rem;
+    color: var(--secondary);
+    margin: 0.2rem 0 0.6rem;
+    line-height: 1.7;
+}

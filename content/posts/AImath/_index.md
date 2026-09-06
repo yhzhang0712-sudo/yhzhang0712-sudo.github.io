@@ -10,7 +10,7 @@ math: true
     <button type="button" class="ai-tab-btn tab-orange" onclick="switchAiTab('agent', this)">Agent</button>
     <button type="button" class="ai-tab-btn tab-green" onclick="switchAiTab('tools', this)">AI工具</button>
     <button type="button" class="ai-tab-btn tab-blue" onclick="switchAiTab('math', this)">AI与数学</button>
-    <button type="button" class="ai-tab-btn tab-purple" onclick="switchAiTab('education', this)">AI与教育</button>
+    <button type="button" class="ai-tab-btn tab-purple" onclick="switchAiTab('ethics', this)">AI伦理</button>
   </div>
 
   <div id="ai-panel-timeline" class="ai-tab-panel active">
@@ -290,9 +290,98 @@ math: true
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 
-  <div id="ai-panel-education" class="ai-tab-panel">
-    <p class="ai-empty">内容整理中，敬请期待…</p>
+  <div id="ai-panel-ethics" class="ai-tab-panel">
+    <div class="ai-tabs ai-agent-tabs">
+      <div class="ai-tab-btns">
+        <button type="button" class="ai-tab-btn tab-teal" onclick="switchAiEthicsTab('evolution', this)">AI伦理演进史</button>
+        <button type="button" class="ai-tab-btn tab-red active" onclick="switchAiEthicsTab('leiden', this)">人工智能与数学莱顿宣言</button>
+      </div>
+      <div id="ai-ethics-panel-evolution" class="ai-tab-panel">
+        <div class="agent-intro">
+          <p class="agent-lead">AI 伦理的讨论早已从科幻担忧，演变为一场<strong>牵动全球治理、重塑人类未来</strong>的深刻讨论。其关注点随技术能力的跃迁不断深化：早期奠基（1950–2000）→ 理论深化与初步治理（2000–2015）→ 生成式 AI 爆发与治理回应（2022–2024）→ 走向系统治理与全球共识（2024 至今）。</p>
+          <h3>演进时间线</h3>
+          <ul class="ai-timeline">
+            <li><span class="ai-year">1950</span>｜阿西莫夫提出「机器人三定律」，首次系统探讨人机关系</li>
+            <li><span class="ai-year">1960-70</span>｜维纳等人提出「机器应服务人类需求」，奠定控制论伦理基础</li>
+            <li><span class="ai-year">2000s</span>｜「价值对齐」概念兴起，追求 AI 与人类价值对齐成为核心研究纲领</li>
+            <li><span class="ai-year">2016</span>｜欧盟《通用数据保护条例》(GDPR) 出台，开启全球数据立法先河</li>
+            <li><span class="ai-year">2022</span>｜ChatGPT 引爆生成式 AI，虚假信息、深度伪造、学术伦理引发全球大讨论</li>
+            <li><span class="ai-year">2023</span>｜中国发布《生成式人工智能服务管理暂行办法》，率先进行专项监管</li>
+            <li><span class="ai-year">2024</span>｜欧盟《人工智能法案》生效，中美欧形成三大治理模式</li>
+            <li><span class="ai-year">2025</span>｜联合国框架下推动全球 AI 治理对话，中国倡导「以人为本」的全球倡议</li>
+            <li><span class="ai-year">2026</span>｜讨论聚焦超级智能风险，「智能契约伦理」等前瞻性理论框架被提出</li>
+          </ul>
+          <h3>核心争论一：主体地位之争 —— AI 是「物」还是「人」？</h3>
+          <ul class="agent-list">
+            <li><span class="agent-name">反对赋予 AI 主体地位（主流观点）</span>：AI 本质是人类创造的工具，不具备自我意识、自由意志与道德责任能力。赋予其主体地位不仅贬损人类独特的尊严与价值，更会造成「责任真空」——损害发生时无法有效追责，最终将责任转嫁给无辜的人。正如康德所言，人是「目的本身」，AI 只能是手段。</li>
+            <li><span class="agent-name">支持有限法律主体</span>：部分学者主张随 AI 自主性增强，可考虑「有限法律主体」或「电子人格」以清晰分配风险与责任——但这是实用主义方案，并非在哲学上承认 AI 与人类平等。</li>
+            <li><span class="agent-name">核心共识</span>：全球伦理框架普遍强调 AI 必须始终是「物」，坚守人类的主体地位与尊严；争论的真正价值在于迫使人类更清晰地界定何以为「人」。</li>
+          </ul>
+          <h3>核心争论二：价值对齐困境 —— 如何让 AI 理解并遵循我们的价值？</h3>
+          <ul class="agent-list">
+            <li><span class="agent-name">自上而下的规范贯彻</span>：尝试把「不伤害」「公平」等既有伦理原则编码为算法指令——但人类价值复杂、模糊且充满矛盾，难以完全形式化。</li>
+            <li><span class="agent-name">自下而上的经验学习</span>：让 AI 从海量数据中自主归纳道德原则——但训练数据本身可能含偏见，导致 AI「学坏」，输出歧视性内容。</li>
+            <li><span class="agent-name">迈向「价值共生」</span>：对齐不应是静态单向的，而应是人与机器在互动中共同理解、动态调适与共同演进的过程，需要技术、哲学、制度与社会对话协同推进。</li>
+          </ul>
+          <h3>核心争论三：责任归属难题 —— 当 AI 犯错，谁来「埋单」？</h3>
+          <ul class="agent-list">
+            <li><span class="agent-name">传统「用户责任」模式</span>：用户对 AI 输出负责（如自动驾驶事故中驾驶员担责）——但在高级别自动驾驶或智能体独立决策时并不公平，用户已无法有效监督或干预。</li>
+            <li><span class="agent-name">多级责任体系</span>：建立开发、部署、使用多方参与的责任体系——开发者保证产品安全可靠，部署者履行告知与监督义务，使用者在权限范围内合理使用。欧盟《人工智能法案》正朝此方向努力。</li>
+            <li><span class="agent-name">「可推定责任」原则</span>：生成式 AI 内容引发侵权时，平台无法证明自己无过错即需担责，防止其以「技术中立」为由推卸治理义务。</li>
+          </ul>
+          <h3>核心争论四：人类主体性危机 —— 我们会被 AI「异化」吗？</h3>
+          <ul class="agent-list">
+            <li><span class="agent-name">自主性侵蚀</span>：过度依赖算法决策，人类独立思考与批判性思维可能退化，逐步习惯将判断与选择权让渡给机器。</li>
+            <li><span class="agent-name">认知操控与信息茧房</span>：精准个性化推荐与深度伪造可能塑造、操纵甚至污染人类的信息环境与认知过程，侵蚀社会信任。</li>
+            <li><span class="agent-name">情感依赖与人际关系异化</span>：情感陪伴类 AI 可能诱发过度依赖，模糊虚拟与现实的边界，干扰正常人际交往。</li>
+            <li><span class="agent-name">应对之道：坚守人的主体性</span>：通过教育、法律与社会共识，守护人的自主性、目的性、创造性与伦理性——技术应<strong>增强而非替代人类</strong>。</li>
+          </ul>
+          <h3>全球三大治理模式</h3>
+          <ul class="agent-list">
+            <li><span class="agent-name">欧盟模式：强监管优先</span>：「权利本位」+「风险预防」。《人工智能法案》《通用数据保护条例》(GDPR) 为全球提供最严格标准与可借鉴框架，强调人类监督、透明度与基本权利；挑战在于可能抑制创新、抬高企业合规成本。</li>
+            <li><span class="agent-name">美国模式：创新驱动优先</span>：「市场主导」+「灵活治理」。《AI 权利法案蓝图》+ 各州分散立法与部门协同。鼓励创新竞争、反应灵活；但监管碎片化且滞后，消费者权益保护可能不足。</li>
+            <li><span class="agent-name">中国模式：发展安全并重</span>：「统筹协调」+「敏捷治理」。《生成式人工智能服务管理暂行办法》《人工智能安全治理框架》+ 伦理审查与备案制度。高效协同、部分领域监管走在前列；创新与风控的最佳平衡仍需持续探索。</li>
+            <li><span class="agent-name">全球协作与竞争</span>：联合国、G20、OECD 等平台推动全球对话与共识构建；中国《全球人工智能治理倡议》强调发展、安全、治理三方面责任，反对技术霸权与封锁，代表全球南方国家的声音。</li>
+          </ul>
+          <h3>前沿探索：未来讨论的焦点</h3>
+          <ul class="agent-list">
+            <li><span class="agent-name">「智能契约伦理」与「伦理学家 AI」</span>：为应对超级智能风险，提出人与 AI 订立动态「伦理契约」，冲突时由人类商谈决定；并设想构建作为「契约构建者」的「伦理学家 AI」辅助治理，代表工程化与制度化方向。</li>
+            <li><span class="agent-name">「球状风险」与存在论转向</span>：超级智能时代，风险不再是外部冲击，而是人机互动这一新存在结构内部的不稳定性——需从存在论层面重新思考人机关系。</li>
+            <li><span class="agent-name">数字人权框架</span>：AI 伦理正与数字人权紧密结合，人的尊严、自由、平等权须在数智时代得到保障与延伸。「让人放心，把人放大」成为「智能向善」的双重维度——既确保安全可控，更确保赋能于人。</li>
+            <li><span class="agent-name">全球南方视角与数字鸿沟</span>：AI 治理不能被少数科技巨头与发达国家主导，须关注全球南方国家关切，防止 AI 加剧全球不平等，确保技术红利普惠共享。</li>
+          </ul>
+          <p class="agent-summary"><strong>总结</strong>：当前 AI 伦理讨论早已超越「电车难题」，深入文明、权力与存在的层面。核心张力在于——如何既享受技术革命的巨大红利，又有效驾驭其风险，确保技术发展始终服务于人类的整体福祉与自由解放。AI 的未来，不在于它多么像人，而在于它能否始终作为人类文明有益的延伸。</p>
+        </div>
+      </div>
+      <div id="ai-ethics-panel-leiden" class="ai-tab-panel active">
+        <div class="agent-intro">
+          <p class="agent-lead">2026 年 6 月 2 日，16 位来自 15 所高校的数学家发布《人工智能与数学莱顿宣言》（Leiden Declaration on Artificial Intelligence and Mathematics），呼吁全球数学界正视 AI 对学科核心价值的冲击——<strong>不主张禁止 AI，而是为负责任地使用 AI 建立共同规范</strong>。宣言获国际数学联盟（IMU）正式背书。</p>
+          <p><a href="https://leidendeclaration.ai/" style="color:#2563EB;text-decoration:underline;">▶ 阅读宣言全文（leidendeclaration.ai）</a></p>
+          <h3>缘起</h3>
+          <p>2025 年 9 月，荷兰莱顿大学洛伦兹中心举办「数学研究机械化」研讨会，60 余位数学家、计算机科学家、哲学家与社会科学家讨论 AI 对数学研究的冲击；会后 16 人工作组历经 8 个月起草修订，咨询了 30 余位独立数学家，终成 11 页宣言。</p>
+          <h3>AI 给数学带来的五大威胁</h3>
+          <ul class="agent-list">
+            <li><span class="agent-name">结果不可靠</span>：数学建立在严谨证明之上，但 AI 可能产出看似可信、错误却几乎不可见（almost invisible）的「证明」；</li>
+            <li><span class="agent-name">缺乏署名与版权问题</span>：AI 模型常不引用所依赖的人类工作，引发认可与知识产权问题；</li>
+            <li><span class="agent-name">依赖与不平等</span>：研究者可能被迫依赖最新专有 AI 与昂贵算力才能产出有竞争力的成果，加剧研究者间的不平等；</li>
+            <li><span class="agent-name">成果过度炒作</span>：新闻稿与博客常绕过科学审查夸大 AI 能力、低估人类贡献，强化「AI 无所不能」的叙事；</li>
+            <li><span class="agent-name">丧失自主性</span>：当技术可行性或商业利益主导研究方向时，数学有丧失研究议程自主性的风险，且许多数学领域正被卷入战争、大规模监控、政治操弄与环境损害等伦理问题。</li>
+          </ul>
+          <h3>对各方建议</h3>
+          <ul class="agent-list">
+            <li><span class="agent-name">对研究者</span>：如实披露 AI 使用、为成果正确性负责、恰当引用前人工作、参与公共讨论；</li>
+            <li><span class="agent-name">对机构与资助方</span>：制定 AI 用于发表与评审的政策、维持既有审视标准、在评审流程中纳入宣言价值；</li>
+            <li><span class="agent-name">对政府</span>：监管、公共基础设施投资、评估 AI 系统主张时借助专家意见；</li>
+            <li><span class="agent-name">对商业 AI 公司</span>：尊重数学共同体的价值与自主性，确保透明与恰当署名。</li>
+          </ul>
+          <h3>反响</h3>
+          <p>发布当天即获逾 130 位学者联署，现已超 2300 人签署。两位菲尔兹奖得主背书：Scholze 称「数学研究的目标是人对数学的理解，数学只能在人类数学家共同体中繁荣」；Tao 称「AI 潜力巨大但也伴随风险，宣言在二者间找到了极好的平衡」。《自然》发表社论支持。2026 年 7 月费城国际数学家大会（ICM）围绕宣言展开讨论。</p>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <div id="ai-panel-leiden" class="ai-tab-panel" style="display:none;"></div>
 </div>
 
 <script>
@@ -314,6 +403,15 @@ function switchAiAgentTab(id, btn) {
   tabs.querySelectorAll('.ai-tab-panel').forEach(function (p) { p.classList.remove('active'); });
   btn.classList.add('active');
   document.getElementById('ai-agent-panel-' + id).classList.add('active');
+}
+
+function switchAiEthicsTab(id, btn) {
+  var tabs = btn.closest('.ai-agent-tabs');
+  if (!tabs) return;
+  tabs.querySelectorAll('.ai-tab-btn').forEach(function (b) { b.classList.remove('active'); });
+  tabs.querySelectorAll('.ai-tab-panel').forEach(function (p) { p.classList.remove('active'); });
+  btn.classList.add('active');
+  document.getElementById('ai-ethics-panel-' + id).classList.add('active');
 }
 
 function toggleYear(btn) {
