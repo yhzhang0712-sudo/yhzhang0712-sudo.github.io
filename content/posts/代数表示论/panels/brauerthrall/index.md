@@ -3,7 +3,7 @@ title: "brauerthrall"
 headless: true
 ---
 <h3 class="ar-subhead">猜想陈述</h3>
-<p><strong>Brauer–Thrall 猜想（BT I / BT II）</strong>：设 $A$ 为域 $k$ 上有限维代数。按不可分解模的分布，$A$ 分为四种表示型：<strong>有限表示型</strong>（仅有有限多个不可分解模同构类）、<strong>有界表示型</strong>（不可分解模维数一致有界）、<strong>无界表示型</strong>、<strong>强无界表示型</strong>（存在无穷多个 $d$，使维数恰为 $d$ 的不可分解模同构类有无穷多个）。两个猜想断言：</p>
+<p><strong>Brauer–Thrall 猜想（BT I / BT II）</strong>：设 $A$ 为域 $k$ 上有限维代数。$A$ 分为四种表示型：<strong>有限表示型</strong>（仅有有限多个不可分解模同构类）、<strong>有界表示型</strong>（不可分解模维数一致有界）、<strong>无界表示型</strong>、<strong>强无界表示型</strong>（存在无穷多个 $d$，使维数恰为 $d$ 的不可分解模同构类有无穷多个）。两个猜想断言：</p>
 
 $$ \textbf{BT I}:\quad A \text{ 有界表示型 } \Longrightarrow A \text{ 有限表示型}. $$
 

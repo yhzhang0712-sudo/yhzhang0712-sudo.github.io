@@ -81,14 +81,7 @@ $$ D(\operatorname{GProj}(A))\;\subseteq\;\operatorname{GInj}(A^{\mathrm{op}}),\
     <li>优势：可沿 Noether 环、DG-环方向推广，把「有限性对称」纳入导出范畴的框架。</li>
   </ul>
 </div>
-<div class="ar-method c-violet">
-  <div class="ar-method-head"><span class="ar-method-name">完备余挠理论：六不变量等式</span><span class="ar-m-tag">Li 2026（预印本待审）</span></div>
-  <ul class="ar-m-pts">
-    <li>引入 $\mathcal{X}={}^\perp\mathcal{GI}$（Gorenstein 内射模的正交补，即 virtual 有限内射维数模类），证明 $(\mathcal{X},\mathcal{GI})$ 是完备遗传余挠理论；</li>
-    <li>建立六个 Gorenstein 同调不变量的等式：$\mathrm{r.Ggldim}(\Lambda)=\mathrm{r.Ggldim}(\Lambda^{\mathrm{op}})=\mathrm{id}_\Lambda(\Lambda)=\mathrm{id}_{\Lambda^{\mathrm{op}}}(\Lambda^{\mathrm{op}})=\mathrm{Gid}_\Lambda(\Lambda)=\mathrm{Gid}_{\Lambda^{\mathrm{op}}}(\Lambda^{\mathrm{op}})$；</li>
-    <li>一侧有限立即通过等式传遍六者，GSC 得证；注意该文为 2026 预印本，尚未经同行评审（见面板「研究现状」的核实说明）。</li>
-  </ul>
-</div>
+
 <p class="ar-mnote"><b>统一观点：</b>一切路线都在构造「对偶结构」——数值半群的补对称、Stanley–Reisner 复形的 Alexander 对偶、Artin 代数的左右内射维数，再让 Gorenstein 性（标准模循环 / 自内射维数对称）从中涌现。方法可迁移：Apéry 集 → $d$-对称与几乎对称半群分类；Pfaffian/Hilbert–Burch → 余维 2、3 的 Gorenstein 理想分类；粘合 → 高嵌入维数半群的递归构造；导出范畴 → Noether 环与 DG-环的 Gorenstein 对称性。</p>
 
 <h3 class="ar-subhead">参考文献</h3>

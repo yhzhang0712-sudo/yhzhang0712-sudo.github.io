@@ -4,6 +4,8 @@ hideTitle: true
 math: true
 ---
 
+<p style="margin:0 0 1rem;font-size:1rem;"><a href="https://icmconjectures.com" rel="noopener" style="font-weight:bold;color:#2563EB;">ICM Conjectures</a></p>
+
 <div class="ar-section-switch">
   <button type="button" class="ar-sec-btn sec-violet active" onclick="switchArSection('conjectures', this)">核心猜想</button>
   <button type="button" class="ar-sec-btn sec-red" onclick="switchArSection('important', this)">重要猜想</button>

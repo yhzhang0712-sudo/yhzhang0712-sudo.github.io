@@ -105,7 +105,7 @@ headless: true
 <div class="ar-method c-blue">
   <div class="ar-method-head"><span class="ar-method-name">Frobenius 扩张与 excellent extension</span><span class="ar-m-tag">扩张传递</span></div>
   <ul class="ar-m-pts">
-    <li>南京大学黄朝勇组：Frobenius 扩张 $A/S$ 下用 $(1,1)$-条件与 $(2,2)$-条件传递 Nakayama 类猜想与 GPC；</li>
+    <li>南京大学黄兆勇组：Frobenius 扩张 $A/S$ 下用 $(1,1)$-条件与 $(2,2)$-条件传递 Nakayama 类猜想与 GPC；</li>
     <li>Y.-Y. Zhang（arXiv:1702.05902）：$\Gamma$ 是 $\Lambda$ 的 excellent extension 时，GSC、finitistic 维数猜想、Auslander–Gorenstein 猜想、Nakayama 猜想在 $\Lambda$ 与 $\Gamma$ 间等价传递，并处理斜群代数 $\Lambda G$。</li>
   </ul>
 </div>
