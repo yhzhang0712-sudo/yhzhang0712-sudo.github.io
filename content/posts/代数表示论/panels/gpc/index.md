@@ -2,16 +2,71 @@
 title: "gpc"
 headless: true
 ---
-<h3 class="ar-subhead">猜想陈述</h3>
+<div class="ar-toc-wrap">
+<nav class="ar-toc" aria-label="面板目录">
+  <button type="button" class="ar-toc-btn" onclick="toggleArTocGpc(event)" aria-label="目录导航" title="目录导航" aria-expanded="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+  </button>
+  <div class="ar-toc-drop" role="menu">
+    <a class="ar-toc-l1" href="#ar-gpc-1">猜想陈述</a>
+    <a class="ar-toc-l1" href="#ar-gpc-2">研究现状</a>
+    <a class="ar-toc-l1" href="#ar-gpc-ce">猜想反例</a>
+    <a class="ar-toc-l2" href="#ar-gpc-ce-1">反例陈述</a>
+    <a class="ar-toc-l2" href="#ar-gpc-ce-2">代数构造与基本性质</a>
+    <a class="ar-toc-l2" href="#ar-gpc-ce-3">投射分解与自扩张计算</a>
+    <a class="ar-toc-l1" href="#ar-gpc-3">研究方法</a>
+    <a class="ar-toc-l2" href="#ar-gpc-3-1">直接验证：消没条件与模类筛选</a>
+    <a class="ar-toc-l2" href="#ar-gpc-3-2">间接传递：借助更广猜想与奇异性范畴</a>
+    <a class="ar-toc-l2" href="#ar-gpc-3-3">不变性传递：等价与扩张</a>
+    <a class="ar-toc-l1" href="#ar-gpc-ref">参考文献</a>
+  </div>
+</nav>
+<div class="ar-toc-body">
+<h3 class="ar-subhead" id="ar-gpc-1">猜想陈述</h3>
 <p><strong>Gorenstein 投射猜想（GPC）</strong>：设 $M$ 是 Gorenstein 投射模，若 $\operatorname{Ext}^{i}(M,M)=0$ 对 $i\gg 0$ 成立，则 $M$ 是投射模。</p>
 
-<h3 class="ar-subhead">研究现状</h3>
+<h3 class="ar-subhead" id="ar-gpc-2">研究现状</h3>
 <ul class="ar-timeline">
   <li><span class="ar-year">2010s</span>对单项式 Gorenstein 代数、若干自内射代数类等特殊类已获证明；系统表述与公开问题清单见 Chen Xiao-Wu 专著附录 C（arXiv:1712.04587）。</li>
-  <li><span class="ar-year">现状</span>一般情形仍开放（🔴）。</li>
 </ul>
 
-<h3 class="ar-subhead">研究方法</h3>
+<h3 class="ar-subhead" id="ar-gpc-ce">猜想反例</h3>
+<p>上面“猜想陈述”所写的形式是：Gorenstein 投射模 $M$ 满足 $\operatorname{Ext}^{i}(M,M)=0$ 对 <em>i≫0</em> 成立，则 $M$ 投射。这是把“所有正次数自扩张消失”放宽为“充分高次自扩张消失”之后的<strong>更强断言</strong>（条件更少，却要推出同样的投射性）。下面的反例表明该形式<strong>并不成立</strong>；GPC 真正仍开放的版本是“对所有 $i>0$ 均消失”的强假设形式。</p>
+
+<h4 id="ar-gpc-ce-1">反例陈述</h4>
+<p><strong>命题 1（反例）</strong>：设 $k=\mathbb{C}$。令
+$$A:=k\langle x,y\rangle/\bigl(x^{2},\,y^{2},\,xy+2yx\bigr),$$
+并定义左 $A$-模
+$$M:=k v\oplus k w,$$
+其左乘作用为
+$$xv=yv=w,\qquad xw=yw=0$$
+（$v,w$ 为基向量）。则</p>
+<ul>
+  <li>$M$ 是<strong>非投射的 Gorenstein 投射模</strong>；</li>
+  <li>$\operatorname{Ext}^{1}_{A}(M,M)\cong k$；</li>
+  <li>$\operatorname{Ext}^{i}_{A}(M,M)=0$ 对所有 $i\ge 2$。</li>
+</ul>
+<p>换言之，仅要求“充分高次”自扩张消失（此处 $i\ge 2$ 之后全部为零），<strong>并不能</strong>推出 $M$ 的投射性。</p>
+
+<h4 id="ar-gpc-ce-2">代数构造与基本性质</h4>
+<ul>
+  <li><strong>基与关系</strong>：$A$ 在 $k$ 上以 $\{1,x,y,xy\}$ 为基（$\dim_{k}A=4$）；由关系式 $xy+2yx=0$ 得 $yx=-\tfrac12 xy$。</li>
+  <li><strong>Frobenius 结构</strong>：取线性泛函 $\lambda:A\to k$ 提取元素的 $xy$-系数，则配对 $(a,b)\mapsto\lambda(ab)$ 在基下的矩阵可逆，故 $A$ 为 <strong>Frobenius 代数</strong>，从而<strong>自内射</strong>（左投射模即左内射模）。</li>
+  <li><strong>局部性</strong>：设 $J=(x,y)$，则 $J^{3}=0$ 且 $A/J\cong k$，故 $A$ 是局部代数。局部代数上的有限生成投射模必自由；而 $\dim_{k}M=2$ 不是 $\dim_{k}A=4$ 的倍数，故 $M$ 不可能是投射模。</li>
+  <li><strong>Gorenstein 投射性</strong>：对有限维自内射（特别地 Frobenius）代数上的任意有限生成模，拼接一个投射分解与一个内射余分解，即可得到双向无界的完全正合投射复形，故均为 Gorenstein 投射模。因此 $M$ 为 Gorenstein 投射模。</li>
+</ul>
+
+<h4 id="ar-gpc-ce-3">投射分解与自扩张计算</h4>
+<ul>
+  <li>对任意 $a\in k^{\times}$ 记 $u_{a}:=x-ay$；右乘映射 $r_{u_{a}}:A\to A,\ b\mapsto bu_{a}$ 是左 $A$-线性的。直接计算得
+  $$\operatorname{im}r_{u_{a}}=k(x-ay)\oplus kxy=Au_{a},\qquad \ker r_{u_{a}}=k(x-2ay)\oplus kxy=Au_{2a}.$$</li>
+  <li>满射 $A\to M,\ b\mapsto bv$ 的核为 $A(x-y)$，故 $M\cong A/A(x-y)$。令 $d_{n}:=r_{x-2^{\,n}y}$（$n\ge0$），得到极小投射分解 $\cdots\to A\xrightarrow{d_{2}}A\xrightarrow{d_{1}}A\to A\to M\to0$，所有像均落在 Jacobson 根 $J$ 中。</li>
+  <li>取 $\operatorname{Hom}_{A}(-,M)$（经 $\operatorname{Hom}_{A}(A,M)\cong M$）得上链复形 $0\to M\xrightarrow{\delta^{0}}M\xrightarrow{\delta^{1}}M\to\cdots$，其中 $\delta^{n}$ 由预合成 $d_{n}$ 给出：$\delta^{n}(v)=(1-2^{\,n})w,\ \delta^{n}(w)=0$，且 $\delta^{0}=0$。当 $n\ge1$ 时 $1-2^{\,n}\neq0$，故 $\ker\delta^{n}=k w=\operatorname{im}\delta^{n}$。于是
+  $$\operatorname{Ext}^{1}_{A}(M,M)=\frac{\ker\delta^{1}}{\operatorname{im}\delta^{0}}\cong k,\qquad \operatorname{Ext}^{i}_{A}(M,M)=\frac{\ker\delta^{i}}{\operatorname{im}\delta^{i-1}}=0\quad(i\ge2).$$</li>
+</ul>
+<p class="ar-mnote"><b>意义：</b>该反例表明，一旦把 GPC 的“自扩张全部消失”减弱为“仅在充分高次消失”，结论便不再成立——这正击中了上文“猜想陈述”中 $i\gg 0$ 这一写法。因此 GPC 真正值得研究的仍是“对所有 $i>0$ 自扩张消失”的强假设形式；研究现状与方法一节所证的，也恰是这一强形式在各类特殊代数上的结果。</p>
+
+<h3 class="ar-subhead" id="ar-gpc-3">研究方法</h3>
 <p>GPC（Luo–Huang 2008，源自 torsionless 模何时投射）是广义 Nakayama 猜想的特殊情形，在 Gorenstein 代数上与 ARC 重合。文献中的证明呈<b>双轨格局</b>：具体代数类上直接构造/分类 Gorenstein 投射模；抽象层面经 ARC、GNC、FDC 等猜想的传递关系或等价不变性间接推进。</p>
 <div class="ar-mmap">
   <div class="ar-mmap-col c-red">
@@ -43,7 +98,7 @@ headless: true
   </div>
 </div>
 
-<h4 class="ar-mgroup c-red">直接验证：消没条件与模类筛选</h4>
+<h4 class="ar-mgroup c-red" id="ar-gpc-3-1">直接验证：消没条件与模类筛选</h4>
 <div class="ar-method c-red">
   <div class="ar-method-head"><span class="ar-method-name">自正交 + torsionless：GPC 的起点</span><span class="ar-m-tag">Luo–Huang 2008</span></div>
   <ul class="ar-m-pts">
@@ -77,7 +132,7 @@ headless: true
   </ul>
 </div>
 
-<h4 class="ar-mgroup c-amber">间接传递：借助更广猜想与奇异性范畴</h4>
+<h4 class="ar-mgroup c-amber" id="ar-gpc-3-2">间接传递：借助更广猜想与奇异性范畴</h4>
 <div class="ar-method c-amber">
   <div class="ar-method-head"><span class="ar-method-name">更广猜想的推论</span><span class="ar-m-tag">GNC / ARC / FDC</span></div>
   <ul class="ar-m-pts">
@@ -94,7 +149,7 @@ headless: true
   </ul>
 </div>
 
-<h4 class="ar-mgroup c-blue">不变性传递：等价与扩张</h4>
+<h4 class="ar-mgroup c-blue" id="ar-gpc-3-3">不变性传递：等价与扩张</h4>
 <div class="ar-method c-blue">
   <div class="ar-method-head"><span class="ar-method-name">分离等价与正交类对应</span><span class="ar-m-tag">Sun–Zhao 2025</span></div>
   <ul class="ar-m-pts">
@@ -119,5 +174,46 @@ headless: true
 </div>
 <p class="ar-mnote"><b>遗留问题：</b>一般 Artin 代数上 GPC 仍未决；GPC 已知左右对称而 GNC 的对称性未知，二者是否等价不清楚；是否存在 CM-无限但不满足 GPC 的代数，目前无反例；GPC 与 ARC 在非 Gorenstein 代数上的相互独立性不明；分离等价、Frobenius 扩张、excellent extension、recollement 能否穷尽所有 Artin 代数仍待研究。</p>
 
-<h3 class="ar-subhead">参考文献</h3>
+<h3 class="ar-subhead" id="ar-gpc-ref">参考文献</h3>
 <p class="ar-ref"><span class="ar-ref-no">[1]</span> X.-W. Chen, <i>Gorenstein Homological Algebra of Artin Algebras</i>, arXiv:1712.04587（附录 C：公开问题清单）。</p>
+<p class="ar-ref"><span class="ar-ref-no">[2]</span> K. Erdmann, <i>Ext-finite modules for weakly symmetric algebras with radical cube zero</i>, arXiv:1511.01418 (2015), §4.1（量子外代数反例背景与模结构）。</p>
+<p class="ar-ref"><span class="ar-ref-no">[3]</span> R. Luo, <i>On the Gorenstein projective conjecture: IG-projective modules</i>, J. Algebra <b>2016</b>, doi:10.1142/S0219498816501176.</p>
+</div>
+</div>
+
+<script>
+/* 面板目录下拉按钮（Gorenstein 投射猜想 gpc 面板） */
+(function () {
+  function getToc(el) { return el ? el.closest('.ar-toc') : null; }
+  function setAria(toc, open) {
+    var btn = toc && toc.querySelector('.ar-toc-btn');
+    if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  window.toggleArTocGpc = function (e) {
+    if (e) { e.stopPropagation(); e.preventDefault(); }
+    var toc = getToc(e && e.currentTarget);
+    if (!toc) return;
+    var open = toc.classList.toggle('open');
+    setAria(toc, open);
+  };
+  if (!window.__arTocGpcBound) {
+    window.__arTocGpcBound = true;
+    document.addEventListener('click', function (ev) {
+      document.querySelectorAll('.ar-toc.open').forEach(function (toc) {
+        if (toc.contains(ev.target) && ev.target.closest('.ar-toc-drop a')) {
+          toc.classList.remove('open'); setAria(toc, false);
+        } else if (!toc.contains(ev.target)) {
+          toc.classList.remove('open'); setAria(toc, false);
+        }
+      });
+    });
+    document.addEventListener('keydown', function (ev) {
+      if (ev.key === 'Escape') {
+        document.querySelectorAll('.ar-toc.open').forEach(function (toc) {
+          toc.classList.remove('open'); setAria(toc, false);
+        });
+      }
+    });
+  }
+})();
+</script>
