@@ -84,4 +84,37 @@ body.no-home-bg::before {
 /* 隐藏原生 buttons 区块 */
 .profile .buttons { display: none; }
 
+/* 圆盘中心 Contact Me */
+.pie-disc-wrapper {
+    position: relative;
+}
+
+.pie-center-contact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-family: "Bradley Hand ITC", "Bradley Hand", "Apple Chancery", cursive, sans-serif;
+    font-size: 0.95rem;
+    color: #2563eb;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.2;
+    transition: opacity 0.2s ease;
+}
+
+.pie-center-contact:hover {
+    opacity: 0.8;
+}
+
+.pie-center-contact svg {
+    flex-shrink: 0;
+}
+
 
