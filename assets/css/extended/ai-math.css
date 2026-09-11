@@ -124,22 +124,30 @@
 /* ─── 代数表示论页：节切换按钮（暗彩虹逆序） ─── */
 .ar-section-switch {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    margin: 0.4rem 0 1.5rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin: 0.4rem 0 1rem;
+    width: 100%;
 }
 
 /* 节按钮：圆角矩形块，与圆胶囊的猜想按钮区分，凸显层次 */
 .ar-sec-btn {
-    padding: 0.7rem 2.2rem;
-    font-size: 1.3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1.8rem;
+    font-size: 1.2rem;
     font-weight: 800;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
     border: 2px solid;
     border-radius: 10px;
     background: transparent;
     cursor: pointer;
     transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    white-space: nowrap;
+    text-decoration: none;
+    line-height: 1.2;
 }
 
 .ar-sec-btn.sec-violet { border-color: #5B21B6; color: #5B21B6; }
@@ -177,7 +185,21 @@
     box-shadow: 0 4px 14px rgba(194, 65, 12, 0.35);
 }
 
+.ar-sec-btn.sec-purple { border-color: #9333EA; color: #9333EA; }
+.ar-sec-btn.sec-purple:hover, .ar-sec-btn.sec-purple.active {
+    background: linear-gradient(135deg, #9333EA, #A855F7);
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(147, 51, 234, 0.35);
+}
+
 .ar-sec-btn:hover { transform: translateY(-1px); }
+
+.ar-conjectures-divider {
+    height: 4px;
+    background: linear-gradient(90deg, #DC2626, #EF4444, #DC2626);
+    border-radius: 2px;
+    margin: 1rem 0 2rem;
+}
 
 /* 节容器：默认显示，hidden 时隐藏 */
 .ar-section[hidden] { display: none; }

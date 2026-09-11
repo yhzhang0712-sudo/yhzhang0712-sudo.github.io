@@ -14,7 +14,7 @@ $$ \operatorname{Ext}^{n}_{\Lambda}(S,S)\neq 0 \quad\text{对无穷多个正整�
 
 <p>这是文献中通常所称的 Extension Conjecture，也是目前仍开放的形式；Y. Han（2013，arXiv:1309.0304 <i>A proof of extension conjecture</i>）曾宣称证明，但该论文后来被作者<strong>撤回</strong>（理由为其中存在关键错误：所使用的微分分次代数有限维性主张不成立）。</p>
 
-<h3 class="ar-subhead" id="ar-ext-ce">Extension 猜想反例</h3>
+<h3 class="ar-subhead" id="ar-ext-ce">强Extension 猜想反例</h3>
 <p>下面给出<strong>强 Extension 猜想</strong>（"一次自扩张 ⇒ 所有 $i\ge 1$ 处处自扩张"）的反例。它出自 Happel 的标准构造：单模 $S$ 满足 $\operatorname{Ext}^{1}_{\Lambda}(S,S)\neq 0$，却出现第 3 阶消失 $\operatorname{Ext}^{3}_{\Lambda}(S,S)=0$——只要某一阶消失，就足以否定"所有 $i$ 都非零"。</p>
 
 <h4>反例代数</h4>

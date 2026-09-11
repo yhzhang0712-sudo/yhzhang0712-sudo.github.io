@@ -4,15 +4,16 @@ hideTitle: true
 math: true
 ---
 
-<p style="margin:0 0 1rem;font-size:1rem;"><a href="https://icmconjectures.com" rel="noopener" style="font-weight:bold;color:#2563EB;">ICM Conjectures</a></p>
-
 <div class="ar-section-switch">
   <button type="button" class="ar-sec-btn sec-violet active" onclick="switchArSection('conjectures', this)">核心猜想</button>
   <button type="button" class="ar-sec-btn sec-red" onclick="switchArSection('important', this)">重要猜想</button>
   <button type="button" class="ar-sec-btn sec-blue" onclick="switchArSection('theory', this)">基础理论</button>
   <button type="button" class="ar-sec-btn sec-green" onclick="switchArSection('frontier', this)">前沿理论</button>
   <button type="button" class="ar-sec-btn sec-orange" onclick="switchArSection('hot', this)">研究热点</button>
+  <a href="https://icmconjectures.com" rel="noopener" class="ar-sec-btn sec-purple" style="text-decoration:none;">ICM Conjectures</a>
 </div>
+
+<div class="ar-conjectures-divider"></div>
 
 <section id="ar-section-conjectures" class="ar-section">
 
@@ -170,6 +171,7 @@ math: true
     <button type="button" class="ai-tab-btn tab-teal" onclick="switchArHot('geometric', this)">Geometric model</button>
     <button type="button" class="ai-tab-btn tab-purple" onclick="switchArHot('clustertilting', this)">Cluster tilting</button>
     <button type="button" class="ai-tab-btn tab-violet" onclick="switchArHot('approx', this)">Approximable Triangulated Categories</button>
+    <button type="button" class="ai-tab-btn tab-cyan" onclick="switchArHot('cmtype', this)">CM Type of Brauer-Thrall猜想</button>
   </div>
 
   <div id="ar-hot-panel-dgenhance" class="ai-tab-panel active">
@@ -197,6 +199,10 @@ math: true
   </div>
 
   <div id="ar-hot-panel-clustertilting" class="ai-tab-panel">
+    <p class="ai-empty">内容整理中，敬请期待…</p>
+  </div>
+
+  <div id="ar-hot-panel-cmtype" class="ai-tab-panel">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 
