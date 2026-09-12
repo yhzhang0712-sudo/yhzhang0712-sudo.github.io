@@ -170,12 +170,13 @@ math: true
           <li><span class="ai-year">07-31</span>｜<a href="https://arxiv.org/abs/2608.00222">Gao 推广 Jacobian 反例机制到所有 $n > 2$</a> — 将三维反例机制推广到所有 $n > 2$，彻底否定 Jacobian 猜想</li>
           <li><span class="ai-year">08-01</span>｜<a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI 一口气公布十项数学进展</a> — 涵盖高维 sphere packing 新上界、binary/spherical codes 指数级上界、显式构造 non-sofic groups、证伪 Connes rigidity 猜想、permanent 算术电路新下界（$\Omega(n^2 \log\log n)$ 电路 / $\Omega(n^4/\log n)$ 公式）、一般双人量子博弈的指数型 parallel repetition 定理、Euclidean CVP 困难性改进（近似因子 $n^{1/400}$）、Ehrhart volume 猜想（所有维数尖锐最大体积 $(n+1)^n/n!$）、多色 Ramsey 解决 Erdős #183（$R_k(3)=k^{\Theta(k)}$），以及证伪两项 Erdős–Simonovits 型极值图论猜想（对应 #146、#180）</li>
           <li><span class="ai-year">08-10</span>｜<a href="https://www.anthropic.com/research/riemann-zeta">Claude 在黎曼ζ函数零点问题上把临界线比例下界推进到约 67.2%</a> — 推进临界线下界到约 67.2%（黎曼猜想仍未解决）</li>
-          <li><span class="ai-year">08-13</span>｜<a href="https://new.qq.com/rain/a/20260813A06C0E00">协和神经外科医师金山木借助 GPT-5.6 自主运行 16 小时证明 Crouzeix 猜想</a> — 困扰数值线性代数界 22 年的 Crouzeix 猜想（自 2004 年提出）由非数学科班背景的北京协和医院神经外科住院医师 Shanmu Jin（金山木）借助 GPT-5.6 自主运行约 16 小时完成，验证者包括猜想提出者 Michel Crouzeix 本人</li>
+          <li><span class="ai-year">08-13</span>｜<a href="https://new.qq.com/rain/a/20260813A06C0E00">GPT-5.6 自主运行 16 小时证明 Crouzeix 猜想</a> — 困扰数值线性代数界 22 年的 Crouzeix 猜想（自 2004 年提出）由非数学科班背景的北京协和医院神经外科住院医师 Shanmu Jin（金山木）借助 GPT-5.6 自主运行约 16 小时完成，验证者包括猜想提出者 Michel Crouzeix 本人</li>
           <li><span class="ai-year">08-14</span>｜<a href="https://terrytao.wordpress.com/2026/08/14/">Tao 借助 AI 协作证明 Tang–Zhang（唐–张）猜想（n 充分大）</a> — 据知乎用户贴出的 Tao 2026-08-14 博客截图：借助 AI 协作，证明了该猜想在充分大的 n 时成立</li>
           <li><span class="ai-year">08-17</span>｜<a href="https://www.proofatlas.ai/papers/sendov-conjecture/SENDOV_CONJECTURE_PROOF_AUGUST_5_2026.pdf">森多夫猜想（Sendov）被 AI 辅助证明</a> — Lech Mazur 借助 GPT-5.6 Pro 完成对所有次数 $n \ge 2$ 的计算机辅助证明，配约 9 万行 Lean 4 形式化代码；Tao 数日后消化并重形式化（代码缩至约 1.5 万行），并发现该论证实际证出更强的 Phelps–Rodriguez 猜想（<a href="https://terrytao.wordpress.com/2026/08/12/a-digestion-of-the-proof-of-sendovs-conjecture/">Tao 博客</a>）</li>
           <li><span class="ai-year">08-19</span>｜<a href="https://arxiv.org/abs/2608.19301">刘继豪（Jihao Liu）借助生成式 AI 证伪 Yau–Tian–Donaldson 猜想</a> — 构造一个 K-多稳定（K-polystable）的极化光滑射影五维簇，却不存在常数量曲率 Kähler（cscK）度量，从而证伪 cscK 情形下的 YTD 猜想；论文声明主要结果由生成式 AI（GPT-5.6-sol、Fable 5、Danus 系统）获得</li>
           <li><span class="ai-year">08-24</span>｜<a href="https://alpo.ge/s6.pdf">Alpöge 借助 Claude 构造 S⁶ 的复结构</a> — 哈佛/Anthropic 的 Levent Alpöge 与 Claude 合作，构造出同胚（乃至微分同胚）于六维球面 S⁶ 的紧致复三维流形 X，证明 S⁶ 上存在复结构，攻克自 1948 年提出的 Hopf 问题（六维球面是否有复结构）</li>
           <li><span class="ai-year">08-25</span>｜<a href="https://agihunt.info/en/p/19ffbf0323ce31bd004d0fa4862">Bourgain–Brezis–Sobolev 猜想被 AI 快速攻克</a> — 8 月 4 日 arXiv 出现部分进展论文后，用户让 AI 在两天内给出完整证明；8 月 8 日又出现一篇 AI 辅助的完整解决论文，从部分进展到完全破解仅数日</li>
+          <li><span class="ai-year">09-08</span>｜<a href="https://openai.com/index/navier-stokes-solution">OpenAI 宣布解决 Navier–Stokes 千禧年难题</a> — 约 10,000 个自主 AI Agent 协作约 50–88 小时，证明三维 Navier–Stokes 方程在特定条件下会出现有限时间奇点（blow up）；结果已用 Lean 形式化验证，但 Clay 数学研究所尚未正式认定，且存在与 NYU/Anthropic 团队的优先权争议</li>
         </ul>
       </div>
     </div>
@@ -185,7 +186,7 @@ math: true
 
 <div class="ai-tabs ai-agent-tabs">
   <div class="ai-tab-btns">
-    <button type="button" class="ai-tab-btn tab-purple active" onclick="switchAiAgentTab('intro', this)">什么是 Agent?</button>
+    <button type="button" class="ai-tab-btn tab-purple active" onclick="switchAiAgentTab('intro', this)">什么是 Agent</button>
     <button type="button" class="ai-tab-btn tab-blue" onclick="switchAiAgentTab('science', this)">数学科研 Agent</button>
     <button type="button" class="ai-tab-btn tab-orange" onclick="switchAiAgentTab('ppt', this)">PPT Agent</button>
   </div>
@@ -293,10 +294,11 @@ math: true
   <div id="ai-panel-ethics" class="ai-tab-panel">
     <div class="ai-tabs ai-agent-tabs">
       <div class="ai-tab-btns">
-        <button type="button" class="ai-tab-btn tab-teal" onclick="switchAiEthicsTab('evolution', this)">AI伦理演进史</button>
-        <button type="button" class="ai-tab-btn tab-red active" onclick="switchAiEthicsTab('leiden', this)">人工智能与数学莱顿宣言</button>
+        <button type="button" class="ai-tab-btn tab-teal active" onclick="switchAiEthicsTab('evolution', this)">AI伦理演进史</button>
+        <button type="button" class="ai-tab-btn tab-red" onclick="switchAiEthicsTab('leiden', this)">人工智能与数学莱顿宣言</button>
+        <button type="button" class="ai-tab-btn tab-orange" onclick="switchAiEthicsTab('misalignment', this)">《人工智能在数学中的严重错位》宣言</button>
       </div>
-      <div id="ai-ethics-panel-evolution" class="ai-tab-panel">
+      <div id="ai-ethics-panel-evolution" class="ai-tab-panel active">
         <div class="agent-intro">
           <p class="agent-lead">AI 伦理的讨论早已从科幻担忧，演变为一场<strong>牵动全球治理、重塑人类未来</strong>的深刻讨论。其关注点随技术能力的跃迁不断深化：早期奠基（1950–2000）→ 理论深化与初步治理（2000–2015）→ 生成式 AI 爆发与治理回应（2022–2024）→ 走向系统治理与全球共识（2024 至今）。</p>
           <h3>演进时间线</h3>
@@ -353,7 +355,7 @@ math: true
           <p class="agent-summary"><strong>总结</strong>：当前 AI 伦理讨论早已超越「电车难题」，深入文明、权力与存在的层面。核心张力在于——如何既享受技术革命的巨大红利，又有效驾驭其风险，确保技术发展始终服务于人类的整体福祉与自由解放。AI 的未来，不在于它多么像人，而在于它能否始终作为人类文明有益的延伸。</p>
         </div>
       </div>
-      <div id="ai-ethics-panel-leiden" class="ai-tab-panel active">
+      <div id="ai-ethics-panel-leiden" class="ai-tab-panel">
         <div class="agent-intro">
           <p class="agent-lead">2026 年 6 月 2 日，16 位来自 15 所高校的数学家发布《人工智能与数学莱顿宣言》（Leiden Declaration on Artificial Intelligence and Mathematics），呼吁全球数学界正视 AI 对学科核心价值的冲击——<strong>不主张禁止 AI，而是为负责任地使用 AI 建立共同规范</strong>。宣言获国际数学联盟（IMU）正式背书。</p>
           <p><a href="https://leidendeclaration.ai/" style="color:#2563EB;text-decoration:underline;">▶ 阅读宣言全文（leidendeclaration.ai）</a></p>
@@ -378,6 +380,45 @@ math: true
           <p>发布当天即获逾 130 位学者联署，现已超 2300 人签署。两位菲尔兹奖得主背书：Scholze 称「数学研究的目标是人对数学的理解，数学只能在人类数学家共同体中繁荣」；Tao 称「AI 潜力巨大但也伴随风险，宣言在二者间找到了极好的平衡」。《自然》发表社论支持。2026 年 7 月费城国际数学家大会（ICM）围绕宣言展开讨论。</p>
         </div>
       </div>
+
+      <div id="ai-ethics-panel-misalignment" class="ai-tab-panel">
+        <div class="agent-intro">
+          <p class="agent-lead">2026 年 9 月 11 日，陶哲轩（Terence Tao）等 <strong>25 位菲尔兹奖得主</strong>联合发布《人工智能在数学中的严重错位》（A Severe Misalignment of AI in Mathematics）宣言，紧急警告 AI 公司以「解题跑分」为导向的使用方式正与数学共同体的核心目标发生<strong>严重错位</strong>。宣言同步发布于 <a href="https://mathandai.org/" style="color:#2563EB;text-decoration:underline;">mathandai.org</a>。</p>
+
+          <h3>宣言背景</h3>
+          <p><strong>直接导火索：OpenAI 攻克 Navier–Stokes 千禧年难题</strong></p>
+          <p>2026 年 9 月 8 日，OpenAI 宣布用约 <strong>1 万个并行 AI 智能体</strong>，耗时约 <strong>88 小时</strong>，交换 <strong>270 万条消息</strong>，生成约 <strong>1300 亿输出 Token</strong>，产出一篇 <strong>166 页论文</strong>，证明三维 Navier–Stokes 方程在特定条件下会出现有限时间奇点（blow up）。算力估算为<strong>数百万美元</strong>（零售价约 600 万美元），远超 Clay 数学研究所悬赏的 100 万美元奖金（OpenAI 称不打算领取）。结果已用 Lean 完成形式化验证，但独立评审仍在进行。</p>
+
+          <p><strong>署名与剽窃争议</strong></p>
+          <p>NYU 数学家 <strong>Tristan Buckmaster</strong> 与 Anthropic 研究员 <strong>Levent Alpöge</strong> 此前一直在研究相关流体方程，并在 OpenAI 公布前夜发布了自己的成果。Buckmaster 称 OpenAI 曾提议让他<strong>单独署名</strong> Navier–Stokes 成果论文，<strong>条件是排除 Alpöge</strong>（因其任职于竞对 Anthropic）。OpenAI 研究员 Sébastien Bubeck 否认此说法并道歉；OpenAI 承认「不能排除」源自用户使用产品的去标识化数据帮助改进了模型，但称双方证明「显著不同」。此争议正是声明中「<strong>严重的成果归属和剽窃问题</strong>」的现实写照。</p>
+
+          <p><strong>陶哲轩的说明</strong></p>
+          <blockquote>「我很荣幸成为以下声明的 <strong>25 位首批签署人之一</strong>——所有签署者都是菲尔兹奖得主。这份声明源于我们<strong>过去一周的讨论</strong>……并（类似于《莱顿宣言》）邀请更多人联署。（遗憾的是，我们没有时间像莱顿那样进行更充分的协商；但我们认为形势紧迫，需要尽早发表。）」</blockquote>
+
+          <h3>宣言内容</h3>
+          <p><strong>核心结论（一句话）</strong></p>
+          <blockquote>「数学关心的从来不是「答案是否正确」，而是「我们是否理解了它」。AI 公司把「攻克多少著名难题」当作模型能力的跑分基准，与数学共同体以「概念理解与洞见」为核心的目标<strong>严重错位（severely misaligned）</strong>。批量生产「真/假」结论，可能摧毁孕育新思想的沃土，而非为其注入生命。」</blockquote>
+          <p>声明<strong>不反对 AI</strong>，明确承认 AI 有加速真正数学研究的潜力；它反对的是<strong>以营销和跑分为导向的使用方式</strong>。</p>
+
+          <p><strong>宣言全文（中英对照）</strong></p>
+          <p><em>原文（English）</em></p>
+          <blockquote>Over the last few months, the mathematical capabilities of LLMs have improved dramatically, to the point that they can solve major outstanding problems in many fields of mathematics. However, the push by AI companies to solve mathematical problems as a benchmark is detrimental to the science of mathematics, and to the mathematical community. <strong>The goals of the AI companies and the goals of the mathematical community are severely misaligned.</strong></blockquote>
+          <p><em>中文译文</em></p>
+          <p>过去几个月，大语言模型的数学能力突飞猛进，已能解决数学众多领域中长期悬而未决的重大问题。然而，AI 公司将「攻克数学问题」当作<strong>能力评测基准（benchmark）</strong>来推动的做法，对数学这门科学、对数学共同体都是有害的。<strong>AI 公司的目标与数学共同体的目标之间存在严重错位。</strong></p>
+          <p>我们认为，这属于更广泛的「对齐」问题的一部分，也正影响着其他科学和创造性职业乃至整个社会。</p>
+          <p><strong>数学研究致力于理解</strong>形状、数以及自然现象的基本结构。经过一代代人的积累，数学建立起由精妙思想、方法、抽象概念及其他工具构成的庞大体系，用以理解数学世界的全貌；而现代技术与科学又建立在这些数学工具之上。</p>
+          <p>著名问题常常充当这片疆域中的<strong>地标和灯塔</strong>——人们借此衡量对数学全貌的理解是否进步。解决其中一个问题，历来是<strong>新洞见与新方法</strong>出现的确凿标志；随后数学共同体会通过讲座、讨论、简化这一漫长而艰辛的过程加以研究。这些过程无一例外<strong>需要时间，并建立在人与人的互动之上</strong>。</p>
+          <p>近几个月，AI 在解决重大数学问题上的成功甚至在数学圈外登上头条。但<strong>解题只是工具和代理指标</strong>，数学研究的首要目标是<strong>概念性的理解与洞见</strong>。在 AI 领域忘记这一点，可能使工具反过来损害它本应服务的目标。</p>
+          <p>事实上，以越来越快的速度<strong>批量生产「真/假」命题</strong>，可能摧毁孕育新思想的沃土，而非为其注入生命。这些解答往往被<strong>仓促公布</strong>——没有时间进行恰当的撰写、提炼新方法与新思想、引用他人的相关在先工作。正如所有创造性职业一样，这引发了严重的<strong>成果归属与剽窃问题</strong>。</p>
+          <p>此外，如果没有愿意投入其中、把这些思想<strong>发展并融入数学经典（canon）</strong>的数学家，AI 构想出的思想就永远不会真正「活起来」，数学家之间至关重要的人类<strong>传承链</strong>也将断裂。</p>
+          <p>我们正在目睹<strong>对智力劳动的普遍威胁</strong>：AI 使用的结果与其最初目的之间的错位。在许多领域，多年训练传统上不仅是为了产出最终答案或产品，也是为了培养理解力，以及提出新问题、新思想的能力。然而，建立在海量人类既有工作之上的 AI 系统，正越来越有能力直接产出这类工作的成果——于是这些目标不再一致。</p>
+          <p>数学共同体当下面临的问题，与其他科学和创造性职业面临的如出一辙，也预示着全人类可能面临的问题：<strong>当 AI 改变工作的方式时，我们如何确保自己不会忘记，这项工作最初究竟是为了实现什么？</strong></p>
+          <p><strong>AI 有潜力增强并加速真正的数学研究与理解。</strong>数学作为一种职业，需要以多种方式适应这些变化。然而，这些变化最终是造福这一领域还是造成破坏，在很大程度上取决于<strong>掌控这项新技术的人所做的决定</strong>。这些问题必须紧迫地加以解决——在数学共同体内部、在开发这些技术的公司层面，以及更广泛地在全社会。</p>
+
+          <h3>签署情况</h3>
+          <p>宣言由陶哲轩等 25 位菲尔兹奖得主联合发起（按获奖年份排序，横跨 1978–2026 近半个世纪）。联署页面（mathandai.org/endorsers）截至 9 月 12 日已开放给全体数学工作者，<strong>联署人数仍在增长</strong>（不同媒体 9 月 12 日报导时约为 1400–1687 人，需以官网实时数据为准）。</p>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -393,6 +434,14 @@ function switchAiTab(id, btn) {
   panel.classList.add('active');
   if (typeof renderMathInElement === 'function') {
     renderMathInElement(panel, { delimiters: [ {left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false} ], throwOnError: false });
+  }
+  if (id === 'ethics') {
+    var ethicsTabBtn = document.querySelector('.ai-tab-btn[onclick*="evolution"]');
+    if (ethicsTabBtn) switchAiEthicsTab('evolution', ethicsTabBtn);
+  }
+  if (id === 'agent') {
+    var agentTabBtn = document.querySelector('.ai-tab-btn[onclick*="intro"]');
+    if (agentTabBtn) switchAiAgentTab('intro', agentTabBtn);
   }
 }
 
