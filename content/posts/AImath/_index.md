@@ -380,26 +380,20 @@ math: true
           <p>发布当天即获逾 130 位学者联署，现已超 2300 人签署。两位菲尔兹奖得主背书：Scholze 称「数学研究的目标是人对数学的理解，数学只能在人类数学家共同体中繁荣」；Tao 称「AI 潜力巨大但也伴随风险，宣言在二者间找到了极好的平衡」。《自然》发表社论支持。2026 年 7 月费城国际数学家大会（ICM）围绕宣言展开讨论。</p>
         </div>
       </div>
-
       <div id="ai-ethics-panel-misalignment" class="ai-tab-panel">
         <div class="agent-intro">
           <p class="agent-lead">2026 年 9 月 11 日，陶哲轩（Terence Tao）等 <strong>25 位菲尔兹奖得主</strong>联合发布《人工智能在数学中的严重错位》（A Severe Misalignment of AI in Mathematics）宣言，紧急警告 AI 公司以「解题跑分」为导向的使用方式正与数学共同体的核心目标发生<strong>严重错位</strong>。宣言同步发布于 <a href="https://mathandai.org/" style="color:#2563EB;text-decoration:underline;">mathandai.org</a>。</p>
-
           <h3>宣言背景</h3>
           <p><strong>直接导火索：OpenAI 攻克 Navier–Stokes 千禧年难题</strong></p>
           <p>2026 年 9 月 8 日，OpenAI 宣布用约 <strong>1 万个并行 AI 智能体</strong>，耗时约 <strong>88 小时</strong>，交换 <strong>270 万条消息</strong>，生成约 <strong>1300 亿输出 Token</strong>，产出一篇 <strong>166 页论文</strong>，证明三维 Navier–Stokes 方程在特定条件下会出现有限时间奇点（blow up）。算力估算为<strong>数百万美元</strong>（零售价约 600 万美元），远超 Clay 数学研究所悬赏的 100 万美元奖金（OpenAI 称不打算领取）。结果已用 Lean 完成形式化验证，但独立评审仍在进行。</p>
-
           <p><strong>署名与剽窃争议</strong></p>
           <p>NYU 数学家 <strong>Tristan Buckmaster</strong> 与 Anthropic 研究员 <strong>Levent Alpöge</strong> 此前一直在研究相关流体方程，并在 OpenAI 公布前夜发布了自己的成果。Buckmaster 称 OpenAI 曾提议让他<strong>单独署名</strong> Navier–Stokes 成果论文，<strong>条件是排除 Alpöge</strong>（因其任职于竞对 Anthropic）。OpenAI 研究员 Sébastien Bubeck 否认此说法并道歉；OpenAI 承认「不能排除」源自用户使用产品的去标识化数据帮助改进了模型，但称双方证明「显著不同」。此争议正是声明中「<strong>严重的成果归属和剽窃问题</strong>」的现实写照。</p>
-
           <p><strong>陶哲轩的说明</strong></p>
           <blockquote>「我很荣幸成为以下声明的 <strong>25 位首批签署人之一</strong>——所有签署者都是菲尔兹奖得主。这份声明源于我们<strong>过去一周的讨论</strong>……并（类似于《莱顿宣言》）邀请更多人联署。（遗憾的是，我们没有时间像莱顿那样进行更充分的协商；但我们认为形势紧迫，需要尽早发表。）」</blockquote>
-
           <h3>宣言内容</h3>
           <p><strong>核心结论（一句话）</strong></p>
           <blockquote>「数学关心的从来不是「答案是否正确」，而是「我们是否理解了它」。AI 公司把「攻克多少著名难题」当作模型能力的跑分基准，与数学共同体以「概念理解与洞见」为核心的目标<strong>严重错位（severely misaligned）</strong>。批量生产「真/假」结论，可能摧毁孕育新思想的沃土，而非为其注入生命。」</blockquote>
           <p>声明<strong>不反对 AI</strong>，明确承认 AI 有加速真正数学研究的潜力；它反对的是<strong>以营销和跑分为导向的使用方式</strong>。</p>
-
           <p><strong>宣言全文（中英对照）</strong></p>
           <p><em>原文（English）</em></p>
           <blockquote>Over the last few months, the mathematical capabilities of LLMs have improved dramatically, to the point that they can solve major outstanding problems in many fields of mathematics. However, the push by AI companies to solve mathematical problems as a benchmark is detrimental to the science of mathematics, and to the mathematical community. <strong>The goals of the AI companies and the goals of the mathematical community are severely misaligned.</strong></blockquote>
@@ -414,14 +408,12 @@ math: true
           <p>我们正在目睹<strong>对智力劳动的普遍威胁</strong>：AI 使用的结果与其最初目的之间的错位。在许多领域，多年训练传统上不仅是为了产出最终答案或产品，也是为了培养理解力，以及提出新问题、新思想的能力。然而，建立在海量人类既有工作之上的 AI 系统，正越来越有能力直接产出这类工作的成果——于是这些目标不再一致。</p>
           <p>数学共同体当下面临的问题，与其他科学和创造性职业面临的如出一辙，也预示着全人类可能面临的问题：<strong>当 AI 改变工作的方式时，我们如何确保自己不会忘记，这项工作最初究竟是为了实现什么？</strong></p>
           <p><strong>AI 有潜力增强并加速真正的数学研究与理解。</strong>数学作为一种职业，需要以多种方式适应这些变化。然而，这些变化最终是造福这一领域还是造成破坏，在很大程度上取决于<strong>掌控这项新技术的人所做的决定</strong>。这些问题必须紧迫地加以解决——在数学共同体内部、在开发这些技术的公司层面，以及更广泛地在全社会。</p>
-
           <h3>签署情况</h3>
           <p>宣言由陶哲轩等 25 位菲尔兹奖得主联合发起（按获奖年份排序，横跨 1978–2026 近半个世纪）。联署页面（mathandai.org/endorsers）截至 9 月 12 日已开放给全体数学工作者，<strong>联署人数仍在增长</strong>（不同媒体 9 月 12 日报导时约为 1400–1687 人，需以官网实时数据为准）。</p>
         </div>
       </div>
     </div>
   </div>
-
   <div id="ai-panel-leiden" class="ai-tab-panel" style="display:none;"></div>
 </div>
 

@@ -49,7 +49,7 @@
 {{- /* 解析“代数表示论”各猜想面板为独立搜索项，permalink 带 #ar-panel-xxx 锚点 */ -}}
 {{- $ar := site.GetPage "posts/代数表示论" -}}
 {{- if $ar -}}
-    {{- $panelKeys := slice "finite" "nakayama" "gorenstein" "wakamatsu" "cartan" "broue" "telescope" "brauerthrall" "gpc" "nlc" "igusasmalo" "extension" "hpr" "gpfdc" "fcy" "ncluster" "gentle" "garc" "silting" "derivedsimple" "ttgeom" -}}
+    {{- $panelKeys := slice "finite" "nakayama" "gorenstein" "wakamatsu" "cartan" "broue" "telescope" "brauerthrall" "gpc" "nlc" "igusasmalo" "extension" "hpr" "gpfdc" "fcy" "ncluster" "gentle" "garc" "silting" "derivedsimple" "ttgeom" "periodicity" -}}
     {{- range $panelKeys -}}
         {{- $p := site.GetPage (printf "posts/代数表示论/panels/%s" .) -}}
         {{- if $p -}}
