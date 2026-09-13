@@ -13,6 +13,8 @@ math: true
     <button type="button" class="ai-tab-btn tab-purple" onclick="switchAiTab('ethics', this)">AI伦理</button>
   </div>
 
+  <div class="ar-conjectures-divider"></div>
+
   <div id="ai-panel-timeline" class="ai-tab-panel active">
     <ul class="ai-timeline">
       <li><span class="ai-year">1943</span>｜<a href="https://zh.wikipedia.org/wiki/%E9%BA%A6%E5%8D%A1%E6%B4%9B-%E7%9A%AE%E8%8C%A8%E7%A5%9E%E7%BB%8F%E5%85%83%E6%A8%A1%E5%9E%8B">MP 神经元模型</a>：用数学模拟神经元，神经网络的思想源头（<a href="https://zh.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E7%A5%9E%E7%BB%8F%E5%85%83">人工神经元</a> 相关）</li>
@@ -36,40 +38,190 @@ math: true
   </div>
 
   <div id="ai-panel-tools" class="ai-tab-panel">
-    <ul class="ai-timeline">
-      <li><span class="ai-year">对话</span>｜<a href="https://chatgpt.com">ChatGPT</a>（OpenAI）：全能对话助手，多模态交互，推理与编程领先</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://claude.ai">Claude</a>（Anthropic）：长文本理解与写作，推理与代码质量高</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://www.deepseek.com">DeepSeek</a>：国产开源大模型，数学推理与代码突出，API 成本极低</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://kimi.moonshot.cn">Kimi</a>（月之暗面）：超长上下文对话，适合文档分析与长文阅读</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://www.doubao.com">豆包</a>（字节跳动）：国民级 AI 助手，融合抖音生态，短视频脚本与文案创作</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://yiyan.baidu.com">文心一言</a>（百度）：中文场景优化，金融与教育领域突出</li>
-      <li><span class="ai-year">图像</span>｜<a href="https://www.midjourney.com">Midjourney</a>：顶尖艺术风格图像生成，设计师与插画师首选</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://stability.ai">Stable Diffusion</a>：开源文生图，可本地部署，社区生态丰富</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://openai.com/dall-e-3">DALL·E 3</a>（OpenAI）：集成于 ChatGPT，提示词理解精准</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://dreamina.jianying.com">即梦 AI</a>（字节跳动）：中文友好，智能画布修图，电商与短视频创作利器</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://www.adobe.com/products/firefly.html">Adobe Firefly</a>：与 Photoshop 生态无缝衔接，图像修复与风格转换</li>
-      <li><span class="ai-year">视频</span>｜<a href="https://openai.com/sora">Sora</a>（OpenAI）：高质量长视频生成，模拟物理世界逻辑</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://runwayml.com">Runway</a>：文本/图像转视频+视频编辑全能平台</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://kling.kuaishou.com">可灵</a>（快手）：国产视频生成标杆，2 分钟 1080p 高清，3D 人物驱动</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://pika.art">Pika Labs</a>：快速生成 AI 动画视频，适合短视频与 Vlog</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://www.capcut.cn">剪映 AI</a>（字节跳动）：智能剪辑+一键成片，自动添加音乐/字幕/特效</li>
-      <li><span class="ai-year">编程</span>｜<a href="https://github.com/features/copilot">GitHub Copilot</a>（微软/OpenAI）：生态整合最强，支持 50+ 语言</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://cursor.com">Cursor</a>：基于 VS Code 的 AI IDE，项目级代码理解与重构</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://codeium.com/windsurf">Windsurf</a>（Codeium）：Agent 型 AI IDE，本地化计算，有免费版</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://tongyi.aliyun.com/lingma">通义灵码</a>（阿里云）：国产编程助手，多语言补全，中文友好</li>
-      <li><span class="ai-year">音频</span>｜<a href="https://suno.com">Suno</a>：文字描述生成含人声的完整歌曲，零门槛音乐创作</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://elevenlabs.io">ElevenLabs</a>：顶尖 AI 语音合成，120+ 拟真声线，支持声音克隆</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://www.udio.com">Udio</a>：前 Google DeepMind 团队打造，精细控制音乐风格</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://peiyin.xunfei.cn">讯飞智作</a>（科大讯飞）：一站式音视频生成，支持虚拟主播</li>
-      <li><span class="ai-year">办公</span>｜<a href="https://www.notion.com/product/ai">Notion AI</a>：智能笔记整理/会议纪要，支持多人协作</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://www.microsoft.com/en-us/microsoft-365/copilot">Microsoft 365 Copilot</a>：深度融合 Word/Excel/PowerPoint</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://gamma.app">Gamma</a>：快速生成专业演示幻灯片，AI 排版+配图</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://ai.wps.cn">WPS AI</a>（金山办公）：文档生成/数据分析/PPT 制作，国产办公全覆盖</li>
-      <li><span class="ai-year">Agent</span>｜<a href="https://www.coze.cn">Coze</a>（字节跳动）：零代码智能体平台，一键发布到微信/抖音</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://dify.ai">Dify</a>：开源 LLM 应用开发平台，可视化工作流编排</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://www.langchain.com">LangChain</a>：主流 Agent 开发框架，支持工具调用与多步推理</li>
-      <li><span class="ai-year">　　</span>｜<a href="https://autogpt.net">AutoGPT</a>：自主任务执行 Agent，探索 AI 自主性边界</li>
-    </ul>
+
+<div class="ai-tabs ai-tools-tabs">
+  <div class="ai-tab-btns">
+    <button type="button" class="ai-tab-btn tab-blue active" onclick="switchAiToolsTab('chat', this)">对话</button>
+    <button type="button" class="ai-tab-btn tab-teal" onclick="switchAiToolsTab('browser', this)">AI 浏览器</button>
+    <button type="button" class="ai-tab-btn tab-green" onclick="switchAiToolsTab('image', this)">图片生成</button>
+    <button type="button" class="ai-tab-btn tab-orange" onclick="switchAiToolsTab('video', this)">视频生成</button>
+    <button type="button" class="ai-tab-btn tab-violet" onclick="switchAiToolsTab('ppt', this)">PPT 生成</button>
+    <button type="button" class="ai-tab-btn tab-red" onclick="switchAiToolsTab('classroom', this)">课堂生成</button>
+    <button type="button" class="ai-tab-btn tab-yellow" onclick="switchAiToolsTab('writing', this)">写作文案</button>
+    <button type="button" class="ai-tab-btn tab-purple" onclick="switchAiToolsTab('coding', this)">Vibe 编程</button>
+    <button type="button" class="ai-tab-btn tab-teal" onclick="switchAiToolsTab('education', this)">教育相关</button>
+    <button type="button" class="ai-tab-btn tab-blue" onclick="switchAiToolsTab('research', this)">科研相关</button>
+  </div>
+
+<div id="ai-tools-panel-chat" class="ai-tab-panel active">
+<div class="agent-intro">
+<h3 class="ai-tools-title">对话类</h3>
+<ul class="ai-timeline">
+<li><span class="ai-year">工具</span>｜<a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT</a>：生态最大：GPT-5 + Agent 模式 + 插件；agent 执行公认强项</li>
+<li><span class="ai-year">工具</span>｜<a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>：写作与分析质量"可拿去答辩"；超长文档处理；MCP 协议发起者</li>
+<li><span class="ai-year">工具</span>｜<a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini</a>：百万级上下文 + 原生多模态；与 Google 全家桶联动；3.1 Pro 推理领先</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.deepseek.com" target="_blank" rel="noopener">DeepSeek</a> <span class="ai-tools-cn">🇨🇳</span>：开源 + 极致性价比；数学/代码传统强项；免费网页版</li>
+<li><span class="ai-year">工具</span>｜<a href="https://grok.com" target="_blank" rel="noopener">Grok</a>：独占 X 实时数据流；Grok 4 进入推理第一梯队</li>
+<li><span class="ai-year">工具</span>｜<a href="https://kimi.moonshot.cn" target="_blank" rel="noopener">Kimi</a> <span class="ai-tools-cn">🇨🇳</span>：长文本起家，中文长文档问答体验好</li>
+<li><span class="ai-year">工具</span>｜<a href="https://tongyi.aliyun.com" target="_blank" rel="noopener">通义千问</a> <span class="ai-tools-cn">🇨🇳</span>：开源家族最全（Qwen3），中文生态完善</li>
+<li><span class="ai-year">工具</span>｜<a href="https://chatglm.cn" target="_blank" rel="noopener">智谱清言 GLM</a> <span class="ai-tools-cn">🇨🇳</span>：对话+Agent+视觉全栈；AutoGLM 能操作手机/网页</li>
+</ul>
+<p class="ar-mnote"><strong>选型口诀</strong>：写作分析 Claude，agent 执行 ChatGPT，Google 生态 Gemini，省钱 DeepSeek。</p>
+</div>
+</div>
+<div id="ai-tools-panel-browser" class="ai-tab-panel">
+<div class="agent-intro">
+<h3 class="ai-tools-title">AI 浏览器（2026 年爆发的新品类）</h3>
+<ul class="ai-timeline">
+<li><span class="ai-year">工具</span>｜<a href="https://www.perplexity.ai/comet" target="_blank" rel="noopener">Perplexity Comet</a>：agentic 浏览器先锋，2026 年 3 月起免费、全平台覆盖；边浏览边委托任务</li>
+<li><span class="ai-year">工具</span>｜<a href="https://openai.com/index/chatgpt-atlas/" target="_blank" rel="noopener">ChatGPT Atlas</a>：OpenAI 官方浏览器：网页内直接唤起 ChatGPT 操作（目前 Mac 优先）</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.diabrowser.com" target="_blank" rel="noopener">Dia</a>：The Browser Company 出品（Arc 团队）：整页对话、多标签聚合提问，体验最顺滑（Mac only）</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.microsoft.com/edge" target="_blank" rel="noopener">Edge + Copilot 模式</a>：微软官方 AI 化：侧边栏 Copilot + 浏览器级 agent，Windows 用户零成本</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.google.com/chrome/" target="_blank" rel="noopener">Chrome + Gemini</a>：全球最大装机量 + Gemini 内嵌（"跟页面对话"原生集成）</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.quark.cn" target="_blank" rel="noopener">夸克</a> <span class="ai-tools-cn">🇨🇳</span>：国内 AI 浏览器顶流：AI 搜索 + 网盘 + 搜题一体化，学生群体渗透率高</li>
+<li><span class="ai-year">工具</span>｜<a href="https://fellou.ai" target="_blank" rel="noopener">Fellou</a>：纯 agentic 浏览器路线：跨网页自动执行工作流</li>
+</ul>
+</div>
+</div>
+<div id="ai-tools-panel-image" class="ai-tab-panel">
+<div class="agent-intro">
+<h3 class="ai-tools-title">图片生成</h3>
+<ul class="ai-timeline">
+<li><span class="ai-year">工具</span>｜<a href="https://www.midjourney.com" target="_blank" rel="noopener">Midjourney</a>：美学天花板，风格化出图</li>
+<li><span class="ai-year">工具</span>｜<a href="https://chatgpt.com" target="_blank" rel="noopener">GPT Image（ChatGPT 内置）</a>：指令遵循最好：改图、图中写字</li>
+<li><span class="ai-year">工具</span>｜<a href="https://gemini.google.com" target="_blank" rel="noopener">Nano Banana（Gemini）</a>：角色一致性编辑最强，爆品</li>
+<li><span class="ai-year">工具</span>｜<a href="https://stability.ai" target="_blank" rel="noopener">Flux / Stable Diffusion</a>：开源自部署；LoRA/ControlNet 可控性无可替代</li>
+<li><span class="ai-year">工具</span>｜<a href="https://ideogram.ai" target="_blank" rel="noopener">Ideogram</a>：图内文字渲染最准（海报/封面刚需）</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.recraft.ai" target="_blank" rel="noopener">Recraft</a>：设计师向：矢量图、品牌风格统一</li>
+<li><span class="ai-year">工具</span>｜<a href="https://dreamina.jianying.com" target="_blank" rel="noopener">即梦</a> <span class="ai-tools-cn">🇨🇳</span>：字节系，中文语境 + 商用素材友好</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.napkin.ai" target="_blank" rel="noopener">Napkin AI</a>：文字→示意图/流程图，做讲义插图神器（教师/科研双修）</li>
+</ul>
+</div>
+</div>
+<div id="ai-tools-panel-video" class="ai-tab-panel">
+<div class="agent-intro">
+<h3 class="ai-tools-title">视频生成</h3>
+<ul class="ai-timeline">
+<li><span class="ai-year">工具</span>｜<a href="https://deepmind.google/models/veo/" target="_blank" rel="noopener">Google Veo 3.1</a>：2026 综合最强：原生同步生成音频（对白/音效）</li>
+<li><span class="ai-year">工具</span>｜<a href="https://openai.com/sora" target="_blank" rel="noopener">Sora 2</a>：物理一致性与叙事镜头强；免费档水印低分辨率</li>
+<li><span class="ai-year">工具</span>｜<a href="https://kling.kuaishou.com" target="_blank" rel="noopener">可灵 Kling 3.0</a> <span class="ai-tools-cn">🇨🇳</span>：国产第一梯队，动作幅度与时长领先</li>
+<li><span class="ai-year">工具</span>｜<a href="https://runwayml.com" target="_blank" rel="noopener">Runway Gen-4.5</a>：影视工业流：角色/场景一致性控制最细</li>
+<li><span class="ai-year">工具</span>｜<a href="https://seed.bytedance.com" target="_blank" rel="noopener">Seedance</a> <span class="ai-tools-cn">🇨🇳</span>：字节 Seed，商用实测性价比高</li>
+<li><span class="ai-year">工具</span>｜<a href="https://hailuoai.com" target="_blank" rel="noopener">Hailuo 海螺</a> <span class="ai-tools-cn">🇨🇳</span>：MiniMax 出品，快速出片</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.heygen.com" target="_blank" rel="noopener">HeyGen / Synthesia</a>：数字人口播视频：一段文案→真人形象播报（录课/宣传常用）</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.guiji.ai" target="_blank" rel="noopener">硅基智能</a> <span class="ai-tools-cn">🇨🇳</span>：国产数字人代表，教师录课/知识付费常用</li>
+</ul>
+</div>
+</div>
+<div id="ai-tools-panel-ppt" class="ai-tab-panel">
+<div class="agent-intro">
+<h3 class="ai-tools-title">PPT 生成</h3>
+<ul class="ai-timeline">
+<li><span class="ai-year">工具</span>｜<a href="https://gamma.app" target="_blank" rel="noopener">Gamma</a>：综合首选：一句话→完整演示文稿，卡片式排版，导出 PPTX/PDF</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.beautiful.ai" target="_blank" rel="noopener">Beautiful.ai</a>：设计规则引擎：放内容自动排版，改数据全局联动</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.canva.com" target="_blank" rel="noopener">Canva Magic Design</a>：设计平台一体化：PPT+海报+图全包</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.plusdocs.com" target="_blank" rel="noopener">Plus AI / SlidesAI</a>：原生嵌在 Google Slides/PowerPoint 里的生成插件，老用户无缝</li>
+<li><span class="ai-year">工具</span>｜<a href="https://ai.wps.cn" target="_blank" rel="noopener">WPS AI</a> <span class="ai-tools-cn">🇨🇳</span>：一键生成可编辑 PPTX，Office 式编辑，国内办公首选</li>
+<li><span class="ai-year">工具</span>｜<a href="https://zhiwen.xfyun.cn" target="_blank" rel="noopener">讯飞智文</a> <span class="ai-tools-cn">🇨🇳</span>：文档→课件/讲稿，教育向优化（教师常用）</li>
+<li><span class="ai-year">工具</span>｜<a href="https://manus.im" target="_blank" rel="noopener">Manus / Gamma Agent 模式</a>：agent 式：给主题自动调研→配图→出整套片子</li>
+</ul>
+</div>
+</div>
+<div id="ai-tools-panel-classroom" class="ai-tab-panel">
+<div class="agent-intro">
+<h3 class="ai-tools-title">课堂生成（教师备课/课件/习题）</h3>
+<ul class="ai-timeline">
+<li><span class="ai-year">工具</span>｜<a href="https://www.magicschool.ai" target="_blank" rel="noopener">MagicSchool AI</a>：教师端全球头部：80+ 备课工具（教案/习题/评分标准/IEP），教师周省约 10 小时</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.khanmigo.ai" target="_blank" rel="noopener">Khanmigo（教师版）</a>：可汗学院出品：教案生成 + 苏格拉底式引导设计</li>
+<li><span class="ai-year">工具</span>｜<a href="https://web.diffit.me" target="_blank" rel="noopener">Diffit</a>：一键把任意材料改写成不同难度等级的分级阅读材料 + 配习题</li>
+<li><span class="ai-year">工具</span>｜<a href="https://curipod.com" target="_blank" rel="noopener">Curipod</a>：互动课堂：AI 生成带投票/抢答的实时课件</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.briskteaching.com" target="_blank" rel="noopener">Brisk Teaching</a>：Chrome 插件：在网页/Slides 上直接生成课件、改作业反馈</li>
+<li><span class="ai-year">工具</span>｜<a href="https://quizizz.com" target="_blank" rel="noopener">Quizizz AI / Quizlet</a>：习题/闪卡自动生成 + 课堂游戏化测验</li>
+<li><span class="ai-year">工具</span>｜<a href="https://easinote.seewo.com" target="_blank" rel="noopener">希沃白板（AI 课件）</a> <span class="ai-tools-cn">🇨🇳</span>：国内课堂装机主力：互动课件生成 + 移动授课</li>
+<li><span class="ai-year">工具</span>｜<a href="https://xinghuo.xfyun.cn" target="_blank" rel="noopener">讯飞星火教师助手</a> <span class="ai-tools-cn">🇨🇳</span>：教案+课件+作业设计一体，贴合国内课标</li>
+</ul>
+</div>
+</div>
+<div id="ai-tools-panel-writing" class="ai-tab-panel">
+<div class="agent-intro">
+<h3 class="ai-tools-title">写作 / 文案类（"小龙虾"条目：按写作理解，如另有所指告诉我）</h3>
+<ul class="ai-timeline">
+<li><span class="ai-year">工具</span>｜<a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>：创意写作文笔最细腻，长篇一致性最好</li>
+<li><span class="ai-year">工具</span>｜<a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT</a>：结构化内容/博客/研究型长文最稳</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.sudowrite.com" target="_blank" rel="noopener">Sudowrite</a>：英文小说专用：扩写、改写、"故事引擎"</li>
+<li><span class="ai-year">工具</span>｜<a href="https://ibiling.cn" target="_blank" rel="noopener">笔灵 AI</a> <span class="ai-tools-cn">🇨🇳</span>：中文网文：大纲搭建、全篇续写</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.jasper.ai" target="_blank" rel="noopener">Jasper / Copy.ai</a>：品牌营销文案流水线（多语种）</li>
+<li><span class="ai-year">工具</span>｜<a href="https://wenku.baidu.com" target="_blank" rel="noopener">百度文库 AI</a> <span class="ai-tools-cn">🇨🇳</span>：小红书爆款文案批量生成：语音/文本双输入，零门槛</li>
+<li><span class="ai-year">工具</span>｜<a href="https://xiezuocat.com" target="_blank" rel="noopener">秘塔写作猫</a> <span class="ai-tools-cn">🇨🇳</span>：中文校对润色标杆</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.deepl.com/write" target="_blank" rel="noopener">DeepL Write</a>：英文润色最自然（论文/邮件刚需）</li>
+</ul>
+</div>
+</div>
+<div id="ai-tools-panel-coding" class="ai-tab-panel">
+<div class="agent-intro">
+<h3 class="ai-tools-title">Vibe 编程（提示词→应用）</h3>
+<ul class="ai-timeline">
+<li><span class="ai-year">工具</span>｜<a href="https://cursor.com" target="_blank" rel="noopener">Cursor</a>：AI 原生 IDE 标杆：仓库级语义索引 + Composer 多文件重构</li>
+<li><span class="ai-year">工具</span>｜<a href="https://claude.com/product/claude-code" target="_blank" rel="noopener">Claude Code</a>：终端原生 agent：整仓读改、自主跑测试/git，agentic 第一梯队</li>
+<li><span class="ai-year">工具</span>｜<a href="https://lovable.dev" target="_blank" rel="noopener">Lovable</a>：Vibe coding 出圈之作：对话式生成全栈应用并一键部署，非程序员友好</li>
+<li><span class="ai-year">工具</span>｜<a href="https://bolt.new" target="_blank" rel="noopener">Bolt.new</a>：浏览器里即时生成+运行全栈项目，所见即所得</li>
+<li><span class="ai-year">工具</span>｜<a href="https://v0.dev" target="_blank" rel="noopener">v0（Vercel）</a>：UI/前端生成之王：文字→React 组件页面</li>
+<li><span class="ai-year">工具</span>｜<a href="https://replit.com" target="_blank" rel="noopener">Replit Agent</a>：云端 IDE 内置 agent：从想法到上线全托管</li>
+<li><span class="ai-year">工具</span>｜<a href="https://github.com/features/copilot" target="_blank" rel="noopener">GitHub Copilot</a>：补全之王，融合最深、企业采用率最高</li>
+<li><span class="ai-year">工具</span>｜<a href="https://codeium.com/windsurf" target="_blank" rel="noopener">Windsurf</a>：Cascade 自动感知工程上下文的 agent 式 IDE</li>
+<li><span class="ai-year">工具</span>｜<a href="https://openai.com/codex/" target="_blank" rel="noopener">Codex CLI</a>：OpenAI 终端 agent，GPT-5 系驱动</li>
+</ul>
+</div>
+</div>
+<div id="ai-tools-panel-education" class="ai-tab-panel">
+<div class="agent-intro">
+<h3 class="ai-tools-title">教育相关（学习/辅导/批改）</h3>
+<ul class="ai-timeline">
+<li><span class="ai-year">工具</span>｜<a href="https://www.khanmigo.ai" target="_blank" rel="noopener">Khanmigo</a>：苏格拉底式 AI 家教（不直接给答案，引导思考）</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.duolingo.com" target="_blank" rel="noopener">Duolingo Max</a>：语言学习 + GPT-4 级对话角色扮演/错题讲解</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.mathgpt.com" target="_blank" rel="noopener">学而思九章 MathGPT</a> <span class="ai-tools-cn">🇨🇳</span>：数学专用大模型，解题步骤讲解</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.doubao.com" target="_blank" rel="noopener">豆包</a> <span class="ai-tools-cn">🇨🇳</span>：国内学生免费答疑顶流（拍照解题/口语陪练）</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.gauthmath.com" target="_blank" rel="noopener">Gauth / Question.AI</a> <span class="ai-tools-cn">🇨🇳</span>：拍照解题出海双雄</li>
+<li><span class="ai-year">工具</span>｜<a href="https://hiecho.youdao.com" target="_blank" rel="noopener">有道 Hi Echo</a> <span class="ai-tools-cn">🇨🇳</span>：AI 英语口语私教</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.songshuai.com" target="_blank" rel="noopener">松鼠 AI</a> <span class="ai-tools-cn">🇨🇳</span>：自适应学习：知识点级诊断+推题</li>
+<li><span class="ai-year">工具</span>｜<a href="https://apps.ankiweb.net" target="_blank" rel="noopener">Anki + AI 插件</a>：记忆卡 + 自动生成卡片/出题，应试记忆王</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.xueersi.com" target="_blank" rel="noopener">讯飞/学而思/作业帮 学习机</a> <span class="ai-tools-cn">🇨🇳</span>：硬件形态：护眼屏 + 家长管控 + 精准学</li>
+</ul>
+</div>
+</div>
+<div id="ai-tools-panel-research" class="ai-tab-panel">
+<div class="agent-intro">
+<h3 class="ai-tools-title">科研相关 ⭐</h3>
+<h4 class="ai-tools-sub">检索与综述</h4>
+<ul class="ai-timeline">
+<li><span class="ai-year">工具</span>｜<a href="https://www.semanticscholar.org" target="_blank" rel="noopener">Semantic Scholar</a>：免费学术搜索 + 引文图谱 + TLDR</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.connectedpapers.com" target="_blank" rel="noopener">Connected Papers / ResearchRabbit</a>：引文网络可视化，摸清一个方向的谱系</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.undermind.ai" target="_blank" rel="noopener">Undermind</a>：深度文献挖掘：agentic 多轮检索，冷门问题召回强</li>
+<li><span class="ai-year">工具</span>｜<a href="https://elicit.com" target="_blank" rel="noopener">Elicit / Consensus</a>：LLM 批量抽取论文结论→结构化综述表</li>
+<li><span class="ai-year">工具</span>｜<a href="https://scite.ai" target="_blank" rel="noopener">Scite</a>：引用语境分析：这篇论文被引用时是支持还是反驳</li>
+</ul>
+<h4 class="ai-tools-sub">数学/形式化</h4>
+<ul class="ai-timeline">
+<li><span class="ai-year">工具</span>｜<a href="https://leanprover-community.github.io" target="_blank" rel="noopener">Lean 4 + mathlib</a>：形式化数学标准；定义-定理-证明机器可验证</li>
+<li><span class="ai-year">工具</span>｜<a href="https://deepmind.google" target="_blank" rel="noopener">AlphaProof Nexus</a>：DeepMind：Gemini 3.1 + Lean 智能体，2026-05 解出 9 个 Erdős 问题（300+ 候选）</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.wolfram.com" target="_blank" rel="noopener">Wolfram / Mathematica</a>：符号计算金标准</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.sagemath.org" target="_blank" rel="noopener">GAP(QPA) / SageMath / Magma / Macaulay2</a>：计算代数四大件：群表示、quiver 代数、交换代数</li>
+<li><span class="ai-year">工具</span>｜<a href="https://mathpix.com" target="_blank" rel="noopener">Mathpix</a>：数学 OCR：截图→LaTeX，准确率极高</li>
+<li><span class="ai-year">工具</span>｜<a href="https://ar5iv.labs.arxiv.org" target="_blank" rel="noopener">ar5iv</a>：arXiv 转 HTML，公式阅读体验远超 PDF</li>
+</ul>
+<h4 class="ai-tools-sub">写作与管理</h4>
+<ul class="ai-timeline">
+<li><span class="ai-year">工具</span>｜<a href="https://notebooklm.google.com" target="_blank" rel="noopener">NotebookLM</a>：自建文献库问答 + 双人播客式音频概览</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.zotero.org" target="_blank" rel="noopener">Zotero + LLM 插件</a>：文献管理器内直接对话式读 PDF</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.overleaf.com" target="_blank" rel="noopener">Overleaf（+AI）</a>：协作 LaTeX 标配，接入 LLM 补全</li>
+<li><span class="ai-year">工具</span>｜<a href="https://www.deepl.com" target="_blank" rel="noopener">DeepL</a>：学术翻译最自然</li>
+<li><span class="ai-year">工具</span>｜<a href="https://storm.genie.stanford.edu" target="_blank" rel="noopener">STORM（斯坦福）</a>：自动生成带引用的综述式长文初稿</li>
+</ul>
+</div>
+</div>
+
+  </div>
+
   </div>
 
   <div id="ai-panel-math" class="ai-tab-panel">
@@ -189,6 +341,7 @@ math: true
     <button type="button" class="ai-tab-btn tab-purple active" onclick="switchAiAgentTab('intro', this)">什么是 Agent</button>
     <button type="button" class="ai-tab-btn tab-blue" onclick="switchAiAgentTab('science', this)">数学科研 Agent</button>
     <button type="button" class="ai-tab-btn tab-orange" onclick="switchAiAgentTab('ppt', this)">PPT Agent</button>
+    <button type="button" class="ai-tab-btn tab-teal" onclick="switchAiAgentTab('worldmodel', this)">世界模型</button>
   </div>
 
   <div id="ai-agent-panel-intro" class="ai-tab-panel active">
@@ -281,6 +434,73 @@ math: true
 <p><strong>核心机制</strong>：「SVG → DrawingML 转换器」——先生成页面 SVG，再 <code>svg_to_pptx</code> 转换为<em>真正的 PowerPoint 原生形状</em>（不是把 SVG 当图片贴进 PPT），所以输出是<em>双击即可编辑</em>的 .pptx（Office 2016+ 完美支持）。工作流六阶段：① 项目初始化 → ② 模板选择（需确认）→ ③ 策略师阶段八项确认 → ④ 可选图片生成 → ⑤ 执行器阶段生成 SVG + 演讲稿 → ⑥ 后处理导出 PPTX。</p>
 <p><strong>差异化优势</strong>：① 原生形状导出（不像很多工具是把 SVG 截图当图贴）；② 支持<em>填模板</em>（把你已有的 .pptx 给 AI，让它把新内容填进你的设计里）；③ 8 套预设风格（consultant / tech / general / google_style 等）；④ 可选 native-objects 模式把图表/表格转为真正的 PowerPoint chart 对象。</p>
 <p><strong>怎么用</strong>：方式 A 下载 ZIP 解压 → <code>pip install -r requirements.txt</code>；方式 B <code>git clone</code>（推荐，后续 <code>update_repo.py</code> 一键更新）；方式 C 通过 Claude Code 插件市场 <code>/plugin marketplace add hugohe3/ppt-master</code>；在 IDE 里打开项目目录、把 PDF/Markdown/图片放到 <code>projects/</code>，告诉 AI「请用 projects/q3-report/sources/report.pdf 生成 PPT」即可。</p>
+</div>
+  </div>
+
+  <div id="ai-agent-panel-worldmodel" class="ai-tab-panel">
+<div class="agent-intro">
+<p class="agent-lead">世界模型（World Model）是<strong>对环境动力学的内部可模拟表征</strong>：给定当前状态与动作，预测环境下一步如何演化，从而支持预测、想象与规划。如果说 LLM 让 AI 学会了“说”，世界模型则是让 AI 学会“在脑子里演一遍世界怎么变”。</p>
+
+<h3><span class="agent-name">是什么</span> · 从“心智模型”到智能核心组件</h3>
+<p>思想可追溯至 Craik（1943）的“心智模型”与强化学习中的 model-based RL；作为深度学习术语确立于 Ha &amp; Schmidhuber（2018）的《World Models》。其后 LeCun（2022）在 I-JEPA 路线中把“世界模型”推为通向高级智能的核心组件，李飞飞（2026）则提出功能性三分：<strong>渲染器</strong>（生成影像）、<strong>模拟器</strong>（理解几何与物理）、<strong>规划器</strong>（支持决策）。</p>
+<p>形式上，世界模型学习转移分布 $p(s_{t+1} \mid s_t, a_t)$。关键设计选择是<strong>在哪个空间预测</strong>：像素空间（生成式）、隐空间（潜变量式）或显式 3D 表示。三个核心组件：<strong>表征</strong>（把观测压缩为低维状态）、<strong>动力学</strong>（状态转移预测器）、<strong>记忆</strong>（长时程一致性）。</p>
+<p>价值在于三件事：①<strong>想象</strong>——不与真实环境交互即可 rollout 未来，用于规划与评估；②<strong>样本效率</strong>——model-based 方法远胜 model-free；③<strong>数据引擎</strong>——合成交互数据训练下游策略（机器人、自动驾驶的核心用法）。</p>
+
+<h3><span class="agent-name">经典范式</span> · Ha &amp; Schmidhuber 的 World Models（2018）</h3>
+<p>最小可用的世界模型，三个模块分工：<strong>V（Vision）</strong>为变分自编码器，把 2D 像素帧压缩为隐向量 z；<strong>M（Memory）</strong>为混合密度网络-RNN（MDN-RNN），学习 $p(z_{t+1} \mid z_t, a_t, h_t)$，即隐空间动力学；<strong>C（Controller）</strong>为 tiny 线性网络，输入 [z, h] 输出动作。训练诀窍是<strong>“在梦里学习”</strong>：先用真实轨迹训练 V 与 M，再完全在 M 的想象轨迹中训练 C——controller 简单到过拟合都难，抗动力学误差累积。它确立了“生成式环境 + 内生训练”的完整闭环，是后来所有路线的原型。</p>
+
+<h3><span class="agent-name">Dreamer 系列</span> · 隐空间想象的强化学习标杆</h3>
+<p>Dreamer（Hafner 等，2019→V3，2023）是目前最成熟的 model-based RL 家族。核心是 <strong>RSSM（循环状态空间模型）</strong>：隐状态 = 确定部分（GRU，承记忆）+ 随机部分（隐变量，承不确定性），从观测序列自监督学习。学成后<strong>策略训练完全在想象中进行</strong>：从真实隐状态出发，用学习的动力学 rollout 数十步“梦境”，在此之上跑 actor-critic，无需真实环境交互。</p>
+<p>DreamerV3 以<strong>单一超参数</strong>横跨 150+ 任务（含首个无人类数据采集 Minecraft 钻石），证明世界模型可作通用 RL 引擎；DayDreamer 变体把闭环搬到真机器人物理世界，1 小时学会行走。</p>
+
+<h3><span class="agent-name">V-JEPA 2</span> · LeCun 路线：在潜空间预测，而非重建像素</h3>
+<p>JEPA（联合嵌入预测架构）的立场：像素级生成迫使模型浪费容量预测不可预测的细节（纹理、光照），<strong>理解应发生在抽象表征空间</strong>。架构三件套：encoder E 把上下文与目标编码为表征；predictor 在潜空间预测目标表征；配合非对称防坍缩机制训练。</p>
+<p><strong>V-JEPA 2</strong>（Meta，2025）在百万小时互联网视频上自监督预训练，达成 SOTA 视觉理解与预测；<strong>V-JEPA 2-AC</strong> 加动作条件预测器，机器人零样本部署到全新实验室即可抓取物体——无需机器人专属数据。这是“规划 = 在潜空间做 rollout + 优化动作序列”路线的代表作。</p>
+
+<h3><span class="agent-name">Genie 3</span> · 文本生成交互世界的通用引擎</h3>
+<p>DeepMind 的 Genie 系列走“视频生成 + 可控性”路线：从无标注视频隐式学习<strong>动作潜在变量</strong>（哪些像素变化源于“我做了什么”）。<strong>Genie 3</strong>（2025-08）输入文本即生成分钟级、720p、<strong>24fps 实时可交互环境</strong>：用户键入动作，模型自回归地渲染下一帧，环境状态持续演化。</p>
+<p>标志性能力是<strong>可提示世界事件（promptable world events）</strong>：运行中插入“放一群斑马进来”等指令改变世界；以及跨分钟尺度的<strong>视觉记忆一致性</strong>——走远再回来，场景基本不变。机制上是高容量自回归潜在动力学 + 长时程记忆检索，训练数据是海量视频（无需动作标签）。定位：通用环境模拟器，为 agent 训练生成无限课程。</p>
+
+<h3><span class="agent-name">NVIDIA Cosmos</span> · 面向物理 AI 的世界基础模型平台</h3>
+<p>Cosmos（2025-01 发布，2026-03 迭代至 <strong>Cosmos 3</strong>）把世界模型工程化为平台：<strong>视频管线</strong>（curator 切分标注海量视频）→ <strong>视频分词器</strong>（把视频压成离散 token）→ <strong>世界基础模型 WFM</strong>（扩散式与自回归式两条技术路线）→ <strong>后训练</strong>（适配机器人/自动驾驶域，文本、视频、轨迹多种条件输入）。</p>
+<p>WFM 用于两件事：大规模合成交互数据；<strong>作为策略的神经模拟器</strong>。2026-02 的 <strong>Cosmos Policy</strong> 直接把机器人控制策略后训练到 Predict-2 世界模型上，验证“世界模型即训练底座”的范式；Cosmos 3 进一步统一合成世界生成、视觉推理与动作模拟，部分模型 Apache 2.0 开源，已成物理 AI 事实标准之一。</p>
+
+<h3><span class="agent-name">其他值得注意的系统</span></h3>
+<ul class="agent-list">
+<li><span class="agent-name">Sora 2（OpenAI）</span>：大规模视频扩散；OpenAI 宣称“世界模拟器”，物理一致性有争议（物体永续性时好时坏），代表像素生成路线的上限与局限。</li>
+<li><span class="agent-name">World Labs Marble（2025-11）</span>：图/文/视频输入 → <strong>持久 3D 场景</strong>（高斯泼溅 + 碰撞网格），生成与显式几何融合，空间智能路线代表。</li>
+<li><span class="agent-name">GameNGen / Oasis</span>：神经游戏引擎：扩散模型逐帧渲染完整游戏（DOOM/我的世界），交互由历史帧隐条件化。</li>
+<li><span class="agent-name">腾讯混元 3D 世界模型 🇨🇳</span>：文/图 → 3D 场景，国产在 3D 世界生成方向的代表。</li>
+</ul>
+<p>2025–2026 的总体趋势是<strong>路线融合</strong>：生成式模型提供视觉先验，显式 3D（NeRF/3DGS）提供几何一致性，潜空间预测提供可控抽象——Marble、Cosmos 3 都是融合产物。</p>
+
+<h3><span class="agent-name">世界模型 vs LLM</span></h3>
+<table class="agent-compare">
+<thead>
+<tr><th>维度</th><th>世界模型</th><th>LLM</th></tr>
+</thead>
+<tbody>
+<tr><td>建模对象</td><td>状态<strong>转移</strong> $p(s'\mid s,a)$：时空动力学</td><td>token 序列分布：语言/符号统计规律</td></tr>
+<tr><td>训练数据</td><td>视频、交互轨迹、仿真</td><td>网络文本（二手的世界描述）</td></tr>
+<tr><td>空间感知</td><td>原生（几何、视角、遮挡）</td><td>无原生空间 grounding，靠文本间接获得</td></tr>
+<tr><td>“思考”方式</td><td>想象中 rollout + 规划（MPC/actor-critic）</td><td>链式思维：语言空间自回归外推</td></tr>
+<tr><td>误差模式</td><td>动力学漂移，可被环境反馈在线纠正</td><td>幻觉：流畅地编造事实，难自察</td></tr>
+<tr><td>输出</td><td>环境（帧/状态/3D 场景）</td><td>文本/符号</td></tr>
+<tr><td>典型应用</td><td>机器人、自动驾驶、agent 环境训练、游戏</td><td>知识问答、写作、代码、语言接口</td></tr>
+</tbody>
+</table>
+<p><strong>互补而非替代。</strong>具体差异在四个层面：</p>
+<ul class="agent-list">
+<li><span class="agent-name">知识的来源不同</span>：LLM 的物理直觉来自人类文字对世界的二手描述，是统计性回声；世界模型从视频与交互中直接估计动力学，具有一手的时空 grounding。LeCun 的著名论点即在于此：自回归语言预测不足以产生真正的世界理解，且逐 token 生成的误差会复合累积，缺乏规划所需的“先想多步再行动”结构。</li>
+<li><span class="agent-name">推理的机制不同</span>：LLM 的推理是把中间步骤写出来（CoT），本质是语言空间的条件采样；世界模型的推理是<strong>反事实模拟</strong>——在内部引擎里改一个变量、rollout 看后果，这正是物理直觉、操控与长期规划需要的算子。</li>
+<li><span class="agent-name">失真方式不同</span>：LLM 幻觉是语义层面的自信编造；世界模型会“画面糊掉、物体穿模”，但误差暴露在观测层，可与环境真实反馈对齐修正。二者可靠性评估逻辑因此完全不同。</li>
+<li><span class="agent-name">工程形态正在合流</span>：当前最强系统多取混合架构：<strong>LLM 当规划器/语义接口，世界模型当模拟器</strong>（如 agent 训练用 Genie 造环境、SIMA 执行；机器人用 VLA + Cosmos 合成数据）。LLM 提供知识先验与指令理解，世界模型提供物理一致性与想象力。</li>
+</ul>
+<p>一个有用的类比：LLM 像读过万卷书的图书管理员——说得头头是道但没骑过车；世界模型像在沙坑里摔过跤的孩子——用身体记得世界怎么转。AGI 叙事下，二者缺一。</p>
+
+<h3><span class="agent-name">挑战与展望</span></h3>
+<p>主要瓶颈：<strong>长时程一致性</strong>（记忆与物体永续性仍难超分钟级）、<strong>误差累积</strong>（rollout 越长越漂移）、<strong>评测标准缺失</strong>（物理一致性无公认 benchmark）、<strong>sim-to-real 差距</strong>。方向上：李飞飞的三分类（渲染/模拟/规划）正走向统一的<strong>世界基础模型</strong>；与 LLM/agent 的闭环融合、面向机器人与自动驾驶的物理 AI 落地，是未来两年最确定的两大主线。</p>
+<p class="ar-mnote"><strong>参考脉络</strong>：Ha &amp; Schmidhuber 2018；Hafner et al. DreamerV3 2023；LeCun 2022；Meta V-JEPA 2 2025；DeepMind Genie 3 2025-08；NVIDIA Cosmos 2025-01/2026-03；World Labs Marble 2025-11；李飞飞 2026-06。</p>
 </div>
   </div>
 
@@ -495,6 +715,20 @@ function switchAiEthicsTab(id, btn) {
   tabs.querySelectorAll('.ai-tab-panel').forEach(function (p) { p.classList.remove('active'); });
   btn.classList.add('active');
   document.getElementById('ai-ethics-panel-' + id).classList.add('active');
+}
+
+function switchAiToolsTab(id, btn) {
+  var tabs = btn.closest('.ai-tools-tabs');
+  if (!tabs) return;
+  tabs.querySelectorAll('.ai-tab-btn').forEach(function (b) { b.classList.remove('active'); });
+  tabs.querySelectorAll('.ai-tab-panel').forEach(function (p) { p.classList.remove('active'); });
+  btn.classList.add('active');
+  var panel = document.getElementById('ai-tools-panel-' + id);
+  if (!panel) return;
+  panel.classList.add('active');
+  if (typeof renderMathInElement === 'function') {
+    renderMathInElement(panel, { delimiters: [ {left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false} ], throwOnError: false });
+  }
 }
 
 function toggleYear(btn) {
