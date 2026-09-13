@@ -14,15 +14,7 @@ headless: true
 <h3 class="ar-subhead">研究现状</h3>
 <ul class="ar-timeline">
   <li><span class="ar-year">2020</span>Chen 在附录中正式提出此问题（<i>arXiv:2008.11457</i>，附录 C, Problem E），并证明：当 $\Lambda$ 为 Gorenstein 时，CM-finite 等价于每个 Gorenstein-投射模都是有限生成的直和。</li>
-  <li><span class="ar-year">2026</span>Liu 证明一般情形：对任意左 Artinian 环 $R$ 的 resolving 子范畴 $\mathcal{X}$，以下三个条件等价——(1) $\mathcal{X}$ 有限型；(2) $\mathcal{X}$ 有界型；(3) $\mathcal{X}$ 中不可分解对象的最小生成元个数一致有界（<i>Bounded resolving and coresolving subcategories over Artinian rings</i>）。</li>
-  <li><span class="ar-year">2026</span>作为上述定理的直接推论，<strong>每个 CM-bounded Artin 代数必为 CM-finite</strong>（Corollary 1.2）。这完全肯定了 Chen 的猜想，并给出了更一般的相对版本。</li>
-</ul>
-
-<p><strong>已解决的关键特例与推广：</strong></p>
-<ul>
-  <li><strong>Gorenstein 代数：</strong>Chen 2020 已证明 CM-finite ⟺ 每个 Gorenstein-投射模均为有限生成直和；</li>
-  <li><strong>任意 Artin 代数：</strong>Liu 2026 通过 resolving 子范畴的有限型/有界型等价定理，将结论推广到任意 Artin 代数，并给出对偶的 coresolving 版本；</li>
-  <li><strong>最小生成元刻画：</strong>有界型等价于不可分解对象的最小生成元个数一致有界，提供了可计算的数值判据。</li>
+  <li><span class="ar-year">2026</span>Liu 证明一般情形：对任意左 Artinian 环 $R$ 的 resolving 子范畴 $\mathcal{X}$，以下三个条件等价——(1) $\mathcal{X}$ 有限型；(2) $\mathcal{X}$ 有界型；(3) $\mathcal{X}$ 中不可分解对象的最小生成元个数一致有界（<i>Bounded resolving and coresolving subcategories over Artinian rings</i>）。作为上述定理的直接推论，<strong>每个 CM-bounded Artin 代数必为 CM-finite</strong>（Corollary 1.2）。这完全肯定了 Chen 的猜想，并给出了更一般的相对版本。</li>
 </ul>
 
 <h3 class="ar-subhead">核心方法</h3>

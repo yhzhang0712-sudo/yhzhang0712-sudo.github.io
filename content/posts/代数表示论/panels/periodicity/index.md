@@ -17,11 +17,8 @@ headless: true
   <li><span class="ar-year">2015</span>Białkowski–Erdmann–Skowroński：周期猜想对所有<strong>多项式增长代数</strong>成立（J. Algebra <b>443</b>, 200–269）。</li>
   <li><span class="ar-year">2015</span>Erdmann–Skowroński：对有限群的群代数的不可约表示无限块，全部为周期 4 的周期代数，确认了<strong>群代数块的周期猜想</strong>（Colloq. Math. <b>138</b>, 283–294）。</li>
   <li><span class="ar-year">2024</span>Chan–Darpö–Iyama–Marczinzik：平凡扩张代数 $T(A)$ 的周期性完全刻画——$T(A)$ 周期 ⟺ $A$ 有限整体维数且分次 Calabi–Yau；作为推论，<strong>Erdmann–Skowroński 扭曲周期猜想</strong>（扭曲周期代数 ⟹ 周期代数）在平凡扩张类中得到部分正面回答（Ann. Sci. Éc. Norm. Supér. <b>58</b>(2), 463–510）。</li>
-  <li><span class="ar-year">2026-09-09</span><strong style="color:#DC2626;">Enomoto（预印本 arXiv:2609.09732）给出了一个 36 维反例</strong>：代数 $\Lambda(q)$ 的所有单模均有周期 4，$\Lambda(q)$ 本身是<strong>扭曲周期</strong>但<strong>非周期</strong>，从而周期猜想在一般情形下不成立（同行评审进行中）。</li>
+  <li><span class="ar-year">2026</span><strong style="color:#DC2626;">Enomoto（预印本 arXiv:2609.09732）给出了一个 36 维反例</strong>：代数 $\Lambda(q)$ 的所有单模均有周期 4，$\Lambda(q)$ 本身是<strong>扭曲周期</strong>但<strong>非周期</strong>，从而周期猜想在一般情形下不成立（同行评审进行中）。</li>
 </ul>
-
-<h3 class="ar-subhead" id="ar-periodicity-3">现状</h3>
-<p>周期猜想经历了约 30 年的曲折验证过程：从 Green–Snashall–Solberg（2003）将问题限制在自内射+扭曲框架，到 Białkowski–Erdmann–Skowroński（2015）证多项增长情形，再到 Erdmann–Skowroński（2015）证群代数块情形，以及 Chan 等（2024）在平凡扩张类中正面解决扭曲版本。然而，<strong>Enomoto 2026 年 9 月的反例宣告一般形式的周期猜想为假</strong>，这是代数表示论近期的重大事件。该反例是否为最终结论仍需等待同行评审结果。</p>
 
 <h3 class="ar-subhead" id="ar-periodicity-ref">参考文献</h3>
 <p class="ar-ref"><span class="ar-ref-no">[1]</span> K. Erdmann, A. Skowroński, <i>Periodic algebras</i>, EMS Congress Reports (2008), 201–251.</p>
