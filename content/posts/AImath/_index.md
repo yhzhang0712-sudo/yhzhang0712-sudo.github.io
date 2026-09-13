@@ -297,6 +297,7 @@ math: true
         <button type="button" class="ai-tab-btn tab-teal active" onclick="switchAiEthicsTab('evolution', this)">AI伦理演进史</button>
         <button type="button" class="ai-tab-btn tab-red" onclick="switchAiEthicsTab('leiden', this)">人工智能与数学莱顿宣言</button>
         <button type="button" class="ai-tab-btn tab-orange" onclick="switchAiEthicsTab('misalignment', this)">《人工智能在数学中的严重错位》宣言</button>
+        <button type="button" class="ai-tab-btn tab-teal" onclick="switchAiEthicsTab('uppsala', this)">《乌普萨拉科学家伦理准则》</button>
       </div>
       <div id="ai-ethics-panel-evolution" class="ai-tab-panel active">
         <div class="agent-intro">
@@ -412,6 +413,47 @@ math: true
           <p>宣言由陶哲轩等 25 位菲尔兹奖得主联合发起（按获奖年份排序，横跨 1978–2026 近半个世纪）。联署页面（mathandai.org/endorsers）截至 9 月 12 日已开放给全体数学工作者，<strong>联署人数仍在增长</strong>（不同媒体 9 月 12 日报导时约为 1400–1687 人，需以官网实时数据为准）。</p>
         </div>
       </div>
+      <div id="ai-ethics-panel-uppsala" class="ai-tab-panel">
+      <div class="agent-intro">
+        <p class="agent-lead"><strong>《乌普萨拉科学家伦理准则》</strong>（The Uppsala Code of Ethics for Scientists）是 1984 年由瑞典乌普萨拉大学科学伦理研讨会制定的科研伦理文件，首次系统将科学家对<strong>成果社会后果</strong>的个体责任写入可执行准则。它早于现代 AI 伦理讨论，但至今仍是科技伦理治理的重要参照。</p>
+        <h3>准则背景</h3>
+        <p><strong>制定缘起</strong></p>
+        <p>20 世纪后期，科学技术的军事化、工业化应用风险日益凸显，而当时主流科研伦理主要聚焦于数据诚信、学术规范等内部问题，对"研究成果被用于武器、压迫、生态破坏"等外部社会后果关注不足。为填补这一空白，乌普萨拉大学自 1981 年起组织跨学科研讨，将科研责任落实到研究者个人的良心与专业自律。</p>
+        <p><strong>时间线</strong></p>
+        <ul class="agent-list">
+          <li><span class="agent-name">1981 年</span>：乌普萨拉大学一群科学家开始定期聚会探讨研究伦理问题；</li>
+          <li><span class="agent-name">1982 年底</span>：准则初稿流传；</li>
+          <li><span class="agent-name">1984 年 1 月</span>：研讨会发布准则最终版本（Uppsala, Sweden, January 1984）；</li>
+          <li><span class="agent-name">1984 年 12 月</span>：正式发表于 <em>Journal of Peace Research</em>, Vol. 21, No. 4, pp. 311–316。</li>
+        </ul>
+        <p><strong>原作者</strong></p>
+        <p>Bengt Gustafsson、Lars Rydén、Gunnar Tibell、Peter Wallensteen。第一句由挪威特隆赫姆的 Harald Wergeland 教授提议，作为科学家誓词的建议。</p>
+        <p><strong>制定动机</strong></p>
+        <p>准则的核心关切是：科学研究不应仅以"求真"为唯一目标，研究者还须对其成果的<strong>应用后果</strong>负责，尤其是在和平、战争、人权与生态环境等领域。准则认为仅靠机构监管或政治约束不足以保证全球安全，需要唤醒科学家的<strong>个体伦理自觉</strong>——"我们视本准则所涉及的伦理困境为个人层面的良心问题"。</p>
+        <h3>准则完整内容</h3>
+        <p><strong>科学家伦理准则</strong></p>
+        <p>科学研究对人类具有重大意义，是不可或缺的活动——它关乎我们描述和理解世界、我们的物质条件、社会生活与福祉。研究有助于解决人类面临的重大问题，如核战争威胁、环境破坏以及地球资源分配不均。此外，科学研究作为纯粹的知识探索也是合理且有价值的，应在方法与成果的自由交流中进行。然而，研究也可能直接或间接地加剧人类的问题。本科学家伦理准则正是出于对科学研究之应用与后果的关切而制定。尤其，现代技术战争的潜在危害如此之大，以至于科学家是否还应支持武器研发，在伦理上已值得怀疑。</p>
+        <p>本准则面向<strong>个体科学家</strong>；首先应由他/她本人来评估自己研究的后果。这种评估总是困难的，且常常不可能做到。科学家通常既不能掌控研究成果，也不能掌控其应用，在许多情况下甚至无法掌控工作的规划。然而，这绝不能阻止个体科学家真诚地持续判断其研究的可能后果，使这些判断为人所知，并回避其认为不道德的研究。</p>
+        <p>在此背景下，应特别考虑以下各点：</p>
+        <ol class="agent-list">
+          <li><span class="agent-name">生态义务</span>：研究的方向应确保其<strong>应用及其他后果</strong>不会造成重大的<strong>生态破坏</strong>。</li>
+          <li><span class="agent-name">代际安全义务</span>：研究的方向应确保其后果不会使<strong>当代与后代</strong>更难过上<strong>安全的生活</strong>。因此，科学努力<strong>不应以开发用于战争或压迫的应用或技能为目标</strong>。</li>
+          <li><span class="agent-name">人权义务</span>：研究的方向亦不应使其后果与<strong>国际协定</strong>中表达的<strong>基本人权</strong>（公民、政治、经济、社会和文化权利）相冲突。</li>
+          <li><span class="agent-name">程序责任义务</span>：科学家负有<strong>特别责任</strong>，认真评估其研究的后果并予以<strong>公开</strong>。若科学家判断其正在进行或参与的研究与本准则相冲突，则应<strong>停止</strong>此类研究，并<strong>公开陈述</strong>其判断的理由。此类判断应同时考量负面后果的<strong>可能性</strong>与<strong>严重程度</strong>。</li>
+        </ol>
+        <p>科学界<strong>迫切地</strong>有义务支持那些因本准则所述理由而被迫停止研究的同行。</p>
+        <blockquote>注：准则由引言文字与四点内容共同构成。恳请在出版时不得将四点从上下文中割裂。</blockquote>
+        <p style="text-align:right;"><em>瑞典，乌普萨拉（1984 年 1 月）</em></p>
+        <h3>现实意义</h3>
+        <p>在 <strong>AI 治理、合成生物学、双用途技术（dual-use）</strong>兴起的背景下，该准则常被引作样板，强调科研伦理"<strong>不只管不造假，还要管成果被用来干啥</strong>"。典型应用场景包括：</p>
+        <ul class="agent-list">
+          <li><span class="agent-name">自主武器系统</span>（致命性自主武器）；</li>
+          <li><span class="agent-name">大规模监控技术</span>；</li>
+          <li><span class="agent-name">生物试剂开源模型与合成生物学</span>。</li>
+        </ul>
+        <p>RAND 研究报告将其与帕格沃什（Pugwash）传统并列为"要求研究者作为个体反思社会影响、回避支持战争或压迫的研究"的代表性准则。</p>
+      </div>
+    </div>
     </div>
   </div>
   <div id="ai-panel-leiden" class="ai-tab-panel" style="display:none;"></div>

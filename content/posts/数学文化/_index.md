@@ -1,9 +1,4 @@
----
-title: "数学文化"
-math: true
----
 
-关于数学的闲言碎语、碎碎念与杂谈。
 
 <div class="ar-section-switch">
   <button type="button" class="ar-sec-btn sec-violet active" onclick="switchMathCulture('figures', this)">数学人物</button>
@@ -26,25 +21,7 @@ math: true
   </div>
 
   <div id="ar-mathproblems-panel-hilbert" class="ai-tab-panel active">
-<h2>希尔伯特1900年23个问题：原始边界、现代重释与解决状态</h2>
-
-<p><strong>研究口径日期：2026年9月12日；截至日期：2026年9月12日（Asia/Shanghai）；本版为2026年9月12日事实核查修订稿。</strong></p>
-
-<p>本文件采用通行"标准23题"编号，即1902年英文版《Mathematical Problems》目录中的1—23号。1900年8月8日，希尔伯特在巴黎第二届国际数学家大会上仅口头讨论10题：1、2、6、7、8、13、16、19、21、22；完整清单随后通过哥廷根、Archiv版及1902年会议录和英译本固定。</p>
-
-<h3>状态标签</h3>
-<table>
-<thead><tr><th>标签</th><th>含义</th></tr></thead>
-<tbody>
-<tr><td>已解决</td><td>对问题的主要、合理理解已有明确正面结论</td></tr>
-<tr><td>否定解决</td><td>答案是否定的，或目标在精确条件下不可能实现</td></tr>
-<tr><td>独立性结果</td><td>在指定公理体系下既不能证明也不能反驳</td></tr>
-<tr><td>部分解决</td><td>一个重要或多个重要子问题已经解决，但原问题仍有开放内容</td></tr>
-<tr><td>开放</td><td>未发现获得公认的总体解决或反驳</td></tr>
-<tr><td>取决于精确表述</td><td>不同严格化会导致不同，甚至相反的结论</td></tr>
-<tr><td>研究纲领</td><td>问题本身是纲领而非可判定命题</td></tr>
-</tbody>
-</table>
+<h2>希尔伯特1900年23个问题</h2>
 
 <h3>问题1：连续统基数问题</h3>
 <p>研究实数集基数。连续统假设 CH：不存在严格介于可数与实数集基数之间的基数。<strong>结论：独立性结果。</strong>哥德尔（1938）证 CH 相容于 ZFC；Cohen（1963）用力迫法证 CH 不能被 ZFC 证明。</p>
