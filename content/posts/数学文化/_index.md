@@ -14,7 +14,154 @@ math: true
 <div class="ar-conjectures-divider"></div>
 
 <section id="ar-section-figures" class="ar-section">
-<p>数学人物板块，讲述改变数学进程的学者及其故事。</p>
+<div class="ai-tabs">
+  <div class="ai-tab-btns">
+    <button type="button" class="ai-tab-btn tab-red active" onclick="switchMathFigures('liuhui', this)">刘徽</button>
+    <button type="button" class="ai-tab-btn tab-blue" onclick="switchMathFigures('euclid', this)">欧几里得</button>
+    <button type="button" class="ai-tab-btn tab-teal" onclick="switchMathFigures('pythagoras', this)">毕达哥拉斯</button>
+    <button type="button" class="ai-tab-btn tab-green" onclick="switchMathFigures('thales', this)">泰勒斯</button>
+    <button type="button" class="ai-tab-btn tab-orange" onclick="switchMathFigures('zuchongzhi', this)">祖冲之</button>
+    <button type="button" class="ai-tab-btn tab-purple" onclick="switchMathFigures('archimedes', this)">阿基米德</button>
+    <button type="button" class="ai-tab-btn tab-violet" onclick="switchMathFigures('apollonius', this)">阿波罗尼奥斯</button>
+  </div>
+
+  <div id="ar-mathfigures-panel-liuhui" class="ai-tab-panel active">
+<div class="agent-intro">
+<h2>刘徽：中国古代数学理论的奠基人</h2>
+<table class="agent-table">
+<tr><td><strong>时代</strong></td><td>魏晋时期</td></tr>
+<tr><td><strong>籍贯</strong></td><td>淄乡（今山东邹平一带）</td></tr>
+<tr><td><strong>身份</strong></td><td>数学家</td></tr>
+<tr><td><strong>代表作</strong></td><td>《九章算术注》（263年）、《海岛算经》</td></tr>
+</table>
+
+<h3>一、割圆术：中国的"穷竭法"</h3>
+<p>刘徽从圆内接正六边形出发，不断倍增边数，用多边形面积逐步逼近圆面积：<strong>"割之弥细，所失弥少，割之又割，以至于不可割，则与圆周合体而无所失矣。"</strong>这正是极限思想的精彩表述。他算到正192边形，得出 π≈3.14；后又推进到3072边形，得 π≈3.1416。</p>
+
+<h3>二、出入相补原理</h3>
+<p>"以盈补虚"——用图形割补移置来证明面积、体积公式。这一原理贯穿他对《九章》几何内容的全部证明，是中国古代几何的核心方法。</p>
+
+<h3>三、系统的理论建设</h3>
+<p>在《九章算术注》中，刘徽给出了分数运算、比例、盈不足术、开方等算法的理论依据；<strong>明确定义了正负数及其运算法则</strong>——"正负术"，这是世界数学史上最早的负数系统论述（西方直到17世纪才完全接受负数）。</p>
+
+<h3>四、影响与纪念</h3>
+<p>刘徽注使《九章算术》从"算法手册"升格为理论体系。月球背面有一座环形山以他命名（Liu Hui）。</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-euclid" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>欧几里得：几何学的"立法者"</h2>
+<table class="agent-table">
+<tr><td><strong>活动地</strong></td><td>埃及亚历山大城（托勒密王朝时期）</td></tr>
+<tr><td><strong>身份</strong></td><td>数学家，被称为"几何学之父"</td></tr>
+<tr><td><strong>代表作</strong></td><td>《几何原本》（Elements，13卷）</td></tr>
+</table>
+
+<h3>一、《几何原本》——公理化方法的诞生</h3>
+<p>全书以23个定义、5条公设、5条公理为根基。著名的第五公设（平行公设）后来引发了两千年的争论，最终在19世纪催生了<strong>非欧几何</strong>。每一个命题都从已有命题严格推出，知识因此成为一座"只靠逻辑就能站立"的大厦。</p>
+
+<h3>二、影响与纪念</h3>
+<p>自1482年首次印刷出版以来，《几何原本》被译成世界上几乎所有主要语言，明代徐光启与利玛窦合译了前6卷（1607年），"几何"一词即由此而来。月球和火星上都有以他命名的环形山；欧洲空间局2019年发射的空间望远镜被命名为"<strong>欧几里得号</strong>"（Euclid）。</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-pythagoras" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>毕达哥拉斯："万物皆数"的神秘数学家</h2>
+<table class="agent-table">
+<tr><td><strong>出生地</strong></td><td>萨摩斯岛（今属希腊）</td></tr>
+<tr><td><strong>身份</strong></td><td>数学家、哲学家，毕达哥拉斯学派创始人</td></tr>
+<tr><td><strong>主要领域</strong></td><td>几何学、数论、音乐理论、天文学</td></tr>
+</table>
+
+<h3>一、勾股定理</h3>
+<p>直角三角形两直角边的平方和等于斜边的平方。毕达哥拉斯学派首次给出了普遍的证明，使它从经验公式升格为数学定理。</p>
+
+<h3>二、"万物皆数"与音乐理论</h3>
+<p>学派发现：弦长成简单整数比时，声音才和谐。这一发现震惊了毕达哥拉斯：连音乐这样"感性"的东西都服从数的规律，那么宇宙万物必然都由数支配。由此诞生了<strong>"和谐宇宙"</strong>的观念。</p>
+
+<h3>三、一次思想地震：无理数的发现</h3>
+<p>学派成员发现：正方形的对角线与边长之比（√2）无法表示为任何整数之比。这个"不可公度"的发现动摇了学派的根基，引发了历史上<strong>第一次数学危机</strong>。</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-thales" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>泰勒斯：西方"科学之父"与第一位数学家</h2>
+<table class="agent-table">
+<tr><td><strong>出生地</strong></td><td>米利都（今土耳其境内）</td></tr>
+<tr><td><strong>身份</strong></td><td>数学家、天文学家、哲学家，"希腊七贤"之首</td></tr>
+<tr><td><strong>主要领域</strong></td><td>几何学、天文学、自然哲学</td></tr>
+</table>
+
+<h3>一、从"测量术"到"证明术"</h3>
+<p>埃及人量地、巴比伦人算数，都只是经验法则；泰勒斯的贡献在于<strong>把几何命题变成了可逻辑证明的定理</strong>，他因此被视为<strong>第一位数学家</strong>。以他命名或归于他的定理包括：泰勒斯定理（半圆上的圆周角是直角）、等腰三角形两底角相等、对顶角相等、直径平分圆。</p>
+
+<h3>二、影响与纪念</h3>
+<p>泰勒斯开创的"<strong>用证明说话</strong>"的理性传统，经由毕达哥拉斯、欧几里得等人发扬，最终形成了整个西方数学与科学的基本范式。月球上有一座环形山以他的名字命名（Thales）。</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-zuchongzhi" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>祖冲之：把圆周率推向世界之巅的人</h2>
+<table class="agent-table">
+<tr><td><strong>时代</strong></td><td>南朝（宋、齐两代）</td></tr>
+<tr><td><strong>籍贯</strong></td><td>范阳郡遒县（今河北涞水），生于建康（今南京）</td></tr>
+<tr><td><strong>身份</strong></td><td>数学家、天文学家、机械发明家</td></tr>
+<tr><td><strong>代表成就</strong></td><td>圆周率精确到小数点后7位；《大明历》</td></tr>
+</table>
+
+<h3>一、圆周率：3.1415926 &lt; π &lt; 3.1415927</h3>
+<p>祖冲之证明圆周率真值介于<strong>3.1415926与3.1415927</strong>之间，并给出两个分数近似值：<strong>约率：22/7</strong>（≈3.142857）；<strong>密率：355/113</strong>（≈3.1415929）。密率355/113是一个"奇迹分数"——用如此小的分母达到如此高的精度，在数学上极为优雅。</p>
+
+<h3>二、《大明历》</h3>
+<p>祖冲之于462年上书朝廷，编制新历《大明历》，首次把<strong>岁差</strong>引入历法计算，并测得回归年长度为365.24281481日，与今测值只差约46秒。</p>
+
+<h3>三、祖暅原理</h3>
+<p>祖冲之与儿子祖暅之合作解决了球体积公式，提出了"<strong>幂势既同，则积不容异</strong>"——即两个等高处截面积相等的立体，体积必然相等。这就是西方所说的"<strong>卡瓦列里原理</strong>"（17世纪），祖氏父子比他早了1100多年。</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-archimedes" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>阿基米德：古代最伟大的数学家</h2>
+<table class="agent-table">
+<tr><td><strong>出生地</strong></td><td>西西里岛的叙拉古（Syracuse）</td></tr>
+<tr><td><strong>身份</strong></td><td>数学家、物理学家、发明家、工程师</td></tr>
+<tr><td><strong>主要领域</strong></td><td>几何学（穷竭法）、力学、流体静力学、数理天文</td></tr>
+</table>
+
+<h3>一、几何学：直逼微积分的穷竭法</h3>
+<p>他用正96边形"夹逼"圆周，证明 223/71 &lt; π &lt; 22/7，这是人类第一次为π建立严格的上下界。<strong>球体积公式</strong>：球的体积等于其外切圆柱体积的2/3（V=4/3·πr³），他视此为平生绝作。</p>
+
+<h3>二、流体静力学：阿基米德原理</h3>
+<p>"浸在流体中的物体受到向上的浮力，其大小等于排开流体的重量。"这是人类历史上第一条定量的物理定律。</p>
+
+<h3>三、力学：杠杆定律与重心理论</h3>
+<p>他给出了杠杆平衡的严格数学证明，留下了那句豪言：<strong>"给我一个支点，我就能撬动地球。"</strong></p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-apollonius" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>阿波罗尼奥斯：圆锥曲线之父</h2>
+<table class="agent-table">
+<tr><td><strong>出生地</strong></td><td>佩尔加（Perga，今土耳其境内）</td></tr>
+<tr><td><strong>活动地</strong></td><td>亚历山大城</td></tr>
+<tr><td><strong>身份</strong></td><td>数学家、天文学家，被称为"大几何学家"</td></tr>
+<tr><td><strong>代表作</strong></td><td>《圆锥曲线论》（Conics，8卷）</td></tr>
+</table>
+
+<h3>一、《圆锥曲线论》</h3>
+<p>取一个圆锥面，用不同角度的平面去截，可得到三种曲线——阿波罗尼奥斯是第一个<strong>用统一方式系统研究这三种曲线</strong>的人，并给出了沿用至今的命名：<strong>椭圆（ellipse）</strong>、<strong>抛物线（parabola）</strong>、<strong>双曲线（hyperbola）</strong>。</p>
+
+<h3>二、历史的"重逢"</h3>
+<p>阿波罗尼奥斯的成果在古代被评价为"最艰深但也最完美"。此后近两千年，圆锥曲线一直被当作"纯智力体操"。直到17世纪，<strong>开普勒发现行星沿椭圆轨道运行</strong>，<strong>伽利略发现抛出的物体走抛物线</strong>，人们才恍然大悟：宇宙的运行法则，早已被这位希腊人研究透了。</p>
+</div>
+</div>
+</div>
 </section>
 
 <section id="ar-section-problems" class="ar-section" hidden>
@@ -670,6 +817,19 @@ function switchMathPopular(id, btn) {
   group.querySelectorAll('.ai-tab-panel').forEach(function (p) { p.classList.remove('active'); });
   btn.classList.add('active');
   var panel = group.querySelector('#ar-mathpopular-panel-' + id);
+  panel.classList.add('active');
+  if (typeof renderMathInElement === 'function') {
+    renderMathInElement(panel, { delimiters: [ {left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false} ], throwOnError: false });
+  }
+}
+
+function switchMathFigures(id, btn) {
+  var group = btn.closest('.ai-tabs');
+  group.querySelectorAll('.ai-tab-btn').forEach(function (b) { b.classList.remove('active'); });
+  group.querySelectorAll('.ai-tab-panel').forEach(function (p) { p.classList.remove('active'); });
+  btn.classList.add('active');
+  var panel = document.getElementById('ar-mathfigures-panel-' + id);
+  if (!panel) return;
   panel.classList.add('active');
   if (typeof renderMathInElement === 'function') {
     renderMathInElement(panel, { delimiters: [ {left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false} ], throwOnError: false });
