@@ -23,6 +23,24 @@ math: true
     <button type="button" class="ai-tab-btn tab-orange" onclick="switchMathFigures('zuchongzhi', this)">祖冲之</button>
     <button type="button" class="ai-tab-btn tab-purple" onclick="switchMathFigures('archimedes', this)">阿基米德</button>
     <button type="button" class="ai-tab-btn tab-violet" onclick="switchMathFigures('apollonius', this)">阿波罗尼奥斯</button>
+    <button type="button" class="ai-tab-btn tab-red" onclick="switchMathFigures('galois', this)">伽罗瓦</button>
+    <button type="button" class="ai-tab-btn tab-blue" onclick="switchMathFigures('lagrange', this)">拉格朗日</button>
+    <button type="button" class="ai-tab-btn tab-teal" onclick="switchMathFigures('cauchy', this)">柯西</button>
+    <button type="button" class="ai-tab-btn tab-green" onclick="switchMathFigures('euler', this)">欧拉</button>
+    <button type="button" class="ai-tab-btn tab-orange" onclick="switchMathFigures('newton', this)">牛顿</button>
+    <button type="button" class="ai-tab-btn tab-purple" onclick="switchMathFigures('descartes', this)">笛卡尔</button>
+    <button type="button" class="ai-tab-btn tab-violet" onclick="switchMathFigures('leibniz', this)">莱布尼茨</button>
+    <button type="button" class="ai-tab-btn tab-red" onclick="switchMathFigures('fermat', this)">费马</button>
+    <button type="button" class="ai-tab-btn tab-blue" onclick="switchMathFigures('abel', this)">阿贝尔</button>
+    <button type="button" class="ai-tab-btn tab-teal" onclick="switchMathFigures('gauss', this)">高斯</button>
+    <button type="button" class="ai-tab-btn tab-green" onclick="switchMathFigures('riemann', this)">黎曼</button>
+    <button type="button" class="ai-tab-btn tab-orange" onclick="switchMathFigures('yau', this)">丘成桐</button>
+    <button type="button" class="ai-tab-btn tab-purple" onclick="switchMathFigures('godel', this)">哥德尔</button>
+    <button type="button" class="ai-tab-btn tab-violet" onclick="switchMathFigures('turing', this)">图灵</button>
+    <button type="button" class="ai-tab-btn tab-red" onclick="switchMathFigures('hilbert', this)">希尔伯特</button>
+    <button type="button" class="ai-tab-btn tab-blue" onclick="switchMathFigures('ramanujan', this)">拉马努金</button>
+    <button type="button" class="ai-tab-btn tab-teal" onclick="switchMathFigures('noether', this)">诺特</button>
+    <button type="button" class="ai-tab-btn tab-green" onclick="switchMathFigures('tao', this)">陶哲轩</button>
   </div>
 
   <div id="ar-mathfigures-panel-liuhui" class="ai-tab-panel active">
@@ -159,6 +177,363 @@ math: true
 
 <h3>二、历史的"重逢"</h3>
 <p>阿波罗尼奥斯的成果在古代被评价为"最艰深但也最完美"。此后近两千年，圆锥曲线一直被当作"纯智力体操"。直到17世纪，<strong>开普勒发现行星沿椭圆轨道运行</strong>，<strong>伽利略发现抛出的物体走抛物线</strong>，人们才恍然大悟：宇宙的运行法则，早已被这位希腊人研究透了。</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-galois" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>伽罗瓦：20岁陨落、照亮整个数学的流星</h2>
+<table class="agent-table">
+<tr><td><strong>国籍</strong></td><td>法国</td></tr>
+<tr><td><strong>生卒</strong></td><td>1811—1832（仅20岁）</td></tr>
+<tr><td><strong>主要成就</strong></td><td>创立群论与伽罗瓦理论；判定方程根式可解的条件</td></tr>
+</table>
+
+<h3>一、生平：落榜、入狱与决斗</h3>
+<p>伽罗瓦生于巴黎近郊，15岁读到勒让德《几何原理》与拉格朗日著作后决意献身数学，却<strong>两次报考巴黎综合理工学院落榜</strong>。17岁起接连投稿法兰西科学院：第一篇被柯西弄丢，第二篇因傅里叶病逝而失踪，1831年第三篇被泊松判为"不知所云"。同期他投身共和革命，两度入狱。1832年5月30日凌晨因决斗腹部中弹，次日去世。决斗前夜通宵写下"科学遗嘱"，页边留下："<strong>我没有时间了，我没有时间了！</strong>"</p>
+
+<h3>二、伽罗瓦理论：彻底解决根式解问题</h3>
+<p>拉格朗日看出解法藏在"根的置换"里，阿贝尔证明了五次方程无一般根式解；伽罗瓦更进一步，给每个方程配上一个<strong>群</strong>，提出划时代判据：<strong>一个方程能用根式求解，当且仅当它的群是"可解群"。</strong>由此一举回答三百年悬案，并解决了正n边形尺规作图的判定条件。</p>
+
+<h3>三、群论：对称的数学</h3>
+<p>他首次系统使用"群"的概念。此后几何中有变换群与克莱因的"爱尔兰根纲领"，物理中粒子分类与守恒律（诺特定理）都是群论，密码学中有限域（伽罗瓦域 GF(2⁸)）支撑着二维码、AES加密与纠错编码。<strong>"对称即群"</strong>是20世纪科学最重要的观念革命之一。1846年刘维尔整理并发表其手稿，世界才读懂这位20岁青年的思想。</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-lagrange" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>拉格朗日：为数学注入"力学之美"</h2>
+<table class="agent-table">
+<tr><td><strong>籍贯</strong></td><td>意大利都灵（有法国血统）</td></tr>
+<tr><td><strong>生卒</strong></td><td>1736—1813</td></tr>
+<tr><td><strong>代表作</strong></td><td>《分析力学》（1788）</td></tr>
+</table>
+
+<h3>一、《分析力学》：一部"没有图"的力学圣经</h3>
+<p>1788年出版的《分析力学》把全部力学归结为几个普适的变分方程（拉格朗日方程），彻底代数化、公理化——他在序言中自豪地说：全书"<strong>没有一张图</strong>"。今天经典力学、量子场论、机器人控制的底层仍是拉格朗日力学。</p>
+
+<h3>二、变分法与代数方程论</h3>
+<p>18岁时他在给欧拉的信中提出等周问题的一般解法——这就是<strong>变分法</strong>的诞生。他研究方程根式解法时发现其技巧本质是<strong>根的置换对称性</strong>，直接启发了阿贝尔与伽罗瓦。</p>
+
+<h3>三、数论与天体力学</h3>
+<p>证明了<strong>四平方和定理</strong>；解决了三体问题的周期解——今日的詹姆斯·韦伯望远镜、SOHO 卫星就驻留在日地系统的<strong>拉格朗日点</strong>上。大革命期间他主导制定了<strong>米制</strong>（公制单位），是入葬巴黎先贤祠的科学家之一。</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-cauchy" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>柯西：让数学重新"严谨"起来</h2>
+<table class="agent-table">
+<tr><td><strong>国籍</strong></td><td>法国</td></tr>
+<tr><td><strong>生卒</strong></td><td>1789—1857</td></tr>
+<tr><td><strong>主要成就</strong></td><td>极限与连续的严格定义；柯西积分定理与积分公式</td></tr>
+</table>
+
+<h3>一、分析学的严格化</h3>
+<p>在牛顿—欧拉时代，无穷小量、连续、收敛都是"看得懂但说不清"的直觉概念。柯西在《分析教程》（1821）中给出<strong>极限、连续、导数、定积分</strong>的严格定义（后由魏尔斯特拉斯完善为 ε-δ 语言），首创<strong>柯西收敛准则</strong>，这场"分析严格化运动"是19世纪数学最重要的自我革命。</p>
+
+<h3>二、复变函数论的奠基人</h3>
+<p>他创立了复分析：<strong>柯西积分定理</strong>与<strong>柯西积分公式</strong>、留数理论——复分析至今是数学中最优美的分支之一，量子场论、信号处理都以它为语言。他还证明了微分方程解的存在唯一性（柯西—利普希茨定理），并在弹性力学中建立应力张量概念。</p>
+
+<h3>三、轶事</h3>
+<p>他论文多达789篇，仅次于欧拉，巴黎科学院不得不限制单篇论文页数。如果说欧拉教会数学家"怎么算"，柯西则规定了"<strong>什么才算被证明了</strong>"。</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-euler" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>欧拉：历史上最多产的数学家</h2>
+<table class="agent-table">
+<tr><td><strong>国籍</strong></td><td>瑞士（巴塞尔）</td></tr>
+<tr><td><strong>生卒</strong></td><td>1707—1783</td></tr>
+<tr><td><strong>主要成就</strong></td><td>e^{iπ}+1=0；哥尼斯堡七桥问题；欧拉函数</td></tr>
+</table>
+
+<h3>一、创立分析学的通用语言</h3>
+<p>今天数学符号的一大半出自欧拉之手：<strong>函数记号 f(x)、自然对数的底 e、虚数单位 i、求和符号 Σ、三角函数记号 sin/cos/tan</strong>……他是第一个把"函数"作为数学核心概念的人，三部名著确立了"分析的化身"的地位。</p>
+
+<h3>二、欧拉恒等式：最美的公式</h3>
+<p>由欧拉公式 e^{iθ}=cosθ+i·sinθ，令 θ=π 得 <strong>e^{iπ}+1=0</strong>，把分析（e）、几何（π）、代数（i）、算术（1、0）熔于一炉，被公认为"世界上最美的公式"。</p>
+
+<h3>三、图论与数论</h3>
+<p>1736年他解答<strong>哥尼斯堡七桥问题</strong>，这一年被视为图论与拓扑学的诞生年；平面图公式 <strong>V−E+F=2</strong> 称为欧拉示性数。他还解决了"巴塞尔问题"（1+1/4+1/9+…=π²/6），推广费马小定理为<strong>欧拉定理</strong> a^φ(n)≡1 (mod n)——现代密码学的数学源头之一。1771年他双目几乎全盲后，仍靠心算与口述完成毕生约一半的著作。</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-newton" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>牛顿：站在巨人肩膀上的科学巨人</h2>
+<table class="agent-table">
+<tr><td><strong>国籍</strong></td><td>英国</td></tr>
+<tr><td><strong>生卒</strong></td><td>1643—1727</td></tr>
+<tr><td><strong>代表作</strong></td><td>《自然哲学的数学原理》（1687）</td></tr>
+</table>
+
+<h3>一、微积分（流数术）</h3>
+<p>1665—1676年间，牛顿建立微积分的系统方法：把变量看作随时间流动的量，导数即"流数"（ẋ）。同时代莱布尼茨独立发明微积分并采用更优记号（dx、∫），两人围绕优先权爆发论战，导致英国与欧陆数学界隔绝近百年。</p>
+
+<h3>二、《原理》：运动三定律与万有引力</h3>
+<p>1687年出版的《原理》给出<strong>运动三定律</strong>（惯性、F=ma、作用与反作用）与<strong>万有引力定律</strong>，由同一理论推出开普勒三定律、潮汐成因、彗星轨道、地球扁率、岁差，被誉为科学史上最重要的著作。哈雷彗星的回归（1758年）让牛顿力学一战封神。</p>
+
+<h3>三、光学与名言</h3>
+<p>他用三棱镜证明<strong>白光由七色光组成</strong>，发明反射式望远镜。"如果说我看得更远，那是因为我<strong>站在巨人的肩膀上</strong>。"1727年他以国葬规格安葬于威斯敏斯特教堂，是获此殊荣的第一位科学家。</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-descartes" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>笛卡尔：坐标系与"我思故我在"</h2>
+<table class="agent-table">
+<tr><td><strong>国籍</strong></td><td>法国</td></tr>
+<tr><td><strong>生卒</strong></td><td>1596—1650</td></tr>
+<tr><td><strong>代表作</strong></td><td>《几何学》（1637）、《方法论》</td></tr>
+</table>
+
+<h3>一、解析几何：代数与几何的联姻</h3>
+<p>1637年他在《方法论》附录《几何学》中提出：<strong>用坐标系把图形变成方程，把方程变成图形</strong>——平面上任意一点由一对数（x, y）确定，曲线就是满足某方程的点集。变量由此进入数学，恩格斯称此为"数学中的转折点"，微积分应运而生。注：法国人费马在同一年代独立提出坐标方法，两人是解析几何的共同创始人。</p>
+
+<h3>二、方法论与哲学</h3>
+<p>他在《方法论》中提出四条规则，用普遍怀疑清算一切知识，最终找到不可怀疑的基点：<strong>"我思故我在（Cogito, ergo sum）。"</strong>他还给出折射定律的表述（斯涅尔—笛卡尔定律），提出机械论自然观。</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-leibniz" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>莱布尼茨：微积分记号的发明者与"最后一位通才"</h2>
+<table class="agent-table">
+<tr><td><strong>国籍</strong></td><td>德国（汉诺威）</td></tr>
+<tr><td><strong>生卒</strong></td><td>1646—1716</td></tr>
+<tr><td><strong>主要成就</strong></td><td>微积分（记号 dx、∫）；二进制；数理逻辑先行者</td></tr>
+</table>
+
+<h3>一、微积分：更好的记号赢得世界</h3>
+<p>他约于1675年独立发明微积分，1684年发表，比牛顿公开任何相关成果都早。他发明的记号直指本质：<strong>dx、dy</strong>（微分）、<strong>∫</strong>（拉长的S，即 summa"求和"）。这些记号如此优越，以致欧拉、柯西体系全部建立在它们之上——<strong>莱布尼茨输掉了优先权之争，却赢得了记号的战争。</strong></p>
+
+<h3>二、二进制与计算器</h3>
+<p>1679年前后他发明<strong>二进制</strong>，并注意到中国《易经》六十四卦与二进制的对应。他改进了帕斯卡的加法器，制成能做乘除法的步进计算器，是计算机先驱之一；他梦想的"<strong>普遍文字</strong>"让所有推理都变成计算，正是现代数理逻辑与符号计算的先声。</p>
+
+<h3>三、影响</h3>
+<p>他一手创建柏林科学院并任首任院长。德国研究联合会最高奖项即"<strong>莱布尼茨奖</strong>"。今天史学界公论：<strong>牛顿与莱布尼茨独立发明了微积分</strong>。</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-fermat" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>费马：业余数学家之王</h2>
+<table class="agent-table">
+<tr><td><strong>国籍</strong></td><td>法国（图卢兹）</td></tr>
+<tr><td><strong>生卒</strong></td><td>1601—1665</td></tr>
+<tr><td><strong>职业</strong></td><td>图卢兹议会的法律顾问（真正的"业余选手"）</td></tr>
+</table>
+
+<h3>一、费马大定理：358年的挑战</h3>
+<p>在丢番图《算术》的页边，他写下："不可能将一个立方数写成两个立方数之和……对此，我确信已发现了一种美妙的证法，可惜这里空白的地方太小，写不下。"这就是<strong>费马大定理</strong>：当 n&gt;2 时 xⁿ+yⁿ=zⁿ 无正整数解。它折磨数学界三个半世纪，直到<strong>1994年怀尔斯</strong>才最终证明。</p>
+
+<h3>二、近代数论之父</h3>
+<p><strong>费马小定理</strong>：若 p 为素数且 a 与 p 互素，则 a^(p−1) ≡ 1 (mod p)——这是初等数论与密码学的基石；<strong>两个平方和定理</strong>：奇素数 p 可表示为两数平方和当且仅当 p≡1 (mod 4)；他还开创了无限递降法。</p>
+
+<h3>三、解析几何与概率论</h3>
+<p>1629年前后他已用坐标方法研究轨迹方程，与笛卡尔同为解析几何创始人；他建立求极值的方法并提出"最短时间原理"（费马原理），是变分法的源头；1654年他与帕斯卡通信讨论"赌金分配问题"，共同奠定<strong>概率论</strong>的基础。</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-abel" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>阿贝尔：闪耀五年便陨落的挪威天才</h2>
+<table class="agent-table">
+<tr><td><strong>国籍</strong></td><td>挪威</td></tr>
+<tr><td><strong>生卒</strong></td><td>1802—1829（仅26岁）</td></tr>
+<tr><td><strong>主要成就</strong></td><td>五次方程无一般根式解；椭圆函数论；阿贝尔群</td></tr>
+</table>
+
+<h3>一、五次方程无一般根式解</h3>
+<p>代数方程求根公式走到四次为止。1824年阿贝尔证明了五次方程的求根公式<strong>不存在</strong>，结束了近300年的徒劳探索，更引出"哪些方程可用根式解"的问题——后者由伽罗瓦最终解决。数学中"交换"的代数结构被称为<strong>阿贝尔群</strong>。</p>
+
+<h3>二、椭圆函数论的反转革命</h3>
+<p>他与雅可比同时独立地做了一个漂亮的"反转"：不研究椭圆积分，而研究其<strong>反函数——椭圆函数</strong>，发现它们具有双周期性，由此开创了19世纪分析学的中心领域之一。他的毕生杰作《论一类极广泛的超越函数》交给柯西审阅，竟被柯西弄丢，多年后才由刘维尔抢救发表。</p>
+
+<h3>三、纪念</h3>
+<p>他一生贫病交加，1829年4月6日去世，<strong>两天后</strong>柏林大学的聘书才寄到。挪威政府2003年设立"<strong>阿贝尔奖</strong>"，与沃尔夫奖、菲尔兹奖并列国际数学最高荣誉。</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-gauss" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>高斯：数学王子</h2>
+<table class="agent-table">
+<tr><td><strong>国籍</strong></td><td>德国（不伦瑞克—哥廷根）</td></tr>
+<tr><td><strong>生卒</strong></td><td>1777—1855</td></tr>
+<tr><td><strong>代表作</strong></td><td>《算术研究》（1801）</td></tr>
+</table>
+
+<h3>一、19岁：正十七边形尺规作图</h3>
+<p>1796年，19岁的高斯想通<strong>正十七边形可用尺规作出</strong>，这是自古希腊以来两千年悬而未决的问题，他因此下定决心终身从事数学，并要求把十七边形刻在自己的墓碑上。</p>
+
+<h3>二、《算术研究》：数论成为系统的科学</h3>
+<p>1801年出版的《算术研究》把数论第一次建成完整体系：<strong>同余记号（≡）、二次互反律</strong>（他称之为"算术的黄金定理"，先后给出8种证明）、分圆理论、二次型理论。他说："数学是科学的女王，<strong>数论是数学的女王</strong>。"</p>
+
+<h3>三、谷神星与微分几何</h3>
+<p>1801年他用新发明的轨道计算方法预言了失踪小行星谷神星的位置，半年后它如预测现身；他为此发展了<strong>最小二乘法</strong>，并给出正态分布的严格论证——<strong>正态分布因此被称为"高斯分布"</strong>。1827年《曲面的一般研究》建立曲面的内蕴几何，提出<strong>高斯曲率</strong>与"绝妙定理"，他私下研究过非欧几何但未发表。座右铭："<strong>宁可少些，但要好些</strong>（Pauca sed matura）。"</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-riemann" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>黎曼：给爱因斯坦预备了几何的短命天才</h2>
+<table class="agent-table">
+<tr><td><strong>国籍</strong></td><td>德国（汉诺威王国）</td></tr>
+<tr><td><strong>生卒</strong></td><td>1826—1866（仅39岁）</td></tr>
+<tr><td><strong>主要成就</strong></td><td>黎曼几何；黎曼猜想；黎曼面；黎曼积分</td></tr>
+</table>
+
+<h3>一、黎曼几何：弯曲空间的数学</h3>
+<p>1854年就职演讲《论作为几何基础的假设》中，他把高斯的曲面论推广到任意维度、任意曲率的空间，定义了<strong>黎曼度量</strong>。半个多世纪后，<strong>爱因斯坦1915年以黎曼几何为语言建立广义相对论</strong>——引力即时空的弯曲。高斯听完演讲后罕见地盛赞其"超越了所有期待"。</p>
+
+<h3>二、黎曼猜想：数学第一难题</h3>
+<p>1859年论文《论小于给定值的素数个数》中，他研究 ζ 函数并提出：<strong>ζ 函数的所有非平凡零点都位于实部为 1/2 的直线上</strong>。它是克雷数学研究所悬赏100万美元的七大千禧难题之一，被公认为当今数学最重要的未解问题；这篇8页论文同时创立了解析数论。</p>
+
+<h3>三、黎曼面与复分析</h3>
+<p>他首创<strong>黎曼面</strong>（把多值复函数"铺"在多层曲面上研究），引入连通性、拓扑维数的思想——既是复分析的深化，也是拓扑学的源头之一。黎曼积分、黎曼球面、黎曼张量、柯西—黎曼方程……他几乎每篇论文都开辟一个方向。</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-yau" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>丘成桐：几何分析的建筑大师</h2>
+<table class="agent-table">
+<tr><td><strong>籍贯</strong></td><td>广东汕头，成长于香港</td></tr>
+<tr><td><strong>身份</strong></td><td>清华大学讲席教授，哈佛大学荣休教授</td></tr>
+<tr><td><strong>主要荣誉</strong></td><td>菲尔兹奖（1982）、沃尔夫奖（2010）、克拉福德奖（1994）</td></tr>
+</table>
+
+<h3>一、卡拉比猜想与"卡拉比—丘流形"</h3>
+<p>1976年，27岁的丘成桐证明了<strong>卡拉比猜想</strong>，其几何推论——<strong>卡拉比—丘流形</strong>——在1984年被弦理论家发现正是六维"内藏空间"的候选：<strong>我们宇宙的额外维可能蜷缩在卡拉比—丘流形中</strong>。这一名词从此进入物理学与大众文化的词典。</p>
+
+<h3>二、几何分析的创立</h3>
+<p>他与孙理察等人发展出以<strong>非线性偏微分方程为工具研究几何</strong>的系统方法，代表作包括<strong>正质量猜想</strong>（广义相对论中孤立系统总质量非负）、蒙日—安培方程、极小曲面与调和映射的系列突破，使其成为此后40年微分几何的主流范式。</p>
+
+<h3>三、荣誉与教育情怀</h3>
+<p>他是第一位获<strong>菲尔兹奖</strong>的华人数学家（1982年，时年33岁），创办<strong>丘成桐数学科学中心（清华）</strong>、求真书院，设立丘成桐中学科学奖、大学生数学竞赛，倡导"为中国培养本土的世界级数学家"。名言："<strong>数学的审美，与文学的境界是相通的。</strong>"</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-godel" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>哥德尔：用不完备定理震惊数学与哲学的人</h2>
+<table class="agent-table">
+<tr><td><strong>国籍</strong></td><td>奥地利（维也纳），后半生定居美国普林斯顿</td></tr>
+<tr><td><strong>生卒</strong></td><td>1906—1978</td></tr>
+<tr><td><strong>主要成就</strong></td><td>不完备性定理（1931）；完备性定理；选择公理相对相容性</td></tr>
+</table>
+
+<h3>一、不完备性定理：数学的"边界公告"</h3>
+<p>1931年他证明了两条震撼世界的定理：<strong>第一不完备定理</strong>——任何包含算术的、相容的公理化系统中，都存在既不能证明也不能证伪的命题；<strong>第二不完备定理</strong>——这样的系统无法证明自身的相容性。证明核心是天才的"<strong>哥德尔编码</strong>"与自指结构。它击碎了希尔伯特纲领的最终目标，却开创了递归论、模型论两大领域，并间接启发了图灵。</p>
+
+<h3>二、完备性定理与集合论</h3>
+<p>1929年他证明<strong>一阶逻辑的完备性定理</strong>；1938年证明<strong>选择公理与连续统假设相对于 ZFC 是相容的</strong>，与后来科恩的力迫法合起来，宣告这两大百年难题"不可在 ZFC 内判定"。</p>
+
+<h3>三、轶事</h3>
+<p>他1940年移居美国，与<strong>爱因斯坦</strong>成为日日散步的挚友，爱因斯坦说"上班的真正动机是与哥德尔一起走路回家"。1949年他给爱因斯坦场方程找到一个允许时间旅行的旋转宇宙解（"哥德尔宇宙"）。他被誉为"自亚里士多德以来最伟大的逻辑学家"。</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-turing" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>图灵：计算机科学与人工智能之父</h2>
+<table class="agent-table">
+<tr><td><strong>国籍</strong></td><td>英国</td></tr>
+<tr><td><strong>生卒</strong></td><td>1912—1954</td></tr>
+<tr><td><strong>主要成就</strong></td><td>图灵机（1936）；破译 Enigma 密码；图灵测试；形态发生理论</td></tr>
+</table>
+
+<h3>一、图灵机：定义了"什么是计算"</h3>
+<p>1936年，24岁的图灵为回答希尔伯特的"判定问题"发明了"<strong>图灵机</strong>"：一条纸带、一个读写头、一张状态表，竟能模拟一切可能的计算。他证明了存在通用图灵机，并证明<strong>停机问题不可判定</strong>——与哥德尔不完备定理互为镜像。<strong>今天每一台电脑，都是通用图灵机的工程实现。</strong></p>
+
+<h3>二、布莱切利园：战争中的超级解密者</h3>
+<p>1939年他进入英国密码破译总部布莱切利园，设计关键解密装置"<strong>炸弹机</strong>"破译德军 Enigma 密码，使盟军掌握德军 U 艇动向。历史学家估计，布莱切利园的工作使二战<strong>缩短约两年，挽救了上千万人的生命</strong>。</p>
+
+<h3>三、图灵测试与悲剧结局</h3>
+<p>1950年他发表《计算机器与智能》，提出著名的<strong>模仿游戏</strong>（图灵测试）——人工智能哲学的第一块基石。1952年他因同性恋行为被捕并被迫接受激素治疗，1954年去世，年仅41岁。2009年英国政府正式道歉，2013年女王签署皇家赦免，2021年他的头像印上英国50英镑纸币；计算机界最高奖即以他命名——"<strong>图灵奖</strong>"。</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-hilbert" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>希尔伯特：数学的"总司令"与23个问题</h2>
+<table class="agent-table">
+<tr><td><strong>国籍</strong></td><td>德国（柯尼斯堡—哥廷根）</td></tr>
+<tr><td><strong>生卒</strong></td><td>1862—1943</td></tr>
+<tr><td><strong>代表成就</strong></td><td>1900年提出23个数学问题；希尔伯特空间；几何基础公理化</td></tr>
+</table>
+
+<h3>一、1900年巴黎演讲：23个问题</h3>
+<p>1900年8月，38岁的希尔伯特在国际数学家大会上提出<strong>23个悬而未决的问题</strong>，为20世纪数学制定了议程——此后百年，解决一个希尔伯特问题就意味着登上数学的珠峰。演讲结尾的信念刻在他的墓碑上："<strong>我们必须知道，我们必将知道。</strong>（Wir müssen wissen. Wir werden wissen.）"</p>
+
+<h3>二、几何基础与希尔伯特空间</h3>
+<p>1899年《几何基础》以严格方式重建欧几里得几何，为"公理化方法"树立范式，其名言："<strong>必须能够在思想上用桌子、椅子、啤酒杯代替点、线、面</strong>"。他把积分方程升华为无限维空间理论——<strong>希尔伯特空间</strong>，20年后成为量子力学的数学语言。</p>
+
+<h3>三、数学基础之争</h3>
+<p>面对集合论悖论，他发起"<strong>形式主义纲领</strong>"，试图把数学形式化并证明其无矛盾性。1931年<strong>哥德尔不完备定理</strong>表明该纲领在原形式下无法完全实现——但它激发的元数学研究恰恰催生了图灵与计算机。他将哥廷根建成了"世界数学的麦加"。</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-ramanujan" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>拉马努金：从马德拉斯账房里走出的"数学之仙"</h2>
+<table class="agent-table">
+<tr><td><strong>国籍</strong></td><td>印度（泰米尔纳德邦）</td></tr>
+<tr><td><strong>生卒</strong></td><td>1887—1920（仅32岁）</td></tr>
+<tr><td><strong>主要领域</strong></td><td>数论、无穷级数、连分数、分拆理论、θ函数</td></tr>
+</table>
+
+<h3>一、"那封信"：与哈迪的世纪相遇</h3>
+<p>他没受过正规高等数学训练，靠一本《纯粹数学概要》自学并独自推导了里面全部结论。1913年他把研究成果寄给剑桥的<strong>G. H. 哈迪</strong>，信中120条公式令哈迪震骇——其中包括一个估计分拆数的三重无穷级数公式。哈迪后来说这封信是"我一生中最浪漫的事件"，并断定他与欧拉、雅可比同级别。</p>
+
+<h3>二、分拆理论与仿θ函数</h3>
+<p>他与哈迪合作，用"<strong>圆法</strong>"给出分拆数 p(n) 的精确渐近公式；分拆函数的同余性质（如 p(5n+4)≡0 mod 5）被誉为"数论中最美的定理"。他临终前研究的"<strong>仿θ函数</strong>"在2002年后被严格化，并与模形式理论对接——而模形式正是怀尔斯证明费马大定理的工具；物理学家还发现他的公式可用于计算<strong>黑洞熵</strong>。</p>
+
+<h3>三、轶事</h3>
+<p>哈迪探病时说"我来的出租车号码1729挺无聊"，拉马努金脱口而出："不，那是个非常有意思的数！它是<strong>能用两种方式表示为两个立方数之和的最小正整数</strong>（1³+12³=9³+10³=1729）。"——这类数从此被称为"<strong>的士数</strong>"。印度将他的诞辰12月22日定为"国家数学日"。</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-noether" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>埃米·诺特：抽象代数之母</h2>
+<table class="agent-table">
+<tr><td><strong>国籍</strong></td><td>德国（埃尔朗根），后半生流亡美国</td></tr>
+<tr><td><strong>生卒</strong></td><td>1882—1935</td></tr>
+<tr><td><strong>主要成就</strong></td><td>诺特定理（对称性与守恒律）；环论与理想论；诺特环</td></tr>
+</table>
+
+<h3>一、诺特定理：对称性与守恒律一一对应</h3>
+<p>1915—1918年，为帮助理解广义相对论中的能量问题，诺特证明了一个数学物理的"超级定理"：<strong>每一个连续对称性对应一个守恒量</strong>——时间平移不变⇒能量守恒，空间平移不变⇒动量守恒，空间旋转不变⇒角动量守恒。它被称为"现代物理学最重要的定理之一"。</p>
+
+<h3>二、抽象代数的奠基</h3>
+<p>1921年《环中的理想论》等论文把代数从"运算技巧"改造成"<strong>结构科学</strong>"：她系统发展了环、理想、模、同态的抽象理论，证明了三个同构定理。满足升链条件的环被称为<strong>诺特环</strong>。她使"数学家研究的是结构，而不是计算"成为20世纪数学的主旋律。</p>
+
+<h3>三、在偏见中执教</h3>
+<p>女性被排斥于学术之外的年代，她多年无薪无职位地做研究。希尔伯特为她争取讲师资格时反驳道："<strong>先生们，我不认为候选人的性别是反对她当讲师的理由。大学终究不是澡堂。</strong>"1933年纳粹上台后她被解除教职，流亡美国，1935年去世，年仅53岁。爱因斯坦悼文称她为"自女性接受高等教育以来最重要的女数学家"。</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-tao" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>陶哲轩：当今世界最著名的"神童数学家"</h2>
+<table class="agent-table">
+<tr><td><strong>国籍</strong></td><td>澳大利亚籍华裔（父母为香港移民）</td></tr>
+<tr><td><strong>职位</strong></td><td>美国加州大学洛杉矶分校（UCLA）教授</td></tr>
+<tr><td><strong>主要领域</strong></td><td>调和分析、偏微分方程、组合数论、加法组合学</td></tr>
+</table>
+
+<h3>一、一路"跳级"的神童</h3>
+<p>他7岁自学微积分，10、11、12岁三次参加<strong>国际数学奥林匹克（IMO）</strong>，分获铜、银、金牌——<strong>13岁摘金的纪录至今无人打破</strong>。他17岁到普林斯顿攻读博士，21岁获博士学位，24岁成为 UCLA 正教授，是该校历史上最年轻的正教授。</p>
+
+<h3>二、格林—陶定理：素数中的长龙</h3>
+<p>2004年他与本·格林证明了<strong>格林—陶定理</strong>：<strong>素数序列中存在任意长的等差数列</strong>。这项工作融合了遍历理论与解析数论，是21世纪"加法组合学"的里程碑，也是他2006年<strong>菲尔兹奖</strong>（时年31岁）的核心成果之一。</p>
+
+<h3>三、多面手与开放数学</h3>
+<p>他在 Kakeya 猜想与限制性估计、<strong>压缩感知</strong>（MRI 提速、雷达与无线通信的底层技术）、埃尔德什差异问题等方向都有突破。他发起 <strong>PolyMath</strong> 众包数学项目，坚持把证明细节公开在个人博客上，被称为"世界上最开放的一流数学家"。他说："<strong>我的多数工作来自长时间的苦思，而非灵光一现</strong>。"</p>
 </div>
 </div>
 </div>
