@@ -612,7 +612,6 @@ math: true
 <p>他在 Kakeya 猜想与限制性估计、<strong>压缩感知</strong>（MRI 提速、雷达与无线通信的底层技术）、埃尔德什差异问题等方向都有突破。他发起 <strong>PolyMath</strong> 众包数学项目，坚持把证明细节公开在个人博客上，被称为"世界上最开放的一流数学家"。他说："<strong>我的多数工作来自长时间的苦思，而非灵光一现</strong>。"</p>
 </div>
 </div>
-</div>
 
 <div id="ar-mathfigures-panel-hua" class="ai-tab-panel">
 <div class="agent-intro">
@@ -624,7 +623,7 @@ math: true
 <tr><td><strong>身份</strong></td><td>数学家、教育家，中国科学院院士</td></tr>
 <tr><td><strong>主要领域</strong></td><td>解析数论、典型群、矩阵几何学、多复变函数论、优选学与统筹学</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/hua.jpg" alt="华罗庚" loading="lazy"><figcaption>华罗庚</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/hua.png" alt="华罗庚" loading="lazy"><figcaption>华罗庚</figcaption></figure>
 </div>
 
 <h3>一、逆境中的起点：自学成才的少年</h3>
@@ -657,6 +656,8 @@ math: true
 </div>
 </div>
 </section>
+
+<section id="ar-section-problems" class="ar-section" hidden>
 <div class="ai-tabs">
   <div class="ai-tab-btns">
     <button type="button" class="ai-tab-btn tab-teal active" onclick="switchMathProblems('hilbert', this)">希尔伯特23问题</button>
@@ -860,6 +861,7 @@ math: true
     <button type="button" class="ai-tab-btn tab-teal active" onclick="switchMathPopular('crisis1', this)">第一次数学危机</button>
     <button type="button" class="ai-tab-btn tab-orange" onclick="switchMathPopular('crisis2', this)">第二次数学危机</button>
     <button type="button" class="ai-tab-btn tab-purple" onclick="switchMathPopular('crisis3', this)">第三次数学危机</button>
+    <button type="button" class="ai-tab-btn tab-green" onclick="switchMathPopular('coastline', this)">英国海岸线有多长</button>
   </div>
 
 <div id="ar-mathpopular-panel-crisis1" class="ai-tab-panel active">
@@ -1280,11 +1282,145 @@ math: true
 </div>
 </div>
 
+<div id="ar-mathpopular-panel-coastline" class="ai-tab-panel">
+<div class="crisis-article">
+<h2 class="crisis-title">英国海岸线有多长？</h2>
+<h3 class="crisis-h3">——从测量悖论到分形几何</h3>
+<blockquote class="crisis-quote">
+<p><strong>摘要</strong>：一个国家或地区的海岸线究竟有多长？这个看似查查地图就能回答的问题，在 20 世纪引发了数学与地理学的双重困惑：对同一段海岸线，用不同长度的尺子测量，会得到截然不同且没有公认上限的结果。本报告以英国海岸线长度悖论为线索，回顾理查森的实证发现与曼德博 1967 年的经典解答，介绍自相似性、分形维数等核心概念；说明海岸线在理想化意义下长度趋于无穷、其恰当的定量刻画是分形维数而非长度；并简述分形几何在地理、生物、材料与金融等领域的深远影响。海岸线悖论提示我们：测量结果隐含着尺度这一前提，面对复杂对象，应当寻找不依赖尺度的特征量。</p>
+<p><strong>关键词</strong>：海岸线悖论；分形；自相似；分形维数；尺度依赖</p>
+</blockquote>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">一、引言：一个"测不准"的长度</h3>
+<p>"英国的海岸线到底有多长？"这个问题听起来像一道地理填空题：翻开地图量一量，再乘以比例尺即可。然而，正是这个朴素的问题，在 20 世纪动摇了人们对"长度"与"测量"的常识性理解，并最终催生了一门全新的几何学——分形几何。</p>
+<p>故事要从英国科学家刘易斯·弗赖·理查森（Lewis Fry Richardson）说起。他在 1961 年发表的一项关于邻国冲突的统计研究的附录中，提出了一个问题：国界与海岸线究竟该如何计量？他查阅各国资料后发现，对同一条边界，不同国家的官方记录差异大得惊人：西班牙与葡萄牙之间的边界，葡萄牙记载约 987 公里，西班牙却记载约 1214 公里；荷兰与比利时之间的边界，两方记录分别约为 380 公里和 449 公里。</p>
+<p>如此巨大的差异显然不能用测量误差来解释。理查森进一步用"沿地图折线拼接"的办法做了系统测算，发现一个奇特的规律：<strong>使用的尺子越短，测得的长度就越大</strong>，而且总长度并不像测量圆周长那样趋于某个稳定值。这个发现在当时几乎无人问津，直到 1967 年，法裔美籍数学家伯努瓦·曼德博（Benoit Mandelbrot）在《科学》杂志发表著名论文《英国海岸线有多长？——统计自相似与分形维数》，才给出深刻而完整的解答。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">二、悖论的产生：尺子越短，海岸线越长</h3>
+<p>要理解这个悖论，先把"测量"操作定义清楚。经典做法是用一根长度为 ε 的直尺，沿海岸最外沿一段一段拼接折线，直至绕行一圈；若共拼了 N 段，则测得总长</p>
+<p class="crisis-math">$$L(\varepsilon) = N(\varepsilon) \times \varepsilon$$</p>
+<p>对于光滑曲线，例如圆，尺子越短误差越小，$L(\varepsilon)$ 会收敛到确定的周长——这正是我们直觉中"真实长度"的来源。</p>
+<p>海岸线却完全不同。把地图越放越大，你会看到海湾里嵌着小海湾，半岛尖端伸出更小的半岛，礁石上还有更细密的锯齿。每当尺子缩短，原先被"跨过"的弯曲就被计入长度，总长随之增加；而更小尺度的新细节仍会继续显现。海岸线似乎在每一个尺度上都保持"同样程度的粗糙"，长度因此步步攀升、不见尽头。</p>
+<p>为什么光滑曲线没有这个问题？数学上，用折线逼近圆周时，误差随 ε 的缩小而快速衰减，所有被"跨过"的弧段总长只占一个越来越小的比例，最终趋于零；而海岸线的细节并不会消失，每一次缩短尺子都会从新的弯曲中"长出"实实在在的长度。两者之别，正在于结构是否随尺度细化而"用之不竭"。</p>
+<p>理查森用数据把这一现象总结成简洁的幂律：$\log L$ 与 $\log \varepsilon$ 大致落在一条直线上，即</p>
+<p class="crisis-math">$$L(\varepsilon) = C \cdot \varepsilon^{1-D}$$</p>
+<p>其中 $D$ 是刻画海岸线粗糙程度的正数。在双对数坐标下，这条直线的斜率恰为 $1-D$（见图1）。如果海岸线像圆一样光滑，$D$ 会趋近 1，长度收敛；而对真实海岸线，$D$ 明显大于 1，此时让 ε 无限缩小，$L$ 将趋于无穷。<strong>"海岸线无限长"并非夸张修辞，而是幂律结构在数学上的必然结论。</strong></p>
+<figure class="crisis-figure"><img src="/images/fractal/coastline-fig1.png" alt="海岸线长度随测量尺度变化的示意图（双对数坐标）" loading="lazy"><figcaption>图1　海岸线长度随测量尺度变化的示意图（双对数坐标；直线斜率为 1−D，D 为分形维数）</figcaption></figure>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">三、分形：局部是整体的缩影</h3>
+<p>曼德博给这类形状起了名字：<strong>分形</strong>（fractal），词根取自拉丁语 <em>fractus</em>，意为"破碎、不规则"。分形的共同特征是<strong>自相似性</strong>——局部在统计意义上重复着整体的形态，并且这种相似跨越很宽的尺度范围。云的边缘、树枝的分叉、河流的支流网络，都具有类似性质。</p>
+<p>理解分形最经典的模型是<strong>科赫曲线</strong>（Koch curve）。从一条直线段开始，把中间三分之一"挖去"，向外隆起一个等边三角形；再对新生成的每一段重复同样操作（见图2）。每迭代一次，曲线总长变为原来的 $4/3$ 倍；迭代无穷多次后，这条曲线在任意小的范围内都无限曲折，总长趋于无穷大，却被限制在有限的区域里——一条"无限长的线"可以围出"有限的面积"，这正是经典几何语言失效的地方。</p>
+<figure class="crisis-figure"><img src="/images/fractal/coastline-fig2.png" alt="科赫曲线的迭代构造" loading="lazy"><figcaption>图2　科赫曲线的迭代构造：每一步长度增加为原来的 4/3 倍，最终长度趋于无穷</figcaption></figure>
+<p>如何刻画这类"比线更复杂、又不足以填满一个面"的对象？曼德博引入了<strong>分形维数</strong>。设想把一个图形分成 $N$ 个与整体相似的小副本，每个副本按比例 $1/r$ 缩小，则维数定义为：</p>
+<p class="crisis-math">$$D = \frac{\ln N}{\ln(1/r)}$$</p>
+<p>对普通线段：可分成 $N=2$ 段，每段为原来的 $1/2$，$D=\ln 2/\ln 2=1$；对正方形：$N=4$、$r=1/2$，$D=\ln 4/\ln 2=2$。而对科赫曲线：整体放大 $3$ 倍后，其中的任何一段自身都由 $4$ 个小副本拼成，故其维数为</p>
+<p class="crisis-math">$$D_{\text{Koch}} = \frac{\ln 4}{\ln 3} \approx 1.2619$$</p>
+<p>分形维数可以是分数，它度量的是图形如何"填充空间"：$D$ 越接近 1，对象越接近光滑曲线；$D$ 越接近 2，对象越曲折稠密、越接近填满一个平面。对海岸线而言，<strong>维数而非长度，才是其更本质的几何指纹</strong>。</p>
+<p>这个结论并不玄妙，完全可以亲手验证。找来同一地区两种比例尺的地图，用两脚规（或一段棉线）以不同的开度 ε 沿海岸拼接，记录每组的段数并算出 $L(\varepsilon)$；再把 ε 与 L 取对数、在坐标纸上描点。你会发现这些点确实近似排成一条直线，直线的斜率就给出当地海岸线的分形维数估计——这正是理查森当年的做法，也是今天课堂上常见的分形探究实验。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">四、给海岸线"量维"：从数据到维数</h3>
+<p>曼德博重新分析了理查森的原始数据，指出各国边界记录的巨大差异，正源于它们各自不同的分形维数：一条边界或海岸线的粗糙程度不同，其长度随尺子缩短而膨胀的速度也不同。他把代表性测算结果整理成一张著名的对照表（见表1）。</p>
+<table class="crisis-table">
+<thead><tr><th>对象</th><th>分形维数 D</th><th>形态特征</th></tr></thead>
+<tbody>
+<tr><td>南非海岸线</td><td>约 1.02</td><td>平直光滑，接近普通曲线</td></tr>
+<tr><td>澳大利亚海岸线</td><td>约 1.13</td><td>有海湾但整体平缓</td></tr>
+<tr><td>葡萄牙陆地边界</td><td>约 1.14</td><td>较为规则</td></tr>
+<tr><td>德国陆地边界（1899年地图）</td><td>约 1.15</td><td>较为规则</td></tr>
+<tr><td>英国西海岸</td><td>约 1.25</td><td>半岛与海湾密布，极为破碎</td></tr>
+<tr><td>挪威海岸线</td><td>约 1.52</td><td>冰川侵蚀峡湾，极度曲折</td></tr>
+</tbody>
+</table>
+<p><em>表1　若干海岸线与国界的分形维数估计值（数据据 Mandelbrot, 1967；挪威值引自 Feder, 1988）</em></p>
+<p>这张表揭示了维数的地理含义：它与海岸线的地质成因和侵蚀历史密切相关。南非海岸构造平稳、浪蚀均匀，$D$ 接近 1；英国西海岸沉降与海侵作用显著，岬角与海湾层层嵌套，$D$ 约为 1.25；挪威海岸被第四纪冰川反复刨蚀出密集峡湾，$D$ 高达 1.52，是已知最曲折的海岸线之一。可以说，$D$ 是海岸线在漫长地质演化中留下的"粗糙度指纹"。</p>
+<p>分形维数也解释了制图学中的一个实际困扰：不同比例尺的地图不能直接比较长度。把地图从百万分之一放大到十万分之一，原本被简化掉的岬角与湾澳重新出现，长度数字随之改变。<strong>制图综合的本质，正是人为设定一个最小尺度，把分形"截断"成一条普通曲线。</strong></p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">五、那么，英国海岸线到底有多长？</h3>
+<p>严格地说，这个问题没有唯一答案。在理想化的数学模型下，自然海岸线在可观测的每一尺度上都存在更细的结构，因此当尺子无限缩短时，长度趋向无穷。曼德博的回答是：<strong>海岸线的长度并非其固有属性</strong>，提问的正确方式应当是"在什么尺度下量、用什么维数刻画"。</p>
+<p>现实测量总是在有限尺度下进行的，答案因此取决于测量目的与规范。粗尺度的概查适用于航海图与国土统计；细尺度的测量则用于海岸带管理、湿地调查等精细场景。正因如此，不同资料给出的英国海岸线长度从约 <strong>1.1 万公里到近 1.8 万公里</strong>不等——差异如此悬殊，却都"没有算错"，恰恰是尺度依赖性的直接体现。</p>
+<p>进入卫星遥感和数字地图时代后，人们可以在多个尺度上自动重测海岸线，幂律关系被一再验证；同时海岸线本身也在随潮汐涨落、泥沙淤积和海岸工程而动态变化。换言之，海岸线的长度不仅在空间尺度上没有唯一值，在时间维度上同样没有恒定值——<strong>固定答案从一开始就不存在</strong>。</p>
+<p>从这个意义上说，海岸线悖论带来的不是挫败，而是解放：与其追问一个不存在的"真实长度"，不如转向尺度不变的量。分形维数不随尺子长短而改变，才是描述海岸线几何品格的恰当参数。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">六、从一个悖论到一门新几何学</h3>
+<p>1967 年的论文之后，曼德博于 1982 年出版《大自然的分形几何学》，系统建立了分形理论。他的名言概括了这场变革的精神：</p>
+<blockquote class="crisis-quote">
+<p>"云不是球，山不是锥，海岸线不是圆，树皮不是光滑的面，闪电也不是沿直线行进的。"</p>
+</blockquote>
+<p>欧几里得几何擅长处理理想光滑的对象，而自然界的常态是粗糙、破碎与多尺度。此后几十年，分形几何成为众多领域的通用语言：在地理信息系统中，多尺度表达与地图综合以分形原理为基础；水文学家用分形描述水系与河网的发育；生理学家发现气管与血管的分支结构，使肺能在有限体积内摊开巨大的气体交换面积；材料学家用断裂面的维数评估材料韧性；工程师设计了覆盖多个频段的分形天线；经济学家则在金融价格序列中发现了显著的分形统计特征。</p>
+<p>海岸线悖论还留下一个重要的方法论警示：<strong>任何测量结果都隐含着"尺度"这一前提参数</strong>。面对细节无穷的复杂对象，先问清测量在哪个尺度上进行，再寻找不依赖尺度的特征量，这是现代科学研究复杂系统的基本素养。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">七、结语</h3>
+<p>"英国海岸线有多长"，一个近乎孩子气的问题，最终得到的回答却是：<strong>没有唯一长度，因为海岸线是分形。</strong>理查森的实测数据与曼德博的几何洞察共同说明：当被测对象足够复杂时，问题本身可能需要被重新表述——长度不再适用，维数登上舞台。这是 20 世纪科学中最漂亮的"提问升级"之一。</p>
+<p>下一次在海边眺望曲折的岸线，或在地图上描摹半岛与海湾时，不妨记得：你看到的每一层粗糙里都藏着更细的粗糙，而刻画这份无穷层次的语言，正是分形几何。科学的进步，有时就始于对最平凡问题的较真。</p>
+<p><strong>留给读者的三个延伸思考</strong>：</p>
+<ol class="crisis-oln">
+<li>把科赫曲线的三段式构造用在等边三角形的三条边上，得到"科赫雪花"，它的周长和面积各自是有限还是无限？</li>
+<li>若某段海岸线的分形维数为 1.5，当尺子缩短为原来的十分之一时，测得长度大约变为多少倍？</li>
+<li>环顾身边，还有哪些事物在统计意义上是分形的？</li>
+</ol>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">参考文献</h3>
+<ol class="crisis-oln">
+<li>Richardson, L. F. The problem of contiguity: an appendix of statistics of deadly quarrels[J]. <em>General Systems Yearbook</em>, 1961, 6: 139-187.</li>
+<li>Mandelbrot, B. B. How long is the coast of Britain? Statistical self-similarity and fractional dimension[J]. <em>Science</em>, 1967, 156(3775): 636-638.</li>
+<li>Mandelbrot, B. B. <em>The Fractal Geometry of Nature</em>[M]. New York: W. H. Freeman, 1982.</li>
+<li>Feder, J. <em>Fractals</em>[M]. New York: Plenum Press, 1988.</li>
+</ol>
+</div>
+</div>
+
 </div>
 </section>
 
 <section id="ar-section-anecdotes" class="ar-section" hidden>
-<p>数学轶事板块，记录数学史上的趣闻轶事与人物八卦。</p>
+<div class="ai-tabs">
+  <div class="ai-tab-btns">
+    <button type="button" class="ai-tab-btn tab-teal active" onclick="switchMathAnecdotes('calculus', this)">微积分发明权之争</button>
+  </div>
+
+  <div id="ar-mathanecdotes-panel-calculus" class="ai-tab-panel active">
+<div class="crisis-article">
+<h2 class="crisis-title">微积分发明权之争：一场持续百年的“世纪骂战”</h2>
+<h3 class="crisis-h3">一封信引发的风波</h3>
+<p>1699年，伦敦皇家学会。一位名叫法蒂奥·德·杜利尔的瑞士数学家发表文章，公然宣称：牛顿是微积分的“第一位发明者”，而莱布尼兹——充其量算个“第二发明者”，说不定还从牛顿那里“借鉴”了点什么。</p>
+<p>这句话像一根火柴，扔进了积攒了三十年的火药桶。</p>
+<p>要知道，在那之前，牛顿和莱布尼兹表面上还算客气。莱布尼兹曾在1687年写信称赞牛顿的《自然哲学之数学原理》是“本世纪最辉煌的成就”，牛顿也回信说双方“在通信中从未有过不快”。两人隔着英吉利海峡互相致意，看起来像是学术圈的一对神仙友谊。</p>
+<p>可惜，微积分这块蛋糕太大了——它改变了人类理解运动、面积、速度、变化的方式，是数学史上最耀眼的明珠。谁都想要“发明者”这个头衔。</p>
+<h3 class="crisis-h3">三十年前：两条互不相识的路</h3>
+<p>把时钟拨回1675年。二十九岁的莱布尼兹作为外交官出访伦敦，顺手加入了皇家学会。他此行见到了不少英国数学家，还看了一些牛顿私下流传的手稿片段——后来这场诉讼中，这一点被反复拿出来说事。</p>
+<p>而牛顿呢？他早在1665到1666年，也就是二十三四岁那年，就在伍尔索普乡下老家的农场里琢磨出了“流数术”——因为伦敦大瘟疫，剑桥停课，他回乡避难，闲得发慌，顺便把微积分、光学和万有引力的雏形都想了一遍。数学史上管这两年叫牛顿的“奇迹年”。</p>
+<p>不过牛顿有个毛病：不愿发表。他把流数术写进手稿，锁进抽屉，只给信任的朋友看。用现在的话说，他攒了个惊世骇俗的项目，却迟迟不肯公之于众。</p>
+<p>莱布尼兹则相反。1675年他在巴黎的日记里写下积分符号 ∫，1676年又造出微分记号 d，1684年在《教师学报》上正式发表了第一篇微积分论文。也就是说，<strong>全世界读到微积分，先是读到莱布尼兹的版本</strong>。</p>
+<p>牛顿直到1693年才第一次在正式出版物中提到流数术，而完整阐述，要等到1704年《光学》的数学附录。</p>
+<h3 class="crisis-h3">挑战赛：一晚上解开“最速降线”</h3>
+<p>争论正式打响之前，还有一段广为流传的插曲。</p>
+<p>1696年，约翰·伯努利向“全欧洲最聪明的数学家”发出挑战：求最速降线——一颗小球在重力作用下沿什么曲线下滑最快？他给了六个月期限，应者寥寥。应莱布尼兹的请求，期限又延长了半年。</p>
+<p>据说挑战书送到牛顿手里时，他刚从皇家铸币厂下班——对，那时的牛顿已经是铸币厂督办，正忙着抓假币贩子。他看到题目，一个晚上就解了出来，然后匿名寄给皇家学会。伯努利看到答案，一眼认出作者，留下了那句名言：</p>
+<blockquote class="crisis-quote">
+<p>“从狮子的利爪，我认出了狮子。”</p>
+</blockquote>
+<p>莱布尼兹则劝牛顿别再匿名投稿了，公开出来切磋多好。这本是一段惺惺相惜的佳话，谁能想到几年后，两人会彻底翻脸。</p>
+<h3 class="crisis-h3">骂战升级：从学术分歧到公开指控</h3>
+<p>1704年，牛顿在《光学》附录里首次系统发表流数术。随后《教师学报》上出现一篇匿名书评，暗指牛顿的流数术不过是莱布尼兹微积分的“另一种记号”。牛顿认定这篇书评出自莱布尼兹之手——虽然从无实锤，但梁子就此结死。</p>
+<p>1708年，牛津的天文学教授凯尔再次声明“牛顿才是第一发明人”，莱布尼兹忍无可忍，向皇家学会正式申诉。</p>
+<p>于是皇家学会成立了一个“公正调查委员会”。问题是——学会会长正是牛顿本人。</p>
+<p>1712年，委员会发布调查报告《商报》（Commercium Epistolicum），结论毫无悬念：牛顿是微积分的第一发明人，莱布尼兹涉嫌抄袭。更绝的是，牛顿在报告后面匿名附上一篇长文，把莱布尼兹驳得体无完肤；据说连那份报告本身，都是牛顿亲手起草、委员会照单签收的。裁判、球员、裁判长，都是同一个人。</p>
+<p>莱布尼兹在大陆方面自然不服。他提出一个至今仍显机锋的辩护：承认牛顿先想到，与承认我自己独立发明了微积分，并不矛盾——他打了个比方：<strong>正如承认阿里斯托芬是最早的喜剧作家，和承认某部喜剧是我自己写的，两者并不冲突。</strong>意思是：最早想到，和独立做出并发表，是两回事。</p>
+<h3 class="crisis-h3">一句话、一场国骂、两个结局</h3>
+<p>这场争斗后来彻底变形了。英国学界把莱布尼兹骂作“骗子”和“盗贼”，欧陆学者则反唇相讥，说牛顿的流数术晦涩难懂、符号粗劣。数学界实际分裂成两个阵营：英国用牛顿的点记号 ẋ，欧陆用莱布尼兹的 dx——今天全世界的数学课本证明，后者的记号确实更好用。</p>
+<p>1716年11月，莱布尼兹在汉诺威去世，出席葬礼的只有他的秘书一个人。直到死前，他还在为发明权愤愤不平地写信。</p>
+<p>多年后，有人问起牛顿当年的心境，据说他留下了那句著名却真假难辨的评论：</p>
+<blockquote class="crisis-quote">
+<p>“我用第二种方法打破了莱布尼兹的腰。”</p>
+</blockquote>
+<p>至于那句被安在牛顿头上、用来回应胡克的“站在巨人的肩膀上”——倒真是在这场论争之前写的。只是后人更愿意把它读作牛顿的谦逊，而忘了写它的人，同样可以为了一项发明的归属寸土不让。</p>
+<h3 class="crisis-h3">后来的公论</h3>
+<p>今天，数学史的主流结论早已平静下来：牛顿和莱布尼兹各自独立发明了微积分。牛顿更早（1665年前后），莱布尼兹更先发表（1684年），且两人路径不同——牛顿从运动与速度出发，莱布尼兹从切线与求和出发，记号体系也完全两样。抄袭之说，基本可以排除。</p>
+<p>真正可悲的是代价：这场骂战让英国数学在整整一个世纪里固守牛顿的记号，与欧陆主流割裂，分析力学的前沿几乎被法国人包揽。有英国学者哀叹，18世纪上半叶的英国数学界“没有一个值得记住的名字”。</p>
+<p>两颗最聪明的大脑，为了一块本可以共享的丰碑，耗尽了余生最好的友谊。而微积分本身毫发无损——它只是安静地躺在 dx 和 ẋ 的记号里，等着全人类来用它。</p>
+</div>
+</div>
+</div>
 </section>
 
 <script>
@@ -1293,6 +1429,18 @@ function switchMathCulture(id, btn) {
   btn.classList.add('active');
   document.querySelectorAll('#ar-section-figures, #ar-section-problems, #ar-section-popular, #ar-section-anecdotes').forEach(function (s) { s.setAttribute('hidden', ''); });
   document.getElementById('ar-section-' + id).removeAttribute('hidden');
+}
+
+function switchMathAnecdotes(id, btn) {
+  var group = btn.closest('.ai-tabs');
+  group.querySelectorAll('.ai-tab-btn').forEach(function (b) { b.classList.remove('active'); });
+  group.querySelectorAll('.ai-tab-panel').forEach(function (p) { p.classList.remove('active'); });
+  btn.classList.add('active');
+  var panel = group.querySelector('#ar-mathanecdotes-panel-' + id);
+  panel.classList.add('active');
+  if (typeof renderMathInElement === 'function') {
+    renderMathInElement(panel, { delimiters: [ {left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false} ], throwOnError: false });
+  }
 }
 
 function switchMathProblems(id, btn) {
