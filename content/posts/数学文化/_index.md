@@ -41,6 +41,7 @@ math: true
     <button type="button" class="ai-tab-btn tab-blue" onclick="switchMathFigures('ramanujan', this)">拉马努金</button>
     <button type="button" class="ai-tab-btn tab-teal" onclick="switchMathFigures('noether', this)">诺特</button>
     <button type="button" class="ai-tab-btn tab-green" onclick="switchMathFigures('tao', this)">陶哲轩</button>
+    <button type="button" class="ai-tab-btn tab-red" onclick="switchMathFigures('hua', this)">华罗庚</button>
   </div>
 
   <div id="ar-mathfigures-panel-liuhui" class="ai-tab-panel active">
@@ -612,9 +613,50 @@ math: true
 </div>
 </div>
 </div>
-</section>
 
-<section id="ar-section-problems" class="ar-section" hidden>
+<div id="ar-mathfigures-panel-hua" class="ai-tab-panel">
+<div class="agent-intro">
+<h2>华罗庚：从杂货店学徒到数学大师</h2>
+<div class="fig-head">
+<table class="agent-table">
+<tr><td><strong>生卒</strong></td><td>1910年11月12日—1985年6月12日</td></tr>
+<tr><td><strong>籍贯</strong></td><td>江苏省金坛县（今常州市金坛区）</td></tr>
+<tr><td><strong>身份</strong></td><td>数学家、教育家，中国科学院院士</td></tr>
+<tr><td><strong>主要领域</strong></td><td>解析数论、典型群、矩阵几何学、多复变函数论、优选学与统筹学</td></tr>
+</table>
+<figure class="fig-photo"><img src="/images/mathematicians/hua.jpg" alt="华罗庚" loading="lazy"><figcaption>华罗庚</figcaption></figure>
+</div>
+
+<h3>一、逆境中的起点：自学成才的少年</h3>
+<p>1910年，华罗庚出生于江苏金坛一个小商人家庭，父亲经营一间小杂货铺。他初中就读于金坛中学，因家贫交不起学费，<strong>初中毕业后被迫辍学</strong>，回到店里站柜台。他借来仅有几本的数学教材和杂志，一边看店一边自学，常常算题入迷，把算错的账目找上门来，乡亲们因此叫他"罗呆子"。他用五年时间自学完了高中和大学低年级的全部数学课程。</p>
+
+<p>1928年，华罗庚在金坛中学任庶务兼会计，19岁那年不幸染上伤寒，卧床半年，病愈后<strong>左腿落下终身残疾</strong>，走路要左腿先画一个大圆圈，右腿再迈上一小步。身体的残疾没有击垮他，反而激发了他破釜沉舟的决心。</p>
+
+<p>1930年，年仅19岁的华罗庚在上海《科学》杂志发表重要论文——<strong>《苏家驹之代数的五次方程式解法不能成立之理由》</strong>，指出了当时一位大学教授论文中的错误。这篇文章惊动了清华大学数学系主任<strong>熊庆来</strong>，他力排众议，于1931年把华罗庚调入清华大学。华罗庚从助理员做起，只用了一年半就攻下数学系全部课程，随后被破格提拔为助教、讲师。</p>
+
+<h3>二、走向世界的数学家</h3>
+<p>1936年，华罗庚经数学家维纳推荐，以访问学者身份前往英国<strong>剑桥大学</strong>。在两年里发表了十几篇高水准论文，在<strong>华林问题、塔里问题、素数分布</strong>等解析数论难题上取得一系列重要成果，其中关于高斯问题研究的成果被学术界称为"<strong>华氏定理</strong>"。</p>
+
+<p>抗日战争爆发后，1938年华罗庚放弃在英国的优越条件，<strong>回国任西南联合大学教授</strong>。在昆明物质极度匮乏的日子里，他完成了经典专著<strong>《堆垒素数论》</strong>，这部著作后来被译成俄、英、德、匈等多国文字出版，成为20世纪解析数论的经典文献。</p>
+
+<p>1950年，华罗庚毅然<strong>放弃美国的终身教职和优厚待遇，携全家回国</strong>。在归国途中，他写下了著名的《致中国全体留美学生的公开信》："梁园虽好，非久居之乡。归去来兮！……为了国家民族，我们应当回去……"</p>
+
+<h3>三、学术贡献：他留下了什么</h3>
+<p><strong>解析数论</strong>：改进并推广了哈代—李特尔伍德的圆法，与王元合作证明了哥德巴赫猜想研究中的重要里程碑成果（"2+3"），该成果被国际数学界称为"<strong>华—王方法</strong>"。</p>
+
+<p><strong>典型群与矩阵几何</strong>：开创了中国在这两个领域的系统研究，其成果"<strong>华氏算子</strong>"（典型域上的偏微分方程理论）获得1956年首届<strong>国家自然科学一等奖</strong>。</p>
+
+<p><strong>优选法与统筹学</strong>：20世纪60年代起，他历时20余年，跑遍全国20多个省，向工人农民推广"<strong>双法</strong>"——优选法（0.618法）与统筹法，使数百万人接触到数学方法，被认为是<strong>数学大规模服务国民经济的世界性创举</strong>。</p>
+
+<h3>四、精神与人格</h3>
+<p>华罗庚总结自己的读书法为"<strong>由薄到厚，再由厚到薄</strong>"——先下死功夫把书读透，再提炼精髓化为己用。他甘当人梯，善于发现人才。发现陈景润的故事尤为动人：华罗庚读到陈景润质疑自己论文的文章后，不仅不恼，反而把这位厦门大学资料室的小职员调入中科院。他的名言"<strong>聪明在于勤奋，天才在于积累</strong>"至今广为传诵。</p>
+
+<h3>五、生命落幕</h3>
+<p>1985年6月12日，华罗庚应邀在日本东京大学作学术报告。演讲结束后，他在讲台上突发心脏病，倒在了他奉献一生的讲坛上，终年74岁。正如他晚年的自勉："<strong>祖国需要，分秒必争。</strong>"</p>
+</div>
+</div>
+</div>
+</section>
 <div class="ai-tabs">
   <div class="ai-tab-btns">
     <button type="button" class="ai-tab-btn tab-teal active" onclick="switchMathProblems('hilbert', this)">希尔伯特23问题</button>
