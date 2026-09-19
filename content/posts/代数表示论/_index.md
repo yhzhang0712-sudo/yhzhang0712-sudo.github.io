@@ -62,6 +62,8 @@ math: true
     <button type="button" class="ai-tab-btn tab-green" onclick="switchArTab('ttgeom', this)">张量三角几何</button>
     <button type="button" class="ai-tab-btn tab-teal" onclick="switchArTab('periodicity', this)">周期猜想</button>
     <button type="button" class="ai-tab-btn tab-cyan" onclick="switchArTab('cmtype', this)">CM Type of Brauer-Thrall猜想</button>
+    <button type="button" class="ai-tab-btn tab-indigo" onclick="switchArTab('weaklygorenstein', this)">Weakly-Gorenstein对称猜想</button>
+    <button type="button" class="ai-tab-btn tab-pink" onclick="switchArTab('noloop', this)">no-loop conjecture</button>
   </div>
 
 {{< ar-panel "gpc" "active" >}}
@@ -79,6 +81,8 @@ math: true
 {{< ar-panel "ttgeom" >}}
 {{< ar-panel "periodicity" >}}
 {{< ar-panel "cmtype" >}}
+{{< ar-panel "weaklygorenstein" >}}
+{{< ar-panel "noloop" >}}
 </div>
 
 </section>
