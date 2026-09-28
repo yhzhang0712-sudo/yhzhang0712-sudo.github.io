@@ -1,6 +1,7 @@
 ---
 title: "ttgeom"
 headless: true
+date: 2026-08-31
 ---
 <h3 class="ar-subhead">问题陈述</h3>
 <p><strong>张量三角几何（Tensor Triangular Geometry）中的问题</strong>：</p>

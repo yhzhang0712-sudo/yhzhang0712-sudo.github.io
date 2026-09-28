@@ -1,6 +1,7 @@
 ---
 title: "gpc"
 headless: true
+date: 2026-09-08
 ---
 <div class="ar-toc-wrap">
 <nav class="ar-toc" aria-label="面板目录">

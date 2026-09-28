@@ -2,20 +2,24 @@
 title: "AI 与数学"
 hideTitle: true
 math: true
+description: "AI 与数学专题：AI 发展史大事记、Agent 入门、AI 工具盘点，以及 AI 证明数学猜想的前沿进展。"
+lastmod: 2026-09-28
 ---
 
+<h1 class="sr-only">AI 与数学</h1>
+
 <div class="ai-tabs ai-panel-tabs">
-  <div class="ai-tab-btns">
-    <button type="button" class="ai-tab-btn tab-red active" onclick="switchAiTab('timeline', this)">AI发展史</button>
-    <button type="button" class="ai-tab-btn tab-orange" onclick="switchAiTab('agent', this)">Agent</button>
-    <button type="button" class="ai-tab-btn tab-green" onclick="switchAiTab('tools', this)">AI工具</button>
-    <button type="button" class="ai-tab-btn tab-blue" onclick="switchAiTab('math', this)">AI与数学</button>
-    <button type="button" class="ai-tab-btn tab-purple" onclick="switchAiTab('ethics', this)">AI伦理</button>
+  <div class="ai-tab-btns" role="tablist">
+    <button type="button" class="ai-tab-btn tab-red active" role="tab" id="tab-ai-panel-timeline" aria-controls="ai-panel-timeline" aria-selected="true" tabindex="0" onclick="switchAiTab('timeline', this)">AI发展史</button>
+    <button type="button" class="ai-tab-btn tab-orange" role="tab" id="tab-ai-panel-agent" aria-controls="ai-panel-agent" aria-selected="false" tabindex="-1" onclick="switchAiTab('agent', this)">Agent</button>
+    <button type="button" class="ai-tab-btn tab-green" role="tab" id="tab-ai-panel-tools" aria-controls="ai-panel-tools" aria-selected="false" tabindex="-1" onclick="switchAiTab('tools', this)">AI工具</button>
+    <button type="button" class="ai-tab-btn tab-blue" role="tab" id="tab-ai-panel-math" aria-controls="ai-panel-math" aria-selected="false" tabindex="-1" onclick="switchAiTab('math', this)">AI与数学</button>
+    <button type="button" class="ai-tab-btn tab-purple" role="tab" id="tab-ai-panel-ethics" aria-controls="ai-panel-ethics" aria-selected="false" tabindex="-1" onclick="switchAiTab('ethics', this)">AI伦理</button>
   </div>
 
   <div class="ar-conjectures-divider"></div>
 
-  <div id="ai-panel-timeline" class="ai-tab-panel active">
+  <div id="ai-panel-timeline" class="ai-tab-panel active" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-panel-timeline">
     <ul class="ai-timeline">
       <li><span class="ai-year">1943</span>｜<a href="https://zh.wikipedia.org/wiki/%E9%BA%A6%E5%8D%A1%E6%B4%9B-%E7%9A%AE%E8%8C%A8%E7%A5%9E%E7%BB%8F%E5%85%83%E6%A8%A1%E5%9E%8B">MP 神经元模型</a>：用数学模拟神经元，神经网络的思想源头（<a href="https://zh.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E7%A5%9E%E7%BB%8F%E5%85%83">人工神经元</a> 相关）</li>
       <li><span class="ai-year">1950</span>｜<a href="https://zh.wikipedia.org/wiki/%E5%9B%BE%E7%81%B5%E6%B5%8B%E8%AF%95">图灵测试</a>：图灵提出"机器能思考吗"，给出判定智能的标准</li>
@@ -41,43 +45,47 @@ math: true
       <li><span class="ai-year">2026</span>｜<a href="https://www.anthropic.com/news/claude-new-constitution">Claude Opus 4.7/4.8</a>：Effort Control 自校正层；百万级上下文；代码/法律/金融分析标杆；Sonnet 5 成为日常主力</li>
       <li><span class="ai-year">2026</span>｜<a href="https://www.lorka.ai/ai-models/anthropic">Claude Fable 5 / Mythos</a>：Anthropic 最强模型向部分企业开放；AI 从"模型发布"转向"快速迭代+场景落地"</li>
       <li><span class="ai-year">2026</span>｜<a href="https://kie.ai/blog/what-is-claude-fable-5-1">Claude Fable 5.1</a>：9月发布，Mythos-class 级别，缓存读取成本下降 75%，长任务与知识工作能力大幅提升</li>
-      <li><span class="ai-year">2026</span>｜<a href="https://openai.com/index/gpt-6-astra">GPT-6 Astra</a>：9月发布，OpenAI 新旗舰；编码/知识工作/网络安全/科学均创纪录，成为 ChatGPT/Codex 默认模型</li>
+      <li><span class="ai-year">2026</span>｜<a href="https://openai.com/index/gpt-6-astra">GPT-6 Astra</a>：9月3日发布，OpenAI 新旗舰，10 万卡级训练；1.05M 上下文、可操作电脑与执行长程 Agent，编码/知识工作/网络安全/科学均创纪录，成为 ChatGPT/Codex 默认模型</li>
+      <li><span class="ai-year">2026</span>｜<a href="https://kie.ai/blog/what-is-claude-fable-5-1">Claude Mythos 5.1</a>：与 Fable 5.1 同源架构、同期（9月1日）发布，仅向通过审核的特定客户开放，代表 Anthropic 的"受限最强档"策略</li>
+      <li><span class="ai-year">2026</span>｜9月密集迭代：<a href="https://deepseek.com">DeepSeek V4.1-Flash</a>（9月10日，Causal Encoder–Decoder 新架构、1M 上下文、每百万 token 输入 0.30 / 输出 1.20 美元）与 Gemini 3.8 Flash（9月2日）主打性价比；<strong>9月22日 GPT-6 Sol/Luna 与 Claude Opus 5.5 同日发布</strong>，前沿竞争从"谁更大"彻底转向"谁更便宜、更能干活"</li>
+      <li><span class="ai-year">2026</span>｜<a href="https://mathandai.org/">数学共同体的集体反弹</a>：8–9 月 AI 密集攻克著名数学难题后，25 位菲尔兹奖得主于 9月11日联署《人工智能在数学中的严重错位》，OpenAI 撤出加州理工 Mathathon 赞助，学界开始为"AI 数学成果"建立发布、署名与核验规范</li>
+      <li><span class="ai-year">2026</span>｜<a href="https://openai.com/index/advisory-group-on-mathematics-and-ai/">数学与 AI 顾问组（AGMAI）</a>：9月21日成立，9 位数学家（含 Gowers、Hairer、Witten 三位菲尔兹奖得主）组成，落户普林斯顿高等研究院，独立于 OpenAI 运作、不领其薪酬、可公开发表未被委托的意见，专门就 AI 数学成果的评审与发布提供建议</li>
     </ul>
   </div>
 
-  <div id="ai-panel-tools" class="ai-tab-panel">
+  <div id="ai-panel-tools" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-panel-tools">
 
 <div class="ai-tabs ai-tools-tabs">
-  <div class="ai-tab-btns">
-    <button type="button" class="ai-tab-btn tab-blue active" onclick="switchAiToolsTab('chat', this)">对话</button>
-    <button type="button" class="ai-tab-btn tab-teal" onclick="switchAiToolsTab('browser', this)">AI 浏览器</button>
-    <button type="button" class="ai-tab-btn tab-green" onclick="switchAiToolsTab('image', this)">图片生成</button>
-    <button type="button" class="ai-tab-btn tab-orange" onclick="switchAiToolsTab('video', this)">视频生成</button>
-    <button type="button" class="ai-tab-btn tab-violet" onclick="switchAiToolsTab('ppt', this)">PPT 生成</button>
-    <button type="button" class="ai-tab-btn tab-red" onclick="switchAiToolsTab('classroom', this)">课堂生成</button>
-    <button type="button" class="ai-tab-btn tab-yellow" onclick="switchAiToolsTab('writing', this)">写作文案</button>
-    <button type="button" class="ai-tab-btn tab-purple" onclick="switchAiToolsTab('coding', this)">Vibe 编程</button>
-    <button type="button" class="ai-tab-btn tab-teal" onclick="switchAiToolsTab('education', this)">教育相关</button>
-    <button type="button" class="ai-tab-btn tab-blue" onclick="switchAiToolsTab('research', this)">科研相关</button>
+  <div class="ai-tab-btns" role="tablist">
+    <button type="button" class="ai-tab-btn tab-blue active" role="tab" id="tab-ai-tools-panel-chat" aria-controls="ai-tools-panel-chat" aria-selected="true" tabindex="0" onclick="switchAiToolsTab('chat', this)">对话</button>
+    <button type="button" class="ai-tab-btn tab-teal" role="tab" id="tab-ai-tools-panel-browser" aria-controls="ai-tools-panel-browser" aria-selected="false" tabindex="-1" onclick="switchAiToolsTab('browser', this)">AI 浏览器</button>
+    <button type="button" class="ai-tab-btn tab-green" role="tab" id="tab-ai-tools-panel-image" aria-controls="ai-tools-panel-image" aria-selected="false" tabindex="-1" onclick="switchAiToolsTab('image', this)">图片生成</button>
+    <button type="button" class="ai-tab-btn tab-orange" role="tab" id="tab-ai-tools-panel-video" aria-controls="ai-tools-panel-video" aria-selected="false" tabindex="-1" onclick="switchAiToolsTab('video', this)">视频生成</button>
+    <button type="button" class="ai-tab-btn tab-violet" role="tab" id="tab-ai-tools-panel-ppt" aria-controls="ai-tools-panel-ppt" aria-selected="false" tabindex="-1" onclick="switchAiToolsTab('ppt', this)">PPT 生成</button>
+    <button type="button" class="ai-tab-btn tab-red" role="tab" id="tab-ai-tools-panel-classroom" aria-controls="ai-tools-panel-classroom" aria-selected="false" tabindex="-1" onclick="switchAiToolsTab('classroom', this)">课堂生成</button>
+    <button type="button" class="ai-tab-btn tab-yellow" role="tab" id="tab-ai-tools-panel-writing" aria-controls="ai-tools-panel-writing" aria-selected="false" tabindex="-1" onclick="switchAiToolsTab('writing', this)">写作文案</button>
+    <button type="button" class="ai-tab-btn tab-purple" role="tab" id="tab-ai-tools-panel-coding" aria-controls="ai-tools-panel-coding" aria-selected="false" tabindex="-1" onclick="switchAiToolsTab('coding', this)">Vibe 编程</button>
+    <button type="button" class="ai-tab-btn tab-teal" role="tab" id="tab-ai-tools-panel-education" aria-controls="ai-tools-panel-education" aria-selected="false" tabindex="-1" onclick="switchAiToolsTab('education', this)">教育相关</button>
+    <button type="button" class="ai-tab-btn tab-blue" role="tab" id="tab-ai-tools-panel-research" aria-controls="ai-tools-panel-research" aria-selected="false" tabindex="-1" onclick="switchAiToolsTab('research', this)">科研相关</button>
   </div>
 
-<div id="ai-tools-panel-chat" class="ai-tab-panel active">
+<div id="ai-tools-panel-chat" class="ai-tab-panel active" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-tools-panel-chat">
 <div class="agent-intro">
 <h3 class="ai-tools-title">对话类</h3>
 <ul class="ai-timeline">
-<li><a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT</a>：生态最大：GPT-5 + Agent 模式 + 插件；agent 执行公认强项</li>
-<li><a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>：写作与分析质量"可拿去答辩"；超长文档处理；MCP 协议发起者</li>
-<li><a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini</a>：百万级上下文 + 原生多模态；与 Google 全家桶联动；3.1 Pro 推理领先</li>
-<li><a href="https://www.deepseek.com" target="_blank" rel="noopener">DeepSeek</a> <span class="ai-tools-cn">🇨🇳</span>：开源 + 极致性价比；数学/代码传统强项；免费网页版</li>
-<li><a href="https://grok.com" target="_blank" rel="noopener">Grok</a>：独占 X 实时数据流；Grok 4 进入推理第一梯队</li>
+<li><a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT</a>：生态最大：GPT-6 Astra / Sol / Luna 分层（9月）＋ Agent 模式；可操作电脑、长程执行，agent 公认强项</li>
+<li><a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>：写作与分析口碑最好，长文档处理稳；Fable 5.1 / Mythos 5.1（9月1日）＋ Opus 5.5（9月22日），Terminal Bench 4.0 从 42.0% 升至 55.8%，缓存读取成本降 75%；MCP 协议发起者</li>
+<li><a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini</a>：百万级上下文 + 原生多模态；与 Google 全家桶联动；3.8 Flash（9月2日）1M 上下文、每百万 token 输入 0.75 / 输出 3.75 美元，性价比突出</li>
+<li><a href="https://www.deepseek.com" target="_blank" rel="noopener">DeepSeek</a> <span class="ai-tools-cn">🇨🇳</span>：开源 + 极致性价比；V4.1-Flash（9月10日）改用 Causal Encoder–Decoder 架构，1M 上下文、每百万 token 输入 0.30 / 输出 1.20 美元；数学/代码传统强项</li>
+<li><a href="https://grok.com" target="_blank" rel="noopener">Grok</a>：独占 X 实时数据流；Grok 4.7 参数达 2.1 万亿（较 4.6 增约 40%），主打编码与知识工作</li>
 <li><a href="https://kimi.moonshot.cn" target="_blank" rel="noopener">Kimi</a> <span class="ai-tools-cn">🇨🇳</span>：长文本起家，中文长文档问答体验好</li>
 <li><a href="https://tongyi.aliyun.com" target="_blank" rel="noopener">通义千问</a> <span class="ai-tools-cn">🇨🇳</span>：开源家族最全（Qwen3），中文生态完善</li>
-<li><a href="https://chatglm.cn" target="_blank" rel="noopener">智谱清言 GLM</a> <span class="ai-tools-cn">🇨🇳</span>：对话+Agent+视觉全栈；AutoGLM 能操作手机/网页</li>
+<li><a href="https://chatglm.cn" target="_blank" rel="noopener">智谱清言 GLM</a> <span class="ai-tools-cn">🇨🇳</span>：对话+Agent+视觉全栈；GLM-5.3（8月18日）1M 上下文、常开推理、每百万 token 输入 1.40 / 输出 4.40 美元；AutoGLM 能操作手机/网页</li>
 </ul>
-<p class="ar-mnote"><strong>选型口诀</strong>：写作分析 Claude，agent 执行 ChatGPT，Google 生态 Gemini，省钱 DeepSeek。</p>
+<p class="ar-mnote"><strong>选型口诀</strong>：写作分析 Claude，agent 执行 ChatGPT，Google 生态 Gemini，省钱 DeepSeek（V4.1-Flash），长文本 Kimi / GLM；做数学与形式化另见「科研相关」。</p>
 </div>
 </div>
-<div id="ai-tools-panel-browser" class="ai-tab-panel">
+<div id="ai-tools-panel-browser" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-tools-panel-browser">
 <div class="agent-intro">
 <h3 class="ai-tools-title">AI 浏览器（2026 年爆发的新品类）</h3>
 <ul class="ai-timeline">
@@ -91,7 +99,7 @@ math: true
 </ul>
 </div>
 </div>
-<div id="ai-tools-panel-image" class="ai-tab-panel">
+<div id="ai-tools-panel-image" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-tools-panel-image">
 <div class="agent-intro">
 <h3 class="ai-tools-title">图片生成</h3>
 <ul class="ai-timeline">
@@ -106,7 +114,7 @@ math: true
 </ul>
 </div>
 </div>
-<div id="ai-tools-panel-video" class="ai-tab-panel">
+<div id="ai-tools-panel-video" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-tools-panel-video">
 <div class="agent-intro">
 <h3 class="ai-tools-title">视频生成</h3>
 <ul class="ai-timeline">
@@ -121,7 +129,7 @@ math: true
 </ul>
 </div>
 </div>
-<div id="ai-tools-panel-ppt" class="ai-tab-panel">
+<div id="ai-tools-panel-ppt" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-tools-panel-ppt">
 <div class="agent-intro">
 <h3 class="ai-tools-title">PPT 生成</h3>
 <ul class="ai-timeline">
@@ -135,7 +143,7 @@ math: true
 </ul>
 </div>
 </div>
-<div id="ai-tools-panel-classroom" class="ai-tab-panel">
+<div id="ai-tools-panel-classroom" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-tools-panel-classroom">
 <div class="agent-intro">
 <h3 class="ai-tools-title">课堂生成（教师备课/课件/习题）</h3>
 <ul class="ai-timeline">
@@ -150,7 +158,7 @@ math: true
 </ul>
 </div>
 </div>
-<div id="ai-tools-panel-writing" class="ai-tab-panel">
+<div id="ai-tools-panel-writing" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-tools-panel-writing">
 <div class="agent-intro">
 <h3 class="ai-tools-title">写作 / 文案类（"小龙虾"条目：按写作理解，如另有所指告诉我）</h3>
 <ul class="ai-timeline">
@@ -165,7 +173,7 @@ math: true
 </ul>
 </div>
 </div>
-<div id="ai-tools-panel-coding" class="ai-tab-panel">
+<div id="ai-tools-panel-coding" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-tools-panel-coding">
 <div class="agent-intro">
 <h3 class="ai-tools-title">Vibe 编程（提示词→应用）</h3>
 <ul class="ai-timeline">
@@ -177,11 +185,12 @@ math: true
 <li><a href="https://replit.com" target="_blank" rel="noopener">Replit Agent</a>：云端 IDE 内置 agent：从想法到上线全托管</li>
 <li><a href="https://github.com/features/copilot" target="_blank" rel="noopener">GitHub Copilot</a>：补全之王，融合最深、企业采用率最高</li>
 <li><a href="https://codeium.com/windsurf" target="_blank" rel="noopener">Windsurf</a>：Cascade 自动感知工程上下文的 agent 式 IDE</li>
-<li><a href="https://openai.com/codex/" target="_blank" rel="noopener">Codex CLI</a>：OpenAI 终端 agent，GPT-5 系驱动</li>
+<li><a href="https://openai.com/codex/" target="_blank" rel="noopener">Codex CLI</a>：OpenAI 终端 agent，GPT-5/6 系驱动</li>
+<li><a href="https://github.com/features/copilot" target="_blank" rel="noopener">GitHub HydraFusion</a>：9月4日随 Copilot CLI 开放研究预览——按任务在 Single / Cascade（先便宜后升级）/ Critique（写+审+改）三种编排间自动选路，官方称在 TerminalBench 2.1、DeepSWE、CheckpointBench 上不输 Claude Opus 5，token 成本降 36–67%</li>
 </ul>
 </div>
 </div>
-<div id="ai-tools-panel-education" class="ai-tab-panel">
+<div id="ai-tools-panel-education" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-tools-panel-education">
 <div class="agent-intro">
 <h3 class="ai-tools-title">教育相关（学习/辅导/批改）</h3>
 <ul class="ai-timeline">
@@ -197,7 +206,7 @@ math: true
 </ul>
 </div>
 </div>
-<div id="ai-tools-panel-research" class="ai-tab-panel">
+<div id="ai-tools-panel-research" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-tools-panel-research">
 <div class="agent-intro">
 <h3 class="ai-tools-title">科研相关 ⭐</h3>
 <h4 class="ai-tools-sub">检索与综述</h4>
@@ -216,6 +225,7 @@ math: true
 <li><a href="https://www.sagemath.org" target="_blank" rel="noopener">GAP(QPA) / SageMath / Magma / Macaulay2</a>：计算代数四大件：群表示、quiver 代数、交换代数</li>
 <li><a href="https://mathpix.com" target="_blank" rel="noopener">Mathpix</a>：数学 OCR：截图→LaTeX，准确率极高</li>
 <li><a href="https://ar5iv.labs.arxiv.org" target="_blank" rel="noopener">ar5iv</a>：arXiv 转 HTML，公式阅读体验远超 PDF</li>
+<li><a href="https://arxiv.org/abs/2609.25050" target="_blank" rel="noopener">FrontierMath Erdős（FME）</a>：9月1日发布，68 道截至 2026 年 8 月仍开放的 Erdős 问题、全部预置 Lean 形式化，是目前最严格的 AI 数学能力标尺（当前最好成绩仅 3%）</li>
 </ul>
 <h4 class="ai-tools-sub">写作与管理</h4>
 <ul class="ai-timeline">
@@ -232,7 +242,7 @@ math: true
 
   </div>
 
-  <div id="ai-panel-math" class="ai-tab-panel">
+  <div id="ai-panel-math" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-panel-math">
     <h2 class="ai-math-title">AI战绩</h2>
     <p style="margin:0 0 1rem;font-size:0.95rem;line-height:1.7;">关于 AI 证明数学问题实时跟进参见 <a href="https://vibemathed.com/" style="color:#2563EB;text-decoration:underline;">https://vibemathed.com/</a></p>
     <div class="year-section">
@@ -336,32 +346,42 @@ math: true
           <li><span class="ai-year">08-19</span>｜<a href="https://arxiv.org/abs/2608.19301">刘继豪（Jihao Liu）借助生成式 AI 证伪 Yau–Tian–Donaldson 猜想</a> — 构造一个 K-多稳定（K-polystable）的极化光滑射影五维簇，却不存在常数量曲率 Kähler（cscK）度量，从而证伪 cscK 情形下的 YTD 猜想；论文声明主要结果由生成式 AI（GPT-5.6-sol、Fable 5、Danus 系统）获得</li>
           <li><span class="ai-year">08-24</span>｜<a href="https://alpo.ge/s6.pdf">Alpöge 借助 Claude 构造 S⁶ 的复结构</a> — 哈佛/Anthropic 的 Levent Alpöge 与 Claude 合作，构造出同胚（乃至微分同胚）于六维球面 S⁶ 的紧致复三维流形 X，证明 S⁶ 上存在复结构，攻克自 1948 年提出的 Hopf 问题（六维球面是否有复结构）</li>
           <li><span class="ai-year">08-25</span>｜<a href="https://agihunt.info/en/p/19ffbf0323ce31bd004d0fa4862">Bourgain–Brezis–Sobolev 猜想被 AI 快速攻克</a> — 8 月 4 日 arXiv 出现部分进展论文后，用户让 AI 在两天内给出完整证明；8 月 8 日又出现一篇 AI 辅助的完整解决论文，从部分进展到完全破解仅数日</li>
-          <li><span class="ai-year">09-08</span>｜<a href="https://openai.com/index/navier-stokes-solution">OpenAI 宣布解决 Navier–Stokes 千禧年难题</a> — 约 10,000 个自主 AI Agent 协作约 50–88 小时，证明三维 Navier–Stokes 方程在特定条件下会出现有限时间奇点（blow up）；结果已用 Lean 形式化验证，但 Clay 数学研究所尚未正式认定，且存在与 NYU/Anthropic 团队的优先权争议</li>
+          <li><span class="ai-year">08-31</span>｜<a href="https://arxiv.org/abs/2609.00101">Colombo 行列式猜想（1928）被完整解决</a> — 浙江大学人工智能方向博士生马千里在北大董彬发起的 ICMConjectures 问题库（已收录 2898 个开放问题、覆盖 18 个领域）中选题，用 GPT-5.6 查文献、Fable 5 审核、DeepSeek 做形式化的多模型分工，试探 8 条路线后约 48 小时给出奇指数情形的严格 Pfaffian 符号定理，完成约 2 万行 Lean 4 形式化；偶指数情形来自 Dyn–Goodman–Micchelli（1986）</li>
+          <li><span class="ai-year">09-01</span>｜<a href="https://arxiv.org/abs/2609.25050">FrontierMath Erdős（FME）基准发布</a> — Epoch AI 与曼彻斯特大学推出，由 Thomas Bloom 从 erdosproblems.com 的 652 个开放问题中精选 68 道，要求 AI 在 Lean 中自主证明或证伪；每题预算 300 美元、72 小时、只尝试一次。GPT-6 Astra 得 3%（2/68），GPT-5.6 Sol、GPT-5.5、Claude Fable 5.1、Claude Fable 5 均为 0%。起因正是陶哲轩在 ICM 2026 报告中批评既有"AI 解题"缺少受控条件</li>
+          <li><span class="ai-year">09-03</span>｜<a href="https://openai.com/index/gpt-6-astra">素数间隔上界从 246 降至 186</a> — OpenAI 研究员苏炜杰借助 GPT-6 Astra 内部版本给出 $\mathrm{DHL}[40,2]$（一个直径 186 的 40 元可允许集），把保持十二年的纪录推进到 186；核心创新是 AI 提出的"三重稠密可整除"约束，扩大了多维 Selberg 筛的可用支撑。另有一篇"长间隔"论文把 Rankin 经典下界改进了 $\log_2 X$ 因子。短间隔结果仅为<em>条件化</em> Lean 形式化（依赖数值界与 Deligne 型和的未证假设），且同期还有 240、212、188 等并行结果，独立核验仍在进行</li>
+          <li><span class="ai-year">09-04</span>｜<a href="https://www.anthropic.com/research/formalizing-fermats-last-theorem">Claude 用 11 天完成费马大定理的形式化证明</a> — 产出约 1300 万行 Lean 代码、约 29500 个中间定理，是迄今规模最大的机器可核验证明；帝国理工 Kevin Buzzard 原本估计人类需约 10 年，并表示此前他对怀尔斯证明有 99.9% 的把握、现在是 100% 确信。尚未整合进 Mathlib</li>
+          <li><span class="ai-year">09-04</span>｜GPT-6 Astra 同日攻克 5 道 Erdős 开放问题 — 与 Anthropic 的费马大定理形式化前后脚公布，被媒体形容为两家头部实验室的数学"军备竞赛"；这类"先公布、后补写论文"的节奏，正是随后菲尔兹奖得主联署声明批评的靶心</li>
+          <li><span class="ai-year">09-07</span>｜Buckmaster 抢先公布光滑外力下的欧拉方程有限时间奇点 — NYU 的 Tristan Buckmaster 与 Anthropic 研究员 Levent Alpöge 在 OpenAI 宣布 Navier–Stokes 的前一天公开自己的三项成果及 Lean 验证，构成优先权争议的直接导火索（详见"AI伦理"面板）</li>
+          <li><span class="ai-year">09-08</span>｜<a href="https://openai.com/index/navier-stokes-solution">OpenAI 宣布解决 Navier–Stokes 千禧年难题</a> — 约 10,000 个自主 AI Agent 协作约 50–88 小时，交换约 270–490 万条消息，产出 166 页论文，证明三维 Navier–Stokes 方程在特定条件下会出现有限时间奇点（blow up）；结果已用 Lean 形式化验证，但 Clay 数学研究所尚未正式认定，且存在与 NYU/Anthropic 团队的优先权争议</li>
+          <li><span class="ai-year">09-10</span>｜<a href="https://arxiv.org/abs/2609.10987">有向 Erdős–Sós 定理（Eulerian digraphs）</a> — Mubayi 与 Verstraëte 的论文致谢中直接写明"该结果由 GPT-6 Astra 证明"，是 AI 贡献被写进正式数学论文署名体系的又一案例</li>
+          <li><span class="ai-year">09-11</span>｜<a href="https://mathandai.org/">25 位菲尔兹奖得主联署《人工智能在数学中的严重错位》</a> — 陶哲轩、舒尔茨、邓煜等联名警告：把"攻克著名难题"当作模型跑分基准，与数学共同体以"概念理解与洞见"为目标之间存在严重错位。截至 9 月中旬联署已超 7000 人</li>
+          <li><span class="ai-year">09-14</span>｜<a href="https://arxiv.org/abs/2608.23691">Station：开放世界多 Agent 自主数学发现</a> — 无中央协调、无脚本流水线的多 Agent 研究环境（6 个研究 Agent 分别跑 GPT-5.5、Claude Opus 4.8、Gemini 3.1 Pro），Agent 自选方向、做实验、写论文互相引用；在 AlphaEvolve 的 12 道构造题中 5 道得到"相对已有文献为新"的结果，包括 11 维 604 点 kissing 构型与新的有限域 Kakeya 集无穷族，全部附 Lean 验证。团队公开了源码、完整对话日志与 Agent 撰写的论文</li>
+          <li><span class="ai-year">09-21</span>｜<a href="https://openai.com/index/advisory-group-on-mathematics-and-ai/">OpenAI 支持成立独立数学顾问组 AGMAI</a> — 同期 OpenAI 披露：自 8 月 28 日起训练的一款未发布模型已在数学"大部分领域"解决 100 多个长期开放问题，速度快到"超出公司内部数学家的预期"，因而就"如何向学界通报"寻求外部建议</li>
         </ul>
       </div>
     </div>
   </div>
 
-<div id="ai-panel-agent" class="ai-tab-panel">
+<div id="ai-panel-agent" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-panel-agent">
 
 <div class="ai-tabs ai-agent-tabs">
-  <div class="ai-tab-btns">
-    <button type="button" class="ai-tab-btn tab-purple active" onclick="switchAiAgentTab('intro', this)">什么是 Agent</button>
-    <button type="button" class="ai-tab-btn tab-blue" onclick="switchAiAgentTab('science', this)">数学科研 Agent</button>
-    <button type="button" class="ai-tab-btn tab-orange" onclick="switchAiAgentTab('ppt', this)">PPT Agent</button>
-    <button type="button" class="ai-tab-btn tab-teal" onclick="switchAiAgentTab('worldmodel', this)">世界模型</button>
+  <div class="ai-tab-btns" role="tablist">
+    <button type="button" class="ai-tab-btn tab-purple active" role="tab" id="tab-ai-agent-panel-intro" aria-controls="ai-agent-panel-intro" aria-selected="true" tabindex="0" onclick="switchAiAgentTab('intro', this)">什么是 Agent</button>
+    <button type="button" class="ai-tab-btn tab-blue" role="tab" id="tab-ai-agent-panel-science" aria-controls="ai-agent-panel-science" aria-selected="false" tabindex="-1" onclick="switchAiAgentTab('science', this)">数学科研 Agent</button>
+    <button type="button" class="ai-tab-btn tab-orange" role="tab" id="tab-ai-agent-panel-ppt" aria-controls="ai-agent-panel-ppt" aria-selected="false" tabindex="-1" onclick="switchAiAgentTab('ppt', this)">PPT Agent</button>
+    <button type="button" class="ai-tab-btn tab-teal" role="tab" id="tab-ai-agent-panel-worldmodel" aria-controls="ai-agent-panel-worldmodel" aria-selected="false" tabindex="-1" onclick="switchAiAgentTab('worldmodel', this)">世界模型</button>
   </div>
 
-  <div id="ai-agent-panel-intro" class="ai-tab-panel active">
+  <div id="ai-agent-panel-intro" class="ai-tab-panel active" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-agent-panel-intro">
 <div class="agent-intro">
 <p class="agent-lead">Agent 可以理解成“<strong>会自己动手干活的 AI</strong>”。你只管告诉它“做什么”，它会自己想办法“怎么做”，中间过程不用你一步一步指挥。</p>
 <figure class="agent-figure">
-<img src="/images/agent-cycle.png" alt="Agent 的工作循环：感知环境 → 思考决策 → 调用工具 → 获得反馈" loading="lazy" />
+<img src="/images/agent-cycle.webp" width="880" height="320" alt="Agent 的工作循环：感知环境 → 思考决策 → 调用工具 → 获得反馈" loading="lazy" />
 <figcaption>Agent 的核心循环：感知 → 思考 → 行动 → 观察</figcaption>
 </figure>
 <h3>看一个具体实例</h3>
 <figure class="agent-figure">
-<img src="/images/agent-example.png" alt="实例：让 Agent 查北京今天天气并给穿衣建议" loading="lazy" />
+<img src="/images/agent-example.webp" width="920" height="760" alt="实例：让 Agent 查北京今天天气并给穿衣建议" loading="lazy" />
 <figcaption>实例：让 Agent 查北京今天天气并给穿衣建议 —— 一次完整的「感知 → 行动 → 观察 → 思考」循环</figcaption>
 </figure>
 <h3>和普通 AI 聊天有啥不一样？</h3>
@@ -396,9 +416,9 @@ math: true
 </div>
   </div>
 
-  <div id="ai-agent-panel-science" class="ai-tab-panel">
+  <div id="ai-agent-panel-science" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-agent-panel-science">
 <div class="agent-intro">
-<p class="agent-lead">让 AI 不只是“写数学证明草稿”，而是真正进入数学研究工作流：读文献、形式化猜想、组织多人协作证伪、直到拿到可被 Lean/Coq 验证的完整证明。下面四个系统是目前最值得关注的代表。</p>
+<p class="agent-lead">让 AI 不只是“写数学证明草稿”，而是真正进入数学研究工作流：读文献、形式化猜想、组织多人协作证伪、直到拿到可被 Lean/Coq 验证的完整证明。下面六个系统是目前最值得关注的代表。</p>
 
 <h3><span class="agent-name">Danus</span> · 研究级数学推理编排</h3>
 <p><strong>它是什么</strong>：一个面向研究级数学推理的多 Agent 编排系统，arXiv 2607.06447（CS.AI / CL / MA），已开源在 <code>github.com/frenzymath/Danus</code>。</p>
@@ -406,6 +426,12 @@ math: true
 <p><strong>在哪些场景里被验证过</strong>：代数几何、奇点理论、组合数学 6 个研究级案例。</p>
 <p><strong>工程实现</strong>：底层用 Claude Code 当主控，Claude Opus 4.8 做状态合成，GPT-5.5-pro 做数学咨询，Matlas 做文献检索。</p>
 <p><strong>怎么用</strong>：克隆仓库后按 README 配置 API key，给一个 Lean 形式化的命题陈述，系统会调度多 Agent 并行尝试证明，并产出可被 Lean 验证的完整脚本。</p>
+
+<h3><span class="agent-name">Station</span> · 开放世界多 Agent 自主数学发现</h3>
+<p><strong>它是什么</strong>：论文 <a href="https://arxiv.org/abs/2608.23691">arXiv:2608.23691</a>（v1 2026-08-24，v2 2026-09-14），作者 Stephen Chung、Wenyu Du、William J. Wesley。主打<em>没有中央协调器、没有脚本化流水线</em>的研究环境：Agent 自己选方向、做实验、写论文、互相引用。<strong>它是什么</strong></p>
+<p><strong>核心机制</strong>：6 个研究 Agent（GPT-5.5、Claude Opus 4.8、Gemini 3.1 Pro 各两个）在共享知识库上长期运行，每轮约 1000–2000 tick（折合真实时间一到两周）；人类作者事后只做两件事——检查证明有效性、判断结果是否真新。</p>
+<p><strong>已产出的结果</strong>：在取自 AlphaEvolve 的 12 道构造题中，5 道得到相对已有文献为新的结果，包括 11 维 604 点 kissing 构型、新的有限域 Kakeya 集无穷族、离散化 Kakeya 针问题与符号不确定性问题的改进界、Erdős 最小重叠问题下界的大幅改进，以及 Book Ramsey 数的新的无穷族。</p>
+<p><strong>为什么重要</strong>：团队公开了源码、Agent 之间<em>完整的原始对话日志</em>、Agent 自己写的论文，以及全部 Lean 验证产物——这是目前透明度最高的一份「自主数学发现」证据包。需要留意的是：Lean 只能保证形式化陈述与证明一致，不保证形式化陈述与自然语言描述严丝合缝；新颖性也仍是作者自评、未经外部同行评审。</p>
 
 <h3><span class="agent-name">ClawsGO Science</span> · 科研云端助理</h3>
 <p><strong>它是什么</strong>：ClawsGO 旗下面向科研场景的云端 AI 助理，定位 <a href="https://clawsgo.ai/">clawsgo.ai</a> 上的「Research-grade intelligence for long and complex tasks」。任务跑在云端专用机器上，不占本地算力，电脑合上也能继续推进。</p>
@@ -423,11 +449,17 @@ math: true
 <p><strong>它是什么</strong>：中科院数学与系统科学研究院（数学科学国家重点实验室）高小山团队发布的论文 <a href="https://arxiv.org/abs/2607.04394">arXiv:2607.04394</a>，定位「数学研究全周期的 LLM 副驾驶」。</p>
 <p><strong>核心机制</strong>：<em>三方 Harness 架构</em>——① 控制平面（Control Plane）做调度；② 执行平面（Execution Plane）做隔离工作区与文件式交接，避免上下文污染；③ 增强平面（Augmentation Plane）做人在回路干预。架构上实例化 3 个专门 Agent：<em>KB-Manager</em>（知识库管理员）、<em>NL-Prover</em>（自然语言证明器）、<em>FL-Prover</em>（形式语言证明器，编译 Lean 4 验证脚本），通过「Inform → Formalize → Feedback → Archive」闭环产出可被 Lean 验证的数学证明。</p>
 <p><strong>已攻克的开放问题</strong>：两个月的部署里解决了数论、代数复杂性理论、微分代数、算子代数、不等式 5 个领域共 <strong>11 个开放问题</strong>，并由 Lean 4 完成形式化。例如：OEIS A287616「每个非负整数可写为三角数+五角数+七角数之和」、OEIS A080170 二项式 gcd 判据、$n=9$ Vasc 循环不等式正实数情形。</p>
-<p><strong>与其它数学 Agent 的区别</strong>：从最初的「凑证明」思路升级到「提交 Lean 验证」是质变——证明的正确性不再依赖 LLM 自我评估，而是由 Lean 4 内核做终极判定。这也是当前形式化数学（formalization）赛道的主流方向。</p>
+<p><strong>与其它数学 Agent 的区别</strong>：从最初的“凑证明”思路升级到“提交 Lean 验证”是质变——证明的正确性不再依赖 LLM 自我评估，而是由 Lean 4 内核做终极判定。这也是当前形式化数学（formalization）赛道的主流方向。</p>
+
+<h3><span class="agent-name">RSIAgent</span> · 不训模型，让 Agent 自己在陌生环境里爬一遍</h3>
+<p><strong>它是什么</strong>：Aether AI 团队（Sibo Zhu、Shicheng Fan、Xinyue Wang 等）2026 年 9 月 14 日发布的<em>免训练</em>多 Agent 递归自我改进框架，论文 <a href="https://arxiv.org/abs/2609.15364">arXiv:2609.15364</a>、代码 <a href="https://github.com/AetherLabsAI/RSIAgent">github.com/AetherLabsAI/RSIAgent</a>。</p>
+<p><strong>核心机制</strong>：三个 Agent 围绕一份不断演化的 <em>Memory</em> 闭环——<em>Curriculum Agent</em> 决定下一步探索什么（派活的 PM）、<em>Actor Agent</em> 真的去点软件敲代码抓 DOM（执行者）、<em>Verifier Agent</em> 对照截图/日志/状态码校验结果是否真的发生（毒舌 QA）。探索分两阶段：先 Broad 并行广撒网把环境结构画出来，再 Deep 顺序深挖硬骨头。所有经验沉淀进 Memory 后<strong>冻结复用，模型参数一行不动</strong>。</p>
+<p><strong>效果</strong>：套在开源模型上后，Kimi-K3 与 GLM-5.3 在 OSWorld-v2 上从 71.97% 升到 78.98%（GPT-6 Astra 为 72.60%），在 Agents’ Last Exam 上从 83.75% 升到 84.82%（GPT-6 Astra 为 82.26%）——开源模型因此反超旗舰闭源模型。</p>
+<p><strong>意义</strong>：它提出的是第三条 Scaling 路径——<strong>Scale Experience（规模化经验）</strong>而不是 Scale Model。企业内网、私有 CRM、自研后台这些「模型没见过的环境」，不必换更大的模型，让 Agent 自己去爬一遍即可。</p>
 </div>
   </div>
 
-  <div id="ai-agent-panel-ppt" class="ai-tab-panel">
+  <div id="ai-agent-panel-ppt" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-agent-panel-ppt">
 <div class="agent-intro">
 <p class="agent-lead">让 AI 帮你做演示文稿，不再只是“写大纲+贴文字”，而是直接生成可编辑、可演讲、可二次美化的完整 PPT。下面两个工具是这类 Agent 的代表。</p>
 
@@ -445,7 +477,7 @@ math: true
 </div>
   </div>
 
-  <div id="ai-agent-panel-worldmodel" class="ai-tab-panel">
+  <div id="ai-agent-panel-worldmodel" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-agent-panel-worldmodel">
 <div class="agent-intro">
 <p class="agent-lead">世界模型（World Model）是<strong>对环境动力学的内部可模拟表征</strong>：给定当前状态与动作，预测环境下一步如何演化，从而支持预测、想象与规划。如果说 LLM 让 AI 学会了“说”，世界模型则是让 AI 学会“在脑子里演一遍世界怎么变”。</p>
 
@@ -515,19 +547,19 @@ math: true
 </div>
 </div>
 
-  <div id="ai-panel-philosophy" class="ai-tab-panel">
+  <div id="ai-panel-philosophy" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-panel-philosophy">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 
-  <div id="ai-panel-ethics" class="ai-tab-panel">
+  <div id="ai-panel-ethics" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-panel-ethics">
     <div class="ai-tabs ai-agent-tabs">
-      <div class="ai-tab-btns">
-        <button type="button" class="ai-tab-btn tab-teal active" onclick="switchAiEthicsTab('evolution', this)">AI伦理演进史</button>
-        <button type="button" class="ai-tab-btn tab-red" onclick="switchAiEthicsTab('leiden', this)">人工智能与数学莱顿宣言</button>
-        <button type="button" class="ai-tab-btn tab-orange" onclick="switchAiEthicsTab('misalignment', this)">《人工智能在数学中的严重错位》宣言</button>
-        <button type="button" class="ai-tab-btn tab-teal" onclick="switchAiEthicsTab('uppsala', this)">《乌普萨拉科学家伦理准则》</button>
+      <div class="ai-tab-btns" role="tablist">
+        <button type="button" class="ai-tab-btn tab-teal active" role="tab" id="tab-ai-ethics-panel-evolution" aria-controls="ai-ethics-panel-evolution" aria-selected="true" tabindex="0" onclick="switchAiEthicsTab('evolution', this)">AI伦理演进史</button>
+        <button type="button" class="ai-tab-btn tab-red" role="tab" id="tab-ai-ethics-panel-leiden" aria-controls="ai-ethics-panel-leiden" aria-selected="false" tabindex="-1" onclick="switchAiEthicsTab('leiden', this)">人工智能与数学莱顿宣言</button>
+        <button type="button" class="ai-tab-btn tab-orange" role="tab" id="tab-ai-ethics-panel-misalignment" aria-controls="ai-ethics-panel-misalignment" aria-selected="false" tabindex="-1" onclick="switchAiEthicsTab('misalignment', this)">《人工智能在数学中的严重错位》宣言</button>
+        <button type="button" class="ai-tab-btn tab-teal" role="tab" id="tab-ai-ethics-panel-uppsala" aria-controls="ai-ethics-panel-uppsala" aria-selected="false" tabindex="-1" onclick="switchAiEthicsTab('uppsala', this)">《乌普萨拉科学家伦理准则》</button>
       </div>
-      <div id="ai-ethics-panel-evolution" class="ai-tab-panel active">
+      <div id="ai-ethics-panel-evolution" class="ai-tab-panel active" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-ethics-panel-evolution">
         <div class="agent-intro">
           <p class="agent-lead">AI 伦理的讨论早已从科幻担忧，演变为一场<strong>牵动全球治理、重塑人类未来</strong>的深刻讨论。其关注点随技术能力的跃迁不断深化：早期奠基（1950–2000）→ 理论深化与初步治理（2000–2015）→ 生成式 AI 爆发与治理回应（2022–2024）→ 走向系统治理与全球共识（2024 至今）。</p>
           <h3>演进时间线</h3>
@@ -540,7 +572,7 @@ math: true
             <li><span class="ai-year">2023</span>｜中国发布《生成式人工智能服务管理暂行办法》，率先进行专项监管</li>
             <li><span class="ai-year">2024</span>｜欧盟《人工智能法案》生效，中美欧形成三大治理模式</li>
             <li><span class="ai-year">2025</span>｜联合国框架下推动全球 AI 治理对话，中国倡导「以人为本」的全球倡议</li>
-            <li><span class="ai-year">2026</span>｜讨论聚焦超级智能风险，「智能契约伦理」等前瞻性理论框架被提出</li>
+<li><span class="ai-year">2026</span>｜讨论聚焦超级智能风险，「智能契约伦理」等前瞻性理论框架被提出；8–9 月 AI 密集攻克著名数学难题后，25 位菲尔兹奖得主联署、OpenAI 撤出加州理工 Mathathon 赞助、IAS 成立独立数学顾问组——AI 伦理首次以「学科共同体」为单位，与 AI 公司展开正面对话</li>
           </ul>
           <h3>核心争论一：主体地位之争 —— AI 是「物」还是「人」？</h3>
           <ul class="agent-list">
@@ -584,7 +616,7 @@ math: true
           <p class="agent-summary"><strong>总结</strong>：当前 AI 伦理讨论早已超越「电车难题」，深入文明、权力与存在的层面。核心张力在于——如何既享受技术革命的巨大红利，又有效驾驭其风险，确保技术发展始终服务于人类的整体福祉与自由解放。AI 的未来，不在于它多么像人，而在于它能否始终作为人类文明有益的延伸。</p>
         </div>
       </div>
-      <div id="ai-ethics-panel-leiden" class="ai-tab-panel">
+      <div id="ai-ethics-panel-leiden" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-ethics-panel-leiden">
         <div class="agent-intro">
           <p class="agent-lead">2026 年 6 月 2 日，16 位来自 15 所高校的数学家发布《人工智能与数学莱顿宣言》（Leiden Declaration on Artificial Intelligence and Mathematics），呼吁全球数学界正视 AI 对学科核心价值的冲击——<strong>不主张禁止 AI，而是为负责任地使用 AI 建立共同规范</strong>。宣言获国际数学联盟（IMU）正式背书。</p>
           <p><a href="https://leidendeclaration.ai/" style="color:#2563EB;text-decoration:underline;">▶ 阅读宣言全文（leidendeclaration.ai）</a></p>
@@ -609,9 +641,9 @@ math: true
           <p>发布当天即获逾 130 位学者联署，现已超 2300 人签署。两位菲尔兹奖得主背书：Scholze 称「数学研究的目标是人对数学的理解，数学只能在人类数学家共同体中繁荣」；Tao 称「AI 潜力巨大但也伴随风险，宣言在二者间找到了极好的平衡」。《自然》发表社论支持。2026 年 7 月费城国际数学家大会（ICM）围绕宣言展开讨论。</p>
         </div>
       </div>
-      <div id="ai-ethics-panel-misalignment" class="ai-tab-panel">
+      <div id="ai-ethics-panel-misalignment" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-ethics-panel-misalignment">
         <div class="agent-intro">
-          <p class="agent-lead">2026 年 9 月 11 日，陶哲轩（Terence Tao）等 <strong>25 位菲尔兹奖得主</strong>联合发布《人工智能在数学中的严重错位》（A Severe Misalignment of AI in Mathematics）宣言，紧急警告 AI 公司以「解题跑分」为导向的使用方式正与数学共同体的核心目标发生<strong>严重错位</strong>。宣言同步发布于 <a href="https://mathandai.org/" style="color:#2563EB;text-decoration:underline;">mathandai.org</a>。</p>
+          <p class="agent-lead">2026 年 9 月 11 日，陶哲轩（Terence Tao）等 <strong>25 位菲尔兹奖得主</strong>联合发布《人工智能在数学中的严重错位》（A Severe Misalignment of AI in Mathematics）宣言，紧急警告 AI 公司以「解题跑分」为导向的使用方式正与数学共同体的核心目标发生<strong>严重错位</strong>。宣言同步发布于 <a href="https://mathandai.org/" style="color:#2563EB;text-decoration:underline;">mathandai.org</a>，陶哲轩当日在其博客 <a href="https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics/" style="color:#2563EB;text-decoration:underline;">What’s new</a> 贴出全文。</p>
           <h3>宣言背景</h3>
           <p><strong>直接导火索：OpenAI 攻克 Navier–Stokes 千禧年难题</strong></p>
           <p>2026 年 9 月 8 日，OpenAI 宣布用约 <strong>1 万个并行 AI 智能体</strong>，耗时约 <strong>88 小时</strong>，交换 <strong>270 万条消息</strong>，生成约 <strong>1300 亿输出 Token</strong>，产出一篇 <strong>166 页论文</strong>，证明三维 Navier–Stokes 方程在特定条件下会出现有限时间奇点（blow up）。算力估算为<strong>数百万美元</strong>（零售价约 600 万美元），远超 Clay 数学研究所悬赏的 100 万美元奖金（OpenAI 称不打算领取）。结果已用 Lean 完成形式化验证，但独立评审仍在进行。</p>
@@ -638,10 +670,19 @@ math: true
           <p>数学共同体当下面临的问题，与其他科学和创造性职业面临的如出一辙，也预示着全人类可能面临的问题：<strong>当 AI 改变工作的方式时，我们如何确保自己不会忘记，这项工作最初究竟是为了实现什么？</strong></p>
           <p><strong>AI 有潜力增强并加速真正的数学研究与理解。</strong>数学作为一种职业，需要以多种方式适应这些变化。然而，这些变化最终是造福这一领域还是造成破坏，在很大程度上取决于<strong>掌控这项新技术的人所做的决定</strong>。这些问题必须紧迫地加以解决——在数学共同体内部、在开发这些技术的公司层面，以及更广泛地在全社会。</p>
           <h3>签署情况</h3>
-          <p>宣言由陶哲轩等 25 位菲尔兹奖得主联合发起（按获奖年份排序，横跨 1978–2026 近半个世纪）。联署页面（mathandai.org/endorsers）截至 9 月 12 日已开放给全体数学工作者，<strong>联署人数仍在增长</strong>（不同媒体 9 月 12 日报导时约为 1400–1687 人，需以官网实时数据为准）。</p>
+<p>首批 25 位签署人全部为在世菲尔兹奖得主，横跨 1978–2026 近半个世纪（按获奖年份排序）：Artur Avila、Manjul Bhargava、Caucher Birkar、Pierre Deligne、<strong>邓煜（Yu Deng，2026）</strong>、Simon Donaldson、Hugo Duminil-Copin、Alessio Figalli、Martin Hairer、June Huh、Maxim Kontsevich、Elon Lindenstrauss、Pierre-Louis Lions、James Maynard、Curtis McMullen、Shigefumi Mori、Ngô Bảo Châu、Andrei Okounkov、Peter Scholze、Stanislav Smirnov、陶哲轩、Maryna Viazovska、Cédric Villani、Wendelin Werner、Efim Zelmanov。其中三位任职于中国高校：清华丘成桐数学科学中心的 Birkar、香港大学的吴宝珠、南方科技大学的 Zelmanov。</p>
+<p>联署页面（mathandai.org/endorsers）只接受 ORCID 或机构邮箱验证：9 月 11 日当晚已超 800 人，9 月 12 日约 1400–2500 人，<strong>至 9 月中旬已超 7300 人</strong>。作为参照，同期《莱顿宣言》约 4100 人，抵制加州理工 Mathathon 的公开信约 2000 人。2026 年菲尔兹奖得主中，Jacob Tsimerman 未签署——他已于 7 月离开多伦多大学加入 OpenAI。</p>
+<h3>后续进展（9 月中下旬）</h3>
+<ul class="agent-list">
+<li><span class="agent-name">加州理工 Mathathon 争议</span>：9 月 10 日，一批现任与前任加州理工数学家在 <a href="https://proofsandprompts.com/" style="color:#2563EB;text-decoration:underline;">proofsandprompts.com</a> 发表公开信（发布时 771 人签署，含 4 位菲尔兹奖得主），要求取消这场原定 10 月 30 日开赛的 AI 解题马拉松——100 支队伍、每队 40 小时 + 约 2 万美元 token，由 OpenAI 与 Anthropic 合计赞助 200 万美元算力。信中直言 AI 公司“正在从事研究不端”，并提出「slop mathematics（垃圾数学）」一词：批量产出看似可信却不增加理解的结果，把核验成本转嫁给无报酬、无署名的数学家。同日 OpenAI 的 Dan Roberts 宣布撤回赞助；主办方拒绝取消，但把「第二轮成果必须上传 arXiv」写进规则，Anthropic 继续提供约 60 万美元额度。</li>
+<li><span class="agent-name">AGMAI 顾问组</span>：9 月 21 日，9 位数学家在普林斯顿高等研究院成立<strong>数学与人工智能顾问组</strong>——François Charles、Camillo De Lellis、Timothy Gowers、Martin Hairer、Nikhil Srivastava、Ulrike Tillmann、Ravi Vakil、Edward Witten、Melanie Matchett Wood（Gowers、Hairer、Witten 为菲尔兹奖得主）。成员不从 OpenAI 领薪、可发表未被委托的意见并公开建议、可自主调整成员构成，但<strong>不就 OpenAI 内部数学研究的推进节奏提供建议</strong>。陶哲轩亦撰文说明<a href="https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/" style="color:#2563EB;text-decoration:underline;">该小组的由来</a>；Hairer 撰文强调小组“真正独立”；帝国理工的 Buzzard 则反问：社区已经说过的话，为什么还要一个精英机构来听。</li>
+<li><span class="agent-name">更多集体行动</span>：9 月 16 日，42 位会士牵头、127 名数学家联名致信英国皇家学会主席，表达对 AI 发展速度的担忧；此外还有要求 ICM 移出美国举办的联署（约 2600 人）、「人类数学家协会」（AHM）等小规模自发组织出现。数学界正从“各自发表意见”走向“建立制度化的成果发布与署名规范”。</li>
+<li><span class="agent-name">陶哲轩的思想实验</span>：他在社交媒体提出——假如 AI 早来 20 年，2013 年的张益唐可能因无法与 AI 竞争而仍在餐馆刷盘子。他想指出的是：多年专业训练不只是为了产出最终答案，也是为了培养理解力与提出新问题的能力；当 AI 能直接产出“训练本想培养的那种成果”时，目标就不再一致了。这一逻辑同样适用于其他科学与创造性职业。</li>
+<li><span class="agent-name">争议的另一面</span>：也有评论认为签署者受地位与生计影响难以客观（经济学家 Jason Abaluck）。统计学家 Kareem Carr 则反驳：“正确的证明只是名义上的奖品，大部分价值在于通往证明的路径——由证明催生的概念、技术与理解。”此外，8 月 OpenAI 一口气公布的十项数学进展中，「证伪 Connes rigidity 猜想」一项后来被数学家证明是错的——这正印证了宣言对“仓促公布”的担忧。</li>
+</ul>
         </div>
       </div>
-      <div id="ai-ethics-panel-uppsala" class="ai-tab-panel">
+      <div id="ai-ethics-panel-uppsala" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-ethics-panel-uppsala">
       <div class="agent-intro">
         <p class="agent-lead"><strong>《乌普萨拉科学家伦理准则》</strong>（The Uppsala Code of Ethics for Scientists）是 1984 年由瑞典乌普萨拉大学科学伦理研讨会制定的科研伦理文件，首次系统将科学家对<strong>成果社会后果</strong>的个体责任写入可执行准则。它早于现代 AI 伦理讨论，但至今仍是科技伦理治理的重要参照。</p>
         <h3>准则背景</h3>
@@ -684,7 +725,7 @@ math: true
     </div>
     </div>
   </div>
-  <div id="ai-panel-leiden" class="ai-tab-panel" style="display:none;"></div>
+  <div id="ai-panel-leiden" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-panel-leiden" style="display:none;"></div>
 </div>
 
 <script>

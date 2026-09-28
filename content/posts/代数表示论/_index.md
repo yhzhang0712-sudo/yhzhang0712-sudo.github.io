@@ -2,33 +2,37 @@
 title: "代数表示论同调代数"
 hideTitle: true
 math: true
+description: "代数表示论与同调代数猜想中心：有限维数、Nakayama、Gorenstein 对称、Wakamatsu tilting、Cartan 行列式等核心猜想与重要猜想的陈述、研究进展与参考文献。"
+searchText: "代数表示论与同调代数猜想总览。分区：核心猜想（有限维数猜想、Nakayama猜想、Gorenstein对称猜想、Wakamatsu tilting猜想、Cartan行列式猜想、Broué交换亏群猜想、Telescope猜想、Brauer-Thrall猜想）；重要猜想（Gorenstein投射猜想、无环猜想、Igusa-Smalø猜想、Extension猜想、Happel-Preiser-Ringel猜想、Gorenstein投射维数、分数Calabi-Yau、n-cluster tilting、gentle导出分类、GARC、silting公开问题、导出单性、张量三角几何、周期猜想、CM Type、Weakly-Gorenstein、no-loop）；基础理论（Auslander-Reiten理论、Gabriel定理、Tilting理论、导出范畴、DG范畴、Model Category）；前沿理论（Infinity Category、Tensor Triangulated Geometry、Approximable、Cluster Theory、Operad、高维AR理论、tau-tilting理论）；研究热点（DG enhancement、Standard Derived Equivalence、Gentle Algebra、Preprojective Algebra、Gorenstein同调理论、Geometric model、Cluster tilting）。各猜想的详细陈述、研究进展与参考文献见对应独立条目。"
 ---
 
-<div class="ar-section-switch">
-  <button type="button" class="ar-sec-btn sec-violet active" onclick="switchArSection('conjectures', this)">核心猜想</button>
-  <button type="button" class="ar-sec-btn sec-red" onclick="switchArSection('important', this)">重要猜想</button>
-  <button type="button" class="ar-sec-btn sec-blue" onclick="switchArSection('theory', this)">基础理论</button>
-  <button type="button" class="ar-sec-btn sec-green" onclick="switchArSection('frontier', this)">前沿理论</button>
-  <button type="button" class="ar-sec-btn sec-orange" onclick="switchArSection('hot', this)">研究热点</button>
+<h1 class="sr-only">代数表示论同调代数</h1>
+
+<div class="ar-section-switch" role="tablist">
+  <button type="button" class="ar-sec-btn sec-violet active" role="tab" id="tab-ar-section-conjectures" aria-controls="ar-section-conjectures" aria-selected="true" tabindex="0" onclick="switchArSection('conjectures', this)">核心猜想</button>
+  <button type="button" class="ar-sec-btn sec-red" role="tab" id="tab-ar-section-important" aria-controls="ar-section-important" aria-selected="false" tabindex="-1" onclick="switchArSection('important', this)">重要猜想</button>
+  <button type="button" class="ar-sec-btn sec-blue" role="tab" id="tab-ar-section-theory" aria-controls="ar-section-theory" aria-selected="false" tabindex="-1" onclick="switchArSection('theory', this)">基础理论</button>
+  <button type="button" class="ar-sec-btn sec-green" role="tab" id="tab-ar-section-frontier" aria-controls="ar-section-frontier" aria-selected="false" tabindex="-1" onclick="switchArSection('frontier', this)">前沿理论</button>
+  <button type="button" class="ar-sec-btn sec-orange" role="tab" id="tab-ar-section-hot" aria-controls="ar-section-hot" aria-selected="false" tabindex="-1" onclick="switchArSection('hot', this)">研究热点</button>
   <a href="https://icmconjectures.com" rel="noopener" class="ar-sec-btn sec-purple" style="text-decoration:none;">ICM Conjectures</a>
 </div>
 
 <div class="ar-conjectures-divider"></div>
 
-<section id="ar-section-conjectures" class="ar-section">
+<section id="ar-section-conjectures" class="ar-section" role="tabpanel" aria-labelledby="tab-ar-section-conjectures">
 
-<p class="ar-image-wrap"><img src="/images/conjecture-relations.png" alt="猜想之间的关系图"></p>
+<p class="ar-image-wrap"><img src="/images/conjecture-relations.webp" width="1200" height="471" alt="猜想之间的关系图"></p>
 
 <div class="ai-tabs">
-  <div class="ai-tab-btns">
-    <button type="button" class="ai-tab-btn tab-red active" onclick="switchArTab('finite', this)">有限维数猜想</button>
-    <button type="button" class="ai-tab-btn tab-orange" onclick="switchArTab('nakayama', this)">Nakayama猜想</button>
-    <button type="button" class="ai-tab-btn tab-green" onclick="switchArTab('gorenstein', this)">Gorenstein对称猜想</button>
-    <button type="button" class="ai-tab-btn tab-blue" onclick="switchArTab('wakamatsu', this)">Wakamatsu tilting猜想</button>
-    <button type="button" class="ai-tab-btn tab-violet" onclick="switchArTab('cartan', this)">Cartan行列式猜想</button>
-    <button type="button" class="ai-tab-btn tab-teal" onclick="switchArTab('broue', this)">Broué交换亏群猜想</button>
-    <button type="button" class="ai-tab-btn tab-yellow" onclick="switchArTab('telescope', this)">Telescope Conjecture</button>
-    <button type="button" class="ai-tab-btn tab-purple" onclick="switchArTab('brauerthrall', this)">Brauer-Thrall猜想</button>
+  <div class="ai-tab-btns" role="tablist">
+    <button type="button" class="ai-tab-btn tab-red active" role="tab" id="tab-ar-panel-finite" aria-controls="ar-panel-finite" aria-selected="true" tabindex="0" onclick="switchArTab('finite', this)">有限维数猜想</button>
+    <button type="button" class="ai-tab-btn tab-orange" role="tab" id="tab-ar-panel-nakayama" aria-controls="ar-panel-nakayama" aria-selected="false" tabindex="-1" onclick="switchArTab('nakayama', this)">Nakayama猜想</button>
+    <button type="button" class="ai-tab-btn tab-green" role="tab" id="tab-ar-panel-gorenstein" aria-controls="ar-panel-gorenstein" aria-selected="false" tabindex="-1" onclick="switchArTab('gorenstein', this)">Gorenstein对称猜想</button>
+    <button type="button" class="ai-tab-btn tab-blue" role="tab" id="tab-ar-panel-wakamatsu" aria-controls="ar-panel-wakamatsu" aria-selected="false" tabindex="-1" onclick="switchArTab('wakamatsu', this)">Wakamatsu tilting猜想</button>
+    <button type="button" class="ai-tab-btn tab-violet" role="tab" id="tab-ar-panel-cartan" aria-controls="ar-panel-cartan" aria-selected="false" tabindex="-1" onclick="switchArTab('cartan', this)">Cartan行列式猜想</button>
+    <button type="button" class="ai-tab-btn tab-teal" role="tab" id="tab-ar-panel-broue" aria-controls="ar-panel-broue" aria-selected="false" tabindex="-1" onclick="switchArTab('broue', this)">Broué交换亏群猜想</button>
+    <button type="button" class="ai-tab-btn tab-yellow" role="tab" id="tab-ar-panel-telescope" aria-controls="ar-panel-telescope" aria-selected="false" tabindex="-1" onclick="switchArTab('telescope', this)">Telescope Conjecture</button>
+    <button type="button" class="ai-tab-btn tab-purple" role="tab" id="tab-ar-panel-brauerthrall" aria-controls="ar-panel-brauerthrall" aria-selected="false" tabindex="-1" onclick="switchArTab('brauerthrall', this)">Brauer-Thrall猜想</button>
   </div>
 
 {{< ar-panel "finite" "active" >}}
@@ -43,27 +47,27 @@ math: true
 
 </section>
 
-<section id="ar-section-important" class="ar-section" hidden>
+<section id="ar-section-important" class="ar-section" role="tabpanel" aria-labelledby="tab-ar-section-important" hidden>
 
 <div class="ai-tabs ar-important-tabs">
-  <div class="ai-tab-btns">
-    <button type="button" class="ai-tab-btn tab-red active" onclick="switchArTab('gpc', this)">Gorenstein投射猜想</button>
-    <button type="button" class="ai-tab-btn tab-orange" onclick="switchArTab('nlc', this)">无环猜想</button>
-    <button type="button" class="ai-tab-btn tab-yellow" onclick="switchArTab('igusasmalo', this)">Igusa-Smalø猜想</button>
-    <button type="button" class="ai-tab-btn tab-green" onclick="switchArTab('extension', this)">Extension猜想</button>
-    <button type="button" class="ai-tab-btn tab-blue" onclick="switchArTab('hpr', this)">Happel-Preiser-Ringel猜想</button>
-    <button type="button" class="ai-tab-btn tab-purple" onclick="switchArTab('gpfdc', this)">Gorenstein投射维数</button>
-    <button type="button" class="ai-tab-btn tab-violet" onclick="switchArTab('fcy', this)">分数Calabi-Yau猜想</button>
-    <button type="button" class="ai-tab-btn tab-red" onclick="switchArTab('ncluster', this)">n-cluster tilting</button>
-    <button type="button" class="ai-tab-btn tab-yellow" onclick="switchArTab('gentle', this)">gentle导出分类</button>
-    <button type="button" class="ai-tab-btn tab-blue" onclick="switchArTab('garc', this)">GARC（交换环）</button>
-    <button type="button" class="ai-tab-btn tab-violet" onclick="switchArTab('silting', this)">silting公开问题</button>
-    <button type="button" class="ai-tab-btn tab-red" onclick="switchArTab('derivedsimple', this)">导出单性</button>
-    <button type="button" class="ai-tab-btn tab-green" onclick="switchArTab('ttgeom', this)">张量三角几何</button>
-    <button type="button" class="ai-tab-btn tab-teal" onclick="switchArTab('periodicity', this)">周期猜想</button>
-    <button type="button" class="ai-tab-btn tab-cyan" onclick="switchArTab('cmtype', this)">CM Type of Brauer-Thrall猜想</button>
-    <button type="button" class="ai-tab-btn tab-indigo" onclick="switchArTab('weaklygorenstein', this)">Weakly-Gorenstein对称猜想</button>
-    <button type="button" class="ai-tab-btn tab-pink" onclick="switchArTab('noloop', this)">no-loop conjecture</button>
+  <div class="ai-tab-btns" role="tablist">
+    <button type="button" class="ai-tab-btn tab-red active" role="tab" id="tab-ar-panel-gpc" aria-controls="ar-panel-gpc" aria-selected="true" tabindex="0" onclick="switchArTab('gpc', this)">Gorenstein投射猜想</button>
+    <button type="button" class="ai-tab-btn tab-orange" role="tab" id="tab-ar-panel-nlc" aria-controls="ar-panel-nlc" aria-selected="false" tabindex="-1" onclick="switchArTab('nlc', this)">无环猜想</button>
+    <button type="button" class="ai-tab-btn tab-yellow" role="tab" id="tab-ar-panel-igusasmalo" aria-controls="ar-panel-igusasmalo" aria-selected="false" tabindex="-1" onclick="switchArTab('igusasmalo', this)">Igusa-Smalø猜想</button>
+    <button type="button" class="ai-tab-btn tab-green" role="tab" id="tab-ar-panel-extension" aria-controls="ar-panel-extension" aria-selected="false" tabindex="-1" onclick="switchArTab('extension', this)">Extension猜想</button>
+    <button type="button" class="ai-tab-btn tab-blue" role="tab" id="tab-ar-panel-hpr" aria-controls="ar-panel-hpr" aria-selected="false" tabindex="-1" onclick="switchArTab('hpr', this)">Happel-Preiser-Ringel猜想</button>
+    <button type="button" class="ai-tab-btn tab-purple" role="tab" id="tab-ar-panel-gpfdc" aria-controls="ar-panel-gpfdc" aria-selected="false" tabindex="-1" onclick="switchArTab('gpfdc', this)">Gorenstein投射维数</button>
+    <button type="button" class="ai-tab-btn tab-violet" role="tab" id="tab-ar-panel-fcy" aria-controls="ar-panel-fcy" aria-selected="false" tabindex="-1" onclick="switchArTab('fcy', this)">分数Calabi-Yau猜想</button>
+    <button type="button" class="ai-tab-btn tab-red" role="tab" id="tab-ar-panel-ncluster" aria-controls="ar-panel-ncluster" aria-selected="false" tabindex="-1" onclick="switchArTab('ncluster', this)">n-cluster tilting</button>
+    <button type="button" class="ai-tab-btn tab-yellow" role="tab" id="tab-ar-panel-gentle" aria-controls="ar-panel-gentle" aria-selected="false" tabindex="-1" onclick="switchArTab('gentle', this)">gentle导出分类</button>
+    <button type="button" class="ai-tab-btn tab-blue" role="tab" id="tab-ar-panel-garc" aria-controls="ar-panel-garc" aria-selected="false" tabindex="-1" onclick="switchArTab('garc', this)">GARC（交换环）</button>
+    <button type="button" class="ai-tab-btn tab-violet" role="tab" id="tab-ar-panel-silting" aria-controls="ar-panel-silting" aria-selected="false" tabindex="-1" onclick="switchArTab('silting', this)">silting公开问题</button>
+    <button type="button" class="ai-tab-btn tab-red" role="tab" id="tab-ar-panel-derivedsimple" aria-controls="ar-panel-derivedsimple" aria-selected="false" tabindex="-1" onclick="switchArTab('derivedsimple', this)">导出单性</button>
+    <button type="button" class="ai-tab-btn tab-green" role="tab" id="tab-ar-panel-ttgeom" aria-controls="ar-panel-ttgeom" aria-selected="false" tabindex="-1" onclick="switchArTab('ttgeom', this)">张量三角几何</button>
+    <button type="button" class="ai-tab-btn tab-teal" role="tab" id="tab-ar-panel-periodicity" aria-controls="ar-panel-periodicity" aria-selected="false" tabindex="-1" onclick="switchArTab('periodicity', this)">周期猜想</button>
+    <button type="button" class="ai-tab-btn tab-cyan" role="tab" id="tab-ar-panel-cmtype" aria-controls="ar-panel-cmtype" aria-selected="false" tabindex="-1" onclick="switchArTab('cmtype', this)">CM Type of Brauer-Thrall猜想</button>
+    <button type="button" class="ai-tab-btn tab-indigo" role="tab" id="tab-ar-panel-weaklygorenstein" aria-controls="ar-panel-weaklygorenstein" aria-selected="false" tabindex="-1" onclick="switchArTab('weaklygorenstein', this)">Weakly-Gorenstein对称猜想</button>
+    <button type="button" class="ai-tab-btn tab-pink" role="tab" id="tab-ar-panel-noloop" aria-controls="ar-panel-noloop" aria-selected="false" tabindex="-1" onclick="switchArTab('noloop', this)">no-loop conjecture</button>
   </div>
 
 {{< ar-panel "gpc" "active" >}}
@@ -87,125 +91,125 @@ math: true
 
 </section>
 
-<section id="ar-section-theory" class="ar-section" hidden>
+<section id="ar-section-theory" class="ar-section" role="tabpanel" aria-labelledby="tab-ar-section-theory" hidden>
 
 <div class="ai-tabs ar-theory-tabs">
-  <div class="ai-tab-btns">
-    <button type="button" class="ai-tab-btn tab-red active" onclick="switchArTheory('artheory', this)">Auslander-Reiten理论</button>
-    <button type="button" class="ai-tab-btn tab-green" onclick="switchArTheory('gabriel', this)">Gabriel定理</button>
-    <button type="button" class="ai-tab-btn tab-blue" onclick="switchArTheory('tilting', this)">Tilting理论</button>
-    <button type="button" class="ai-tab-btn tab-orange" onclick="switchArTheory('excat', this)">导出范畴</button>
-    <button type="button" class="ai-tab-btn tab-yellow" onclick="switchArTheory('dg', this)">DG范畴</button>
-    <button type="button" class="ai-tab-btn tab-purple" onclick="switchArTheory('model', this)">Model Category</button>
+  <div class="ai-tab-btns" role="tablist">
+    <button type="button" class="ai-tab-btn tab-red active" role="tab" id="tab-ar-theory-panel-artheory" aria-controls="ar-theory-panel-artheory" aria-selected="true" tabindex="0" onclick="switchArTheory('artheory', this)">Auslander-Reiten理论</button>
+    <button type="button" class="ai-tab-btn tab-green" role="tab" id="tab-ar-theory-panel-gabriel" aria-controls="ar-theory-panel-gabriel" aria-selected="false" tabindex="-1" onclick="switchArTheory('gabriel', this)">Gabriel定理</button>
+    <button type="button" class="ai-tab-btn tab-blue" role="tab" id="tab-ar-theory-panel-tilting" aria-controls="ar-theory-panel-tilting" aria-selected="false" tabindex="-1" onclick="switchArTheory('tilting', this)">Tilting理论</button>
+    <button type="button" class="ai-tab-btn tab-orange" role="tab" id="tab-ar-theory-panel-excat" aria-controls="ar-theory-panel-excat" aria-selected="false" tabindex="-1" onclick="switchArTheory('excat', this)">导出范畴</button>
+    <button type="button" class="ai-tab-btn tab-yellow" role="tab" id="tab-ar-theory-panel-dg" aria-controls="ar-theory-panel-dg" aria-selected="false" tabindex="-1" onclick="switchArTheory('dg', this)">DG范畴</button>
+    <button type="button" class="ai-tab-btn tab-purple" role="tab" id="tab-ar-theory-panel-model" aria-controls="ar-theory-panel-model" aria-selected="false" tabindex="-1" onclick="switchArTheory('model', this)">Model Category</button>
   </div>
 
-  <div id="ar-theory-panel-artheory" class="ai-tab-panel active">
+  <div id="ar-theory-panel-artheory" class="ai-tab-panel active" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-theory-panel-artheory">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 
-  <div id="ar-theory-panel-gabriel" class="ai-tab-panel">
+  <div id="ar-theory-panel-gabriel" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-theory-panel-gabriel">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 
-  <div id="ar-theory-panel-tilting" class="ai-tab-panel">
+  <div id="ar-theory-panel-tilting" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-theory-panel-tilting">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 
-  <div id="ar-theory-panel-excat" class="ai-tab-panel">
+  <div id="ar-theory-panel-excat" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-theory-panel-excat">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 
-  <div id="ar-theory-panel-dg" class="ai-tab-panel">
+  <div id="ar-theory-panel-dg" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-theory-panel-dg">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 
-  <div id="ar-theory-panel-model" class="ai-tab-panel">
+  <div id="ar-theory-panel-model" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-theory-panel-model">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 </div>
 
 </section>
 
-<section id="ar-section-frontier" class="ar-section" hidden>
+<section id="ar-section-frontier" class="ar-section" role="tabpanel" aria-labelledby="tab-ar-section-frontier" hidden>
 
 <div class="ai-tabs ar-frontier-tabs">
-  <div class="ai-tab-btns">
-    <button type="button" class="ai-tab-btn tab-red active" onclick="switchArFrontier('infinity', this)">Infinity Category</button>
-    <button type="button" class="ai-tab-btn tab-orange" onclick="switchArFrontier('ttg', this)">Tensor Triangulated Geometry</button>
-    <button type="button" class="ai-tab-btn tab-yellow" onclick="switchArFrontier('approximable', this)">Approximable Triangulated category</button>
-    <button type="button" class="ai-tab-btn tab-green" onclick="switchArFrontier('cluster', this)">Cluster Theory</button>
-    <button type="button" class="ai-tab-btn tab-blue" onclick="switchArFrontier('operad', this)">Operad Theory</button>
-    <button type="button" class="ai-tab-btn tab-teal" onclick="switchArFrontier('har', this)">高维AR理论</button>
-    <button type="button" class="ai-tab-btn tab-purple" onclick="switchArFrontier('tautilting', this)">$\tau$-tilting理论</button>
+  <div class="ai-tab-btns" role="tablist">
+    <button type="button" class="ai-tab-btn tab-red active" role="tab" id="tab-ar-frontier-panel-infinity" aria-controls="ar-frontier-panel-infinity" aria-selected="true" tabindex="0" onclick="switchArFrontier('infinity', this)">Infinity Category</button>
+    <button type="button" class="ai-tab-btn tab-orange" role="tab" id="tab-ar-frontier-panel-ttg" aria-controls="ar-frontier-panel-ttg" aria-selected="false" tabindex="-1" onclick="switchArFrontier('ttg', this)">Tensor Triangulated Geometry</button>
+    <button type="button" class="ai-tab-btn tab-yellow" role="tab" id="tab-ar-frontier-panel-approximable" aria-controls="ar-frontier-panel-approximable" aria-selected="false" tabindex="-1" onclick="switchArFrontier('approximable', this)">Approximable Triangulated category</button>
+    <button type="button" class="ai-tab-btn tab-green" role="tab" id="tab-ar-frontier-panel-cluster" aria-controls="ar-frontier-panel-cluster" aria-selected="false" tabindex="-1" onclick="switchArFrontier('cluster', this)">Cluster Theory</button>
+    <button type="button" class="ai-tab-btn tab-blue" role="tab" id="tab-ar-frontier-panel-operad" aria-controls="ar-frontier-panel-operad" aria-selected="false" tabindex="-1" onclick="switchArFrontier('operad', this)">Operad Theory</button>
+    <button type="button" class="ai-tab-btn tab-teal" role="tab" id="tab-ar-frontier-panel-har" aria-controls="ar-frontier-panel-har" aria-selected="false" tabindex="-1" onclick="switchArFrontier('har', this)">高维AR理论</button>
+    <button type="button" class="ai-tab-btn tab-purple" role="tab" id="tab-ar-frontier-panel-tautilting" aria-controls="ar-frontier-panel-tautilting" aria-selected="false" tabindex="-1" onclick="switchArFrontier('tautilting', this)">$\tau$-tilting理论</button>
   </div>
 
-  <div id="ar-frontier-panel-infinity" class="ai-tab-panel active">
+  <div id="ar-frontier-panel-infinity" class="ai-tab-panel active" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-frontier-panel-infinity">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 
-  <div id="ar-frontier-panel-ttg" class="ai-tab-panel">
+  <div id="ar-frontier-panel-ttg" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-frontier-panel-ttg">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 
   {{< ar-panel "approximable" "" "ar-frontier-panel-" >}}
-  <div id="ar-frontier-panel-cluster" class="ai-tab-panel">
+  <div id="ar-frontier-panel-cluster" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-frontier-panel-cluster">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 
-  <div id="ar-frontier-panel-operad" class="ai-tab-panel">
+  <div id="ar-frontier-panel-operad" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-frontier-panel-operad">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 
-  <div id="ar-frontier-panel-har" class="ai-tab-panel">
+  <div id="ar-frontier-panel-har" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-frontier-panel-har">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 
-  <div id="ar-frontier-panel-tautilting" class="ai-tab-panel">
+  <div id="ar-frontier-panel-tautilting" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-frontier-panel-tautilting">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 </div>
 
 </section>
 
-<section id="ar-section-hot" class="ar-section" hidden>
+<section id="ar-section-hot" class="ar-section" role="tabpanel" aria-labelledby="tab-ar-section-hot" hidden>
 
 <div class="ai-tabs ar-hot-tabs">
-  <div class="ai-tab-btns">
-    <button type="button" class="ai-tab-btn tab-blue active" onclick="switchArHot('dgenhance', this)">DG enhancement</button>
-    <button type="button" class="ai-tab-btn tab-green" onclick="switchArHot('stdderived', this)">Standard Derived Equivalence</button>
-    <button type="button" class="ai-tab-btn tab-yellow" onclick="switchArHot('gentle', this)">Gentle Algebra</button>
-    <button type="button" class="ai-tab-btn tab-orange" onclick="switchArHot('preprojective', this)">Preprojective Algebra</button>
-    <button type="button" class="ai-tab-btn tab-red" onclick="switchArHot('gorensteinhomo', this)">Gorenstein 同调理论</button>
-    <button type="button" class="ai-tab-btn tab-teal" onclick="switchArHot('geometric', this)">Geometric model</button>
-    <button type="button" class="ai-tab-btn tab-purple" onclick="switchArHot('clustertilting', this)">Cluster tilting</button>
-    <button type="button" class="ai-tab-btn tab-violet" onclick="switchArHot('approx', this)">Approximable Triangulated Categories</button>
+  <div class="ai-tab-btns" role="tablist">
+    <button type="button" class="ai-tab-btn tab-blue active" role="tab" id="tab-ar-hot-panel-dgenhance" aria-controls="ar-hot-panel-dgenhance" aria-selected="true" tabindex="0" onclick="switchArHot('dgenhance', this)">DG enhancement</button>
+    <button type="button" class="ai-tab-btn tab-green" role="tab" id="tab-ar-hot-panel-stdderived" aria-controls="ar-hot-panel-stdderived" aria-selected="false" tabindex="-1" onclick="switchArHot('stdderived', this)">Standard Derived Equivalence</button>
+    <button type="button" class="ai-tab-btn tab-yellow" role="tab" id="tab-ar-hot-panel-gentle" aria-controls="ar-hot-panel-gentle" aria-selected="false" tabindex="-1" onclick="switchArHot('gentle', this)">Gentle Algebra</button>
+    <button type="button" class="ai-tab-btn tab-orange" role="tab" id="tab-ar-hot-panel-preprojective" aria-controls="ar-hot-panel-preprojective" aria-selected="false" tabindex="-1" onclick="switchArHot('preprojective', this)">Preprojective Algebra</button>
+    <button type="button" class="ai-tab-btn tab-red" role="tab" id="tab-ar-hot-panel-gorensteinhomo" aria-controls="ar-hot-panel-gorensteinhomo" aria-selected="false" tabindex="-1" onclick="switchArHot('gorensteinhomo', this)">Gorenstein 同调理论</button>
+    <button type="button" class="ai-tab-btn tab-teal" role="tab" id="tab-ar-hot-panel-geometric" aria-controls="ar-hot-panel-geometric" aria-selected="false" tabindex="-1" onclick="switchArHot('geometric', this)">Geometric model</button>
+    <button type="button" class="ai-tab-btn tab-purple" role="tab" id="tab-ar-hot-panel-clustertilting" aria-controls="ar-hot-panel-clustertilting" aria-selected="false" tabindex="-1" onclick="switchArHot('clustertilting', this)">Cluster tilting</button>
+    <button type="button" class="ai-tab-btn tab-violet" role="tab" id="tab-ar-hot-panel-approx" aria-controls="ar-hot-panel-approx" aria-selected="false" tabindex="-1" onclick="switchArHot('approx', this)">Approximable Triangulated Categories</button>
   </div>
 
-  <div id="ar-hot-panel-dgenhance" class="ai-tab-panel active">
+  <div id="ar-hot-panel-dgenhance" class="ai-tab-panel active" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-hot-panel-dgenhance">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 
-  <div id="ar-hot-panel-stdderived" class="ai-tab-panel">
+  <div id="ar-hot-panel-stdderived" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-hot-panel-stdderived">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 
-  <div id="ar-hot-panel-gentle" class="ai-tab-panel">
+  <div id="ar-hot-panel-gentle" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-hot-panel-gentle">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 
-  <div id="ar-hot-panel-preprojective" class="ai-tab-panel">
+  <div id="ar-hot-panel-preprojective" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-hot-panel-preprojective">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 
-  <div id="ar-hot-panel-gorensteinhomo" class="ai-tab-panel">
+  <div id="ar-hot-panel-gorensteinhomo" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-hot-panel-gorensteinhomo">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 
-  <div id="ar-hot-panel-geometric" class="ai-tab-panel">
+  <div id="ar-hot-panel-geometric" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-hot-panel-geometric">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 
-  <div id="ar-hot-panel-clustertilting" class="ai-tab-panel">
+  <div id="ar-hot-panel-clustertilting" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-hot-panel-clustertilting">
     <p class="ai-empty">内容整理中，敬请期待…</p>
   </div>
 

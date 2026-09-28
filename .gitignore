@@ -3,3 +3,5 @@ public/
 .vscode/
 *.bak.meta
 .hugo-bin/
+
+.original-images/

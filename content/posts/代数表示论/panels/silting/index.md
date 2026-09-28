@@ -1,6 +1,7 @@
 ---
 title: "silting"
 headless: true
+date: 2026-08-31
 ---
 <h3 class="ar-subhead">问题陈述</h3>
 <p><strong>silting 理论中的公开问题</strong>：</p>

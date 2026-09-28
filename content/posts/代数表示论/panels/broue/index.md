@@ -1,6 +1,7 @@
 ---
 title: "broue"
 headless: true
+date: 2026-08-31
 ---
 <h3 class="ar-subhead">猜想陈述</h3>
 <p><strong>Broué 交换亏群猜想（Broué's Abelian Defect Group Conjecture, 1988/1990）</strong>：设 $G$ 为有限群，$\ell$ 为素数，$(K,\mathcal{O},k)$ 为 $G$ 的全体子群的分裂 $\ell$-模系统。设 $B$ 为 $\mathcal{O}G$（或 $kG$）的块代数，$P$ 为 $B$ 的亏群（defect group）。若 $P$ 为<strong>交换群</strong>，则 $B$ 与其在 $N_G(P)$ 中的 Brauer 对应块 $b$ <strong>导出等价</strong>（derived equivalent）：</p>

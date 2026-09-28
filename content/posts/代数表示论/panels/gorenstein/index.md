@@ -1,6 +1,7 @@
 ---
 title: "gorenstein"
 headless: true
+date: 2026-09-07
 ---
 <h3 class="ar-subhead">猜想陈述</h3>
 <p><strong>Gorenstein 对称猜想</strong>（GSC，Auslander-Reiten， 1975）：设 $\Lambda$ 是 Artin 代数，则：</p>

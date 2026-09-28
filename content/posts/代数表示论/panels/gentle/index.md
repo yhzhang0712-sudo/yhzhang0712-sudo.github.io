@@ -1,6 +1,7 @@
 ---
 title: "gentle"
 headless: true
+date: 2026-08-31
 ---
 <h3 class="ar-subhead">问题陈述</h3>
 <p><strong>gentle 代数的导出分类问题</strong>：Avella-Alaminos–Geiss 不变量是否完备——即是否完全刻画 gentle 代数的导出等价类？</p>

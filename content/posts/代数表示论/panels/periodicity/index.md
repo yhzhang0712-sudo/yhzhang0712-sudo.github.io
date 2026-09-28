@@ -1,6 +1,7 @@
 ---
 title: "periodicity"
 headless: true
+date: 2026-09-13
 ---
 <h3 class="ar-subhead" id="ar-periodicity-1">猜想陈述</h3>
 <p><strong>周期猜想（Periodicity Conjecture，Erdmann–Skowroński）</strong>：</p>

@@ -1,6 +1,7 @@
 ---
 title: "extension"
 headless: true
+date: 2026-09-11
 ---
 <h3 class="ar-subhead" id="ar-ext-1">猜想陈述</h3>
 <p><strong>强 Extension 猜想（strong）</strong>：设 $\Lambda$ 为 Artin 代数，$S$ 为单模。若 $\operatorname{Ext}^{1}_{\Lambda}(S,S)\neq 0$，则对<strong>所有</strong> $i\ge 1$ 都有</p>

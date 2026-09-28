@@ -1,6 +1,7 @@
 ---
 title: "gpfdc"
 headless: true
+date: 2026-08-31
 ---
 <h3 class="ar-subhead">问题陈述</h3>
 <p><strong>Gorenstein 投射模的有限维数 / Gorenstein 亏格类问题</strong>：与有限维数猜想（FDC）平行的问题族：</p>

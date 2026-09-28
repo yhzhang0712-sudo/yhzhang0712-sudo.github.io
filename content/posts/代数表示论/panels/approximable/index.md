@@ -1,6 +1,7 @@
 ---
 title: "approximable"
 headless: true
+date: 2026-09-03
 ---
 <div class="ar-toc-wrap">
 <nav class="ar-toc" aria-label="面板目录">

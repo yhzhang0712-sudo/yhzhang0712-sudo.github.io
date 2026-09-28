@@ -1,6 +1,7 @@
 ---
 title: "finite"
 headless: true
+date: 2026-09-06
 ---
 <h3 class="ar-subhead">猜想陈述</h3>
 <p><strong>有限维数猜想（FDC, Bass, 1960）</strong>：任何 Artin 代数 $\Lambda$ 上，有限投射维数的有限生成模，其投射维数一致有界。即</p>

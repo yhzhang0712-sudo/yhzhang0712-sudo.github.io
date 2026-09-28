@@ -1,6 +1,7 @@
 ---
 title: "nlc"
 headless: true
+date: 2026-08-31
 ---
 <h3 class="ar-subhead">猜想陈述</h3>
 <p><strong>无环猜想（NLC）</strong>：设 $\Lambda$ 为有限维代数，$S$ 为单模。若 $S$ 有有限投射维数，则 $\operatorname{Ext}^{1}_{\Lambda}(S,S)=0$（即在普通箭图中该顶点无环）。</p>

@@ -1,6 +1,7 @@
 ---
 title: "fcy"
 headless: true
+date: 2026-08-31
 ---
 <h3 class="ar-subhead">猜想陈述</h3>
 <p><strong>Happel 的"分数 Calabi–Yau"猜想</strong>：代数闭域上每个有限维代数都（导出等价于）一个<strong>扭分数 Calabi–Yau 代数</strong>——即存在 $m>0$ 使 Serre 函子的某次幂等价于一个平移 $\Sigma^{n}$（"Serre 函子最终周期性"）：</p>

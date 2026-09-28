@@ -4,7 +4,9 @@
        可选第三参数 idPrefix：自定义面板 div 的 id 前缀（如 "ar-frontier-panel-"），
        用于“前沿理论”等 section——其切换脚本依赖 #ar-frontier-panel-xxx 形式。
        面板内容放在 content/posts/代数表示论/panels/<key>/index.md，
-       经 goldmark 正常渲染（KaTeX 公式照常生效），且 headless 不被发布为独立子页面。 */ -}}
+       经 goldmark 正常渲染（KaTeX 公式照常生效），且 headless 不被发布为独立子页面。
+       2026-09-28：$p.Content 两侧用 {{- -}}，避免内容尾部换行与模板换行叠成空行、
+       被外层 goldmark 切断 raw HTML 块后重组出游离的 </p>（历史配平问题根源）。 */ -}}
 {{- $key := .Get 0 -}}
 {{- $active := eq (.Get 1 | default "") "active" -}}
 {{- $prefix := .Get 2 | default "ar-panel-" -}}
@@ -12,7 +14,4 @@
 {{- if not $p -}}
 <p class="ai-empty">面板内容缺失：{{ $key }}</p>
 {{- else -}}
-<div id="{{ $prefix }}{{ $key }}" class="ai-tab-panel{{ if $active }} active{{ end }}">
-{{ $p.Content }}
-</div>
-{{- end -}}
+<div id="{{ $prefix }}{{ $key }}" class="ai-tab-panel{{ if $active }} active{{ end }}" role="tabpanel" tabindex="0" aria-labelledby="tab-{{ $prefix }}{{ $key }}">{{- if and $p.Lastmod (not $p.Lastmod.IsZero) }}<p class="ar-panel-meta">最后更新：{{ time.Format "2006-01" $p.Lastmod }}</p>{{- end }}{{- $p.Content -}}</div>{{- end -}}

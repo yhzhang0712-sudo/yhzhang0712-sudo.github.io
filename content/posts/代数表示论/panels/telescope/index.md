@@ -1,6 +1,7 @@
 ---
 title: "telescope"
 headless: true
+date: 2026-09-06
 ---
 <h3 class="ar-subhead">猜想陈述</h3>
 <p><strong>Telescope 猜想（望远镜猜想）</strong>：设 $\mathcal{T}$ 为带任意余积的<strong>紧生成三角范畴</strong>，$\mathcal{T}^{c}$ 为其紧对象子范畴。称伴随对 $j:\mathcal{T}\rightleftarrows\mathcal{T}':j_{\rho}$（$j_{\rho}$ 全忠实）为 <strong>Bousfield 局部化</strong>；若右伴随 $j_{\rho}$ 保余积，则称为 <strong>smashing 局部化</strong>。猜想断言：</p>

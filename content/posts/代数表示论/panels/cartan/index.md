@@ -1,6 +1,7 @@
 ---
 title: "cartan"
 headless: true
+date: 2026-09-06
 ---
 <h3 class="ar-subhead">猜想陈述</h3>
 <p>
@@ -25,14 +26,14 @@ Cartan 矩阵定义为 $c_{ij}=[P_i:S_j]$，其中 $S_1,\dots,S_n$ 是两两不�
   <li><span class="ar-year">2026</span>Chen–Xi 对矩阵中心化子代数给出 Cartan 行列式显式公式并完全验证 CDC。</li>
 </ul>
 
-<p><strong>CDC 在以下代数类上成立：</strong>
+<p><strong>CDC 在以下代数类上成立：</strong></p>
 <ul>
 <li>整体维数 $\le 2$（Zacharia 1983；Green–Gustafson–Zacharia 1985）;</li>
 <li>正分次代数（Wilson 1983）;</li>
 <li>Cartan 滤过环含 $J^3=0$（Fuller–Zimmermann-Huisgen 1986）string（左string）环（Burgess–Fuller–Voss–Zimmermann-Huisgen 1985，且有强形式 $\det C=1\Leftrightarrow\operatorname{gl.dim}<\infty$）;</li>
 <li>拟遗传 Artin 代数（Burgess–Fuller 1989）;</li>
 <li>矩阵中心化子代数（Chen–Xi 2026，且该类上五项等价：拟遗传 $\Leftrightarrow\operatorname{gl.dim}<\infty\Leftrightarrow\operatorname{gl.dim}\le 2\Leftrightarrow I_c=\varnothing\Leftrightarrow\det C=1$）。</li>
-</ul></p>
+</ul>
 
 <h3 class="ar-subhead">研究方法</h3>
 <p>所有已证情形的证明共享同一骨架：<b>公共框架</b>先把 $\det C$ 压到 $\pm 1$（Eilenberg 1954，普适），剩余的全部难点归结为<b>排除 $-1$</b>；每一类代数再用自己特有的「正性来源」完成这最后一步。</p>

@@ -1,6 +1,7 @@
 ---
 title: "igusasmalo"
 headless: true
+date: 2026-08-31
 ---
 <h3 class="ar-subhead">猜想陈述</h3>
 <p><strong>Igusa–Smalø 猜想</strong>（按 Happel 1991 年 Sherbrooke 讲义整理版）：若几乎可裂序列</p>

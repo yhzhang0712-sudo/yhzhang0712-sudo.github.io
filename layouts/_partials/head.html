@@ -89,7 +89,6 @@
 <link rel="icon" type="image/png" sizes="16x16" href="{{ site.Params.assets.favicon16x16 | default "favicon-16x16.png" | absURL }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ site.Params.assets.favicon32x32 | default "favicon-32x32.png" | absURL }}">
 <link rel="apple-touch-icon" href="{{ site.Params.assets.apple_touch_icon | default "apple-touch-icon.png" | absURL }}">
-<link rel="mask-icon" href="{{ site.Params.assets.safari_pinned_tab | default "safari-pinned-tab.svg" | absURL }}">
 <meta name="theme-color" content="{{ site.Params.assets.theme_color | default "#2e2e33" }}">
 <meta name="msapplication-TileColor" content="{{ site.Params.assets.msapplication_TileColor | default "#2e2e33" }}">
 
@@ -235,6 +234,7 @@
 mark.search-hit{background:#fff2a8;color:inherit;border-radius:3px;padding:0 1px;box-shadow:0 0 0 1px #f0d878}
 .search-snippet{display:block;font-size:.8em;color:var(--secondary);margin-top:2px;line-height:1.4}
 .search-snippet mark,.search-snippet search-hit{background:#fff2a8;border-radius:2px}
+.search-page{display:inline-block;font-size:.72em;color:var(--secondary);border:1px solid var(--tertiary);border-radius:4px;padding:0 .35em;margin-left:.5em;vertical-align:1px}
 </style>
 <script>
 (function () {

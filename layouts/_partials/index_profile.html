@@ -32,6 +32,8 @@
         {{- end }}
         {{- end }}
 
+        {{- /* SEO / 无障碍：首页唯一的 h1（视觉隐藏，语义保留） */ -}}
+        <h1 class="sr-only">{{ site.Title }}</h1>
         {{- /* SVG 三分圆盘扇形导航 */ -}}
         {{- $btn1 := index .buttons 0 }}
         {{- $btn2 := index .buttons 1 }}

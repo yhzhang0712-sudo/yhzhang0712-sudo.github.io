@@ -102,6 +102,18 @@ const renderResults = (results) => {
         link.setAttribute('aria-label', result.item.title);
 
         li.appendChild(titleText);
+
+        /* 面板级结果（permalink 带 hash）显示所属页面标签，降低"这是哪一页的"认知成本 */
+        if (hash) {
+            const pm = decodeURIComponent(base).match(/\/posts\/([^/]+)\//);
+            if (pm && pm[1]) {
+                const tag = document.createElement('span');
+                tag.className = 'search-page';
+                tag.textContent = pm[1];
+                li.appendChild(tag);
+            }
+        }
+
         li.appendChild(svg);
         li.appendChild(link);
         fragment.appendChild(li);

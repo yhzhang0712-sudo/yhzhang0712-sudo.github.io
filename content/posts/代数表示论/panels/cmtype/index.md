@@ -1,6 +1,7 @@
 ---
 title: "cmtype"
 headless: true
+date: 2026-09-13
 ---
 <h3 class="ar-subhead">问题陈述</h3>
 <p>

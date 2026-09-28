@@ -2,49 +2,52 @@
 title: "数学文化"
 hideTitle: true
 math: true
+description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家小传，希尔伯特 23 问题与千禧年难题，三次数学危机、分形等数学科普与数学轶事。"
 ---
 
-<div class="ar-section-switch">
-  <button type="button" class="ar-sec-btn sec-violet active" onclick="switchMathCulture('figures', this)">数学人物</button>
-  <button type="button" class="ar-sec-btn sec-blue" onclick="switchMathCulture('problems', this)">数学问题</button>
-  <button type="button" class="ar-sec-btn sec-green" onclick="switchMathCulture('popular', this)">数学科普</button>
-  <button type="button" class="ar-sec-btn sec-orange" onclick="switchMathCulture('anecdotes', this)">数学轶事</button>
+<h1 class="sr-only">数学文化</h1>
+
+<div class="ar-section-switch" role="tablist">
+  <button type="button" class="ar-sec-btn sec-violet active" role="tab" id="tab-ar-section-figures" aria-controls="ar-section-figures" aria-selected="true" tabindex="0" onclick="switchMathCulture('figures', this)">数学人物</button>
+  <button type="button" class="ar-sec-btn sec-blue" role="tab" id="tab-ar-section-problems" aria-controls="ar-section-problems" aria-selected="false" tabindex="-1" onclick="switchMathCulture('problems', this)">数学问题</button>
+  <button type="button" class="ar-sec-btn sec-green" role="tab" id="tab-ar-section-popular" aria-controls="ar-section-popular" aria-selected="false" tabindex="-1" onclick="switchMathCulture('popular', this)">数学科普</button>
+  <button type="button" class="ar-sec-btn sec-orange" role="tab" id="tab-ar-section-anecdotes" aria-controls="ar-section-anecdotes" aria-selected="false" tabindex="-1" onclick="switchMathCulture('anecdotes', this)">数学轶事</button>
 </div>
 
 <div class="ar-conjectures-divider"></div>
 
-<section id="ar-section-figures" class="ar-section">
+<section id="ar-section-figures" class="ar-section" role="tabpanel" aria-labelledby="tab-ar-section-figures">
 <div class="ai-tabs">
-  <div class="ai-tab-btns">
-    <button type="button" class="ai-tab-btn tab-red active" onclick="switchMathFigures('liuhui', this)">刘徽</button>
-    <button type="button" class="ai-tab-btn tab-blue" onclick="switchMathFigures('euclid', this)">欧几里得</button>
-    <button type="button" class="ai-tab-btn tab-teal" onclick="switchMathFigures('pythagoras', this)">毕达哥拉斯</button>
-    <button type="button" class="ai-tab-btn tab-green" onclick="switchMathFigures('thales', this)">泰勒斯</button>
-    <button type="button" class="ai-tab-btn tab-orange" onclick="switchMathFigures('zuchongzhi', this)">祖冲之</button>
-    <button type="button" class="ai-tab-btn tab-purple" onclick="switchMathFigures('archimedes', this)">阿基米德</button>
-    <button type="button" class="ai-tab-btn tab-violet" onclick="switchMathFigures('apollonius', this)">阿波罗尼奥斯</button>
-    <button type="button" class="ai-tab-btn tab-red" onclick="switchMathFigures('galois', this)">伽罗瓦</button>
-    <button type="button" class="ai-tab-btn tab-blue" onclick="switchMathFigures('lagrange', this)">拉格朗日</button>
-    <button type="button" class="ai-tab-btn tab-teal" onclick="switchMathFigures('cauchy', this)">柯西</button>
-    <button type="button" class="ai-tab-btn tab-green" onclick="switchMathFigures('euler', this)">欧拉</button>
-    <button type="button" class="ai-tab-btn tab-orange" onclick="switchMathFigures('newton', this)">牛顿</button>
-    <button type="button" class="ai-tab-btn tab-purple" onclick="switchMathFigures('descartes', this)">笛卡尔</button>
-    <button type="button" class="ai-tab-btn tab-violet" onclick="switchMathFigures('leibniz', this)">莱布尼茨</button>
-    <button type="button" class="ai-tab-btn tab-red" onclick="switchMathFigures('fermat', this)">费马</button>
-    <button type="button" class="ai-tab-btn tab-blue" onclick="switchMathFigures('abel', this)">阿贝尔</button>
-    <button type="button" class="ai-tab-btn tab-teal" onclick="switchMathFigures('gauss', this)">高斯</button>
-    <button type="button" class="ai-tab-btn tab-green" onclick="switchMathFigures('riemann', this)">黎曼</button>
-    <button type="button" class="ai-tab-btn tab-orange" onclick="switchMathFigures('yau', this)">丘成桐</button>
-    <button type="button" class="ai-tab-btn tab-purple" onclick="switchMathFigures('godel', this)">哥德尔</button>
-    <button type="button" class="ai-tab-btn tab-violet" onclick="switchMathFigures('turing', this)">图灵</button>
-    <button type="button" class="ai-tab-btn tab-red" onclick="switchMathFigures('hilbert', this)">希尔伯特</button>
-    <button type="button" class="ai-tab-btn tab-blue" onclick="switchMathFigures('ramanujan', this)">拉马努金</button>
-    <button type="button" class="ai-tab-btn tab-teal" onclick="switchMathFigures('noether', this)">诺特</button>
-    <button type="button" class="ai-tab-btn tab-green" onclick="switchMathFigures('tao', this)">陶哲轩</button>
-    <button type="button" class="ai-tab-btn tab-red" onclick="switchMathFigures('hua', this)">华罗庚</button>
+  <div class="ai-tab-btns" role="tablist">
+    <button type="button" class="ai-tab-btn tab-red active" role="tab" id="tab-ar-mathfigures-panel-liuhui" aria-controls="ar-mathfigures-panel-liuhui" aria-selected="true" tabindex="0" onclick="switchMathFigures('liuhui', this)">刘徽</button>
+    <button type="button" class="ai-tab-btn tab-blue" role="tab" id="tab-ar-mathfigures-panel-euclid" aria-controls="ar-mathfigures-panel-euclid" aria-selected="false" tabindex="-1" onclick="switchMathFigures('euclid', this)">欧几里得</button>
+    <button type="button" class="ai-tab-btn tab-teal" role="tab" id="tab-ar-mathfigures-panel-pythagoras" aria-controls="ar-mathfigures-panel-pythagoras" aria-selected="false" tabindex="-1" onclick="switchMathFigures('pythagoras', this)">毕达哥拉斯</button>
+    <button type="button" class="ai-tab-btn tab-green" role="tab" id="tab-ar-mathfigures-panel-thales" aria-controls="ar-mathfigures-panel-thales" aria-selected="false" tabindex="-1" onclick="switchMathFigures('thales', this)">泰勒斯</button>
+    <button type="button" class="ai-tab-btn tab-orange" role="tab" id="tab-ar-mathfigures-panel-zuchongzhi" aria-controls="ar-mathfigures-panel-zuchongzhi" aria-selected="false" tabindex="-1" onclick="switchMathFigures('zuchongzhi', this)">祖冲之</button>
+    <button type="button" class="ai-tab-btn tab-purple" role="tab" id="tab-ar-mathfigures-panel-archimedes" aria-controls="ar-mathfigures-panel-archimedes" aria-selected="false" tabindex="-1" onclick="switchMathFigures('archimedes', this)">阿基米德</button>
+    <button type="button" class="ai-tab-btn tab-violet" role="tab" id="tab-ar-mathfigures-panel-apollonius" aria-controls="ar-mathfigures-panel-apollonius" aria-selected="false" tabindex="-1" onclick="switchMathFigures('apollonius', this)">阿波罗尼奥斯</button>
+    <button type="button" class="ai-tab-btn tab-red" role="tab" id="tab-ar-mathfigures-panel-galois" aria-controls="ar-mathfigures-panel-galois" aria-selected="false" tabindex="-1" onclick="switchMathFigures('galois', this)">伽罗瓦</button>
+    <button type="button" class="ai-tab-btn tab-blue" role="tab" id="tab-ar-mathfigures-panel-lagrange" aria-controls="ar-mathfigures-panel-lagrange" aria-selected="false" tabindex="-1" onclick="switchMathFigures('lagrange', this)">拉格朗日</button>
+    <button type="button" class="ai-tab-btn tab-teal" role="tab" id="tab-ar-mathfigures-panel-cauchy" aria-controls="ar-mathfigures-panel-cauchy" aria-selected="false" tabindex="-1" onclick="switchMathFigures('cauchy', this)">柯西</button>
+    <button type="button" class="ai-tab-btn tab-green" role="tab" id="tab-ar-mathfigures-panel-euler" aria-controls="ar-mathfigures-panel-euler" aria-selected="false" tabindex="-1" onclick="switchMathFigures('euler', this)">欧拉</button>
+    <button type="button" class="ai-tab-btn tab-orange" role="tab" id="tab-ar-mathfigures-panel-newton" aria-controls="ar-mathfigures-panel-newton" aria-selected="false" tabindex="-1" onclick="switchMathFigures('newton', this)">牛顿</button>
+    <button type="button" class="ai-tab-btn tab-purple" role="tab" id="tab-ar-mathfigures-panel-descartes" aria-controls="ar-mathfigures-panel-descartes" aria-selected="false" tabindex="-1" onclick="switchMathFigures('descartes', this)">笛卡尔</button>
+    <button type="button" class="ai-tab-btn tab-violet" role="tab" id="tab-ar-mathfigures-panel-leibniz" aria-controls="ar-mathfigures-panel-leibniz" aria-selected="false" tabindex="-1" onclick="switchMathFigures('leibniz', this)">莱布尼茨</button>
+    <button type="button" class="ai-tab-btn tab-red" role="tab" id="tab-ar-mathfigures-panel-fermat" aria-controls="ar-mathfigures-panel-fermat" aria-selected="false" tabindex="-1" onclick="switchMathFigures('fermat', this)">费马</button>
+    <button type="button" class="ai-tab-btn tab-blue" role="tab" id="tab-ar-mathfigures-panel-abel" aria-controls="ar-mathfigures-panel-abel" aria-selected="false" tabindex="-1" onclick="switchMathFigures('abel', this)">阿贝尔</button>
+    <button type="button" class="ai-tab-btn tab-teal" role="tab" id="tab-ar-mathfigures-panel-gauss" aria-controls="ar-mathfigures-panel-gauss" aria-selected="false" tabindex="-1" onclick="switchMathFigures('gauss', this)">高斯</button>
+    <button type="button" class="ai-tab-btn tab-green" role="tab" id="tab-ar-mathfigures-panel-riemann" aria-controls="ar-mathfigures-panel-riemann" aria-selected="false" tabindex="-1" onclick="switchMathFigures('riemann', this)">黎曼</button>
+    <button type="button" class="ai-tab-btn tab-orange" role="tab" id="tab-ar-mathfigures-panel-yau" aria-controls="ar-mathfigures-panel-yau" aria-selected="false" tabindex="-1" onclick="switchMathFigures('yau', this)">丘成桐</button>
+    <button type="button" class="ai-tab-btn tab-purple" role="tab" id="tab-ar-mathfigures-panel-godel" aria-controls="ar-mathfigures-panel-godel" aria-selected="false" tabindex="-1" onclick="switchMathFigures('godel', this)">哥德尔</button>
+    <button type="button" class="ai-tab-btn tab-violet" role="tab" id="tab-ar-mathfigures-panel-turing" aria-controls="ar-mathfigures-panel-turing" aria-selected="false" tabindex="-1" onclick="switchMathFigures('turing', this)">图灵</button>
+    <button type="button" class="ai-tab-btn tab-red" role="tab" id="tab-ar-mathfigures-panel-hilbert" aria-controls="ar-mathfigures-panel-hilbert" aria-selected="false" tabindex="-1" onclick="switchMathFigures('hilbert', this)">希尔伯特</button>
+    <button type="button" class="ai-tab-btn tab-blue" role="tab" id="tab-ar-mathfigures-panel-ramanujan" aria-controls="ar-mathfigures-panel-ramanujan" aria-selected="false" tabindex="-1" onclick="switchMathFigures('ramanujan', this)">拉马努金</button>
+    <button type="button" class="ai-tab-btn tab-teal" role="tab" id="tab-ar-mathfigures-panel-noether" aria-controls="ar-mathfigures-panel-noether" aria-selected="false" tabindex="-1" onclick="switchMathFigures('noether', this)">诺特</button>
+    <button type="button" class="ai-tab-btn tab-green" role="tab" id="tab-ar-mathfigures-panel-tao" aria-controls="ar-mathfigures-panel-tao" aria-selected="false" tabindex="-1" onclick="switchMathFigures('tao', this)">陶哲轩</button>
+    <button type="button" class="ai-tab-btn tab-red" role="tab" id="tab-ar-mathfigures-panel-hua" aria-controls="ar-mathfigures-panel-hua" aria-selected="false" tabindex="-1" onclick="switchMathFigures('hua', this)">华罗庚</button>
   </div>
 
-  <div id="ar-mathfigures-panel-liuhui" class="ai-tab-panel active">
+  <div id="ar-mathfigures-panel-liuhui" class="ai-tab-panel active" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-liuhui">
 <div class="agent-intro">
 <h2>刘徽：中国古代数学理论的奠基人</h2>
 <div class="fig-head">
@@ -54,7 +57,7 @@ math: true
 <tr><td><strong>身份</strong></td><td>数学家</td></tr>
 <tr><td><strong>代表作</strong></td><td>《九章算术注》（263年）、《海岛算经》</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/liuhui.jpg" alt="刘徽" loading="lazy"><figcaption>刘徽</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/liuhui.webp" width="360" height="270" alt="刘徽" loading="lazy"><figcaption>刘徽</figcaption></figure>
 </div>
 
 <h3>一、割圆术：中国的"穷竭法"</h3>
@@ -71,7 +74,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-euclid" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-euclid" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-euclid">
 <div class="agent-intro">
 <h2>欧几里得：几何学的"立法者"</h2>
 <div class="fig-head">
@@ -80,7 +83,7 @@ math: true
 <tr><td><strong>身份</strong></td><td>数学家，被称为"几何学之父"</td></tr>
 <tr><td><strong>代表作</strong></td><td>《几何原本》（Elements，13卷）</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/euclid.jpg" alt="欧几里得" loading="lazy"><figcaption>欧几里得</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/euclid.webp" width="360" height="301" alt="欧几里得" loading="lazy"><figcaption>欧几里得</figcaption></figure>
 </div>
 
 <h3>一、《几何原本》——公理化方法的诞生</h3>
@@ -91,7 +94,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-pythagoras" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-pythagoras" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-pythagoras">
 <div class="agent-intro">
 <h2>毕达哥拉斯："万物皆数"的神秘数学家</h2>
 <div class="fig-head">
@@ -100,7 +103,7 @@ math: true
 <tr><td><strong>身份</strong></td><td>数学家、哲学家，毕达哥拉斯学派创始人</td></tr>
 <tr><td><strong>主要领域</strong></td><td>几何学、数论、音乐理论、天文学</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/pythagoras.jpg" alt="毕达哥拉斯" loading="lazy"><figcaption>毕达哥拉斯</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/pythagoras.webp" width="345" height="460" alt="毕达哥拉斯" loading="lazy"><figcaption>毕达哥拉斯</figcaption></figure>
 </div>
 
 <h3>一、勾股定理</h3>
@@ -114,7 +117,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-thales" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-thales" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-thales">
 <div class="agent-intro">
 <h2>泰勒斯：西方"科学之父"与第一位数学家</h2>
 <div class="fig-head">
@@ -123,7 +126,7 @@ math: true
 <tr><td><strong>身份</strong></td><td>数学家、天文学家、哲学家，"希腊七贤"之首</td></tr>
 <tr><td><strong>主要领域</strong></td><td>几何学、天文学、自然哲学</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/thales.png" alt="泰勒斯" loading="lazy"><figcaption>泰勒斯</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/thales.webp" width="302" height="460" alt="泰勒斯" loading="lazy"><figcaption>泰勒斯</figcaption></figure>
 </div>
 
 <h3>一、从"测量术"到"证明术"</h3>
@@ -134,7 +137,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-zuchongzhi" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-zuchongzhi" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-zuchongzhi">
 <div class="agent-intro">
 <h2>祖冲之：把圆周率推向世界之巅的人</h2>
 <div class="fig-head">
@@ -144,7 +147,7 @@ math: true
 <tr><td><strong>身份</strong></td><td>数学家、天文学家、机械发明家</td></tr>
 <tr><td><strong>代表成就</strong></td><td>圆周率精确到小数点后7位；《大明历》</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/zuchongzhi.jpg" alt="祖冲之" loading="lazy"><figcaption>祖冲之</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/zuchongzhi.webp" width="360" height="202" alt="祖冲之" loading="lazy"><figcaption>祖冲之</figcaption></figure>
 </div>
 
 <h3>一、圆周率：3.1415926 &lt; π &lt; 3.1415927</h3>
@@ -158,7 +161,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-archimedes" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-archimedes" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-archimedes">
 <div class="agent-intro">
 <h2>阿基米德：古代最伟大的数学家</h2>
 <div class="fig-head">
@@ -167,7 +170,7 @@ math: true
 <tr><td><strong>身份</strong></td><td>数学家、物理学家、发明家、工程师</td></tr>
 <tr><td><strong>主要领域</strong></td><td>几何学（穷竭法）、力学、流体静力学、数理天文</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/archimedes.jpg" alt="阿基米德" loading="lazy"><figcaption>阿基米德</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/archimedes.webp" width="347" height="460" alt="阿基米德" loading="lazy"><figcaption>阿基米德</figcaption></figure>
 </div>
 
 <h3>一、几何学：直逼微积分的穷竭法</h3>
@@ -181,7 +184,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-apollonius" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-apollonius" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-apollonius">
 <div class="agent-intro">
 <h2>阿波罗尼奥斯：圆锥曲线之父</h2>
 <div class="fig-head">
@@ -191,7 +194,7 @@ math: true
 <tr><td><strong>身份</strong></td><td>数学家、天文学家，被称为"大几何学家"</td></tr>
 <tr><td><strong>代表作</strong></td><td>《圆锥曲线论》（Conics，8卷）</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/apollonius.jpg" alt="阿波罗尼奥斯" loading="lazy"><figcaption>阿波罗尼奥斯</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/apollonius.webp" width="360" height="373" alt="阿波罗尼奥斯" loading="lazy"><figcaption>阿波罗尼奥斯</figcaption></figure>
 </div>
 
 <h3>一、《圆锥曲线论》</h3>
@@ -202,7 +205,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-galois" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-galois" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-galois">
 <div class="agent-intro">
 <h2>伽罗瓦：20岁陨落、照亮整个数学的流星</h2>
 <div class="fig-head">
@@ -211,7 +214,7 @@ math: true
 <tr><td><strong>生卒</strong></td><td>1811—1832（仅20岁）</td></tr>
 <tr><td><strong>主要成就</strong></td><td>创立群论与伽罗瓦理论；判定方程根式可解的条件</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/galois.jpg" alt="伽罗瓦" loading="lazy"><figcaption>伽罗瓦</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/galois.webp" width="324" height="460" alt="伽罗瓦" loading="lazy"><figcaption>伽罗瓦</figcaption></figure>
 </div>
 
 <h3>一、生平：落榜、入狱与决斗</h3>
@@ -225,7 +228,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-lagrange" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-lagrange" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-lagrange">
 <div class="agent-intro">
 <h2>拉格朗日：为数学注入"力学之美"</h2>
 <div class="fig-head">
@@ -234,7 +237,7 @@ math: true
 <tr><td><strong>生卒</strong></td><td>1736—1813</td></tr>
 <tr><td><strong>代表作</strong></td><td>《分析力学》（1788）</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/lagrange.jpg" alt="拉格朗日" loading="lazy"><figcaption>拉格朗日</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/lagrange.webp" width="360" height="362" alt="拉格朗日" loading="lazy"><figcaption>拉格朗日</figcaption></figure>
 </div>
 
 <h3>一、《分析力学》：一部"没有图"的力学圣经</h3>
@@ -248,7 +251,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-cauchy" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-cauchy" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-cauchy">
 <div class="agent-intro">
 <h2>柯西：让数学重新"严谨"起来</h2>
 <div class="fig-head">
@@ -257,7 +260,7 @@ math: true
 <tr><td><strong>生卒</strong></td><td>1789—1857</td></tr>
 <tr><td><strong>主要成就</strong></td><td>极限与连续的严格定义；柯西积分定理与积分公式</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/cauchy.jpg" alt="柯西" loading="lazy"><figcaption>柯西</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/cauchy.webp" width="332" height="460" alt="柯西" loading="lazy"><figcaption>柯西</figcaption></figure>
 </div>
 
 <h3>一、分析学的严格化</h3>
@@ -271,7 +274,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-euler" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-euler" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-euler">
 <div class="agent-intro">
 <h2>欧拉：历史上最多产的数学家</h2>
 <div class="fig-head">
@@ -280,7 +283,7 @@ math: true
 <tr><td><strong>生卒</strong></td><td>1707—1783</td></tr>
 <tr><td><strong>主要成就</strong></td><td>e^{iπ}+1=0；哥尼斯堡七桥问题；欧拉函数</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/euler.jpg" alt="欧拉" loading="lazy"><figcaption>欧拉</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/euler.webp" width="356" height="460" alt="欧拉" loading="lazy"><figcaption>欧拉</figcaption></figure>
 </div>
 
 <h3>一、创立分析学的通用语言</h3>
@@ -294,7 +297,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-newton" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-newton" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-newton">
 <div class="agent-intro">
 <h2>牛顿：站在巨人肩膀上的科学巨人</h2>
 <div class="fig-head">
@@ -303,7 +306,7 @@ math: true
 <tr><td><strong>生卒</strong></td><td>1643—1727</td></tr>
 <tr><td><strong>代表作</strong></td><td>《自然哲学的数学原理》（1687）</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/newton.jpg" alt="牛顿" loading="lazy"><figcaption>牛顿</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/newton.webp" width="327" height="460" alt="牛顿" loading="lazy"><figcaption>牛顿</figcaption></figure>
 </div>
 
 <h3>一、微积分（流数术）</h3>
@@ -317,7 +320,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-descartes" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-descartes" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-descartes">
 <div class="agent-intro">
 <h2>笛卡尔：坐标系与"我思故我在"</h2>
 <div class="fig-head">
@@ -326,7 +329,7 @@ math: true
 <tr><td><strong>生卒</strong></td><td>1596—1650</td></tr>
 <tr><td><strong>代表作</strong></td><td>《几何学》（1637）、《方法论》</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/descartes.jpg" alt="笛卡尔" loading="lazy"><figcaption>笛卡尔</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/descartes.webp" width="360" height="440" alt="笛卡尔" loading="lazy"><figcaption>笛卡尔</figcaption></figure>
 </div>
 
 <h3>一、解析几何：代数与几何的联姻</h3>
@@ -337,7 +340,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-leibniz" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-leibniz" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-leibniz">
 <div class="agent-intro">
 <h2>莱布尼茨：微积分记号的发明者与"最后一位通才"</h2>
 <div class="fig-head">
@@ -346,7 +349,7 @@ math: true
 <tr><td><strong>生卒</strong></td><td>1646—1716</td></tr>
 <tr><td><strong>主要成就</strong></td><td>微积分（记号 dx、∫）；二进制；数理逻辑先行者</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/leibniz.jpg" alt="莱布尼茨" loading="lazy"><figcaption>莱布尼茨</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/leibniz.webp" width="360" height="445" alt="莱布尼茨" loading="lazy"><figcaption>莱布尼茨</figcaption></figure>
 </div>
 
 <h3>一、微积分：更好的记号赢得世界</h3>
@@ -360,7 +363,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-fermat" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-fermat" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-fermat">
 <div class="agent-intro">
 <h2>费马：业余数学家之王</h2>
 <div class="fig-head">
@@ -369,7 +372,7 @@ math: true
 <tr><td><strong>生卒</strong></td><td>1601—1665</td></tr>
 <tr><td><strong>职业</strong></td><td>图卢兹议会的法律顾问（真正的"业余选手"）</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/fermat.jpg" alt="费马" loading="lazy"><figcaption>费马</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/fermat.webp" width="360" height="445" alt="费马" loading="lazy"><figcaption>费马</figcaption></figure>
 </div>
 
 <h3>一、费马大定理：358年的挑战</h3>
@@ -383,7 +386,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-abel" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-abel" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-abel">
 <div class="agent-intro">
 <h2>阿贝尔：闪耀五年便陨落的挪威天才</h2>
 <div class="fig-head">
@@ -392,7 +395,7 @@ math: true
 <tr><td><strong>生卒</strong></td><td>1802—1829（仅26岁）</td></tr>
 <tr><td><strong>主要成就</strong></td><td>五次方程无一般根式解；椭圆函数论；阿贝尔群</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/abel.jpg" alt="阿贝尔" loading="lazy"><figcaption>阿贝尔</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/abel.webp" width="360" height="438" alt="阿贝尔" loading="lazy"><figcaption>阿贝尔</figcaption></figure>
 </div>
 
 <h3>一、五次方程无一般根式解</h3>
@@ -406,7 +409,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-gauss" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-gauss" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-gauss">
 <div class="agent-intro">
 <h2>高斯：数学王子</h2>
 <div class="fig-head">
@@ -415,7 +418,7 @@ math: true
 <tr><td><strong>生卒</strong></td><td>1777—1855</td></tr>
 <tr><td><strong>代表作</strong></td><td>《算术研究》（1801）</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/gauss.jpg" alt="高斯" loading="lazy"><figcaption>高斯</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/gauss.webp" width="357" height="460" alt="高斯" loading="lazy"><figcaption>高斯</figcaption></figure>
 </div>
 
 <h3>一、19岁：正十七边形尺规作图</h3>
@@ -429,7 +432,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-riemann" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-riemann" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-riemann">
 <div class="agent-intro">
 <h2>黎曼：给爱因斯坦预备了几何的短命天才</h2>
 <div class="fig-head">
@@ -438,7 +441,7 @@ math: true
 <tr><td><strong>生卒</strong></td><td>1826—1866（仅39岁）</td></tr>
 <tr><td><strong>主要成就</strong></td><td>黎曼几何；黎曼猜想；黎曼面；黎曼积分</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/riemann.jpg" alt="黎曼" loading="lazy"><figcaption>黎曼</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/riemann.webp" width="360" height="393" alt="黎曼" loading="lazy"><figcaption>黎曼</figcaption></figure>
 </div>
 
 <h3>一、黎曼几何：弯曲空间的数学</h3>
@@ -452,7 +455,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-yau" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-yau" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-yau">
 <div class="agent-intro">
 <h2>丘成桐：几何分析的建筑大师</h2>
 <div class="fig-head">
@@ -461,7 +464,7 @@ math: true
 <tr><td><strong>身份</strong></td><td>清华大学讲席教授，哈佛大学荣休教授</td></tr>
 <tr><td><strong>主要荣誉</strong></td><td>菲尔兹奖（1982）、沃尔夫奖（2010）、克拉福德奖（1994）</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/yau.jpg" alt="丘成桐" loading="lazy"><figcaption>丘成桐</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/yau.webp" width="360" height="360" alt="丘成桐" loading="lazy"><figcaption>丘成桐</figcaption></figure>
 </div>
 
 <h3>一、卡拉比猜想与"卡拉比—丘流形"</h3>
@@ -475,7 +478,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-godel" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-godel" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-godel">
 <div class="agent-intro">
 <h2>哥德尔：用不完备定理震惊数学与哲学的人</h2>
 <div class="fig-head">
@@ -484,7 +487,7 @@ math: true
 <tr><td><strong>生卒</strong></td><td>1906—1978</td></tr>
 <tr><td><strong>主要成就</strong></td><td>不完备性定理（1931）；完备性定理；选择公理相对相容性</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/godel.jpg" alt="哥德尔" loading="lazy"><figcaption>哥德尔</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/godel.webp" width="347" height="460" alt="哥德尔" loading="lazy"><figcaption>哥德尔</figcaption></figure>
 </div>
 
 <h3>一、不完备性定理：数学的"边界公告"</h3>
@@ -498,7 +501,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-turing" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-turing" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-turing">
 <div class="agent-intro">
 <h2>图灵：计算机科学与人工智能之父</h2>
 <div class="fig-head">
@@ -507,7 +510,7 @@ math: true
 <tr><td><strong>生卒</strong></td><td>1912—1954</td></tr>
 <tr><td><strong>主要成就</strong></td><td>图灵机（1936）；破译 Enigma 密码；图灵测试；形态发生理论</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/turing.jpg" alt="图灵" loading="lazy"><figcaption>图灵</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/turing.webp" width="345" height="460" alt="图灵" loading="lazy"><figcaption>图灵</figcaption></figure>
 </div>
 
 <h3>一、图灵机：定义了"什么是计算"</h3>
@@ -521,7 +524,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-hilbert" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-hilbert" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-hilbert">
 <div class="agent-intro">
 <h2>希尔伯特：数学的"总司令"与23个问题</h2>
 <div class="fig-head">
@@ -530,7 +533,7 @@ math: true
 <tr><td><strong>生卒</strong></td><td>1862—1943</td></tr>
 <tr><td><strong>代表成就</strong></td><td>1900年提出23个数学问题；希尔伯特空间；几何基础公理化</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/hilbert.jpg" alt="希尔伯特" loading="lazy"><figcaption>希尔伯特</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/hilbert.webp" width="339" height="460" alt="希尔伯特" loading="lazy"><figcaption>希尔伯特</figcaption></figure>
 </div>
 
 <h3>一、1900年巴黎演讲：23个问题</h3>
@@ -544,7 +547,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-ramanujan" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-ramanujan" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-ramanujan">
 <div class="agent-intro">
 <h2>拉马努金：从马德拉斯账房里走出的"数学之仙"</h2>
 <div class="fig-head">
@@ -553,7 +556,7 @@ math: true
 <tr><td><strong>生卒</strong></td><td>1887—1920（仅32岁）</td></tr>
 <tr><td><strong>主要领域</strong></td><td>数论、无穷级数、连分数、分拆理论、θ函数</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/ramanujan.jpg" alt="拉马努金" loading="lazy"><figcaption>拉马努金</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/ramanujan.webp" width="353" height="460" alt="拉马努金" loading="lazy"><figcaption>拉马努金</figcaption></figure>
 </div>
 
 <h3>一、"那封信"：与哈迪的世纪相遇</h3>
@@ -567,7 +570,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-noether" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-noether" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-noether">
 <div class="agent-intro">
 <h2>埃米·诺特：抽象代数之母</h2>
 <div class="fig-head">
@@ -576,7 +579,7 @@ math: true
 <tr><td><strong>生卒</strong></td><td>1882—1935</td></tr>
 <tr><td><strong>主要成就</strong></td><td>诺特定理（对称性与守恒律）；环论与理想论；诺特环</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/noether.jpg" alt="诺特" loading="lazy"><figcaption>诺特</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/noether.webp" width="360" height="344" alt="诺特" loading="lazy"><figcaption>诺特</figcaption></figure>
 </div>
 
 <h3>一、诺特定理：对称性与守恒律一一对应</h3>
@@ -590,7 +593,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-tao" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-tao" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-tao">
 <div class="agent-intro">
 <h2>陶哲轩：当今世界最著名的"神童数学家"</h2>
 <div class="fig-head">
@@ -599,7 +602,7 @@ math: true
 <tr><td><strong>职位</strong></td><td>美国加州大学洛杉矶分校（UCLA）教授</td></tr>
 <tr><td><strong>主要领域</strong></td><td>调和分析、偏微分方程、组合数论、加法组合学</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/tao.jpg" alt="陶哲轩" loading="lazy"><figcaption>陶哲轩</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/tao.webp" width="345" height="460" alt="陶哲轩" loading="lazy"><figcaption>陶哲轩</figcaption></figure>
 </div>
 
 <h3>一、一路"跳级"的神童</h3>
@@ -613,7 +616,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathfigures-panel-hua" class="ai-tab-panel">
+<div id="ar-mathfigures-panel-hua" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-hua">
 <div class="agent-intro">
 <h2>华罗庚：从杂货店学徒到数学大师</h2>
 <div class="fig-head">
@@ -623,7 +626,7 @@ math: true
 <tr><td><strong>身份</strong></td><td>数学家、教育家，中国科学院院士</td></tr>
 <tr><td><strong>主要领域</strong></td><td>解析数论、典型群、矩阵几何学、多复变函数论、优选学与统筹学</td></tr>
 </table>
-<figure class="fig-photo"><img src="/images/mathematicians/hua.png" alt="华罗庚" loading="lazy"><figcaption>华罗庚</figcaption></figure>
+<figure class="fig-photo"><img src="/images/mathematicians/hua.webp" width="318" height="395" alt="华罗庚" loading="lazy"><figcaption>华罗庚</figcaption></figure>
 </div>
 
 <h3>一、逆境中的起点：自学成才的少年</h3>
@@ -657,15 +660,15 @@ math: true
 </div>
 </section>
 
-<section id="ar-section-problems" class="ar-section" hidden>
+<section id="ar-section-problems" class="ar-section" role="tabpanel" aria-labelledby="tab-ar-section-problems" hidden>
 <div class="ai-tabs">
-  <div class="ai-tab-btns">
-    <button type="button" class="ai-tab-btn tab-teal active" onclick="switchMathProblems('hilbert', this)">希尔伯特23问题</button>
-    <button type="button" class="ai-tab-btn tab-purple" onclick="switchMathProblems('millennium', this)">千禧年问题</button>
-    <button type="button" class="ai-tab-btn tab-blue" onclick="switchMathProblems('fourcolor', this)">四色定理</button>
+  <div class="ai-tab-btns" role="tablist">
+    <button type="button" class="ai-tab-btn tab-teal active" role="tab" id="tab-ar-mathproblems-panel-hilbert" aria-controls="ar-mathproblems-panel-hilbert" aria-selected="true" tabindex="0" onclick="switchMathProblems('hilbert', this)">希尔伯特23问题</button>
+    <button type="button" class="ai-tab-btn tab-purple" role="tab" id="tab-ar-mathproblems-panel-millennium" aria-controls="ar-mathproblems-panel-millennium" aria-selected="false" tabindex="-1" onclick="switchMathProblems('millennium', this)">千禧年问题</button>
+    <button type="button" class="ai-tab-btn tab-blue" role="tab" id="tab-ar-mathproblems-panel-fourcolor" aria-controls="ar-mathproblems-panel-fourcolor" aria-selected="false" tabindex="-1" onclick="switchMathProblems('fourcolor', this)">四色定理</button>
   </div>
 
-  <div id="ar-mathproblems-panel-hilbert" class="ai-tab-panel active">
+  <div id="ar-mathproblems-panel-hilbert" class="ai-tab-panel active" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathproblems-panel-hilbert">
 <h2>希尔伯特1900年23个问题</h2>
 
 <h3>问题1：连续统基数问题</h3>
@@ -750,7 +753,7 @@ math: true
 <p class="ar-ref"><span class="ar-ref-no">[7]</span> MathWorld: "Hilbert's Problems".</p>
   </div>
 
-  <div id="ar-mathproblems-panel-millennium" class="ai-tab-panel">
+  <div id="ar-mathproblems-panel-millennium" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathproblems-panel-millennium">
 <h2>千禧年大奖难题</h2>
 
 <p>千禧年大奖难题（Millennium Prize Problems）由克雷数学研究所（CMI）于<strong>2000年5月24日</strong>在巴黎宣布，共<strong>7题</strong>，每题悬赏<strong>100万美元</strong>。其精神类似于1900年希尔伯特的23个问题，但更聚焦于"已被长期研究、仍具核心困难"的少数问题。</p>
@@ -799,13 +802,13 @@ math: true
 <p class="ar-ref"><span class="ar-ref-no">[6]</span> Gross–Zagier（1986）；Kolyvagin（1989）；Skinner–Urban 等</p>
   </div>
 
-  <div id="ar-mathproblems-panel-fourcolor" class="ai-tab-panel">
+  <div id="ar-mathproblems-panel-fourcolor" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathproblems-panel-fourcolor">
 <h2>四色定理：一张地图引发的 153 年数学长征</h2>
 
 <h3>一、从一张地图说起</h3>
 <p>1852 年，英国人弗兰西斯·格思里（Francis Guthrie）在给一张英国地图涂色时注意到一件事：无论地图多么复杂，<strong>四种颜色好像总是够用</strong>——每个区域只需一种颜色，且任何两个接壤的区域不同色。他和弟弟弗雷德里克反复试画都找不到反例，于是写信请教伦敦大学的教授德·摩根（De Morgan）。这个问题从此进入数学史。</p>
 
-<p class="ar-image-wrap"><img src="/images/fig1_map.png" alt="四色地图示例"></p>
+<p class="ar-image-wrap"><img src="/images/fig1_map.webp" width="1200" height="959" alt="四色地图示例"></p>
 
 <h3>二、定理的准确表述</h3>
 <p>四色定理有两种标准的等价说法。</p>
@@ -818,20 +821,20 @@ math: true
 <p><strong>3. 对偶图（dual graph）。</strong>给地图的每个区域放一个顶点；两个区域接壤，就在对应顶点间连一条边。</p>
 <p><strong>4. 色数 χ(G)。</strong>给 G 的顶点正常着色（相邻顶点异色）所需的最少颜色数。</p>
 
-<p class="ar-image-wrap"><img src="/images/fig2_dual.png" alt="地图与对偶图"></p>
-<p class="ar-image-wrap"><img src="/images/fig3_k4k5.png" alt="K4 与 K5"></p>
+<p class="ar-image-wrap"><img src="/images/fig2_dual.webp" width="1200" height="465" alt="地图与对偶图"></p>
+<p class="ar-image-wrap"><img src="/images/fig3_k4k5.webp" width="1200" height="638" alt="K4 与 K5"></p>
 
 <h3>四、Kempe 链：一个站了 11 年的"证明"</h3>
 <p>1879 年，伦敦律师兼数学家肯普（A. B. Kempe）发表了一个看似无懈可击的证明。</p>
 
-<p class="ar-image-wrap"><img src="/images/fig4_kempe.png" alt="Kempe 链"></p>
+<p class="ar-image-wrap"><img src="/images/fig4_kempe.webp" width="1200" height="1103" alt="Kempe 链"></p>
 
 <p>1890 年，希伍德（P. Heawood）找出致命漏洞：<strong>两条 Kempe 链可以在别处相互缠绕</strong>，"红绿互换"这一步会波及另一条链的颜色，推理因此失效。</p>
 
 <h3>五、计算机登台：1976 年的革命</h3>
 <p>1976 年，伊利诺伊大学的阿佩尔（K. Appel）与哈肯（W. Haken）在科赫（J. Koch）协助下完成了这一纲领：他们构造了一个含 <strong>1936 个可约构形</strong>的不可避免集，计算机累计运行<strong>一千多个小时</strong>，逐一完成验证。四色定理终于成立。</p>
 
-<p class="ar-image-wrap"><img src="/images/fig5_timeline.png" alt="时间线"></p>
+<p class="ar-image-wrap"><img src="/images/fig5_timeline.webp" width="1200" height="568" alt="时间线"></p>
 
 <p>后续发展：</p>
 <ul>
@@ -855,17 +858,17 @@ math: true
 </div>
 </section>
 
-<section id="ar-section-popular" class="ar-section" hidden>
+<section id="ar-section-popular" class="ar-section" role="tabpanel" aria-labelledby="tab-ar-section-popular" hidden>
 <div class="ai-tabs">
-  <div class="ai-tab-btns">
-    <button type="button" class="ai-tab-btn tab-teal active" onclick="switchMathPopular('crisis1', this)">第一次数学危机</button>
-    <button type="button" class="ai-tab-btn tab-orange" onclick="switchMathPopular('crisis2', this)">第二次数学危机</button>
-    <button type="button" class="ai-tab-btn tab-purple" onclick="switchMathPopular('crisis3', this)">第三次数学危机</button>
-    <button type="button" class="ai-tab-btn tab-green" onclick="switchMathPopular('coastline', this)">英国海岸线有多长</button>
-    <button type="button" class="ai-tab-btn tab-yellow" onclick="switchMathPopular('prisoner', this)">从囚徒困境看博弈论</button>
+  <div class="ai-tab-btns" role="tablist">
+    <button type="button" class="ai-tab-btn tab-teal active" role="tab" id="tab-ar-mathpopular-panel-crisis1" aria-controls="ar-mathpopular-panel-crisis1" aria-selected="true" tabindex="0" onclick="switchMathPopular('crisis1', this)">第一次数学危机</button>
+    <button type="button" class="ai-tab-btn tab-orange" role="tab" id="tab-ar-mathpopular-panel-crisis2" aria-controls="ar-mathpopular-panel-crisis2" aria-selected="false" tabindex="-1" onclick="switchMathPopular('crisis2', this)">第二次数学危机</button>
+    <button type="button" class="ai-tab-btn tab-purple" role="tab" id="tab-ar-mathpopular-panel-crisis3" aria-controls="ar-mathpopular-panel-crisis3" aria-selected="false" tabindex="-1" onclick="switchMathPopular('crisis3', this)">第三次数学危机</button>
+    <button type="button" class="ai-tab-btn tab-green" role="tab" id="tab-ar-mathpopular-panel-coastline" aria-controls="ar-mathpopular-panel-coastline" aria-selected="false" tabindex="-1" onclick="switchMathPopular('coastline', this)">英国海岸线有多长</button>
+    <button type="button" class="ai-tab-btn tab-yellow" role="tab" id="tab-ar-mathpopular-panel-prisoner" aria-controls="ar-mathpopular-panel-prisoner" aria-selected="false" tabindex="-1" onclick="switchMathPopular('prisoner', this)">从囚徒困境看博弈论</button>
   </div>
 
-<div id="ar-mathpopular-panel-crisis1" class="ai-tab-panel active">
+<div id="ar-mathpopular-panel-crisis1" class="ai-tab-panel active" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathpopular-panel-crisis1">
 <div class="crisis-article">
 <h2 class="crisis-title">第一次数学危机：不可公度量的发现与解决</h2>
 <h3 class="crisis-h3">——从"万物皆数"的崩塌到实数理论的建成</h3>
@@ -985,7 +988,7 @@ math: true
 </ol>
 </div>
 </div>
-<div id="ar-mathpopular-panel-crisis2" class="ai-tab-panel">
+<div id="ar-mathpopular-panel-crisis2" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathpopular-panel-crisis2">
 <div class="crisis-article">
 <h2 class="crisis-title">第二次数学危机：无穷小量的合法性之争</h2>
 <h3 class="crisis-h3">——从"消失量的幽灵"到 ε-δ 语言的严格重建</h3>
@@ -1108,7 +1111,7 @@ math: true
 </ol>
 </div>
 </div>
-<div id="ar-mathpopular-panel-crisis3" class="ai-tab-panel">
+<div id="ar-mathpopular-panel-crisis3" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathpopular-panel-crisis3">
 <div class="crisis-article">
 <h2 class="crisis-title">第三次数学危机：集合论悖论与确定性的边界</h2>
 <h3 class="crisis-h3">——从罗素悖论到哥德尔不完备定理</h3>
@@ -1283,7 +1286,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathpopular-panel-coastline" class="ai-tab-panel">
+<div id="ar-mathpopular-panel-coastline" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathpopular-panel-coastline">
 <div class="crisis-article">
 <h2 class="crisis-title">英国海岸线有多长？</h2>
 <h3 class="crisis-h3">——从测量悖论到分形几何</h3>
@@ -1306,12 +1309,12 @@ math: true
 <p>理查森用数据把这一现象总结成简洁的幂律：$\log L$ 与 $\log \varepsilon$ 大致落在一条直线上，即</p>
 <p class="crisis-math">$$L(\varepsilon) = C \cdot \varepsilon^{1-D}$$</p>
 <p>其中 $D$ 是刻画海岸线粗糙程度的正数。在双对数坐标下，这条直线的斜率恰为 $1-D$（见图1）。如果海岸线像圆一样光滑，$D$ 会趋近 1，长度收敛；而对真实海岸线，$D$ 明显大于 1，此时让 ε 无限缩小，$L$ 将趋于无穷。<strong>"海岸线无限长"并非夸张修辞，而是幂律结构在数学上的必然结论。</strong></p>
-<figure class="crisis-figure"><img src="/images/fractal/coastline-fig1.png" alt="海岸线长度随测量尺度变化的示意图（双对数坐标）" loading="lazy"><figcaption>图1　海岸线长度随测量尺度变化的示意图（双对数坐标；直线斜率为 1−D，D 为分形维数）</figcaption></figure>
+<figure class="crisis-figure"><img src="/images/fractal/coastline-fig1.webp" width="1100" height="715" alt="海岸线长度随测量尺度变化的示意图（双对数坐标）" loading="lazy"><figcaption>图1　海岸线长度随测量尺度变化的示意图（双对数坐标；直线斜率为 1−D，D 为分形维数）</figcaption></figure>
 <hr class="crisis-hr">
 <h3 class="crisis-h3">三、分形：局部是整体的缩影</h3>
 <p>曼德博给这类形状起了名字：<strong>分形</strong>（fractal），词根取自拉丁语 <em>fractus</em>，意为"破碎、不规则"。分形的共同特征是<strong>自相似性</strong>——局部在统计意义上重复着整体的形态，并且这种相似跨越很宽的尺度范围。云的边缘、树枝的分叉、河流的支流网络，都具有类似性质。</p>
 <p>理解分形最经典的模型是<strong>科赫曲线</strong>（Koch curve）。从一条直线段开始，把中间三分之一"挖去"，向外隆起一个等边三角形；再对新生成的每一段重复同样操作（见图2）。每迭代一次，曲线总长变为原来的 $4/3$ 倍；迭代无穷多次后，这条曲线在任意小的范围内都无限曲折，总长趋于无穷大，却被限制在有限的区域里——一条"无限长的线"可以围出"有限的面积"，这正是经典几何语言失效的地方。</p>
-<figure class="crisis-figure"><img src="/images/fractal/coastline-fig2.png" alt="科赫曲线的迭代构造" loading="lazy"><figcaption>图2　科赫曲线的迭代构造：每一步长度增加为原来的 4/3 倍，最终长度趋于无穷</figcaption></figure>
+<figure class="crisis-figure"><img src="/images/fractal/coastline-fig2.webp" width="1100" height="209" alt="科赫曲线的迭代构造" loading="lazy"><figcaption>图2　科赫曲线的迭代构造：每一步长度增加为原来的 4/3 倍，最终长度趋于无穷</figcaption></figure>
 <p>如何刻画这类"比线更复杂、又不足以填满一个面"的对象？曼德博引入了<strong>分形维数</strong>。设想把一个图形分成 $N$ 个与整体相似的小副本，每个副本按比例 $1/r$ 缩小，则维数定义为：</p>
 <p class="crisis-math">$$D = \frac{\ln N}{\ln(1/r)}$$</p>
 <p>对普通线段：可分成 $N=2$ 段，每段为原来的 $1/2$，$D=\ln 2/\ln 2=1$；对正方形：$N=4$、$r=1/2$，$D=\ln 4/\ln 2=2$。而对科赫曲线：整体放大 $3$ 倍后，其中的任何一段自身都由 $4$ 个小副本拼成，故其维数为</p>
@@ -1370,7 +1373,7 @@ math: true
 </div>
 </div>
 
-<div id="ar-mathpopular-panel-prisoner" class="ai-tab-panel">
+<div id="ar-mathpopular-panel-prisoner" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathpopular-panel-prisoner">
 <div class="crisis-article">
 <h2 class="crisis-title">从囚徒困境看博弈论：生活中的策略智慧</h2>
 <h3 class="crisis-h3">——当最优选择取决于别人的选择</h3>
@@ -1511,14 +1514,15 @@ math: true
 </div>
 </section>
 
-<section id="ar-section-anecdotes" class="ar-section" hidden>
+<section id="ar-section-anecdotes" class="ar-section" role="tabpanel" aria-labelledby="tab-ar-section-anecdotes" hidden>
 <div class="ai-tabs">
-  <div class="ai-tab-btns">
-    <button type="button" class="ai-tab-btn tab-teal active" onclick="switchMathAnecdotes('calculus', this)">微积分发明权之争</button>
-    <button type="button" class="ai-tab-btn tab-orange" onclick="switchMathAnecdotes('poincare', this)">庞加莱猜想百年恩怨</button>
+  <div class="ai-tab-btns" role="tablist">
+    <button type="button" class="ai-tab-btn tab-teal active" role="tab" id="tab-ar-mathanecdotes-panel-calculus" aria-controls="ar-mathanecdotes-panel-calculus" aria-selected="true" tabindex="0" onclick="switchMathAnecdotes('calculus', this)">微积分发明权之争</button>
+    <button type="button" class="ai-tab-btn tab-orange" role="tab" id="tab-ar-mathanecdotes-panel-poincare" aria-controls="ar-mathanecdotes-panel-poincare" aria-selected="false" tabindex="-1" onclick="switchMathAnecdotes('poincare', this)">庞加莱猜想百年恩怨</button>
+    <button type="button" class="ai-tab-btn tab-red" role="tab" id="tab-ar-mathanecdotes-panel-galois" aria-controls="ar-mathanecdotes-panel-galois" aria-selected="false" tabindex="-1" onclick="switchMathAnecdotes('galois', this)">伽罗瓦决斗</button>
   </div>
 
-  <div id="ar-mathanecdotes-panel-calculus" class="ai-tab-panel active">
+  <div id="ar-mathanecdotes-panel-calculus" class="ai-tab-panel active" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathanecdotes-panel-calculus">
 <div class="crisis-article">
 <h2 class="crisis-title">微积分发明权之争：一场持续百年的“世纪骂战”</h2>
 <h3 class="crisis-h3">一封信引发的风波</h3>
@@ -1560,7 +1564,7 @@ math: true
 <p>两颗最聪明的大脑，为了一块本可以共享的丰碑，耗尽了余生最好的友谊。而微积分本身毫发无损——它只是安静地躺在 dx 和 ẋ 的记号里，等着全人类来用它。</p>
 </div>
 </div>
-<div id="ar-mathanecdotes-panel-poincare" class="ai-tab-panel">
+<div id="ar-mathanecdotes-panel-poincare" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathanecdotes-panel-poincare">
 <div class="crisis-article">
 <h2 class="crisis-title">庞加莱猜想百年恩怨</h2>
 <h3 class="crisis-h3">——流形宿命与数学江湖的野闻录</h3>
@@ -1619,6 +1623,9 @@ math: true
 <p>这场百年恩怨里没有真正的输家——数学赢了。至于面子、奖金、封顶与脚注，都不过是流形上的一个同伦，最终都缩回到一个点。</p>
 <p>野史到此为止。正史在书架上，但江湖的传闻永远比正史热闹。</p>
 </div>
+</div>
+<div id="ar-mathanecdotes-panel-galois" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathanecdotes-panel-galois">
+
 </div>
 
 </div>

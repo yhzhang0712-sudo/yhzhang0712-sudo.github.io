@@ -5,7 +5,10 @@
     {{- end }}
 {{- end -}}
 
-{{- /* 同时索引嵌套 section 页面(如 AI与数学、数学文化、代数表示论) */ -}}
+{{- /* 同时索引嵌套 section 页面(如 AI与数学、数学文化、代数表示论)。
+       2026-09-28：section 页支持 front matter searchText 覆盖 .Plain ——
+       代数表示论的 .Plain 经 shortcode 内联了全部 27 个面板正文（95KB），
+       而面板已有独立条目，全量收录造成重复与搜索噪音，故用精简 searchText 替代。 */ -}}
 {{- range site.Pages -}}
     {{- if and (eq .Kind "section") (not .Parent.IsHome) (not .Params.searchHidden) }}
     {{- /* AI与数学 专题在首页圆盘显示为 "AI",搜索结果标题保持一致 */ -}}
@@ -13,7 +16,9 @@
     {{- if eq .Title "AI 与数学" }}
         {{- $sectionTitle = "AI" -}}
     {{- end -}}
-    {{- $.Scratch.Add "index" (dict "title" $sectionTitle "content" .Plain "permalink" .Permalink "summary" .Summary) -}}
+    {{- $sectionContent := .Plain -}}
+    {{- with .Params.searchText }}{{ $sectionContent = . }}{{- end -}}
+    {{- $.Scratch.Add "index" (dict "title" $sectionTitle "content" $sectionContent "permalink" .Permalink "summary" .Summary) -}}
     {{- end }}
 {{- end -}}
 

@@ -1,16 +1,17 @@
 ---
 title: "wakamatsu"
 headless: true
+date: 2026-09-06
 ---
 <h3 class="ar-subhead">猜想陈述</h3>
-<p>设 $A$ 为 Artin 代数，$T$ 为 <strong>Wakamatsu tilting 模</strong>，即满足：
+<p>设 $A$ 为 Artin 代数，$T$ 为 <strong>Wakamatsu tilting 模</strong>，即满足：</p>
 <ul>
   <li>(W1) $T\in\operatorname{mod}A$；</li>
   <li>(W2) $\operatorname{Ext}^{i}_{A}(T,T)=0$ 对所有 $i>0$（$T$ self-orthogonal）；</li>
   <li>(W3) 存在正合列
 $$ 0\to A\to T_0\to T_1\to T_2\to\cdots ,\qquad T_i\in\operatorname{add}T , $$
 </li>
-</ul></p>
+</ul>
 <p>且对每个 $i\ge 0$，像 $\operatorname{Im}f_i\in{}^{\perp}T=\{X:\operatorname{Ext}^{1}_{A}(X,T)=0\}$。
 
 <strong>Wakamatsu tilting 猜想</strong>（WTC，Beligiannis-Reiten，2003）：若 $\operatorname{pd}_{A}T<\infty$，则 $T$ 是 classical tilting 模。</p>
@@ -29,14 +30,13 @@ $$ 0\to A\to T_0\to T_1\to T_2\to\cdots ,\qquad T_i\in\operatorname{add}T , $$
 </ul>
 
 <h3 class="ar-subhead">前沿成果</h3>
-<p><strong>WTC 在以下代数类上成立：</strong>
+<p><strong>WTC 在以下代数类上成立：</strong></p>
 <ul>
   <li>Gorenstein Artin 代数（Mantese–Reiten）；</li>
   <li>表示有限代数；</li>
   <li>left Artinian local 环与有限群群环 $R[G]$（Divaani-Aazar–Fallah–Tousi 2024）；</li>
   <li>$\operatorname{repdim}\le 3$ 的 Artin 代数及其自同态代数（Wei 2008）。</li>
 </ul>
-</p>
 
 <h3 class="ar-subhead">研究方法</h3>
 <p>Wakamatsu 倾斜模本质上是<b>半对偶化模</b>：$\operatorname{End}_R(T)\cong S$ 且 $T$ 自正交。所有已知证明共享同一策略——控制 <b>Ext 消没层次</b>或某个<b>维数不变量</b>，把「$\operatorname{pd}T<\infty$」这一信息向上传递为「$T$ 生成整个模范畴的有限余分解」。</p>

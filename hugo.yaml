@@ -2,6 +2,15 @@ baseURL: 'https://simplemath.top'
 locale: 'zh-CN'
 title: 'SimpleMath'
 theme: 'PaperMod'
+enableGitInfo: true
+
+# lastmod 优先取 git 提交日期（enableGitInfo 配合），用于面板「最后更新」展示
+frontmatter:
+  lastmod:
+    - ':git'
+    - 'lastmod'
+    - 'date'
+    - 'publishDate'
 
 markup:
   goldmark:
@@ -19,6 +28,10 @@ markup:
 params:
   env: production
   defaultTheme: auto
+  description: "SimpleMath：以代数表示论与同调代数为主的数学博客，兼有数学文化与 AI 与数学专题。"
+  assets:
+    theme_color: '#ffffff'
+    msapplication_TileColor: '#ffffff'
   disableThemeToggle: false
   ShowReadingTime: true
   ShowShareButtons: false

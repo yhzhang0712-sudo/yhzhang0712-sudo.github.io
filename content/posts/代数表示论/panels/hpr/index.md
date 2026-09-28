@@ -1,6 +1,7 @@
 ---
 title: "hpr"
 headless: true
+date: 2026-08-31
 ---
 <h3 class="ar-subhead">猜想陈述</h3>
 <p><strong>Happel–Preiser–Ringel 猜想（HPR）</strong>：表示有限代数上"子可加函数必有零点"的定理（代数闭域上的 Vinberg 定理）应对<strong>任意域</strong>（乃至一般 Artin 代数）成立。</p>

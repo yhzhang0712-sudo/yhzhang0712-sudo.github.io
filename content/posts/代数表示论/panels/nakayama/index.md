@@ -1,6 +1,7 @@
 ---
 title: "nakayama"
 headless: true
+date: 2026-09-06
 ---
 <h3 class="ar-subhead">猜想陈述</h3>
 <p><strong>经典 Nakayama 猜想</strong>（NC，1958）：若 Artin 代数 $\Lambda$ 的支配维数 $\operatorname{domdim}\Lambda=\infty$，则 $\Lambda$ 是自内射代数（拟 Frobenius 代数）。这里</p>
@@ -23,13 +24,13 @@ $$ \operatorname{Ext}_A^n(M,\, A) \;\neq\; 0. $$
   <li><span class="ar-year">2000s</span>Zhou–Zimmermann（2012）证明弱对称多项式增长代数满足 ARC；
   <p>Christensen–Holm 证明 Auslander 条件 (AC) 环满足 ARC。</p></li>
   <li><span class="ar-year">2002</span>Huneke–Leuschke 证明含 $\mathbb{Q}$ 的 excellent Cohen–Macaulay 正规域上的 complete intersection 局部环满足 ARC。</li>
-  <li><span class="ar-year">2020</span>Ariki–Iyama–Park 指出 Pogorzaly 对 self-injective special biserial 代数的证明部分有误，但稳定等价下 special biserial 时 ARC 成立；
+  <li><span class="ar-year">2020</span>Ariki–Iyama–Park 指出 Pogorzaly 对 self-injective special biserial 代数的证明部分有误，但稳定等价下 special biserial 时 ARC 成立；</li>
 
   <li><span class="ar-year">2022</span>陈-方-惠证明  Morita-Gorenstein algebras代数满足 Nakayama 猜想。</li>
   <li><span class="ar-year">2023</span>J. Algebra 623, 42–63（arXiv:2212.06467）证明 skew-gentle 代数满足 ARC。</li>
 </ul>
 
-<p><strong>NC / GNC / ARC 在以下代数类上成立：</strong>
+<p><strong>NC / GNC / ARC 在以下代数类上成立：</strong></p>
 <ul>
     <li>有限表示型代数</li>
     <li>$J^2=0$ 代数</li>
@@ -40,7 +41,6 @@ $$ \operatorname{Ext}_A^n(M,\, A) \;\neq\; 0. $$
     <li>skew-gentle 代数</li>
     <li>Morita-Gorenstein algebras代数。</li>
 </ul>
-</p>
 
 <h3 class="ar-subhead">研究方法</h3>
 <p><strong>总体战略</strong>：中山猜想族由一条蕴含链串起——</p>

@@ -1,6 +1,7 @@
 ---
 title: "derivedsimple"
 headless: true
+date: 2026-08-31
 ---
 <h3 class="ar-subhead">问题陈述</h3>
 <p><strong>导出单性问题（Derived simplicity）</strong>：有限维连通对称代数的有界导出范畴是否是"导出单"的？</p>

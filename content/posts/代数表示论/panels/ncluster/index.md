@@ -1,6 +1,7 @@
 ---
 title: "ncluster"
 headless: true
+date: 2026-08-31
 ---
 <h3 class="ar-subhead">问题陈述</h3>
 <p><strong>高维 Auslander–Reiten 理论：$n$-cluster tilting 子范畴的存在性</strong>（Iyama 提出）：给定 Artin 代数 $\Lambda$，是否存在某 $n$ 与函子有限、双向极大的 $n$-cluster tilting 子范畴 $\mathcal{C}\subseteq\operatorname{mod}\Lambda$（或把 $\Lambda$ "嵌入"一个 higher Auslander 代数）？</p>

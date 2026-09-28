@@ -1,6 +1,7 @@
 ---
 title: "garc"
 headless: true
+date: 2026-08-31
 ---
 <h3 class="ar-subhead">问题陈述</h3>
 <p><strong>交换 Noetherian 局部环上的 Auslander–Reiten 条件（GARC）</strong>：设 $R$ 为交换 Noetherian（局部）环，$M$ 为有限生成 $R$-模。$\operatorname{Ext}^{i}_{R}(M,M)=0\ (i\gg 0)$ 是否蕴含 $M$ 有有限投射维数？</p>
