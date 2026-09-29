@@ -126,13 +126,13 @@ $$\mathscr{C}_{(Q,W)}:=\mathrm{per}(\Gamma)\big/\mathbf{D}_{\mathrm{fd}}(\Gamma)
 <h4 id="ar-ct-2-2">2.2　丛丛对应定理</h4>
 <p><strong>定理 2.2（BMRRT；Caldero–Chapoton–Schiffler 对 $A_{n}$ 型的独立几何版本）</strong>：<strong>设</strong> $Q$ 为有限无环箭图，$\mathscr{A}_{Q}$ 为相应的无环丛代数（取标准初始丛）。<strong>则</strong>丛特征标 $X_{?}$ 诱导双射</p>
 $$\{\mathscr{C}_{Q}\ \text{中不可分解刚性对象的同构类}\}\ \xrightarrow{\ \sim\ }\ \{\mathscr{A}_{Q}\ \text{的丛变量}\},$$
-<p>并且在此双射下，<strong>丛</strong>恰好对应<strong>丛倾斜子集</strong>（即两两满足 $\mathrm{Ext}^{1}_{\mathscr{C}}=0$ 的刚性不可分解对象组）。此外若 $\mathrm{Ext}^{1}_{\mathscr{C}}(L,M)$ 一维，则 1.3 的两个交换三角给出广义交换关系 $X_{L}X_{M}=X_{B}+X_{B\'}$。</p>
+<p>并且在此双射下，<strong>丛</strong>恰好对应<strong>丛倾斜子集</strong>（即两两满足 $\mathrm{Ext}^{1}_{\mathscr{C}}=0$ 的刚性不可分解对象组）。此外若 $\mathrm{Ext}^{1}_{\mathscr{C}}(L,M)$ 一维，则 1.3 的两个交换三角给出广义交换关系 $X_{L}X_{M}=X_{B}+X_{B'}$。</p>
 <p><strong>边界</strong>：该定理依赖 $Q$ 无环（从而 $\mathscr{A}_{Q}$ 为<em>无环</em>丛代数，且丛范畴由 $\mathbf{D}^{b}(H)$ 直接构造）。带势 / 非无环情形需换成 Amiot 的广义丛范畴（定理 2.4）与相应的丛特征标，且“丛变量 ↔ 刚性对象”的对应需要额外假设。</p>
 
 <h4 id="ar-ct-2-3">2.3　突变与交换三角</h4>
 <p><strong>定理 2.3（Iyama–Yoshino 型突变）</strong>：<strong>设</strong> $\mathscr{C}$ 为 Hom-有限 Krull–Schmidt 2-CY 三角范畴，$T=T_{0}\oplus\bar{T}$ 为<em>基本</em>丛倾斜对象且 $T_{0}$ 不可分解。<strong>则</strong>存在（至同构唯一的）不可分解对象 $T_{0}^{*}\not\cong T_{0}$ 与两个交换三角</p>
-$$T_{0}\longrightarrow B\longrightarrow T_{0}^{*}\longrightarrow T_{0}[1],\qquad T_{0}^{*}\longrightarrow B\'\longrightarrow T_{0}\longrightarrow T_{0}^{*}[1],$$
-<p>其中 $B,B\'\in\mathrm{add}(\bar{T})$，且 $T_{0}^{*}\oplus\bar{T}$ 仍为丛倾斜对象。该操作称为丛倾斜对象的<strong>突变</strong>。</p>
+$$T_{0}\longrightarrow B\longrightarrow T_{0}^{*}\longrightarrow T_{0}[1],\qquad T_{0}^{*}\longrightarrow B'\longrightarrow T_{0}\longrightarrow T_{0}^{*}[1],$$
+<p>其中 $B,B'\in\mathrm{add}(\bar{T})$，且 $T_{0}^{*}\oplus\bar{T}$ 仍为丛倾斜对象。该操作称为丛倾斜对象的<strong>突变</strong>。</p>
 <p><strong>三层翻译</strong>：在范畴侧是“替换一个直和因子”；在丛倾斜代数 $A=\mathrm{End}_{\mathscr{C}}(T)^{\mathrm{op}}$ 侧对应 tilting 模的突变；在丛代数侧对应丛的突变（2.2 的双射把三者等同）。Iyama–Yoshino 的原始动机是<em>刚性 Cohen–Macaulay 模</em>，其突变理论是当代 2-CY 范畴学的标准工具。</p>
 
 <h4 id="ar-ct-2-4">2.4　Amiot 定理</h4>

@@ -1350,3 +1350,177 @@ a.ar-sec-btn[href^="http"]::after {
     margin: 0 0 0.4rem;
     font-variant-numeric: tabular-nums;
 }
+
+/* ═══ 基础理论面板：教学化呈现组件（直观盒 / 证明卡 / 步骤流 / 交换图 / 例盒） ═══
+   2026-09-29：为「基础理论」六个面向低年级研究生的面板而设。
+   设计原则：证明只给"逻辑骨架"，用图示（可交换图 / 步骤流）呈现推理走向，
+   不展开技术细节；配色沿用全站 CSS 变量，深色模式由 [data-theme="dark"] 覆盖。 */
+
+/* 直观 / 动机盒：回答"为什么要引入这个概念"（左色条 + 浅底） */
+.md-content .ar-intu {
+    margin: 0.9rem 0;
+    padding: 0.75rem 1rem 0.6rem;
+    border-left: 4px solid #0E7490;
+    border-radius: 0 8px 8px 0;
+    background: #ECFEFF;
+    color: #155E75;
+    font-size: 0.95rem;
+    line-height: 1.75;
+}
+[data-theme="dark"] .md-content .ar-intu {
+    background: rgba(34, 211, 238, 0.09);
+    color: #A5F3FC;
+    border-left-color: #22D3EE;
+}
+.md-content .ar-intu p { margin: 0.35rem 0; }
+.md-content .ar-intu b { color: #0E7490; }
+[data-theme="dark"] .md-content .ar-intu b { color: #67E8F9; }
+
+/* 例子盒：可手算的小例子 */
+.md-content .ar-ex {
+    margin: 1rem 0;
+    padding: 0.75rem 1rem 0.6rem;
+    border: 1px dashed #94A3B8;
+    border-radius: 8px;
+    background: var(--code-bg);
+}
+.md-content .ar-ex > .ar-ex-hd {
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    color: #B45309;
+    margin-bottom: 0.35rem;
+}
+[data-theme="dark"] .md-content .ar-ex > .ar-ex-hd { color: #FBBF24; }
+.md-content .ar-ex p { margin: 0.4rem 0; font-size: 0.95rem; line-height: 1.75; }
+.md-content .ar-ex p:last-child { margin-bottom: 0; }
+
+/* 证明卡：逻辑骨架容器 */
+.md-content .ar-proof {
+    margin: 1rem 0 1.2rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--code-bg);
+    padding: 0.7rem 0.9rem 0.8rem;
+}
+.md-content .ar-proof-hd {
+    font-size: 0.84rem;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    color: #6D28D9;
+    margin-bottom: 0.55rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.45rem;
+}
+[data-theme="dark"] .md-content .ar-proof-hd { color: #C4B5FD; }
+.md-content .ar-proof-hd .ar-proof-tag {
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.1rem 0.45rem;
+    border-radius: 999px;
+    background: #EDE9FE;
+    color: #6D28D9;
+}
+[data-theme="dark"] .md-content .ar-proof-hd .ar-proof-tag {
+    background: rgba(167, 139, 250, 0.18);
+    color: #DDD6FE;
+}
+
+/* 步骤流：横向卡片 + 箭头，窄屏自动换行 */
+.md-content .ar-pf {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 0.4rem;
+}
+.md-content .ar-pf-step {
+    flex: 1 1 150px;
+    min-width: 140px;
+    padding: 0.5rem 0.65rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--entry);
+    font-size: 0.9rem;
+    line-height: 1.65;
+}
+.md-content .ar-pf-step .ar-pf-n {
+    display: inline-block;
+    min-width: 1.35rem;
+    height: 1.35rem;
+    line-height: 1.35rem;
+    text-align: center;
+    border-radius: 50%;
+    background: #6D28D9;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 800;
+    margin-right: 0.35rem;
+}
+[data-theme="dark"] .md-content .ar-pf-step .ar-pf-n { background: #8B5CF6; }
+.md-content .ar-pf-step b { color: var(--primary); }
+.md-content .ar-pf-ar {
+    flex: 0 0 auto;
+    align-self: center;
+    color: #6D28D9;
+    font-weight: 800;
+    font-size: 1rem;
+}
+[data-theme="dark"] .md-content .ar-pf-ar { color: #A78BFA; }
+
+/* 证明的"一句话关键"：收束整个骨架 */
+.md-content .ar-pf-key {
+    margin: 0.6rem 0 0;
+    padding: 0.5rem 0.7rem;
+    border-left: 3px solid #6D28D9;
+    background: #F5F3FF;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #4C1D95;
+}
+[data-theme="dark"] .md-content .ar-pf-key {
+    background: rgba(139, 92, 246, 0.1);
+    color: #DDD6FE;
+    border-left-color: #A78BFA;
+}
+.md-content .ar-pf-key b { color: #6D28D9; }
+[data-theme="dark"] .md-content .ar-pf-key b { color: #C4B5FD; }
+
+/* 可交换图 / 示意图：内联 SVG，用 currentColor 自动适配深浅色 */
+.md-content .ar-cd {
+    margin: 0.9rem 0 1.1rem;
+    text-align: center;
+}
+.md-content .ar-cd svg {
+    max-width: 100%;
+    height: auto;
+    color: var(--content);
+    display: block;
+    margin: 0 auto;
+}
+.md-content .ar-cd svg text {
+    font-family: var(--mono-font, ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace);
+}
+.md-content .ar-cd figcaption {
+    font-size: 0.84rem;
+    color: var(--secondary);
+    margin-top: 0.35rem;
+    line-height: 1.6;
+}
+
+/* 分区导言（如「基础理论」的学习路线说明）：弱化、不与面板内容抢层级 */
+.ar-intro {
+    font-size: 0.94rem;
+    line-height: 1.8;
+    color: var(--secondary);
+    margin: 0.2rem 0 0.9rem;
+    padding-left: 0.7rem;
+    border-left: 3px solid var(--tertiary);
+}
+.ar-intro strong { color: var(--primary); }
+
+@media screen and (max-width: 600px) {
+    .md-content .ar-pf-step { flex: 1 1 100%; min-width: 0; }
+    .md-content .ar-pf-ar { transform: rotate(90deg); align-self: center; }
+}
