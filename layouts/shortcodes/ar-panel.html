@@ -10,8 +10,9 @@
 {{- $key := .Get 0 -}}
 {{- $active := eq (.Get 1 | default "") "active" -}}
 {{- $prefix := .Get 2 | default "ar-panel-" -}}
-{{- $p := site.GetPage (printf "posts/代数表示论/panels/%s" $key) -}}
+{{- $pageKey := .Get 3 | default $key -}}
+{{- $p := site.GetPage (printf "posts/代数表示论/panels/%s" $pageKey) -}}
 {{- if not $p -}}
-<p class="ai-empty">面板内容缺失：{{ $key }}</p>
+<p class="ai-empty">面板内容缺失：{{ $pageKey }}</p>
 {{- else -}}
 <div id="{{ $prefix }}{{ $key }}" class="ai-tab-panel{{ if $active }} active{{ end }}" role="tabpanel" tabindex="0" aria-labelledby="tab-{{ $prefix }}{{ $key }}">{{- if and $p.Lastmod (not $p.Lastmod.IsZero) }}<p class="ar-panel-meta">最后更新：{{ time.Format "2006-01" $p.Lastmod }}</p>{{- end }}{{- $p.Content -}}</div>{{- end -}}

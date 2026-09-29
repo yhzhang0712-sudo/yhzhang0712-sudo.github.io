@@ -13,4 +13,8 @@
 {{- /* Tab 无障碍增强（ARIA/方向键/URL 深链）+ KaTeX 按需渲染，全站加载，无 Tab 页面自动空转 */ -}}
 {{- $tabsjs := resources.Get "js/ar-tabs.js" | resources.Minify }}
 <script defer src="{{ $tabsjs.RelPermalink }}"></script>
+{{- /* 面板「目录」下拉的共享行为：取代原先每面板各写一份、互相覆盖 window.toggleArToc 的内联脚本。
+       defer 保证其晚于页面内联脚本执行，故能统一接管；无 .ar-toc 的页面空转。 */ -}}
+{{- $tocjs := resources.Get "js/ar-toc.js" | resources.Minify }}
+<script defer src="{{ $tocjs.RelPermalink }}"></script>
 {{- /* Head custom content area end */ -}}

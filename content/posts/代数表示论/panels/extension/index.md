@@ -57,11 +57,7 @@ $$ \operatorname{Hom}_{\Lambda}(P_{1},S)\cong k,\qquad \operatorname{Hom}_{\Lamb
 
 <p>且分辨率以周期 $4$ 重复，所以</p>
 
-$$ \dim_{k}\operatorname{Ext}^{n}_{\Lambda}(S,S)=
-\begin{cases}
-1, & n\equiv 0,1,2\pmod 4,\\[2pt]
-0, & n\equiv 3\pmod 4.
-\end{cases} $$
+$$ \dim_{k}\operatorname{Ext}^{n}_{\Lambda}(S,S)= \begin{cases} 1, & n\equiv 0,1,2\pmod 4,\\[2pt] 0, & n\equiv 3\pmod 4. \end{cases} $$
 
 <p>特别地，</p>
 

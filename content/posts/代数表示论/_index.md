@@ -3,7 +3,7 @@ title: "代数表示论同调代数"
 hideTitle: true
 math: true
 description: "代数表示论与同调代数猜想中心：有限维数、Nakayama、Gorenstein 对称、Wakamatsu tilting、Cartan 行列式等核心猜想与重要猜想的陈述、研究进展与参考文献。"
-searchText: "代数表示论与同调代数猜想总览。分区：核心猜想（有限维数猜想、Nakayama猜想、Gorenstein对称猜想、Wakamatsu tilting猜想、Cartan行列式猜想、Broué交换亏群猜想、Telescope猜想、Brauer-Thrall猜想）；重要猜想（Gorenstein投射猜想、无环猜想、Igusa-Smalø猜想、Extension猜想、Happel-Preiser-Ringel猜想、Gorenstein投射维数、分数Calabi-Yau、n-cluster tilting、gentle导出分类、GARC、silting公开问题、导出单性、张量三角几何、周期猜想、CM Type、Weakly-Gorenstein、no-loop）；基础理论（Auslander-Reiten理论、Gabriel定理、Tilting理论、导出范畴、DG范畴、Model Category）；前沿理论（Infinity Category、Tensor Triangulated Geometry、Approximable、Cluster Theory、Operad、高维AR理论、tau-tilting理论）；研究热点（DG enhancement、Standard Derived Equivalence、Gentle Algebra、Preprojective Algebra、Gorenstein同调理论、Geometric model、Cluster tilting）。各猜想的详细陈述、研究进展与参考文献见对应独立条目。"
+searchText: "代数表示论与同调代数猜想总览。分区：核心猜想（有限维数猜想、Nakayama猜想、Gorenstein对称猜想、Wakamatsu tilting猜想、Cartan行列式猜想、Broué交换亏群猜想、Telescope猜想、Brauer-Thrall猜想）；重要猜想（Gorenstein投射猜想、无环猜想、Igusa-Smalø猜想、Extension猜想、Happel-Preiser-Ringel猜想、Gorenstein投射维数、分数Calabi-Yau、n-cluster tilting、gentle导出分类、GARC、silting公开问题、导出单性、张量三角几何、周期猜想、CM Type、Weakly-Gorenstein、no-loop）；基础理论（Auslander-Reiten理论、Gabriel定理、Tilting理论、导出范畴、DG范畴、Model Category）；前沿理论（稳定∞-范畴与 dg/A∞ 增强、张量三角几何与 Balmer 谱—素张量理想—支撑—层化—望远镜猜想、Approximable 可逼近三角范畴、Cluster Theory 丛范畴与 2-Calabi-Yau 突变、Operad 与 Koszul 对偶、高维 Auslander–Reiten 理论—d-丛倾斜子范畴—d-几乎分裂序列—n-abelian 范畴、τ-tilting 理论—τ-刚性—support τ-倾斜—两项 silting—g-向量扇）；研究热点（DG enhancement、Standard Derived Equivalence、Gentle Algebra、Preprojective Algebra、Gorenstein同调理论、Geometric model、Cluster tilting）。各猜想的详细陈述、研究进展与参考文献见对应独立条目。"
 ---
 
 <h1 class="sr-only">代数表示论同调代数</h1>
@@ -103,29 +103,17 @@ searchText: "代数表示论与同调代数猜想总览。分区：核心猜想�
     <button type="button" class="ai-tab-btn tab-purple" role="tab" id="tab-ar-theory-panel-model" aria-controls="ar-theory-panel-model" aria-selected="false" tabindex="-1" onclick="switchArTheory('model', this)">Model Category</button>
   </div>
 
-  <div id="ar-theory-panel-artheory" class="ai-tab-panel active" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-theory-panel-artheory">
-    <p class="ai-empty">内容整理中，敬请期待…</p>
-  </div>
+  {{< ar-panel "artheory" "active" "ar-theory-panel-" >}}
 
-  <div id="ar-theory-panel-gabriel" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-theory-panel-gabriel">
-    <p class="ai-empty">内容整理中，敬请期待…</p>
-  </div>
+  {{< ar-panel "gabriel" "" "ar-theory-panel-" >}}
 
-  <div id="ar-theory-panel-tilting" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-theory-panel-tilting">
-    <p class="ai-empty">内容整理中，敬请期待…</p>
-  </div>
+  {{< ar-panel "tilting" "" "ar-theory-panel-" >}}
 
-  <div id="ar-theory-panel-excat" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-theory-panel-excat">
-    <p class="ai-empty">内容整理中，敬请期待…</p>
-  </div>
+  {{< ar-panel "excat" "" "ar-theory-panel-" >}}
 
-  <div id="ar-theory-panel-dg" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-theory-panel-dg">
-    <p class="ai-empty">内容整理中，敬请期待…</p>
-  </div>
+  {{< ar-panel "dg" "" "ar-theory-panel-" >}}
 
-  <div id="ar-theory-panel-model" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-theory-panel-model">
-    <p class="ai-empty">内容整理中，敬请期待…</p>
-  </div>
+  {{< ar-panel "model" "" "ar-theory-panel-" >}}
 </div>
 
 </section>
@@ -143,30 +131,18 @@ searchText: "代数表示论与同调代数猜想总览。分区：核心猜想�
     <button type="button" class="ai-tab-btn tab-purple" role="tab" id="tab-ar-frontier-panel-tautilting" aria-controls="ar-frontier-panel-tautilting" aria-selected="false" tabindex="-1" onclick="switchArFrontier('tautilting', this)">$\tau$-tilting理论</button>
   </div>
 
-  <div id="ar-frontier-panel-infinity" class="ai-tab-panel active" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-frontier-panel-infinity">
-    <p class="ai-empty">内容整理中，敬请期待…</p>
-  </div>
+  {{< ar-panel "infinity" "" "ar-frontier-panel-" >}}
 
-  <div id="ar-frontier-panel-ttg" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-frontier-panel-ttg">
-    <p class="ai-empty">内容整理中，敬请期待…</p>
-  </div>
+  {{< ar-panel "ttg" "" "ar-frontier-panel-" >}}
 
   {{< ar-panel "approximable" "" "ar-frontier-panel-" >}}
-  <div id="ar-frontier-panel-cluster" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-frontier-panel-cluster">
-    <p class="ai-empty">内容整理中，敬请期待…</p>
-  </div>
+  {{< ar-panel "cluster" "" "ar-frontier-panel-" >}}
 
-  <div id="ar-frontier-panel-operad" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-frontier-panel-operad">
-    <p class="ai-empty">内容整理中，敬请期待…</p>
-  </div>
+  {{< ar-panel "operad" "" "ar-frontier-panel-" >}}
 
-  <div id="ar-frontier-panel-har" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-frontier-panel-har">
-    <p class="ai-empty">内容整理中，敬请期待…</p>
-  </div>
+  {{< ar-panel "har" "" "ar-frontier-panel-" >}}
 
-  <div id="ar-frontier-panel-tautilting" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-frontier-panel-tautilting">
-    <p class="ai-empty">内容整理中，敬请期待…</p>
-  </div>
+  {{< ar-panel "tautilting" "" "ar-frontier-panel-" >}}
 </div>
 
 </section>
@@ -185,33 +161,19 @@ searchText: "代数表示论与同调代数猜想总览。分区：核心猜想�
     <button type="button" class="ai-tab-btn tab-violet" role="tab" id="tab-ar-hot-panel-approx" aria-controls="ar-hot-panel-approx" aria-selected="false" tabindex="-1" onclick="switchArHot('approx', this)">Approximable Triangulated Categories</button>
   </div>
 
-  <div id="ar-hot-panel-dgenhance" class="ai-tab-panel active" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-hot-panel-dgenhance">
-    <p class="ai-empty">内容整理中，敬请期待…</p>
-  </div>
+  {{< ar-panel "dgenhance" "active" "ar-hot-panel-" >}}
 
-  <div id="ar-hot-panel-stdderived" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-hot-panel-stdderived">
-    <p class="ai-empty">内容整理中，敬请期待…</p>
-  </div>
+  {{< ar-panel "stdderived" "" "ar-hot-panel-" >}}
 
-  <div id="ar-hot-panel-gentle" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-hot-panel-gentle">
-    <p class="ai-empty">内容整理中，敬请期待…</p>
-  </div>
+  {{< ar-panel "gentle" "" "ar-hot-panel-" "hotgentle" >}}
 
-  <div id="ar-hot-panel-preprojective" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-hot-panel-preprojective">
-    <p class="ai-empty">内容整理中，敬请期待…</p>
-  </div>
+  {{< ar-panel "preprojective" "" "ar-hot-panel-" >}}
 
-  <div id="ar-hot-panel-gorensteinhomo" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-hot-panel-gorensteinhomo">
-    <p class="ai-empty">内容整理中，敬请期待…</p>
-  </div>
+  {{< ar-panel "gorensteinhomo" "" "ar-hot-panel-" >}}
 
-  <div id="ar-hot-panel-geometric" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-hot-panel-geometric">
-    <p class="ai-empty">内容整理中，敬请期待…</p>
-  </div>
+  {{< ar-panel "geometric" "" "ar-hot-panel-" >}}
 
-  <div id="ar-hot-panel-clustertilting" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-hot-panel-clustertilting">
-    <p class="ai-empty">内容整理中，敬请期待…</p>
-  </div>
+  {{< ar-panel "clustertilting" "" "ar-hot-panel-" >}}
 
   {{< ar-panel "approx" "" "ar-hot-panel-" >}}
 </div>

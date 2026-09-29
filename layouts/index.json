@@ -71,6 +71,25 @@
             {{- $.Scratch.Add "index" (dict "title" $p.Title "content" $p.Plain "permalink" $permalink "summary" $p.Summary) -}}
         {{- end -}}
     {{- end -}}
+    {{- /* 研究热点(hot)面板：锚点前缀为 #ar-hot-panel-。
+           按钮 id 与面板目录名不一致时（gentle 的面板文件为 hotgentle）用 id 指定锚点。 */ -}}
+    {{- $hotKeys := slice
+        (dict "page" "dgenhance" "id" "dgenhance")
+        (dict "page" "stdderived" "id" "stdderived")
+        (dict "page" "hotgentle" "id" "gentle")
+        (dict "page" "preprojective" "id" "preprojective")
+        (dict "page" "gorensteinhomo" "id" "gorensteinhomo")
+        (dict "page" "geometric" "id" "geometric")
+        (dict "page" "clustertilting" "id" "clustertilting")
+        (dict "page" "approx" "id" "approx")
+    -}}
+    {{- range $hotKeys -}}
+        {{- $p := site.GetPage (printf "posts/代数表示论/panels/%s" .page) -}}
+        {{- if $p -}}
+            {{- $permalink := print $ar.Permalink "#ar-hot-panel-" .id -}}
+            {{- $.Scratch.Add "index" (dict "title" $p.Title "content" $p.Plain "permalink" $permalink "summary" $p.Summary) -}}
+        {{- end -}}
+    {{- end -}}
 {{- end -}}
 
 {{- $.Scratch.Get "index" | jsonify -}}
