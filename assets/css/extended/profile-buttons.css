@@ -44,13 +44,15 @@ body.no-home-bg::before {
     color: var(--primary);
 }
 
+/* 圆盘下方题句：字体与 .pie-lead 完全一致 */
 .pie-tagline {
-    margin-top: 1.2rem;
+    margin: 1.2rem 0 0;
     text-align: center;
-    font-size: 0.95rem;
-    font-style: italic;
-    letter-spacing: 0.02em;
-    color: var(--secondary);
+    font-size: 1.05rem;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    color: var(--primary);
 }
 
 .pie-svg {
