@@ -1601,3 +1601,109 @@ a.ar-sec-btn[href^="http"]::after {
         flex: 1 1 40%;
     }
 }
+
+/* ─── 数学人物：按时代折叠分组 ─── */
+.fig-era-bar {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0 0 0.5rem;
+}
+
+.fig-era-toggle {
+    font-size: 0.85rem;
+    padding: 0.22rem 0.85rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--entry);
+    color: var(--content);
+    cursor: pointer;
+    line-height: 1.6;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.fig-era-toggle:hover {
+    border-color: #1E40AF;
+    color: #1E40AF;
+}
+
+.fig-era {
+    border: 1px solid var(--border);
+    border-left-width: 4px;
+    border-radius: 10px;
+    margin: 0 0 0.6rem;
+    background: var(--entry);
+}
+
+.fig-era.era-1 { border-left-color: #B45309; }
+.fig-era.era-2 { border-left-color: #15803D; }
+.fig-era.era-3 { border-left-color: #1E40AF; }
+.fig-era.era-4 { border-left-color: #9333EA; }
+
+.fig-era-sum {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0.55rem 0.85rem;
+    cursor: pointer;
+    font-weight: 700;
+    list-style: none;
+    user-select: none;
+}
+
+.fig-era-sum::-webkit-details-marker { display: none; }
+
+.fig-era-sum::before {
+    content: "\25B8";
+    display: inline-block;
+    color: var(--secondary);
+    font-size: 0.95rem;
+    transition: transform 0.18s ease;
+}
+
+.fig-era[open] > .fig-era-sum::before {
+    transform: rotate(90deg);
+}
+
+.fig-era-t {
+    font-size: 1.05rem;
+}
+
+.fig-era-span {
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: var(--secondary);
+}
+
+.fig-era-n {
+    margin-left: auto;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--secondary);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.05rem 0.55rem;
+    white-space: nowrap;
+}
+
+.fig-era-desc {
+    margin: 0;
+    padding: 0 0.85rem 0.55rem 2rem;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--secondary);
+}
+
+.fig-era[open] > .fig-era-desc {
+    padding-bottom: 0.2rem;
+}
+
+.fig-era .ai-tab-btns {
+    padding: 0.2rem 0.85rem 0.85rem;
+    margin-bottom: 0.4rem;
+}
+
+@media screen and (max-width: 480px) {
+    .fig-era-desc { padding-left: 0.85rem; }
+    .fig-era-n { margin-left: 0; }
+}
