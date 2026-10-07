@@ -290,6 +290,14 @@
 
 .ar-sec-btn:hover { transform: translateY(-1px); }
 
+/* 五个分区按钮时：等宽铺满一行，间距均匀 */
+.ar-section-switch-five .ar-sec-btn {
+    flex: 1 1 0;
+    min-width: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
 .ar-conjectures-divider {
     height: 4px;
     background: linear-gradient(90deg, #DC2626, #EF4444, #DC2626);
@@ -1523,4 +1531,73 @@ a.ar-sec-btn[href^="http"]::after {
 @media screen and (max-width: 600px) {
     .md-content .ar-pf-step { flex: 1 1 100%; min-width: 0; }
     .md-content .ar-pf-ar { transform: rotate(90deg); align-self: center; }
+}
+
+/* ─── 数学大奖：历届获奖名单表格 ─── */
+.award-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.8rem 0 0.4rem;
+    font-size: 0.95rem;
+}
+
+.award-table th,
+.award-table td {
+    border: 1px solid var(--border);
+    padding: 0.45rem 0.7rem;
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.6;
+}
+
+.award-table th {
+    background: var(--entry);
+    font-weight: 700;
+}
+
+.award-table tr:nth-child(even) td {
+    background: rgba(127, 127, 127, 0.05);
+}
+
+.award-table td.aw-year {
+    font-weight: 700;
+    white-space: nowrap;
+    color: var(--secondary);
+}
+
+/* 获奖名单中的人物超链接：跳转到「数学人物」中对应面板 */
+.fig-link {
+    color: #1E40AF;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+
+.fig-link:hover {
+    color: #B91C1C;
+}
+
+[data-theme="dark"] .fig-link {
+    color: #93C5FD;
+}
+
+[data-theme="dark"] .fig-link:hover {
+    color: #FCA5A5;
+}
+
+.aw-note {
+    font-size: 0.9rem;
+    color: var(--secondary);
+}
+
+@media screen and (max-width: 768px) {
+    .md-content table.award-table {
+        display: table;
+        white-space: normal;
+        overflow-x: visible;
+    }
+    .ar-section-switch-five .ar-sec-btn {
+        flex: 1 1 40%;
+    }
 }
