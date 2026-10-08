@@ -6749,7 +6749,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 function switchMathCulture(id, btn) {
   document.querySelectorAll('.ar-sec-btn').forEach(function (b) { b.classList.remove('active'); });
   btn.classList.add('active');
-  document.querySelectorAll('#ar-section-figures, #ar-section-problems, #ar-section-popular, #ar-section-awards, #ar-section-anecdotes').forEach(function (s) { s.setAttribute('hidden', ''); });
+  document.querySelectorAll('#ar-section-figures, #ar-section-problems, #ar-section-popular, #ar-section-awards, #ar-section-education, #ar-section-anecdotes').forEach(function (s) { s.setAttribute('hidden', ''); });
   document.getElementById('ar-section-' + id).removeAttribute('hidden');
 }
 
