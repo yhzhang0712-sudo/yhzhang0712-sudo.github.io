@@ -298,6 +298,14 @@
     padding-right: 0.5rem;
 }
 
+/* 六个分区按钮时：等宽铺满一行（自适应 N 等分，未来可继续扩展） */
+.ar-section-switch-six .ar-sec-btn {
+    flex: 1 1 0;
+    min-width: 0;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+
 .ar-conjectures-divider {
     height: 4px;
     background: linear-gradient(90deg, #DC2626, #EF4444, #DC2626);
@@ -1597,7 +1605,8 @@ a.ar-sec-btn[href^="http"]::after {
         white-space: normal;
         overflow-x: visible;
     }
-    .ar-section-switch-five .ar-sec-btn {
+    .ar-section-switch-five .ar-sec-btn,
+    .ar-section-switch-six .ar-sec-btn {
         flex: 1 1 40%;
     }
 }
@@ -1706,4 +1715,53 @@ a.ar-sec-btn[href^="http"]::after {
 @media screen and (max-width: 480px) {
     .fig-era-desc { padding-left: 0.85rem; }
     .fig-era-n { margin-left: 0; }
+}
+
+/* ─── 数学人物：收录说明与资料来源 ─── */
+.fig-note {
+    border: 1px solid var(--border);
+    border-left-width: 4px;
+    border-left-color: #64748B;
+    border-radius: 10px;
+    margin: 0.8rem 0 0.6rem;
+    background: var(--entry);
+}
+
+.fig-note-sum {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 0.55rem 0.85rem;
+    cursor: pointer;
+    font-weight: 700;
+    list-style: none;
+    user-select: none;
+}
+
+.fig-note-sum::-webkit-details-marker { display: none; }
+
+.fig-note-sum::before {
+    content: "\25B8";
+    display: inline-block;
+    color: var(--secondary);
+    font-size: 0.95rem;
+    transition: transform 0.18s ease;
+}
+
+.fig-note[open] > .fig-note-sum::before {
+    transform: rotate(90deg);
+}
+
+.fig-note-body {
+    padding: 0 0.85rem 0.75rem 2rem;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.fig-note-body p { margin: 0 0 0.5rem; }
+.fig-note-body p:last-child { margin-bottom: 0; }
+.fig-note-body strong { color: var(--content); }
+
+@media screen and (max-width: 480px) {
+    .fig-note-body { padding-left: 0.85rem; }
 }

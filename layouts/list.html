@@ -40,6 +40,9 @@
 {{- end }}
 
 {{- $pages := union .RegularPages .Sections }}
+{{- /* 2026-10-05：允许子页面用 front matter hiddenInSectionList: true 从所属 section 列表里隐身
+       （例如 AI与数学 下的 Danus 中文翻译页，只在面板链接里入口，不占板块列表） */ -}}
+{{- $pages = where $pages "Params.hiddenInSectionList" "!=" true }}
 
 {{- if .IsHome }}
 {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}

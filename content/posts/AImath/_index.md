@@ -421,7 +421,7 @@ lastmod: 2026-09-28
 <p class="agent-lead">让 AI 不只是“写数学证明草稿”，而是真正进入数学研究工作流：读文献、形式化猜想、组织多人协作证伪、直到拿到可被 Lean/Coq 验证的完整证明。下面六个系统是目前最值得关注的代表。</p>
 
 <h3><span class="agent-name">Danus</span> · 研究级数学推理编排</h3>
-<p><strong>它是什么</strong>：一个面向研究级数学推理的多 Agent 编排系统，arXiv 2607.06447（CS.AI / CL / MA），已开源在 <code>github.com/frenzymath/Danus</code>。</p>
+<p><strong>它是什么</strong>：一个面向研究级数学推理的多 Agent 编排系统，Danus介绍（<a href="https://arxiv.org/pdf/2607.06447" target="_blank" rel="noopener">英文</a>，<a href="/posts/aimath/danus-cn/" target="_blank" rel="noopener">中文</a>），已开源在 <code>github.com/frenzymath/Danus</code>。</p>
 <p><strong>核心机制</strong>：以一个共享的 <em>fact graph</em>（事实 DAG）作为全局记忆，主体 Agent 做高层规划，多个 Worker Agent 并行做证明搜索，一个无状态的 Verifier Agent 校验每一步的逻辑合法性；通过「提交 → 验证 → 修复」循环推进整体证明，并支持事实撤回 + 下游依赖自动删除。</p>
 <p><strong>在哪些场景里被验证过</strong>：代数几何、奇点理论、组合数学 6 个研究级案例。</p>
 <p><strong>工程实现</strong>：底层用 Claude Code 当主控，Claude Opus 4.8 做状态合成，GPT-5.5-pro 做数学咨询，Matlas 做文献检索。</p>
