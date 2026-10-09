@@ -20,12 +20,8 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 
 <section id="ar-section-figures" class="ar-section" role="tabpanel" aria-labelledby="tab-ar-section-figures">
 <div class="ai-tabs">
-  <div class="fig-era-bar">
-    <button type="button" class="fig-era-toggle" onclick="toggleAllEras(true)">展开全部</button>
-    <button type="button" class="fig-era-toggle" onclick="toggleAllEras(false)">收起全部</button>
-  </div>
   
-  <details class="fig-era era-1" open>
+  <details class="fig-era era-1">
     <summary class="fig-era-sum"><span class="fig-era-t">一、古代数学时期</span><span class="fig-era-span">上古—公元5世纪前</span><span class="fig-era-n">19 位</span></summary>
     <p class="fig-era-desc">古埃及、巴比伦、希腊、中国、印度等早期文明。数学以实用为主，涉及计数、测量、简单几何和算术，还没有形成严格的逻辑体系。</p>
     <div class="ai-tab-btns" role="tablist">
@@ -103,7 +99,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
   </details>
   
   <details class="fig-era era-4">
-    <summary class="fig-era-sum"><span class="fig-era-t">四、现代数学时期</span><span class="fig-era-span">约19世纪至今</span><span class="fig-era-n">143 位</span></summary>
+    <summary class="fig-era-sum"><span class="fig-era-t">四、现代数学时期</span><span class="fig-era-span">约19世纪至今</span><span class="fig-era-n">146 位</span></summary>
     <p class="fig-era-desc">以严格化、抽象化与结构化为特征：非欧几何、群论、集合论、拓扑学与泛函分析相继诞生，数学分化为数十个分支，并成为现代科学与技术的基础语言。</p>
     <div class="ai-tab-btns" role="tablist">
       <button type="button" class="ai-tab-btn tab-red" role="tab" id="tab-ar-mathfigures-panel-gauss" aria-controls="ar-mathfigures-panel-gauss" aria-selected="false" tabindex="-1" onclick="switchMathFigures('gauss', this)">高斯</button>
@@ -111,6 +107,8 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
       <button type="button" class="ai-tab-btn tab-teal" role="tab" id="tab-ar-mathfigures-panel-abel" aria-controls="ar-mathfigures-panel-abel" aria-selected="false" tabindex="-1" onclick="switchMathFigures('abel', this)">阿贝尔</button>
       <button type="button" class="ai-tab-btn tab-green" role="tab" id="tab-ar-mathfigures-panel-galois" aria-controls="ar-mathfigures-panel-galois" aria-selected="false" tabindex="-1" onclick="switchMathFigures('galois', this)">伽罗瓦</button>
       <button type="button" class="ai-tab-btn tab-orange" role="tab" id="tab-ar-mathfigures-panel-riemann" aria-controls="ar-mathfigures-panel-riemann" aria-selected="false" tabindex="-1" onclick="switchMathFigures('riemann', this)">黎曼</button>
+      <button type="button" class="ai-tab-btn tab-green" role="tab" id="tab-ar-mathfigures-panel-cantor" aria-controls="ar-mathfigures-panel-cantor" aria-selected="false" tabindex="-1" onclick="switchMathFigures('cantor', this)">康托尔</button>
+      <button type="button" class="ai-tab-btn tab-orange" role="tab" id="tab-ar-mathfigures-panel-poincare" aria-controls="ar-mathfigures-panel-poincare" aria-selected="false" tabindex="-1" onclick="switchMathFigures('poincare', this)">庞加莱</button>
       <button type="button" class="ai-tab-btn tab-purple" role="tab" id="tab-ar-mathfigures-panel-hilbert" aria-controls="ar-mathfigures-panel-hilbert" aria-selected="false" tabindex="-1" onclick="switchMathFigures('hilbert', this)">希尔伯特</button>
       <button type="button" class="ai-tab-btn tab-violet" role="tab" id="tab-ar-mathfigures-panel-noether" aria-controls="ar-mathfigures-panel-noether" aria-selected="false" tabindex="-1" onclick="switchMathFigures('noether', this)">诺特</button>
       <button type="button" class="ai-tab-btn tab-red" role="tab" id="tab-ar-mathfigures-panel-ramanujan" aria-controls="ar-mathfigures-panel-ramanujan" aria-selected="false" tabindex="-1" onclick="switchMathFigures('ramanujan', this)">拉马努金</button>
@@ -163,6 +161,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
       <button type="button" class="ai-tab-btn tab-purple" role="tab" id="tab-ar-mathfigures-panel-milnor" aria-controls="ar-mathfigures-panel-milnor" aria-selected="false" tabindex="-1" onclick="switchMathFigures('milnor', this)">米尔诺</button>
       <button type="button" class="ai-tab-btn tab-violet" role="tab" id="tab-ar-mathfigures-panel-stein" aria-controls="ar-mathfigures-panel-stein" aria-selected="false" tabindex="-1" onclick="switchMathFigures('stein', this)">施泰因</button>
       <button type="button" class="ai-tab-btn tab-red" role="tab" id="tab-ar-mathfigures-panel-thompson" aria-controls="ar-mathfigures-panel-thompson" aria-selected="false" tabindex="-1" onclick="switchMathFigures('thompson', this)">汤普森</button>
+      <button type="button" class="ai-tab-btn tab-violet" role="tab" id="tab-ar-mathfigures-panel-chen" aria-controls="ar-mathfigures-panel-chen" aria-selected="false" tabindex="-1" onclick="switchMathFigures('chen', this)">陈景润</button>
       <button type="button" class="ai-tab-btn tab-blue" role="tab" id="tab-ar-mathfigures-panel-artin" aria-controls="ar-mathfigures-panel-artin" aria-selected="false" tabindex="-1" onclick="switchMathFigures('artin', this)">阿廷</button>
       <button type="button" class="ai-tab-btn tab-teal" role="tab" id="tab-ar-mathfigures-panel-cohen" aria-controls="ar-mathfigures-panel-cohen" aria-selected="false" tabindex="-1" onclick="switchMathFigures('cohen', this)">科恩</button>
       <button type="button" class="ai-tab-btn tab-green" role="tab" id="tab-ar-mathfigures-panel-furstenberg" aria-controls="ar-mathfigures-panel-furstenberg" aria-selected="false" tabindex="-1" onclick="switchMathFigures('furstenberg', this)">富尔斯滕伯格</button>
@@ -252,15 +251,6 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
     </div>
   </details>
   
-  <details class="fig-note">
-    <summary class="fig-note-sum">收录说明与资料来源</summary>
-    <div class="fig-note-body">
-      <p><strong>收录范围</strong>：本表收录 199 位数学家，按四个时代分组，组内按主要活动年代先后排列。前三个时代（古代、中世纪、近代）兼顾不同文明与地区，涵盖古埃及、古巴比伦、古希腊、古代中国、古印度、阿拉伯世界、欧洲各国及日本；现代部分以三大奖（菲尔兹奖、阿贝尔奖、沃尔夫数学奖）得主为主体。</p>
-      <p><strong>纪年与称谓</strong>：公元前年份一律冠以“公元前”，公元后不加“公元”二字；年代区间用一字线“—”连接；年代不确定者冠以“约”，只有活跃期可考者写“主要活跃于某世纪”。人名一律称姓或通行译名，不加尊称。</p>
-      <p><strong>资料来源</strong>：生卒年、著作名与成就以圣安德鲁斯大学 MacTutor 数学史档案、国际数学联盟（IMU）菲尔兹奖官方授奖词与挪威科学与文学院阿贝尔奖官方授奖词为主要依据，并以中英文百科条目交叉核对；中国数学史部分参照钱宝琮《中国数学史》等通行著作。2026 年新增获奖者信息依据国际数学联盟（IMU）官方公布与新华社、中国日报等公开报道交叉核对。凡史料存在争议、原著失传或属后世传说者，均已在相应小传中标明。</p>
-      <p><strong>互链</strong>：「数学大奖」名单中的人名可点击跳转到本模块对应人物的小传。</p>
-    </div>
-  </details>
   
 
   <div id="ar-mathfigures-panel-ahmose" class="ai-tab-panel active" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-ahmose">
@@ -273,9 +263,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>古埃及（出生地不详）</td></tr>
 <tr><td><strong>身份</strong></td><td>书吏；数学文献的整理者与传抄者</td></tr>
 <tr><td><strong>代表成就</strong></td><td>传抄《莱因德数学纸草书》；$2/n$ 单位分数表；假位法解一次方程；圆面积算法（相当于 π≈3.1605）</td></tr>
-</table>
-<p class="era-notice">纪年说明：本页年代统一使用“公元前／公元”纪年，阿赫美斯的年代写作“约公元前1650年”，不另作西元前后换算。</p>
-</div>
+</table></div>
 
 <h3>一、纸草书里的数学世界</h3>
 <p>1858年，苏格兰收藏家莱因德在卢克索购得一卷僧侣体（hieratic）纸草书，后入藏大英博物馆，即今所称《莱因德数学纸草书》。卷首自述出自一位名叫阿赫美斯的书吏之手，而据他自己的交代，内容抄自中王国时期一部更早的著作（一说为阿蒙涅姆赫特三世在位期间的本子）。因此阿赫美斯的身份是传抄者而非原创者——他留下的是一份教材式的整理本，而不是他个人的发明。全书前部是一张分数表，后部是84道题目，涉及面包与啤酒的分配、粮仓容积、土地面积、金字塔底角斜率（seqt）等。这些文字只写“怎么算”，从不给出理由与证明：埃及数学是一套实用的算法体系，而不是从公理出发的演绎体系。</p>
@@ -373,7 +361,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>大希腊（今意大利南部），生于埃利亚</td></tr>
 <tr><td><strong>身份</strong></td><td>哲学家；埃利亚学派，巴门尼德的学生</td></tr>
 <tr><td><strong>代表成就</strong></td><td>芝诺悖论（二分法、阿基里斯与龟、飞矢不动、运动场）；归谬法的早期运用</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/zeno.webp" width="269" height="326" alt="芝诺" loading="lazy"><figcaption>芝诺</figcaption></figure>
 </div>
 
 <h3>一、为老师辩护的人</h3>
@@ -399,7 +387,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>古希腊，生于希俄斯岛</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家、几何学家、天文学家；后长期在雅典讲学</td></tr>
 <tr><td><strong>代表成就</strong></td><td>月牙化方；第一部《几何原本》；把倍立方化归为求两比例中项</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/hippocrates.webp" width="268" height="326" alt="希波克拉底" loading="lazy"><figcaption>希波克拉底</figcaption></figure>
 </div>
 
 <h3>一、从商人到几何学家</h3>
@@ -425,7 +413,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>大希腊（今意大利南部），生于塔伦同（今塔兰托）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家、哲学家、政治家、军事统帅；毕达哥拉斯学派后期代表，柏拉图的友人</td></tr>
 <tr><td><strong>代表成就</strong></td><td>用两比例中项解倍立方；数学力学的开创者；调和平均的命名</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/archytas.webp" width="257" height="326" alt="阿尔希塔斯" loading="lazy"><figcaption>阿尔希塔斯</figcaption></figure>
 </div>
 
 <h3>一、塔伦同的哲人政治家</h3>
@@ -451,7 +439,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>古希腊，生于尼多斯（小亚细亚卡里亚，今土耳其境内）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家、天文学家、立法者；柏拉图学园成员，曾在埃及与基齐库斯活动</td></tr>
 <tr><td><strong>代表成就</strong></td><td>一般比例论（《几何原本》第五卷）；穷竭法（第十二卷）；天体同心球模型</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/eudoxus.webp" width="264" height="326" alt="欧多克索斯" loading="lazy"><figcaption>欧多克索斯</figcaption></figure>
 </div>
 
 <h3>一、从尼多斯到雅典学园</h3>
@@ -524,7 +512,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>古希腊（托勒密埃及），生于昔勒尼（今利比亚境内）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家、地理学家、天文学家；亚历山大图书馆馆长</td></tr>
 <tr><td><strong>代表成就</strong></td><td>埃拉托斯特尼筛法；测量地球周长（约252000斯塔德）；《地理学》；倍立方的机械解法</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/eratosthenes.webp" width="265" height="326" alt="埃拉托斯特尼" loading="lazy"><figcaption>埃拉托斯特尼</figcaption></figure>
 </div>
 
 <h3>一、亚历山大城的博学者</h3>
@@ -572,7 +560,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>古希腊；生于比提尼亚的尼西亚（今土耳其伊兹尼克），长期在罗得岛观测</td></tr>
 <tr><td><strong>身份</strong></td><td>天文学家、数学家、地理学家</td></tr>
 <tr><td><strong>代表成就</strong></td><td>西方最早的弦表、圆周360度分度、发现岁差、约850颗星的星表、球面三角法</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/hipparchus.webp" width="268" height="326" alt="喜帕恰斯" loading="lazy"><figcaption>喜帕恰斯</figcaption></figure>
 </div>
 
 <h3>一、罗得岛上的观测者</h3>
@@ -598,7 +586,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>罗马帝国时期埃及，亚历山大城</td></tr>
 <tr><td><strong>身份</strong></td><td>工程师、数学家；可能在缪斯宫（Mouseion）讲学</td></tr>
 <tr><td><strong>代表成就</strong></td><td>海伦公式、《度量论》、反射最短路程原理、汽转球等机械装置</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/heron.webp" width="232" height="326" alt="海伦" loading="lazy"><figcaption>海伦</figcaption></figure>
 </div>
 
 <h3>一、亚历山大城的工程师</h3>
@@ -624,7 +612,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>罗马帝国时期埃及，亚历山大城</td></tr>
 <tr><td><strong>身份</strong></td><td>天文学家、数学家、地理学家；兼治光学、乐律与占星</td></tr>
 <tr><td><strong>代表成就</strong></td><td>《天文学大成》、《地理学》、托勒密定理、更精细的弦表</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/ptolemy.webp" width="280" height="326" alt="托勒密" loading="lazy"><figcaption>托勒密</figcaption></figure>
 </div>
 
 <h3>一、亚历山大城的最后一位大师</h3>
@@ -650,7 +638,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>罗马帝国时期埃及，亚历山大城</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家</td></tr>
 <tr><td><strong>代表成就</strong></td><td>《算术》十三卷（今存希腊文6卷、阿拉伯文4卷）、不定方程（丢番图方程）、缩写符号记未知数</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/diophantus.webp" width="256" height="326" alt="丢番图" loading="lazy"><figcaption>丢番图</figcaption></figure>
 </div>
 
 <h3>一、墓碑上的方程谜题</h3>
@@ -833,7 +821,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>古印度，毗罗摩罗（Bhillamāla，今拉贾斯坦邦宾马尔）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家、天文学家；长期主持乌贾因天文台，Brāhma 学派追随者或创始人</td></tr>
 <tr><td><strong>代表成就</strong></td><td>《婆罗摩历算书》（Brāhmasphuṭasiddhānta，628）、零与负数四则运算规则、圆内接四边形面积公式、婆罗摩笈多恒等式、二次不定方程 $Nx^2+1=y^2$ 的合成解法</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/brahmagupta.webp" width="266" height="326" alt="婆罗摩笈多" loading="lazy"><figcaption>婆罗摩笈多</figcaption></figure>
 </div>
 
 <h3>一、拉贾斯坦邦的天文世家</h3>
@@ -885,7 +873,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>中亚花剌子模地区，通常认为在今乌兹别克斯坦希瓦一带</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家、天文学家、地理学家；巴格达智慧宫学者</td></tr>
 <tr><td><strong>代表成就</strong></td><td>《还原与对消计算概要》、印度数字算术著作、《大地形状》</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/alkhwarizmi.webp" width="268" height="326" alt="花拉子米" loading="lazy"><figcaption>花拉子米</figcaption></figure>
 </div>
 
 <h3>一、智慧宫里的中亚学者</h3>
@@ -963,7 +951,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>古印度，今卡纳塔克邦比贾普尔一带</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家、天文学家；乌贾因天文台台长，接续伐罗诃密希罗与婆罗摩笈多的学统</td></tr>
 <tr><td><strong>代表成就</strong></td><td>《丽罗娃提》（Līlāvatī）与《算法本源》（Bījagaṇita）、《历法冠冕》（Siddhāntaśiromaṇi，1150）、循环法（cakravāla）解二次不定方程、除以零与无穷的早期讨论</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/bhaskara2.webp" width="266" height="326" alt="婆什迦罗二世" loading="lazy"><figcaption>婆什迦罗二世</figcaption></figure>
 </div>
 
 <h3>一、丽罗娃提的故事</h3>
@@ -989,7 +977,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>意大利，比萨</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；商人家庭出身，少年时随父在北非布吉亚（今阿尔及利亚贝贾亚）习算</td></tr>
 <tr><td><strong>代表成就</strong></td><td>《计算之书》（Liber Abaci，1202，1228年修订本）、印度—阿拉伯数字与十进位值制西传、兔子问题（今称斐波那契数列，其数列前身见于印度数学）、《平方数之书》（Liber Quadratorum，1225）</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/fibonacci.webp" width="268" height="326" alt="斐波那契" loading="lazy"><figcaption>斐波那契</figcaption></figure>
 </div>
 
 <h3>一、从北非到比萨：一个商人之子</h3>
@@ -1067,7 +1055,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>中国，南宋，普州安岳（今四川安岳）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家、官员；与李冶、杨辉、朱世杰并称宋元数学四大家</td></tr>
 <tr><td><strong>代表成就</strong></td><td>《数书九章》十八卷（1247）、大衍求一术（中国剩余定理）、正负开方术（高次方程数值解法）、三斜求积术</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/qinjiushao.webp" width="325" height="326" alt="秦九韶" loading="lazy"><figcaption>秦九韶</figcaption></figure>
 </div>
 
 <h3>一、《数书九章》的规模</h3>
@@ -1093,7 +1081,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>中国，南宋，钱塘（今浙江杭州）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家、数学教育家；曾任地方官职</td></tr>
 <tr><td><strong>代表成就</strong></td><td>《详解九章算法》十二卷（1261）、记录并阐发贾宪"开方作法本源图"、纵横图（幻方）的系统研究、垛积术与乘除捷算法</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/yanghui.webp" width="263" height="326" alt="杨辉" loading="lazy"><figcaption>杨辉</figcaption></figure>
 </div>
 
 <h3>一、为贾宪之图作传的人</h3>
@@ -1145,7 +1133,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>法国，诺曼底（卡昂附近）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家、自然哲学家、天文学家；巴黎大学纳瓦拉学院，晚年任利雪主教</td></tr>
 <tr><td><strong>代表成就</strong></td><td>《论质与运动的构型》（Tractatus de configurationibus qualitatum et motuum）、调和级数发散的首个证明、平均速度定理的几何证明、《天地通论》（Le Livre du ciel et du monde，1377）</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/oresme.webp" width="381" height="326" alt="奥雷斯姆" loading="lazy"><figcaption>奥雷斯姆</figcaption></figure>
 </div>
 
 <h3>一、从巴黎大学到利雪主教</h3>
@@ -1197,7 +1185,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>波斯，生于卡尚（今伊朗境内）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家、天文学家；撒马尔罕乌鲁伯格学术机构核心成员</td></tr>
 <tr><td><strong>代表成就</strong></td><td>《圆周论》、《算术之钥》、将圆周率精确到小数点后16位（π≈3.1415926535897932，超越祖冲之保持近千年的纪录）、十进小数与开方算法</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/alkashi.webp" width="231" height="326" alt="卡西" loading="lazy"><figcaption>卡西</figcaption></figure>
 </div>
 
 <h3>一、撒马尔罕的计算者</h3>
@@ -1249,7 +1237,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>法国，生于丰特奈勒孔特（普瓦图），卒于巴黎</td></tr>
 <tr><td><strong>身份</strong></td><td>律师、王室顾问（亨利三世与亨利四世的枢密顾问）；业余数学家</td></tr>
 <tr><td><strong>代表成就</strong></td><td>《分析方法入门》（In artem analyticam isagoge，1591）开创符号代数、韦达定理、《应用于三角形的数学定律》（1579）</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/viete.webp" width="268" height="326" alt="韦达" loading="lazy"><figcaption>韦达</figcaption></figure>
 </div>
 
 <h3>一、为国王破译密码的律师</h3>
@@ -1275,7 +1263,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>苏格兰，默奇斯顿城堡（爱丁堡）</td></tr>
 <tr><td><strong>身份</strong></td><td>默奇斯顿第八代领主；数学家、神学家</td></tr>
 <tr><td><strong>代表成就</strong></td><td>《奇妙对数表之描述》（Mirifici Logarithmorum Canonis Descriptio，1614）发明对数、《筹算》（Rabdologiae，1617）中的"纳皮尔的骨头"、球面三角的纳皮尔类比</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/napier.webp" width="258" height="326" alt="纳皮尔" loading="lazy"><figcaption>纳皮尔</figcaption></figure>
 </div>
 
 <h3>一、默奇斯顿的领主与神学争论</h3>
@@ -1301,7 +1289,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>中国，明南直隶松江府上海县（今上海）</td></tr>
 <tr><td><strong>身份</strong></td><td>科学家、农学家、官员；官至礼部尚书兼文渊阁大学士</td></tr>
 <tr><td><strong>代表成就</strong></td><td>与利玛窦合译《几何原本》前六卷（1607）、编译《测量法义》《测量异同》《勾股义》、主持编修《崇祯历书》、著《农政全书》</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/xuguangqi.webp" width="260" height="411" alt="徐光启" loading="lazy"><figcaption>徐光启</figcaption></figure>
 </div>
 
 <h3>一、上海的进士与利玛窦</h3>
@@ -1327,7 +1315,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>德国，生于符腾堡的威尔德斯达特，卒于雷根斯堡</td></tr>
 <tr><td><strong>身份</strong></td><td>天文学家、数学家、光学研究者；神圣罗马帝国皇家数学家</td></tr>
 <tr><td><strong>代表成就</strong></td><td>行星运动三定律、《新天文学》（Astronomia Nova，1609）、《测量酒桶体积的新立体几何》（Nova stereometria doliorum vinariorum，1615）、《鲁道夫星表》（1627）</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/kepler.webp" width="255" height="326" alt="开普勒" loading="lazy"><figcaption>开普勒</figcaption></figure>
 </div>
 
 <h3>一、布拉格的第谷遗稿</h3>
@@ -1400,7 +1388,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>法国，生于克莱蒙费朗（奥弗涅），卒于巴黎</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家、物理学家、哲学家、神学家；梅森学术圈成员</td></tr>
 <tr><td><strong>代表成就</strong></td><td>与费马1654年的通信奠定概率论、帕斯卡定理（圆锥曲线内接六边形）、《论算术三角形》（Traité du triangle arithmétique）、1642年起的机械加法器</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/pascal.webp" width="305" height="326" alt="帕斯卡" loading="lazy"><figcaption>帕斯卡</figcaption></figure>
 </div>
 
 <h3>一、十六岁的圆锥曲线</h3>
@@ -1426,7 +1414,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>荷兰，生于海牙，卒于海牙</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家、物理学家、天文学家；英国皇家学会首位外籍会员、法国皇家科学院院士</td></tr>
 <tr><td><strong>代表成就</strong></td><td>《论赌博中的计算》（De ratiociniis in ludo aleae，1657）提出数学期望、《摆钟论》（Horologium Oscillatorium，1673）研究摆线与渐屈线、惠更斯原理、发现土卫六并解释土星环</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/huygens.webp" width="233" height="326" alt="惠更斯" loading="lazy"><figcaption>惠更斯</figcaption></figure>
 </div>
 
 <h3>一、海牙的富家子与宫廷学者</h3>
@@ -1478,7 +1466,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>日本，生于江户小石川（一说上野国藤冈，今群马县藤冈市），卒于江户</td></tr>
 <tr><td><strong>身份</strong></td><td>和算家；江户幕府武士，甲府藩勘定吟味役，后为幕府直属武士</td></tr>
 <tr><td><strong>代表成就</strong></td><td>《发微算法》（Hatsubi Sanpō，1674）、傍书法（后称点窜术）与行列式、圆理与垛积招差</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/seki.webp" width="271" height="326" alt="关孝和" loading="lazy"><figcaption>关孝和</figcaption></figure>
 </div>
 
 <h3>一、江户幕府的勘定吟味役</h3>
@@ -1554,7 +1542,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>瑞士，生于巴塞尔，卒于巴塞尔</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；巴塞尔大学数学教授，巴黎科学院外籍院士、柏林科学协会会员；伯努利数学家族第一代</td></tr>
 <tr><td><strong>代表成就</strong></td><td>《猜度术》（Ars Conjectandi，1713）、大数定律的第一个严格证明、伯努利数、最速降线问题的解法</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/jbernoulli.webp" width="275" height="326" alt="雅各布·伯努利" loading="lazy"><figcaption>雅各布·伯努利</figcaption></figure>
 </div>
 
 <h3>一、巴塞尔的两兄弟与最速降线</h3>
@@ -1656,7 +1644,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>法国，生于博讷（科多尔省），卒于巴黎</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家、军事工程师；梅济耶尔军事工程学院教授，巴黎科学院院士，巴黎综合理工学院教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>创立画法几何（《画法几何学》，1799）、空间曲线与曲面的微分几何、参与创建巴黎综合理工学院</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/monge.webp" width="268" height="326" alt="蒙日" loading="lazy"><figcaption>蒙日</figcaption></figure>
 </div>
 
 <h3>一、梅济耶尔的军事工程师</h3>
@@ -1682,7 +1670,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>法国，生于图卢兹（一说巴黎），卒于巴黎</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；巴黎军事学院数学教授，巴黎科学院院士，英国皇家学会会员，后任职于经度局</td></tr>
 <tr><td><strong>代表成就</strong></td><td>《数论随笔》（Essai sur la théorie des nombres，1798）与二次互反律、《几何学原理》（Éléments de géométrie，1794）、勒让德多项式、最小二乘法、椭圆积分的分类</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/legendre.webp" width="261" height="326" alt="勒让德" loading="lazy"><figcaption>勒让德</figcaption></figure>
 </div>
 
 <h3>一、从图卢兹到巴黎科学院</h3>
@@ -1823,6 +1811,85 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 </div>
 </div>
 
+<div id="ar-mathfigures-panel-cantor" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-cantor">
+<div class="agent-intro">
+<h2>康托尔：为无穷立法的集合论之父</h2>
+<div class="fig-head">
+<table class="agent-table">
+<tr><td><strong>原名</strong></td><td>Georg Ferdinand Ludwig Philipp Cantor</td></tr>
+<tr><td><strong>生卒</strong></td><td>1845—1918</td></tr>
+<tr><td><strong>国籍·地区</strong></td><td>德国；生于俄国圣彼得堡，长期任教于哈勒大学，卒于哈勒</td></tr>
+<tr><td><strong>身份</strong></td><td>数学家；集合论创始人，哈勒大学教授，德国数学家联合会首任会长</td></tr>
+<tr><td><strong>代表成就</strong></td><td>创立集合论；证明实数不可数（对角线论证）；建立超穷基数（阿列夫数）与序数理论；提出连续统假设</td></tr>
+</table><figure class="fig-photo"><img src="/images/mathematicians/cantor.webp" width="257" height="326" alt="康托尔" loading="lazy"><figcaption>康托尔</figcaption></figure>
+</div>
+
+<h3>一、从圣彼得堡到哈勒</h3>
+<p>康托尔 1845 年生于圣彼得堡，父亲是商人，家庭富足且重视教育。他早年兴趣偏向工程与物理，后转向数学，1867 年在柏林大学获博士学位，受教于魏尔斯特拉斯、库默尔与克罗内克——其中克罗内克后来成为他最激烈的反对者。</p>
+<p>1869 年他进入哈勒大学，此后终身在此任教。哈勒并非德国数学的中心，这在一定程度上限制了他的影响，也成为他生平最大的遗憾之一。</p>
+
+<h3>二、集合论：把无穷变成对象</h3>
+<p>1874 年，康托尔发表了划时代的论文，证明<strong>实数集合不可数</strong>——它比整数、有理数"更多"。这一结果首次表明：无穷并不是一个笼统的概念，而是<strong>可以比较大小</strong>的。</p>
+<p>1891 年他给出了简洁优美的<strong>对角线论证</strong>：无论怎样把实数排成一列，都能构造出一个不在列中的新实数。这个论证至今仍是数学入门课的经典内容。</p>
+<p>此后他系统建立了超穷基数与序数理论：最小的无穷记作 ℵ₀，实数的基数记作 2^ℵ₀；他还证明了幂集总是严格大于原集合（康托尔定理）。</p>
+
+<h3>三、连续统假设与争议</h3>
+<p>康托尔提出<strong>连续统假设</strong>：ℵ₀ 与 2^ℵ₀ 之间不存在其他基数。他倾尽后半生试图证明它，始终没有成功。</p>
+<p>这种挫败，加上克罗内克等人长期的公开攻击（后者称他的工作为"骗子行径"，并阻挠他进入柏林大学），使他数度精神崩溃。1884 年首次发病后，他反复出入疗养院，1918 年病逝于哈勒。</p>
+
+<h3>四、身后：从争议到地基</h3>
+<p>康托尔晚年逐渐获得国际承认，英国皇家学会授予他奖章。希尔伯特在 1900 年把连续统假设列为 23 个问题的首位，并在 1926 年说出那句名言——"没有人能把我们从康托尔创造的天堂里赶出去"。</p>
+<p>今天，集合论是全部现代数学的语言基础；连续统假设则被证明在标准公理系统（ZFC）中<strong>不可判定</strong>（哥德尔 1940、科恩 1963）——这个结局，比康托尔设想的更离奇，却也印证了他提出的是一个真正深刻的问题。</p>
+</div>
+</div>
+
+<div id="ar-mathfigures-panel-poincare" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-poincare">
+<div class="agent-intro">
+<h2>庞加莱：最后一位数学全才</h2>
+<div class="fig-head">
+<table class="agent-table">
+<tr><td><strong>原名</strong></td><td>Jules Henri Poincaré</td></tr>
+<tr><td><strong>生卒</strong></td><td>1854—1912</td></tr>
+<tr><td><strong>国籍·地区</strong></td><td>法国；生于南锡，长期任教于巴黎大学（索邦），卒于巴黎</td></tr>
+<tr><td><strong>身份</strong></td><td>数学家、物理学家、天文学家、科学哲学家；法国科学院院士（1887），法兰西学术院院士（1908）</td></tr>
+<tr><td><strong>代表成就</strong></td><td>拓扑学奠基（《位置分析》，1895）；三体问题与混沌现象的首次发现（1889）；自守函数理论；微分方程定性理论；庞加莱猜想（1904）；狭义相对论的先驱工作（洛伦兹变换群、庞加莱群）；科学哲学"约定论"</td></tr>
+</table><figure class="fig-photo"><img src="/images/mathematicians/poincare.webp" width="262" height="326" alt="庞加莱" loading="lazy"><figcaption>庞加莱</figcaption></figure>
+</div>
+
+<h3>一、从南锡到索邦</h3>
+<p>庞加莱 1854 年生于法国南锡一个书香门第，父亲是医学教授，表弟雷蒙·普恩加来后来成为法国总统。他自幼体弱，左眼近乎失明，却有过目不忘的记忆力。</p>
+<p>1873 年他以第一名考入巴黎综合理工学院，随后又就读矿业学院，取得矿业工程师资格——但他一生从未真正做过工程师。1879 年在巴黎大学获博士学位，1881 年起任教于索邦，此后几乎未曾离开巴黎。他同时在综合理工学院任教，并长期担任法国经度局成员。</p>
+
+<h3>二、自守函数：一举成名</h3>
+<p>1880 年代初，庞加莱构造出一类新的函数——今天称为<strong>自守函数</strong>（他当时称之为富克斯函数与克莱因函数）。这项工作让他立刻在欧洲声名鹊起。</p>
+<p>关键在于他注意到：这类函数的变换群，正是<strong>非欧几何</strong>里的运动群。这个观察把复分析、群论与几何连成了一体，也让当时还被视为"纯智力游戏"的非欧几何获得了实在的数学意义。他与德国的克莱因在这场竞赛中互有先后，是 19 世纪末最著名的一次学术竞速。</p>
+
+<h3>三、三体问题：人类第一次看见"混沌"</h3>
+<p>1885 年，瑞典国王奥斯卡二世悬赏征解"太阳系是否稳定"的问题。庞加莱应征，1889 年获奖。</p>
+<p>他没有给出太阳系稳定的答案——恰恰相反，他证明了<strong>一般的三体问题无法用解析方法求解</strong>：那些级数解并不收敛。更惊人的是，他发现某些轨道会形成极其复杂的纠缠结构（今天称为<strong>同宿缠结</strong>），初始条件的微小差别会被放大到完全不同的结局。</p>
+<p>这是人类第一次在严格的数学对象里看到后来被称为"<strong>混沌</strong>"的现象。</p>
+<p>这段历史还有个著名的插曲：获奖论文付印后，编辑弗拉格曼发现一处错误，庞加莱立即承认并重做，自己掏钱重印——费用比奖金还高。也正是在这次修改中，他把混沌的结构看得更清楚了。1890 年他还证明了<strong>庞加莱回归定理</strong>：一个有限的保守系统在足够长的时间后总会回到任意接近初始的状态。</p>
+
+<h3>四、拓扑学的奠基</h3>
+<p>1895 年，庞加莱发表了题为《位置分析》（Analysis Situs）的长文，这被公认为<strong>代数拓扑的诞生宣言</strong>。他在其中引入了同伦、基本群、贝蒂数、以及欧拉示性数的高维推广（今天称为欧拉–庞加莱示性数）。</p>
+<p>1904 年，他提出了那个著名的<strong>庞加莱猜想</strong>：一个闭的、单连通的三维流形，是否一定同胚于三维球面？</p>
+<p>这个问题悬了一百年，最终由佩雷尔曼在 2002—2003 年借助哈密尔顿的 Ricci 流解决。它是拓扑学史上最著名的一桩公案——也是本站"数学轶事"里浓墨重彩的一篇。</p>
+
+<h3>五、站在相对论的门口</h3>
+<p>庞加莱在物理上也走得很远。早在 1900 年前后，他就指出<strong>洛伦兹变换构成一个群</strong>（今天称为庞加莱群），讨论了用光信号同步时钟的操作定义，触及了"同时性"的相对性，还探讨了电磁场动量与质能关系。</p>
+<p>他提出了相对性原理的表述，却始终没有像爱因斯坦那样，把这一切重构为一套新的时空观。后世公认：庞加莱是狭义相对论最重要的先驱之一，而 1905 年的爱因斯坦给出了那个干净利落的版本。数学史里最微妙的那种"差一步"，莫过于此。</p>
+
+<h3>六、科学哲学：约定论</h3>
+<p>庞加莱晚年写下《科学与假设》（1902）、《科学的价值》（1905）、《科学与方法》（1908），成为影响深远的科学哲学家。</p>
+<p>他主张：几何学的公理既不是经验事实，也不是先验真理，而是<strong>约定</strong>——我们选择欧氏几何还是非欧几何，取决于哪一套更方便，而非哪一套更"真"。这个立场今天仍被反复讨论。</p>
+<p>他还写过著名的《数学的创造》，描述自己如何在苦思无果后让问题"沉入潜意识"，又在某天踏上马车的一瞬间突然得到答案。这篇文章至今是关于数学直觉最常被引用的一手材料。</p>
+
+<h3>七、尾声</h3>
+<p>1912 年 7 月 17 日，庞加莱因手术后栓塞在巴黎去世，享年五十八岁。当时他仍在思考量子理论与三体问题。</p>
+<p>他常被称为"<strong>最后一位数学全才</strong>"——在他之后，数学的分化已经使任何人都不可能通晓全部领域，此后再无第二个庞加莱。他死后一百年，三维球面那个猜想才被攻下；而"混沌"这个词，要到他去世半个多世纪后才被正式命名。</p>
+</div>
+</div>
+
 <div id="ar-mathfigures-panel-hilbert" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-hilbert">
 <div class="agent-intro">
 <h2>希尔伯特：数学的"总司令"与23个问题</h2>
@@ -1908,7 +1975,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>德国，柏林</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；法兰克福大学、哥廷根大学、普林斯顿高等研究院</td></tr>
 <tr><td><strong>代表成就</strong></td><td>丢番图逼近中的西格尔改进（图埃—西格尔—罗斯链条），二次型的解析理论，多复变自守函数与西格尔模形式，《天体力学讲义》</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/siegel.webp" width="268" height="326" alt="西格尔" loading="lazy"><figcaption>西格尔</figcaption></figure>
 </div>
 
 <h3>一、一位孤高的数论家</h3>
@@ -1935,7 +2002,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>美国，生于纽约市</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；纽约市立学院（曾任教于麻省理工学院、哥伦比亚大学）</td></tr>
 <tr><td><strong>代表成就</strong></td><td>普拉托问题的一般解；变分学反问题的解；极小曲面理论</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/douglas.webp" width="268" height="326" alt="道格拉斯" loading="lazy"><figcaption>道格拉斯</figcaption></figure>
 </div>
 
 <h3>一、一个悬了两百年的问题</h3>
@@ -1962,7 +2029,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>俄罗斯帝国（后入美国籍），科布林（今属白俄罗斯）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；约翰斯·霍普金斯大学、哈佛大学</td></tr>
 <tr><td><strong>代表成就</strong></td><td>扎里斯基拓扑、正规簇、代数曲面与三维代数簇的奇点解消、扎里斯基主定理；《代数曲面》《交换代数》</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/zariski.webp" width="268" height="326" alt="扎里斯基" loading="lazy"><figcaption>扎里斯基</figcaption></figure>
 </div>
 
 <h3>一、从科布林到罗马</h3>
@@ -1989,7 +2056,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>苏联，坦波夫</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；莫斯科大学</td></tr>
 <tr><td><strong>代表成就</strong></td><td>概率论公理化（《概率论基础》），湍流 K41 标度律与柯尔莫哥洛夫微尺度，柯尔莫哥洛夫–西奈熵，柯尔莫哥洛夫复杂度</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/kolmogorov.webp" width="268" height="326" alt="柯尔莫哥洛夫" loading="lazy"><figcaption>柯尔莫哥洛夫</figcaption></figure>
 </div>
 
 <h3>一、概率论的公理化</h3>
@@ -2043,7 +2110,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>德国、美国，生于布雷斯劳（今波兰弗罗茨瓦夫）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；加州大学伯克利分校教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>无解的光滑线性偏微分方程（Lewy 反例）；Monge–Ampère 方程的先验估计；与库朗、弗里德里希斯的 CFL 条件</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/lewy.webp" width="254" height="326" alt="莱维" loading="lazy"><figcaption>莱维</figcaption></figure>
 </div>
 
 <h3>一、从哥廷根到伯克利</h3>
@@ -2095,7 +2162,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>法国，尚特奈（今属南特）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；南锡大学、巴黎大学、法兰西公学院</td></tr>
 <tr><td><strong>代表成就</strong></td><td>Navier–Stokes 方程弱解理论（勒雷–霍普夫解），勒雷–绍德尔度，层论与谱序列的开创</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/leray.webp" width="231" height="326" alt="勒雷" loading="lazy"><figcaption>勒雷</figcaption></figure>
 </div>
 
 <h3>一、流体方程的弱解</h3>
@@ -2122,7 +2189,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>法国，巴黎</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；斯特拉斯堡大学、圣保罗大学、芝加哥大学、普林斯顿高等研究院</td></tr>
 <tr><td><strong>代表成就</strong></td><td>韦伊猜想（有限域上代数簇的黎曼假设类比）与曲线情形的证明，《代数几何基础》，阿代尔环与韦伊群</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/weil.webp" width="268" height="326" alt="韦伊" loading="lazy"><figcaption>韦伊</figcaption></figure>
 </div>
 
 <h3>一、从巴黎到阿拉哈巴德</h3>
@@ -2149,7 +2216,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>芬兰（后长期在美国工作），生于赫尔辛基</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；哈佛大学（曾任教于赫尔辛基大学、苏黎世大学）</td></tr>
 <tr><td><strong>代表成就</strong></td><td>当茹瓦–卡尔曼–阿尔福斯定理；覆盖曲面理论与几何函数论；拟共形映射与泰希米勒理论</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/ahlfors.webp" width="268" height="326" alt="阿尔福斯" loading="lazy"><figcaption>阿尔福斯</figcaption></figure>
 </div>
 
 <h3>一、从赫尔辛基到苏黎世</h3>
@@ -2176,7 +2243,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>苏联（乌克兰），基辅</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；敖德萨大学、敖德萨建筑工程学院</td></tr>
 <tr><td><strong>代表成就</strong></td><td>克赖因–米尔曼定理，克赖因空间（不定度规空间），矩量问题的克赖因条件，克赖因–鲁特曼定理与塔纳卡–克赖因对偶</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/krein.webp" width="268" height="326" alt="克赖因" loading="lazy"><figcaption>克赖因</figcaption></figure>
 </div>
 
 <h3>一、没有本科学位的数学家</h3>
@@ -2203,7 +2270,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>美国，纽约市</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；哈佛大学、普林斯顿高等研究院</td></tr>
 <tr><td><strong>代表成就</strong></td><td>惠特尼嵌入定理、斯蒂费尔–惠特尼示性类与惠特尼和、拟阵理论的创立、奇点理论与几何积分论的奠基</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/whitney.webp" width="252" height="326" alt="惠特尼" loading="lazy"><figcaption>惠特尼</figcaption></figure>
 </div>
 
 <h3>一、从图着色到光滑流形</h3>
@@ -2272,7 +2339,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>中国、美国，生于浙江嘉兴</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；南开数学研究所（今陈省身数学研究所）创办人，曾任西南联合大学、芝加哥大学、加州大学伯克利分校教授，美国国家数学科学研究所首任所长</td></tr>
 <tr><td><strong>代表成就</strong></td><td>陈类与高斯–博内–陈公式；纤维丛理论的发展；陈–西蒙斯微分式</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/chern.webp" width="268" height="326" alt="陈省身" loading="lazy"><figcaption>陈省身</figcaption></figure>
 </div>
 
 <h3>一、从嘉兴到普林斯顿</h3>
@@ -2324,7 +2391,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>波兰、美国，生于华沙</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；哥伦比亚大学教授，曾执教于密歇根大学与印第安纳大学</td></tr>
 <tr><td><strong>代表成就</strong></td><td>与麦克莱恩创立范畴论及 Eilenberg–Mac Lane 空间；与斯廷罗德建立同调公理；与嘉当合著《同调代数》</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/eilenberg.webp" width="227" height="326" alt="艾伦伯格" loading="lazy"><figcaption>艾伦伯格</figcaption></figure>
 </div>
 
 <h3>一、华沙学派与流亡</h3>
@@ -2351,7 +2418,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>匈牙利，生于布达佩斯</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；匈牙利科学院院士，一生无固定的供职机构，以访问学者身份游历各大洲</td></tr>
 <tr><td><strong>代表成就</strong></td><td>与塞尔伯格给出素数定理的初等证明；开创组合学中的概率方法；埃尔德什数的原点</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/erdos.webp" width="268" height="326" alt="埃尔德什" loading="lazy"><figcaption>埃尔德什</figcaption></figure>
 </div>
 
 <h3>一、布达佩斯的天才与流亡</h3>
@@ -2378,7 +2445,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>苏联／美国，今乌克兰敖德萨州奥克尼镇</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；莫斯科大学、罗格斯大学</td></tr>
 <tr><td><strong>代表成就</strong></td><td>巴拿赫代数中的盖尔范德表示与盖尔范德–马祖尔定理，盖尔范德–奈马克定理与 GNS 构造，复半单李代数表示论，盖尔范德–列维坦反散射积分方程；创办盖尔范德讨论班</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/gelfand.webp" width="272" height="326" alt="盖尔范德" loading="lazy"><figcaption>盖尔范德</figcaption></figure>
 </div>
 
 <h3>一、没有中学文凭的研究生</h3>
@@ -2405,7 +2472,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>日本，生于三重县员辨郡（今员辨市）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；京都大学教授，京都大学数理解析研究所所长，后任康奈尔大学教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>伊藤积分与伊藤公式；随机微分方程与扩散过程理论；随机分析的创立</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/ito.webp" width="263" height="326" alt="伊藤清" loading="lazy"><figcaption>伊藤清</figcaption></figure>
 </div>
 
 <h3>一、布朗运动与无法定义的积分</h3>
@@ -2432,7 +2499,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>日本，生于东京</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；东京大学、学习院大学（曾任教于普林斯顿大学、斯坦福大学）</td></tr>
 <tr><td><strong>代表成就</strong></td><td>调和积分理论与凯勒流形；小平消灭定理与小平嵌入定理；小平–斯潘塞形变理论；紧复曲面分类</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/kodaira.webp" width="268" height="326" alt="小平邦彦" loading="lazy"><figcaption>小平邦彦</figcaption></figure>
 </div>
 
 <h3>一、两次毕业</h3>
@@ -2459,7 +2526,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>法国，生于巴黎</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；巴黎综合理工学院、巴黎第七大学（曾任教于南锡大学）</td></tr>
 <tr><td><strong>代表成就</strong></td><td>分布（广义函数）理论，《分布理论》（1950—1951）；施瓦茨核定理、施瓦茨空间</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/schwartz.webp" width="268" height="326" alt="施瓦茨" loading="lazy"><figcaption>施瓦茨</figcaption></figure>
 </div>
 
 <h3>一、δ函数的合法性危机</h3>
@@ -2486,7 +2553,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>挪威（后长期在美国工作），生于朗格松</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；普林斯顿高等研究院</td></tr>
 <tr><td><strong>代表成就</strong></td><td>塞尔伯格筛法；ζ函数零点的临界线定理；素数定理的初等证明；塞尔伯格迹公式</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/selberg.webp" width="262" height="326" alt="塞尔伯格" loading="lazy"><figcaption>塞尔伯格</figcaption></figure>
 </div>
 
 <h3>一、战时的孤独与临界线上的零点</h3>
@@ -2513,7 +2580,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>阿根廷、美国，生于门多萨</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；芝加哥大学教授，曾任教于麻省理工学院、俄亥俄州立大学与普林斯顿高等研究院</td></tr>
 <tr><td><strong>代表成就</strong></td><td>Calderón–Zygmund 奇异积分算子理论；柯西问题唯一性；伪微分算子与卡尔德隆反问题</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/calderon.webp" width="268" height="326" alt="卡尔德隆" loading="lazy"><figcaption>卡尔德隆</figcaption></figure>
 </div>
 
 <h3>一、从工程师到分析学家</h3>
@@ -2540,7 +2607,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>匈牙利裔美国籍；生于匈牙利布达佩斯</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；哈佛大学教授（曾任 William Casper Graustein 讲座教授）</td></tr>
 <tr><td><strong>代表成就</strong></td><td>Bott 周期性定理、Morse–Bott 函数、Atiyah–Bott 不动点定理、Borel–Weil–Bott 定理</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/bott.webp" width="274" height="326" alt="博特" loading="lazy"><figcaption>博特</figcaption></figure>
 </div>
 
 <h3>一、从电路网络到代数拓扑</h3>
@@ -2594,7 +2661,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>美国，马萨诸塞州波士顿</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；耶鲁大学 Henry Ford II 讲座教授，曾任美国数学会主席</td></tr>
 <tr><td><strong>代表成就</strong></td><td>Mostow 强刚性定理（高维双曲流形的拓扑决定其几何）、Mostow–Palais 定理、与 Deligne 合作关于格的公度性与超几何单值群的工作</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/mostow.webp" width="264" height="326" alt="莫斯托" loading="lazy"><figcaption>莫斯托</figcaption></figure>
 </div>
 
 <h3>一、从波士顿到耶鲁</h3>
@@ -2621,7 +2688,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>法国，生于杜省蒙贝利亚尔</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；法国高等科学研究院（曾任教于格勒诺布尔大学、斯特拉斯堡大学）</td></tr>
 <tr><td><strong>代表成就</strong></td><td>配边理论与托姆空间、托姆同构、托姆横截性定理；奇点理论与分层集；突变理论</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/thom.webp" width="245" height="326" alt="托姆" loading="lazy"><figcaption>托姆</figcaption></figure>
 </div>
 
 <h3>一、配边：给流形分类</h3>
@@ -2648,7 +2715,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>美国，密歇根州底特律</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；麻省理工学院、加州大学伯克利分校</td></tr>
 <tr><td><strong>代表成就</strong></td><td>与 Michael Atiyah 共同证明阿蒂亚–辛格指标定理（1962）；Ambrose–Singer 定理；Ray–Singer 挠率；Kadison–Singer 问题</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/singer.webp" width="224" height="326" alt="辛格" loading="lazy"><figcaption>辛格</figcaption></figure>
 </div>
 
 <h3>一、从底特律到芝加哥：一条绕行的路</h3>
@@ -2675,7 +2742,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>加拿大/美国，生于加拿大安大略省汉密尔顿</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；纽约大学库朗数学科学研究所</td></tr>
 <tr><td><strong>代表成就</strong></td><td>Gagliardo–Nirenberg 插值不等式与 Sobolev 不等式；John–Nirenberg 有界平均振动空间；Newlander–Nirenberg 定理；Agmon–Douglis–Nirenberg 估计；Gidas–Ni–Nirenberg 对称性定理</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/nirenberg.webp" width="274" height="326" alt="尼伦伯格" loading="lazy"><figcaption>尼伦伯格</figcaption></figure>
 </div>
 
 <h3>一、从蒙特利尔到库朗研究所</h3>
@@ -2729,7 +2796,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>美国，明尼苏达州明尼阿波利斯</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；哈佛大学、得克萨斯大学奥斯汀分校</td></tr>
 <tr><td><strong>代表成就</strong></td><td>泰特论文（阿代尔环上的调和分析）；泰特上同调与类域论的上同调处理；泰特模、泰特曲线、沙法列维奇–泰特群；Lubin–Tate 形式群；刚性解析几何</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/tate.webp" width="261" height="326" alt="泰特" loading="lazy"><figcaption>泰特</figcaption></figure>
 </div>
 
 <h3>一、从明尼阿波利斯到普林斯顿</h3>
@@ -2783,7 +2850,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>法国，生于东比利牛斯省巴日</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；法兰西公学院（曾任法国国家科研中心研究员）</td></tr>
 <tr><td><strong>代表成就</strong></td><td>球面同伦群与勒雷–塞尔谱序列；《代数凝聚层》（FAC）与《代数几何与解析几何》（GAGA）；椭圆曲线的开像定理</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/serre.webp" width="268" height="326" alt="塞尔" loading="lazy"><figcaption>塞尔</figcaption></figure>
 </div>
 
 <h3>一、球面的同伦群</h3>
@@ -2810,7 +2877,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>德国，生于威斯特法伦的哈姆</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；波恩大学教授，波恩马克斯·普朗克数学研究所创始所长</td></tr>
 <tr><td><strong>代表成就</strong></td><td>高维黎曼–罗赫定理；符号差定理；与阿蒂亚共同开创拓扑 K 理论</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/hirzebruch.webp" width="324" height="326" alt="希策布鲁赫" loading="lazy"><figcaption>希策布鲁赫</figcaption></figure>
 </div>
 
 <h3>一、战后德国的数学起点</h3>
@@ -2837,7 +2904,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>瑞典，生于斯德哥尔摩</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；乌普萨拉大学、瑞典皇家理工学院、加州大学洛杉矶分校教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>卡尔森定理（L² 函数傅里叶级数几乎处处收敛）；H∞ 代数上的日冕定理新证明；卡尔森测度</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/carleson.webp" width="227" height="326" alt="卡尔森" loading="lazy"><figcaption>卡尔森</figcaption></figure>
 </div>
 
 <h3>一、一个悬了四十年的猜想</h3>
@@ -2862,7 +2929,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>意大利，生于莱切</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；比萨高等师范学校教授，曾执教于墨西拿大学</td></tr>
 <tr><td><strong>代表成就</strong></td><td>解决希尔伯特第十九问题（德乔治–纳什定理）；卡乔波利集与几何测度论；Γ-收敛</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/degiorgi.webp" width="298" height="326" alt="德乔治" loading="lazy"><figcaption>德乔治</figcaption></figure>
 </div>
 
 <h3>一、莱切、罗马与比萨</h3>
@@ -2889,7 +2956,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>生于德国柏林，长期居留法国（晚年入法国籍）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；法国高等科学研究所（IHÉS，1958—1970），后任蒙彼利埃大学教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>概型理论（EGA、SGA）；格罗滕迪克—黎曼—罗赫定理；以"东北论文"革新同调代数；引入格罗滕迪克群与环，开创K理论</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/grothendieck.webp" width="266" height="326" alt="格罗滕迪克" loading="lazy"><figcaption>格罗滕迪克</figcaption></figure>
 </div>
 
 <h3>一、无国籍者的早年</h3>
@@ -2943,7 +3010,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>美国，西弗吉尼亚州布卢菲尔德</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；普林斯顿大学、麻省理工学院</td></tr>
 <tr><td><strong>代表成就</strong></td><td>纳什均衡与非合作博弈；纳什嵌入定理；De Giorgi–Nash 定理（希尔伯特第十九问题）；Nash–Moser 定理</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/nash.webp" width="268" height="326" alt="纳什" loading="lazy"><figcaption>纳什</figcaption></figure>
 </div>
 
 <h3>一、普林斯顿的二十八页博士论文</h3>
@@ -2970,7 +3037,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>日本，东京</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；京都大学数理解析研究所教授（后任所长）</td></tr>
 <tr><td><strong>代表成就</strong></td><td>超函数与微函数理论、D-模与完整量子场论、KP 层次与佐藤格拉斯曼流形、佐藤–泰特猜想、伯恩斯坦–佐藤多项式</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/sato.webp" width="313" height="326" alt="佐藤干夫" loading="lazy"><figcaption>佐藤干夫</figcaption></figure>
 </div>
 
 <h3>一、从战后东京到超函数</h3>
@@ -2997,7 +3064,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>英国，伦敦汉普斯特德</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；剑桥大学三一学院、牛津大学（萨维尔几何教授）与爱丁堡大学，曾任普林斯顿高等研究院教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>与希策布鲁赫共创拓扑K理论；与辛格证明阿蒂亚—辛格指标定理；与博特证明推广莱夫谢茨公式的不动点定理</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/atiyah.webp" width="268" height="326" alt="阿蒂亚" loading="lazy"><figcaption>阿蒂亚</figcaption></figure>
 </div>
 
 <h3>一、从喀土穆到三一学院</h3>
@@ -3051,7 +3118,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>美国，密歇根州弗林特</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；加州大学伯克利分校荣休教授，曾任教于芝加哥大学、哥伦比亚大学与香港城市大学</td></tr>
 <tr><td><strong>代表成就</strong></td><td>证明五维及以上的广义庞加莱猜想；h-配边定理与手柄体分解；斯梅尔马蹄与结构稳定性</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/smale.webp" width="268" height="326" alt="斯梅尔" loading="lazy"><figcaption>斯梅尔</figcaption></figure>
 </div>
 
 <h3>一、从密歇根到里约的海滩</h3>
@@ -3078,7 +3145,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>法国（原比利时籍），生于比利时于克勒</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；法兰西公学院、波恩大学、布鲁塞尔自由大学</td></tr>
 <tr><td><strong>代表成就</strong></td><td>Tits 建筑（buildings）理论；(B, N) 对；Tits 替代；Tits 群与 Tits 度量；球型建筑的分类</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/tits.webp" width="268" height="326" alt="蒂茨" loading="lazy"><figcaption>蒂茨</figcaption></figure>
 </div>
 
 <h3>一、布鲁塞尔的神童</h3>
@@ -3105,7 +3172,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>日本，山口县</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；哈佛大学教授、京都大学教授（后任京都大学数理解析研究所所长、山口大学校长）</td></tr>
 <tr><td><strong>代表成就</strong></td><td>特征零域上任意维代数簇的奇点解消定理、爆发（blow-up）理论、实解析几何中子解析集理论</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/hironaka.webp" width="268" height="326" alt="广中平祐" loading="lazy"><figcaption>广中平祐</figcaption></figure>
 </div>
 
 <h3>一、从山口到哈佛</h3>
@@ -3132,7 +3199,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>瑞典，布莱金厄省米耶尔比</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；隆德大学教授（1968—1996），曾任教于斯德哥尔摩大学、斯坦福大学与普林斯顿高等研究院</td></tr>
 <tr><td><strong>代表成就</strong></td><td>线性偏微分算子的一般理论；伪微分算子与傅里叶积分算子；亚椭圆性判别条件；四卷本《线性偏微分算子的分析》</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/hormander.webp" width="268" height="326" alt="赫尔曼德" loading="lazy"><figcaption>赫尔曼德</figcaption></figure>
 </div>
 
 <h3>一、从米耶尔比到隆德</h3>
@@ -3159,7 +3226,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>美国，新泽西州奥兰治</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；纽约州立大学石溪分校杰出教授，曾任教于普林斯顿大学与普林斯顿高等研究院</td></tr>
 <tr><td><strong>代表成就</strong></td><td>发现七维怪球，开创微分拓扑；h-配边理论；代数K理论；奇点理论中的米尔诺数与米尔诺纤维化</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/milnor.webp" width="268" height="326" alt="米尔诺" loading="lazy"><figcaption>米尔诺</figcaption></figure>
 </div>
 
 <h3>一、普林斯顿的神童</h3>
@@ -3186,7 +3253,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>美国；生于比利时安特卫普</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；普林斯顿大学 Albert Baldwin Dod 讲座教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>Stein 插值定理、Cotlar–Stein 几乎正交性引理、Tomas–Stein 限制定理、Fefferman–Stein 的 Hardy 空间与 BMO 理论</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/stein.webp" width="246" height="326" alt="施泰因" loading="lazy"><figcaption>施泰因</figcaption></figure>
 </div>
 
 <h3>一、从安特卫普到普林斯顿</h3>
@@ -3230,6 +3297,38 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 </div>
 </div>
 
+<div id="ar-mathfigures-panel-chen" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-chen">
+<div class="agent-intro">
+<h2>陈景润：把哥德巴赫猜想推到最后一步的人</h2>
+<div class="fig-head">
+<table class="agent-table">
+<tr><td><strong>原名</strong></td><td>陈景润（Chen Jingrun）</td></tr>
+<tr><td><strong>生卒</strong></td><td>1933—1996</td></tr>
+<tr><td><strong>国籍·地区</strong></td><td>中国，福建福州</td></tr>
+<tr><td><strong>身份</strong></td><td>数学家；中国科学院数学研究所研究员，中国科学院院士（1980）</td></tr>
+<tr><td><strong>代表成就</strong></td><td>证明哥德巴赫猜想"1+2"（1966 年公布、1973 年发表完整证明），至今仍是该猜想的最好结果</td></tr>
+</table><figure class="fig-photo"><img src="/images/mathematicians/chen.webp" width="241" height="326" alt="陈景润" loading="lazy"><figcaption>陈景润</figcaption></figure>
+</div>
+
+<h3>一、从厦门到中科院</h3>
+<p>陈景润 1933 年生于福州，1953 年毕业于厦门大学数学系。他最初在中学任教、后回到厦大图书馆工作，利用业余时间钻研数论。</p>
+<p>一次，他写信指出华罗庚《堆垒素数论》中的一处可以改进的地方。华罗庚读后不但没有不悦，反而赏识其才，于 1957 年将他调入中国科学院数学研究所——这段提携，是数学界流传甚广的一段佳话。</p>
+
+<h3>二、"1+2"：半个世纪未被超越</h3>
+<p>哥德巴赫猜想断言：每个大于 2 的偶数都可以写成两个素数之和（记作"1+1"）。由于直接证明极为困难，数学家改用"a+b"的形式逐步逼近：即把偶数写成两个"分别不超过 a 个、b 个素数乘积"的数之和。</p>
+<p>沿着布朗（1920 年"9+9"）开启的筛法路线，华罗庚、王元、潘承洞等人不断推进。1966 年，陈景润宣布证明了<strong>"1+2"</strong>——每个充分大的偶数都可写成一个素数与一个不超过两个素数乘积的数之和；1973 年他发表了完整证明。</p>
+<p>这一结果至今仍是哥德巴赫猜想的最好记录。之所以难以再进一步，是因为筛法存在原理性的<strong>奇偶性障碍</strong>：它无法区分一个数究竟是素数还是两个素数的乘积。</p>
+
+<h3>三、六平米与几麻袋草稿</h3>
+<p>陈景润的工作条件极为艰苦：他在中科院数学所的住处是一间约六平方米、无窗的小屋，白天也需开灯。他每天工作十余小时，演算草稿装满了几麻袋，全部结果在发表前反复核对了七年之久。</p>
+<p>1978 年，作家徐迟发表报告文学《哥德巴赫猜想》，使陈景润的事迹传遍全国，"陈景润"也成为那个时代科学精神的象征。这一文学传播的影响，在数学史上是相当罕见的。</p>
+
+<h3>四、身后</h3>
+<p>1996 年 3 月 19 日，陈景润在北京逝世，享年六十三岁。他晚年长期患病，但仍坚持工作。</p>
+<p>他证明的"1+2"至今没有被超越。在数学史上，把一个问题推进到最后一步而未能终结它的人，往往与最终的解决者同样被人铭记——陈景润正是如此。</p>
+</div>
+</div>
+
 <div id="ar-mathfigures-panel-artin" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathfigures-panel-artin">
 <div class="agent-intro">
 <h2>迈克尔·阿廷：为模空间造出代数语言的几何学家</h2>
@@ -3267,7 +3366,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>美国，新泽西州朗布兰奇（长滩）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；斯坦福大学教授，曾任教于罗切斯特大学、麻省理工学院，并两度访学普林斯顿高等研究院</td></tr>
 <tr><td><strong>代表成就</strong></td><td>创立力迫法，证明连续统假设与选择公理对集合论公理系统的独立性</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/cohen.webp" width="268" height="326" alt="科恩" loading="lazy"><figcaption>科恩</figcaption></figure>
 </div>
 
 <h3>一、从布鲁克林到芝加哥</h3>
@@ -3294,7 +3393,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>以色列（生于德国柏林，1939年移居美国，1965年移居以色列）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；耶路撒冷希伯来大学爱因斯坦数学研究所荣休教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>素数无穷多的拓扑动力学证明、Szemerédi 定理的遍历论证明、Furstenberg 边界与随机游走理论；2006/07年沃尔夫奖、2020年阿贝尔奖</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/furstenberg.webp" width="250" height="326" alt="富尔斯滕伯格" loading="lazy"><figcaption>富尔斯滕伯格</figcaption></figure>
 </div>
 
 <h3>一、一个"不存在的人"</h3>
@@ -3321,7 +3420,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>俄罗斯/美国，生于苏联莫斯科</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；普林斯顿大学、莫斯科大学、朗道理论物理研究所</td></tr>
 <tr><td><strong>代表成就</strong></td><td>柯尔莫哥洛夫–西奈熵；西奈台球及其遍历性证明；Sinai–Ruelle–Bowen 测度；Pirogov–Sinai 理论；西奈随机游动</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/sinai.webp" width="250" height="326" alt="西奈" loading="lazy"><figcaption>西奈</figcaption></figure>
 </div>
 
 <h3>一、莫斯科的几何学血脉</h3>
@@ -3348,7 +3447,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>加拿大（后兼美国籍），不列颠哥伦比亚省新威斯敏斯特</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；普林斯顿高等研究院荣休教授（Hermann Weyl 讲席）</td></tr>
 <tr><td><strong>代表成就</strong></td><td>朗兰兹纲领、Eisenstein 级数的一般理论、L-群与函子性原理、玉河数猜想的证明；1995/96年沃尔夫奖、2018年阿贝尔奖</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/langlands.webp" width="301" height="326" alt="朗兰兹" loading="lazy"><figcaption>朗兰兹</figcaption></figure>
 </div>
 
 <h3>一、一封写给韦伊的信</h3>
@@ -3375,7 +3474,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>苏联／俄罗斯；生于敖德萨</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；莫斯科大学、斯捷克洛夫数学研究所、巴黎第九大学教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>KAM 理论、阿诺德扩散、阿诺德猜想、奇点理论的分类、理想流体的 Euler–Arnold 几何刻画</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/arnold.webp" width="245" height="326" alt="阿诺德" loading="lazy"><figcaption>阿诺德</figcaption></figure>
 </div>
 
 <h3>一、十九岁解决希尔伯特第十三问题</h3>
@@ -3402,7 +3501,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>美国（生于英国），英格兰西萨塞克斯郡沃思（Worth）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；布朗大学应用数学分部大学教授（荣休），曾任哈佛大学教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>模簇的存在性与结构、几何不变量理论（GIT）、代数曲面与阿贝尔簇的代数理论、Mumford–Shah 泛函</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/mumford.webp" width="268" height="326" alt="芒福德" loading="lazy"><figcaption>芒福德</figcaption></figure>
 </div>
 
 <h3>一、模空间：给几何对象分类的空间</h3>
@@ -3429,7 +3528,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>美国，北卡罗来纳州罗利</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；普林斯顿高等研究院教授（1991–2003 年任院长），曾任哈佛大学、杜克大学教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>霍奇结构的变分理论与格里菲斯横截性、周期映射与周期域、与 Harris 合著《代数几何原理》、Clemens–Griffiths 对 Lüroth 问题的反例</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/griffiths.webp" width="288" height="326" alt="格里菲斯" loading="lazy"><figcaption>格里菲斯</figcaption></figure>
 </div>
 
 <h3>一、从北卡罗来纳到高等研究院</h3>
@@ -3537,7 +3636,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>意大利，米兰</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；普林斯顿高等研究院 IBM John von Neumann 数学教授（荣休）</td></tr>
 <tr><td><strong>代表成就</strong></td><td>大筛法与 Bombieri–Vinogradov 定理、局部 Bieberbach 猜想、与 De Giorgi 和 Giusti 合作解决高维 Bernstein 问题</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/bombieri.webp" width="223" height="326" alt="邦别里" loading="lazy"><figcaption>邦别里</figcaption></figure>
 </div>
 
 <h3>一、大筛法与素数的平均分布</h3>
@@ -3564,7 +3663,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>美国，新泽西州奥兰治</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；麻省理工学院教授，后任牛津大学莫德林学院 Waynflete 纯粹数学讲席教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>高阶代数 K 理论的 Q 构造、Quillen–Suslin 定理（塞尔猜想）、模型范畴理论、有理同伦论</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/quillen.webp" width="268" height="326" alt="奎伦" loading="lazy"><figcaption>奎伦</figcaption></figure>
 </div>
 
 <h3>一、从偏微分方程到同伦论</h3>
@@ -3591,7 +3690,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>匈牙利/美国，生于匈牙利布达佩斯</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；罗格斯大学、匈牙利科学院阿尔弗雷德·雷尼数学研究所</td></tr>
 <tr><td><strong>代表成就</strong></td><td>塞梅雷迪定理（正整数集中任意长等差数列）；塞梅雷迪正则性引理；Szemerédi–Trotter 定理；Hajnal–Szemeredi 定理；AKS 排序网络</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/szemeredi.webp" width="243" height="326" alt="塞梅雷迪" loading="lazy"><figcaption>塞梅雷迪</figcaption></figure>
 </div>
 
 <h3>一、从医学院退学到莫斯科</h3>
@@ -3618,7 +3717,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>印度/美国，生于印度马德拉斯（今金奈）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；纽约大学库朗数学科学研究所</td></tr>
 <tr><td><strong>代表成就</strong></td><td>大偏差的统一理论；与 Stroock 合作的扩散过程鞅问题；Donsker–Varadhan 理论；《多维扩散过程》</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/varadhan.webp" width="245" height="326" alt="瓦拉丹" loading="lazy"><figcaption>瓦拉丹</figcaption></figure>
 </div>
 
 <h3>一、从马德拉斯到加尔各答</h3>
@@ -3645,7 +3744,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>美国，密歇根州休伦港</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；纽约市立大学研究生院 Albert Einstein 讲席教授，石溪大学杰出教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>空间的局部化与完备化、有理同伦论、无游荡域定理、字符串拓扑（与 Chas）；2010年沃尔夫奖、2022年阿贝尔奖</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/sullivan.webp" width="249" height="326" alt="沙利文" loading="lazy"><figcaption>沙利文</figcaption></figure>
 </div>
 
 <h3>一、把空间逐个素数地拆开</h3>
@@ -3699,7 +3798,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>俄罗斯/法国，生于苏联博克西托戈尔斯克</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；法国高等科学研究所（IHÉS）、纽约大学</td></tr>
 <tr><td><strong>代表成就</strong></td><td>h 原理与凸积分；辛几何不可挤压定理与伪全纯曲线；多项式增长群定理；双曲群与几何群论；Gromov–Hausdorff 收敛</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/gromov.webp" width="245" height="326" alt="格罗莫夫" loading="lazy"><figcaption>格罗莫夫</figcaption></figure>
 </div>
 
 <h3>一、列宁格勒与罗赫林学派</h3>
@@ -3753,7 +3852,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>美国，阿肯色州小石城</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；加州理工学院 Shaler Arthur Hanisch 讲座教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>有限单群分类计划的核心人物、Aschbacher 极大子群定理、与 Stephen D. Smith 合作完成拟薄群的分类</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/aschbacher.webp" width="284" height="326" alt="阿施巴赫" loading="lazy"><figcaption>阿施巴赫</figcaption></figure>
 </div>
 
 <h3>一、从组合学到群论</h3>
@@ -3780,7 +3879,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>比利时，布鲁塞尔埃特尔贝克（Etterbeek）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；普林斯顿高等研究院数学学院教授（荣休），曾任法国高等科学研究所（IHÉS）永久成员</td></tr>
 <tr><td><strong>代表成就</strong></td><td>韦伊猜想的完全证明（有限域上的黎曼猜想类比）、Ramanujan–Petersson 猜想、权与混合 Hodge 理论、Deligne–Mumford 栈、反常层（perverse sheaves）</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/deligne.webp" width="268" height="326" alt="德利涅" loading="lazy"><figcaption>德利涅</figcaption></figure>
 </div>
 
 <h3>一、从布鲁塞尔到 IHÉS</h3>
@@ -3834,7 +3933,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>以色列，耶路撒冷</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；希伯来大学数理逻辑 A. Robinson 讲座教授、罗格斯大学杰出访问教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>真强制法（proper forcing）、PCF 理论、模型论的分类理论与 Morley 问题的解决、Whitehead 问题的独立性</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/shelah.webp" width="232" height="326" alt="沙拉赫" loading="lazy"><figcaption>沙拉赫</figcaption></figure>
 </div>
 
 <h3>一、从几何到逻辑</h3>
@@ -3861,7 +3960,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>俄罗斯/美国，生于列宁格勒（今圣彼得堡）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；斯坦福大学（曾任教于瑟克特夫卡尔大学）</td></tr>
 <tr><td><strong>代表成就</strong></td><td>埃利亚什伯格—格罗莫夫辛刚性定理；切触结构的"紧/过扭"分类与三维球面切触结构的完全分类；复维大于二的 Stein 流形的拓扑刻画</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/eliashberg.webp" width="250" height="326" alt="埃利亚什伯格" loading="lazy"><figcaption>埃利亚什伯格</figcaption></figure>
 </div>
 
 <h3>一、从列宁格勒到瑟克特夫卡尔</h3>
@@ -3888,7 +3987,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>俄罗斯出生/以色列，生于莫斯科</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；耶路撒冷希伯来大学（曾任教于哈佛大学）</td></tr>
 <tr><td><strong>代表成就</strong></td><td>Kazhdan 性质 (T)；Kazhdan–Lusztig 多项式与猜想；Springer 纤维与仿射赫克代数；几何表示论与 Langlands 纲领</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/kazhdan.webp" width="269" height="326" alt="卡日丹" loading="lazy"><figcaption>卡日丹</figcaption></figure>
 </div>
 
 <h3>一、莫斯科的少年数学家</h3>
@@ -3915,7 +4014,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>罗马尼亚裔美国数学家，生于蒂米什瓦拉</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；麻省理工学院（曾任教于华威大学）</td></tr>
 <tr><td><strong>代表成就</strong></td><td>Deligne–Lusztig 理论；Kazhdan–Lusztig 基、多项式与猜想；特征标层；量子群的典范基</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/lusztig.webp" width="253" height="326" alt="卢斯蒂格" loading="lazy"><figcaption>卢斯蒂格</figcaption></figure>
 </div>
 
 <h3>一、从蒂米什瓦拉到普林斯顿</h3>
@@ -3942,7 +4041,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>原苏联（后入美国籍），莫斯科</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；耶鲁大学教授，早年任职于苏联科学院信息传输问题研究所</td></tr>
 <tr><td><strong>代表成就</strong></td><td>超刚性定理与算术性定理、正规子群定理、Oppenheim 猜想的证明、膨胀图的首批显式构造</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/margulis.webp" width="268" height="326" alt="马尔古利斯" loading="lazy"><figcaption>马尔古利斯</figcaption></figure>
 </div>
 
 <h3>一、莫斯科的早慧与遍历论的入口</h3>
@@ -3969,7 +4068,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>美国，华盛顿特区</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；康奈尔大学教授，曾任教普林斯顿大学、加州大学伯克利分校与戴维斯分校，并任伯克利数学科学研究所（MSRI）所长</td></tr>
 <tr><td><strong>代表成就</strong></td><td>几何化猜想与三维流形的八种几何、双曲 Dehn 手术定理、曲面微分同胚的分类、叶状结构理论</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/thurston.webp" width="268" height="326" alt="瑟斯顿" loading="lazy"><figcaption>瑟斯顿</figcaption></figure>
 </div>
 
 <h3>一、叶状结构的登场</h3>
@@ -3996,7 +4095,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>法国，德拉吉尼昂</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；法国高等科学研究所（IHÉS）与法兰西公学教授，亦曾任教俄亥俄州立大学、范德堡大学</td></tr>
 <tr><td><strong>代表成就</strong></td><td>III 型因子与单射因子的分类、循环上同调、非交换几何的创立、Baum–Connes 猜想</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/connes.webp" width="268" height="326" alt="孔涅" loading="lazy"><figcaption>孔涅</figcaption></figure>
 </div>
 
 <h3>一、III 型因子的分类</h3>
@@ -4050,7 +4149,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>阿根廷（后入美国籍），布宜诺斯艾利斯</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；得克萨斯大学奥斯汀分校教授（Sid W. Richardson 基金会 Regents 讲席）</td></tr>
 <tr><td><strong>代表成就</strong></td><td>自由边值问题与障碍问题的正则性理论、蒙日–安培方程的正则性、完全非线性椭圆方程、纳维–斯托克斯方程的部分正则性（与 Kohn、Nirenberg）；2012年沃尔夫奖、2023年阿贝尔奖</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/caffarelli.webp" width="250" height="326" alt="卡法雷利" loading="lazy"><figcaption>卡法雷利</figcaption></figure>
 </div>
 
 <h3>一、从布宜诺斯艾利斯到明尼苏达</h3>
@@ -4077,7 +4176,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>匈牙利，布达佩斯</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家与计算机科学家；罗兰大学荣休教授，曾任微软研究院高级研究员、匈牙利科学院院长</td></tr>
 <tr><td><strong>代表成就</strong></td><td>洛瓦兹局部引理、Kneser 猜想的证明、LLL 格基约化算法、图的极限理论（与 Szegedy）；1999年沃尔夫奖、2021年阿贝尔奖</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/lovasz.webp" width="253" height="326" alt="洛瓦兹" loading="lazy"><figcaption>洛瓦兹</figcaption></figure>
 </div>
 
 <h3>一、从奥赛金牌到图论</h3>
@@ -4104,7 +4203,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>美国，华盛顿特区</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；普林斯顿大学 Herbert E. Jones, Jr. '43 大学数学教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>$H^1$ 与 BMO 空间的对偶、严格伪凸域双全纯映射的边界光滑延拓、奇异积分与 Carleson 定理的多变量推广、非退化线性偏微分方程局部可解性</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/fefferman.webp" width="219" height="326" alt="费弗曼" loading="lazy"><figcaption>费弗曼</figcaption></figure>
 </div>
 
 <h3>一、一条神童式的路径</h3>
@@ -4156,7 +4255,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>美国，生于俄亥俄州塞利纳</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；斯坦福大学（巴斯讲席教授，1987年起），后任加州大学欧文分校杰出教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>与丘成桐合作证明正质量定理；完全解决 Yamabe 问题；与布伦德尔合作证明可微球面定理</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/schoen.webp" width="244" height="326" alt="舍恩" loading="lazy"><figcaption>舍恩</figcaption></figure>
 </div>
 
 <h3>一、从俄亥俄农场到斯坦福</h3>
@@ -4183,7 +4282,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>美国，加利福尼亚州洛杉矶</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；微软 Station Q（加州大学圣塔芭芭拉分校）创始负责人，曾任加州大学圣迭戈分校教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>四维庞加莱猜想的证明、单连通紧致四维流形的拓扑分类、E8 流形与奇异四维空间的存在</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/freedman.webp" width="268" height="326" alt="弗里德曼" loading="lazy"><figcaption>弗里德曼</figcaption></figure>
 </div>
 
 <h3>一、从伯克利退学到普林斯顿</h3>
@@ -4210,7 +4309,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>日本，生于爱知县名古屋市</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；京都大学数理解析研究所教授，后任京都大学高等研究院院长</td></tr>
 <tr><td><strong>代表成就</strong></td><td>确立极小模型纲领（森纲领）并证明三维极小模型的存在性；提出极值射线与锥定理；证明翻转定理；解决哈茨霍恩猜想</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/mori.webp" width="268" height="326" alt="森重文" loading="lazy"><figcaption>森重文</figcaption></figure>
 </div>
 
 <h3>一、从名古屋到京都，再到哈佛</h3>
@@ -4237,7 +4336,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>美国，生于马里兰州巴尔的摩</td></tr>
 <tr><td><strong>身份</strong></td><td>理论物理学家；普林斯顿高等研究院自然科学学院查尔斯·西蒙尼教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>广义相对论正能定理的旋量证明；琼斯多项式的量子场论解释与拓扑量子场论；塞伯格–威滕理论与四维流形不变量；M 理论</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/witten.webp" width="268" height="326" alt="威滕" loading="lazy"><figcaption>威滕</figcaption></figure>
 </div>
 
 <h3>一、从历史系到理论物理</h3>
@@ -4318,7 +4417,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>法国，贝济耶（成长于里昂）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；法国国家科学研究中心（CNRS）研究主任（1985–2017），巴黎朱西厄数学研究所泛函分析团队</td></tr>
 <tr><td><strong>代表成就</strong></td><td>随机过程上确界的一般链理论（majorizing measures）、集中不等式、自旋玻璃 Parisi 公式的严格证明；2019年邵逸夫奖、2024年阿贝尔奖</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/talagrand.webp" width="280" height="326" alt="塔拉格兰" loading="lazy"><figcaption>塔拉格兰</figcaption></figure>
 </div>
 
 <h3>一、在里昂开始的数学</h3>
@@ -4345,7 +4444,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>南非／美国；生于南非约翰内斯堡</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；普林斯顿大学 Eugene Higgins 讲座教授、普林斯顿高等研究院教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>算术量子混沌与量子唯一遍历猜想、随机矩阵与 L 函数零点的联系、Ramanujan 图与扩展图、薄群与仿射筛法</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/sarnak.webp" width="277" height="326" alt="萨纳克" loading="lazy"><figcaption>萨纳克</figcaption></figure>
 </div>
 
 <h3>一、从约翰内斯堡到普林斯顿</h3>
@@ -4372,7 +4471,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>英国，生于英格兰剑桥</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；牛津大学（皇家学会研究教授、首位数学钦定讲座教授）、普林斯顿大学</td></tr>
 <tr><td><strong>代表成就</strong></td><td>证明半稳定椭圆曲线的模性定理，从而证明费马大定理；与 Coates 合作证明岩泽理论主猜想</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/wiles.webp" width="268" height="326" alt="怀尔斯" loading="lazy"><figcaption>怀尔斯</figcaption></figure>
 </div>
 
 <h3>一、十岁那年的图书馆</h3>
@@ -4399,7 +4498,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>比利时，生于奥斯坦德</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；普林斯顿高等研究院教授，此前任教于伊利诺伊大学厄巴纳-香槟分校与法国高等科学研究所</td></tr>
 <tr><td><strong>代表成就</strong></td><td>巴拿赫空间几何与高维凸性；调和分析、算术组合与卡克亚问题；非线性色散偏微分方程；与德梅特、古斯合作证明维诺格拉多夫均值定理</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/bourgain.webp" width="268" height="326" alt="布尔甘" loading="lazy"><figcaption>布尔甘</figcaption></figure>
 </div>
 
 <h3>一、奥斯坦德起步的比利时人</h3>
@@ -4426,7 +4525,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>比利时/美国，生于比利时豪特哈伦</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家、物理学家；杜克大学（曾任教于普林斯顿大学、罗格斯大学）</td></tr>
 <tr><td><strong>代表成就</strong></td><td>紧支撑规范正交小波的构造（多贝西小波）；双正交 CDF 小波；小波理论在图像压缩与信号处理中的应用</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/daubechies.webp" width="228" height="326" alt="多贝西" loading="lazy"><figcaption>多贝西</figcaption></figure>
 </div>
 
 <h3>一、从物理到小波</h3>
@@ -4453,7 +4552,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>乌克兰裔美国籍，生于苏联乌克兰哈尔科夫（今哈尔基夫）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；芝加哥大学哈里·普拉特·贾德森杰出服务教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>以德林费尔德模证明函数域上 GL2 的朗兰兹猜想；提出"量子群"并联系杨–巴克斯特方程；与贝林森重建顶点代数的手征代数理论</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/drinfeld.webp" width="257" height="326" alt="德林费尔德" loading="lazy"><figcaption>德林费尔德</figcaption></figure>
 </div>
 
 <h3>一、少年满分金牌与马宁门下</h3>
@@ -4480,7 +4579,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>德国，盖尔森基兴</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；马克斯·普朗克数学研究所（波恩）荣休所长，曾任伍珀塔尔大学与普林斯顿大学教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>莫德尔猜想的证明（法尔廷斯定理）、Mordell–Lang 猜想的证明、法尔廷斯乘积定理、$p$ 进 Hodge 理论</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/faltings.webp" width="268" height="326" alt="法尔廷斯" loading="lazy"><figcaption>法尔廷斯</figcaption></figure>
 </div>
 
 <h3>一、一条猜想，六十年</h3>
@@ -4507,7 +4606,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>美国，生于弗吉尼亚州亚历山德里亚</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；芝加哥大学（曾任教于杜克大学、康奈尔大学）</td></tr>
 <tr><td><strong>代表成就</strong></td><td>擦除环随机游走的系统理论；与施拉姆、维尔纳证明平面模型的共形不变性；布朗运动边界维数为三分之四</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/lawler.webp" width="236" height="326" alt="劳勒" loading="lazy"><figcaption>劳勒</figcaption></figure>
 </div>
 
 <h3>一、随机游走的精细结构</h3>
@@ -4534,7 +4633,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>俄罗斯裔美国籍，生于苏联哈巴罗夫斯克（伯力）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；加州大学圣迭戈分校教授，后任南方科技大学讲席教授及杰曼诺夫数学中心主任</td></tr>
 <tr><td><strong>代表成就</strong></td><td>解决受限伯恩赛德问题；建立无限维约当代数结构理论，解决约当–冯·诺依曼–维格纳问题；证明 Engel 恒等式蕴涵幂零性</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/zelmanov.webp" width="268" height="326" alt="泽尔马诺夫" loading="lazy"><figcaption>泽尔马诺夫</figcaption></figure>
 </div>
 
 <h3>一、新西伯利亚的代数训练</h3>
@@ -4588,7 +4687,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>法国，生于滨海阿尔卑斯省格拉斯</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；法兰西公学院"偏微分方程及其应用"讲席教授，巴黎综合理工教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>与克兰德尔共同提出黏性解理论；玻尔兹曼方程的第一个完整解；与拉斯里共同创立平均场博弈论</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/lions.webp" width="281" height="326" alt="利翁斯" loading="lazy"><figcaption>利翁斯</figcaption></figure>
 </div>
 
 <h3>一、数学世家里的应用数学选择</h3>
@@ -4615,7 +4714,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>以色列（兼美国籍），海法</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家与理论计算机科学家；普林斯顿高等研究院 Herbert H. Maass 教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>困难性与随机性（与 Impagliazzo、Nisan）、零知识证明的普适性（与 Goldreich、Micali）、zig-zag 积与扩展图；2021年阿贝尔奖、2023年图灵奖</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/wigderson.webp" width="284" height="326" alt="维格森" loading="lazy"><figcaption>维格森</figcaption></figure>
 </div>
 
 <h3>一、从海法到复杂性理论</h3>
@@ -4642,7 +4741,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>俄罗斯/美国，生于莫斯科</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；芝加哥大学（曾任教于麻省理工学院）</td></tr>
 <tr><td><strong>代表成就</strong></td><td>反常层理论（与伯恩斯坦、德利涅）；贝林森—伯恩斯坦局部化与 Kazhdan–Lusztig 猜想的证明；动机上同调的贝林森猜想；手征代数（与德林费尔德）</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/beilinson.webp" width="272" height="326" alt="贝林森" loading="lazy"><figcaption>贝林森</figcaption></figure>
 </div>
 
 <h3>一、莫斯科的第二数学学校</h3>
@@ -4669,7 +4768,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>英国，剑桥</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；伦敦帝国理工学院纯粹数学教授，纽约州立大学石溪分校西蒙斯几何与物理中心常任成员</td></tr>
 <tr><td><strong>代表成就</strong></td><td>唐纳森定理与四维流形的光滑结构、奇异四维欧氏空间的存在、唐纳森不变量、Kähler 几何与 K 稳定性方面的工作</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/donaldson.webp" width="268" height="326" alt="唐纳森" loading="lazy"><figcaption>唐纳森</figcaption></figure>
 </div>
 
 <h3>一、从帆船设计到牛津的瞬子</h3>
@@ -4696,7 +4795,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>法国，生于巴黎</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；法兰西公学院"微分方程与动力系统"讲席教授，此前任教巴黎南大学</td></tr>
 <tr><td><strong>代表成就</strong></td><td>圆微分同胚可微共轭的 Brjuno 条件及其最优性；约科兹拼图与二次多项式重正化；一维小除数理论与复 Brjuno 函数</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/yoccoz.webp" width="268" height="326" alt="约科兹" loading="lazy"><figcaption>约科兹</figcaption></figure>
 </div>
 
 <h3>一、路易大帝中学与巴黎高师</h3>
@@ -4723,7 +4822,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>美国，生于加利福尼亚州伯克利</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；哈佛大学 Cabot 数学教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>复动力系统中的重正化理论；Mandelbrot 集与 Julia 集的刚性及局部连通性结果；证明高次多项式不存在普遍收敛的纯迭代求根算法</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/mcmullen.webp" width="280" height="326" alt="麦克马伦" loading="lazy"><figcaption>麦克马伦</figcaption></figure>
 </div>
 
 <h3>一、从牛顿法到不可能定理</h3>
@@ -4750,7 +4849,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>英国，生于南非开普敦</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；美国加州大学伯克利分校教授，曾长期任教于剑桥大学</td></tr>
 <tr><td><strong>代表成就</strong></td><td>证明康韦–诺顿"魔群月光"猜想；引入顶点算子代数与广义 Kac–Moody 代数（博切尔兹代数）</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/borcherds.webp" width="222" height="326" alt="博切尔兹" loading="lazy"><figcaption>博切尔兹</figcaption></figure>
 </div>
 
 <h3>一、一个不该出现的巧合</h3>
@@ -4777,7 +4876,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>法国，生于布列塔尼的莫尔莱</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；巴黎-萨克雷大学（曾任教于巴黎第六大学、巴黎高等师范学院）</td></tr>
 <tr><td><strong>代表成就</strong></td><td>布朗蛇的构造；连续随机树与布朗映射的标度极限；布朗球面的唯一性与普适性</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/legall.webp" width="327" height="326" alt="勒加尔" loading="lazy"><figcaption>勒加尔</figcaption></figure>
 </div>
 
 <h3>一、从巴黎高师到布朗世界</h3>
@@ -4804,7 +4903,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>英国，生于威尔特郡马尔伯勒</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；剑桥大学皇家学会研究教授、三一学院院士，2020 年起兼任法兰西学院组合学讲席教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>与莫雷解决无条件基本序列问题；给出 Szemerédi 定理的首个有效定量界；提出 Gowers 一致性范数</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/gowers.webp" width="272" height="326" alt="高尔斯" loading="lazy"><figcaption>高尔斯</figcaption></figure>
 </div>
 
 <h3>一、巴拿赫空间的"坏"结构</h3>
@@ -4831,7 +4930,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>俄罗斯、法国，生于苏联希姆基</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；法国高等科学研究所（IHÉS）教授，迈阿密大学杰出教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>任意泊松流形的形变量子化公式；孔采维奇积分（纽结不变量）；稳定映射模空间与 Witten 猜想的证明；动机积分</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/kontsevich.webp" width="254" height="326" alt="孔采维奇" loading="lazy"><figcaption>孔采维奇</figcaption></figure>
 </div>
 
 <h3>一、波恩的三年与 Witten 猜想</h3>
@@ -4858,7 +4957,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>法国，生于上塞纳省安东尼</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；华为技术（法国）拉格朗日数学与计算研究中心高级专家，曾任法国高等科学研究所教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>证明函数域上 GL(n) 的朗兰兹对应（即特征为正的代数曲线函数域上的整体朗兰兹猜想）</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/lafforgue.webp" width="215" height="326" alt="拉福格" loading="lazy"><figcaption>拉福格</figcaption></figure>
 </div>
 
 <h3>一、朗兰兹纲领的一道窄门</h3>
@@ -4885,7 +4984,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>俄罗斯，生于列宁格勒（今圣彼得堡）</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；曾任职于圣彼得堡俄罗斯科学院斯捷克洛夫数学研究所，2005 年后退出职业数学界</td></tr>
 <tr><td><strong>代表成就</strong></td><td>证明庞加莱猜想与瑟斯顿三维流形几何化猜想；早年证明黎曼几何中的灵魂猜想</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/perelman.webp" width="284" height="326" alt="佩雷尔曼" loading="lazy"><figcaption>佩雷尔曼</figcaption></figure>
 </div>
 
 <h3>一、一个早熟的几何学家</h3>
@@ -4912,7 +5011,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>俄罗斯、美国，生于莫斯科，逝于美国普林斯顿</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；普林斯顿高等研究院教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>建立动机上同调与 $\mathbb{A}^1$ 同伦论，证明 Milnor 猜想与（motivic）Bloch–Kato 猜想；后期创立单价基础（univalent foundations）</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/voevodsky.webp" width="246" height="326" alt="沃埃沃德斯基" loading="lazy"><figcaption>沃埃沃德斯基</figcaption></figure>
 </div>
 
 <h3>一、一份改变方向的手稿</h3>
@@ -4966,7 +5065,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>俄罗斯、美国，生于莫斯科</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；哥伦比亚大学 Samuel Eilenberg 数学讲席教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>随机分拆与随机分区的极限形状；无穷对称群的表示论；Hilbert 概形的量子上同调；Gromov–Witten 与 Donaldson–Thomas 不变量之间的猜想</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/okounkov.webp" width="264" height="326" alt="奥孔科夫" loading="lazy"><figcaption>奥孔科夫</figcaption></figure>
 </div>
 
 <h3>一、从莫斯科到芝加哥、伯克利、普林斯顿</h3>
@@ -5180,7 +5279,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>伊朗、美国，生于德黑兰</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；斯坦福大学教授（2008 年起），此前任普林斯顿大学助理教授与克莱数学研究所研究员</td></tr>
 <tr><td><strong>代表成就</strong></td><td>给出模空间体积的递推公式并据此重新证明 Witten 猜想；与 Alex Eskin 合作证明 Teichmüller 流闭不变集的"魔杖"刚性定理；紧双曲面上简单闭测地线计数的渐近公式</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/mirzakhani.webp" width="263" height="326" alt="米尔扎哈尼" loading="lazy"><figcaption>米尔扎哈尼</figcaption></figure>
 </div>
 
 <h3>一、从德黑兰的法尔赞内甘到哈佛</h3>
@@ -5234,7 +5333,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>巴西、法国双重国籍，生于里约热内卢</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；苏黎世大学教授（2018 年起），法国国家科研中心（CNRS）研究主任，里约热内卢 IMPA 研究员</td></tr>
 <tr><td><strong>代表成就</strong></td><td>与 Svetlana Jitomirskaya 合作解决"十杯马丁尼问题"；与 Marcelo Viana 合作证明 Zorich–Kontsevich 猜想；建立单频准周期薛定谔算子的全局理论</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/avila.webp" width="278" height="326" alt="阿维拉" loading="lazy"><figcaption>阿维拉</figcaption></figure>
 </div>
 
 <h3>一、里约少年、IMPA 与二十一岁的博士</h3>
@@ -5342,7 +5441,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <tr><td><strong>国籍·地区</strong></td><td>乌克兰，生于基辅</td></tr>
 <tr><td><strong>身份</strong></td><td>数学家；瑞士洛桑联邦理工学院（EPFL）教授</td></tr>
 <tr><td><strong>代表成就</strong></td><td>证明 E8 格给出八维空间中相同球体的最密堆积；与合作者解决二十四维的利奇格堆积；傅里叶分析中的插值与极值问题</td></tr>
-</table>
+</table><figure class="fig-photo"><img src="/images/mathematicians/viazovska.webp" width="269" height="326" alt="维亚佐夫斯卡" loading="lazy"><figcaption>维亚佐夫斯卡</figcaption></figure>
 </div>
 
 <h3>一、基辅、波恩与模形式</h3>
@@ -6416,8 +6515,13 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 
   <div id="ar-mathawards-panel-fields" class="ai-tab-panel active" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathawards-panel-fields">
 <h2 class="ai-math-title">菲尔兹奖：给四十岁以下数学家的桂冠</h2>
+<div class="award-head">
+<div class="award-intro">
 <p>诺贝尔奖里没有数学，于是数学界自己造了两顶冠冕。菲尔兹奖由加拿大数学家约翰·查尔斯·菲尔兹捐资设立，1936 年首次颁发，此后每四年在国际数学家大会（ICM）上颁出二至四枚，只授予<b>获奖当年元旦前未满四十岁</b>的数学家——它奖励的不仅是已有成就，更是对未来工作的期许。奖章正面是阿基米德头像，背面刻着那句拉丁铭文：<i>"汇聚自全球的数学家，因卓越的著作而授予"</i>。奖金额度并不惊人（约 1.5 万加元），江湖地位却无人能及。</p>
-<p>1936 至 2022 年共有 64 人获奖，2026 年费城大会又添 4 位，<strong>邓煜</strong>与<strong>王虹</strong>成为首批中国籍得主。下表按年份列出全部获奖者与 IMU 官方授奖理由；<strong>点击人名可跳转到「数学人物」中该数学家的小传</strong>。</p>
+<p>1936 至 2022 年共有 64 人获奖，2026 年费城大会又添 4 位，<strong>邓煜</strong>与<strong>王虹</strong>成为首批中国籍得主。</p>
+</div>
+<figure class="award-fig"><img src="/images/awards/fields-medal.webp" width="334" height="324" alt="菲尔兹奖章正面：阿基米德侧像" loading="lazy"><figcaption>菲尔兹奖章正面：阿基米德侧像（图源：IMU，公有领域）</figcaption></figure>
+</div>
 <h3>历届获奖者（1936–2026）</h3>
 <table class="award-table">
 <tr><th style="width:5.5rem">年份</th><th style="width:11rem">获奖者</th><th>获奖理由</th></tr>
@@ -6494,7 +6598,12 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 
   <div id="ar-mathawards-panel-abel" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathawards-panel-abel">
 <h2 class="ai-math-title">阿贝尔奖：弥补诺贝尔缺口的终身成就奖</h2>
+<div class="award-head">
+<div class="award-intro">
 <p>挪威政府为纪念本国天才数学家尼尔斯·亨利克·阿贝尔，于 2003 年设立阿贝尔奖，由挪威科学与文学院每年颁出，奖金 750 万挪威克朗。它不设年龄限制，表彰的是<strong>一生的开创性贡献</strong>，正好补上菲尔兹奖只奖青年的另一端，因此常被称作"数学界的诺贝尔奖"。阿贝尔本人 26 岁死于肺结核，生前贫困潦倒；两百年后以他命名的奖项，成了数学界最大的荣誉之一。</p>
+</div>
+<figure class="award-fig"><img src="/images/mathematicians/abel.webp" width="360" height="438" alt="尼尔斯·亨利克·阿贝尔肖像" loading="lazy"><figcaption>尼尔斯·亨利克·阿贝尔（1802—1829），阿贝尔奖以其命名</figcaption></figure>
+</div>
 <h3>历届获奖者（2003–2026）</h3>
 <table class="award-table">
 <tr><th style="width:5.5rem">年份</th><th style="width:11rem">获奖者</th><th>获奖理由</th></tr>
@@ -6532,7 +6641,12 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 
   <div id="ar-mathawards-panel-wolf" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathawards-panel-wolf">
 <h2 class="ai-math-title">沃尔夫数学奖：奖励"整整一生"的工作</h2>
+<div class="award-head">
+<div class="award-intro">
 <p>沃尔夫奖由发明家、外交家里卡多·沃尔夫捐资，1978 年起由以色列沃尔夫基金会每年颁发，含农业、化学、数学、医学、物理与艺术六个领域，每项奖金 10 万美元。沃尔夫数学奖的授奖词里反复出现一句话：<i>"它常常表彰一整个学术生命的成就"</i>——许多得主获奖时已功成名就，也有不少人在获沃尔夫奖之后又摘下阿贝尔奖，被视为数学大奖的"预言家"。</p>
+</div>
+<figure class="award-fig"><img src="/images/awards/wolf-logo.webp" width="400" height="265" alt="沃尔夫基金会标志" loading="lazy"><figcaption>沃尔夫基金会标志（沃尔夫数学奖由该基金会颁发）</figcaption></figure>
+</div>
 <h3>历届获奖者（1978–2026）</h3>
 <table class="award-table">
 <tr><th style="width:5.5rem">年份</th><th style="width:11rem">获奖者</th><th>获奖理由</th></tr>
@@ -6634,13 +6748,20 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
     <button type="button" class="ai-tab-btn tab-teal active" role="tab" id="tab-ar-mathanecdotes-panel-calculus" aria-controls="ar-mathanecdotes-panel-calculus" aria-selected="true" tabindex="0" onclick="switchMathAnecdotes('calculus', this)">微积分发明权之争</button>
     <button type="button" class="ai-tab-btn tab-orange" role="tab" id="tab-ar-mathanecdotes-panel-poincare" aria-controls="ar-mathanecdotes-panel-poincare" aria-selected="false" tabindex="-1" onclick="switchMathAnecdotes('poincare', this)">庞加莱猜想百年恩怨</button>
     <button type="button" class="ai-tab-btn tab-red" role="tab" id="tab-ar-mathanecdotes-panel-galois" aria-controls="ar-mathanecdotes-panel-galois" aria-selected="false" tabindex="-1" onclick="switchMathAnecdotes('galois', this)">伽罗瓦决斗</button>
+    <button type="button" class="ai-tab-btn tab-blue" role="tab" id="tab-ar-mathanecdotes-panel-fermatnote" aria-controls="ar-mathanecdotes-panel-fermatnote" aria-selected="false" tabindex="-1" onclick="switchMathAnecdotes('fermatnote', this)">费马的挑衅</button>
+    <button type="button" class="ai-tab-btn tab-purple" role="tab" id="tab-ar-mathanecdotes-panel-quintic" aria-controls="ar-mathanecdotes-panel-quintic" aria-selected="false" tabindex="-1" onclick="switchMathAnecdotes('quintic', this)">五次方程不可解</button>
+    <button type="button" class="ai-tab-btn tab-green" role="tab" id="tab-ar-mathanecdotes-panel-taxicab" aria-controls="ar-mathanecdotes-panel-taxicab" aria-selected="false" tabindex="-1" onclick="switchMathAnecdotes('taxicab', this)">拉马努金与1729</button>
+    <button type="button" class="ai-tab-btn tab-violet" role="tab" id="tab-ar-mathanecdotes-panel-cubic" aria-controls="ar-mathanecdotes-panel-cubic" aria-selected="false" tabindex="-1" onclick="switchMathAnecdotes('cubic', this)">三次方程的背叛</button>
+    <button type="button" class="ai-tab-btn tab-yellow" role="tab" id="tab-ar-mathanecdotes-panel-cantorset" aria-controls="ar-mathanecdotes-panel-cantorset" aria-selected="false" tabindex="-1" onclick="switchMathAnecdotes('cantorset', this)">康托尔集合论</button>
+    <button type="button" class="ai-tab-btn tab-teal" role="tab" id="tab-ar-mathanecdotes-panel-oneplustwo" aria-controls="ar-mathanecdotes-panel-oneplustwo" aria-selected="false" tabindex="-1" onclick="switchMathAnecdotes('oneplustwo', this)">陈景润：1+2</button>
+    <button type="button" class="ai-tab-btn tab-red" role="tab" id="tab-ar-mathanecdotes-panel-erdosnumber" aria-controls="ar-mathanecdotes-panel-erdosnumber" aria-selected="false" tabindex="-1" onclick="switchMathAnecdotes('erdosnumber', this)">埃尔德什数</button>
   </div>
 
   <div id="ar-mathanecdotes-panel-calculus" class="ai-tab-panel active" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathanecdotes-panel-calculus">
 <div class="crisis-article">
 <h2 class="crisis-title">微积分发明权之争：一场持续百年的“世纪骂战”</h2>
 <h3 class="crisis-h3">一封信引发的风波</h3>
-<p>1699年，伦敦皇家学会。一位名叫法蒂奥·德·杜利尔的瑞士数学家发表文章，公然宣称：牛顿是微积分的“第一位发明者”，而莱布尼兹——充其量算个“第二发明者”，说不定还从牛顿那里“借鉴”了点什么。</p>
+<p>1699年，伦敦皇家学会。一位名叫法蒂奥·德·杜利尔的瑞士数学家发表文章，公然宣称：<a class="fig-link" href="#ar-section-figures" onclick="gotoMathFigure('newton'); return false;">牛顿</a>是微积分的“第一位发明者”，而<a class="fig-link" href="#ar-section-figures" onclick="gotoMathFigure('leibniz'); return false;">莱布尼兹</a>——充其量算个“第二发明者”，说不定还从牛顿那里“借鉴”了点什么。</p>
 <p>这句话像一根火柴，扔进了积攒了三十年的火药桶。</p>
 <p>要知道，在那之前，牛顿和莱布尼兹表面上还算客气。莱布尼兹曾在1687年写信称赞牛顿的《自然哲学之数学原理》是“本世纪最辉煌的成就”，牛顿也回信说双方“在通信中从未有过不快”。两人隔着英吉利海峡互相致意，看起来像是学术圈的一对神仙友谊。</p>
 <p>可惜，微积分这块蛋糕太大了——它改变了人类理解运动、面积、速度、变化的方式，是数学史上最耀眼的明珠。谁都想要“发明者”这个头衔。</p>
@@ -6683,11 +6804,11 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <h2 class="crisis-title">庞加莱猜想百年恩怨</h2>
 <h3 class="crisis-h3">——流形宿命与数学江湖的野闻录</h3>
 <blockquote class="crisis-quote">
-<p><strong>摘要</strong>：1904年，庞加莱随手写下的一句话——"一个闭的、单连通的三维空间，是不是一定就是一个三维球面？"——成了数学界悬了一百年的天问。本文以公开报道与学界流传的轶事为底本，梳理从庞加莱提出猜想、斯梅尔与弗里德曼解决高维情形、哈密尔顿开创Ricci流纲领，到佩雷尔曼2002–2003年三篇预印本"惊鸿一瞥"、2006年"封顶风波"与《纽约客》特稿、以及佩雷尔曼先后拒绝菲尔兹奖与千禧年大奖的完整时间线。江湖恩怨、脚注战争、媒体叙事与数学验证交错上演，最终庞加莱猜想改姓"定理"，而数学本身毫发无损。</p>
+<p><strong>摘要</strong>：1904年，庞加莱随手写下的一句话——"一个闭的、单连通的三维空间，是不是一定就是一个三维球面？"——成了数学界悬了一百年的天问。本文以公开报道与学界流传的轶事为底本，梳理从庞加莱提出猜想、<a class="fig-link" href="#ar-section-figures" onclick="gotoMathFigure('smale'); return false;">斯梅尔</a>与<a class="fig-link" href="#ar-section-figures" onclick="gotoMathFigure('freedman'); return false;">弗里德曼</a>解决高维情形、哈密尔顿开创Ricci流纲领，到<a class="fig-link" href="#ar-section-figures" onclick="gotoMathFigure('perelman'); return false;">佩雷尔曼</a>2002–2003年三篇预印本"惊鸿一瞥"、2006年"封顶风波"与《纽约客》特稿、以及佩雷尔曼先后拒绝菲尔兹奖与千禧年大奖的完整时间线。江湖恩怨、脚注战争、媒体叙事与数学验证交错上演，最终庞加莱猜想改姓"定理"，而数学本身毫发无损。</p>
 </blockquote>
 <hr class="crisis-hr">
 <h3 class="crisis-h3">一、百年悬案：一个折磨数学界一百年的问题</h3>
-<p>1904年，巴黎，亨利·庞加莱在一份论文里顺手写下一句话：一个闭的、单连通的三维空间，是不是一定就是一个三维球面？</p>
+<p>1904年，巴黎，亨利·<a class="fig-link" href="#ar-section-figures" onclick="gotoMathFigure('poincare'); return false;">庞加莱</a>在一份论文里顺手写下一句话：一个闭的、单连通的三维空间，是不是一定就是一个三维球面？</p>
 <p>他自己也拿不准。于是他补了一句"这个问题似乎值得注意"，然后去忙别的了。</p>
 <p>谁能想到，这一句随手一写，成了数学界悬了一百年的天。拓扑学家们前赴后继，把高维的兄弟问题一个个解决掉——五维以上，1961年斯梅尔拿下；四维，1982年弗里德曼收官。领奖台上觥筹交错，唯独三维那把椅子空着，落满了灰。</p>
 <p>江湖上开始流传一句丧气话：<strong>三维是所有维度里最刁钻的</strong>。低维不老实，高维不费劲，数学家们管这叫"低维诅咒"。</p>
@@ -6701,7 +6822,7 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 <p>没有新闻发布，没有发布会，甚至论文里连"证明庞加莱猜想"这句话都没正面写过——他只是淡淡地说，推论自然成立。江湖规矩：真正的剑客从不大喊。</p>
 <hr class="crisis-hr">
 <h3 class="crisis-h3">三、美国东海岸的"巡回讲学"</h3>
-<p>2003年春天，佩雷尔曼拎着背包飞到美国，在MIT、普林斯顿、石溪、哥伦比亚轮流开讲。场面蔚为壮观——数学界大半个江湖都来了：丘成桐来了，哈密尔顿来了，几十年没露面的老先生也拄着拐来了。</p>
+<p>2003年春天，佩雷尔曼拎着背包飞到美国，在MIT、普林斯顿、石溪、哥伦比亚轮流开讲。场面蔚为壮观——数学界大半个江湖都来了：<a class="fig-link" href="#ar-section-figures" onclick="gotoMathFigure('yau'); return false;">丘成桐</a>来了，哈密尔顿来了，几十年没露面的老先生也拄着拐来了。</p>
 <p>讲台上的佩雷尔曼瘦得吓人，指甲很长，据说留着是为了弹钢琴的某个执念。他讲得极快，全场鸦雀无声，没人提得出像样的问题。</p>
 <p>散场后，江湖传闻满天飞。有人追问："那最难的手术部分呢？"佩雷尔曼耸耸肩："手术部分？哈密尔顿早就处理好了。"——这句话后来被反复咀嚼。而哈密尔顿本人听完报告，评价颇有宗师风范：这小子比我想得远。</p>
 <p>也有冷眼旁观的。有人背后嘀咕：这论文七十几页，关键处跳步，术语自己造，不给细节，"这是证明还是路线图？"数学界的规矩是铁律：<strong>预印本不算数，同行验完货才算数</strong>。于是北美各路豪杰组队夜战，克莱纳、洛特等人逐行做批注笔记，摩根和田刚组织研讨班写书——一验就是三年。</p>
@@ -6739,8 +6860,344 @@ description: "数学文化专题：刘徽、欧拉、高斯、诺特等数学家
 </div>
 </div>
 <div id="ar-mathanecdotes-panel-galois" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathanecdotes-panel-galois">
-
+<div class="crisis-article">
+<h2 class="crisis-title">伽罗瓦决斗：决斗前夜，他给数学留下一封遗书</h2>
+<blockquote class="crisis-quote">
+<p><strong>摘要</strong>：1832 年 5 月 30 日，二十岁的<a class="fig-link" href="#ar-section-figures" onclick="gotoMathFigure('galois'); return false;">伽罗瓦</a>在决斗中腹部中弹，次日死于腹膜炎。决斗前一夜，他通宵给朋友舍瓦利耶写信，把关于方程可解性的思想草草写下，并在手稿边反复写着同一句话——"我没有时间了"。他留下的东西，后来长成了代数学的半壁江山。</p>
+</blockquote>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">一、两次落榜的天才</h3>
+<p>伽罗瓦 1811 年生于巴黎近郊的布尔拉雷讷，父亲是镇长，母亲受过良好教育。他十五六岁开始迷上数学，把勒让德、拉格朗日的著作当小说读。</p>
+<p>1828 年和 1829 年，他两次报考巴黎综合理工学院——法国数学的最高殿堂——两次落榜。传说第二次口试时，主考官问了一个他觉得过于简单的问题，他把擦黑板的抹布直接扔了过去。</p>
+<p>1829 年，他父亲因政治陷害自杀。这对他打击极大，也把他彻底推向了激进的政治立场。他转入高等师范学校，边读书边写论文。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">二、三份石沉大海的手稿</h3>
+<p>十七岁那年，伽罗瓦就做出了决定性的发现：他找到了判断一个方程能否用根式求解的<strong>真正判据</strong>——不是去构造公式，而是去考察这个方程根的置换群的结构。这就是后来所谓的"伽罗瓦理论"。</p>
+<p>但这份工作，他往法国科学院交了三次，三次都没落地：</p>
+<p>第一次，1829 年，由<a class="fig-link" href="#ar-section-figures" onclick="gotoMathFigure('cauchy'); return false;">柯西</a>审阅——手稿在柯西那里丢了（究竟是遗失还是压着没看，史学界至今有争论）。</p>
+<p>第二次，1830 年，他改写后参加科学院的数学大奖，秘书傅里叶把稿子带回家，不久去世，稿子随之散失。</p>
+<p>第三次，1831 年，泊松与拉克鲁瓦审阅，结论是：<strong>"我们尽了最大努力去理解伽罗瓦的证明……但他的论证不够清晰、不够展开，使我们无法判断其正确性。"</strong>——建议他把工作写得更完整些再交。</p>
+<p>三次碰壁。伽罗瓦的反应，是把全部精力投向了政治。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">三、从数学到街垒</h3>
+<p>他是坚定的共和派。1830 年七月革命后，他公开批评学校的妥协立场，被开除；他参加国民自卫军的炮兵部队，因为政治活动两度被捕，其中一次被判监禁，在监狱里过了大半年。</p>
+<p>出狱后，他的生活急转直下。他与一位名叫斯蒂芬妮·波特朗·迪莫泰尔的女子往来，这段关系含混不清，成为后来那场决斗最流行的解释。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">四、那场至今说不清的决斗</h3>
+<p>1832 年 5 月 30 日清晨，巴黎近郊。伽罗瓦与人决斗，腹部中弹。</p>
+<p>对手是谁、为了什么，一百多年来没有定论：</p>
+<p>最流行的说法是<strong>为女人</strong>——那位斯蒂芬妮。但史学家指出，决斗对手其实是他的共和派同志，而当时的政治氛围下，决斗常被用作清除异己或激化矛盾的手段；也有人怀疑这是警方的圈套。</p>
+<p>更离奇的是，他在决斗前一夜写给朋友的信里说：自己是被"两个我自己也叫不出名字的人"挑起来的，还说"我像一个把自己的生命押在赌注上的人"——措辞暧昧，反倒让这件事更加扑朔迷离。</p>
+<p>中弹后，他被遗落在现场，一个路过的农民把他送进医院。次日，5 月 31 日，他因腹膜炎去世。<strong>二十岁。</strong></p>
+<p>他弟弟阿尔弗雷德在床边。据说伽罗瓦对他说：别哭，我二十岁就需要全部的勇气去死。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">五、"我没有时间了"</h3>
+<p>决斗前那一夜，他做了一件后来被反复讲述的事。</p>
+<p>他通宵给朋友奥古斯特·舍瓦利耶写了一封信，把自己关于方程可解性的核心想法匆匆记下——群、域的扩张、可解性的判据——同时在几份手稿的空白处反复写着同一句话：</p>
+<p><strong>"Je n'ai pas le temps."（我没有时间了。）</strong></p>
+<p>这封信后来被称为"给舍瓦利耶的信"，是数学史上最著名的一封信。它不是论文，不是证明，是一个二十岁的人在被死神敲门时，急着把脑子里最重要的东西塞进几页纸里。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">六、1846：迟到的出版</h3>
+<p>伽罗瓦死后，他的手稿由弟弟和舍瓦利耶保存。十几年里，几乎无人问津。</p>
+<p>1846 年，法国数学家刘维尔在自己的《纯粹与应用数学杂志》上把它们整理发表，并在编者按里写下了一句后来常被引用的话：这些工作<strong>完全正确，而且深刻</strong>。</p>
+<p>从此，"伽罗瓦理论"正式进入数学：它把"方程能不能用根式解"这个困扰数学界三百年的老问题，彻底转化为"这个方程对应的群是否可解"——顺带解释了为什么二次、三次、四次有公式，而五次没有。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">七、尾声</h3>
+<p>今天，"群"是数学里最基本的结构之一，伽罗瓦的名字挂在伽罗瓦理论、伽罗瓦群、伽罗瓦连接、伽罗瓦表示……他二十岁写下的那几页纸，长成了现代代数与数论的共同地基。</p>
+<p>数学史上关于"天才早逝"的感叹很多，但伽罗瓦这一桩最让人难以释怀——<strong>不是因为他死得早，而是因为在他死之前，这套思想已经在他脑子里完整成型，却始终没能活着看到它被读懂。</strong></p>
+<p>江湖规矩：一个人留下的东西能走多远，不看他活了多久。</p>
 </div>
+</div>
+
+  <div id="ar-mathanecdotes-panel-fermatnote" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathanecdotes-panel-fermatnote">
+<div class="crisis-article">
+<h2 class="crisis-title">费马的挑衅：一句话，困住数学界三百五十八年</h2>
+<blockquote class="crisis-quote">
+<p><strong>摘要</strong>：1637 年前后，图卢兹一位以法律为业的业余数学家，在丢番图《算术》的页边写下一行字：他想到了一个"真正美妙的证明"，可惜空白太小，写不下。这句轻飘飘的批注，让此后三百五十八年里最聪明的大脑前赴后继。</p>
+</blockquote>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">一、页边上的那行字</h3>
+<p>故事的主角是<a class="fig-link" href="#ar-section-figures" onclick="gotoMathFigure('fermat'); return false;">费马</a>——图卢兹议会的法律顾问，白天审案子，晚上做数学。他有个习惯：读书时在页边随手批注，写完也懒得整理，更不发表。</p>
+<p>他读的那本书，是丢番图的《算术》。读到关于勾股数的一节时，他在空白处写下：不可能把一个立方数写成两个立方数之和，或者把一个四次方数写成两个四次方数之和；一般地，任何高于二次的幂都不能写成两个同次幂之和。</p>
+<p>紧接着是那句要命的话——"对此，我确信已发现了一种美妙的证法，可惜这里空白的地方太小，写不下。"</p>
+<p>写完，他去忙别的了。这一忙就是一辈子。<strong>他至死没有公布那个"美妙的证法"</strong>，只在页边留了个挑衅。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">二、三个半世纪的接力</h3>
+<p>他死后，儿子把他的批注整理出版。数学界这才发现：这位业余爱好者留下的每一句话，后来几乎都被证明是对的——唯独这一句，谁也证不出来。</p>
+<p>于是开始了漫长的接力。欧拉证明了 n=3；勒让德与狄利克雷各自证明了 n=5；索菲·热尔曼给出了一大类情形的判据；库默尔为了攻克它，发明了"理想数"，开创了代数数论——<strong>副产品比原问题更值钱</strong>，这是数学史的常见剧本。</p>
+<p>但 n 是无穷无尽的。证完一个 n，还有无穷多个等着。数学家们渐渐明白：靠一个个死磕是不行的，得换个战场。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">三、意外的桥：谷山–志村猜想</h3>
+<p>20 世纪 50 年代，日本数学家谷山丰与志村五郎提出一个看起来八竿子打不着的猜想：椭圆曲线与模形式之间存在着深刻的一一对应。</p>
+<p>1980 年代，弗雷指出：如果费马大定理是错的，就能造出一条极其古怪的椭圆曲线，而这条曲线按谷山–志村猜想不该存在。1986 年，里贝特证明了这一关联——<strong>于是谷山–志村猜想成立，就意味着费马大定理成立</strong>。</p>
+<p>从"n 无穷多"的死路，换到了"两类对象是否一一对应"的活路。这一步，是整场战役的转折点。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">四、七年孤军</h3>
+<p>剑桥的<a class="fig-link" href="#ar-section-figures" onclick="gotoMathFigure('wiles'); return false;">怀尔斯</a>听说了里贝特的结果，做了一个决定：他要把谷山–志村猜想证出来，但<strong>不告诉任何人</strong>。</p>
+<p>理由是：这个问题太诱人，一旦说出口，就会被围观、被抢、被干扰。他把自己关起来，一关就是七年。期间只零星发表一些无关论文，用来解释"你最近在做什么"。</p>
+<p>1993 年 6 月，他在剑桥牛顿研究所做了三场报告，最后一场写下费马大定理的结论，转身说：我想我就到这里吧。全场起立。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">五、裂缝，与 1994 年的补丁</h3>
+<p>然后坏消息来了。审稿过程中，一处被称为"欧拉系统"的关键构造被发现有问题——不是小错，是足以让整个论证断裂的错。</p>
+<p>怀尔斯又闭关了一年。1994 年 9 月，几乎要放弃的时候，他与学生泰勒重新审视，忽然意识到：那个失效的工具虽然修不好，但可以和另一处早年被他放弃的方法<strong>拼起来</strong>——两种方法各补对方的短板。</p>
+<p>补丁补上了。1995 年，完整的证明正式发表，三百五十八年的悬案落幕。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">六、尾声：费马真的有证明吗？</h3>
+<p>今天绝大多数数学家认为：<strong>费马很可能并没有那个证明</strong>。他大概只在 n=4 的情形上想通了，误以为方法能推广——而以他那个时代的工具（还没有理想数、没有椭圆曲线），那个"美妙的证法"不可能存在。</p>
+<p>但这恰恰是这件事最迷人的地方：一句可能是错的批注，逼着人类造出了代数数论、理想数、模形式、谷山–志村猜想，最后催生了 20 世纪最宏大的一场证明。</p>
+<p>江湖上从此有了一句评语：<strong>费马最大的贡献，是让所有人相信自己证不出来。</strong></p>
+</div>
+  </div>
+
+  <div id="ar-mathanecdotes-panel-quintic" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathanecdotes-panel-quintic">
+<div class="crisis-article">
+<h2 class="crisis-title">五次方程不可解：二十二岁的证明，和两封没有回音的信</h2>
+<blockquote class="crisis-quote">
+<p><strong>摘要</strong>：1824 年，挪威青年<a class="fig-link" href="#ar-section-figures" onclick="gotoMathFigure('abel'); return false;">阿贝尔</a>证明了五次方程没有一般的根式解，终结了数学界三百年的求索。然而这份证明被搁置了，他贫病交加，二十六岁死于肺结核。<strong>死后两天，柏林大学的聘书才送到。</strong></p>
+</blockquote>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">一、三百年求根史</h3>
+<p>二次方程的求根公式，初中生都会。三次方程在 16 世纪被<a class="fig-link" href="#ar-section-figures" onclick="gotoMathFigure('cardano'); return false;">卡尔达诺</a>一系解出，四次方程随后被费拉里拿下。公式越来越长，但总能写成一个根式套根式的样子。</p>
+<p>然后，五次方程把所有人挡住了。三百年里，没人能写出五次方程的一般求根公式——也没人能证明它<strong>根本不存在</strong>。</p>
+<p>这两件事的区别，是"我做不出来"和"这件事做不成"的区别。后者要难得多。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">二、二十二岁的证明</h3>
+<p>1824 年，挪威青年阿贝尔——一个穷牧师的儿子，靠借钱上学——给出了答案：<strong>一般的五次方程没有根式解</strong>。</p>
+<p>他的思路不是去构造公式，而是反过来：假设存在根式解，看它必须满足什么结构；然后证明这个结构与五次方程的对称性不相容。这套思路后来长成了整个抽象代数。</p>
+<p>（意大利人鲁菲尼此前也尝试过，证明有缺口；今天这个结果被称为<strong>阿贝尔–鲁菲尼定理</strong>，两个人的名字绑在一起。）</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">三、两封没有回音的信</h3>
+<p>阿贝尔把论文寄给当时最有名的数学家。他给高斯寄了一份——高斯没拆，把它当作不知名青年的胡思乱想，压在案头。</p>
+<p>他又寄给法国科学院，由柯西审阅——柯西把稿子带回家，搁置了，后来连原稿都找不到了。</p>
+<p>一份改变数学史的证明，就这么躺在别人的抽屉里。<strong>天才的命运有时不取决于证明有多对，而取决于收信人忙不忙。</strong></p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">四、贫穷、肺结核，与迟到两天的聘书</h3>
+<p>阿贝尔没有教职，靠代课和微薄的津贴过活。他长期营养不良，在挪威的寒冬里来回奔波，染上了肺结核。</p>
+<p>1829 年 4 月 6 日，他在挪威弗罗兰去世，年仅二十六岁。</p>
+<p>两天后，4 月 8 日，一封来自柏林的信抵达：克莱尔在信里说，经过争取，<strong>柏林大学决定聘他为教授</strong>。</p>
+<p>信到的时候，收信的人已经不在了。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">五、尾声：一百年后的弥补</h3>
+<p>诺贝尔奖里没有数学。流传的说法是诺贝尔与瑞典数学家米塔-列夫勒不和，但这说法史学界并不买账——更可能只是诺贝尔没把数学算进去。</p>
+<p>2003 年，挪威政府设立阿贝尔奖，每年颁发，奖金对标诺贝尔，表彰一生的开创性贡献。<strong>这个奖的名字，就是为了纪念那位没等到聘书的二十六岁青年。</strong></p>
+<p>今天"阿贝尔"这个名字在数学里无处不在：阿贝尔群、阿贝尔簇、阿贝尔积分、阿贝尔奖。这个名字的密度，几乎是对那一代人亏欠的一种补偿。</p>
+</div>
+  </div>
+
+  <div id="ar-mathanecdotes-panel-taxicab" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathanecdotes-panel-taxicab">
+<div class="crisis-article">
+<h2 class="crisis-title">拉马努金与 1729：世界上最没意思的那个数字</h2>
+<blockquote class="crisis-quote">
+<p><strong>摘要</strong>：1918 年前后，哈代去伦敦普特尼的疗养院探望病中的<a class="fig-link" href="#ar-section-figures" onclick="gotoMathFigure('ramanujan'); return false;">拉马努金</a>，随口抱怨自己坐来的出租车号码 1729"没什么意思"。拉马努金立刻说：不，它是能用两种方式写成两个立方和的最小正整数。</p>
+</blockquote>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">一、病房里的那辆车</h3>
+<p>那几年拉马努金病得很重。他从印度来到剑桥，水土不服、战争时期食物短缺、长期素食习惯加上可能的肝病，身体迅速垮掉，反复进出疗养院。</p>
+<p>哈代常去看他。有一次他提到自己坐的出租车号码是 1729，说这是个<strong>挺没意思的数字</strong>，希望不是什么坏兆头。</p>
+<p>拉马努金几乎没想就答：不，哈代，这个数很有意思。它是最小的能用两种不同方式表示为两个立方数之和的正整数。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">二、1729 到底有什么特别的</h3>
+<p>把它拆开看：</p>
+<p>1729 = 1³ + 12³ = 1 + 1728</p>
+<p>1729 = 9³ + 10³ = 729 + 1000</p>
+<p>两种完全不同的拆法，落在同一个数上，而且是能满足这件事的<strong>最小</strong>的那个。今天这类数被称为"出租车数"（taxicab numbers），最小的那个就记作 Ta(2) = 1729。</p>
+<p>关键在于"最小"。要确认一个数是最小的，你得把它前面 1728 个数<strong>全部排除掉</strong>——拉马努金是当场心算完成的，还是早就知道？没人说得清。哈代后来自己也承认：拉马努金对每个数字都像对老朋友一样熟。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">三、从印度到剑桥：一封改变命运的信</h3>
+<p>时间倒回 1913 年。拉马努金是印度马德拉斯港务局的小职员，月薪微薄，数学全靠自学——他手边只有一本陈旧的数学手册，靠它独立重新发现了大量西方早已知道的定理。</p>
+<p>他把自己笔记本里的公式抄了一部分，写信寄给几位英国数学家，其中一封寄到了哈代手上。哈代翻开一看，满纸都是没见过的恒等式，第一反应是：这不会是个骗子吧？</p>
+<p>但他越看越不对劲——这些公式太怪了，<strong>怪到不可能有人凭空编出来</strong>。他和李特尔伍德讨论了一整晚，得出结论：这是个天才。</p>
+<p>哈代的回信里有那句著名的判断：这些公式"必须是真的，因为如果它们不是真的，没人能有这样的想象力去发明它们"。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">四、直觉与严格的碰撞</h3>
+<p>两人在剑桥的合作，是数学史上最著名的互补：哈代是严格性的化身，拉马努金是直觉的化身。</p>
+<p>哈代坚持每个结论都要有证明；拉马努金常常说"女神在某个梦里告诉我的"。他们一起创立了"圆法"，给出分拆数的精确渐近公式；拉马努金在分拆函数上发现的同余性质（比如 p(5n+4) 一定是 5 的倍数），至今被称为数论里最美的定理之一。</p>
+<p>哈代有一句评价流传很广：他记得有一次说自己坐出租车的号码是个 boring number，——这个典故，就是 1729。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">五、三十二岁，和遗失的笔记本</h3>
+<p>1919 年拉马努金回到印度，1920 年去世，年仅三十二岁。</p>
+<p>他留下了几本笔记本，里面密密麻麻写满了公式，多数没有证明。其中一部分长期散失，直到 1976 年才在剑桥的旧物中被重新发现——学者们翻看时发现，里面已经有后来被称为"仿 θ 函数"的内容。</p>
+<p>而"仿 θ 函数"在 21 世纪被严格化之后，人们发现它能用来计算<strong>黑洞的熵</strong>。一个 1919 年凭直觉写下的公式，在近百年后成了理论物理的工具。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">六、尾声</h3>
+<p>1729 这个数字后来成了数学界的暗号：它提醒人们，所谓"没意思"往往只是我们看得不够深。</p>
+<p>哈代在悼文里写过一句近乎冷酷的话：拉马努金的全部成果里，真正"伟大"的或许不多，但他做到的事，<strong>没有第二个人能做到</strong>。</p>
+<p>江湖规矩：判断一个天才，不看他留下了多少定理，而看他留下的问题别人还得再想一百年。</p>
+</div>
+  </div>
+
+  <div id="ar-mathanecdotes-panel-cubic" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathanecdotes-panel-cubic">
+<div class="crisis-article">
+<h2 class="crisis-title">三次方程的背叛：一个誓言，和数学史上最著名的公案</h2>
+<blockquote class="crisis-quote">
+<p><strong>摘要</strong>：1539 年，<a class="fig-link" href="#ar-section-figures" onclick="gotoMathFigure('cardano'); return false;">卡尔达诺</a>从塔尔塔利亚那里求来了三次方程的解法，并以圣经起誓绝不外传。六年后，他把解法印进了《大衍术》。一场围绕"谁先解出"的骂战，就此点燃——而这场风波里还顺带诞生了一个怪物：负数的平方根。</p>
+</blockquote>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">一、波伦亚的擂台</h3>
+<p>16 世纪的意大利，学术声望靠公开擂台赛决定。学者互相出题，谁解得多谁赢，赢了就有赞助和教职。</p>
+<p>1535 年，一位叫塔尔塔利亚（本名尼科洛·丰塔纳，绰号"口吃者"）的数学家，宣称自己能解三次方程。对手菲奥尔不服，双方摆下擂台。</p>
+<p>塔尔塔利亚在赛前几夜突击，解出了形如 x³+px=q 的一类方程，比赛大获全胜，一夜成名。但他把方法<strong>藏了起来</strong>——在那个年代，解法就是饭碗。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">二、一个以圣经起誓的诺言</h3>
+<p>卡尔达诺是米兰的全才：医生、占星师、赌徒、数学家。他正在写一部代数学的著作，听说塔尔塔利亚会解三次方程，便反复去信求教。</p>
+<p>塔尔塔利亚架不住纠缠，最终赴米兰，把方法告诉了卡尔达诺——但要求他<strong>以圣福音书起誓，永不泄露</strong>，并且只用隐语（一首诗）记录下来。</p>
+<p>卡尔达诺发了誓。这个誓言后来成了数学史上最著名的违约事件。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">三、1545：《大衍术》</h3>
+<p>几年后，卡尔达诺了解到：早在塔尔塔利亚之前，波伦亚的费罗就已经解出过同一类三次方程，只是秘不外传、临终才传给弟子（也就是菲奥尔的老师）。</p>
+<p>卡尔达诺据此认为：这个方法并非塔尔塔利亚首创，誓言的约束也就失效了。1545 年，他在《大衍术》里把三次、四次方程的解法全部发表，并逐一标明前人贡献。</p>
+<p>书一出版，轰动全欧——因为这是欧洲第一次真正突破古希腊人的几何天花板。但塔尔塔利亚暴怒：在他看来，这就是赤裸裸的<strong>背叛</strong>。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">四、反目，与 1548 年的公开论战</h3>
+<p>塔尔塔利亚公开撰文痛骂卡尔达诺背信弃义。卡尔达诺本人没有亲自应战——出面的是他的学生兼仆人费拉里，一个同样出色的数学家（四次方程的解法就出自他手）。</p>
+<p>1548 年，两人在米兰公开辩论。费拉里年轻、口才也好，辩论中占了上风；塔尔塔利亚当晚便离开了米兰，声望大损，此后潦倒。</p>
+<p>这场公案的真相至今仍有争论：卡尔达诺确实署了名、也确实违背了誓言；但他也确实把方法公之于众，让全欧洲的数学家站了上去。<strong>私德有亏，公利极大</strong>——这正是它吵了五百年还没吵完的原因。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">五、一个不该存在的东西：负数的平方根</h3>
+<p>《大衍术》里藏着一件比三次方程更重要的事。卡尔达诺在解方程时遇到了形如 √(-15) 这样的东西，按当时的观念，负数没有平方根。</p>
+<p>他硬着头皮算下去，发现这些"不可能的数"在运算中互相抵消，最后竟然得到了<strong>正确的实数解</strong>。他把这种运算称为"精神的折磨"，说它"既精致又无用"。</p>
+<p>这是复数第一次正式登台。此后两百年，数学家们一边用它算题，一边怀疑它是不是正当的。这段暧昧，直到高斯给出几何解释才算理清。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">六、尾声：公式到底该姓什么？</h3>
+<p>今天这个公式叫"卡尔达诺公式"。塔尔塔利亚的名字不在标题里，只在历史课本里——作为那个被辜负的人。</p>
+<p>江湖上有句老话：<strong>守住秘密的人拥有方法，公开方法的人拥有名字。</strong>数学史反复证明这句话是对的，只是每次读到，还是替塔尔塔利亚不甘。</p>
+</div>
+  </div>
+
+  <div id="ar-mathanecdotes-panel-cantorset" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathanecdotes-panel-cantorset">
+<div class="crisis-article">
+<h2 class="crisis-title">康托尔集合论：为无穷立法的人，被无穷逼疯</h2>
+<blockquote class="crisis-quote">
+<p><strong>摘要</strong>：19 世纪末，<a class="fig-link" href="#ar-section-figures" onclick="gotoMathFigure('cantor'); return false;">康托尔</a>创立集合论，第一次让"无穷"变成可以比较大小、可以运算的数学对象。然而他的学说遭到以克罗内克为首的同行长期攻击，他数度精神崩溃，1918 年病逝于哈勒的疗养院。二十年后，集合论成了全部数学的地基。</p>
+</blockquote>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">一、有理数能数完，实数数不完</h3>
+<p>先问个看似幼稚的问题：整数和偶数，哪个多？直觉说整数多，因为偶数只是它的一部分。但你可以把每个整数 n 对应到偶数 2n——一一对上，谁也不剩。所以它们<strong>一样多</strong>。</p>
+<p>这就是康托尔的起点：比较两个无穷集合，看能不能建立一一对应。</p>
+<p>他接着问：有理数（分数）能不能数完？能——排成一张二维表格，斜着走过去，能一个不漏地数完。所以有理数和整数一样多。</p>
+<p>那实数呢？1874 年，康托尔证明了：<strong>实数没法数完</strong>。1891 年他给出了那个著名的对角线论证——假设你把所有实数排成一列，我总能造出一个新的实数，它和你列表里的每一个都不相同。</p>
+<p>结论令人眩晕：无穷和无穷不一样大。实数的无穷，比整数的无穷<strong>更大</strong>。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">二、无穷竟然还分等级</h3>
+<p>康托尔没有停在这里。他定义了超穷数：最小的无穷记作 ℵ₀（阿列夫零），实数的无穷记作 2^ℵ₀。</p>
+<p>然后他提出了那个折磨了数学界几十年的<strong>连续统假设</strong>：在 ℵ₀ 和 2^ℵ₀ 之间，还有没有别的无穷？他自己相信没有，但证不出来。</p>
+<p>一个人创造了整套关于无穷的语言，却卡在了自己提出的第一个问题上——这是康托尔故事里最残酷的一笔。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">三、克罗内克的十字军</h3>
+<p>当时柏林学派的领袖克罗内克，是康托尔最激烈的反对者。他的名言是：<strong>"上帝创造了整数，其余一切都是人的作品。"</strong></p>
+<p>在他看来，康托尔的无穷集合不是数学，是神学；超穷数是"科学的骗术"，康托尔本人是"腐蚀青年的骗子"。</p>
+<p>这种攻击不只是口头上的。克罗内克利用自己的地位，长期阻挠康托尔获得柏林大学的职位——那是当时德国数学的最高舞台。康托尔最终只得到了哈勒大学（一所地方院校）的教职，终生没能进入柏林。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">四、崩溃，与哈勒的疗养院</h3>
+<p>1884 年，康托尔三十九岁，第一次精神崩溃。此后他反复出入疗养院，发作时无法工作，清醒时又拼命想回到数学。</p>
+<p>他的痛苦来自两头夹击：一边是同行的否定，一边是自己无法证明连续统假设。<strong>一个以"无穷"为业的人，被无穷拖垮了。</strong></p>
+<p>1918 年 1 月 6 日，他在哈勒的疗养院去世，享年七十三岁。临终前，他仍在关注连续统假设。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">五、"没有人能把我们赶出这座天堂"</h3>
+<p>与克罗内克相反，另一批人很早就看懂了康托尔的价值。最著名的是<a class="fig-link" href="#ar-section-figures" onclick="gotoMathFigure('hilbert'); return false;">希尔伯特</a>。</p>
+<p>1926 年，希尔伯特在纪念魏尔斯特拉斯的演讲里说出了那句被反复引用的话——<strong>"没有人能把我们从康托尔创造的天堂里赶出去。"</strong></p>
+<p>他还把连续统假设列进了自己 1900 年那 23 个问题的第一名。一个问题的分量，有时候就是最好的平反。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">六、尾声：一个无法回答的问题</h3>
+<p>连续统假设的最终结局，比康托尔想象的更离奇：它<strong>既不能被证明，也不能被否定</strong>。</p>
+<p>1940 年哥德尔证明：在通常的集合论公理系统里，假设它成立不会导致矛盾。1963 年科恩证明：假设它不成立，同样不会导致矛盾。</p>
+<p>也就是说，这个问题在现有公理下<strong>无解</strong>——不是我们不够聪明，是这套规则里根本没有它的答案。</p>
+<p>康托尔没能等到这个结局。但他创造的那套语言，今天写在每一本数学书的开头。<strong>一个被同时代人判定为疯子的想法，最后成了所有人的地基。</strong></p>
+</div>
+  </div>
+
+  <div id="ar-mathanecdotes-panel-oneplustwo" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathanecdotes-panel-oneplustwo">
+<div class="crisis-article">
+<h2 class="crisis-title">1+2：一间六平米的小屋，和几麻袋草稿纸</h2>
+<blockquote class="crisis-quote">
+<p><strong>摘要</strong>：1966 年，<a class="fig-link" href="#ar-section-figures" onclick="gotoMathFigure('chen'); return false;">陈景润</a>宣布证明了哥德巴赫猜想的"1+2"：任何充分大的偶数，都能写成一个素数与一个不超过两个素数乘积的数之和。这是迄今为止该猜想最好的结果，半个世纪过去，无人超越。</p>
+</blockquote>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">一、1742 年的那封信</h3>
+<p>1742 年 6 月 7 日，普鲁士外交官哥德巴赫写信给欧拉，提到一个观察：每个大于 2 的偶数，似乎都能写成两个素数之和。比如 10 = 3+7，20 = 3+17。</p>
+<p>欧拉回信说：我相信这是对的，但我证不出来。</p>
+<p>两百多年过去了，它依然没被证出来。这就是<strong>哥德巴赫猜想</strong>，数学史上最著名的"看起来很简单"的问题。今天人们把它记作"1+1"：一个素数加一个素数。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">二、从 9+9 到 1+2 的接力</h3>
+<p>硬证不动，数学家们开始迂回：既然证不了"1+1"，能不能先证"9+9"——即每个大偶数可以写成两个"不超过 9 个素数乘积"的数之和？</p>
+<p>1920 年，挪威的布朗证明了"9+9"。此后这个数字被一代代往下压：</p>
+<p>维诺格拉多夫证明了充分大奇数的"1+1"（三素数定理的一部分）；中国的华罗庚、王元沿着筛法把偶数情形推到"2+3"；潘承洞证明了"1+5"；王元、潘承洞等又推进到"1+4"。</p>
+<p>1966 年，陈景润宣布证明了<strong>"1+2"</strong>——把一个加数压到了 1 个素数，另一个压到不超过 2 个素数的乘积。距离终点"1+1"，只差最后一步。</p>
+<p>这一步，此后再没走出去。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">三、六平米的小屋</h3>
+<p>陈景润做这件事的条件，说出来几乎不像真的。</p>
+<p>他在中科院数学研究所，住的是一间六平米的宿舍——原本是锅炉房旁边的小屋，没有窗户，白天也要开灯。屋里一张床、一张桌、一摞纸。</p>
+<p>他每天工作十几个小时，演算的草稿纸装满了<strong>几麻袋</strong>。据说他走路撞到电线杆还会道歉，全部的注意力都在那些数字上。</p>
+<p>1966 年他先在《科学通报》上公布了结果摘要，1973 年才在《中国科学》上发表完整证明——中间隔了七年，因为那几麻袋演算需要被一遍遍核对。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">四、1978：一篇报告文学点燃全国</h3>
+<p>1978 年，作家徐迟在《人民文学》上发表了报告文学《哥德巴赫猜想》。</p>
+<p>那篇文章的影响，远远超出了数学圈。它把一个在陋室里跟素数较劲的科学家，写成了那个时代的精神象征——"陈景润"三个字，一夜之间成为"知识""钻研""逆境成才"的代名词，出现在报纸、课本和无数演讲里。</p>
+<p>数学史上有趣的一幕：<strong>一篇文学作品，让一个数学定理家喻户晓。</strong>直到今天，中文世界里知道"1+2"的人，远比知道它具体内容的人多。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">五、为什么 1+1 还没走到？</h3>
+<p>"1+2"到"1+1"看着只差一点点，实际上是一道墙。</p>
+<p>原因在于筛法本身有个著名的<strong>奇偶性障碍</strong>：筛法在筛的时候，无法区分一个数是素数还是"两个素数的乘积"——它能把合数筛掉，却没法把"筛了奇数次"和"筛了偶数次"的情况分开。</p>
+<p>这个障碍是原理性的。半个世纪以来，人们反复确认：用现有的筛法框架，走不到"1+1"。要再进一步，需要新的想法。</p>
+<p>所以"1+2"在那儿立了半个多世纪。<strong>它不是终点，但它标出了当前工具的极限。</strong></p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">六、尾声</h3>
+<p>1996 年 3 月 19 日，陈景润在北京去世，享年六十三岁。</p>
+<p>他生前身体状况一直不好，晚年长期住院。但他留下的那个"1+2"，至今仍是哥德巴赫猜想的最好结果——这一点，连当年追着这个猜想跑的整个数学界都没能改写。</p>
+<p>江湖上有句话：<strong>把一个难题推进到最后一步的人，和最终解决它的人，同样值得记住。</strong>陈景润就是那个人。</p>
+</div>
+  </div>
+
+
+  <div id="ar-mathanecdotes-panel-erdosnumber" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ar-mathanecdotes-panel-erdosnumber">
+<div class="crisis-article">
+<h2 class="crisis-title">埃尔德什数：数学界的一张隐形族谱</h2>
+<blockquote class="crisis-quote">
+<p><strong>摘要</strong>：匈牙利数学家<a class="fig-link" href="#ar-section-figures" onclick="gotoMathFigure('erdos'); return false;">埃尔德什</a>一生没有固定住所、没有固定职位，只提着一只手提箱在合作者之间流浪，写下 1500 多篇论文、与五百多人合作。1969 年，一篇标题像玩笑的短文《你的埃尔德什数是多少？》，把这种合作关系变成了一个数字——从此每个数学家都有一个"埃尔德什数"。</p>
+</blockquote>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">一、一个没有家的数学家</h3>
+<p>埃尔德什·帕尔 1913 年生于布达佩斯，是二十世纪最多产的数学家之一。</p>
+<p>他没有家，没有固定教职，几乎不拥有任何东西——全部家当就是一只手提箱。他常年在不同国家、不同合作者家里"突袭式"投宿，凌晨敲门，说一句"我的大脑是开放的"（My brain is open），然后开始聊数学、住上几天，再赶往下一站。</p>
+<p>他靠演讲费和奖金过活，剩下的钱几乎都用来设立奖学金、资助年轻数学家，或者发给解出他提出的猜想的人——他喜欢给难题明码标价，从几美元到几千美元不等。</p>
+<p>他的名言之一：<strong>"数学家是把咖啡变成定理的机器。"</strong>——这句话几乎成了他的墓志铭。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">二、"天书"与"最高法西斯"</h3>
+<p>埃尔德什有一套自己的宇宙观。他相信上帝手里有一本"<strong>天书</strong>"（The Book），里面收录了每个定理最优美、最简洁的证明；数学家的使命，就是偶尔瞥见其中一页。</p>
+<p>他管上帝叫"最高法西斯"（Supreme Fascist，简称 SF）——因为他认为这位 SF 故意把最漂亮的证明藏着不给人看，还顺便偷走他的护照和匈牙利香肠。</p>
+<p>这些玩笑话背后，是一位数学家对"什么是好数学"的固执标准：<strong>证明不仅要对，还要美。</strong></p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">三、1969 年：一篇标题像玩笑的论文</h3>
+<p>1969 年，数学家卡斯珀·戈夫曼在《美国数学月刊》上发表了一篇短文，题目就叫——<strong>《那么，你的埃尔德什数是多少？》（And what is your Erdős number?）</strong>。</p>
+<p>他本意是写埃尔德什的合作者网络之广，顺手定义了这个数。没想到，这个名字立刻在数学圈里流传开来，最后成了数学界最著名的"内部笑话"。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">四、这个数怎么算</h3>
+<p>规则简单得出奇：</p>
+<p><strong>埃尔德什本人的埃尔德什数是 0</strong>；</p>
+<p>跟埃尔德什本人合作发表过论文的人是 <strong>1</strong>；</p>
+<p>跟某个"1"合作过（但没跟埃尔德什合作过）的人是 <strong>2</strong>；</p>
+<p>以此类推。</p>
+<p>如果你的合作链怎么都连不到埃尔德什，那你的埃尔德什数是"无穷大"——数学界的冷幽默。</p>
+<p>据统计，埃尔德什数等于 1 的人有 <strong>五百多位</strong>；等于 2 的有数千位。当今活跃的数学家里，绝大多数人的埃尔德什数不超过 5。</p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">五、几个著名的数字</h3>
+<p>据通行的统计，<strong>爱因斯坦的埃尔德什数是 2</strong>——他没跟埃尔德什合作过，但他的合作者里有人的埃尔德什数是 1。</p>
+<p>更夸张的是，这个数字会溢出数学界：一些物理学家、计算机科学家、经济学家，甚至个别生物学家和社会科学家，通过跨学科合作也能拿到一个不大的埃尔德什数。</p>
+<p>还有一个流传极广的江湖笑话：棒球巨星汉克·阿伦曾与埃尔德什在同一个棒球上签过名，于是有人说阿伦的埃尔德什数是 <strong>1</strong>。<strong>（这当然只是玩笑——合著论文才算数。）</strong></p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">六、塞尔伯格，与一场著名的争执</h3>
+<p>埃尔德什的合作并不总是风平浪静。最著名的一次，是 1948 年前后他与<a class="fig-link" href="#ar-section-figures" onclick="gotoMathFigure('selberg'); return false;">塞尔伯格</a>关于<strong>素数定理初等证明</strong>的优先权之争。</p>
+<p>当时，素数定理早已被证明，但用的是复分析（涉及黎曼 ζ 函数）。数学界一直好奇：能不能只用初等方法证出来？这个问题成了数论里的一个执念。</p>
+<p>塞尔伯格给出了关键的一步（塞尔伯格渐近公式），而埃尔德什在此基础上完成了另一半。两人一度同意联名发表，后来却各自发了论文，通信与说法各执一词，是二十世纪数论圈最著名的一场不愉快。</p>
+<p>1950 年，塞尔伯格因此获得菲尔兹奖。这场争执给这段故事添了一层尴尬——也提醒人们：<strong>埃尔德什数度量的是合作，而合作从来不只是数字那么简单。</strong></p>
+<hr class="crisis-hr">
+<h3 class="crisis-h3">七、尾声</h3>
+<p>1996 年 9 月 20 日，埃尔德什在华沙的一场数学会议上逝世，享年八十三岁。他是在会场去世的——对一位把一生都过成流动数学讨论会的人来说，这个结局近乎得体。</p>
+<p>他死后，埃尔德什数还在继续增长：新的合作、新的论文、新的数学家不断被接进这张网。</p>
+<p>江湖上有句话评价他：<strong>别的数学家留下定理，埃尔德什留下了一张网。</strong>——而那张网，至今还在扩张。</p>
+</div>
+  </div>
 
 </div>
 </section>
@@ -6803,11 +7260,6 @@ function switchMathEducation(id, btn) {
   if (typeof renderMathInElement === 'function') {
     renderMathInElement(panel, { delimiters: [ {left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false} ], throwOnError: false });
   }
-}
-
-/* 从「数学大奖」名单跳转到「数学人物」中对应人物的面板 */
-function toggleAllEras(open) {
-  document.querySelectorAll('details.fig-era').forEach(function (d) { d.open = open; });
 }
 
 /* 从「数学大奖」名单跳转到「数学人物」中对应人物的面板 */

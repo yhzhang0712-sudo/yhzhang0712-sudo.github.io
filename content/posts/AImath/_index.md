@@ -558,6 +558,7 @@ lastmod: 2026-09-28
         <button type="button" class="ai-tab-btn tab-red" role="tab" id="tab-ai-ethics-panel-leiden" aria-controls="ai-ethics-panel-leiden" aria-selected="false" tabindex="-1" onclick="switchAiEthicsTab('leiden', this)">人工智能与数学莱顿宣言</button>
         <button type="button" class="ai-tab-btn tab-orange" role="tab" id="tab-ai-ethics-panel-misalignment" aria-controls="ai-ethics-panel-misalignment" aria-selected="false" tabindex="-1" onclick="switchAiEthicsTab('misalignment', this)">《人工智能在数学中的严重错位》宣言</button>
         <button type="button" class="ai-tab-btn tab-teal" role="tab" id="tab-ai-ethics-panel-uppsala" aria-controls="ai-ethics-panel-uppsala" aria-selected="false" tabindex="-1" onclick="switchAiEthicsTab('uppsala', this)">《乌普萨拉科学家伦理准则》</button>
+        <button type="button" class="ai-tab-btn tab-blue" role="tab" id="tab-ai-ethics-panel-etingof" aria-controls="ai-ethics-panel-etingof" aria-selected="false" tabindex="-1" onclick="switchAiEthicsTab('etingof', this)">MIT数学教授给青年数学家写的AI使用指南</button>
       </div>
       <div id="ai-ethics-panel-evolution" class="ai-tab-panel active" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-ethics-panel-evolution">
         <div class="agent-intro">
@@ -721,6 +722,115 @@ lastmod: 2026-09-28
           <li><span class="agent-name">生物试剂开源模型与合成生物学</span>。</li>
         </ul>
         <p>RAND 研究报告将其与帕格沃什（Pugwash）传统并列为"要求研究者作为个体反思社会影响、回避支持战争或压迫的研究"的代表性准则。</p>
+      </div>
+    </div>
+      <div id="ai-ethics-panel-etingof" class="ai-tab-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-ai-ethics-panel-etingof">
+      <div class="agent-intro">
+        <p class="agent-lead">2026 年 5 月，MIT 数学系教授 <strong>Pavel Etingof</strong> 写下《数学研究中的 AI 使用：青年数学家指南》（<em>Use of AI in Mathematical Research: A Guide for Young Mathematicians</em>）。它最初是为 MIT 的 <strong>PRIMES 高中生科研项目</strong>而写；鉴于前沿模型接连取得突破，作者随后扩大了受众范围并修订了建议——MIT 数学系在该文的推介链接上标注其「适用于高年级本科生、研究生与职业数学家」。全文初版写于 2026 年 5 月，作者于 <strong>2026 年 9 月 14 日</strong>增补第 12 节「更新」。MIT 数学系已将全文收入其 AI 专题页。</p>
+        <p><a href="https://math.mit.edu/~etingof/aiuse.pdf" style="color:#2563EB;text-decoration:underline;">▶ 阅读英文原文 PDF（math.mit.edu/~etingof/aiuse.pdf）</a>　｜　<a href="https://math.mit.edu/math-community/math_ai.html" style="color:#2563EB;text-decoration:underline;">▶ MIT 数学系 AI 专题页</a></p>
+        <p>它与 2026 年 9 月 11 日由 25 位菲尔兹奖得主联署的《人工智能在数学中的严重错位》宣言恰好形成<strong>互补</strong>：前者（且同样明确表示不反对 AI）向 AI 公司提出<strong>共同体层面</strong>的规范诉求，这一份则把同样的关切落到<strong>研究者个人</strong>的日常操作上——宣言指出问题，指南给出做法。它的立场是<strong>既不抵制也不神化 AI</strong>，而是给出一条可执行的底线：<strong>「我们应当充分利用 AI，以便懂得更多数学」</strong>，前提是你对写进论文的每一个细节负全部责任。作者在开篇的脚注里坦承：「鉴于 AI 技术的发展速度，这些建议将很快过时，我打算足够频繁地更新它。」</p>
+        <h3>1. 主要原则</h3>
+        <p>数学研究者对生成式 AI（ChatGPT、Claude、Gemini 等，统称大语言模型）的态度光谱极宽：有人出于伦理或怀疑而抵制，有人欢欣鼓舞，也有人害怕自己变得多余。但 AI 已是房间里那头再也无法忽视的大象。</p>
+        <p>作者提出的理念是——<strong>我们应当充分利用 AI，以便懂得更多数学。</strong>由此引出使用 AI 的<strong>主要原则</strong>：</p>
+        <blockquote>在与 AI 讨论任何数学内容时，你必须随时跟进其中的数学（keep abreast of the math）。</blockquote>
+        <p>这意味着：如果你在论文中使用了 AI 的输出，就必须<strong>彻底核实并理解每一个细节，不放过任何疑点</strong>，用自己的方式重写，而不是复制粘贴进你的文稿；并且你必须能够<strong>当场解释清楚</strong>你写下的一切。</p>
+        <ul class="agent-list">
+          <li><span class="agent-name">理由一：模型会幻觉</span>：AI 能正确解决困难的数学问题，但也可能基于荒谬至极、且往往隐含而隐蔽的假设给出错误论证——例如「所有奇数都是素数」。这种情况在逐步改善但依然存在，足以给你的论文带来<strong>致命缺陷</strong>。而无论错误多么细微，一旦进入你的文稿，<strong>责任都在你</strong>。即便输出大体正确，挑出所有细微瑕疵并顺畅融入你的叙述通常也很困难——所以自己写往往比调试 AI 文本更高效、更可靠。</li>
+          <li><span class="agent-name">理由二（最重要）：目的是你学会做数学</span>：目标是你去<strong>学习、从事并享受</strong>数学。如果你把这些都让渡给 AI，就违背了这一目标。</li>
+        </ul>
+        <h3>2. 通用建议</h3>
+        <ul class="agent-list">
+          <li><span class="agent-name">① 模型与模式的选择</span>：严肃的数学问题要用强版本——始终使用<strong>推理 / 扩展思维模式</strong>而非普通「即时」模式，并要求给出<strong>详细、可核验</strong>的解答，包括引理、示例与可能的失败点。最难的问题可上 Pro 模式，它消耗更多 token 但结果更好；不过务必先把提示词表述清楚，Pro 查询很贵。可以先用较弱的模型让 AI 复述一遍你的问题，确认它理解正确。</li>
+          <li><span class="agent-name">② 提示词撰写</span>：在提示词前加一句「我是一名正在研究 X 的数学专业本科生 / 研究生」，或把它设为项目的默认系统提示 —— 这能让模型了解你的经验水平。还可以补充你读过的书与上过的课程。加上「请非常仔细地检查你的答案 / 证明」也有帮助：<strong>AI 模型天生倾向于偷工减料以节省资源，你的任务是不让它以牺牲你为代价这么做。</strong></li>
+          <li><span class="agent-name">③ 迭代</span>：困难的问题通常一次问答不够。应仔细研究输出、指出错误、要求澄清或展开你最感兴趣的点，往往迭代数轮才有有用的结果。但要<strong>避免过长的对话</strong>（尤其是昂贵模型）：AI 难以处理大量上下文，且每次提问可能为复读上下文二次计费。更好的做法是在自然的断点让 AI <strong>总结对话</strong>，然后开新对话上传总结作为基础。同时，别盯着屏幕干等——你可以并行跑别的对话，或者做自己的数学。</li>
+          <li><span class="agent-name">④ LaTeX</span>：AI 非常熟悉 LaTeX，可以问它任何 LaTeX 问题、调试你的 tex 文件，或要求以 LaTeX 文件形式输出以便阅读。</li>
+          <li><span class="agent-name">⑤ 隐私</span>：<strong>未经所有者许可，绝不向 AI 上传任何非公开材料。</strong>上传前核查平台的数据控制设置与隐私政策；例如在公共版 ChatGPT 中可以关闭「为所有人改进模型」，此时数据不用于训练——但即使选择退出，仍需查阅隐私政策了解数据在何种情况下仍可能被使用。</li>
+        </ul>
+        <h3>3. 学习</h3>
+        <p>学习应贯穿整个项目始终——数学家只要还在做数学，就一直在学数学。除导师提供的资料与习题外，你可以向 AI 索取更多。作者推荐的提示词包括：</p>
+        <ul class="agent-list">
+          <li>「学习 Y 最好的资料有哪些？」</li>
+          <li>「关于以下问题目前已知什么？（精确陈述问题）有没有参考文献？」</li>
+          <li>「我正在读 B（上传文件），在第 N 页难以理解定理 Z 的证明，能更详细地讲解一下吗？」</li>
+          <li>「能给我讲讲 T 的基础并提供一些练习题吗？」</li>
+          <li>「概念 A 的动机是什么？」</li>
+          <li>「P 与 Q 之间有什么关联？」</li>
+          <li>「能解释一下 R 的主要思想吗？」</li>
+        </ul>
+        <p>反过来，<strong>用 AI 解答导师布置的习题是坏主意</strong>——那些习题是为了让你获得研究所必需的技术能力。「想想一个想跑马拉松的运动员，却用摩托车来训练！」在多数学习环境中，把 AI 输出当作自己的习题解答提交，或因重写 AI 解答却未充分理解而无法讲解自己的答案，都构成 AI 的不当使用，将被视为<strong>违反学术诚信</strong>。</p>
+        <h3>4. 研究</h3>
+        <p>作者给出一个为何 AI 能显著提高研究效率的解释：在每一步选择（做一次计算、算一个例子等）上，你都会下意识做一次<strong>成本—收益分析</strong>（这一步的效用 vs. 难度），而常常因为「虽然很有启发性但太费力」而放弃。<strong>强大 AI 的存在会大幅降低机会成本，使天平倾向「去做这一步」，而这恰恰可能带来项目中的顿悟或突破。</strong></p>
+        <p>只要遵循「随时跟进」原则、在论文与报告中承认 AI 的重大贡献、遵守隐私规则（并服从导师期望、合著者同意以及期刊和机构政策），AI 可以用来：产生研究问题、生成数据与示例、头脑风暴、验证某个陈述以求证明或反例、以及协助写作与校对。</p>
+        <p><strong>4.1 产生研究问题</strong></p>
+        <p>把项目描述、最相关的论文与你目前的文稿上传给模型，用提示词：「非常仔细地阅读所附的项目描述、论文和我的文本，提出 N 个下一步可考虑的研究问题。对每一个，请说明动机、提出初步步骤并给出参考文献。」这需要用最强的 Pro 模式，AI 会思考相当长时间（可达 20 分钟以上）。AI 提出的许多问题可能不好，但其中一些会很有趣。难处在于<strong>你未必能判断哪个问题好</strong>——所以动手前最好先问导师或领域内的专家；至少也要先做文献检索（同样可用 AI 高效完成），确认该问题是否已在文献中被解决。</p>
+        <p><strong>4.2 头脑风暴</strong></p>
+        <p>提示词示例：「我正在解决以下问题。（精确陈述或附上文件）以下是我的一些见解。（分享你自己的思路）我的哪些想法最有希望？你能建议接下来如何推进吗？你能指出这些数据中的模式吗？能找到有用的参考文献吗？」然后研究输出、多轮迭代，与导师或合作者讨论后再重复。</p>
+        <p><strong>4.3 生成数据与示例</strong>（由 MIT 的 Andrew Sutherland 撰写）</p>
+        <p>Claude、ChatGPT 这样的前沿模型如今相当擅长生成与分析数据。<strong>研究早期最有价值的事情之一，就是思考生成例子的方法</strong>——既能建立直觉，也是发展与检验猜想的途径。即便非常抽象的问题，也常常有可以具体化的特例或推论。过去，搞清楚怎么做、写代码、测试、优化并运行，本身可能就是一整个研究项目；现在这可以交给前沿模型。这一过程中的交互极有教育意义：向模型解释你想让它做什么，会帮助你更好地理解问题，你也会一路学到东西。</p>
+        <p><strong>4.4 证明与证伪</strong></p>
+        <p>可以用强版本的 AI 来证明或证伪数学命题，但要谨慎：<strong>AI 擅长总结已知材料和模仿成熟论证，却不擅长产生真正原创的数学</strong>，被要求做后者时常常产生幻觉。因此，凡是声称证明或证伪了先前状态未知之命题的 AI 输出，都应<strong>大打折扣地看待</strong>——始终把它当作起点、至多是中间步骤，<strong>绝非最终结果</strong>。</p>
+        <ul class="agent-list">
+          <li><span class="agent-name">交叉核验技巧</span>：先别读 AI 的输出，把它喂给另一个（或同一个）模型并说：「这个关于陈述 Y 的证明是 AI 给我的，我持怀疑态度，你能检查一下吗？」第二个模型很可能找出错误；再把回复反馈给第一个模型，迭代到收敛——要么第一个模型承认没有证明，要么两个模型都认为证明正确。后一种情况下你再自己检查（愿意的话先过一遍第三个模型）。这样可以避免把时间浪费在低质量输出上。<em>（作者称这一技巧学自 Jesse Geneson。）</em></li>
+          <li><span class="agent-name">但一致不等于正确</span>：<strong>两个或三个模型的一致本身不是正确性的有力证据</strong>——它们可能共享训练数据、错误风格与合理性偏见。</li>
+          <li><span class="agent-name">让 AI 先算例子</span>：要求模型先（或至少单独）处理一个具体例子而非一般情形，输出更有用也更容易检查。</li>
+          <li><span class="agent-name">代码与计算</span>：可让足够强的 AI（如 Claude Code）写代码，并讨论后由它提出算法思路；代码可能有 bug，经几轮迭代调试通常比自己写更快。好习惯是<strong>要求 AI 在代码中补充详细注释</strong>，便于你检查。严肃的计算仍应自己在 Mathematica、Sage 等中运行。</li>
+          <li><span class="agent-name">参考文献警告</span>：必须仔细核查 AI 论证中使用的所有参考文献。AI 可能编造<strong>不存在的参考文献</strong>、引用已有文献中并不存在的陈述，或误读所读论文的主张。许多文章（尤其旧文）在付费墙后，AI 无法访问全文，可能仅凭摘要或其他来源臆测其内容，导致误解。导师应能帮你理清这些。</li>
+        </ul>
+        <blockquote><strong>Sutherland 补注：</strong>现阶段 AI 往往<strong>更擅长证伪猜想而非证明猜想</strong>，但这依然非常有用！生成反例是方法之一，在形式化环境中同样成立——参见塔利亚·林格（Talia Ringer）近期关于 AlphaProof 的文章。</blockquote>
+        <p><strong>4.5 协作，而非让渡</strong></p>
+        <p>要把 AI 当作强大的工具，或者一个<strong>并不总是可靠的数字合作者</strong>——它拥有你所缺乏的知识与能力，你应与它一起思考，而不是眼看着它替你做研究。<strong>与问题的搏斗可能被 AI 短路，而这正是研究过程中至关重要的一环：这是培养突破所需理解与直觉的唯一途径，你的经验越少，这一点越重要。</strong></p>
+        <p>简而言之：<strong>AI 不应减少你花在数学上的时间与精力，它只应提升效率，让你做得更多。</strong>对新手的好习惯是：先自己尝试，或先向 AI 要提示而不是完整解答。最终目标不是把你和 AI 变成一台尽可能多地产出定理的机器，而是<strong>在推进项目的同时让你获得做研究的训练与经验</strong>。</p>
+        <blockquote>毕竟，发现新的数学是这整个事业中最令人愉快的部分。那么，为什么要把这个乐趣外包给一个没有灵魂的聊天机器人呢？想象你去一家高级餐厅，不是细细品尝美味佳肴，而是把它们放进咀嚼机里，然后吞下产生的糊状物——这能有多大乐趣呢？</blockquote>
+        <p><strong>4.6 形式化验证</strong>（由 Andrew Sutherland 撰写）</p>
+        <p>在可行的情况下（很大程度取决于你的课题在 MathLib 中的覆盖程度），可以让 LLM 尝试用 <strong>Lean</strong> 形式化并验证某个命题。命题相当简单时，多数前沿模型对 Lean 足够熟悉，能写出可粘贴到在线验证器（如 live.lean-lang.org、axle.axiommath.ai/verify_proof）的脚本。对于更实质的内容，最好给 LLM 一些额外工具（如 lean4-skills「技能」文件、lean-lsp-mcp 这类接口）。也有 AlphaProof、Aristotle、AxiomProver、Gauss、Godel-Prover、Kimina-Prover 等第三方自动形式化工具，其中许多免费。</p>
+        <blockquote><strong>注 4.1：</strong>LLM 使得从未用过 Lean 或形式化定理证明器的人，能够以一年前不可能的方式利用形式化验证。但你必须<strong>确认 LLM 正确形式化了你关心的那个命题</strong>——这需要对形式系统有一定的理解（不过远少于写出证明所需的理解）。</blockquote>
+        <h3>5. 写作与校对</h3>
+        <p>写作阶段可用 AI 处理 LaTeX 以及图表；不过说明你想画什么往往很困难，更好的办法有时是<strong>手绘草图、手机扫描后上传</strong>，要求它生成 PNG 文件或图表的 LaTeX 代码。</p>
+        <p>也可用 AI 校对：「这是我的论文，请非常仔细地阅读，指出印刷错误、错误、符号不匹配、英语问题等。阅读 X.Y 节到 Z.T 节，给我评论。」建议<strong>每次只让它读一小部分（比如 10 页）</strong>，质量会更高。作者本人与其学生的文本长期使用此法并强烈推荐；它当然不能取代传统的人工校对，但<strong>在人工校对之前先做一轮 AI 校对并修正</strong>是很不错的。</p>
+        <ul class="agent-list">
+          <li><span class="agent-name">AI 校对擅长什么</span>：捕捉印刷错误、纠正英语、找出不匹配与未定义的符号；发现细微数学错误则较弱（偶尔也能做到）。若想让它认真检查，应要求它<strong>逐个证明地检查</strong>，不断补充细节直到它不再发现问题；并且务必提示 AI <strong>保持批判性</strong>，不要为了讨好你（也让自己的工作轻松）而未经彻底检查就说证明是对的。</li>
+          <li><span class="agent-name">不要照搬</span>：把大量未经润色的 AI 输出直接复制粘贴进论文是坏主意——你真的应该自己写。<em>（脚注：在研究小组内部传阅未经核验的 AI 输出是可以接受的，但前提是所有相关人员都清楚它未经核验。）</em></li>
+          <li><span class="agent-name">隐性抄袭风险</span>：AI 可能在无标注的情况下<strong>暗中复制他人作品的内容</strong>。如果你照搬这段输出并以其形态公开发表，就可能构成<strong>剽窃</strong>；即使你是无心的，仍要为此负责。因此，若打算以改写形式使用其输出，好习惯是<strong>始终要求 AI 列出它使用的来源，然后独立核实</strong>（在 arXiv、MathSciNet 等上），并判断是否需要引用；还应多次强烈索取最相关的文献，并在参考文献中<strong>恰当引用这些原始工作</strong>。</li>
+          <li><span class="agent-name">让它给评论而非重写</span>：被要求校对时，某些 LLM 默认倾向于<strong>自行改写你的文本</strong>而非给出意见，这出于上述原因非常不可取。应明确告知 LLM：只列出意见 / 修改清单，不要替你重写。</li>
+        </ul>
+        <blockquote><strong>注 5.1</strong>（作者感谢 Paul Seidel 的这一评论）：谚语说，交谈时最不善社交的数学家看的是对话者的鞋而不是自己的鞋——但数学本质上是一项<strong>社会性事业</strong>。我们说使用 AI 的目标是「懂得或理解更多数学」，其真实含义是「<strong>为数学共同体取得理解</strong>」。历史上，「一个问题被解决」从来都意味着共同体取得了这样的理解，至少发展出了一条可通达它的路径；没有理由认为这在 AI 时代会改变。<br><br><strong>AI 生成的证明，就像一则从外星文明向我们播送的天启</strong>——它缺失了把它转化为「理解数学」所需的那份额外工作，而这一概念的含义在 AI 时代应保持不变。因此，发表该论证的人有责任为共同体补上这份工作：把这些新思想融入公共知识体，找到能让人们觉得富有教益的讲解方式。这需要互通邮件、当面讨论、做报告……单纯把证明贴到 arXiv 上，一件事也没做。</blockquote>
+        <h3>6. 准备演讲报告</h3>
+        <p>可用 AI 制作幻灯片：上传文稿（latex 与 pdf）并说「基于这篇论文，为一场 12 分钟的演讲生成一份 Beamer 文件。」可以在提示词中加入想讲什么、各部分花多少时间等要求。当然需要几轮迭代，文件之后还得认真改，但它能给出一份合理的初稿，省下时间。</p>
+        <h3>7. 致谢规范</h3>
+        <p>若你用 AI 做了创造性工作并把结果用于论文，最好致谢并说明<strong>使用了哪些模型、各自的具体角色</strong>——事实上<strong>许多期刊要求这么做</strong>。即使 AI 帮你完成了部分证明，论文成果的荣誉仍然归你；但别忘了，<strong>这份荣誉同时伴随着对内容的全部责任</strong>。</p>
+        <blockquote><em>脚注：</em>有人甚至把 AI 模型列为论文共同作者。这并无必要（<strong>且被许多期刊禁止</strong>），因为 AI 的地位不同——与人类作者不同，它不对内容的正确性与原创性负责。但<strong>明确说明 AI 究竟做了什么，是极可取的</strong>。</blockquote>
+        <h3>8–9. 延伸资源与链接</h3>
+        <ul class="agent-list">
+          <li><span class="agent-name">陶哲轩众筹清单</span>：AI 与数学的通用资源清单；以及关于数学的目的、价值与本质的通用资源清单（2026 年 9 月 10 日、12 日博文）。</li>
+          <li><span class="agent-name">MIT 官方指引</span>：<a href="https://ist.mit.edu/ai-guidance" style="color:#2563EB;text-decoration:underline;">AI 使用指引</a>、<a href="https://libguides.mit.edu/cite-AI-tools" style="color:#2563EB;text-decoration:underline;">AI 工具引用指引</a>。</li>
+          <li><span class="agent-name">AMS 期刊政策</span>：<a href="https://www.ams.org/publications/journals/policies/UseofArtificialIntelligence" style="color:#2563EB;text-decoration:underline;">AMS Journals policy on the use of AI</a>。</li>
+        </ul>
+        <h3>10. 负责任使用 AI 的检查清单</h3>
+        <p>以下是全文最可操作的部分。作者建议在每次使用 AI 前后逐条自问：</p>
+        <ul class="agent-list">
+          <li><span class="agent-name">① 理解与责任</span>：我是否完全理解取自 AI 输出的每一个数学陈述、证明、计算或例子？能否当场向导师 / 合作者 / 听众清楚地解释？是否检查过所有定义、假设、边界情形与隐含条件？我是在用 AI 帮助自己<strong>学习和做</strong>数学，还是在用它<strong>逃避</strong>学习和做数学？</li>
+          <li><span class="agent-name">② 隐私与许可</span>：我是否有权上传正交给 AI 的材料？若材料属于合作者 / 导师 / 学生 / 期刊 / 会议 / 机构，是否已取得所需许可？是否查阅了所用平台的数据控制设置与隐私政策？材料敏感或非公开时，是否应改用机构账号、企业账号、本地模型，或者干脆不用 AI？</li>
+          <li><span class="agent-name">③ 学习与习题</span>：若是导师 / 教师布置的习题，是否允许使用 AI？我是在索取提示、讲解与背景，还是在外包解答？如果用了 AI 的讲解，我是否已经自己把论证重建了一遍？</li>
+          <li><span class="agent-name">④ 研究想法与证明</span>：我是否以怀疑的态度对待 AI 生成的研究问题、猜想、证明与反例？是否检查过该问题或结果是否已经为人所知？是否在合适时机与导师 / 合作者 / 其他专家讨论过有前景的 AI 想法？AI 给出证明时，我是否亲自验证而非依赖模型的自信？另一个模型也同意时，我是否记得这<strong>仍然不能替代自己的验证</strong>？</li>
+          <li><span class="agent-name">⑤ 计算、代码与数据</span>：是否检查过代码确实在做你要求它做的事？是否在已知答案的简单例子上测试过？是否检查了差一错误、遗漏情形、数值不稳定与错误假设？若该计算对论文重要，是否保存了足够的代码、数据与说明以保证可复现？</li>
+          <li><span class="agent-name">⑥ 参考文献与检索</span>：是否要求 AI 列出它使用的来源？是否做了彻底的文献检索，确认 AI 建议的论证或进路此前是否出现过？是否在真实论文、专著、MathSciNet、zbMATH、arXiv 或期刊网站上核过 AI 给出的<strong>每一条</strong>参考文献？被引来源是否真的包含所声称的定理、定义、例子或论证？是否确认 AI 没有编造文献、混淆两篇论文，或在未读全文的情况下凭摘要臆测内容？</li>
+          <li><span class="agent-name">⑦ 写作</span>：是否避免了把大段 AI 生成文本复制粘贴进论文或报告？是否以自己的语言重写了有用的 AI 素材并检查其正确性？符号、术语与文风是否与全文一致？是否要求 AI 给出意见与修改清单，而不是默许它替你重写论文？</li>
+          <li><span class="agent-name">⑧ 致谢</span>：AI 是否对项目做出了实质性创造性贡献（建议研究方向、生成例子、协助证明、写代码、作图）？若是，是否已致谢所用模型及其用途？是否查阅了期刊 / 会议 / 课程 / 机构 / 资助方的 AI 政策？若有合作者，是否就如何披露 AI 使用达成一致？</li>
+        </ul>
+        <p class="agent-summary"><strong>最终检验：</strong>如果我删掉 AI 的聊天记录，我是否仍然理解、能够复现，并愿意为论文或报告中的<strong>一切内容</strong>承担全部责任？</p>
+        <h3>12. 更新：2026 年 9 月 14 日</h3>
+        <p>距指南写成不过 4 个月，AI 做数学的能力已提升得如此剧烈，以至于 2026 年 5 月「感觉像一个永恒之前」。ChatGPT 与 Claude 的前沿模型攻克了一批重大开放问题（常有人类数学家合作，但并非总是），包括：<strong>n ≥ 3 时 Jacobian 猜想的反例、六维球面上复结构的构造、非 sofic 群的存在性、ℤ<sup>d</sup>（d ≥ 2）上临界概率处 Bernoulli 键渗流的不存在性、Navier–Stokes 千禧年问题的解决</strong>等等。其中一些不止是反例，而是对深刻一般性定理的证明。因此最强的模型（尤其是可能在几个月后发布的内部版本）常常能做到职业数学家水平的研究——尽管人的参与在许多情况下仍很重要。这引出了关于我们该如何做数学、数学家此后该如何被评价、荣誉与优先权会怎样等一系列难题：<strong>数学界的社会结构将在未来数月到数年间经历严肃的变革。</strong>但作者认为此处并非讨论这些议题的合适场合，且尽管如此，上述指南大体仍然适用。以下是需要更新的部分：</p>
+        <ul class="agent-list">
+          <li><span class="agent-name">① 新模型</span>：2026 年 5 月最强的公开模型 ChatGPT 5.5 与 Claude Opus 4.7，已分别升级为 <strong>ChatGPT 5.6 Sol 与 ChatGPT 6 Astra</strong>（均有 Pro 模式）、<strong>Claude Opus 4.8 乃至 5、以及 Claude Fable 5 与 5.1</strong>。最新模型在数学各方面都强大得多：它们不再那么频繁地幻觉，虽然面对极难问题时仍会，但你可以驱使它们自我检查以提升可靠性；它们<strong>不再倾向于编造不存在的参考文献</strong>，尽管仍可能夸大已有文献中的结果（尤其是付费墙后的那些）。保持「随时跟进」越来越难，特别是在它们的节奏下；<strong>但「不要署名任何你未完全搞懂的东西」这条建议依然有效，而且无论 AI 变得多好都应继续有效。</strong></li>
+          <li><span class="agent-name">② AI 审稿</span>：AI 模型筛查数学文本的能力更强了——不只看印刷错误，也包括数学错误与漏洞；它们如今常常做得<strong>至少和认真负责的人类审稿人一样好</strong>，能找出论证中非常细微的错误（不过人类审稿仍不可少）。对于不太长、不太复杂的证明，<strong>被多个强模型的审稿智能体接受（如 ChatGPT 6 Pro 或 Claude Fable 5.1）虽不是保证，但如今意味着它相当可能是正确的，或至少是可修正的</strong>。作者强烈建议把所有数学文本在公开前先过一个前沿模型。<br>便利做法：把 tex 文件上传到另一个对话，给出提示词「非常仔细地阅读本文并<strong>用红色插入评论与修改（但不要改动正文）</strong>，把 latex 文件给我」；也可要求「把建议的修改<strong>用紫色</strong>插入」，然后逐一处理彩色批注处，用紫色插入的内容（最好以自己的话重写后）修补所暴露的问题。此过程可重复几轮，直到审稿智能体满意。</li>
+          <li><span class="agent-name">③ Vibe-writing 仍不可取</span>：AI 模型仍然<strong>不擅长写数学</strong>。尽管前沿模型犯的错比过去少，AI 的论述往往不必要地啰嗦、混乱且难读。因此（除其他原因外）数学文本的 vibe-writing 仍不是好选项——事后需要大量编辑，而且正如第 1 节所述，<strong>往往干脆自己写更容易</strong>。</li>
+          <li><span class="agent-name">④ 形式化</span>：自动形式化工具已大幅进步，AI 现在能够形式化非常深奥的数学——例如 <strong>Anthropic 最近完成了费马大定理证明的形式化</strong>。</li>
+          <li><span class="agent-name">⑤ 更长、更少的提示词</span>：模型太好用，容易诱惑人快速连珠炮式地发问；这除了浪费，还可能导致数学上的<strong>「习得性无助」（learned helplessness）</strong>。作者认为更具生产力的模式（尤其对青年数学家）是：<strong>用相对较少但经过深思熟虑的提示词</strong>，从容地思考问题与 AI 输出（先用审稿智能体清理过），或与合作者讨论；然后把思考与讨论中涌现的评论与请求写成更长的提示词。这不仅节省提示词配额（你的套餐可能限制每周提问次数），更重要的是<strong>更利于一个数学家的学习与成长</strong>。</li>
+          <li><span class="agent-name">⑥ 人的维度</span>：AI 时代，数学中「人」的一面变得比以往更重要。因此不妨<strong>不只写一篇论文，还做一次（或几次）黑板 / 白板报告</strong>，详细讲解你的结果并<strong>录像</strong>。报告前应写好细致的讲稿，但要准备到无须频繁看稿的程度。分享这样的视频是传播成果的好办法——甚至已经出现了不以论文、而以最高质量数学讲座视频为发表内容的新期刊：<a href="https://www.mathematicaldiscourse.org/" style="color:#2563EB;text-decoration:underline;">Mathematical Discourse</a>。</li>
+          <li><span class="agent-name">⑦ AI 使用致谢范例</span>：作者列出 arXiv 上几篇致谢写得规范的论文，可作为模板参考。</li>
+          <li><span class="agent-name">⑧ 竞赛</span>：近来出现了手握前沿模型的数学家<strong>高速竞速抢先宣称解决开放问题</strong>的案例。作者指出，这种做法不仅具有破坏性，而且是<strong>徒劳的</strong>：在不久的将来，「率先用 AI 解决某个开放问题」的价值<strong>必将递减</strong>。</li>
+        </ul>
+        <p class="agent-summary"><strong>原文信息</strong>：Pavel Etingof（MIT 数学系），《Use of AI in Mathematical Research: A Guide for Young Mathematicians》，2026 年 5 月；2026 年 9 月 14 日更新第 12 节。第 4.3 与 4.6 节由 Andrew Sutherland 撰写；作者感谢 Jesse Geneson、Slava Gerovitch、Tanya Khovanova、Andrew Sutherland、Chelsea Walton 的宝贵意见。部分研究经费来自授予 UMass Lowell Miner 计算机与信息科学学院 Anna Rumshisky 教授的 Amazon AGI Faculty Award；文中插图由 ChatGPT 生成。以上内容为依据英文原文的中文摘译整理，关键条款均对照原文，<strong>完整表述请以英文原 PDF 为准</strong>。</p>
       </div>
     </div>
     </div>
