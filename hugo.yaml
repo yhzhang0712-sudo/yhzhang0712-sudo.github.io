@@ -1,8 +1,8 @@
 baseURL: 'https://simplemath.top'
-locale: 'zh-CN'
 title: 'SimpleMath'
 theme: 'PaperMod'
 enableGitInfo: true
+enableRobotsTXT: true
 
 # lastmod 优先取 git 提交日期（enableGitInfo 配合），用于面板「最后更新」展示
 frontmatter:
@@ -46,8 +46,8 @@ params:
   comments: false
   hidemeta: false
   hideSummary: false
-  showtoc: false
-  tocopen: false
+  mainSections:
+    - posts
 
   profileMode:
     enabled: true
@@ -74,7 +74,12 @@ outputs:
     - RSS
     - JSON
 
+services:
+  rss:
+    limit: 20
+
 languages:
   zh:
     label: "中文"
     weight: 1
+    languageCode: "zh-CN"

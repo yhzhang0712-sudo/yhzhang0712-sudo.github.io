@@ -87,7 +87,7 @@ $$ \text{若 } j:\mathcal{T}\rightleftarrows\mathcal{T}' \text{ 是 smashing 局
   <div class="ar-method-head"><span class="ar-method-name">造「$K(n)$-局部非零而 $T(n)$-零化」的谱</span><span class="ar-m-tag">K-理论反例</span></div>
   <ul class="ar-m-pts">
     <li>Burklund–Hahn–Levy–Schlank（arXiv:2310.17459）用代数 K-理论构造反例，<b>证伪</b>稳定同伦范畴上的 TC——Ravenel 1984 七大猜想中最后一个被解决者（否定性解决）；</li>
-    <li>方法要点：把「$T(n)$-零化而 $K(n)$-局部非零」翻译为可在 $K(n)$-局部范畴中检测的代数不变量，再经有限化链条落实为谱层面的构造（本文件反例主体未展开，细节以原文为准）。</li>
+    <li>方法要点：把「$T(n)$-零化而 $K(n)$-局部非零」翻译为可在 $K(n)$-局部范畴中检测的代数不变量，再经有限化链条落实为谱层面的构造；完整构造见原文。</li>
   </ul>
 </div>
 <p class="ar-mnote"><b>TC 的三层含义：</b>TC$_n$ 的望远镜局部化=色局部化这一原始同伦论形式（$n\le1$ 真、一般 $n$ 假）；TC 在交换环导出范畴 $D(R)$ 上恰为「smashing 局部化由紧对象生成」，Noether 环为真、一般交换环有反例（Keller 1994；Balchin–Tecklenburg 2025 推广为无限反例族）；TC 在自入射 Artin 代数稳定模范畴上化为幂等理想问题（Šťovíček 2008，domestic 类为真）。三层面共享同一核心：<b>局部化核的紧生成性</b>。</p>

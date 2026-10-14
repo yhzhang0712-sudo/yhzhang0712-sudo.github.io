@@ -27,6 +27,44 @@ $$ D(\operatorname{GProj}(A))\;\subseteq\;\operatorname{GInj}(A^{\mathrm{op}}),\
   <li><span class="ar-year">2020s</span>Christensen–Estrada–Thompson 证明 Gorenstein weak global dimension 左右对称；Marczinzik–Gélinas 在 QF-3 代数上证明 $\operatorname{domdim}=\operatorname{findim}$ 的强版本。</li>
 </ul>
 
+<h3 class="ar-subhead">2026 年新动态（待核实）</h3>
+<p class="ar-mnote"><b>关于本节内容的可靠性说明。</b>以下条目来自 OpenAI 于 <b>2026 年 9 月 23 日</b>在 GitHub 公开的一批数学预印本（仓库 <code>openai/math</code>，当前 719 篇手稿 / 372 个结果族）。这批成果<b>由 OpenAI 内部模型生成，截至发稿未经同行评议</b>；发布后两天内该集合已撤回 3 篇、修订 14 篇，数学界对其发布方式与结论可靠性存在公开争议。<b>因此本面板保留上文的猜想陈述不变：GSC 仍应视为开放问题。</b></p>
+
+<p><strong>⚠ 先厘清三个容易混淆的猜想——本面板的主题<b>并未</b>被推翻。</strong>这批预印本涉及的是另外两个：</p>
+<div class="ar-mmap">
+  <div class="ar-mmap-col c-green">
+    <div class="ar-mmap-title">GSC（本面板主题）</div>
+    <div class="ar-mmap-sub">$ \operatorname{id}_\Lambda\Lambda<\infty \Rightarrow \operatorname{id}_{\Lambda^{\mathrm{op}}}\Lambda^{\mathrm{op}}<\infty $</div>
+    <ul class="ar-mmap-list">
+      <li><b>未被触及</b>：下述反例代数左侧自内射维数为 $\infty$，GSC 的前提不成立，对它空转</li>
+      <li>状态：<b>仍开放</b></li>
+    </ul>
+  </div>
+  <div class="ar-mmap-col c-red">
+    <div class="ar-mmap-title">Auslander–Gorenstein 猜想</div>
+    <div class="ar-mmap-sub">$\operatorname{pd}_\Gamma I^j\le j\ (\forall j\ge0) \Rightarrow \Gamma$ 双侧自内射维数有限</div>
+    <ul class="ar-mmap-list">
+      <li><b>被宣称否证</b>（见下 Corollary 1.2(1)）</li>
+      <li>其前提在反例处反而自动满足（所有 $I^j$ 投射，$\operatorname{pd} I^j=0\le j$）</li>
+    </ul>
+  </div>
+  <div class="ar-mmap-col c-amber">
+    <div class="ar-mmap-title">GPC（Gorenstein 投射猜想）</div>
+    <div class="ar-mmap-sub">$M$ Gorenstein-投射、$\operatorname{Ext}^i(M,M)=0\ \forall i>0 \Rightarrow M$ 投射</div>
+    <ul class="ar-mmap-list">
+      <li><b>被宣称否证</b>（姊妹篇主定理）</li>
+      <li>它恰好是 AR 猜想限制到 Gorenstein-投射模的情形</li>
+    </ul>
+  </div>
+</div>
+<ul class="ar-timeline">
+  <li><span class="ar-year">2026</span>《An explicit counterexample to the Auslander–Reiten conjecture》（OpenAI, 2026-09-23）宣称：存在有限维 $k$-代数 $\Lambda$（$k=\mathbb{F}_2(q,H_1,H_2)$）与<b>非投射</b>的 Gorenstein 投射模 $Z$ 使 $\operatorname{Ext}^i_\Lambda(Z,Z)=0=\operatorname{Ext}^i_\Lambda(Z,\Lambda)\ \forall i\ge1$。因 $Z$ 是 Gorenstein 投射的，同一例子<b>同时宣称否证 Gorenstein 投射猜想（GPC）</b>；结论在该 $k$ 的任意域扩张后保持。<b>注意：这与本面板的 GSC 不是同一个猜想。</b></li>
+  <li><span class="ar-year">2026</span>《A counterexample to Tachikawa's second conjecture》（OpenAI, 2026-09-23）的 <b>Corollary 1.2(1)</b> 宣称：对上文开头提到的自同态代数 $\Gamma_K=\operatorname{End}_{A_K}(A_K\oplus M_K)^{\mathrm{op}}$，其极小内射分解 $\Gamma_K\to I^0\to I^1\to\cdots$ 满足<b>每一项 $I^j$ 都是投射模</b>（故 $\operatorname{pd}_{\Gamma_K} I^j=0\le j$ 对所有 $j\ge 0$ 成立），但 $\operatorname{id}_{\Gamma_K}\Gamma_K=\infty$——<b>若成立即否证 Auslander–Gorenstein 猜想</b>。</li>
+</ul>
+<p><strong>对本面板主题的实际影响（两点）</strong>：
+(1) <b>GSC 本身未被推翻</b>——因为上述反例中 $\operatorname{id}_{\Gamma_K}\Gamma_K=\infty$，GSC 的前提（单侧自内射维数有限）根本没有触发；要否证 GSC，必须先构造出一个满足「一侧自内射维数有限、另一侧无限」的代数，而这批结果<u>没有</u>做到这一点。
+(2) <b>但一条既有路线被切断</b>：本分区「有限维数猜想」面板记载，「对左 Gorenstein Artin 代数，$\operatorname{findim}\Lambda<\infty$ 等价于右侧 Gorenstein」，并据此得到「<b>FDC 整体成立将推出 Gorenstein 对称猜想</b>」。既然同一批预印本宣称否证 FDC，那么这条经由 FDC 证明 GSC 的路径<b>不再可用</b>——注意这是「证明路径失效」，<b>不是</b>「GSC 为假」：$\neg\operatorname{FDC}$ 推不出 $\neg\operatorname{GSC}$。</p>
+
 <h3 class="ar-subhead">研究方法</h3>
 <p>GSC 的证明素材横跨两个世界：<b>交换代数</b>里研究「何时一个环是 Gorenstein」（数值半群环、单项式理想），<b>Artin 代数</b>里研究「单侧自内射维数有限是否自动双侧」。两条路线殊途同归——<b>都在构造一个对偶结构</b>（半群的补对称、复形的 Poincaré 对偶、左右模范畴的维数对称），并让 Gorenstein 性从这个对偶结构中显现出来。</p>
 <div class="ar-chain">
@@ -97,3 +135,7 @@ $$ D(\operatorname{GProj}(A))\;\subseteq\;\operatorname{GInj}(A^{\mathrm{op}}),\
 <p class="ar-ref"><span class="ar-ref-no">[9]</span> 周国栋团队, <i>Bounded extension $B\subset A$ 上 Gorenstein 投射稳定范畴等价</i>, 杭州师范大学报告, 2023.</p>
 <p class="ar-ref"><span class="ar-ref-no">[10]</span> S. Khatami, S. Yassemi, <i>Gorenstein injective dimension of modules over local rings</i>, arXiv:math/0306020 (2003).</p>
 <p class="ar-ref"><span class="ar-ref-no">[11]</span> W. Li, <i>On a proof of the Gorenstein Symmetry Conjecture</i>, arXiv:2607.28011 (2026), 预印本待审。</p>
+<p class="ar-ref"><span class="ar-ref-no">[12]</span> OpenAI, <i>An explicit counterexample to the Auslander–Reiten conjecture</i>, preprint, 2026-09-23.（同时宣称否证 Gorenstein 投射猜想）<b>（未经同行评议，见「2026 年新动态」节说明）</b>
+  <br><code>https://github.com/openai/math/tree/main/preprints/An-explicit-counterexample-to-the-Auslander-Reiten-conjecture-September-23-2026</code></p>
+<p class="ar-ref"><span class="ar-ref-no">[13]</span> OpenAI, <i>A counterexample to Tachikawa's second conjecture</i>, preprint, 2026-09-23.（Corollary 1.2(1) 宣称否证 Auslander–Gorenstein 猜想）<b>（未经同行评议）</b>
+  <br><code>https://github.com/openai/math/tree/main/preprints/A-counterexample-to-Tachikawas-second-conjecture-September-23-2026</code></p>

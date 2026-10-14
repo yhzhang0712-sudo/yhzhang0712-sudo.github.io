@@ -42,6 +42,27 @@ $$ \operatorname{Ext}_A^n(M,\, A) \;\neq\; 0. $$
     <li>Morita-Gorenstein algebras代数。</li>
 </ul>
 
+<h3 class="ar-subhead">2026 年新动态（待核实）</h3>
+<p class="ar-mnote"><b>关于本节内容的可靠性说明。</b>以下条目来自 OpenAI 于 <b>2026 年 9 月 23 日</b>在 GitHub 公开的一批数学预印本（仓库 <code>openai/math</code>，当前 719 篇手稿 / 372 个结果族）。这批成果<b>由 OpenAI 内部模型生成，截至发稿未经同行评议</b>；发布后两天内该集合已撤回 3 篇、修订 14 篇，数学界对其发布方式与结论可靠性存在公开争议（多位菲尔兹奖得主及陶哲轩等提出批评）。<br>
+因此本面板<b>保留上文的猜想陈述与全部已确立结果不变</b>，仅将新宣称作为「待核实」信息单独登记：<b>在数学界完成独立验证之前，Nakayama 猜想族仍应视为开放问题。</b></p>
+<ul class="ar-timeline">
+  <li><span class="ar-year">2026</span>《An explicit counterexample to the Auslander–Reiten conjecture》（OpenAI, 2026-09-23）主定理宣称：取 $k=\mathbb{F}_2(q,H_1,H_2)$（$q,H_1,H_2$ 代数无关），存在有限维 $k$-代数 $\Lambda$ 与有限维<b>非投射</b>左 $\Lambda$-模 $Z$ 使
+  $$ \operatorname{Ext}^i_\Lambda(Z,Z)\;=\;0\;=\;\operatorname{Ext}^i_\Lambda(Z,\Lambda)\qquad \forall\, i\ge 1 , $$
+  <b>若成立即否证 Auslander–Reiten 猜想</b>。该模 $Z$ 是 Gorenstein 投射的，故同一例子也（宣称）否证 <b>Gorenstein 投射猜想</b>；此外生成元形式一并失效：$Z\oplus\Lambda$ 是非投射生成元且无正的自扩张。
+    <p>构造细节：$\Lambda/\operatorname{rad}\Lambda\simeq k^8$（8 个单模同构类、分裂），且 <b>$\operatorname{rad}(\Lambda)^4\neq 0$</b>。上列结论在该 $k$ 的<b>任意域扩张</b>后保持，因而也覆盖特征 2 的代数闭域。论文明确指出<b>交换情形未被此构造解决</b>。Lean 形式化条目：<code>OAI.ArExplicit.Statement.main</code>（Comparator 挑战 <code>AuslanderReiten.json</code>）。</p></li>
+  <li><span class="ar-year">2026</span>《A counterexample to Tachikawa's second conjecture》（OpenAI, 2026-09-23，同一结果族的姊妹篇）主定理宣称：在同一域 $k$ 上构造有限维<b>对称</b> $k$-代数 $A$ 与非投射有限维左 $A$-模 $M$ 使 $\operatorname{Ext}^i_A(M,M)=0\ \forall i>0$，<b>若成立即否证 Tachikawa 第二猜想</b>；因 $A$ 自内射，同一模满足 $\operatorname{Ext}^i_A(M,M\oplus A)=0$，从而也给出<b>对称代数上的 AR 猜想反例</b>。</li>
+  <li><span class="ar-year">2026</span><b>Nakayama 猜想族被否证（Corollary 1.2）</b>：承接上一条 $(A,M)$，对任意域扩张 $K/k$ 令 $\Gamma_K=\operatorname{End}_{A_K}(A_K\oplus M_K)^{\mathrm{op}}$。该推论宣称 $\Gamma_K$ 同时满足三条性质，据此<b>经典、广义、强 Nakayama 猜想以及 Auslander–Gorenstein 猜想均为假</b>：
+    <p><b>(1)</b> $\Gamma_K$ 的极小内射分解每一项都是投射模，但 $\operatorname{id}_{\Gamma_K}\Gamma_K=\infty$——否证<b>经典 Nakayama 猜想</b>（并同时否证 Auslander–Gorenstein 猜想：$\operatorname{pd}_{\Gamma_K} I^j=0\le j$ 对所有 $j\ge 0$ 成立，而左侧自内射维数已经无穷）；</p>
+    <p><b>(2)</b> 存在非零单模 $S$ 使 $\operatorname{Ext}^i_{\Gamma_K}(S,\Gamma_K)=0$ 对<b>所有 $i\ge 0$</b> 成立（含 $i=0$，即 $\operatorname{Hom}$ 亦消失）——否证<b>强 Nakayama 猜想</b>，并给出广义 Nakayama 猜想的「单模 Ext」形式的失败；</p>
+    <p><b>(3)</b> 存在一个<b>投射-内射</b>的 Wakamatsu tilting 模 $W$，它不是 tilting 模——否证 <b>Wakamatsu tilting 猜想</b>（详见本分区对应面板）。</p></li>
+  <li><span class="ar-year">2026</span><b>tilting 补模方面的推论（Corollary 8.2）</b>：因 $\Gamma_K$ 违反广义 Nakayama 猜想，依 Buan–Solberg 关于「广义 Nakayama 失效 ⟺ cotilting 补模非唯一」的定理，可对偶得到——存在投射的<b>几乎完备 tilting（almost complete tilting）</b>左 $\Gamma_K^{\mathrm{op}}$-模，具有<b>无穷多个两两非同构的不可分解补模</b>。</li>
+</ul>
+<p><strong>反例与正面结果并不冲突——边界在哪里：</strong>上述 Listing「NC / GNC / ARC 在以下代数类上成立」的诸条目<b>依然有效</b>，因为反例代数落在这些类的<b>外面</b>：
+(a) 上文中 $J^3=0$ 类的正面结果（Zhang–Zhou 等对 $\operatorname{rad}^3=0$ 分裂代数的 ARC）不适用于此处——前面提到的 AR 反例代数满足 $\operatorname{rad}(\Lambda)^4\neq 0$，论文第 9 节专门证明了这一点；
+(b) 上文的 <b>Schulz 反例（参考文献 [13]）</b> 属于非 Artin 代数（除环上代数）或「最终消失」而非「全次数消失」的情形，与此处要求的 $\forall i>0$ 全消失不同——这也是先前容忍此类反例、猜想仍被认为可能成立的原因。
+换言之，<b>新宣称并未推翻任何已发表定理，而是把反例推进到此前方法刚好够不到的那一侧。</b></p>
+<p><strong>蕴含链的反向印证</strong>：如上所列链条 $\operatorname{FDC}\Rightarrow\operatorname{SNC}\Rightarrow\operatorname{GNC}\Rightarrow\operatorname{NC}$ 的<b>逆否命题</b>给出 $\neg\operatorname{NC}\Rightarrow\neg\operatorname{GNC}\Rightarrow\neg\operatorname{SNC}\Rightarrow\neg\operatorname{FDC}$。既然同一批预印本同时宣称上列四个猜想连同 FDC 全部失败，此二者在<b>逻辑方向上彼此自洽</b>。但这只能说明两个宣称互不矛盾，<b>不能作为其中任何一个成立的证据</b>——两条路径出自同一作者（同一模型）、同一批生成，不构成独立验证。</p>
+
 <h3 class="ar-subhead">研究方法</h3>
 <p><strong>总体战略</strong>：中山猜想族由一条蕴含链串起——</p>
 <div class="ar-chain">
@@ -213,3 +234,8 @@ $$ \operatorname{Ext}_A^n(M,\, A) \;\neq\; 0. $$
 <p class="ar-ref"><span class="ar-ref-no">[11]</span> C. C. Xi, <i>Universally Gorenstein algebras and the Nakayama conjecture</i>, 2022.</p>
 <p class="ar-ref"><span class="ar-ref-no">[12]</span> 惠昌常, 陈红星, <i>Nakayama 猜想在 strong Morita 与 virtually Gorenstein 代数上的进展</i>, 宁波大学报告, 2022.</p>
 <p class="ar-ref"><span class="ar-ref-no">[13]</span> R. Schulz, <i>A counterexample to the Nakayama conjecture in the non-Artinian setting</i>, 2023.</p>
+<p class="ar-ref"><span class="ar-ref-no">[14]</span> OpenAI, <i>An explicit counterexample to the Auslander–Reiten conjecture</i>, preprint, 2026-09-23. <b>（未经同行评议，见「2026 年新动态」节说明）</b>
+  <br><code>https://github.com/openai/math/tree/main/preprints/An-explicit-counterexample-to-the-Auslander-Reiten-conjecture-September-23-2026</code></p>
+<p class="ar-ref"><span class="ar-ref-no">[15]</span> OpenAI, <i>A counterexample to Tachikawa's second conjecture</i>, preprint, 2026-09-23.（Theorem 1.1 + Corollary 1.2 / 1.3 / 8.2）<b>（未经同行评议）</b>
+  <br><code>https://github.com/openai/math/tree/main/preprints/A-counterexample-to-Tachikawas-second-conjecture-September-23-2026</code></p>
+<p class="ar-ref"><span class="ar-ref-no">[16]</span> OpenAI, <i>openai/math</i> 仓库 <code>README.md</code>、<code>history.md</code> 与 <code>lean/formalization.yaml</code>（含撤稿与修订记录、Lean 形式化清单）, 2026-10。</p>

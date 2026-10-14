@@ -5,7 +5,7 @@ date: 2026-09-29
 ---
 <div class="ar-toc-wrap">
 <nav class="ar-toc" aria-label="面板目录">
-  <button type="button" class="ar-toc-btn" onclick="toggleArToc(event)" aria-label="目录导航" title="目录导航">
+  <button type="button" class="ar-toc-btn" aria-expanded="false" onclick="toggleArToc(event)" aria-label="目录导航" title="目录导航">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
   </button>
   <div class="ar-toc-drop" role="menu">
@@ -144,14 +144,14 @@ $$f^{\mathcal{P}}\big(f^{\mathcal{P}^{!}}(x)\big)=x,$$
 <p>即两个生成级数关于<em>复合</em>互逆。这为整数序列提供组合解释，也给出一个可计算的 Koszul 性检验（必要条件）。</p>
 
 <h4 id="ar-op-2-3">2.3　Koszul ⟹ 极小模型与强同伦代数</h4>
-<p><strong>定理 2.3</strong>：$\mathcal{P}$ Koszul 时，$D(\mathcal{P}^{\text{¡}})$ 是其极小模型，从而给出：$\mathcal{P}$-代数形变的<em>典范</em>控制 $L_{\infty}$-代数（Maurer–Cartan 元模空间 = 形变模空间）；以及"强同伦 $\mathcal{P}$-代数"的概念。后者的关键性质是<strong>传递性</strong>：强同伦结构可沿弱同伦等价传递——这正是 $A_{\infty}$、$L_{\infty}$ 结构在 dg 范畴论与 Fukaya 范畴中无处不在的原因。</p>
+<p><strong>定理 2.2</strong>：$\mathcal{P}$ Koszul 时，$D(\mathcal{P}^{\text{¡}})$ 是其极小模型，从而给出：$\mathcal{P}$-代数形变的<em>典范</em>控制 $L_{\infty}$-代数（Maurer–Cartan 元模空间 = 形变模空间）；以及"强同伦 $\mathcal{P}$-代数"的概念。后者的关键性质是<strong>传递性</strong>：强同伦结构可沿弱同伦等价传递——这正是 $A_{\infty}$、$L_{\infty}$ 结构在 dg 范畴论与 Fukaya 范畴中无处不在的原因。</p>
 
 <h4 id="ar-op-2-4">2.4　Koszul 代数：二次代数的对应物</h4>
 <p>在<em>代数</em>（而非 operad）层面，对应理论是 <strong>Koszul 代数</strong>（Priddy）：设 $A$ 为 $\mathbb{N}$-分次代数，$A_{0}$ 半单。$A$ 称为 Koszul，若 $\mathrm{Ext}^{\bullet}_{A}(A_{0},A_{0})$ 由次数 1 生成（等价地，极小分次自由分解是"线性的"）。此时 Yoneda 代数 $E(A)=\mathrm{Ext}^{\bullet}_{A}(A_{0},A_{0})$ 与 $A$ 的二次对偶 $A^{!}$ 一致，且 $(A^{!})^{!}\cong A$。</p>
 <p><strong>表示论意义</strong>：Koszul 性把"代数 $A$ 的同调复杂度"与"其对偶 $A^{!}$ 的代数结构"绑定，使 $\mathrm{Ext}$-代数可被显式计算。这是拟遗传代数、Auslander 型代数、Koszul 环上模范畴研究的标准工具。</p>
 
 <h4 id="ar-op-2-5">2.5　Beilinson–Ginzburg–Soergel 模式</h4>
-<p><strong>定理 2.5（BGS, J. Amer. Math. Soc. 1996）</strong>：在半单复 Lie 代数（或 Kac–Moody）的范畴 $\mathcal{O}$ 中，奇异块与另一块之间存在 Koszul 对偶：一个块的标准 Koszul 代数与另一块的 Koszul 对偶对应，且中心特征与有限性条件的组合数据互换。更一般地，Braden–Licata–Proudfoot–Webster 在 Gale 对偶与 Koszul 对偶的框架下组合地构造了大量 Koszul 对偶代数对。这构成 operad 式 Koszul 对偶思想在<em>表示论</em>中最深刻的落地。</p>
+<p><strong>定理 2.3（BGS, J. Amer. Math. Soc. 1996）</strong>：在半单复 Lie 代数（或 Kac–Moody）的范畴 $\mathcal{O}$ 中，奇异块与另一块之间存在 Koszul 对偶：一个块的标准 Koszul 代数与另一块的 Koszul 对偶对应，且中心特征与有限性条件的组合数据互换。更一般地，Braden–Licata–Proudfoot–Webster 在 Gale 对偶与 Koszul 对偶的框架下组合地构造了大量 Koszul 对偶代数对。这构成 operad 式 Koszul 对偶思想在<em>表示论</em>中最深刻的落地。</p>
 
 <h4 id="ar-op-2-6">2.6　Deligne 猜想与 Gerstenhaber 结构</h4>
 <p>Gerstenhaber（1963）证明结合代数 $A$ 的 Hochschild 上同调 $HH^{\bullet}(A)$ 带 <strong>Gerstenhaber 代数</strong>结构（一个次数 0 的 cup 积 + 一个次数 $-1$ 的李括号，满足 Leibniz 规则）。<strong>Deligne 猜想</strong>断言这一结构来自小圆盘 operad $\mathbb{E}_{2}$ 的链 operad 在 Hochschild 复形上的作用；该猜想已由 Kontsevich–Soibelman、McClure–Smith、Tamarkin、Voronov 等多方证明。</p>

@@ -2,6 +2,8 @@ public/
 .DS_Store
 .vscode/
 *.bak.meta
+*.bak
+.hugo_build.lock
 .hugo-bin/
 
 .original-images/

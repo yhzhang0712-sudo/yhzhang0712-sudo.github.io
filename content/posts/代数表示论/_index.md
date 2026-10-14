@@ -2,8 +2,10 @@
 title: "代数表示论同调代数"
 hideTitle: true
 math: true
-description: "代数表示论与同调代数猜想中心：有限维数、Nakayama、Gorenstein 对称、Wakamatsu tilting、Cartan 行列式等核心猜想与重要猜想的陈述、研究进展与参考文献。"
-searchText: "代数表示论与同调代数猜想总览。分区：核心猜想（有限维数猜想、Nakayama猜想、Gorenstein对称猜想、Wakamatsu tilting猜想、Cartan行列式猜想、Broué交换亏群猜想、Telescope猜想、Brauer-Thrall猜想）；重要猜想（Gorenstein投射猜想、无环猜想、Igusa-Smalø猜想、Extension猜想、Happel-Preiser-Ringel猜想、Gorenstein投射维数、分数Calabi-Yau、n-cluster tilting、gentle导出分类、GARC、silting公开问题、导出单性、张量三角几何、周期猜想、CM Type、Weakly-Gorenstein、no-loop）；基础理论（Auslander-Reiten理论：几乎分裂序列、AR平移τ=DTr、AR公式、AR箭图与mesh关系；Gabriel定理：Dynkin型与正根双射、BGP反射函子、Tits二次型、Kac定理与species；Tilting理论：倾斜模三条件、Brenner–Butler挠对、Happel导出等价、Rickard倾斜复形、APR倾斜模；导出范畴：拟同构局部化、roof屋顶、三角与映射锥、Ext^n=Hom_D(M,N[n])、Serre函子、t-结构与奇点范畴；DG范畴：Leibniz律、H^0同伦范畴、pretriangulated、dg商、Koszul对偶；Model Category：Quillen五公理、提升与替换、导出函子、Quillen等价）；前沿理论（稳定∞-范畴与 dg/A∞ 增强、张量三角几何与 Balmer 谱—素张量理想—支撑—层化—望远镜猜想、Approximable 可逼近三角范畴、Cluster Theory 丛范畴与 2-Calabi-Yau 突变、Operad 与 Koszul 对偶、高维 Auslander–Reiten 理论—d-丛倾斜子范畴—d-几乎分裂序列—n-abelian 范畴、τ-tilting 理论—τ-刚性—support τ-倾斜—两项 silting—g-向量扇）；研究热点（DG enhancement、Standard Derived Equivalence、Gentle Algebra、Preprojective Algebra、Gorenstein同调理论、Geometric model、Cluster tilting）。各猜想的详细陈述、研究进展与参考文献见对应独立条目。"
+description: "代数表示论与同调代数猜想中心：有限维数、Nakayama、Gorenstein 对称、Wakamatsu tilting、Cartan 行列式等核心猜想与重要猜想的陈述、研究进展与参考文献；含 2026 年 OpenAI 公开预印本对多个猜想的反例宣称（未经同行评议，标注为待核实）。"
+cover:
+  image: "/images/conjecture-relations.webp"
+searchText: "代数表示论与同调代数猜想总览。分区：核心猜想（有限维数猜想、Nakayama猜想、Gorenstein对称猜想、Wakamatsu tilting猜想、Cartan行列式猜想、Broué交换亏群猜想、Telescope猜想、Brauer-Thrall猜想）；重要猜想（Gorenstein投射猜想、无环猜想、Igusa-Smalø猜想、Extension猜想、Happel-Preiser-Ringel猜想、Gorenstein投射维数、分数Calabi-Yau、n-cluster tilting、gentle导出分类、GARC、silting公开问题、导出单性、张量三角几何、周期猜想、CM Type、Weakly-Gorenstein、no-loop）；基础理论（Auslander-Reiten理论：几乎分裂序列、AR平移τ=DTr、AR公式、AR箭图与mesh关系；Gabriel定理：Dynkin型与正根双射、BGP反射函子、Tits二次型、Kac定理与species；Tilting理论：倾斜模三条件、Brenner–Butler挠对、Happel导出等价、Rickard倾斜复形、APR倾斜模；导出范畴：拟同构局部化、roof屋顶、三角与映射锥、Ext^n=Hom_D(M,N[n])、Serre函子、t-结构与奇点范畴；DG范畴：Leibniz律、H^0同伦范畴、pretriangulated、dg商、Koszul对偶；Model Category：Quillen五公理、提升与替换、导出函子、Quillen等价）；前沿理论（稳定∞-范畴与 dg/A∞ 增强、张量三角几何与 Balmer 谱—素张量理想—支撑—层化—望远镜猜想、Approximable 可逼近三角范畴、Cluster Theory 丛范畴与 2-Calabi-Yau 突变、Operad 与 Koszul 对偶、高维 Auslander–Reiten 理论—d-丛倾斜子范畴—d-几乎分裂序列—n-abelian 范畴、τ-tilting 理论—τ-刚性—support τ-倾斜—两项 silting—g-向量扇）；研究热点（DG enhancement、Standard Derived Equivalence、Gentle Algebra、Preprojective Algebra、Gorenstein同调理论、Geometric model、Cluster tilting）。各猜想的详细陈述、研究进展与参考文献见对应独立条目。2026 年 OpenAI 公开预印本（719 篇）宣称给出反例从而推翻：小有限维数猜想、Auslander-Reiten 猜想、Gorenstein 投射猜想、Tachikawa 第二猜想、经典/广义/强 Nakayama 猜想、Auslander-Gorenstein 猜想、Wakamatsu tilting 猜想；Gorenstein 对称猜想、Cartan 行列式猜想、Broué 交换亏群猜想未被触及。上述宣称未经同行评议，本页标注为待核实进展。"
 ---
 
 <h1 class="sr-only">代数表示论同调代数</h1>
@@ -20,8 +22,6 @@ searchText: "代数表示论与同调代数猜想总览。分区：核心猜想�
 <div class="ar-conjectures-divider"></div>
 
 <section id="ar-section-conjectures" class="ar-section" role="tabpanel" aria-labelledby="tab-ar-section-conjectures">
-
-<p class="ar-image-wrap"><img src="/images/conjecture-relations.webp" width="1200" height="471" alt="猜想之间的关系图"></p>
 
 <div class="ai-tabs">
   <div class="ai-tab-btns" role="tablist">
@@ -131,7 +131,7 @@ searchText: "代数表示论与同调代数猜想总览。分区：核心猜想�
     <button type="button" class="ai-tab-btn tab-purple" role="tab" id="tab-ar-frontier-panel-tautilting" aria-controls="ar-frontier-panel-tautilting" aria-selected="false" tabindex="-1" onclick="switchArFrontier('tautilting', this)">$\tau$-tilting理论</button>
   </div>
 
-  {{< ar-panel "infinity" "" "ar-frontier-panel-" >}}
+  {{< ar-panel "infinity" "active" "ar-frontier-panel-" >}}
 
   {{< ar-panel "ttg" "" "ar-frontier-panel-" >}}
 

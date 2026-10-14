@@ -21,10 +21,10 @@ $$ 0\to A\to T_0\to T_1\to T_2\to\cdots ,\qquad T_i\in\operatorname{add}T , $$
 <ul class="ar-timeline">
   <li><span class="ar-year">1990</span>Wakamatsu 将 tilting 模推广为允许无限投射维数的广义 tilting 模（<i>J. Algebra</i> 134, 289–325），源于自内射代数稳定等价研究。</li>
   <li><span class="ar-year">2004</span>Huang 引入 $U$-支配维数，证明 Wakamatsu tilting 模 ${}_A U$ 与 $U_{\Gamma}$ 的 $U$-支配维数相等。</li>
-  <li><span class="ar-year">2007</span>Beligiannis–Reiten 系统提出并讨论 WTC，建立与 GNC、GSC 等猜想的联系。</li>
-  <li><span class="ar-year">2009</span>Zhu–Ding 在左 coherent 环上研究 FP-injective dimension，给出 WTC 的部分答案。</li>
   <li><span class="ar-year">2004</span>Mantese–Reiten 证明 WTC 对 Gorenstein Artin 代数成立。</li>
+  <li><span class="ar-year">2007</span>Beligiannis–Reiten 系统提出并讨论 WTC，建立与 GNC、GSC 等猜想的联系。</li>
   <li><span class="ar-year">2008</span>Wei 证明 $\operatorname{repdim}\le 3$ 的 Artin 代数及其 Auslander 生成元的自同态代数上 GNC、WTC、GSC 同时成立。</li>
+  <li><span class="ar-year">2009</span>Zhu–Ding 在左 coherent 环上研究 FP-injective dimension，给出 WTC 的部分答案。</li>
   <li><span class="ar-year">2023</span>Enomoto 对表示有限代数引入 projectively Wakamatsu tilting 模，证明四项等价。</li>
   <li><span class="ar-year">2024</span>Divaani-Aazar–Fallah–Tousi 证明 GARC 蕴含 WTC（<i>Arch. Math.</i> 125 (2025), 291–302），并利用 tensorly faithful 模证明 left Artinian local 环与有限群群环情形。</li>
 </ul>
@@ -37,6 +37,16 @@ $$ 0\to A\to T_0\to T_1\to T_2\to\cdots ,\qquad T_i\in\operatorname{add}T , $$
   <li>left Artinian local 环与有限群群环 $R[G]$（Divaani-Aazar–Fallah–Tousi 2024）；</li>
   <li>$\operatorname{repdim}\le 3$ 的 Artin 代数及其自同态代数（Wei 2008）。</li>
 </ul>
+
+<h3 class="ar-subhead">2026 年新动态（待核实）</h3>
+<p class="ar-mnote"><b>关于本节内容的可靠性说明。</b>以下条目来自 OpenAI 于 <b>2026 年 9 月 23 日</b>在 GitHub 公开的一批数学预印本（仓库 <code>openai/math</code>，当前 719 篇手稿 / 372 个结果族）。这批成果<b>由 OpenAI 内部模型生成，截至发稿未经同行评议</b>；发布后两天内该集合已撤回 3 篇、修订 14 篇，数学界对其发布方式与结论可靠性存在公开争议。<br>
+因此本面板<b>保留上文的猜想陈述与全部已确立结果不变</b>，仅将新宣称作为「待核实」信息单独登记：<b>在数学界完成独立验证之前，WTC 仍应视为开放问题。</b></p>
+<ul class="ar-timeline">
+  <li><span class="ar-year">2026</span>《A counterexample to Tachikawa's second conjecture》（OpenAI, 2026-09-23）的 <b>Corollary 1.2(3)</b> 宣称：存在有限维代数 $\Gamma_K$ 与一个<b>投射-内射</b>的 Wakamatsu tilting 模 $W$，它<b>不是</b> tilting 模——<b>若成立即否证 Wakamatsu tilting 猜想</b>。结论对 $k=\mathbb{F}_2(q,H_1,H_2)$ 的<b>任意域扩张</b> $K/k$ 成立。
+    <p><b>构造机制（值得记）</b>：取 $W$ 为各同构类的<b>不可分解投射-内射</b>左 $\Gamma_K$-模的一个代表之直和。这样的类只有有限多个，故 $W$ 有限、投射且内射，从而 $\operatorname{Ext}^i_{\Gamma_K}(W,W)=0\ (i>0)$；前述反例代数满足「极小内射分解每一项都投射」，故每个 $I^j\in\operatorname{add}W$，该分解构成 $\Gamma_K$ 的一个<b>无限</b> $\operatorname{add}W$-余分解；再用 $W$ 的内射性保证 $\operatorname{Hom}_{\Gamma_K}(-,W)$ 保持其正合。于是 $W$ 满足 Wakamatsu tilting 定义且投射维数为 $0$，却因为余分解不终止而非 tilting——<b>失败点精确地落在「无限余分解无法截断」这一步。</b></p></li>
+</ul>
+<p><strong>与既有结果的边界：</strong>上列「WTC 在以下代数类上成立」的诸条目<b>依然有效</b>（Gorenstein 代数、表示有限代数、左 Artin 局部环与有限群群环、$\operatorname{repdim}\le 3$ 的代数）——新宣称只说猜想<b>在一般情形</b>为假，并未在这些子类上反驳它们。反例中的 $W$ 是<b>投射-内射</b>的，而 Wakamatsu 倾斜模本就允许无限投射维数，故此处的失效模式是「余分解不终止」，而非自正交性或半对偶化性质出问题。</p>
+<p><strong>受影响的方法路线：</strong>上文「满足 FDC 的代数：第 $d$ 步截断」这条统一策略依赖于两侧 FDC 给出的统一上界 $\operatorname{findim}R=d<\infty$。若外界证实了同批次对 FDC 的否证宣称，则该策略<b>不再可能作为普遍 proof scheme</b>——但它在 FDC 确实成立的那些子类上（含 Mantese–Reiten 的 Gorenstein 情形）仍然完好。与之相对，「左 Artin 局部环与有限群群环」那条张量忠实性路线不依赖 FDC，不受影响。</p>
 
 <h3 class="ar-subhead">研究方法</h3>
 <p>Wakamatsu 倾斜模本质上是<b>半对偶化模</b>：$\operatorname{End}_R(T)\cong S$ 且 $T$ 自正交。所有已知证明共享同一策略——控制 <b>Ext 消没层次</b>或某个<b>维数不变量</b>，把「$\operatorname{pd}T<\infty$」这一信息向上传递为「$T$ 生成整个模范畴的有限余分解」。</p>
@@ -82,7 +92,7 @@ $$ 0\to A\to T_0\to T_1\to T_2\to\cdots ,\qquad T_i\in\operatorname{add}T , $$
   <ul class="ar-m-pts">
     <li>主定理：对所有结合环成立的 GARC 蕴含 WTC（完备同调归约）；</li>
     <li>Wei 证明 GARC 在「每个模都有最终闭投射分解」的代数上成立，此类涵盖表示有限、挠有限、根平方零代数——链式传递即得这些类上的 WTC；</li>
-    <li><b>注意局限</b>：GARC 有 Diveris 反例，此路径只在 GARC 成立的子类上有效（见面板参考文献 [9]）。</li>
+    <li><b>注意局限</b>：GARC 存在反例（Diveris；Schulz 的 QF 环周期模亦属此类），故此路径只在 GARC 成立的子类上有效（相关反例见面板参考文献 [9]）。</li>
   </ul>
 </div>
 
@@ -134,3 +144,7 @@ $$ 0\to A\to T_0\to T_1\to T_2\to\cdots ,\qquad T_i\in\operatorname{add}T , $$
 <p class="ar-ref"><span class="ar-ref-no">[8]</span> K. Divaani-Aazar, A. Mahin Fallah, M. Tousi, <i>On the Wakamatsu tilting conjecture</i>, Arch. Math. <b>125</b> (2025), 291–302（arXiv:2407.06353, 2024）。</p>
 <p class="ar-ref"><span class="ar-ref-no">[9]</span> R. Schulz, <i>Boundedness and periodicity of modules over QF rings</i>, J. Algebra <b>101</b> (1986), 450–469（GARC/ARC 反例）。</p>
 <p class="ar-ref"><span class="ar-ref-no">[10]</span> <i>Higher Morita–Tachikawa correspondence</i>, arXiv:2304.01370 (2023).</p>
+<p class="ar-ref"><span class="ar-ref-no">[11]</span> OpenAI, <i>A counterexample to Tachikawa's second conjecture</i>, preprint, 2026-09-23.（Corollary 1.2(3) 宣称否证 Wakamatsu tilting 猜想）<b>（未经同行评议，见「2026 年新动态」节说明）</b>
+  <br><code>https://github.com/openai/math/tree/main/preprints/A-counterexample-to-Tachikawas-second-conjecture-September-23-2026</code></p>
+<p class="ar-ref"><span class="ar-ref-no">[12]</span> OpenAI, <i>An algebra of infinite little finitistic dimension</i>, preprint, 2026-09-23.（同批次对 FDC 的否证宣称，影响上文「第 $d$ 步截断」路线的普适性）<b>（未经同行评议）</b>
+  <br><code>https://github.com/openai/math/tree/main/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026</code></p>

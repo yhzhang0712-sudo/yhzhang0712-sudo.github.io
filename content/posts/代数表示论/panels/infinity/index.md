@@ -5,7 +5,7 @@ date: 2026-09-29
 ---
 <div class="ar-toc-wrap">
 <nav class="ar-toc" aria-label="面板目录">
-  <button type="button" class="ar-toc-btn" onclick="toggleArToc(event)" aria-label="目录导航" title="目录导航">
+  <button type="button" class="ar-toc-btn" aria-expanded="false" onclick="toggleArToc(event)" aria-label="目录导航" title="目录导航">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
   </button>
   <div class="ar-toc-drop" role="menu">
@@ -134,12 +134,12 @@ $$\mathrm{Cat}_{\infty}^{\mathrm{st},\mathrm{pres}}\ \simeq\ \mathrm{Mod}_{\math
 <ul>
   <li><strong>Lunts–Orlov 定理</strong>（arXiv:0908.4187；J. Amer. Math. Soc. 2010）：对拟射影概形 $X$，$\mathbf{D}^{b}(\mathrm{coh}\,X)$ 的（dg）增强在同构意义下唯一。这是"几何范畴增强唯一"的第一批一般结果。</li>
   <li><strong>Canonaco–Neeman–Stellari</strong>（arXiv:2101.04404；Forum Math. Sigma 2022）：把唯一性推广到 Grothendieck Abel 范畴的 $\mathbf{D}(\mathscr{A})$、$\mathbf{D}_{\mathrm{qc}}(X)$、$\mathbf{D}^{\mathrm{perf}}(X)$、$\mathbf{D}^{b}_{\mathrm{coh}}(X)$ 等一整类导出与几何范畴。</li>
-  <li><strong>可逼近平台上的唯一性</strong>：弱可逼近三角范畴的内在子范畴（尤其 $\mathscr{T}^{b}_{c}$、$\mathscr{T}^{-}_{c}$）在温和假设下增强唯一，且三角等价可提升为增强等价——见本页"Approximable Triangulated category"面板定理 2.8–2.9。</li>
+  <li><strong>可逼近平台上的唯一性</strong>：弱可逼近三角范畴的内在子范畴（尤其 $\mathscr{T}^{b}_{c}$、$\mathscr{T}^{-}_{c}$）在温和假设下增强唯一，且三角等价可提升为增强等价——见本页"Approximable Triangulated category"面板定理 2.7–2.8。</li>
   <li><strong>反面</strong>：并非所有三角范畴都增强唯一；"三角等价可否提升为增强等价"是需要证明的命题而非默认事实——Dugger–Shipley 与 Schlichting 的例子（见 1.0）正是这一点的见证。</li>
 </ul>
 
 <h4 id="ar-inf-2-4">2.4　K 理论与非交换动机的泛性质</h4>
-<p><strong>定理 2.4（Blumberg–Gepner–Tabuada）</strong>：设 $\mathrm{Cat}_{\infty}^{\mathrm{perf}}$ 为小、稳定、幂等完备 $\infty$-范畴与正合函子构成的 $\infty$-范畴。则代数 $K$ 理论 $K:\mathrm{Cat}_{\infty}^{\mathrm{perf}}\to\mathrm{Sp}$ 被下列三条性质<em>泛</em>地刻画：对任意稳定可呈现 $\mathscr{A}$，前复合给出等价</p>
+<p><strong>定理 2.3（Blumberg–Gepner–Tabuada）</strong>：设 $\mathrm{Cat}_{\infty}^{\mathrm{perf}}$ 为小、稳定、幂等完备 $\infty$-范畴与正合函子构成的 $\infty$-范畴。则代数 $K$ 理论 $K:\mathrm{Cat}_{\infty}^{\mathrm{perf}}\to\mathrm{Sp}$ 被下列三条性质<em>泛</em>地刻画：对任意稳定可呈现 $\mathscr{A}$，前复合给出等价</p>
 $$\mathrm{Fun}^{L}(\mathcal{M}_{\mathrm{loc}},\mathscr{A})\ \simeq\ \big\{\,F:\mathrm{Cat}_{\infty}^{\mathrm{perf}}\to\mathscr{A}\ \big|\ F\ \text{满足 (K1)–(K3)}\,\big\},$$
 <p>其中：(K1) $F$ 保持滤过余极限；(K2) $F$ <strong>Waldhausen 加性</strong>——对正合序列 $\mathscr{A}_{0}\to\mathscr{A}_{1}\to\mathscr{A}_{2}$ 有 $F(\mathscr{A}_{1})\simeq F(\mathscr{A}_{0})\oplus F(\mathscr{A}_{2})$；(K3) $F$ 把紧谱范畴 $\mathrm{Sp}^{\omega}$ 送到球面谱 $\mathbb{S}$。泛对象 $\mathcal{M}_{\mathrm{loc}}$ 即<strong>非交换动机</strong> $\infty$-范畴。</p>
 <p><strong>为何必须在 $\infty$-范畴层面陈述</strong>：“保持滤过余极限”“泛对象”“加性分解”这三类陈述都需要 $\infty$-范畴语言，在三角范畴或普通范畴层面没有对应物。</p>
@@ -155,7 +155,7 @@ $$\mathrm{Fun}^{L}(\mathcal{M}_{\mathrm{loc}},\mathscr{A})\ \simeq\ \big\{\,F:\m
 
 <h4 id="ar-inf-2-6">2.6　t-结构、完备性与负 K 群障碍</h4>
 <p>t-结构可在稳定 $\infty$-范畴上直接定义（Lurie, HA 第 1 章），其心为 Abel 范畴；有界性与完备性条件控制 $\mathscr{C}$ 是否由其心与导出信息重建。</p>
-<p><strong>定理 2.6（Antieau–Gepner–Heller）</strong>：带<em>有界</em> t-结构的稳定 $\infty$-范畴（或 Waldhausen 范畴）负 $K$ 群消失，且其 $K$ 理论与心的 $K$ 理论同构。因此负 $K$ 群非零构成有界 t-结构存在的<em>障碍</em>——对奇异概形的 $\mathbf{D}^{\mathrm{perf}}(X)$ 正是如此。该障碍后被 Neeman 的定理（$\mathbf{D}^{\mathrm{perf}}_{Z}(X)$ 有界 t-结构 $\iff$ $Z$ 落入正则轨迹）严格超越。</p>
+<p><strong>定理 2.4（Antieau–Gepner–Heller）</strong>：带<em>有界</em> t-结构的稳定 $\infty$-范畴（或 Waldhausen 范畴）负 $K$ 群消失，且其 $K$ 理论与心的 $K$ 理论同构。因此负 $K$ 群非零构成有界 t-结构存在的<em>障碍</em>——对奇异概形的 $\mathbf{D}^{\mathrm{perf}}(X)$ 正是如此。该障碍后被 Neeman 的定理（$\mathbf{D}^{\mathrm{perf}}_{Z}(X)$ 有界 t-结构 $\iff$ $Z$ 落入正则轨迹）严格超越。</p>
 
 <h4 id="ar-inf-2-7">2.7　半正交分解与非交换代数几何</h4>
 <ul>

@@ -12,8 +12,8 @@ date: 2026-08-31
 
 <h3 class="ar-subhead">研究现状</h3>
 <ul class="ar-timeline">
+  <li><span class="ar-year">2010s</span>silting-discrete 代数（其 silting 复形仅有限多"互异"对象）分类研究活跃；连通性问题对若干类（如 tilted 代数、特殊双列代数）已证。</li>
   <li><span class="ar-year">2012</span>Aihara–Iyama 建立 silting mutation 框架（J. London Math. Soc. <b>85</b> (2012)）。</li>
-  <li><span class="ar-year">2010-</span>silting-discrete 代数（其 silting 复形仅有限多"互异"对象）分类研究活跃；连通性问题对若干类（如 tilted 代数、特殊双列代数）已证。</li>
   <li><span class="ar-year">现状</span>一般情形开放（🔴），具体分类部分 🟡。</li>
 </ul>
 

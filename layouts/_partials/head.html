@@ -1,6 +1,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{{- /* 禁用 JS 的兜底：分区/面板靠 hidden 属性与 .active 切换，无 JS 时 5/6 个分区完全不可见 */}}
+<noscript><style>.ar-section[hidden],.ai-tab-panel{display:block!important}</style></noscript>
 {{- if hugo.IsProduction | or (eq site.Params.env "production") | and (ne .Params.robotsNoIndex true) }}
 <meta name="robots" content="index, follow">
 {{- else }}
@@ -285,8 +287,21 @@ mark.search-hit{background:#fff2a8;color:inherit;border-radius:3px;padding:0 1px
       if (first) {
         var panel = first.closest('.ai-tab-panel');
         if (panel && !panel.classList.contains('active')) {
-          var pid = panel.id.replace(/^ar-(theory-)?panel-/, '');
-          var btn = document.querySelector('.ai-tab-btn[onclick*="' + pid + '"]');
+          /* 面板可能位于带 hidden 属性的一级 section 内（数学文化 6 个分区即此结构）。
+             此时只加 class 不会显示，必须先激活所属的 section tab。 */
+          var sec = panel.closest('.ar-section');
+          if (sec && sec.hidden) {
+            var sid = sec.id.replace(/^ar-section-/, '');
+            var secBtn = document.querySelector('.ar-sec-btn[onclick*="' + "'" + sid + "'" + '"]');
+            if (secBtn) secBtn.click();
+          }
+          /* 各分区的面板 id 前缀不一致（ar-panel- / ar-theory-panel- /
+             ar-frontier-panel- / ar-hot-panel- / ar-math<分区>-panel-），统一剥离出 key */
+          var pid = panel.id
+            .replace(/^ar-(theory|frontier|hot)-panel-/, '')
+            .replace(/^ar-math[a-z]+-panel-/, '')
+            .replace(/^ar-panel-/, '');
+          var btn = document.querySelector('.ai-tab-btn[onclick*="' + "'" + pid + "'" + '"]');
           if (btn) btn.click();
           else panel.classList.add('active');
         }

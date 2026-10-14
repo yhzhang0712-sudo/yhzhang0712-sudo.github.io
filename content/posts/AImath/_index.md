@@ -3,6 +3,8 @@ title: "AI 与数学"
 hideTitle: true
 math: true
 description: "AI 与数学专题：AI 发展史大事记、Agent 入门、AI 工具盘点，以及 AI 证明数学猜想的前沿进展。"
+cover:
+  image: "/images/agent-cycle.webp"
 lastmod: 2026-09-28
 ---
 

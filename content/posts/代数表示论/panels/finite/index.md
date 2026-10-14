@@ -39,6 +39,19 @@ $$ \operatorname{findim}\Lambda \;=\; \sup\{\,\operatorname{pd}_{\Lambda}M : M\i
   <li>两个单点正支配维数代数（Gélinas 2022）；</li>
   <li>表示有限代数上模的自同态代数（Wei 2008）。</li>
 </ul>
+
+<h3 class="ar-subhead">2026 年新动态（待核实）</h3>
+<p class="ar-mnote"><b>关于本节内容的可靠性说明。</b>以下条目来自 OpenAI 于 <b>2026 年 9 月 23 日</b>在 GitHub 公开的一批数学预印本（仓库 <code>openai/math</code>，当前 719 篇手稿 / 372 个结果族）。这批成果<b>由 OpenAI 内部模型生成，截至发稿未经同行评议</b>；发布后两天内该集合已撤回 3 篇、修订 14 篇，数学界对其发布方式与结论可靠性存在公开争议（多位菲尔兹奖得主及陶哲轩等提出批评）。<br>
+因此本面板<b>保留上文的猜想陈述与全部已确立结果不变</b>，仅将新宣称作为「待核实」信息单独登记：<b>在数学界完成独立验证之前，FDC 仍应视为开放问题。</b></p>
+<ul class="ar-timeline">
+  <li><span class="ar-year">2026</span>《An algebra of infinite little finitistic dimension》（OpenAI, 2026-09-23）主定理宣称：存在有限维<b>复</b>代数 $A$，使对每个整数 $m\ge 1$ 都存在有限维左 $A$-模 $N_m$ 满足
+  $$ 2m-2\;\le\;\operatorname{pd}_A N_m\;<\;\infty , $$
+  从而 $\operatorname{findim}A=\infty$——<b>若成立即否证小有限维数猜想</b>；同一论证也给出 $\operatorname{Findim}A=\infty$。该代数在 $m$ 变动前即已固定，故其有限生成模的极小投射分解长度无界。
+    <p>该手稿在仓库中配有 Lean 形式化条目，核心声明为 <code>OAI.LittleFinitistic.Main.exists_counterexample</code>（参见 <code>lean/formalization.yaml</code> 的 Comparator 挑战 <code>LittleFinitistic.json</code>；注意形式化覆盖的是<b>特定声明</b>，不等于整篇论证已被社区验证）。</p></li>
+  <li><span class="ar-year">2026</span><b>独立的第二个反例（特征 2）</b>：同批次另一篇《A counterexample to Tachikawa's second conjecture》的 Corollary 1.3 宣称，对 $k=\mathbb{F}_2(q,H_1,H_2)$ 的任意域扩张 $K/k$，其推论中的自同态代数 $\Gamma_K$ 满足：对每个 $n\ge 1$ 存在有限维左 $\Gamma_K$-模 $C_n$ 使 $\operatorname{pd}_{\Gamma_K}C_n=n$，故小、大左有限维数<b>同时为无穷</b>。该文明确标注此结论与前一篇的复代数例相互独立。</li>
+</ul>
+<p><strong>值得注意的逻辑交叉印证</strong>：本分区「Nakayama 猜想」面板记载蕴含链 $\operatorname{FDC}\Rightarrow\operatorname{SNC}\Rightarrow\operatorname{GNC}\Rightarrow\operatorname{NC}$（Chen–Hu–Qin–Wang 2020）。同一批预印本同时宣称否证 NC 与 SNC；若两者皆真，按<b>逆否命题</b>即应有 FDC 为假——这与本节第一条的独立复代数反例<b>在方向上相互印证</b>。但请注意：这种一致性<b>只说明两个宣称之间自洽，并不能作为任一宣称成立的证据</b>。</p>
+
 <h3 class="ar-subhead">研究方法</h3>
 <p>各已证代数类的证明，本质可归结为少数主线的反复运用——<strong>把投射维数的增长控制为某个可刻画量</strong>（合冲轨道、根层组合、子代数结构、Gorenstein 对称性或导出范畴的生成条件）。按策略可分为两翼：</p>
 <div class="ar-mmap">
@@ -145,3 +158,8 @@ $$ \operatorname{findim}\Lambda \;=\; \sup\{\,\operatorname{pd}_{\Lambda}M : M\i
 <p class="ar-ref"><span class="ar-ref-no">[13]</span> D. Cummings, <i>A note on the finitistic dimension conjecture</i>, Bull. London Math. Soc. <b>56</b> (2024), 624–633.</p>
 <p class="ar-ref"><span class="ar-ref-no">[14]</span> D. Kershaw, <i>Infinite delooping level examples</i>, 2024.</p>
 <p class="ar-ref"><span class="ar-ref-no">[15]</span> P. Giatagantzidis, <i>Reduction by arrow cancellations</i>, arXiv:2506.23747, arXiv:2507.12978 (2025).</p>
+<p class="ar-ref"><span class="ar-ref-no">[16]</span> OpenAI, <i>An algebra of infinite little finitistic dimension</i>, preprint, 2026-09-23. <b>（未经同行评议，见「2026 年新动态」节说明）</b>
+  <br><code>https://github.com/openai/math/tree/main/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026</code></p>
+<p class="ar-ref"><span class="ar-ref-no">[17]</span> OpenAI, <i>A counterexample to Tachikawa's second conjecture</i>, preprint, 2026-09-23.（Corollary 1.3 给出特征 2 的独立反例）<b>（未经同行评议）</b>
+  <br><code>https://github.com/openai/math/tree/main/preprints/A-counterexample-to-Tachikawas-second-conjecture-September-23-2026</code></p>
+<p class="ar-ref"><span class="ar-ref-no">[18]</span> OpenAI, <i>openai/math</i> 仓库 <code>README.md</code>、<code>history.md</code> 与 <code>lean/formalization.yaml</code>（含撤稿与修订记录、Lean 形式化清单）, 2026-10。</p>

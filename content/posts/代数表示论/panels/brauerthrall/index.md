@@ -17,10 +17,9 @@ $$ \textbf{BT II}:\quad A \text{ 表示无限（且 } k \text{ 无限）} \Longr
   <li><span class="ar-year">1968</span>Roiter 用 Gabriel–Roiter 度量证明 BT I（任意域上有限维代数，<i>Izv. Akad. Nauk SSSR</i> <b>32</b>, 1275–1282）；1970s Auslander 用几乎可裂序列给出 Artin 代数的证明。</li>
   <li><span class="ar-year">1973</span>Nazarova–Roiter 用<strong>矩阵方法</strong>证明 BT II 对<strong>完美域</strong>成立（<i>Categorical matrix problems and the Brauer–Thrall problem</i>）。</li>
   <li><span class="ar-year">1984–85</span>Bautista 用<strong>几何方法</strong>证明 BT II 对<strong>代数闭域</strong>成立（<i>Comment. Math. Helv.</i> <b>60</b>, 392–399）；同年 Bongartz 独立证明（<i>Indecomposables are standard</i>）。</li>
-  <li><span class="ar-year">1980s–</span>BT II 对<strong>一般域</strong>（非代数闭/非完美域）<strong>仍开放</strong>；Smalø 给出归纳步骤，把 BT II 归约为更弱的 BT II′（<i>Canad. J. Math.</i> <b>32</b>, 342–349）。</li>
-  <li><span class="ar-year">2020</span>Schroll–Treffinger 用 bricks 与 c-vectors 给出 BT I 的 <strong>$\tau$-tilting 新证明</strong>（arXiv:2004.14221）；n-Nakayama 代数方法亦给出 BT I 的改进证明。</li>
-  <li><span class="ar-year">2020s</span><strong>现代 $\tau$-tilting 版本</strong>：brick 版 BT II′ 由 Mousavand、Schroll–Treffinger–Valdivieso 提出；Pfeifer 2025 给出 stable BT II′ 与 $\tau$-reduced BT II′（Geiß–Leclerc–Schröer 的 $\tau$-reduced 分支），证明 stable ⟹ $\tau$-reduced，且对 Asai–Iyama 的 $E$-tame 代数类反向成立（<i>Bull. Lond. Math. Soc.</i> <b>57</b>, 1568–1583）。</li>
+  <li><span class="ar-year">1980s</span>BT II 对<strong>一般域</strong>（非代数闭/非完美域）<strong>仍开放</strong>；Smalø 给出归纳步骤，把 BT II 归约为更弱的 BT II′（<i>Canad. J. Math.</i> <b>32</b>, 342–349）。</li>
   <li><span class="ar-year">2013–16</span><strong>导出范畴版本</strong>：Han–Zhang 证明 derived bounded ⟺ derived finite（BT I 的导出类比），且代数要么 derived discrete 要么 strongly derived unbounded（BT II 的导出类比，<i>Algebr. Represent. Theory</i> <b>19</b>, 1139–1154），推广 Vossieck 的 derived discrete 代数分类。</li>
+  <li><span class="ar-year">2020</span>Schroll–Treffinger 用 bricks 与 c-vectors 给出 BT I 的 <strong>$\tau$-tilting 新证明</strong>（arXiv:2004.14221）；n-Nakayama 代数方法亦给出 BT I 的改进证明。</li>
 </ul>
 
 <p><strong>BT II 已成立的情形：</strong></p>

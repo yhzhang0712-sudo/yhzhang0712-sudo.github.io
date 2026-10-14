@@ -5,7 +5,7 @@ date: 2026-09-29
 ---
 <div class="ar-toc-wrap">
 <nav class="ar-toc" aria-label="面板目录">
-  <button type="button" class="ar-toc-btn" onclick="toggleArToc(event)" aria-label="目录导航" title="目录导航">
+  <button type="button" class="ar-toc-btn" aria-expanded="false" onclick="toggleArToc(event)" aria-label="目录导航" title="目录导航">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
   </button>
   <div class="ar-toc-drop" role="menu">
@@ -170,7 +170,7 @@ $$T=P_{1}\oplus\tau^{-1}S_{2}=P_{1}\oplus S_{1}.$$
 <p>其自同态代数正是把 $Q$ 在顶点 $2$ 处反射所得箭图的路代数——<strong>BGP 反射函子就是倾斜函子</strong>（Auslander–Platzeck–Reiten 倾斜模）。</p>
 </div>
 <ul class="agent-list">
-<li><span class="agent-name">Brauer 树代数</span>：对称表示有限代数的导出等价类由 Brauer 树编码，tilting 复形的突变对应 Kauer 移动（见本页「Standard Derived Equivalence」面板）。</li>
+<li><span class="agent-name">Brauer 树代数</span>：对称表示有限代数的导出等价类由 Brauer 树编码，tilting 复形的突变对应 Kauer 移动（块代数背景见本站「Broué 交换亏群猜想」面板）。</li>
 <li><span class="agent-name">Broué 交换亏群猜想</span>：猜测块代数与其 Brauer 对应块代数导出等价——这是 tilting 复形理论的主要动机之一（见本站「Broué 交换亏群猜想」面板）。</li>
 <li><span class="agent-name">计算工具</span>：tilting 复形的分类、导出 Picard 群、silting 突变图（Aihara–Iyama）。</li>
 </ul>

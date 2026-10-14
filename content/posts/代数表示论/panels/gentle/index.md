@@ -11,9 +11,9 @@ date: 2026-09-29
 <h3 class="ar-subhead">研究现状</h3>
 <ul class="ar-timeline">
   <li><span class="ar-year">2008</span>Avella-Alaminos–Geiss 引入组合不变量 $\varphi_{A}$（<i>Combinatorial derived invariants for gentle algebras</i>, J. Pure Appl. Algebra），并证明它是导出不变量。</li>
-  <li><span class="ar-year">2010-</span>大量工作检验 $\varphi_{A}$ 的区分能力；同时发现<em>反例</em>：存在 $\varphi_{A}=\varphi_{B}$ 但不导出等价的 gentle 代数，故 AAG 不变量<strong>不完备</strong>（🔴）。</li>
+  <li><span class="ar-year">2010s</span>大量工作检验 $\varphi_{A}$ 的区分能力；同时发现<em>反例</em>：存在 $\varphi_{A}=\varphi_{B}$ 但不导出等价的 gentle 代数，故 AAG 不变量<strong>不完备</strong>（🔴）。</li>
   <li><span class="ar-year">2019–2023</span>Amiot–Plamondon–Schroll 用<em>线场</em>的同伦类加细该不变量：导出等价类 $\iff$ 存在保向同胚使相应线场同伦；并用<strong>缠绕数</strong>与 $\mathbb{Z}_{2}$ 上二次型的 <strong>Arf 不变量</strong>把它翻译为数值完全不变量（Selecta Math. <b>29</b> (2023), Paper No. 30）。分级情形由 Opper、Lekili–Polishchuk 处理。</li>
-  <li><span class="ar-year">现状</span>gentle 代数的<strong>导出分类问题已解决</strong>（🟢，2023）：完全不变量存在且可算；未加细的 AAG 不变量<em>不</em>完备。详见「研究热点 / Gentle Algebra」面板 2.4–2.5。</li>
+  <li><span class="ar-year">现状</span>gentle 代数的<strong>导出分类问题已解决</strong>（🟢，2023）：完全不变量存在且可算；未加细的 AAG 不变量<em>不</em>完备。详见「研究热点 / Gentle Algebra」面板 Problem 1。</li>
 </ul>
 
 <h3 class="ar-subhead">参考文献</h3>

@@ -5,7 +5,7 @@ date: 2026-09-29
 ---
 <div class="ar-toc-wrap">
 <nav class="ar-toc" aria-label="面板目录">
-  <button type="button" class="ar-toc-btn" onclick="toggleArToc(event)" aria-label="目录导航" title="目录导航">
+  <button type="button" class="ar-toc-btn" aria-expanded="false" onclick="toggleArToc(event)" aria-label="目录导航" title="目录导航">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
   </button>
   <div class="ar-toc-drop" role="menu">
@@ -143,13 +143,13 @@ $$T_{0}\longrightarrow B\longrightarrow T_{0}^{*}\longrightarrow T_{0}[1],\qquad
 <p>无环情形之外最重要的一类 2-CY 范畴来自 <strong>预投射代数</strong>：设 $\Pi$ 为 Dynkin 型预投射代数（全局维数无穷），其模范畴的稳定范畴 $\underline{\mathrm{mod}}\,\Pi$ 为 2-CY 且带 2-cluster-tilting 对象。Geiss–Leclerc–Schröer 用它范畴化了复单连通半单 Lie 群极大幂单子群坐标环上的丛代数结构（借助 Lusztig 的半典范基），并推广到偏旗簇的多重齐次坐标环与 Kac–Moody 群的某些幂单胞腔。这构成丛理论在 <em>Lie 论</em>中的主战场。</p>
 
 <h4 id="ar-ct-2-6">2.6　丛倾斜代数的同调性质</h4>
-<p><strong>定理 2.6（Keller–Reiten）</strong>：丛倾斜代数是 <strong>Gorenstein</strong> 的（Gorenstein 维数 $\le 1$）且<em>稳定 Calabi–Yau</em>（其稳定范畴为 2-CY 或 3-CY，视约定）。这把丛倾斜代数纳入本页"Gorenstein 对称猜想 / Gorenstein 投射猜想"等条目所处的同调框架，也解释了为何丛倾斜代数成为检验 Gorenstein 型猜想的重要例子族。相关地，Koenig–Zhu 的一般定理给出：对三角范畴 $\mathscr{C}$ 与丛倾斜子范畴 $\mathscr{X}$，商 $\mathscr{C}/\mathscr{X}$ 为 Abel 范畴，且 Gorenstein 维数至多 1。</p>
+<p><strong>定理 2.5（Keller–Reiten）</strong>：丛倾斜代数是 <strong>Gorenstein</strong> 的（Gorenstein 维数 $\le 1$）且<em>稳定 Calabi–Yau</em>（其稳定范畴为 2-CY 或 3-CY，视约定）。这把丛倾斜代数纳入本页"Gorenstein 对称猜想 / Gorenstein 投射猜想"等条目所处的同调框架，也解释了为何丛倾斜代数成为检验 Gorenstein 型猜想的重要例子族。相关地，Koenig–Zhu 的一般定理给出：对三角范畴 $\mathscr{C}$ 与丛倾斜子范畴 $\mathscr{X}$，商 $\mathscr{C}/\mathscr{X}$ 为 Abel 范畴，且 Gorenstein 维数至多 1。</p>
 
 <h4 id="ar-ct-2-7">2.7　带势箭图与 QP 突变</h4>
 <p>Derksen–Weyman–Zelevinsky 建立带势箭图（quiver with potential, QP）及其表示的<em>约化</em>与<em>突变</em>理论，给出丛代数突变在 QP 层面的严格对应；Jacobian 代数 $\mathcal{P}(Q,W)$ 是丛倾斜代数的主要来源之一。与 Amiot 定理结合，形成"丛代数 $\leftrightarrow$ QP 突变 $\leftrightarrow$ 2-CY 范畴突变"的三角对应。</p>
 
 <h4 id="ar-ct-2-8">2.8　有限型与突变有限性</h4>
-<p><strong>定理 2.8</strong>：无环箭图 $Q$ 的丛代数$\mathscr{A}_{Q}$ 为<em>有限型</em>（丛变量有限）当且仅当 $Q$ 的底图为 Dynkin 图（Fomin–Zelevinsky 的有限型分类，与 Gabriel 定理形式一致）；在范畴侧，这等价于 $\mathscr{C}_{Q}$ 只有有限多个不可分解刚性对象，也等价于 $\mathscr{C}_{Q}$ 只有有限多个丛倾斜对象。</p>
+<p><strong>定理 2.6</strong>：无环箭图 $Q$ 的丛代数$\mathscr{A}_{Q}$ 为<em>有限型</em>（丛变量有限）当且仅当 $Q$ 的底图为 Dynkin 图（Fomin–Zelevinsky 的有限型分类，与 Gabriel 定理形式一致）；在范畴侧，这等价于 $\mathscr{C}_{Q}$ 只有有限多个不可分解刚性对象，也等价于 $\mathscr{C}_{Q}$ 只有有限多个丛倾斜对象。</p>
 <p><strong>高维有限型</strong>：$m$-丛范畴的"2-表示有限"与"表示-维数"型问题由 Iyama–Oppermann、Herschend–Iyama 等系统研究，是"高维 AR 理论"面板的直接素材。</p>
 
 <h3 class="ar-subhead" id="ar-ct-3">3　主要应用与实例</h3>

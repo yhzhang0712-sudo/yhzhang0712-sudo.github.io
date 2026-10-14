@@ -54,7 +54,7 @@
 {{- /* 解析“代数表示论”各猜想面板为独立搜索项，permalink 带 #ar-panel-xxx 锚点 */ -}}
 {{- $ar := site.GetPage "posts/代数表示论" -}}
 {{- if $ar -}}
-    {{- $panelKeys := slice "finite" "nakayama" "gorenstein" "wakamatsu" "cartan" "broue" "telescope" "brauerthrall" "gpc" "nlc" "igusasmalo" "extension" "hpr" "gpfdc" "fcy" "ncluster" "gentle" "garc" "silting" "derivedsimple" "ttgeom" "periodicity" -}}
+    {{- $panelKeys := slice "finite" "nakayama" "gorenstein" "wakamatsu" "cartan" "broue" "telescope" "brauerthrall" "gpc" "nlc" "igusasmalo" "extension" "hpr" "gpfdc" "fcy" "ncluster" "gentle" "garc" "silting" "derivedsimple" "ttgeom" "periodicity" "weaklygorenstein" "noloop" "cmtype" -}}
     {{- range $panelKeys -}}
         {{- $p := site.GetPage (printf "posts/代数表示论/panels/%s" .) -}}
         {{- if $p -}}
@@ -99,13 +99,34 @@
             {{- $.Scratch.Add "index" (dict "title" $p.Title "content" $p.Plain "permalink" $permalink "summary" $p.Summary) -}}
         {{- end -}}
     {{- end -}}
-    {{- /* 基础理论(theory)面板：锚点前缀为 #ar-theory-panel- */ -}}
-    {{- $theoryKeys := slice "artheory" "gabriel" "tilting" "excat" "dg" "model" -}}
-    {{- range $theoryKeys -}}
-        {{- $p := site.GetPage (printf "posts/代数表示论/panels/%s" .) -}}
-        {{- if $p -}}
-            {{- $permalink := print $ar.Permalink "#ar-theory-panel-" . -}}
-            {{- $.Scratch.Add "index" (dict "title" $p.Title "content" $p.Plain "permalink" $permalink "summary" $p.Summary) -}}
+{{- end -}}
+
+{{- /* 解析“数学文化”各分区面板为独立搜索项，permalink 带锚点。
+       2026-10-14：该分区已从单个 1.1MB _index.md 拆为 panels/<分区>/<key>/index.md，
+       此前整页只有一个无锚点条目、任何关键词都返回同一 URL，无法定位小节。
+       人物面板正文较长，content 截断到 300 字以控制索引体积。 */ -}}
+{{- $mc := site.GetPage "posts/数学文化" -}}
+{{- if $mc -}}
+    {{- $mcMap := dict
+        "figures"   "ar-mathfigures-panel-"
+        "problems"  "ar-mathproblems-panel-"
+        "popular"   "ar-mathpopular-panel-"
+        "awards"    "ar-mathawards-panel-"
+        "anecdotes" "ar-mathanecdotes-panel-" -}}
+    {{- /* headless 页面不进 .Pages / AllPages，用 os.ReadDir 列目录 + GetPage 逐个取 */ -}}
+    {{- range $sec, $prefix := $mcMap -}}
+        {{- $entries := os.ReadDir (printf "content/posts/数学文化/panels/%s" $sec) -}}
+        {{- range $entries -}}
+            {{- if .IsDir -}}
+                {{- $p := site.GetPage (printf "posts/数学文化/panels/%s/%s" $sec .Name) -}}
+                {{- if $p -}}
+                    {{- $.Scratch.Add "index" (dict
+                        "title" $p.Title
+                        "content" (truncate 150 $p.Plain)
+                        "permalink" (printf "%s#%s%s" $mc.Permalink $prefix .Name)
+                        "summary" (truncate 60 $p.Summary)) -}}
+                {{- end -}}
+            {{- end -}}
         {{- end -}}
     {{- end -}}
 {{- end -}}

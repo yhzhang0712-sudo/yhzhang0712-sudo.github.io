@@ -5,7 +5,7 @@ date: 2026-09-03
 ---
 <div class="ar-toc-wrap">
 <nav class="ar-toc" aria-label="面板目录">
-  <button type="button" class="ar-toc-btn" onclick="toggleArToc(event)" aria-label="目录导航" title="目录导航">
+  <button type="button" class="ar-toc-btn" aria-expanded="false" onclick="toggleArToc(event)" aria-label="目录导航" title="目录导航">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
   </button>
   <div class="ar-toc-drop" role="menu">
@@ -94,7 +94,7 @@ $$\mathscr{T}^{-}_{c}:=\bigcap_{m=1}^{\infty}\big(\mathscr{T}^{c}*\mathscr{T}^{\
 </ul>
 <p><strong>内在性</strong>：由于 preferred equivalence class 为 $\mathscr{T}$ 的内在不变量、等价 t-结构诱导相同度量闭包，上述子范畴都是三角范畴 $\mathscr{T}$ 的<strong>内在不变量</strong>，不依赖 preferred class 代表元与生成元（Neeman v1 Facts 1.5 (iii)–(iv)；survey Remark 3.6）。特别地，两个（弱）可逼近范畴间的三角等价 $\mathsf{F}:\mathscr{T}_1\to\mathscr{T}_2$ 限制为这些子范畴间的等价——这是“子范畴间传递”与 Morita 型定理（第 2 节）的动力来源。</p>
 <p><strong>厚性</strong>：$\mathscr{T}^{-},\mathscr{T}^{+},\mathscr{T}^{b}$ 对任何带紧生成元的 $\mathscr{T}$ 都厚；若 $\mathscr{T}$ 预可逼近（$\mathrm{Hom}(G,G[n])=0,\ n\gg0$），则 $\mathscr{T}^{-}_{c}$、$\mathscr{T}^{b}_{c}$ 亦厚（Neeman v1, Proposition 8.8）。</p>
-<p><strong>诺特可逼近范畴</strong>：若存在 $N>0$ 使每个 $F\in\mathscr{T}^{-}_{c}$ 落在三角 $F'\to F\to F''\to$（$F'\in\mathscr{T}^{b}_{c}$，$F''\in\mathscr{T}^{\le -N}$）中，则称 $\mathscr{T}$ 为 <strong>诺特</strong>。该条件保证 $\mathscr{T}^{b}_{c}$ 中有丰富的对象（否则“$\mathscr{T}^{b}_{c}$ 中唯一显然的对象是零”），也是 $\mathscr{T}^{c}$ 与 $\mathscr{T}^{b}_{c}$ 互相决定（定理 2.6）的前提。</p>
+<p><strong>诺特可逼近范畴</strong>：若存在 $N>0$ 使每个 $F\in\mathscr{T}^{-}_{c}$ 落在三角 $F'\to F\to F''\to$（$F'\in\mathscr{T}^{b}_{c}$，$F''\in\mathscr{T}^{\le -N}$）中，则称 $\mathscr{T}$ 为 <strong>诺特</strong>。该条件保证 $\mathscr{T}^{b}_{c}$ 中有丰富的对象（否则“$\mathscr{T}^{b}_{c}$ 中唯一显然的对象是零”），也是 $\mathscr{T}^{c}$ 与 $\mathscr{T}^{b}_{c}$ 互相决定（定理 2.5）的前提。</p>
 
 <h4 id="ar-app-1-4">1.4　变体与相邻术语</h4>
 <ul>
@@ -132,7 +132,7 @@ $$\mathscr{Y}:\mathscr{T}^{-}_{c}\longrightarrow\mathrm{Hom}_{R}\big([\mathscr{T
 
 <h4 id="ar-app-2-3">2.3　度量机制：$\mathfrak{S}$ 与完备化</h4>
 <p><strong>度量</strong>（Neeman v1 §9）：三角范畴上的<i>度量</i>是加性子范畴的递减列 $\{\mathscr{M}_i\}_{i\in\mathbb{N}}$（$\mathscr{M}_i*\mathscr{M}_i=\mathscr{M}_i$）。对象 $X\in\mathscr{T}$ 是 $\mathscr{S}$ 中 Cauchy 列的<i>完备化</i>，若 $X=\underset{n\to\infty}{\mathrm{hocolim}}\,X_n$ 且 $X_n\in\mathscr{M}_{i_n}$、$i_n\to\infty$。构造 $\mathfrak{S}(\mathscr{S})$（Neeman arXiv:1806.06471, Definitions 2.14, 3.23）把这一概念内化：<i>good extension</i> $\mathscr{S}\to\mathscr{T}$ 指 $\mathscr{T}$ 中每个对象都是 $\mathscr{S}$ 中 Cauchy 列的完备化。</p>
-<p><strong>定理 2.6（$\mathscr{T}^{c}$ 与 $\mathscr{T}^{b}_{c}$ 互相决定；arXiv:1806.06471, Theorems 0.13, 0.15）</strong>：设 $\mathscr{T}$ 可逼近（第二条陈述还需诺特性）。则</p>
+<p><strong>定理 2.5（$\mathscr{T}^{c}$ 与 $\mathscr{T}^{b}_{c}$ 互相决定；arXiv:1806.06471, Theorems 0.13, 0.15）</strong>：设 $\mathscr{T}$ 可逼近（第二条陈述还需诺特性）。则</p>
 <ol>
   <li>$\mathfrak{S}(\mathscr{T}^{c})=\mathscr{T}^{b}_{c}$——$\mathscr{T}^{c}$ 的 bounded closure 可由 $\mathscr{T}^{c}$ 经度量完备化 $\mathfrak{S}$ 函子性地重构（诺特时另有 $\mathfrak{S}([\mathscr{T}^{b}_{c}]^{\mathrm{op}})=[\mathscr{T}^{c}]^{\mathrm{op}}$）；</li>
   <li>反之存在从 $\mathscr{T}^{b}_{c}$ 重构 $\mathscr{T}^{c}$ 的内在配方（在论文引言所述技术条件下）。</li>
@@ -141,22 +141,22 @@ $$\mathscr{Y}:\mathscr{T}^{-}_{c}\longrightarrow\mathrm{Hom}_{R}\big([\mathscr{T
 <p><strong>优良度量（2025–2026）</strong>：Neeman, arXiv:2505.09120（$\mathscr{S}\mapsto\mathfrak{S}(\mathscr{S})^{\mathrm{op}}$ 的对合性）；Canonaco–Neeman–Stellari, arXiv:2607.12865（2026）在 $\infty$-范畴层面提升优良度量理论、大幅推广增强唯一性结果并肯定回答若干公开问题；相关基础：Neeman, arXiv:1901.01453（2019）。</p>
 
 <h4 id="ar-app-2-4">2.4　子范畴的内在性与相互传递</h4>
-<p><strong>定理 2.7（包含关系的内在性；Canonaco–Haesemeyer–Neeman–Stellari, arXiv:2402.04605, Theorems A, B；survey Theorem 3.8）</strong>：设 $\mathscr{T}$ 弱可逼近。七个内在子范畴 $\mathscr{T}^{-},\mathscr{T}^{b},\mathscr{T}^{+},\mathscr{T}^{-}_{c},\mathscr{T}^{b}_{c},\mathscr{T}^{c},\mathscr{T}^{c,b}$ 构成可换图表（survey diagram (3.2)），实线箭头为包含</p>
+<p><strong>定理 2.6（包含关系的内在性；Canonaco–Haesemeyer–Neeman–Stellari, arXiv:2402.04605, Theorems A, B；survey Theorem 3.8）</strong>：设 $\mathscr{T}$ 弱可逼近。七个内在子范畴 $\mathscr{T}^{-},\mathscr{T}^{b},\mathscr{T}^{+},\mathscr{T}^{-}_{c},\mathscr{T}^{b}_{c},\mathscr{T}^{c},\mathscr{T}^{c,b}$ 构成可换图表（survey diagram (3.2)），实线箭头为包含</p>
 $$\mathscr{T}^{b}\subset\mathscr{T}^{-}\subset\mathscr{T},\quad \mathscr{T}^{b}\subset\mathscr{T}^{+}\subset\mathscr{T},\quad \mathscr{T}^{b}_{c}\subset\mathscr{T}^{-}_{c}\subset\mathscr{T},\quad \mathscr{T}^{c,b}\subset\mathscr{T}^{c}\subset\mathscr{T},\quad \mathscr{T}^{c,b}\subset\mathscr{T}^{b}_{c},$$
 <p>另有一条虚线箭头 $\mathscr{T}^{c}\hookrightarrow\mathscr{T}^{b}_{c}$。<strong>定理 B</strong>：所有实线包含在三角等价下不变——给定弱可逼近 $\mathscr{T},\mathscr{T}'$ 及图表中任意两个匹配子范畴间的三角等价，该等价限制为对应较小子范畴的等价。虚线包含在下列任一额外假设下内在：(i) $\mathscr{T},\mathscr{T}'$ coherent（文中引入的技术条件，§10.1）；或 (ii) $\mathscr{T}^{c}\subseteq\mathscr{T}^{b}_{c}$ 且 $^{\perp}(\mathscr{T}^{b}_{c})\cap\mathscr{T}^{-}_{c}=\{0\}$。<strong>定理 A</strong> 处理“第一传递”：任何等价 $\mathscr{T}\to\mathscr{T}'$ 限制为 $\mathscr{T}^{\,?}\simeq{\mathscr{T}'}^{\,?}$（$?=-,+,b,c,-_{c},b_{c},c,b$）。推论：环的 Rickard 定理中 $\mathbf{D}(R\text{-Mod})\cong\mathbf{D}(S\text{-Mod})$ 蕴含其余一切等价。Haesemeyer 附录提供 coherent 情形所需的同调输入。</p>
 <p><strong>内在子范畴的局部化列（Sun–Zhang, arXiv:2402.04954）</strong>：对可逼近范畴的 recollement（温和条件下），得到三角子范畴与 Verdier 商的短正合列；局部 Hom-有限诺特可逼近情形下 recollement 诱导 bounded closure $\mathscr{T}^{b}_{c}$ 的短正合列；若 recollement “向下延伸一步”则得到奇点范畴的短正合列——推广环与概形奇点范畴的经典局部化列。</p>
 
 <h4 id="ar-app-2-5">2.5　增强唯一性与概形 Morita 理论</h4>
 <p><strong>背景</strong>（survey §4.1–4.2）：$\mathscr{T}$ 的<i>增强</i>是满足 $H^{0}(\mathbf{T})\simeq\mathscr{T}$ 的 dg（或稳定 $\infty$、模型范畴）范畴 $\mathbf{T}$；唯一性指任意两个在 $\mathrm{Ho}(\mathbf{dgCat})$ 中同构。CNS 先前已证（arXiv:2101.04404, Forum Math. Sigma 2022）导出与几何范畴（Grothendieck Abel 范畴的 $\mathbf{D}(\mathscr{A})$、$\mathbf{D}_{\mathrm{qc}}(X)$、$\mathbf{D}^{\mathrm{perf}}(X)$、$\mathbf{D}^{b}_{\mathrm{coh}}(X)$ 等）增强唯一。</p>
-<p><strong>定理 2.8（可逼近型范畴的增强唯一性；arXiv:2402.04605, Theorem A 部分 = survey Theorem 4.9）</strong>：设 $\mathscr{T},\mathscr{T}'$ 弱可逼近。在温和假设（代数性；$\mathscr{T}^{c}$ 或 ${\mathscr{T}'}^{c}$ 增强唯一）下，若干内在子范畴——尤其所论情形中的 $\mathscr{T}^{b}_{c}$ 与 $\mathscr{T}^{-}_{c}$——增强唯一，且这类子范畴间的三角等价可提升为增强间的等价。</p>
-<p><strong>定理 2.9（Rickard 定理的巨大概括——“概形 Morita 理论”；survey Theorem 5.3）</strong>：设 $\mathscr{T},\mathscr{T}'$ 为代数弱可逼近三角范畴，且 $\mathscr{T}^{c}$ 或 ${\mathscr{T}'}^{c}$ 增强唯一。则下列等价互相蕴含（列表涵盖全部内在子范畴）：</p>
+<p><strong>定理 2.7（可逼近型范畴的增强唯一性；arXiv:2402.04605, Theorem A 部分 = survey Theorem 4.9）</strong>：设 $\mathscr{T},\mathscr{T}'$ 弱可逼近。在温和假设（代数性；$\mathscr{T}^{c}$ 或 ${\mathscr{T}'}^{c}$ 增强唯一）下，若干内在子范畴——尤其所论情形中的 $\mathscr{T}^{b}_{c}$ 与 $\mathscr{T}^{-}_{c}$——增强唯一，且这类子范畴间的三角等价可提升为增强间的等价。</p>
+<p><strong>定理 2.8（Rickard 定理的巨大概括——“概形 Morita 理论”；survey Theorem 5.3）</strong>：设 $\mathscr{T},\mathscr{T}'$ 为代数弱可逼近三角范畴，且 $\mathscr{T}^{c}$ 或 ${\mathscr{T}'}^{c}$ 增强唯一。则下列等价互相蕴含（列表涵盖全部内在子范畴）：</p>
 $$\mathscr{T}\cong\mathscr{T}'\ \Longleftrightarrow\ \mathscr{T}^{+}\cong{\mathscr{T}'}^{+}\ \Longleftrightarrow\ \mathscr{T}^{-}\cong{\mathscr{T}'}^{-}\ \Longleftrightarrow\ \mathscr{T}^{b}\cong{\mathscr{T}'}^{b}\ \Longleftrightarrow\ \mathscr{T}^{b}_{c}\cong{\mathscr{T}'}^{b}_{c}\ \Longleftrightarrow\ \mathscr{T}^{c}\cong{\mathscr{T}'}^{c}\ (\text{等等})$$
 <p>对拟紧分离概形 $X,Y$，这确定了“哪些导出范畴一致蕴含其余一致”—— Rickard 定理是特例（$\mathscr{T}=\mathbf{D}(R)$，$\mathscr{T}'=\mathbf{D}(S)$）。相对（带支撑）版本能否推广仍是公开问题（survey, Problem 4.11）。</p>
-<p><strong>定理 2.10（奇点范畴是导出不变量；survey Theorem 5.3 的推论）</strong>：对诺特 $X$，定义 $\mathbf{D}_{\mathbf{sing}}(X):=\mathbf{D}^{p,b}(X)/\mathbf{D}^{\mathrm{perf}}(X)$（$\mathbf{D}^{p,b}(X)=\mathbf{D}^{b}(\mathbf{Coh}(X))$；稳定导出范畴 $\mathbf{S}(\mathbf{Qcoh}(X))=\mathbf{K}_{\mathrm{acy}}(\mathrm{Inj}(\mathbf{Qcoh}(X)))$ 满足 $\mathbf{S}(\mathbf{Qcoh}(X))^{c}=\mathbf{D}_{\mathbf{sing}}(X)$）。survey 推出：奇点范畴是诺特概形的导出不变量，正则性（有限维诺特概形）亦然——推广 Orlov 等的经典结果。survey 还指出：诺特性是否为 qcqs 概形的导出不变量仍未知；Rickard 有一个未发表例子表明非交换环的左诺特性/左 coherent 性<strong>不是</strong>导出不变量。</p>
+<p><strong>定理 2.9（奇点范畴是导出不变量；survey Theorem 5.3 的推论）</strong>：对诺特 $X$，定义 $\mathbf{D}_{\mathbf{sing}}(X):=\mathbf{D}^{p,b}(X)/\mathbf{D}^{\mathrm{perf}}(X)$（$\mathbf{D}^{p,b}(X)=\mathbf{D}^{b}(\mathbf{Coh}(X))$；稳定导出范畴 $\mathbf{S}(\mathbf{Qcoh}(X))=\mathbf{K}_{\mathrm{acy}}(\mathrm{Inj}(\mathbf{Qcoh}(X)))$ 满足 $\mathbf{S}(\mathbf{Qcoh}(X))^{c}=\mathbf{D}_{\mathbf{sing}}(X)$）。survey 推出：奇点范畴是诺特概形的导出不变量，正则性（有限维诺特概形）亦然——推广 Orlov 等的经典结果。survey 还指出：诺特性是否为 qcqs 概形的导出不变量仍未知；Rickard 有一个未发表例子表明非交换环的左诺特性/左 coherent 性<strong>不是</strong>导出不变量。</p>
 
 <h4 id="ar-app-2-6">2.6　有界 t-结构与 K-理论障碍</h4>
-<p><strong>定理 2.11（Antieau–Gepner–Heller 障碍；arXiv:1610.07207, 2019 发表——经 Neeman arXiv:2208.06863, Theorems 1.1, 1.2 转引）</strong>：对带界 t-结构的稳定 $\infty$-范畴（或 Waldhausen 范畴），负 K-群消失，且其 K-理论与心（heart）的 K-理论同构。故若 $\mathbf{D}^{\mathrm{perf}}(X)$ 有非零负 K-理论，则它没有有界 t-结构——对概形而言，恰在带负 K-理论的奇异概形处构成障碍。<i>（二手转引；AGH 原文未全文取回：</i>[second-hand]<i>。）</i></p>
-<p><strong>定理 2.12（Neeman, arXiv:2202.08861, Theorem 0.1）</strong>：设 $X$ 诺特有限维，$Z\subset X$ 闭，$\mathbf{D}^{\mathrm{perf}}_{Z}(X)$ 为支撑在 $Z$ 上的完美复形范畴。则 $\mathbf{D}^{\mathrm{perf}}_{Z}(X)$ 有界 t-结构 $\iff$ $Z$ 包含于 $X$ 的正则轨迹中。这推广 AGH 猜想（$Z=X$ 情形），并严格超越 K-理论障碍：存在负 K-理论消失的奇异概形（如奇异零维概形），AGH 定理不施加任何限制，但本定理表明有界 t-结构仍不存在。证明途经 $\mathbf{D}_{\mathrm{qc},Z}(X)$ 的弱可逼近性与 $\mathscr{T}^{c}$ 在 $\mathscr{T}^{b}_{c}$ 中的结构（证明梗概见伴生综述 arXiv:2208.06863 §3）。</p>
+<p><strong>定理 2.10（Antieau–Gepner–Heller 障碍；arXiv:1610.07207, 2019 发表——经 Neeman arXiv:2208.06863, Theorems 1.1, 1.2 转引）</strong>：对带界 t-结构的稳定 $\infty$-范畴（或 Waldhausen 范畴），负 K-群消失，且其 K-理论与心（heart）的 K-理论同构。故若 $\mathbf{D}^{\mathrm{perf}}(X)$ 有非零负 K-理论，则它没有有界 t-结构——对概形而言，恰在带负 K-理论的奇异概形处构成障碍。<i>（二手转引；AGH 原文未全文取回：</i>[second-hand]<i>。）</i></p>
+<p><strong>定理 2.11（Neeman, arXiv:2202.08861, Theorem 0.1）</strong>：设 $X$ 诺特有限维，$Z\subset X$ 闭，$\mathbf{D}^{\mathrm{perf}}_{Z}(X)$ 为支撑在 $Z$ 上的完美复形范畴。则 $\mathbf{D}^{\mathrm{perf}}_{Z}(X)$ 有界 t-结构 $\iff$ $Z$ 包含于 $X$ 的正则轨迹中。这推广 AGH 猜想（$Z=X$ 情形），并严格超越 K-理论障碍：存在负 K-理论消失的奇异概形（如奇异零维概形），AGH 定理不施加任何限制，但本定理表明有界 t-结构仍不存在。证明途经 $\mathbf{D}_{\mathrm{qc},Z}(X)$ 的弱可逼近性与 $\mathscr{T}^{c}$ 在 $\mathscr{T}^{b}_{c}$ 中的结构（证明梗概见伴生综述 arXiv:2208.06863 §3）。</p>
 
 <h4 id="ar-app-2-7">2.7　权重结构与 weakly negative（Bondarko–Vostokov）</h4>
 <p><strong>定理/定义 2.13（arXiv:1907.09412; Lobachevskii J. Math. 41 (2020), 151–159）</strong>：设 $\underline{C}$ 为带余积、由单一对象 $G$ 紧生成的三角范畴。</p>
@@ -196,7 +196,7 @@ $$\mathscr{T}\cong\mathscr{T}'\ \Longleftrightarrow\ \mathscr{T}^{+}\cong{\maths
 
 <h4 id="ar-app-3-3">3.3　奇点范畴</h4>
 <ol>
-  <li><strong>导出不变性</strong>（定理 2.10）：$\mathbf{D}_{\mathbf{sing}}(X)$ 是诺特概形的导出不变量，正则性亦然——协调并推广 Orlov 的经典结果。</li>
+  <li><strong>导出不变性</strong>（定理 2.9）：$\mathbf{D}_{\mathbf{sing}}(X)$ 是诺特概形的导出不变量，正则性亦然——协调并推广 Orlov 的经典结果。</li>
   <li><strong>局部化列（Sun–Zhang, arXiv:2402.04954）</strong>：对局部 Hom-有限诺特可逼近范畴的 recollement（如概形及其闭子概形所给出的），得到奇点范畴的短正合列，推广环/概形 $\mathbf{D}_{\mathbf{sing}}$ 的经典局部化列。</li>
   <li><strong>积分变换（Dutta–Lank–Rahul, arXiv:2501.13834）</strong>：利用“$\mathbf{D}^{b}_{\mathrm{coh}}(X)$ = $\mathbf{D}^{\mathrm{perf}}(X)$ 上有限上同调函子”（定理 2.4）刻画积分变换何时在诺特基上真概形的奇点范畴之间诱导正合函子——推广 Ballard–Rizzardo，并给出导出表示性的障碍。</li>
   <li><strong>有限维数作为剩余障碍</strong>：Neeman 解决 AGH 猜想后，Krause（arXiv:2307.12671）引入三角范畴的有限维数并证明环上 $\operatorname{findim}(\mathbf{D}^{\mathrm{perf}}(R))$ 有限当且仅当经典小有限维数有限；Biswas–Chen–Rahul–Parker–Zheng（arXiv:2401.00130）、H. Chen–X. Chen–Zhang（arXiv:2604.10478）、Yang（arXiv:2608.26541）在（弱）可逼近平台上建立 recollement 不等式并把有限性与经奇点范畴的有界 t-结构存在性相联系。<i>（调查者注：这是当前最活跃的分支——可逼近性提供环境语言，问题本身是经典同调代数问题。）</i></li>
@@ -227,19 +227,19 @@ $$\mathscr{T}\cong\mathscr{T}'\ \Longleftrightarrow\ \mathscr{T}^{+}\cong{\maths
 <h3 class="ar-subhead" id="ar-app-4">4　与邻近概念的关系</h3>
 
 <h4 id="ar-app-4-1">4.1　紧生成与良生成</h4>
-<p>可逼近性预设由<strong>单一对象</strong>紧生成。与经典层级（Neeman 2001 专著；Krause 的 $\aleph_{n}$-良生成范畴）的关系：单对象紧生成 ⟹ 可逼近是<strong>额外结构</strong>——并非每个单对象紧生成范畴都（弱）可逼近（Sun–Zhang 例子 $\langle\mathbb{Z}/p\mathbb{Z}\rangle\subset\mathbf{D}(\mathbb{Z})$ 弱可逼近但不可逼近；$\mathrm{Hom}(G,G[n])\ne0$ 对无穷多个 $n>0$ 时可失败）。preferred equivalence class 与 generator t-structure 技术（arXiv:1808.05267；survey §1.2）建立在<strong>紧生成 t-结构</strong>理论（Hrbek–Šťovíček 型）之上。增强侧只经唯一性结果与良生成相连：定理 2.9 不涉及良生成假设。</p>
+<p>可逼近性预设由<strong>单一对象</strong>紧生成。与经典层级（Neeman 2001 专著；Krause 的 $\aleph_{n}$-良生成范畴）的关系：单对象紧生成 ⟹ 可逼近是<strong>额外结构</strong>——并非每个单对象紧生成范畴都（弱）可逼近（Sun–Zhang 例子 $\langle\mathbb{Z}/p\mathbb{Z}\rangle\subset\mathbf{D}(\mathbb{Z})$ 弱可逼近但不可逼近；$\mathrm{Hom}(G,G[n])\ne0$ 对无穷多个 $n>0$ 时可失败）。preferred equivalence class 与 generator t-structure 技术（arXiv:1808.05267；survey §1.2）建立在<strong>紧生成 t-结构</strong>理论（Hrbek–Šťovíček 型）之上。增强侧只经唯一性结果与良生成相连：定理 2.8 不涉及良生成假设。</p>
 
 <h4 id="ar-app-4-2">4.2　t-结构与权重结构</h4>
-<p>t-结构的正式孪生是权重结构（Bondarko；Pauwels）。接触点：(1) Bondarko–Vostokov 从权重结构型条件（weakly negative，定理 2.13）证可逼近性；(2) 可逼近性是<strong>单侧</strong>的——只逼近 $\mathscr{T}^{\le 0}$ 对象；对偶子范畴 $\mathscr{T}^{+}_{c}$（“coapproximating systems”）是新兴补充概念，目前仅见于紧 silting 假设下（Rahul arXiv:2504.11768；Chen–Sun–Zhang arXiv:2602.14383）；(3) Neeman 定理 2.12（$Z$ 非正则则无界 t-结构）与 Bondarko “$\mathbf{D}^{\mathrm{perf}}(X)$ 总带（有界）标准权重结构”在精神上对偶——两种结构划定 $\mathscr{T}^{c}$ 上可能存在什么。</p>
+<p>t-结构的正式孪生是权重结构（Bondarko；Pauwels）。接触点：(1) Bondarko–Vostokov 从权重结构型条件（weakly negative 条件）证可逼近性；(2) 可逼近性是<strong>单侧</strong>的——只逼近 $\mathscr{T}^{\le 0}$ 对象；对偶子范畴 $\mathscr{T}^{+}_{c}$（“coapproximating systems”）是新兴补充概念，目前仅见于紧 silting 假设下（Rahul arXiv:2504.11768；Chen–Sun–Zhang arXiv:2602.14383）；(3) Neeman 定理 2.11（$Z$ 非正则则无界 t-结构）与 Bondarko “$\mathbf{D}^{\mathrm{perf}}(X)$ 总带（有界）标准权重结构”在精神上对偶——两种结构划定 $\mathscr{T}^{c}$ 上可能存在什么。</p>
 
 <h4 id="ar-app-4-3">4.3　silting 与 tilting</h4>
-<p>紧 silting 对象 $S$（$\mathrm{Hom}(S,S[n])=0,\ n>0$，加生成）恰给出“预可逼近”消失；tilting 对象另满足 $\mathrm{Hom}(S,S[n])=0,\ n\ne0$。于是：$\mathrm{Hom}(G,G[\ge1])=0$（tilting 型）⟹ 可逼近（定理 2.1）；$G$ 生成的 t-结构之心为 $\mathrm{Add}(G)$-模，可逼近性从 $\mathrm{D}(\mathrm{End}(G))$ 型数据恢复“大导出范畴” $\mathbf{D}(R)$——导出-Morita（Rickard/König）作为 $G$ tilting 时定理 2.9 抽象的特例。2026 浪潮（2602.14383、2604.10478、2608.26541；2303.06843；2604.26199）把可逼近性问题系统引入 silting 理论。<i>（调查者注：silting 是“左/右”现象真正的家；系统的“单侧可逼近、双侧”词典似尚未写出——可能的研究空白。）</i></p>
+<p>紧 silting 对象 $S$（$\mathrm{Hom}(S,S[n])=0,\ n>0$，加生成）恰给出“预可逼近”消失；tilting 对象另满足 $\mathrm{Hom}(S,S[n])=0,\ n\ne0$。于是：$\mathrm{Hom}(G,G[\ge1])=0$（tilting 型）⟹ 可逼近（定理 2.1）；$G$ 生成的 t-结构之心为 $\mathrm{Add}(G)$-模，可逼近性从 $\mathrm{D}(\mathrm{End}(G))$ 型数据恢复“大导出范畴” $\mathbf{D}(R)$——导出-Morita（Rickard/König）作为 $G$ tilting 时定理 2.8 抽象的特例。2026 浪潮（2602.14383、2604.10478、2608.26541；2303.06843；2604.26199）把可逼近性问题系统引入 silting 理论。<i>（调查者注：silting 是“左/右”现象真正的家；系统的“单侧可逼近、双侧”词典似尚未写出——可能的研究空白。）</i></p>
 
 <h4 id="ar-app-4-4">4.4　增强：dg、$\infty$、模型</h4>
-<p>增强纲领（Bondal–Kapranov dg；Lunts–Orlov；Toën；Dugger–Shipley 模型；Antieau arXiv:1812.01526 ∞-范畴）在定理 2.8–2.9 处与可逼近性相交。要点：2024 survey 刻意与增强<strong>风味无关</strong>（“我们的最新结果大体风味无关，对全部增强类型成立”—— survey §4.1）；强唯一性（同构提升 $H^{0}$-等价到增强层）由对偶数案例研究（2505.10374）与度量论文（2607.12865）给出；定理 2.9 的唯一性假设对几何范畴经 2101.04404 自动成立——整个几何 Morita 理论坐落在 CNS 增强三部曲上。</p>
+<p>增强纲领（Bondal–Kapranov dg；Lunts–Orlov；Toën；Dugger–Shipley 模型；Antieau arXiv:1812.01526 ∞-范畴）在定理 2.7–2.9 处与可逼近性相交。要点：2024 survey 刻意与增强<strong>风味无关</strong>（“我们的最新结果大体风味无关，对全部增强类型成立”—— survey §4.1）；强唯一性（同构提升 $H^{0}$-等价到增强层）由对偶数案例研究（2505.10374）与度量论文（2607.12865）给出；定理 2.8 的唯一性假设对几何范畴经 2101.04404 自动成立——整个几何 Morita 理论坐落在 CNS 增强三部曲上。</p>
 
 <h4 id="ar-app-4-5">4.5　望远镜范畴与稳定世界</h4>
-<p>稳定导出范畴 $\mathbf{S}(\mathscr{A})=\mathbf{K}_{\mathrm{acy}}(\mathrm{Inj}\,\mathscr{A})$（Krause；Neeman 早期工作）满足 $\mathbf{S}(\mathscr{A})^{c}=\mathbf{D}_{\mathbf{sing}}$，是奇点范畴的紧生成包络；survey 定理 2.10 用之。Krause 的望远镜局部化与 Sun–Zhang 的奇点范畴局部化列从局部化一侧看同一批对象；X.-W. Chen（2511.15387）连接到稳定<em>模</em>范畴。<i>（调查者注：$\mathbf{S}(\mathscr{A})$ 本身的可逼近性状态——紧生成、$\mathscr{A}$ 有单紧生成元时亦然——似乎未在已取文集中显式陈述；核查它是自然的小课题。）</i></p>
+<p>稳定导出范畴 $\mathbf{S}(\mathscr{A})=\mathbf{K}_{\mathrm{acy}}(\mathrm{Inj}\,\mathscr{A})$（Krause；Neeman 早期工作）满足 $\mathbf{S}(\mathscr{A})^{c}=\mathbf{D}_{\mathbf{sing}}$，是奇点范畴的紧生成包络；survey 定理 2.9 用之。Krause 的望远镜局部化与 Sun–Zhang 的奇点范畴局部化列从局部化一侧看同一批对象；X.-W. Chen（2511.15387）连接到稳定<em>模</em>范畴。<i>（调查者注：$\mathbf{S}(\mathscr{A})$ 本身的可逼近性状态——紧生成、$\mathscr{A}$ 有单紧生成元时亦然——似乎未在已取文集中显式陈述；核查它是自然的小课题。）</i></p>
 
 <h4 id="ar-app-4-6">4.6　Ohkawa 型有界性与谱</h4>
 <p>Minami（1909.06538）经可逼近性连接 Ohkawa 定理与强生成；Gratz–Stevenson（2205.13356）处理厚子范畴格与非交换谱。两者互补：可逼近性控制 $\mathscr{T}^{c}$ 在 $\mathscr{T}$ 内的“度量”几何，格/谱方法控制厚子范畴的偏序。据语料所知，两者间除共引外没有形式定理。</p>
@@ -252,7 +252,7 @@ $$\mathscr{T}\cong\mathscr{T}'\ \Longleftrightarrow\ \mathscr{T}^{+}\cong{\maths
 <tr><td>良生成</td><td>本质上独立的输入</td><td>2407.05946（survey §4.3–4.4）</td></tr>
 <tr><td>t-结构（紧生成）</td><td>preferred class、generator t-structure</td><td>1808.05267；cns2402 §2–3</td></tr>
 <tr><td>权重结构</td><td>weakly negative ⟹ 可逼近性；完美复形带权重不带 t-结构</td><td>1907.09412；2202.08861</td></tr>
-<tr><td>silting/tilting</td><td>silting 消失 ⟹ 预/弱可逼近；导出 Morita 是 Rickard 型定理特例</td><td>2602.14383 等；定理 2.9</td></tr>
+<tr><td>silting/tilting</td><td>silting 消失 ⟹ 预/弱可逼近；导出 Morita 是 Rickard 型定理特例</td><td>2602.14383 等；定理 2.8</td></tr>
 <tr><td>dg/$\infty$-增强</td><td>唯一性经内在子范畴提升</td><td>2402.04605；2505.10374；2607.12865</td></tr>
 <tr><td>奇点/稳定范畴</td><td>不变性 + 局部化；$\mathscr{T}^{c}\subseteq\mathscr{T}^{b}_{c}$ 障碍侧</td><td>survey Theorem 5.3；2402.04954；2401.00130</td></tr>
 <tr><td>负 K-理论</td><td>有界 t-结构的障碍；AGH 猜想已解决</td><td>1610.07207；2202.08861；2006.16536；2208.06863</td></tr>
