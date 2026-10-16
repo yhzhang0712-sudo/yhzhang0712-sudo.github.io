@@ -108,11 +108,12 @@
 {{- $mc := site.GetPage "posts/数学文化" -}}
 {{- if $mc -}}
     {{- $mcMap := dict
-        "figures"   "ar-mathfigures-panel-"
-        "problems"  "ar-mathproblems-panel-"
-        "popular"   "ar-mathpopular-panel-"
-        "awards"    "ar-mathawards-panel-"
-        "anecdotes" "ar-mathanecdotes-panel-" -}}
+        "figures"    "ar-mathfigures-panel-"
+        "problems"   "ar-mathproblems-panel-"
+        "popular"    "ar-mathpopular-panel-"
+        "education"  "ar-matheducation-panel-"
+        "awards"     "ar-mathawards-panel-"
+        "anecdotes"  "ar-mathanecdotes-panel-" -}}
     {{- /* headless 页面不进 .Pages / AllPages，用 os.ReadDir 列目录 + GetPage 逐个取 */ -}}
     {{- range $sec, $prefix := $mcMap -}}
         {{- $entries := os.ReadDir (printf "content/posts/数学文化/panels/%s" $sec) -}}

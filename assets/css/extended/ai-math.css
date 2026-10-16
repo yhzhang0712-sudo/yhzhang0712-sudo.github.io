@@ -721,6 +721,34 @@
     border-left: 3px solid var(--tertiary);
 }
 
+/* ─── 数学文化长面板（.crisis-article 系）接入右侧目录后的标题层级 ───
+   .crisis-h3/h4 的配色定义在第 1120 行附近（青绿 / 紫），比这里靠后；
+   但同特异度下靠后的规则会覆盖这里，故这里只做「跳转留白」，
+   配色沿用 .crisis-h3/.crisis-h4 自身的定义，不重复指定 color。
+   之所以仍要写这一节：让 .ar-toc-body 的 scroll-margin-top 覆盖到 crisis 类，
+   否则锚点跳转会被 PaperMod 顶部栏盖住标题。 */
+.ar-toc-body .crisis-h3,
+.ar-toc-body .crisis-h4 {
+    scroll-margin-top: 40px;
+}
+
+/* 数学文化长面板的目录项配色：与正文标题同一套色，避免菜单与正文脱节 */
+.ar-toc-wrap .ar-toc-drop .ar-toc-l1.c-toc-h3 {
+    color: #0f766e;          /* 浅色模式：正文 crisis-h3 的青绿 */
+}
+
+[data-theme="dark"] .ar-toc-wrap .ar-toc-drop .ar-toc-l1.c-toc-h3 {
+    color: #5eead4;
+}
+
+.ar-toc-wrap .ar-toc-drop .ar-toc-l2.c-toc-h4 {
+    color: #7c3aed;          /* 浅色模式：正文 crisis-h4 的紫 */
+}
+
+[data-theme="dark"] .ar-toc-wrap .ar-toc-drop .ar-toc-l2.c-toc-h4 {
+    color: #c4b5fd;
+}
+
 .ar-toc-body h3,
 .ar-toc-body h4 {
     scroll-margin-top: 40px;
@@ -1805,51 +1833,119 @@ a.ar-sec-btn[href^="http"]::after {
     .fig-era-n { margin-left: 0; }
 }
 
-/* ─── 数学人物：收录说明与资料来源 ─── */
-.fig-note {
-    border: 1px solid var(--border);
-    border-left-width: 4px;
-    border-left-color: #64748B;
-    border-radius: 10px;
-    margin: 0.8rem 0 0.6rem;
-    background: var(--entry);
+/* ─── 数学人物：子时期二级分组（现代期按世纪细分） ─── */
+.fig-era .sub-era {
+    border: none;
+    border-left: 2px dashed var(--border);
+    border-radius: 0;
+    margin: 0.35rem 0 0.5rem 0.85rem;
+    background: transparent;
 }
 
-.fig-note-sum {
+.sub-era-sum {
     display: flex;
     align-items: baseline;
     gap: 0.5rem;
-    padding: 0.55rem 0.85rem;
+    flex-wrap: wrap;
+    padding: 0.4rem 0.7rem;
     cursor: pointer;
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 0.92rem;
     list-style: none;
     user-select: none;
 }
 
-.fig-note-sum::-webkit-details-marker { display: none; }
+.sub-era-sum::-webkit-details-marker { display: none; }
 
-.fig-note-sum::before {
+.sub-era-sum::before {
     content: "\25B8";
     display: inline-block;
     color: var(--secondary);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     transition: transform 0.18s ease;
 }
 
-.fig-note[open] > .fig-note-sum::before {
-    transform: rotate(90deg);
+.sub-era[open] > .sub-era-sum::before { transform: rotate(90deg); }
+
+.sub-era-t { color: var(--content); }
+
+.sub-era-span {
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--secondary);
 }
 
-.fig-note-body {
-    padding: 0 0.85rem 0.75rem 2rem;
-    font-size: 0.9rem;
-    line-height: 1.8;
+.sub-era-n {
+    margin-left: auto;
+    font-weight: 600;
+    font-size: 0.78rem;
+    color: var(--secondary);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.02rem 0.5rem;
+    white-space: nowrap;
 }
 
-.fig-note-body p { margin: 0 0 0.5rem; }
-.fig-note-body p:last-child { margin-bottom: 0; }
-.fig-note-body strong { color: var(--content); }
+.sub-era .ai-tab-btns {
+    padding: 0.15rem 0.7rem 0.6rem;
+    margin-bottom: 0.2rem;
+}
+
+.sub-era.fig-hit > .sub-era-sum {
+    background: var(--entry);
+    border-radius: 8px;
+}
+
+/* ─── 数学人物：工具条（展开/收起 + 搜索） ─── */
+.fig-tools {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.45rem;
+    margin: 0 0 0.6rem;
+}
+
+.fig-tools-search {
+    flex: 1 1 12rem;
+    min-width: 9rem;
+    font-size: 0.85rem;
+    padding: 0.22rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--entry);
+    color: var(--content);
+    line-height: 1.7;
+}
+
+.fig-tools-search::placeholder { color: var(--secondary); }
+
+.fig-tools-search:focus {
+    outline: none;
+    border-color: #1E40AF;
+}
+
+.fig-tools-hint {
+    font-size: 0.78rem;
+    color: var(--secondary);
+}
+
+.fig-tools-hint b { color: var(--content); }
+
+.fig-tools .fig-era-toggle[disabled] {
+    opacity: 0.4;
+    cursor: default;
+}
+
+/* 搜索时的隐藏与命中高亮 */
+.ai-tab-btn.fig-hide { display: none; }
+
+.ai-tab-btn.fig-hit {
+    border-color: #1E40AF;
+    box-shadow: 0 0 0 2px rgba(30, 64, 175, 0.18);
+}
 
 @media screen and (max-width: 480px) {
-    .fig-note-body { padding-left: 0.85rem; }
+    .fig-era .sub-era { margin-left: 0.5rem; }
+    .sub-era-n { margin-left: 0; }
+    .fig-tools-search { flex-basis: 100%; }
 }
