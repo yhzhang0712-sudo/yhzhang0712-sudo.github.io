@@ -732,6 +732,7 @@ cover:
     <button type="button" class="ai-tab-btn tab-yellow" role="tab" id="tab-ar-mathanecdotes-panel-cantorset" aria-controls="ar-mathanecdotes-panel-cantorset" aria-selected="false" tabindex="-1" onclick="switchMathAnecdotes('cantorset', this)">康托尔集合论</button>
     <button type="button" class="ai-tab-btn tab-teal" role="tab" id="tab-ar-mathanecdotes-panel-oneplustwo" aria-controls="ar-mathanecdotes-panel-oneplustwo" aria-selected="false" tabindex="-1" onclick="switchMathAnecdotes('oneplustwo', this)">陈景润：1+2</button>
     <button type="button" class="ai-tab-btn tab-red" role="tab" id="tab-ar-mathanecdotes-panel-erdosnumber" aria-controls="ar-mathanecdotes-panel-erdosnumber" aria-selected="false" tabindex="-1" onclick="switchMathAnecdotes('erdosnumber', this)">埃尔德什数</button>
+    <button type="button" class="ai-tab-btn tab-blue" role="tab" id="tab-ar-mathanecdotes-panel-zhangyitang" aria-controls="ar-mathanecdotes-panel-zhangyitang" aria-selected="false" tabindex="-1" onclick="switchMathAnecdotes('zhangyitang', this)">张益唐：孪生素数</button>
   </div>
 
 {{< ar-panel "calculus" "active" "ar-mathanecdotes-panel-" "calculus" "数学文化/panels/anecdotes" >}}
@@ -754,6 +755,8 @@ cover:
 
 
 {{< ar-panel "erdosnumber" "-" "ar-mathanecdotes-panel-" "erdosnumber" "数学文化/panels/anecdotes" >}}
+
+{{< ar-panel "zhangyitang" "-" "ar-mathanecdotes-panel-" "zhangyitang" "数学文化/panels/anecdotes" >}}
 
 </div>
 </section>
