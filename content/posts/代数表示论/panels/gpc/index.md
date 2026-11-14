@@ -5,7 +5,7 @@ date: 2026-09-08
 ---
 <div class="ar-toc-wrap">
 <nav class="ar-toc" aria-label="面板目录">
-  <button type="button" class="ar-toc-btn" onclick="toggleArTocGpc(event)" aria-label="目录导航" title="目录导航" aria-expanded="false">
+  <button type="button" class="ar-toc-btn" onclick="toggleArToc(event)" aria-label="目录导航" title="目录导航" aria-expanded="false">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
   </button>
   <div class="ar-toc-drop" role="menu">
@@ -22,7 +22,7 @@ date: 2026-09-08
     <a class="ar-toc-l1" href="#ar-gpc-ref">参考文献</a>
   </div>
 </nav>
-<div class="ar-toc-body">
+<div class="ar-toc-body crisis-article">
 <h3 class="ar-subhead" id="ar-gpc-1">猜想陈述</h3>
 <p><strong>Gorenstein 投射猜想（GPC）</strong>：设 $M$ 是 Gorenstein 投射模，若 $\operatorname{Ext}^{i}(M,M)=0$ 对 $i\gg 0$ 成立，则 $M$ 是投射模。</p>
 
@@ -182,39 +182,3 @@ $$xv=yv=w,\qquad xw=yw=0$$
 </div>
 </div>
 
-<script>
-/* 面板目录下拉按钮（Gorenstein 投射猜想 gpc 面板） */
-(function () {
-  function getToc(el) { return el ? el.closest('.ar-toc') : null; }
-  function setAria(toc, open) {
-    var btn = toc && toc.querySelector('.ar-toc-btn');
-    if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-  }
-  window.toggleArTocGpc = function (e) {
-    if (e) { e.stopPropagation(); e.preventDefault(); }
-    var toc = getToc(e && e.currentTarget);
-    if (!toc) return;
-    var open = toc.classList.toggle('open');
-    setAria(toc, open);
-  };
-  if (!window.__arTocGpcBound) {
-    window.__arTocGpcBound = true;
-    document.addEventListener('click', function (ev) {
-      document.querySelectorAll('.ar-toc.open').forEach(function (toc) {
-        if (toc.contains(ev.target) && ev.target.closest('.ar-toc-drop a')) {
-          toc.classList.remove('open'); setAria(toc, false);
-        } else if (!toc.contains(ev.target)) {
-          toc.classList.remove('open'); setAria(toc, false);
-        }
-      });
-    });
-    document.addEventListener('keydown', function (ev) {
-      if (ev.key === 'Escape') {
-        document.querySelectorAll('.ar-toc.open').forEach(function (toc) {
-          toc.classList.remove('open'); setAria(toc, false);
-        });
-      }
-    });
-  }
-})();
-</script>

@@ -26,7 +26,7 @@ date: 2026-09-29
     <a class="ar-toc-l1" href="#ar-art-ref">参考文献</a>
   </div>
 </nav>
-<div class="ar-toc-body">
+<div class="ar-toc-body crisis-article">
 <h3 class="ar-subhead" id="ar-art-0">0　记号与约定</h3>
 <p>固定 Artin 代数 $\Lambda$（常取代数闭域 $k$ 上的有限维代数），$\mathrm{mod}\,\Lambda$ 记有限生成模范畴，$\mathrm{ind}\,\Lambda$ 记不可分解模的同构类集合。</p>
 <table>

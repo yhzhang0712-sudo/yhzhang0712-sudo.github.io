@@ -104,7 +104,9 @@
 {{- /* 解析“数学文化”各分区面板为独立搜索项，permalink 带锚点。
        2026-10-14：该分区已从单个 1.1MB _index.md 拆为 panels/<分区>/<key>/index.md，
        此前整页只有一个无锚点条目、任何关键词都返回同一 URL，无法定位小节。
-       人物面板正文较长，content 截断到 300 字以控制索引体积。 */ -}}
+       人物面板正文较长，content 截断到 500 字以控制索引体积。
+       2026-11-04：原为 150 字（注释误写 300 字），人物正文中位约 1400 字，
+       九成内容搜不到；放宽到 500 字，实测索引由 1021 KB 增至约 1230 KB（+20%）。 */ -}}
 {{- $mc := site.GetPage "posts/数学文化" -}}
 {{- if $mc -}}
     {{- $mcMap := dict
@@ -123,7 +125,7 @@
                 {{- if $p -}}
                     {{- $.Scratch.Add "index" (dict
                         "title" $p.Title
-                        "content" (truncate 150 $p.Plain)
+                        "content" (truncate 500 $p.Plain)
                         "permalink" (printf "%s#%s%s" $mc.Permalink $prefix .Name)
                         "summary" (truncate 60 $p.Summary)) -}}
                 {{- end -}}

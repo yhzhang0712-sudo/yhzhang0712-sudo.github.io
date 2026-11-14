@@ -44,7 +44,7 @@ date: 2026-09-29
     <a class="ar-toc-l1" href="#ar-tau-ref">参考文献</a>
   </div>
 </nav>
-<div class="ar-toc-body">
+<div class="ar-toc-body crisis-article">
 <h3 class="ar-subhead" id="ar-tau-0">0　记号与约定</h3>
 <p>固定代数闭域 $k$；$\Lambda$ 记<strong>基本</strong>有限维 $k$-代数，$\Lambda=P_{1}\oplus\cdots\oplus P_{n}$ 为不可分解投射模的分解。</p>
 <table>

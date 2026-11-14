@@ -1,0 +1,31 @@
+{{- /* figure-index.html — 数学人物总览页
+       单一事实来源 = content/posts/数学文化/_index.md 里四个 <details class="fig-era era-N"> 块的按钮 id。
+       新增人物只要按规范在骨架里加按钮，本页自动收录，不需要维护第二份名单。
+       同时输出 schema.org ItemList 结构化数据，便于搜索引擎理解本页包含的实体。 */ -}}
+{{- $skeleton := os.ReadFile "content/posts/数学文化/_index.md" -}}
+{{- /* 按 era 开标签切块，不用 </details> 收尾：现代时代内部还嵌套了 5 个
+       <details class="sub-era">，非贪婪匹配会在第一个内层 </details> 提前截断。 */ -}}
+{{- $chunks := split $skeleton `<details class="fig-era era-` -}}
+{{- $mc := site.GetPage "posts/数学文化" -}}
+{{- $.Scratch.Set "figureItems" slice -}}
+<div class="figure-index">
+{{- range $i, $chunk := $chunks -}}
+{{- if gt $i 0 -}}
+{{- $era := replaceRE `(?s).*?<span class="fig-era-t">([^<]+)</span>.*` "${1}" $chunk -}}
+{{- $span := replaceRE `(?s).*?<span class="fig-era-span">([^<]+)</span>.*` "${1}" $chunk -}}
+{{- $ids := findRE `id="tab-ar-mathfigures-panel-[a-z0-9]+"` $chunk -}}
+<section class="figure-index-era"><h2>{{ $era }}<small>{{ $span }} · {{ len $ids }} 位</small></h2><ul class="figure-index-list">
+{{- range $ids -}}
+{{- $key := replaceRE `id="tab-ar-mathfigures-panel-([a-z0-9]+)"` "${1}" . -}}
+{{- $p := site.GetPage (printf "posts/数学文化/panels/figures/%s" $key) -}}
+{{- if $p -}}
+{{- $n := add 1 (len ($.Scratch.Get "figureItems")) -}}
+{{- $.Scratch.Add "figureItems" (dict "@type" "ListItem" "position" $n "name" $p.Title "url" (printf "%s#ar-mathfigures-panel-%s" $mc.Permalink $key)) -}}
+<li><a href="{{ $mc.RelPermalink }}#ar-mathfigures-panel-{{ $key }}">{{ $p.Title }}</a></li>
+{{- end -}}
+{{- end -}}
+</ul></section>
+{{- end -}}
+{{- end -}}
+</div>
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "ItemList" "numberOfItems" (len ($.Scratch.Get "figureItems")) "itemListElement" ($.Scratch.Get "figureItems") | jsonify | safeJS }}</script>

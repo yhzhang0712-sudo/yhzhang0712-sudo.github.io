@@ -43,7 +43,7 @@ date: 2026-09-03
     <a class="ar-toc-l1" href="#ar-app-ref">参考文献</a>
   </div>
 </nav>
-<div class="ar-toc-body"><h3 class="ar-subhead" id="ar-app-1">1　概念与定义</h3>
+<div class="ar-toc-body crisis-article"><h3 class="ar-subhead" id="ar-app-1">1　概念与定义</h3>
 
 <h4 id="ar-app-1-0">1.0　记号约定</h4>
 <p>设 $\mathscr{T}$ 为带（集合指标）余积的三角范畴，$[1]$ 为平移函子。对全子范畴 $\mathscr{A},\mathscr{B}\subseteq\mathscr{T}$：</p>

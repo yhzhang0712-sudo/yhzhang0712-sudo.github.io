@@ -82,4 +82,4 @@ languages:
   zh:
     label: "中文"
     weight: 1
-    languageCode: "zh-CN"
+    locale: "zh-CN"

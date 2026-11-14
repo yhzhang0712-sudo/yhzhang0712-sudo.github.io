@@ -42,7 +42,7 @@ date: 2026-09-29
     <a class="ar-toc-l1" href="#ar-inf-ref">参考文献</a>
   </div>
 </nav>
-<div class="ar-toc-body">
+<div class="ar-toc-body crisis-article">
 <h3 class="ar-subhead" id="ar-inf-0">0　记号与约定</h3>
 <p><strong>默认约定</strong>：①未加修饰的“范畴”指 $\infty$-范畴（即 $(\infty,1)$-范畴）；②“等价”指 $\infty$-范畴等价，不是同构；③“稳定”默认带有限极限与有限余极限；④$h\mathscr{C}$ 记 $\mathscr{C}$ 的同伦范畴，其三角结构为 $[1]=\Sigma$，区分三角即余纤维序列 $X\to Y\to\mathrm{cofib}\to\Sigma X$。</p>
 <table>

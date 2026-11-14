@@ -44,7 +44,7 @@ date: 2026-09-29
     <a class="ar-toc-l1" href="#ar-op-ref">参考文献</a>
   </div>
 </nav>
-<div class="ar-toc-body">
+<div class="ar-toc-body crisis-article">
 <h3 class="ar-subhead" id="ar-op-0">0　记号与约定</h3>
 <p>固定特征零域 $k$；$\mathcal{V}$ 记底对称单oidal范畴（本文取向量空间或链复形）。</p>
 <table>

@@ -45,7 +45,7 @@ date: 2026-09-29
     <a class="ar-toc-l1" href="#ar-ttg-ref">参考文献</a>
   </div>
 </nav>
-<div class="ar-toc-body">
+<div class="ar-toc-body crisis-article">
 <h3 class="ar-subhead" id="ar-ttg-0">0　记号与约定</h3>
 <p>全书约定：$\mathscr{K}$ 记<strong>本质小</strong> tt-范畴（研究其厚理想）；$\mathscr{T}$ 记<strong>刚性紧生成</strong>大 tt-范畴（研究其局部化理想）；$\mathscr{T}^{c}\subseteq\mathscr{T}$ 为其紧对象子范畴（本质小 tt-范畴）。$\otimes$、$\mathbf{1}$ 记单oidal积与单位对象。</p>
 <table>

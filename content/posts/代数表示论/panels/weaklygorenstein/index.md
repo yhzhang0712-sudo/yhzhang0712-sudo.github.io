@@ -5,7 +5,7 @@ date: 2026-09-19
 ---
 <div class="ar-toc-wrap">
 <nav class="ar-toc" aria-label="面板目录">
-  <button type="button" class="ar-toc-btn" onclick="toggleArTocWeaklygorenstein(event)" aria-label="目录导航" title="目录导航" aria-expanded="false">
+  <button type="button" class="ar-toc-btn" onclick="toggleArToc(event)" aria-label="目录导航" title="目录导航" aria-expanded="false">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
   </button>
   <div class="ar-toc-drop" role="menu">
@@ -14,7 +14,7 @@ date: 2026-09-19
     <a class="ar-toc-l1" href="#ar-weaklygorenstein-ref">参考文献</a>
   </div>
 </nav>
-<div class="ar-toc-body">
+<div class="ar-toc-body crisis-article">
 <h3 class="ar-subhead" id="ar-weaklygorenstein-1">猜想陈述</h3>
 <p><strong>Weakly-Gorenstein 对称猜想</strong>：设 $A$ 是 Artin 代数。若 $\operatorname{gldim} A < \infty$ 且 $A$ 满足 Gorenstein 对称性质（即 $\operatorname{Hom}_A(D(A), A) \cong A$），则 $A$ 是 Gorenstein 代数。</p>
 

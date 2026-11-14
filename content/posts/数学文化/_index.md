@@ -27,6 +27,7 @@ cover:
     <input type="search" id="fig-search" class="fig-tools-search" placeholder="输入人名检索（支持中文名、原名、key）" autocomplete="off" aria-label="按人名检索数学人物">
     <button type="button" class="fig-era-toggle" id="fig-open-all" onclick="toggleAllFigEras(true)">展开全部</button>
     <button type="button" class="fig-era-toggle" id="fig-close-all" onclick="toggleAllFigEras(false)">收起全部</button>
+    <a class="fig-era-toggle" href="/figure-index/" style="text-decoration:none">人物总览 →</a>
     <span class="fig-tools-hint" id="fig-search-hint" aria-live="polite"></span>
   </div>
   
@@ -693,9 +694,12 @@ cover:
 <div class="ai-tabs">
   <div class="ai-tab-btns" role="tablist" aria-label="内容小节导航">
     <button type="button" class="ai-tab-btn tab-teal active" role="tab" id="tab-ar-matheducation-panel-future" aria-controls="ar-matheducation-panel-future" aria-selected="true" tabindex="0" onclick="switchMathEducation('future', this)">未来的数学</button>
+    <button type="button" class="ai-tab-btn tab-blue" role="tab" id="tab-ar-matheducation-panel-smffuture" aria-controls="ar-matheducation-panel-smffuture" aria-selected="false" tabindex="-1" onclick="switchMathEducation('smffuture', this)">关于关于数学研究的未来</button>
   </div>
 
 {{< ar-panel "future" "active" "ar-matheducation-panel-" "future" "数学文化/panels/education" >}}
+
+{{< ar-panel "smffuture" "-" "ar-matheducation-panel-" "smffuture" "数学文化/panels/education" >}}
 
 </div>
 </section>

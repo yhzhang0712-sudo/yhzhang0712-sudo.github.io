@@ -754,6 +754,45 @@
     scroll-margin-top: 40px;
 }
 
+/* ─── 数学人物总览页（/figure-index/）：按时代分栏列出全部人物 ─── */
+.figure-index-era {
+    margin: 2rem 0 2.4rem;
+}
+.figure-index-era h2 {
+    font-size: 1.3rem;
+    margin: 0 0 0.9rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border, #e5e7eb);
+}
+.figure-index-era h2 small {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--secondary);
+    margin-left: 0.7rem;
+}
+.figure-index-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    columns: 3 240px;
+    column-gap: 1.6rem;
+}
+.figure-index-list li {
+    break-inside: avoid;
+    margin: 0 0 0.45rem;
+    font-size: 0.94rem;
+    line-height: 1.5;
+}
+.figure-index-list a {
+    text-decoration: none;
+}
+.figure-index-list a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 600px) {
+    .figure-index-list { columns: 2 150px; column-gap: 1rem; }
+}
+
 @media (max-width: 600px) {
     .ar-toc-wrap {
         display: block;

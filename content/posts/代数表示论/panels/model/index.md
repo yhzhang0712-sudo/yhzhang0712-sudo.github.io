@@ -26,7 +26,7 @@ date: 2026-09-29
     <a class="ar-toc-l1" href="#ar-theory-panel-model-ref">参考文献</a>
   </div>
 </nav>
-<div class="ar-toc-body">
+<div class="ar-toc-body crisis-article">
 <h3 class="ar-subhead" id="ar-theory-panel-model-0">0　记号与约定</h3>
 <table>
 <thead><tr><th>符号</th><th>含义</th></tr></thead>

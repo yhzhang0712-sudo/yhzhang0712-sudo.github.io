@@ -5,7 +5,7 @@ date: 2026-09-19
 ---
 <div class="ar-toc-wrap">
 <nav class="ar-toc" aria-label="面板目录">
-  <button type="button" class="ar-toc-btn" onclick="toggleArTocNoloop(event)" aria-label="目录导航" title="目录导航" aria-expanded="false">
+  <button type="button" class="ar-toc-btn" onclick="toggleArToc(event)" aria-label="目录导航" title="目录导航" aria-expanded="false">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
   </button>
   <div class="ar-toc-drop" role="menu">
@@ -14,7 +14,7 @@ date: 2026-09-19
     <a class="ar-toc-l1" href="#ar-noloop-ref">参考文献</a>
   </div>
 </nav>
-<div class="ar-toc-body">
+<div class="ar-toc-body crisis-article">
 <h3 class="ar-subhead" id="ar-noloop-1">猜想陈述</h3>
 <p><strong>no-loop conjecture</strong>：设 $A$ 是有限维代数。若 $A$ 的 Cartan 行列式等于 1，则 $A$ 没有定向循环（即 quiver 中不含有向圈）。</p>
 

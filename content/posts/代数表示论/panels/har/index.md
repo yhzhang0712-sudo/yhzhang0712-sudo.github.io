@@ -44,7 +44,7 @@ date: 2026-09-29
     <a class="ar-toc-l1" href="#ar-har-ref">参考文献</a>
   </div>
 </nav>
-<div class="ar-toc-body">
+<div class="ar-toc-body crisis-article">
 <h3 class="ar-subhead" id="ar-har-0">0　记号与约定</h3>
 <p>固定交换 Artin 环 $R$（常取域 $k$），$\Lambda$ 记 Artin $R$-代数。整数 $d\ge1$ 为“维数参数”，全文固定。</p>
 <table>

@@ -44,7 +44,7 @@ date: 2026-09-29
     <a class="ar-toc-l1" href="#ar-ct-ref">参考文献</a>
   </div>
 </nav>
-<div class="ar-toc-body">
+<div class="ar-toc-body crisis-article">
 <h3 class="ar-subhead" id="ar-ct-0">0　记号与约定</h3>
 <p>固定代数闭域 $k$。下标 $Q$ 表示“由箭图 $Q$ 决定”。</p>
 <table>
