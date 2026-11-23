@@ -659,6 +659,7 @@ cover:
     <button type="button" class="ai-tab-btn tab-teal active" role="tab" id="tab-ar-mathproblems-panel-hilbert" aria-controls="ar-mathproblems-panel-hilbert" aria-selected="true" tabindex="0" onclick="switchMathProblems('hilbert', this)">希尔伯特23问题</button>
     <button type="button" class="ai-tab-btn tab-purple" role="tab" id="tab-ar-mathproblems-panel-millennium" aria-controls="ar-mathproblems-panel-millennium" aria-selected="false" tabindex="-1" onclick="switchMathProblems('millennium', this)">千禧年问题</button>
     <button type="button" class="ai-tab-btn tab-blue" role="tab" id="tab-ar-mathproblems-panel-fourcolor" aria-controls="ar-mathproblems-panel-fourcolor" aria-selected="false" tabindex="-1" onclick="switchMathProblems('fourcolor', this)">四色定理</button>
+    <button type="button" class="ai-tab-btn tab-orange" role="tab" id="tab-ar-mathproblems-panel-riemann" aria-controls="ar-mathproblems-panel-riemann" aria-selected="false" tabindex="-1" onclick="switchMathProblems('riemann', this)">黎曼猜想</button>
   </div>
 
 {{< ar-panel "hilbert" "active" "ar-mathproblems-panel-" "hilbert" "数学文化/panels/problems" >}}
@@ -666,6 +667,8 @@ cover:
 {{< ar-panel "millennium" "-" "ar-mathproblems-panel-" "millennium" "数学文化/panels/problems" >}}
 
 {{< ar-panel "fourcolor" "-" "ar-mathproblems-panel-" "fourcolor" "数学文化/panels/problems" >}}
+
+{{< ar-panel "riemann" "-" "ar-mathproblems-panel-" "riemann" "数学文化/panels/problems" >}}
 </div>
 </section>
 
